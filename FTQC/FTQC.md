@@ -1,0 +1,8 @@
+#SoftDev #Quantum 
+Full-Stack architecture for **Fault-Tolerant Quantum computing (FTQC)** consists of multiple layers, each focusing on different aspects of Quantum computing, from hardware to soft. ![](https://lms.qureca.com/wp-content/uploads/uncanny-snc/21/assets/Heading.jpg)
+At the bottom of the FTQC Stack are the quantum hardware layers, consisting of [[Qubits]] & the control systems that manipulate them. These physical systems can be based on Superconducting [[Qubits]], trapped ions, or other Quantum computing technologies.  ![](https://lms.qureca.com/wp-content/uploads/uncanny-snc/21/assets/Quantum%20control%20system.png)
+**McKinsey- Quantum Control System**
+
+Layers of the control plane are responsible for controlling & measuring the quantum states, interfacing directly with quantum hardware. It includes the systems that init, manipulate, & readout [[Qubits]]. Control electronics manage the precise timing & exec of quantum gates. Readout Systems measure the [[Quantum state]] after computations, which typically involves collapsing [[Qubits]] into a classical bit. Although all based on similar fundamental principles of quantum control, quantum control hardware can differ widely depending on the qubit tech with which it is designed to be used.
+
+FTQC **architecture layer** is focused on reducing errors through robust error-correction techs. This layer introduces fault-tolerant quantum gate & circuits that support the detection & correction of errors, enabling scalable Quantum computing

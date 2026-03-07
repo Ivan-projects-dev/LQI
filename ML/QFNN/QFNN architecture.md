@@ -6,7 +6,7 @@
 
 After encoding, the network processes the state via one or $>$ **variational layers**. Each layer can consist of:
 1. **Parametric Single-Qubit Rotations**: $Rμ(θ)$ gates on each qubit.
-2. **Entangling Gates**: CNOT, controlled-phase, or other multi-qubit operations to introduce Entanglement.
+2. **Entangling Gates**: [[CNOT]], controlled-phase, or other multi-qubit operations to introduce Entanglement.
 Typical [[QFNN]] may Stack multiple such layers, each with its own set of trainable params $θ$. The final layer may or may not be followed by additional gates depending on the design.
 
 [[QFNN]]'s **output** is extracted by measuring the [[Qubits]]. In a supervised learning scenario:

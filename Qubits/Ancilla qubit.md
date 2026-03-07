@@ -15,7 +15,7 @@ Input $|x\rangle$ is preserved; $f(x)$ is XOR-d into the ancilla $|a\rangle$. Th
 
 If an ancilla $|g(x)\rangle$ was produced as side-effect of computing $f(x)$, **uncomputing** - running the circuit in reverse ($U^\dagger$) to restore $|g(x)\rangle \to |0\rangle$:
 $$|x\rangle|f(x)\rangle|g(x)\rangle \xrightarrow{U^\dagger_g} |x\rangle|f(x)\rangle|0\rangle$$
-Without uncomputation, measuring $|f(x)\rangle$ collapses $|x\rangle$, destroying the superposition needed for quantum speedup. Within-Apply pattern in Q# enforces this automatically.
+Without uncomputation, measuring $|f(x)\rangle$ collapses $|x\rangle$, destroying the superposition needed for quantum speedup. [[Within-Apply pattern]] in Q# enforces this automatically.
 ```csharp
 use ancilla = Qubit(); // allocate single ancilla, starts at |0⟩
 use ancillas = Qubit[n]; // allocate n ancilla qubits

@@ -3,6 +3,6 @@
 
 **NV center formation:** NV centers are created by replacing carbon atom in the diamond lattice with nitrogen atom & creating an adjacent vacancy (a missing carbon atom). This defect forms the NV center, which can exist in different charge states, typically $NV⁰$ & $NV⁻$.
 **Qubit init:** The NV center's electronic spin states are used as [[Qubits]]. These states can be init using laser light, which prepares the NV center in specific [[Quantum state]]. 
-**Quantum gates:** Quantum operations are performed using microwave & laser pulses. These pulses manipulate the spin states of the NV centers, enabling single-qubit & multi-qubit gates. 
+**Quantum gates:** Quantum operations are performed using microwave & laser pulses. These pulses manipulate the spin states of the NV centers, enabling single-qubit & [[Multi-qubit gates]]. 
 **Entanglement:** NV centers can be entangled with each other through their spin states. This is often achieved using optical or microwave interactions, allowing for the creation of entangled qubit pairs. 
 **Measurement:** The state of the NV center is measured using optically detected magnetic resonance (ODMR). When the NV center is illuminated with laser, it emits fluorescence that depends on its spin state. This fluorescence is detected to read out the qubit state. 

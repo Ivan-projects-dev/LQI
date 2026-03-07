@@ -52,14 +52,14 @@ Suppose that our Hamiltonian is given by $Z_0Z_1$. Eigenstates of $Z_0Z_1$ ar
 
 Note that eigenvalues are $1$ if $2$ [[Qubits]] are in the same state, & $-1$ otherwise.
 
-Let us implement a CNOT gate on the two [[Qubits]] as CNOT $|q0⟩|q1⟩=|q0⟩|q0⊕q1⟩$,
+Let us implement a [[CNOT]] gate on the two [[Qubits]] as [[CNOT]] $|q0⟩|q1⟩=|q0⟩|q0⊕q1⟩$,
 
 - $|q0⊕q1⟩=|0⟩$, if $2$ [[Qubits]] have the same state
 - $|1⟩$, otherwise.
 
-After applying a CNOT, measurement with Z on qubit q1 yields us the result we desire.
+After applying a [[CNOT]], measurement with Z on qubit q1 yields us the result we desire.
 
-This idea can be extended to multiple [[Qubits]] by applying CNOT in a chain struct. Such CNOT chain keeps the parity of $1s$ in the state & results in state $|1⟩$ on the final target qubit if the num of $1s$ in the state is odd, & $|0⟩$ otherwise. Hence, a measurement on the final qubit with observable $Z$ coincides with the eigenvalues of the multiqubit observable.
+This idea can be extended to multiple [[Qubits]] by applying [[CNOT]] in a chain struct. Such [[CNOT]] chain keeps the parity of $1s$ in the state & results in state $|1⟩$ on the final target qubit if the num of $1s$ in the state is odd, & $|0⟩$ otherwise. Hence, a measurement on the final qubit with observable $Z$ coincides with the eigenvalues of the multiqubit observable.
 !Pasted image 20260102005032.png
 !Pasted image 20260102005009.png
 - We select a parametrized quantum circuit $|ψ(θ)⟩$ to serve as our ansatz.

@@ -2,6 +2,6 @@
 **Silicon spin qubit system** consists of quantum dots, which are nanoscale regions in silicon substrate where single electrons are trapped & manipulated. The electron’s spin-up & spin-down states serve as the qubit’s logical states to encode & process quantum info. Quantum operations are performed by applying radiofrequency or microwave pulses, which control the spin state through **electron spin resonance (ESR)** or **nuclear magnetic resonance (NMR)**. 
 
 **Qubit init:** The [[Qubits]] are typically electrons or nuclei in silicon. These spins are init to known state using magnetic fields & microwave pulses. 
-**Quantum gates:** Quantum operations are performed using microwave or radiofrequency pulses that manipulate the spin states. Single-qubit gates are achieved by rotating the spin, while two-qubit gates are implemented through spin-spin interactions. 
+**Quantum gates:** Quantum operations are performed using microwave or radiofrequency pulses that manipulate the spin states. [[Single-qubit gates]] are achieved by rotating the spin, while two-qubit gates are implemented through spin-spin interactions. 
 **Entanglement:** Spins can be entangled by coupling them through exchange interactions or by using shared quantum dot. This allows for the creation of entangled qubit pairs necessary for quantum computations.
 **Measurement:** The state of each qubit is measured using techs like spin-to-charge conversion, where the spin state is converted to an electrical signal that can be detected. 

@@ -7,7 +7,7 @@ This feature map can take $n$ inputs $x_1, …, x_n$ on $n$ [[Qubits]]. It
 1. Apply a Hadamard gate on each qubit.
 2. Apply, on each qubit j, a phase gate P(2xj).
 3. For each pair of elements ${j,k}⊆{1,…,n}$ with $j<k$, do the following:
-	- Apply a CNOT gate targeting qubit $k$ and controlled by qubit $j$.
+	- Apply a [[CNOT]] gate targeting qubit $k$ and controlled by qubit $j$.
 	- Apply, on qubit $k$, a phase gate $P(2(π−xj)(π−xk))$.
 	- Repeat step 3.1
 As with angle encoding, normalization plays a big role in the ZZ feature map. It guarantees a healthy balance between separating the extrema of the dataset & using as big a region as possible in the feature space.

@@ -1,0 +1,24 @@
+#SoftDev #Quantum 
+**Soft layers** ensure that quantum programs can be designed, optimized, & exec efficiently on quantum hardware. Quantum error-correction techs like surface codes, concatenated codes, & others are applied to protect the quantum info from decoherence & other errors. [[FTQC]] relies on logical [[Qubits]], which are encoded using multiple physical [[Qubits]] to ensure error resilience. The soft tools & frameworks includes compilers, Middleware & hybrid integration resources that enable programmers to interact with quantum hardware efficiently. Quantum algorithms sit at the core of practical Quantum computing apps, providing quantum advantages for real-world problems. At the highest level of the [[FTQC]] Stack, Quantum computing is applied to practical problems across industries. 
+
+**SoftDev Kit** provides devs with the necessary tools, libraries, & APIs to create & test quantum algorithms. It simplifies the process of writing quantum code & integrating it with classical systems. These SDKs typically include simulators, programming  langs, & other resources to help devs design quantum circuits, visualize results, & write, exec, & debug quantum code.
+![[Pasted image 20251214190313.png]]
+Quantum programming  langs define how quantum algorithms are structd & exec. The most popular quantum programming  langs are probably those that permit access to real quantum computers. They also allow various simulators, emulators, compilers, visualizations, resource estimators, & other tools. Some even give access to other cloud-based quantum platforms. The top  langs & standards are likely **Python**, **Julia**, **C++**, **JSON**, and **JavaScript** and all of these are open-source. Specialized  langs like **Q#**, **Quipper**, and **pyQML** are designed to write quantum algorithms. These langs offer constructs & abstractions tailored to quantum computing, making it easier to express quantum [[Logic]].
+
+It is noteworthy to specify **quantum assembly langs, known as QASM**. OpenQASM lang is the most widely used which is not a typical programming lang; but a mixture of C & Assembly lang. QASM is specifically for designing quantum circuits. Even the classical langs mentioned above often use libraries & packages to leverage features not available in QASM to build quantum circuits with QASM. 
+
+As quantum computers get bigger & $>$ reliable, they'll start integrating into enterprise systems. We'll see enterprise-level apps running business process soft that needs to tackle some heavy computational problems. Instead of using classical resources to approx solutions, this soft will need to tap into a quantum processor, whether it's in an on-premises data center or accessed via the cloud in a QaaS model.
+
+**Error Correction Soft** implements error-correction codes & mitigation strategies essential for maintaining the integrity of quantum computations. Quantum systems are highly susceptible to errors due to their delicate nature & interactions with the env. The following types of quantum errors necessitate robust error correction: 
+
+**Decoherence**: 
+Quantum states interact with their env, leading to the loss of info. This can occur via $2$ primary mechanisms: 
+- **Amplitude Damping**: Loss of energy from the quantum system (e.g., qubit transitioning from $|1⟩$ to $|0⟩$). 
+- **Phase Damping**: Loss of phase info without energy loss, making qubit superposition states unusable.
+
+**Gate errors** arise during the exec of quantum gates, which are the basic operations performed on [[Qubits]]. These errors can occur due to imperfections in the control signals, inaccuracies in the timing of operations, or limitations in the hardware. Gate errors can introduce inaccuracies in the quantum computation, leading to incorrect results.
+
+**Measurement errors** occur when the process of reading out the state of a qubit is inaccurate. This can happen due to noise in the measurement apparatus, imperfect detection techs, or interference from other [[Qubits]]. Measurement errors can lead to incorrect interpretation of the qubit states, affecting the overall outcome of the quantum computation.
+
+**Compilers** transform the program gates into universal physical gates operated by the quantum computer & then into control pulses of the [[Qubits]], this part being labelled transpiling. A quantum Compiler is mostly a **transpiler** & an **optimizer** which reduce num of qubit gates through various optimization techs. Transpiling quantum code can scale badly with a large num of [[Qubits]] & gates & requires its optimizations. Compilers can also carry out optimizations specific to certain types of algorithms & hardware specifics. 
+![](https://lms.qureca.com/wp-content/uploads/uncanny-snc/21/assets/Quantum%20Software%20companies.png)

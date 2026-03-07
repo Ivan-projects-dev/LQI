@@ -3,9 +3,9 @@
 
 Angle/rotation encoding maps each component $x_i$ (feature) of the input [[Vector]] $→x$ to the rotation angle of a single-qubit gate. A simple example is using a $R_y$ gate & the value of each feature directly:  $|0⟩R_y(2x_i)→cos(x_i)|0⟩+sin(x_i)|1⟩$
 
-If multiple features need to be encoded, one can apply separate rotation gates on different [[Qubits]] or on the same qubit(s) sequentially.
+If multiple features need to be encoded, one can apply separate [[Rotation gates]] on different [[Qubits]] or on the same qubit(s) sequentially.
 
-**Angle encoding** is conceptually straightforward & hardware-friendly, as it relies primarily on single-qubit gates.
+**Angle encoding** is conceptually straightforward & hardware-friendly, as it relies primarily on [[Single-qubit gates]].
 
 In a general way, the angle encoding scheme can be summarized as follows. We assume we have a $k$-feature dataset consisting of $M$ samples & all features $x_1,…,x_k$ are real-valued:
 $→x_j:=(x_(j1),…,x_(jk))∈R_k,j=1,…,M$
