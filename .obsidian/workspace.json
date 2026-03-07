@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b06ced6f69dd7596",
+        "id": "7d8a650a40a0ab47",
         "type": "tabs",
         "children": [
           {
-            "id": "c38cca1bcbee319a",
+            "id": "c8c136fa53760833",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Programs/QPE in Q-Sharp.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "QPE in Q-Sharp"
             }
           }
         ]
@@ -70,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -169,13 +172,26 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "c38cca1bcbee319a",
+  "active": "c8c136fa53760833",
   "lastOpenFiles": [
+    "Programs/Quantum counting.md",
+    "Programs/Grover in Q-Sharp.md",
+    "Programs/Bell states & entanglement.md",
+    "Programs/Grover Oracle in Q-Sharp.md",
+    "Programs/Phase kickback in Q-Sharp.md",
+    "Programs/Superdense coding.md",
+    "Programs/Quantum RNG.md",
+    "Programs/Diffusion operator in Q-Sharp.md",
+    "Programs/Deutsch-Jozsa in Q-Sharp.md",
+    "Programs/Simulation/Simulation pattern.md",
+    "Programs/Quantum teleportation.md",
+    "Q-Sharp/Pecularities/Q-Sharp diagnostics.md",
+    "Qubits/Ancilla.md",
+    "Math/Quantum/Quantum state.md",
     "Q-Sharp/Basics/Q-Sharp namespaces.md",
     "Grover/Diffusion operator.md",
     "Q-Sharp/Pecularities/Functors/Controlled op.md",
     "Q-Sharp/Basics/Environment/Azure Quantum.md",
-    "Qubits/Ancilla.md",
     "Q-Sharp/Pecularities/Functors/Adjoint op.md",
     "Grover/SAT oracle.md",
     "broken links output.md",
@@ -184,20 +200,7 @@
     "Grover/Grover's algorithm.md",
     "Grover/Graph coloring oracle.md",
     "Grover/Full Grover circuit.md",
-    "Grover/Bounded knapsack oracle.md",
-    "QPE/Controlled unitary.md",
-    "QPE/Iterative QPE.md",
-    "QPE/QPE.md",
-    "QPE/QPE precision.md",
-    "QPE/QPE in Q-Sharp.md",
-    "QPE/QPE usage.md",
-    "QPE/Quantum counting.md",
-    "Algorithms/VQE.md",
     "QPE",
-    "Usage/HPC centers.md",
-    "Q-Sharp/Pecularities/Operations vs funcs.md",
-    "Gates/Single-qubit gates.md",
-    "Gates/Multi-qubit gates.md",
     "Q-Sharp/Programs/Simulation",
     "Q-Sharp/Pecularities/Functors",
     "Q-Sharp/Basics/Environment",

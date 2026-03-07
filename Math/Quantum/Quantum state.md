@@ -1,5 +1,5 @@
 #Quantum #Math 
-Overall probability must be $1$ when we observe a quantum system.
+Overall probability must be $1$ when we observe quantum system.
 
 For example, the following vectors cannot be a valid quantum state:
 $$\begin{pmatrix}
