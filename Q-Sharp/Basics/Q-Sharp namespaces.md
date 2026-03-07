@@ -31,7 +31,7 @@ Key operations: `ApplyToEach`, `ApplyToEachA`, `ApplyToEachCA`, `ApplyControlled
 import Std.Arithmetic.*; // quantum arithmetic
 ```
 
-Key: `ApplyQFT`, `ApplyReversedOpCA`, `ApplyReversedOpCEA`. Contains the QFT implementation used in QPE in Q-Sharp. Also includes quantum adders, comparators, & modular arithmetic for Shor's algorithm implementations.
+Key: `ApplyQFT`, `ApplyReversedOpCA`, `ApplyReversedOpCEA`. Contains the QFT implementation used in [[QPE]] in Q-Sharp. Also includes quantum adders, comparators, & modular arithmetic for Shor's algorithm implementations.
 
 ```csharp
 import Std.Diagnostics.*; //simulation & debugging

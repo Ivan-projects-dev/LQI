@@ -26,7 +26,7 @@ Rz(theta, q);
 
 **`R1(θ, q)` - phase rotation**
 $$R_1(\theta) = \begin{pmatrix}1 & 0\\0 & e^{i\theta}\end{pmatrix}$$
-Leaves $|0\rangle$ unchanged; applies phase $e^{i\theta}$ to $|1\rangle$. Differs from $R_z$ by a global phase: $R_1(\theta) = e^{i\theta/2} R_z(\theta)$. Used extensively in QFT & QPE.
+Leaves $|0\rangle$ unchanged; applies phase $e^{i\theta}$ to $|1\rangle$. Differs from $R_z$ by a global phase: $R_1(\theta) = e^{i\theta/2} R_z(\theta)$. Used extensively in QFT & [[QPE]].
 ```csharp
 R1(2.0 * PI() / 4.0, q);                   // phase π/2 to |1⟩  (= S gate)
 R1(PI(), q);                                // phase π to |1⟩    (= Z gate)

@@ -66,7 +66,7 @@ Q# uses triple-chevron for bit shifts to avoid ambiguity with generic type brack
 let n = 1 <<< 4; // 16 (not << like C# or Python)
 let m = 8 >>> 1; // 4 (right shift)
 ```
-Common mistake when porting Grover or QPE formulas from other langs.
+Common mistake when porting Grover or [[QPE]] formulas from other langs.
 
 **String interpolation requires `$"..."`**
 

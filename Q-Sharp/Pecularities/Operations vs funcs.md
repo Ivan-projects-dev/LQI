@@ -75,7 +75,7 @@ let flipIfOne = (q : Qubit) => { if M(q) == One { X(q); } };
 // Lambda func
 let double = (x : Int) -> x * 2;
 ```
-Used in Grover search to define inline oracles without declaring separate named operations.
+Used in [[Grover search]] to define inline oracles without declaring separate named operations.
 
 **`newtype` & struct wrappers**
 

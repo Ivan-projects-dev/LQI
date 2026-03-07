@@ -48,7 +48,7 @@ fixup {
 ```
 `fixup` block runs between iterations when the condition is not yet met. `until` condition is evaluated after each body execution. Unlike classical loops, `repeat-until` can be used inside adjointable operations **if** the body is adjointable - Q# handles the statistical reversal.
 
-Common use: preparing a specific [[Quantum state]] with high probability per shot; or Grover search with unknown $M$ (retry until valid solution found).
+Common use: preparing a specific [[Quantum state]] with high probability per shot; or [[Grover search]] with unknown $M$ (retry until valid solution found).
 ```csharp
 function FindFirst(arr : Int[], pred : Int -> Bool) : Int {
     for x in arr {

@@ -15,4 +15,4 @@ operation MyCircuit(q : Qubit) : Unit is Adj {
     adjoint auto;  // auto-reversed: Adjoint CNOT; Adjoint T; H
 }
 ```
-Used heavily for **uncomputation**: apply operation, use its side-effect, then `Adjoint` it to clean ancilla [[Qubits]].
+Used heavily for **uncomputation**: apply operation, use its side-effect, then `Adjoint` it to clean [[Ancilla]] [[Qubits]].

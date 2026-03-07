@@ -50,7 +50,7 @@ Measures every qubit in $Z$-basis & resets all. Most common way to read out a mu
 ```csharp
 let results = MResetEachZ(register);    // returns Result[]
 ```
-Used in Grover in Q-Sharp & QPE in Q-Sharp for final readout.
+Used in Grover in Q-Sharp & [[QPE]] in Q-Sharp for final readout.
 
 **`ResultArrayAsIntBE(results)` - decode measurement**
 
@@ -72,4 +72,4 @@ Q# **requires** all [[Qubits]] to be in $|0\rangle$ before scope exit - failing 
 
 **Measurement inside operations**
 
-Operations that contain measurements **cannot be adjoint-able** (`is Adj`). This means measurement-containing operations cannot be used inside `within { }` blocks or uncomputed. Design circuits so measurements appear only at the terminal stage, never inside [[Oracle]] bodies. See [[Ancilla qubit]] for why this matters.
+Operations that contain measurements **cannot be adjoint-able** (`is Adj`). This means measurement-containing operations cannot be used inside `within { }` blocks or uncomputed. Design circuits so measurements appear only at the terminal stage, never inside [[Oracle]] bodies. See [[Ancilla]] for why this matters.

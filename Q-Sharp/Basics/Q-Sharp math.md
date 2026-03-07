@@ -73,7 +73,7 @@ Converts a decimal approximation to a fraction $p/q$ using continued fractions:
 let (p, q) = ContinuedFractionConvergentI((numerator, denominator), maxDenominator);
 ```
 
-Used in Shor's algorithm post-processing after QPE returns an approximation to $s/r$ - continued fractions recovers the exact denominator $r$.
+Used in Shor's algorithm post-processing after [[QPE]] returns an approximation to $s/r$ - continued fractions recovers the exact denominator $r$.
 
 **Common patterns in quantum algorithms**
 
@@ -87,7 +87,7 @@ QFT phase angle for $k$-th controlled rotation:
 let angle = 2.0 * PI() / IntAsDouble(1 <<< k);
 ```
 
-QPE phase decoding:
+[[QPE]] phase decoding:
 ```csharp
 let phi = IntAsDouble(measured) / IntAsDouble(1 <<< t);   // φ ≈ measured / 2^t
 let M   = Round(IntAsDouble(1 <<< n) * Sin(phi * PI()) ^ 2.0);  // quantum counting

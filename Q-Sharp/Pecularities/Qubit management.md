@@ -25,7 +25,7 @@ borrow scratch = Qubit();
 // ... must uncompute any changes to scratch
 // scratch returned to its prior state
 ```
-Useful for implementing multi-controlled gates with fewer total [[Qubits]] - the Toffoli decomposition can use dirty ancilla to achieve $O(n)$ circuit depth.
+Useful for implementing multi-controlled gates with fewer total [[Qubits]] - the Toffoli decomposition can use dirty [[Ancilla]] to achieve $O(n)$ circuit depth.
 
 `Reset(q)` - measures `q` & applies `X` if result is `One`, ensuring $|0\rangle$. Returns no value.
 `ResetAll(qs)` - resets every qubit in an array.

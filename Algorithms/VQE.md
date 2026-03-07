@@ -60,8 +60,7 @@ Let us implement a [[CNOT]] gate on the two [[Qubits]] as [[CNOT]] $|q0⟩|q1
 After applying a [[CNOT]], measurement with Z on qubit q1 yields us the result we desire.
 
 This idea can be extended to multiple [[Qubits]] by applying [[CNOT]] in a chain struct. Such [[CNOT]] chain keeps the parity of $1s$ in the state & results in state $|1⟩$ on the final target qubit if the num of $1s$ in the state is odd, & $|0⟩$ otherwise. Hence, a measurement on the final qubit with observable $Z$ coincides with the eigenvalues of the multiqubit observable.
-!Pasted image 20260102005032.png
-!Pasted image 20260102005009.png
+
 - We select a parametrized quantum circuit $|ψ(θ)⟩$ to serve as our ansatz.
 - We init its params $|ψ(θ0)⟩$.
 - We use a classical optimizer to adjust the param $θ$, by performing measurements to compute $⟨ψ(θ0)|H|ψ(θ0)⟩$, which is the cost func we would like to minimize.

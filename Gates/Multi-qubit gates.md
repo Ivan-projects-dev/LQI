@@ -41,7 +41,7 @@ CCNOT(ctrl1, ctrl2, target);
 // equivalent:
 Controlled X([ctrl1, ctrl2], target);
 ```
-Key in [[Oracle]] construction - marks the all-$|1\rangle$ state in Diffusion operator.
+Key in [[Oracle]] construction - marks the all-$|1\rangle$ state in [[Diffusion operator]].
 
 **T-gate cost**: exact decomposition requires 7 T-gates. This makes CCNOT a significant resource on fault-tolerant hardware.
 
@@ -58,11 +58,11 @@ Used in [[SWAP test]] for state comparison.
 
 **Multi-controlled generalization**
 
-Any single-qubit gate can be made $n$-controlled via the `Controlled` functor. Q# decomposes this automatically using ancilla & Toffoli gates:
+Any single-qubit gate can be made $n$-controlled via the `Controlled` functor. Q# decomposes this automatically using [[Ancilla]] & Toffoli gates:
 ```csharp
 Controlled H([c0, c1, c2], target);      // 3-controlled H
 Controlled T([c0, c1], target);          // 2-controlled T
 ```
-Cost of $n$-controlled-$U$: $O(n)$ Toffoli gates using borrowed [[Ancilla qubit|ancilla]].
+Cost of $n$-controlled-$U$: $O(n)$ Toffoli gates using borrowed [[Ancilla|ancilla]].
 
 [[CNOT]], CZ, & SWAP are all maximally entangling for appropriate input states. Any $2$-qubit unitary can be decomposed into at most 3 [[CNOT]] gates + [[Single-qubit gates]]. This gives the **KAK decomposition** - the basis of most two-qubit gate compilers.

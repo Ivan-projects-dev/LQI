@@ -12,9 +12,9 @@ within {
 ```
 Equivalent to manually writing: `V; O; Adjoint V` - but `within/apply` is safer (Q# guarantees uncomputation even if `O` throws) & $>$ readable.
 
-**Ancilla [[Qubits]]** borrowed for intermediate computation must be returned to $|0\rangle$ before release - otherwise they cause entanglement pollution. `within/apply` enforces this structurally.
+**[[Ancilla]] [[Qubits]]** borrowed for intermediate computation must be returned to $|0\rangle$ before release - otherwise they cause entanglement pollution. `within/apply` enforces this structurally.
 
-**Diffusion operator** $D = H^{\otimes n}(2|0\rangle\langle 0| - I)H^{\otimes n}$ is canonical example:
+**[[Diffusion operator]]** $D = H^{\otimes n}(2|0\rangle\langle 0| - I)H^{\otimes n}$ is canonical example:
 ```csharp
 operation ApplyDiffusion(register : Qubit[]) : Unit is Adj + Ctl {
     within {
@@ -29,7 +29,7 @@ operation ApplyDiffusion(register : Qubit[]) : Unit is Adj + Ctl {
 
 **[[Oracle]] uncomputation example**
 
-Marking [[Oracle]] for $f(x) = 1$ iff $x = x_0$: compute into ancilla, flip target, uncompute:
+Marking [[Oracle]] for $f(x) = 1$ iff $x = x_0$: compute into [[Ancilla]], flip target, uncompute:
 ```csharp
 operation MarkSolution(
     register : Qubit[],
