@@ -1,0 +1,2 @@
+#SoftDev #CSharp #ADT 
+**Concurrent Queue** is a data struct that represents FIFO Queue of elements. It allows multiple threads to add & remove elements from the Queue concurrently without requiring sync. It does not use locks or other blocking mechanisms to ensure [[Thread]] safety. Instead, it uses atomic operations & compare-and-swap algorithms to manipulate the Queue.

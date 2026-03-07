@@ -16,9 +16,9 @@ $U(T,0)≈n∏k=1exp(−i(1−kδtT)δtHi)exp(−ikδtTδtHf)$.
 
 This equation suggests that by applying the Hamiltonians Hi and HF iteratively, we can approx adiabatic evolution as $n$ gets larger & larger.
 
-This is the inspiration behind QAOA, although it does not exactly mimic the equation above for $U(T,0)$.
+This is the inspiration behind [[QAOA]], although it does not exactly mimic the equation above for $U(T,0)$.
 
-Implementation of QAOA consist of $3$ parts:
+Implementation of [[QAOA]] consist of $3$ parts:
 - init state
 - [[Mixer Hamiltonian]]
 - [[Cost Hamiltonian]]

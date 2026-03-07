@@ -20,4 +20,4 @@ Therefore:
 - Minimizing the **Ising energy**
 - Is equivalent to finding the **ground state** of (H_C)
 
-> Any optimization problem that can be mapped to an **[[Ising model]]** can be directly implemented as **cost Hamiltonian** for quantum algorithms (e.g. QAOA, Quantum annealing).
+> Any optimization problem that can be mapped to an **[[Ising model]]** can be directly implemented as **cost Hamiltonian** for quantum algorithms (e.g. [[QAOA]], [[Quantum annealing]]).

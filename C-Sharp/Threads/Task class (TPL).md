@@ -1,0 +1,4 @@
+#CSharp #OS #SoftDev 
+**Task class** used for $>$ complex or parallel tasks is an important part of the [[TPL]]. Task class allows us to create tasks that can run async, improving both performance & code readability. It also simplifies task management by handling [[Thread Pooling]] & sync. It reduces the task of managing threads manually like the traditional way using [[Thread]] Class.
+
+Provides an effective way to cancel a task co-operative using the `CancellationToken` without forcibly terminating a [[Thread]] which will throw an exception which will interrupt the flow of the program. [[Thread]]`.Abort()` is not recommended in modern C# as it is unsafe. 

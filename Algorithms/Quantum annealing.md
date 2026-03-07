@@ -1,0 +1,4 @@
+#Quantum #Algorithm 
+**Quantum annealing (QA)** is a heuristic optimization algorithm that runs in the framework of AQC. D-Wave company provides Quantum annealers that can run quantum annealing algorithms.
+
+Quantum annealing & AQC are often thought as the same thing. However, QA is a special case of AQC. For instance in QA, the Hamiltonians should be stoquastic, i.e., $⟨i|H|j⟩≤0$, $∀i,j∈{0,1}n$, $i≠j$. With this property, $H$ has real nonpositive off-diagonal [[Matrix]] elements & the ground state of $H$ can be expressed as a classical [[Probability distribution]]. Further$>$, computation does not take place in a closed system.

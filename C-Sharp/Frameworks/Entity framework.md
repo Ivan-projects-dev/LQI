@@ -1,0 +1,2 @@
+#CSharp #SoftDev 
+**Entity Framework (EF)** is an ORM that enables [[Net Framework]] devs to work with relational data using Domain-specific objects. It eliminates the need for most of the data-access code that devs usually need to write.
