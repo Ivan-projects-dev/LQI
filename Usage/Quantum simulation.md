@@ -1,0 +1,4 @@
+#Quantum #Chemistry #Physics 
+**Quantum simulation** involves replicating the behavior of quantum systems using another controllable quantum system. The primary objective is not computation but rather emulation, allowing to explore the behavior of complex physical & chemical systems, aiding in understanding fundamental phenomena like chemical reactions or condensed matter physics.  
+
+Quantum simulators come in various forms, from digital to analog. Digital simulators emulate quantum systems using discrete [[Qubits]] manipulated through algorithms. Analog simulators, on the other hand, utilize the natural behavior of quantum systems to imitate other quantum systems, creating $>$ direct emulation.

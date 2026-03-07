@@ -1,0 +1,3 @@
+#Math #Physics #Quantum 
+Paul Dirac formulated the **Dirac equation**, relativistic descr of the wave func of an electron, to describe the behavior or state of particle using **wave func**. However, the Dirac equation’s math formalism was complex & not intuitive. It wasn't until 1939, that **bra-ket notation**, now known as **Dirac notation**, provided $>$ concise & powerful way to represent quantum states & operators.
+![[Pasted image 20250705184550.png]]

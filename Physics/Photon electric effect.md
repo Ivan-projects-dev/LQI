@@ -1,0 +1,3 @@
+#Physics #Quantum 
+In $1905$ Albert Einstein published paper that explained the photoelectric effect. He proposed that light consists of individual packets of energy called **photons**. When light hits material, photons transfer their energy to electrons, causing them to be ejected from the material. This discovery was crucial in establishing the particle nature of light.
+![[Pasted image 20250705184148.png]]

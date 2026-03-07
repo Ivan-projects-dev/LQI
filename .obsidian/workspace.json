@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "3204d9d213357d32",
+    "type": "split",
+    "children": [
+      {
+        "id": "84dd3c3957cb8757",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "274e0a52330a6d5e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eabad819e154489e",
+    "type": "split",
+    "children": [
+      {
+        "id": "bad12a8a5114cd15",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9c58883d0361cb1a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "cebf6c0e1e0ee58b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5fc352e8fbceab75",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 267.501522064209
+  },
+  "right": {
+    "id": "3822b5fc5b75b3b0",
+    "type": "split",
+    "children": [
+      {
+        "id": "c6be6a59e5634c2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a04301e333edbb67",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Cloud/Cloud types/Public cloud.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Public cloud"
+            }
+          },
+          {
+            "id": "057c87f9d54c04fa",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Business/Companies/Google.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Google"
+            }
+          },
+          {
+            "id": "47f728ffbb58f3dd",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "0c541246f5594450",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Finance/Dividend yield.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Dividend yield"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-matrix:Obsidian Matrix": false,
+      "obisidian-note-linker:Note Linker": false
+    }
+  },
+  "active": "274e0a52330a6d5e",
+  "lastOpenFiles": [
+    "broken links output.md",
+    "Physics/Schrödinger equation.md",
+    "Physics/Quantum adiabatic theorem.md",
+    "Physics/Qubits.md",
+    "Cybersecurity/QKD.md",
+    "Physics/Dirac equation.md",
+    "Physics/Hamiltoan.md",
+    "Physics/Ising model.md",
+    "Physics/Cost Hamiltonian.md",
+    "Physics/Photon electric effect.md",
+    "Physics/Wave-particle duality.md",
+    "Physics/Uncertainty principle.md",
+    "Physics/Time-Dependent Hamiltonian.md",
+    "Physics/Blackbody radiation.md",
+    "Usage/Adiabatic quantum computing.md",
+    "Usage/HPC centers.md",
+    "Usage/Quantum communication.md",
+    "Usage/Quantum sensing.md",
+    "Usage/Quantum simulation.md",
+    "z_img/Pasted image 20251214190313.png",
+    "z_img/Pasted image 20260102005032.png",
+    "z_img/Pasted image 20260304224904.png",
+    "z_img/Pasted image 20260304222855.png",
+    "z_img/Pasted image 20260221133912.png",
+    "z_img/Pasted image 20260301171032.png",
+    "z_img/Pasted image 20260215204344.png",
+    "z_img/Pasted image 20260215204319.png",
+    "z_img/Pasted image 20260102010456.png",
+    "z_img/Pasted image 20251007203339.png",
+    "z_img",
+    "Algorithms/Deutsch-Jozsa algorithm.md",
+    "Algorithms/Quantum num generator.md",
+    "Algorithms/VQA.md",
+    "Encoding/Amplitude Encoding.md",
+    "Encoding/Feature maps.md",
+    "Encoding/Superposition Encoding.md",
+    "Encoding/Hamiltonian encoding.md",
+    "Programming/Q-Sharp/Programs/Simulation",
+    "Programming/Q-Sharp/Basics",
+    "Gates",
+    "Programming/Q-Sharp/Implementation/Superdense coding.md.tmp.5.1772906999014",
+    "Programming/Q-Sharp/Implementation/Quantum RNG.md.tmp.5.1772906967256",
+    "Programming/Q-Sharp/Implementation/Bernstein-Vazirani in Q-Sharp.md.tmp.5.1772906939750",
+    "Programming/Q-Sharp/Implementation/Deutsch-Jozsa in Q-Sharp.md.tmp.5.1772906915368",
+    "Programming/Q-Sharp/Q-Sharp generics.md.tmp.5.1772906886831",
+    "Programming/Q-Sharp/Q-Sharp attributes.md.tmp.5.1772906860506",
+    "Untitled.canvas"
+  ]
+}
