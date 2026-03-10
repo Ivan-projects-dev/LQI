@@ -1,7 +1,7 @@
 #Physics #Quantum #Math 
 Electrons have quantum mechanical property called _spin_ which is the angular momentum of the particle. When measured, it is either $h/2$ (spin up) or $−h/2$ (spin down) where $h$ is Planck's const.
 
-Electron’s spin is closely related to its magnetic moment so that an electron behaves like tiny bar magnet with North & South pole. **Ferromagnetism** arises when collection of atomic spins align such that their associated magnetic moments all point in the same direction, & the spins behave like big magnet with net macroscopic magnetic moment.
+Electron’s spin is closely related to its magnetic moment so that electron behaves like tiny bar magnet with North & South pole. **Ferromagnetism** arises when collection of atomic spins align such that their associated magnetic moments all point in the same direction, & the spins behave like big magnet with net macroscopic magnetic moment.
 ![[Pasted image 20260101205937.png]]
 
 **Ising Model** is math model to study ferromagnetism in statistical physics. Ising model was first proposed by Wilhelm Lenz who gave it as problem to his graduate student Ernst Ising, after whom this model is named. 

@@ -3,4 +3,4 @@ Before running on real quantum hardware, you need to figure out if your program 
 
 Microsoft Quantum resource estimator allows you to assess architectural decisions, compare qubit technologies, & determine the resources needed to execute a given quantum algorithm. You can choose from pre-defined fault-tolerant protocols & specify assumptions of the underlying physical qubit model.
 
-Microsoft Quantum resource estimator is free of charge & doesn't require an Azure account.
+Microsoft Quantum resource estimator is free of charge & doesn't require Azure account.

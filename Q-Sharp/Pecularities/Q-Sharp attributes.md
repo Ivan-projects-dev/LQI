@@ -56,7 +56,7 @@ Callable still compiles & runs - `@Obsolete` is advisory only. Used when evolvin
 @SimulatableIntrinsic()
 operation MyCustomGate(q : Qubit) : Unit is Adj + Ctl;
 ```
-Not used in ordinary application code; relevant for simulator authors.
+Not used in ordinary app code; relevant for simulator authors.
 
 Attributes take `()` even when there are no arguments. Multiple attributes stack vertically:
 ```csharp

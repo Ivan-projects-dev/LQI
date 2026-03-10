@@ -17,7 +17,7 @@ use q = Qubit();
 H(q);
 // scope ends - runtime error: qubit not in |0⟩
 ```
-Always `Reset(q)` or `MResetZ(q)` before scope exit. This enforces correct uncomputation but also means you cannot return a qubit from an operation - the qubit must stay alive in the caller's scope.
+Always `Reset(q)` or `MResetZ(q)` before scope exit. This enforces correct uncomputation but also means you cannot return a qubit from operation - the qubit must stay alive in the caller's scope.
 
 **`Result`-dependent branching is restricted on hardware**
 
@@ -30,7 +30,7 @@ Operations declared `is Adj` cannot contain `Result`-conditioned branches at all
 
 **`Adjoint` cannot be generated for operations with measurements**
 
-Any operation containing `M`, `Measure`, `MResetZ`, etc., cannot declare `is Adj`. Attempting to call `Adjoint` on such an operation is a compile error. This is why [[Oracle]] bodies must be purely unitary - measurements are only at the terminal readout stage:
+Any operation containing `M`, `Measure`, `MResetZ`, etc., cannot declare `is Adj`. Attempting to call `Adjoint` on such operation is a compile error. This is why [[Oracle]] bodies must be purely unitary - measurements are only at the terminal readout stage:
 ```csharp
 operation BadOracle(q : Qubit) : Unit is Adj {
     let r = M(q);   // compile error: cannot auto-generate Adjoint
@@ -77,7 +77,7 @@ Message($"n = {n}, n^2 = {n * n}");
 ```
 `Message` is the only string output func - there is no `print` or `Console.WriteLine`.
 
-**Operations are not functions - they have side effects**
+**Operations are not funcs - they have side effects**
 
 Calling operation twice on the same qubit applies the gate twice. Unlike func call that can be memorized, every operation call has real effect on [[Quantum state]]:
 ```csharp

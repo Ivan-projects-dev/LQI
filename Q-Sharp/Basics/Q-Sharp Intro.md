@@ -25,7 +25,7 @@ namespace Superposition {
     }
 }
 ```
-Based on the comments (`//`), the Q# program first allocates a qubit, applies an operation to put the qubit in superposition, measures the qubit state, resets the qubit, & returns the result.
+Based on the comments (`//`), the Q# program first allocates a qubit, applies operation to put the qubit in superposition, measures the qubit state, resets the qubit, & returns the result.
 
 Q# programs can optionally start with a user-defined namespace, such as:
 ```c#
@@ -52,7 +52,7 @@ operation MeasureOneQubit() : Result {
 ```
 Each Q# program can have only one `namespace`. If you don't specify a namespace, the Q# Compiler uses the filename as the namespace.
 
-Every Q# program must have an entry point, which is the starting point of the program. By default, the Q# Compiler starts executing a program from the `Main()` operation, if available, which can be located anywhere in the program. Optionally, you can use the `@EntryPoint()` attribute to specify any operation in the program as the point of execution.
+Every Q# program must have entry point, which is the starting point of the program. By default, the Q# Compiler starts executing a program from the `Main()` operation, if available, which can be located anywhere in the program. Optionally, you can use the `@EntryPoint()` attribute to specify any operation in the program as the point of execution.
 
 For example, in the `Superposition` program, the `MeasureOneQubit()` operation is the entry point of the program because it has the `@EntryPoint()` attribute before the operation definition:
 ```c#
@@ -128,7 +128,7 @@ operation SayHelloQ() : Unit {
     Message("Hello quantum world!");
 }
 ```
-Q# standard library also provides operations that you can use in quantum programs, such as the Hadamard operation, `H`, in the `Superposition` program. Given a qubit in the Z-basis, `H` puts the qubit into an even superposition, where it has a 50% chance of being measured as `Zero` or `One`.
+Q# standard library also provides operations that you can use in quantum programs, such as the Hadamard operation, `H`, in the `Superposition` program. Given a qubit in the Z-basis, `H` puts the qubit into even superposition, where it has a 50% chance of being measured as `Zero` or `One`.
 
 While there are many types of quantum measurements, Q# focuses on projective measurements on single [[Qubits]], also known as Pauli measurements.
 

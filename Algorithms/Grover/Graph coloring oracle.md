@@ -10,7 +10,7 @@ NP-complete for $K \geq 3$. Grover algorithm searches the $K^n$ possible colorin
 2. **Combine edge oracles**: allocate one [[Ancilla]] qubit per edge. Apply all . The coloring is valid iff no edge [[Ancilla]] was flipped (all ). Apply a multi-controlled NOT to an output qubit conditioned on all edge ancillas being . Uncompute edge ancillas.
 3. **Phase kickback**: set output qubit to $|{-}⟩$, apply the marking [[Oracle]], uncompute. Valid colorings receive phase $-1$:
 $$U_{\text{color}}^{\text{phase}}:|x⟩ \mapsto (-1)^{[\text{valid}(x)]}|x⟩$$
-**[[Grover search]]**: with the above phase [[Oracle]], run Grover algorithm for $k^* \approx \frac{\pi}{4}\sqrt{K^n / M}$ iterations, where $M$ = num of valid colorings. As with SAT, $M$ may be unknown - use Quantum counting or exponential search from [[Grover solutions]].
+**[[Grover search]]**: with the above phase [[Oracle]], run Grover algorithm for $k^* \approx \frac{\pi}{4}\sqrt{K^n / M}$ iterations, where $M$ = num of valid colorings. As with SAT, $M$ may be unknown - use [[Quantum counting]] or exponential search from [[Grover solutions]].
 
 **Resource count**: $|E|$ [[Ancilla]] [[Qubits]] for edge checks + 1 output qubit. Each Grover iteration: $O(|E|)$ gate cost.
 

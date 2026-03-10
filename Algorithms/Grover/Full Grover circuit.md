@@ -15,7 +15,7 @@ b. **[[Diffusion operator]]** $D = H^{\otimes n}(2|0\rangle\langle 0| - I)H^{\ot
 
 3. **Optimal stop after $k^*$ iterations**:
 $$k^* = \left\lfloor \frac{\pi}{4}\sqrt{\frac{N}{M}} \right\rceil$$
-For unknown $M$: use Quantum counting or exponential search (see [[Grover solutions]]).
+For unknown $M$: use [[Quantum counting]] or exponential search (see [[Grover solutions]]).
 
 4. Measure the $n$ data [[Qubits]] in the computational basis. With probability $\geq 1 - M/N$ the result is valid solution $x^*$ satisfying $f(x^*) = 1$. Verify classically: evaluate $f(x^*)$ once to confirm.
 

@@ -10,7 +10,7 @@ Define **spin variables**: $s_i \in [+1, -1]$ such that:  $Z_i \ket{s_i} = s_i \
 For computational basis state $\ket{s} = \ket{s_1 s_2 \dots s_n}$ we have:  
 $$H_C \ket{s}  
 = \left( \sum_i h_i s_i + \sum_{i<j} J_{ij} s_i s_j \right) \ket{s}$$
-Thus, $\ket{s}$ is an **eigenstate** of $H_C$ with eigenvalue:  
+Thus, $\ket{s}$ is **eigenstate** of $H_C$ with eigenvalue:  
 $E(s) = \sum_i h_i s_i + \sum_{i<j} J_{ij} s_i s_j$
 **Ising model energy func** is defined as:  
 $$E_{\text{Ising}}(s)  
@@ -20,4 +20,4 @@ Therefore:
 - Minimizing the **Ising energy**
 - Is equivalent to finding the **ground state** of (H_C)
 
-> Any optimization problem that can be mapped to an **[[Ising model]]** can be directly implemented as **cost Hamiltonian** for quantum algorithms (e.g. [[QAOA]], [[Quantum annealing]]).
+> Any optimization problem that can be mapped to **[[Ising model]]** can be directly implemented as **cost Hamiltonian** for quantum algorithms (e.g. [[QAOA]], [[Quantum annealing]]).

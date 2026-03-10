@@ -1,5 +1,5 @@
 #ML #Quantum 
-**Hybrid [[QFNN]]**: each "neuron" or layer outputs a classical value (obtained by measuring an ancillary or target qubit). That output is then fed into the next layer, potentially re-encoded into a new [[Quantum state]]. This approach is modular - each quantum layer is relatively small & can be exec separately on quantum hardware - but requires repeated measurements & re-encodings.
+**Hybrid [[QFNN]]**: each "neuron" or layer outputs a classical value (obtained by measuring ancillary or target qubit). That output is then fed into the next layer, potentially re-encoded into a new [[Quantum state]]. This approach is modular - each quantum layer is relatively small & can be exec separately on quantum hardware - but requires repeated measurements & re-encodings.
 **Coherent [[QFNN]]**: [[Qubits]] remain in a superposition across multiple layers without intermediate measurements. All the "neurons" (parametrized gates) are implemented simultaneously on the same multi-qubit register, preserving coherence between layers. This can reduce overhead from repeated measurements but tends to be $>$ demanding on hardware, as it may require many [[Qubits]] & deeper circuits.
 
 Both approaches share the same conceptual goal: **learn a func** $f(→x)$ by adjusting quantum gate params, but they differ in how classical outputs connect one layer to the next.

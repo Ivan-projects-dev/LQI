@@ -73,7 +73,7 @@ Converts a decimal approximation to a fraction $p/q$ using continued fractions:
 let (p, q) = ContinuedFractionConvergentI((numerator, denominator), maxDenominator);
 ```
 
-Used in Shor's algorithm post-processing after [[QPE]] returns an approximation to $s/r$ - continued fractions recovers the exact denominator $r$.
+Used in Shor's algorithm post-processing after [[QPE]] returns approximation to $s/r$ - continued fractions recovers the exact denominator $r$.
 
 **Common patterns in quantum algorithms**
 

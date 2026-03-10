@@ -41,7 +41,7 @@ Key: `DumpMachine`, `DumpRegister`, `CheckZero`, `Fact`, `CheckOperationsAreEqua
 ```csharp
 import Std.Random.*;
 ```
-Key: `DrawRandomInt(min, max)`, `DrawRandomDouble(min, max)`, `DrawRandomBool(prob)`. Used in Grover in Q-Sharp exponential search to pick a random iteration count. Note: these are **classical** RNG calls, not quantum - for quantum randomness use measurement of $|+\rangle$.
+Key: `DrawRandomInt(min, max)`, `DrawRandomDouble(min, max)`, `DrawRandomBool(prob)`. Used in [[Grover in Q-Sharp]] exponential search to pick a random iteration count. Note: these are **classical** RNG calls, not quantum - for quantum randomness use measurement of $|+\rangle$.
 
 ```csharp
 import Std.ResourceEstimation.*; 

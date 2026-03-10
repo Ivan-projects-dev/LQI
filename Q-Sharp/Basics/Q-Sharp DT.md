@@ -56,7 +56,7 @@ operation Reset(q : Qubit) : Unit { ... }
 
 **Type inference & `let` / `mutable`**
 
-`let` declares an immutable binding (type inferred):
+`let` declares immutable binding (type inferred):
 ```csharp
 let n = 5;          // Int
 let theta = PI();   // Double

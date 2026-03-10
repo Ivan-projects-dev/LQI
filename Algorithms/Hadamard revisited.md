@@ -39,4 +39,4 @@ So, if the func is const, then this sum adds up to $±1$, meaning that we observ
 
 Similarly, the probability of observing $z=|0⟩⊗n$ is $0$ if the func is **balanced** since exactly half of the terms have opposite signs & in this case we observe non-$0$ string.
 
-In contrast to the classical strategy, which requires exponentially many queries, Deutsch-Jozsa can solve the same problem making only $1$ query. This is an **exponential separation**, with respect to an [[Oracle]], that is in the [[Oracle]] model of computation.
+In contrast to the classical strategy, which requires exponentially many queries, Deutsch-Jozsa can solve the same problem making only $1$ query. This is an **exponential separation**, with respect to [[Oracle]], that is in the [[Oracle]] model of computation.

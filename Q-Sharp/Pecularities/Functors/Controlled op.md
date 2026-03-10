@@ -21,14 +21,14 @@ operation MyOp(q : Qubit) : Unit is Adj + Ctl { ... }
 Controlled Adjoint T([ctrl], q);
 ```
 
-**`ControlledOnInt`** - applies an operation controlled on a specific int state of a qubit register (not just all-$|1\rangle$):
+**`ControlledOnInt`** - applies operation controlled on a specific int state of a qubit register (not just all-$|1\rangle$):
 ```csharp
 // Apply X to target only if register == 5 (binary 101)
 ControlledOnInt(5, X)(register, target);
 ```
 Useful for [[Oracle]] construction - marks specific computational basis states.
 
-**`ControlledOnBitString`** - same but controlled on an explicit bit pattern:
+**`ControlledOnBitString`** - same but controlled on explicit bit pattern:
 ```csharp
 ControlledOnBitString([true, false, true], X)(register, target);
 ```

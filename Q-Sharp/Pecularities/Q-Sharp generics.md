@@ -13,7 +13,7 @@ let b = Identity<Bool>(true);
 
 Type argument can be inferred from the value, so explicit `<Int>` is usually omitted:
 ```csharp
-let n = Identity(5);        // inferred 'T = Int
+let n = Identity(5); // inferred 'T = Int
 ```
 
 Operations can be generic too. Type parameter may appear in argument types, return types, or both:
@@ -35,9 +35,7 @@ operation ApplyAndUndo<'T>(op : 'T => Unit is Adj, x : 'T) : Unit {
 }
 ```
 
-**Standard library uses of generics**
-
-Most `Std.Arrays` & `Std.Canon` functions are generic. Examples:
+Most `Std.Arrays` & `Std.Canon` funcs are generic. Examples:
 ```csharp
 // Mapped : ('T -> 'U, 'T[]) -> 'U[]
 let doubled = Mapped(x -> x * 2, [1, 2, 3]); // [2, 4, 6]
@@ -56,11 +54,9 @@ ApplyToEach(H, register);
 ApplyToEach(X, register);
 ```
 
-**Constraints & limitations**
-
 Q# type parameters are unconstrained - there is no `where 'T : IComparable` syntax. The only constraint is structural: the concrete type must support whatever operations the body calls on `'T`.
 
-Arithmetic operators (`+`, `*`, etc.) are **not** generic in Q#. A function `function Add<'T>(a : 'T, b : 'T) : 'T { return a + b; }` is compile error - there is no num typeclass. Write separate functions for `Int` & `Double`.
+Arithmetic operators (`+`, `*`, etc.) are **not** generic in Q#. A func `func Add<'T>(a : 'T, b : 'T) : 'T { return a + b; }` is compile error - there is no num typeclass. Write separate funcs for `Int` & `Double`.
 
 Qubit arrays work with generic operations because `Qubit` satisfies the `'T => Unit` call shape, but `Qubit` values themselves cannot be compared, copied, or stored generically.
 

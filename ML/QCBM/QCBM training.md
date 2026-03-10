@@ -12,20 +12,20 @@ Like a quantum [[Neural network]], a [[QCBM]] can suffer from **barren plateaus
 
 Differentiable learning of [[QCBM]] follows the same principles as that of training the QNNs: minimization of the cost func with the gradient descent method. The main difference is the form of the cost func. In the case of a [[QNN]]-based classifier, the cost func represents the classification error, while the cost func for [[QCBM]] represents the distance between $2$ probability distributions: the distribution of samples in the training dataset & the distribution of samples in the generated dataset.
 
-Let $θ$ denote the set of adjustable [[QCBM]] params, $pθ(⋅)$ the [[QCBM]] distribution, and $π(⋅)$ the data distribution. Then we can define the cost func $L(θ)$ as $L(θ)=∑x|pθ(x)−π(x)|$ where the sum goes over all samples $x$ in the dataset. This cost func is a strong metric but may not be the easiest to deal with. An efficient alternative choice of the cost func is the **Max Mean Discrepancy**: $L(θ)=Ex∼pθ,y∼pθ[K(x,y)]−2Ex∼pθ,y∼π[K(x,y)]+Ex∼π,y∼π[K(x,y)]$
+Let $θ$ denote the set of adjustable [[QCBM]] params, $pθ(⋅)$ the [[QCBM]] distribution, and $π(⋅)$ the data distribution. Then we can define the cost func $L(θ)$ as $L(θ)=∑x|pθ(x)−π(x)|$ where the sum goes over all samples $x$ in the dataset. This cost func is a strong metric but may not be the easiest to deal with. efficient alternative choice of the cost func is the **Max Mean Discrepancy**: $L(θ)=Ex∼pθ,y∼pθ[K(x,y)]−2Ex∼pθ,y∼π[K(x,y)]+Ex∼π,y∼π[K(x,y)]$
 
 where $K(⋅,⋅)$ is a **kernel func**, i.e., a measure of similarity between points in the sample space. A popular choice of kernel func is the Gaussian mixture: $K(x,y)=1cc∑i=1exp(−∥x−y∥22σ2i)$
 
 for some $c∈N$ and where $(σi)i=1,…,c$ are the Bandwidth params of each Gaussian kernel and $∥⋅∥$ is the $L_2$ norm.
 
-We can also explore the possibility of using **quantum kernels**. Quantum kernels can provide an advantage over classical methods for kernels that are difficult to compute on a classical device. For example, we can consider a non-variational quantum kernel method, which uses a quantum circuit $U(x)$ to map real data into a [[Quantum state]] $|ϕ⟩$ via a _feature map_: $|ϕ(x)⟩=U(x)|0⟩⊗n$
+We can also explore the possibility of using **quantum kernels**. Quantum kernels can provide advantage over classical methods for kernels that are difficult to compute on a classical device. For example, we can consider a non-variational quantum kernel method, which uses a quantum circuit $U(x)$ to map real data into a [[Quantum state]] $|ϕ⟩$ via a _feature map_: $|ϕ(x)⟩=U(x)|0⟩⊗n$
 
 The kernel func is then defined as the squared inner product $K(x,y)=|⟨ϕ(x)|ϕ(y)⟩|^2$
 
 Quantum kernel is evaluated on a quantum computer & is hard to compute on a classical one. Taking into account the mapping $|ϕ(x)⟩=U(x)|0⟩⊗n$ and denoting $|0⟩=|0⟩⊗n$, the kernel becomes $K(x,y)=|⟨0|U†(x)U(y)|0⟩|^2$ which is the probability of measuring the all-$0$ outcome. It can be calculated by measuring, in the computational basis, the state which results from running the circuit given by $U(y)$, followed by that of $U†(x)$.
 
 Due to optimization challenges on NISQ hardware (noise, shot variance, large param spaces), **evolutionary algorithms** or other [[Derivative]]-free methods can be effective:
-- **Genetic Algorithms (GA)**: GA is a powerful evolutionary search heuristic. It performs a multi-directional search by maintaining a population of proposed solutions (chromosomes) for a given problem. Each solution is represented in a fixed alphabet with an established meaning (genes). The population undergoes a simulated evolution with relatively good solutions producing offspring, which subsequently replace the worse ones, & the quality of a solution is estimated with some objective func (env). For QCBMs we can:
+- **Genetic Algorithms (GA)**: GA is a powerful evolutionary search heuristic. It performs a multi-directional search by maintaining a population of proposed solutions (chromosomes) for a given problem. Each solution is represented in a fixed alphabet with established meaning (genes). The population undergoes a simulated evolution with relatively good solutions producing offspring, which subsequently replace the worse ones, & the quality of a solution is estimated with some objective func (env). For QCBMs we can:
     1. Represent each [[QCBM]] param config as a "chromosome".
     2. Mutate angles randomly with decreasing mutation rates, balancing exploration vs. exploitation.
     3. Evaluate a cost func (e.g., distribution mismatch) by generating samples from the [[QCBM]].

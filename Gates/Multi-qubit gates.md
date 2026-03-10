@@ -10,7 +10,7 @@ CNOT(ctrl, target);
 Controlled X([ctrl], target);
 ```
 
-Used to create Bell states & entanglement:
+Used to create [[Bell states]] & entanglement:
 ```csharp
 H(q0);
 CNOT(q0, q1); // produces (|00⟩ + |11⟩)/√2

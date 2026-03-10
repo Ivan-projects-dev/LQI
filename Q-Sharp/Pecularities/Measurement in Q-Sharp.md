@@ -39,22 +39,22 @@ let xResult = MResetX(q);    // measures in |+⟩/|−⟩ basis
 
 **`MeasureEachZ(qs)` - measure array in Z-basis**
 
-Measures every qubit in an array; returns `Result[]`. Does not reset [[Qubits]].
+Measures every qubit in array; returns `Result[]`. Does not reset [[Qubits]].
 ```csharp
 let results = MeasureEachZ(register);
 ```
 
 **`MResetEachZ(qs)` - measure & reset array**
 
-Measures every qubit in $Z$-basis & resets all. Most common way to read out a multi-qubit register at the end of an algorithm:
+Measures every qubit in $Z$-basis & resets all. Most common way to read out a multi-qubit register at the end of algorithm:
 ```csharp
 let results = MResetEachZ(register);    // returns Result[]
 ```
-Used in Grover in Q-Sharp & [[QPE]] in Q-Sharp for final readout.
+Used in [[Grover in Q-Sharp]] & [[QPE]] in Q-Sharp for final readout.
 
 **`ResultArrayAsIntBE(results)` - decode measurement**
 
-Converts a `Result[]` to an `Int` using big-endian bit ordering. From `Std.Convert`.
+Converts a `Result[]` to `Int` using big-endian bit ordering. From `Std.Convert`.
 ```csharp
 let bits = MResetEachZ(register);
 let value = ResultArrayAsIntBE(bits);   // e.g. [One, Zero, One] → 5

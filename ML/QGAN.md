@@ -1,26 +1,26 @@
 #ML #Quantum 
-**Quantum [[GAN]]** mirrors the classical [[GAN]] adversarial setup but introduces **quantum models** for the generator, the discriminator, or both:
-- **Quantum Generator + Classical Discriminator**: generator is a parametrized quantum circuit (e.g., a variational circuit) that outputs quantum states or classical data through measurements. The discriminator remains classical, receiving either real data or measured generator outputs.
-- **Quantum Generator + Quantum Discriminator**: both components are quantum. The generator outputs quantum states, while the discriminator attempts to distinguish these from the real quantum data.
+**Quantum GAN** mirrors the classical GAN adversarial setup but introduces **quantum models** for the generator, the discriminator, or both:
+- **Quantum Generator + Classical Discriminator**: generator is parametrized quantum circuit (e.g., a variational circuit) that outputs quantum states or classical data through measurements. The discriminator remains classical, receiving either real data or measured generator outputs.
+	- **Quantum Generator + Quantum Discriminator**: both components are quantum. Generator outputs quantum states, while the discriminator attempts to distinguish these from the real quantum data.
 - **Classical Data, Partly Quantum**: even if the dataset is classical, one might replace just the generator or the discriminator (or both) with quantum neural networks that accept or produce classical outputs via measurement-based readouts.
 
 When real data is also inherently **quantum** (i.e., quantum states), QGANs can seamlessly process it without measurement overhead until the discriminator’s final step, unlocking new possibilities in fields like quantum chemistry or [[Quantum sensing]].
 
-The training scheme follows the classical [[GAN]] approach. If we let $G$ be the generator and $D$ the discriminator:
-1. **Discriminator Loss** $(LD)$: Often a binary cross-entropy distinguishing real states (or data) from generated ones. For instance, if $|ψ_t⟩$ represents a real [[Quantum state]] and $|ψ_g⟩$ a generated state, a simple cross-entropy loss is $LD=−12(log[D(|ψt⟩)]+log[1−D(|ψg⟩)])$ 
-Here, $D(⋅)$ returns a scalar in $[0,1]$ indicating how "real" an input is.   
-2. **Generator Loss** $(LG)$: The generator seeks to **fool** the discriminator by producing samples the discriminator misclassifies as real. Common choice (mirroring classical GANs) is $LG=−log[D(|ψg⟩)]$
+The training scheme follows the classical GAN approach. If we let $G$ be the generator & $D$  discriminator:
+1. **Discriminator Loss** $(LD)$: Often binary cross-entropy distinguishing real states (or data) from generated ones. For instance, if $|ψ_t⟩$ represents real [[Quantum state]] & $|ψ_g⟩$ generated state, simple cross-entropy loss is $LD=−12(log[D(|ψt⟩)]+log[1−D(|ψg⟩)])$ 
+Here, $D(⋅)$ returns a scalar in $[0,1]$ indicating how "real" input is.   
+2. **Generator Loss** $(LG)$: generator seeks to **fool** the discriminator by producing samples the discriminator misclassifies as real. Common choice (mirroring classical GANs) is $LG=−log[D(|ψg⟩)]$
 
 **Training Loop**:
 1. **Initialize** both generator $G$ and discriminator $D$ with random params (classical or quantum).
 2. **Optimize $D$** to discriminate real data from early generator outputs.
 3. **Optimize $G$** to produce samples that the updated $D$ incorrectly labels as real.
-4. **Iterate** these steps multiple times, alternately refining $D$ and $G$. Over training, the generator output should become progressively $>$ "realistic," while the discriminator becomes $>$ adept - leading to an equilibrium where the generated data is difficult to distinguish from real data.
+4. **Iterate** these steps multiple times, alternately refining $D$ and $G$. Over training, the generator output should become progressively $>$ "realistic," while the discriminator becomes $>$ adept - leading to equilibrium where the generated data is difficult to distinguish from real data.
 When **both** the generator & discriminator are quantum, the generator outputs quantum states & the discriminator uses a quantum measurement strategy to classify states as real or fake. This approach suits **quantum data** natively, avoiding early measurement steps.
 
-In many practical applications, the dataset is classical (e.g., images, tabular data). A **hybrid QGAN** might use:
+In many practical apps, the dataset is classical (e.g., images, tabular data). A **hybrid QGAN** might use:
 - **Quantum generator** to output classical samples via measurement, or
 - **Quantum discriminator** receiving feature-mapped classical data.
-These architectures often mirror classical [[GAN]] training but exploit quantum circuits for potential representational or computational advantages.
+These architectures often mirror classical GAN training but exploit quantum circuits for potential representational or computational advantages.
 
-Some QGAN proposals define a **quantum latent space** where random inputs $|ϕ(z)⟩$ are generated by an "encoding circuit" $R(z)$. Subsequent generator circuit $G(θg)$ acts on extra [[Qubits]] plus $|ϕ(z)⟩$ to produce final samples, bridging the gap between quantum [[Embeddings]] & classical output vars.
+Some QGAN proposals define a **quantum latent space** where random inputs $|ϕ(z)⟩$ are generated by "encoding circuit" $R(z)$. Subsequent generator circuit $G(θg)$ acts on extra [[Qubits]] plus $|ϕ(z)⟩$ to produce final samples, bridging the gap between quantum [[Embeddings]] & classical output vars.

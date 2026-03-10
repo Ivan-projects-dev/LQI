@@ -7,7 +7,7 @@ Hallmark of classical feedforward networks is the **nonlinear activation** in 
 Similar to classical feedforward networks, QFNNs can handle:
 - **Binary Classification**: Map $x$ to a single qubit measurement. Threshold the expectation value $⟨Z⟩$ or interpret measurement outcomes as labels ${0,1}$ or ${−1,+1}$.
 - **Multi-Class**: Use multiple Qubits or measurement operators to distinguish among $>$ classes.
-- **Regression**: Obtain a continuous output by measuring an expectation value (e.g., $⟨Z⊗Z⟩$ on multiple [[Qubits]]), or convert a bitstring readout into a real-valued quantity.
+- **Regression**: Obtain a continuous output by measuring expectation value (e.g., $⟨Z⊗Z⟩$ on multiple [[Qubits]]), or convert a bitstring readout into a real-valued quantity.
 
 Because each [[QFNN]] layer is a quantum circuit, the entire model's params $θ$ can be trained using classical optimization methods, guided by:
 - **Parameter-Shift Rule**: Compute gradients by shifting gate params $θ$ by $±π2$.

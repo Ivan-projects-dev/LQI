@@ -1,5 +1,5 @@
 #ML #Quantum 
-[[QFNN]] typically starts with a **feature map** $UF(→x)$ that transforms $|0⟩⊗n$ into an encoded state $|ψx⟩=UF(→x)|0⟩⊗n$. Common encoding methods include:
+[[QFNN]] typically starts with a **feature map** $UF(→x)$ that transforms $|0⟩⊗n$ into encoded state $|ψx⟩=UF(→x)|0⟩⊗n$. Common encoding methods include:
 - **Rotation Encoding**: Use single-qubit rotations $(R_x, R_y, R_z)$ whose angles depend on the features.
 - **[[Amplitude Encoding]]**: Map normalized data vectors into amplitudes of a multi-qubit state.
 - **Basis Encoding**: Represent discrete features directly in qubit basis states.

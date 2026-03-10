@@ -13,7 +13,7 @@ Input $|x\rangle$ is preserved; $f(x)$ is XOR-d into the ancilla $|a\rangle$. Th
 
 **Garbage ancilla**: ancilla left in state correlated with $|x\rangle$ after computation. Must be **uncomputed** (reset to $|0\rangle$) before release to avoid entanglement with the main register that would collapse superpositions upon measurement.
 
-If an ancilla $|g(x)\rangle$ was produced as side-effect of computing $f(x)$, **uncomputing** - running the circuit in reverse ($U^\dagger$) to restore $|g(x)\rangle \to |0\rangle$:
+If ancilla $|g(x)\rangle$ was produced as side-effect of computing $f(x)$, **uncomputing** - running the circuit in reverse ($U^\dagger$) to restore $|g(x)\rangle \to |0\rangle$:
 $$|x\rangle|f(x)\rangle|g(x)\rangle \xrightarrow{U^\dagger_g} |x\rangle|f(x)\rangle|0\rangle$$
 Without uncomputation, measuring $|f(x)\rangle$ collapses $|x\rangle$, destroying the superposition needed for quantum speedup. [[Within-Apply pattern]] in Q# enforces this automatically.
 ```csharp

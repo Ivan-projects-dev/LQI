@@ -12,4 +12,4 @@ One can prove that $e−iH(t−t0)$ is always unitary & any unitary can always
 
 In other words, if the state of system at time $t_0$ is $|ψ(t_0)⟩$, its state at time $t$ is given by $e−iH(t−t_0)|ψ(t_0)⟩$ and the corresponding unitary transformation is given by $U(t, t_0)=exp(−iH⋅(t−t_0))$.
 
-Note that if $|ψ⟩$ is an eigenstate of $H$, it only acquires phase when it is evolved by Hamiltonian $H$, as it is not possible to transition between eigenstates.
+Note that if $|ψ⟩$ is eigenstate of $H$, it only acquires phase when it is evolved by Hamiltonian $H$, as it is not possible to transition between eigenstates.

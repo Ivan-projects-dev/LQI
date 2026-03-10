@@ -3,4 +3,4 @@
 
 Their exceptional sensitivity to magnetic fields has made them invaluable for detecting magnetic biomarkers – molecules or materials that indicate specific biological conditions or processes. This quantum-enhanced sensing capability allows for the detection of extremely weak magnetic signals emitted by cells & tissues, enabling earlier & $>$ accurate disease diagnosis. 
 
-**Quantum radar** is an enhanced version of the current radar. By using entangled photons & comparing the returned photon & stored photon, quantum sensor can create precise scan of an area. This approach would make radar virtually untraceable & become resilient to jamming & spoofing.
+**Quantum radar** is enhanced version of the current radar. By using entangled photons & comparing the returned photon & stored photon, quantum sensor can create precise scan of area. This approach would make radar virtually untraceable & become resilient to jamming & spoofing.

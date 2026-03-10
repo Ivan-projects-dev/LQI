@@ -1,12 +1,12 @@
 #Q-Sharp #Quantum
-**Bell states** are the $4$ max entangled $2$-qubit states. They form an orthonormal basis for the two-qubit Hilbert space & are the foundation of quantum teleportation, superdense coding, & entanglement-based protocols.
+**Bell states** are the $4$ max entangled $2$-qubit states. They form orthonormal basis for the two-qubit Hilbert space & are the foundation of quantum teleportation, superdense coding, & entanglement-based protocols.
 $$|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$$
 $$|\Phi^-\rangle = \frac{1}{\sqrt{2}}(|00\rangle - |11\rangle)$$
 $$|\Psi^+\rangle = \frac{1}{\sqrt{2}}(|01\rangle + |10\rangle)$$
 $$|\Psi^-\rangle = \frac{1}{\sqrt{2}}(|01\rangle - |10\rangle)$$
 **Preparing Bell states in Q#**
 
-All $4$ Bell states start from $|00\rangle$ via $H$ on the first qubit then CNOT:
+All $4$ Bell states start from $|00\rangle$ via $H$ on the first qubit then [[CNOT]]:
 ```csharp
 operation PrepareBellPhi_Plus(q0 : Qubit, q1 : Qubit) : Unit is Adj {
     H(q0);
@@ -66,7 +66,7 @@ operation MeasureBellBasis(q0 : Qubit, q1 : Qubit) : (Result, Result) {
 
 **GHZ state** (multi-qubit entanglement)
 
-Generalizes $|\Phi^+\rangle$ to $n$ qubits: $|GHZ_n\rangle = \frac{1}{\sqrt{2}}(|0\rangle^{\otimes n} + |1\rangle^{\otimes n})$
+Generalizes $|\Phi^+\rangle$ to $n$ [[Qubits]]: $|GHZ_n\rangle = \frac{1}{\sqrt{2}}(|0\rangle^{\otimes n} + |1\rangle^{\otimes n})$
 ```csharp
 operation PrepareGHZ(qs : Qubit[]) : Unit is Adj {
     H(qs[0]);

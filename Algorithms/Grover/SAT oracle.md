@@ -16,7 +16,7 @@ where $l_{j,i} \in \{x_r, \neg x_r\}$ for some $r$. Clause is **satisfied** iff 
 
 Net effect:
 $$U_\phi^{\text{phase}}:|x⟩ \mapsto (-1)^{\phi(x)}|x⟩$$
-**Unknown solution count $M$**: SAT problems may have $0$, $1$, or many satisfying assignments unknown in advance. Use exponential search or Quantum counting from [[Grover solutions]] to handle this.
+**Unknown solution count $M$**: SAT problems may have $0$, $1$, or many satisfying assignments unknown in advance. Use exponential search or [[Quantum counting]] from [[Grover solutions]] to handle this.
 
 **Complexity**: each Grover iteration calls $U_\phi$ once. $U_\phi$ costs $O(m \cdot k)$ gates (polynomial in formula size). Total: $O(\sqrt{2^n/M} \cdot mk)$ compared to classical $O(2^n)$ exhaustive search - **exponential speedup** for unstructured input.
 

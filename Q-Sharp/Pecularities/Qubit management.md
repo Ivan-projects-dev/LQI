@@ -18,7 +18,7 @@ use q = Qubit() {
 // q released here
 ```
 
-**`borrow`** allocates [[Qubits]] in an **unknown (dirty) state**. Cheaper in hardware - reuses [[Qubits]] from elsewhere in the program without reinitializing them. Program must return borrowed [[Qubits]] to their original state before the borrow block ends.
+**`borrow`** allocates [[Qubits]] in **unknown (dirty) state**. Cheaper in hardware - reuses [[Qubits]] from elsewhere in the program without reinitializing them. Program must return borrowed [[Qubits]] to their original state before the borrow block ends.
 ```csharp
 borrow scratch = Qubit();
 // use scratch as temporary space
@@ -28,7 +28,7 @@ borrow scratch = Qubit();
 Useful for implementing multi-controlled gates with fewer total [[Qubits]] - the Toffoli decomposition can use dirty [[Ancilla]] to achieve $O(n)$ circuit depth.
 
 `Reset(q)` - measures `q` & applies `X` if result is `One`, ensuring $|0\rangle$. Returns no value.
-`ResetAll(qs)` - resets every qubit in an array.
+`ResetAll(qs)` - resets every qubit in array.
 ```csharp
 Reset(q);
 ResetAll(register);
@@ -43,7 +43,7 @@ let tail = qs[1...]; // all except first
 let rev = qs[...-1...0]; // reversed array
 let head = qs[0]; // single qubit
 ```
-Slices return views - not copies. Passing slice to an operation passes those specific [[Qubits]].
+Slices return views - not copies. Passing slice to operation passes those specific [[Qubits]].
 
 Allocate [[Qubits]] in the narrowest scope possible - this keeps the logical qubit count low & makes circuit structure clear. Compiler can reuse released [[Qubits]] for subsequent allocations.
 ```csharp

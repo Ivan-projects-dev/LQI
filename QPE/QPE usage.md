@@ -16,10 +16,6 @@ $U_a|x\rangle = |ax \bmod N\rangle$ has eigenstates $|u_s\rangle = \frac{1}{\sqr
 
 **Quantum chemistry**: $U = e^{-iHt}$ via Trotterization. [[QPE]] on $U$ with trial ground state $|\psi_0\rangle$ returns ground-state energy $E_0$ to chemical accuracy ($< 1.6 \times 10^{-3}$ hartree). Primary target for fault-tolerant quantum advantage in chemistry.
 
-**Quantum counting** (Grover + [[QPE]]): Grover operator $G$ has eigenvalues $e^{\pm 2i\theta}$ where $\sin\theta = \sqrt{M/N}$. [[QPE]] on $G$ returns $\theta$ → $M = N\sin^2\theta$.
+**[[Quantum counting]]** (Grover + [[QPE]]): Grover operator $G$ has eigenvalues $e^{\pm 2i\theta}$ where $\sin\theta = \sqrt{M/N}$. [[QPE]] on $G$ returns $\theta$ → $M = N\sin^2\theta$.
 
 **[[Quantum simulation]]**: simulating time evolution $e^{-iHt}$ of physical Hamiltonian: [[QPE]] extracts energy eigenvalues, enabling lattice gauge theory simulations, condensed matter band structure calcs, & quantum phase diagram mapping. [[QPE]] precision $\epsilon$ translates to energy resolution $\epsilon / t$.
-
-**Pattern across all applications**:
-$$\text{Problem} \xrightarrow{\text{reduction}} \text{Find eigenphase of }U \xrightarrow{\text{[[[[QPE]]]]}} \varphi \xrightarrow{\text{classical post-proc}} \text{Answer}$$
-Quantum advantage comes from the ability to prepare superpositions of exponentially many eigenstates simultaneously, all processed in single [[QPE]] run.

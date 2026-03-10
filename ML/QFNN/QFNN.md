@@ -4,5 +4,5 @@
 2. **Variational Layers**: Instead of weight matrices & activation func, QFNNs use **parametrized quantum gates** (e.g., single-qubit rotations, multi-qubit entangling operations) as trainable layers; in other words, a variational form $U(θ)$.
 3. **Quantum-to-Classical Readout**: Measurements of the final state provide the network's outputs for tasks like classification or regression.
 
-Each quantum gate is a linear operator, so the **measurement** process plays the role of introducing effective nonlinearity. This makes QFNNs an intriguing blend of quantum circuit design & ML principles, mirroring the struct of classical feedforward nets but exec on quantum hardware.
+Each quantum gate is a linear operator, so the **measurement** process plays the role of introducing effective nonlinearity. This makes QFNNs intriguing blend of quantum circuit design & ML principles, mirroring the struct of classical feedforward nets but exec on quantum hardware.
 ![[Pasted image 20260101164447.png]]

@@ -51,15 +51,15 @@ funcs **cannot** call operations. Operations **can** call funcs.
 
 Both operations & funcs are first-class values & can be passed as arguments:
 ```csharp
-// Pass an operation as argument
+// Pass operation as argument
 operation ApplyTwice(op : Qubit => Unit is Adj, q : Qubit) : Unit is Adj {
     op(q);
     op(q);
 }
 ApplyTwice(H, myQubit);
 
-// Partial application
-let applyH = ApplyTwice(H, _);    // underscore _ creates partial application
+// Partial app
+let applyH = ApplyTwice(H, _);    // underscore _ creates partial app
 ```
 `_` placeholder creates a **partially applied** callable - a new callable with the remaining arguments. Used extensively in [[Functors]] patterns & for passing oracles to Grover:
 

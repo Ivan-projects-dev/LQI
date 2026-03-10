@@ -9,8 +9,17 @@ $z = x + yi$:
 - $x + yi = 0 \iff x = 0$ & $y = 0$
 $z_1 + z_2 = (x_1 + x_2) + (y_1 + y_2)i$
 $z_1 - z_2 = (x_1 - x_2) + (y_1 - y_2)i$
-$z_1 z_2 = z_1 \cdot z_2$
+$(a+bi)(c+di) = (ac - bd) + (ad + bc)i$
+$\dfrac{a+bi}{c+di} = \dfrac{(a+bi)(c-di)}{c^2+d^2}$ (multiply by conjugate)
 $z / z = 1$, $z = \bar{z} \iff z \in \mathbb{R}$
+
+**Exponential & polar forms:**
+$e^{i\theta} = \cos\theta + i\sin\theta$ ([[Euler's formulas]])
+$e^{a+bi} = e^a\cos b + i\,e^a\sin b$
+$r^{a+bi} = r^a\cos(b\ln r) + i\,r^a\sin(b\ln r)$
+
+Polar $re^{i\theta}$ → Cartesian $a+bi$: $a = r\cos\theta$, $b = r\sin\theta$
+Cartesian $a+bi$ → Polar: $r = \sqrt{a^2+b^2}$, $\theta = \arctan\!\left(\dfrac{b}{a}\right)$
 
 **Modulus:**  
 $|z| = \sqrt{x^2 + y^2}$  

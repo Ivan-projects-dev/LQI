@@ -21,16 +21,16 @@ where $|\tilde{\varphi}\rangle$ is sharply peaked at int $\tilde{\varphi} = \lfl
 
 $$P(\tilde{\varphi}) = \frac{1}{2^{2t}}\left|\frac{\sin(\pi \cdot 2^t(\varphi - \tilde{\varphi}/2^t))}{\sin(\pi(\varphi - \tilde{\varphi}/2^t))}\right|^2$$
 
-If $2^t\varphi$ is an exact int: $P(\tilde{\varphi}) = 1$. Otherwise, the correct $t$-bit approximation is obtained with probability $\geq \frac{4}{\pi^2} \approx 0.405$ using $t$ [[Qubits]], or $\geq 1 - \epsilon$ using $t + \lceil\log_2(2 + \frac{1}{2\epsilon})\rceil$ [[Qubits]].
+If $2^t\varphi$ is exact int: $P(\tilde{\varphi}) = 1$. Otherwise, the correct $t$-bit approximation is obtained with probability $\geq \frac{4}{\pi^2} \approx 0.405$ using $t$ [[Qubits]], or $\geq 1 - \epsilon$ using $t + \lceil\log_2(2 + \frac{1}{2\epsilon})\rceil$ [[Qubits]].
 
 **Complexity**:
 
-| Resource | Cost |
+| Resource              | Cost |
 |---|---|
-| Control [[Qubits]] | $t$ |
+| Control [[Qubits]]    | $t$ |
 | Eigenstate [[Qubits]] | $s$ |
-| $U$ applications | $2^t - 1$ |
-| QFT$^\dagger$ gates | $O(t^2)$ |
-| Total gates | $O(2^t \cdot \text{cost}(U) + t^2)$ |
+| $U$ apps              | $2^t - 1$ |
+| QFT$^\dagger$ gates   | $O(t^2)$ |
+| Total gates           | $O(2^t \cdot \text{cost}(U) + t^2)$ |
 
 **Kitaev's [[Iterative QPE]]** reduces qubit count to $1$ control qubit by repeating $t$ rounds (bit by bit).

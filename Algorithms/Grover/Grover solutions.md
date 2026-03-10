@@ -11,7 +11,7 @@ After $k^*$ Grover steps, measuring yields _any one_ of the $M$ solutions with n
 
 **Unknown $M$** - two strategies:
 
-_Quantum counting_: estimate $M$ using QFT-based phase estimation on the Grover operator $G$. Eigenvalues of $G$ are $e^{\pm 2i\theta}$, so [[QPE]] returns $\theta$ & thus $M \approx N\sin^2\theta$. See Quantum counting.
+_Quantum counting_: estimate $M$ using QFT-based phase estimation on the Grover operator $G$. Eigenvalues of $G$ are $e^{\pm 2i\theta}$, so [[QPE]] returns $\theta$ & thus $M \approx N\sin^2\theta$. See [[Quantum counting]].
 
 _Exponential search (no [[QPE]])_: pick a random $k$ from $\{1,\ldots,\lceil\sqrt{N}\rceil\}$, run $k$ Grover iterations, measure, & check classically. Repeat. Expected total [[Oracle]] calls: $O(\sqrt{N/M})$.
 
