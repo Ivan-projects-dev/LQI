@@ -1,5 +1,5 @@
-#ML 
-**Perceptron** is artificial neuron defines the first step into [[Neural network]] (simplest possible [[Neural network]] itself). It represents a single neuron with only one input layer, & no hidden layers.
+#ML #Math 
+**Perceptron** is artificial neuron defines the first step into [[Neural network]] (simplest possible [[Neural network]] itself). It represents single neuron with only one input layer, & no hidden layers.
 ![[Pasted image 20251007200133.png]]
 Original **Perceptron** was designed to take a num of **binary** inputs, & produce one **binary** output ($0$ or $1$). The idea was to use different **weights** to represent the importance of each **input**, & that the sum of the values should be greater than a **threshold** value before making a decision (like true or false).
 
