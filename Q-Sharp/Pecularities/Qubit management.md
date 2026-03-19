@@ -13,7 +13,7 @@ use (q, qs) = (Qubit(), Qubit[3]); // tuple allocation
 use q = Qubit() {
     H(q);
     // must reset q before block ends
-    Reset(q);       // or MResetZ(q)
+    Reset(q); // or MResetZ(q)
 }
 // q released here
 ```

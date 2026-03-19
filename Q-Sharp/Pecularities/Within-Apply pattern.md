@@ -18,10 +18,10 @@ Equivalent to manually writing: `V; O; Adjoint V` - but `within/apply` is safer 
 ```csharp
 operation ApplyDiffusion(register : Qubit[]) : Unit is Adj + Ctl {
     within {
-        ApplyToEachA(H, register);        // transform to |s⟩ basis
-        ApplyToEachA(X, register);        // map |0⟩ → |1...1⟩
+        ApplyToEachA(H, register); // transform to |s⟩ basis
+        ApplyToEachA(X, register); // map |0⟩ → |1...1⟩
     } apply {
-        Controlled Z(register[1...], register[0]);  // phase flip |1...1⟩
+        Controlled Z(register[1...], register[0]); // phase flip |1...1⟩
     }
     // Q# auto-applies: ApplyToEachA(X,...) then ApplyToEachA(H,...)
 }
@@ -33,14 +33,15 @@ Marking [[Oracle]] for $f(x) = 1$ iff $x = x_0$: compute into [[Ancilla]], flip 
 ```csharp
 operation MarkSolution(
     register : Qubit[],
-    target   : Qubit,
-    x0       : Int
+    target : Qubit,
+    x0 : Int
 ) : Unit is Adj + Ctl {
     within {
         // Flip qubits that are 0 in x0 (so all-|1⟩ = x0)
         ApplyPauliFromBitString(PauliX, false, IntAsBoolArray(x0, Length(register)), register);
-    } apply {
-        Controlled X(register, target);   // flip target iff register == x0
+    } 
+    apply {
+        Controlled X(register, target); // flip target iff register == x0
     }
 }
 ```
@@ -50,8 +51,8 @@ operation MarkSolution(
 `ApplyToEachA(op, qs)` - same, but `op` must support `Adjoint` (needed inside `within`).
 `ApplyToEachCA(op, qs)` - `op` supports both `Adj + Ctl`.
 ```csharp
-ApplyToEach(H, qubits);           // H⊗n
-ApplyToEachA(X, qubits);          // X⊗n (adjointable)
+ApplyToEach(H, qubits); // H⊗n
+ApplyToEachA(X, qubits); // X⊗n (adjointable)
 ```
 These replace explicit `for` loops over qubit arrays & are idiomatic Q#.
 

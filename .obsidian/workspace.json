@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ML/Math/Perceptron.md",
+                "file": "Q-Sharp/Basics/Q-Sharp math.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Perceptron"
+              "title": "Q-Sharp math"
+            }
+          },
+          {
+            "id": "b0549500df06873c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Q-Sharp/Functors/Controlled op.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Controlled op"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.501522064209
+    "width": 266.5
   },
   "right": {
     "id": "3822b5fc5b75b3b0",
@@ -172,44 +187,44 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "cb55a7861138f87a",
+  "active": "9c58883d0361cb1a",
   "lastOpenFiles": [
-    "ML/QRNN.md",
-    "ML/Math/Autoencoder.md",
-    "Math/Probability distribution.md",
-    "Java/OOP/Design patterns.md",
-    "Java/Frameworks/JPA.md",
-    "Java/Advanced/Basics/Java intro.md",
-    "Java/Advanced/Basics/GUI.md",
-    "Java/Advanced/Networking.md",
-    "Algorithms/Grover/Grover in Q-Sharp.md",
-    "Java/Advanced/JVM languages.md",
-    "Java/Frameworks/JSON.md",
-    "Java/Frameworks/XML.md",
-    "Java/Tools/Build tools.md",
-    "Java/Tools/JDBC.md",
-    "ML/QGAN.md",
-    "QPE/Controlled unitary.md",
-    "QPE/QPE in Q-Sharp.md",
-    "QPE/QPE inputs.md",
-    "QPE/QPE precision.md",
-    "QPE/QPE.md",
-    "Q-Sharp/Pecularities/Operations vs funcs.md",
-    "Q-Sharp/Pecularities/Q-Sharp attributes.md",
+    "Q-Sharp/Functors/Functors.md",
+    "Q-Sharp/Functors/Controlled op.md",
+    "Q-Sharp/Functors/Adjoint op.md",
+    "Q-Sharp/Pecularities/Within-Apply pattern.md",
+    "Q-Sharp/Pecularities/Qubit management.md",
+    "Q-Sharp/Pecularities/Q-Sharp quirks.md",
+    "Q-Sharp/Pecularities/Q-Sharp generics.md",
     "Q-Sharp/Pecularities/Q-Sharp diagnostics.md",
-    "Java/Frameworks/Web (Java).md",
-    "Java/Tools/JUnit.md",
-    "Java/Advanced/Advanced features.md",
-    "Java/Frameworks/JPA.md.tmp.5.1772975188141",
-    "Java/Tools/JUnit.md.tmp.5.1772975171625",
-    "Java/Tools/JDBC.md.tmp.5.1772975157597",
-    "Java/OOP/Design patterns.md.tmp.5.1772975143597",
-    "Gates/Gate state actions.md.tmp.5.1772973797250",
-    "Algorithms/Simon",
-    "Algorithms/Deutsch-Jozsa",
-    "Algorithms/Bernstein-Vazirani",
-    "Algorithms/CHSH game.md.tmp.5.1772959756226",
-    "FTQC/Bit-flip code.md.tmp.5.1772959736304",
+    "Q-Sharp/Pecularities/Q-Sharp control flow.md",
+    "Q-Sharp/Pecularities/Q-Sharp attributes.md",
+    "Q-Sharp/Pecularities/Measurement in Q-Sharp.md",
+    "Q-Sharp/Pecularities/Adaptive profile.md",
+    "Q-Sharp/Pecularities/Copy-and-update.md",
+    "Q-Sharp/Pecularities/Callables/Partial application.md",
+    "Q-Sharp/Pecularities/Callables/Higher-order ops.md",
+    "Q-Sharp/Basics/Q-Sharp STL.md",
+    "Q-Sharp/Basics/Q-Sharp operators.md",
+    "Q-Sharp/Basics/Q-Sharp namespaces.md",
+    "Q-Sharp/Basics/Q-Sharp math.md",
+    "Q-Sharp/Basics/Q-Sharp gates.md",
+    "Q-Sharp/Basics/Std.Arrays.md",
+    "Q-Sharp/Basics/UDT.md",
+    "broken links output.md",
+    "Q-Sharp/Basics/Types/Сallable types.md",
+    "Q-Sharp/Basics/Q-Sharp arrays.md",
+    "Q-Sharp/Basics/Q-Sharp Intro.md",
+    "Q-Sharp/Basics/Syntax",
+    "Q-Sharp/Basics/Types",
+    "Q-Sharp/Basics/Stdlib",
+    "Q-Sharp/Pecularities/Hardware",
+    "Q-Sharp/Pecularities/Expressions",
+    "Q-Sharp/Pecularities/Callables",
+    "Q-Sharp/Basics/Q-Sharp operators.md.tmp.5.1773954181941",
+    "Q-Sharp/Basics/Q-Sharp callable types.md.tmp.5.1773954148808",
+    "Q-Sharp/Pecularities/Adaptive profile.md.tmp.5.1773954117882",
+    "Q-Sharp/Pecularities/Higher-order ops.md.tmp.5.1773954085150",
     "Untitled.canvas",
     "z_img/Pasted image 20251214190313.png",
     "z_img/Pasted image 20260102005032.png",

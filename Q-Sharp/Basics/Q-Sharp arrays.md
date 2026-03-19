@@ -1,5 +1,5 @@
 #Q-Sharp
-**Q# arrays** are immutable fixed-length sequences. `Std.Arrays` provides a rich set of functional-style operations for transforming them - essential for working with qubit registers & classical bit arrays.
+**Q# arrays** are immutable fixed-length sequences. `[[Std.Arrays]]` provides a rich set of functional-style operations for transforming them - essential for working with qubit registers & classical bit arrays.
 ```csharp
 let arr = [1, 2, 3, 4, 5];
 Length(arr) // 5 - num of elements

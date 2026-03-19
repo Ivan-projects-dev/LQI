@@ -2,10 +2,12 @@
 **Q# control flow** structures closely resemble classical langs, with one critical addition: `repeat-until`, designed for probabilistic quantum subroutines.
 ```csharp
 if M(q) == One {
-    X(q);          // reset to |0⟩ if measured One
-} elif count > 5 {
+    X(q); // reset to |0⟩ if measured One
+} 
+elif count > 5 {
     Message("Too many attempts");
-} else {
+} 
+else {
     H(q);
 }
 ```
@@ -63,8 +65,7 @@ if n <= 0 { fail "n must be positive"; }
 ```
 
 **Restrictions on adjointable operations**
-
-Operations declared `is Adj` must have a body the compiler can invert. This restricts control flow inside them:
+Operations declared `is Adj` must have body the compiler can invert. This restricts control flow inside them:
 - `for` loops: allowed (compiler reverses iteration order & adjoints each gate).
 - `if` with classical condition: allowed.
 - `if` with `Result` condition (mid-circuit measurement): **not** allowed in `Adj` context.

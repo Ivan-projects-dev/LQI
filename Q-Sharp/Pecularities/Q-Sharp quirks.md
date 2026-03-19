@@ -14,8 +14,7 @@ let arr = [q]; // ok - arrays of Qubit are allowed (by reference)
 Q# runtime checks every qubit's state at the end of its `use` block. Leaving a qubit in any state other than $|0\rangle$ throws runtime error:
 ```csharp
 use q = Qubit();
-H(q);
-// scope ends - runtime error: qubit not in |0⟩
+H(q); // scope ends - runtime error: qubit not in |0⟩
 ```
 Always `Reset(q)` or `MResetZ(q)` before scope exit. This enforces correct uncomputation but also means you cannot return a qubit from operation - the qubit must stay alive in the caller's scope.
 
@@ -24,7 +23,7 @@ Always `Reset(q)` or `MResetZ(q)` before scope exit. This enforces correct uncom
 Branching on measurement result (`if M(q) == One`) is a **mid-circuit measurement**. On simulators this always works. On real hardware, classical feed-forward (using a measurement result to decide the next gate) requires hardware support - not all QPUs support it. Code that relies on it may silently fail or require specific hardware target:
 ```csharp
 let r = M(q);
-if r == One { X(q); }   // ok in simulation; hardware-dependent in production
+if r == One { X(q); } // ok in simulation; hardware-dependent in production
 ```
 Operations declared `is Adj` cannot contain `Result`-conditioned branches at all - the compiler rejects them because adjoints of measurements are undefined.
 
@@ -33,7 +32,7 @@ Operations declared `is Adj` cannot contain `Result`-conditioned branches at all
 Any operation containing `M`, `Measure`, `MResetZ`, etc., cannot declare `is Adj`. Attempting to call `Adjoint` on such operation is a compile error. This is why [[Oracle]] bodies must be purely unitary - measurements are only at the terminal readout stage:
 ```csharp
 operation BadOracle(q : Qubit) : Unit is Adj {
-    let r = M(q);   // compile error: cannot auto-generate Adjoint
+    let r = M(q); // compile error: cannot auto-generate Adjoint
     if r == One { X(q); }
 }
 ```

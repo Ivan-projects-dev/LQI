@@ -66,7 +66,7 @@ function Pair<'A, 'B>(a : 'A, b : 'B) : ('A, 'B) {
     return (a, b);
 }
 
-let p = Pair(3, true);    // (Int, Bool)
+let p = Pair(3, true); // (Int, Bool)
 ```
 
 Q# 1.0+ allows type parameters on structs (record types):

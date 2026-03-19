@@ -1,9 +1,6 @@
 #Q-Sharp #Math 
-`Std.Math` provides classical math funcs & constants used throughout quantum algorithms - rotation angles, iteration counts, phase calcs, modular arithmetic.
-```csharp
-PI() // π ≈ 3.14159265358979
-E() // e ≈ 2.71828182845905
-```
+`Std.Math` provides classical math funcs & constants used throughout quantum algorithms - rotation angles, iteration counts, phase calcs, modular arithmetic (`PI()`, `E()`).
+
 Both are funcs returning `Double`, not literal constants. Used in every rotation gate: `Rx(PI() / 2.0, q)`.
 
 **Floating-point funcs**
@@ -50,29 +47,26 @@ ModulusL(n, m) // same for BigInt
 
 **Modular exponentiation - `ExpModI` / `ExpModL`**
 $$\text{ExpModI}(b, e, m) = b^e \bmod m$$
-
 ```csharp
 ExpModI(2, 10, 1000)   // 2^10 mod 1000 = 24
 ExpModL(base, exp, modulus)   // BigInt version for Shor's algorithm
 ```
 
-Essential in Shor's algorithm for computing the modular exponentiation unitary $U_a|x\rangle = |ax \bmod N\rangle$. The `BigInt` version handles cryptographic-scale integers.
+Essential in Shor's algorithm for computing the modular exponentiation unitary $U_a|x\rangle = |ax \bmod N\rangle$. `BigInt` version handles cryptographic-scale integers.
 
 **GCD & ted**
 ```csharp
-GreatestCommonDivisorI(a, b)    // gcd(a, b) for Int
-GreatestCommonDivisorL(a, b)    // gcd(a, b) for BigInt
+GreatestCommonDivisorI(a, b) // gcd(a, b) for Int
+GreatestCommonDivisorL(a, b) // gcd(a, b) for BigInt
 ```
-
 Used in Shor's algorithm post-processing: once order $r$ is found, compute $\gcd(a^{r/2} \pm 1, N)$ to get factors.
 
 **`ContinuedFractionConvergentI` - rational approximation**
 
-Converts a decimal approximation to a fraction $p/q$ using continued fractions:
+Converts decimal approximation to fraction $p/q$ using continued fractions:
 ```csharp
 let (p, q) = ContinuedFractionConvergentI((numerator, denominator), maxDenominator);
 ```
-
 Used in Shor's algorithm post-processing after [[QPE]] returns approximation to $s/r$ - continued fractions recovers the exact denominator $r$.
 
 **Common patterns in quantum algorithms**
@@ -89,6 +83,6 @@ let angle = 2.0 * PI() / IntAsDouble(1 <<< k);
 
 [[QPE]] phase decoding:
 ```csharp
-let phi = IntAsDouble(measured) / IntAsDouble(1 <<< t);   // φ ≈ measured / 2^t
-let M   = Round(IntAsDouble(1 <<< n) * Sin(phi * PI()) ^ 2.0);  // quantum counting
+let phi = IntAsDouble(measured) / IntAsDouble(1 <<< t); // φ ≈ measured / 2^t
+let M = Round(IntAsDouble(1 <<< n) * Sin(phi * PI()) ^ 2.0); // quantum counting
 ```
