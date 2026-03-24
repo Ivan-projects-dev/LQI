@@ -34,8 +34,8 @@ Applies func `f` to each element; returns new array:
 import Std.Arrays.*;
 import Std.Convert.*;
 
-let doubles = Mapped(x -> x * 2, [1, 2, 3]);       // [2, 4, 6]
-let asDoubles = Mapped(IntAsDouble, [1, 2, 3]);     // [1.0, 2.0, 3.0]
+let doubles = Mapped(x -> x * 2, [1, 2, 3]); // [2, 4, 6]
+let asDoubles = Mapped(IntAsDouble, [1, 2, 3]); // [1.0, 2.0, 3.0]
 ```
 
 Equivalent to `map` in funcal langs. Used to generate angle arrays for [[Rotation gates]]:
@@ -47,15 +47,15 @@ let angles = Mapped(k -> 2.0 * PI() / IntAsDouble(1 <<< k), 0..t-1);
 
 Returns array of elements satisfying predicate `pred`:
 ```csharp
-let evens = Filtered(x -> x % 2 == 0, [1, 2, 3, 4, 5]);   // [2, 4]
+let evens = Filtered(x -> x % 2 == 0, [1, 2, 3, 4, 5]); // [2, 4]
 ```
 
 **`Fold(f, init, arr)` - accumulate**
 
 Left fold: applies `f(accumulator, element)` across array, starting from `init`:
 ```csharp
-let sum = Fold((acc, x) -> acc + x, 0, [1, 2, 3, 4]);      // 10
-let product = Fold((acc, x) -> acc * x, 1, [1, 2, 3, 4]);  // 24
+let sum = Fold((acc, x) -> acc + x, 0, [1, 2, 3, 4]); // 10
+let product = Fold((acc, x) -> acc * x, 1, [1, 2, 3, 4]); // 24
 ```
 
 **`Enumerated(arr)` - index-value pairs**
@@ -67,7 +67,7 @@ for (i, q) in Enumerated(register) {
 }
 ```
 
-**`Zipped(a, b)` - pair two arrays**. Returns array of `(T1, T2)` tuples from two equal-length arrays:
+**`Zipped(a, b)` - pair $2$ arrays**. Returns array of `(T1, T2)` tuples from $2$ equal-length arrays:
 ```csharp
 let pairs = Zipped([1, 2, 3], [true, false, true]);
 // [(1, true), (2, false), (3, true)]
@@ -80,26 +80,26 @@ let sorted = Sorted((a, b) -> a - b, [3, 1, 4, 1, 5]);    // [1, 1, 3, 4, 5]
 
 **`Any(pred, arr)` / `All(pred, arr)` / `Count(pred, arr**
 ```csharp
-Any(x -> x > 3, [1, 2, 3, 4]);     // true
-All(x -> x > 0, [1, 2, 3, 4]);     // true
+Any(x -> x > 3, [1, 2, 3, 4]); // true
+All(x -> x > 0, [1, 2, 3, 4]); // true
 Count(x -> x % 2 == 0, [1,2,3,4]); // 2
 ```
 
 **`Padded(n, fill, arr)` - extend to length `n`**. Pads array to length `n` with `fill` value (prepends if `n` positive, appends if negative):
 ```csharp
-Padded(5, 0, [1, 2, 3]);    // [0, 0, 1, 2, 3]
-Padded(-5, 0, [1, 2, 3]);   // [1, 2, 3, 0, 0]
+Padded(5, 0, [1, 2, 3]); // [0, 0, 1, 2, 3]
+Padded(-5, 0, [1, 2, 3]); // [1, 2, 3, 0, 0]
 ```
 Used when bit strings need alignment to a fixed width.
 
 **`Flattened(arr)` - flatten nested array**
 ```csharp
-Flattened([[1, 2], [3, 4], [5]]);   // [1, 2, 3, 4, 5]
+Flattened([[1, 2], [3, 4], [5]]); // [1, 2, 3, 4, 5]
 ```
 
 **`IndexOf(pred, arr)` - find first matching index**. Returns index of first element satisfying predicate, or `-1`:
 ```csharp
-IndexOf(x -> x == 3, [1, 2, 3, 4]);   // 2
+IndexOf(x -> x == 3, [1, 2, 3, 4]); // 2
 ```
 
 Arrays are immutable by default. Use `mutable` + `set w/=` for element-wise mutation:

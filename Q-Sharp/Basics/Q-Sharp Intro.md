@@ -81,7 +81,7 @@ operation Main() : Result {
 ```
 Q# provides built-in DT common to most langs, including `Int`, `Double`, `Bool`, and `String`, & pes that define ranges, arrays, & tuples.
 
-`Result` DT represents result of a qubit measurement & can have two values: `Zero` or `One`.
+`Result` DT represents result of a qubit measurement & can have $2$ values: `Zero` or `One`.
 
 In the `Superposition` program, the `MeasureOneQubit()` operation returns a `Result` type, which corresponds to the return type of the `M` operation. Measurement result is stored in a new variable that's defined using the `let` statement:
 

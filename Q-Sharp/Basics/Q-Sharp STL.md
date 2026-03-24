@@ -15,7 +15,7 @@ Message("Hello quantum world!");
 import Std.Intrinsic.Message;
 Message("Hello quantum world!");
 ```
-`Superposition` program doesn't have any `import` statements or calls with full namespaces. That's because the Q# dev env automatically loads two namespaces, `Std.Core` and `Std.Intrinsic`, which contain commonly used funcs & operations.
+`Superposition` program doesn't have any `import` statements or calls with full namespaces. That's because the Q# dev env automatically loads $2$ namespaces, `Std.Core` and `Std.Intrinsic`, which contain commonly used funcs & operations.
 
 You can take advantage of the `Std.Measurement` namespace by using the `MResetZ` operation to optimize the `Superposition` program. `MResetZ` combines the measurement & [[Set operations|Set operations]] into one step, as in the following example:
 ```C#

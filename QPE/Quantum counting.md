@@ -22,7 +22,7 @@ operation EstimateSolutionCount(nQubits : Int, nControlBits  : Int,
 
     // phase ≈ θ/π or 1 - θ/π; recover M = N·sin²(θ)
     let theta = phase * PI();
-    let n_f   = IntAsDouble(1 <<< nQubits);
+    let n_f = IntAsDouble(1 <<< nQubits);
     return Round(n_f * Sin(theta)^2);
 }
 ```
