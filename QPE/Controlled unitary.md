@@ -17,4 +17,4 @@ Phase $e^{2\pi i 2^j \varphi}$ is kicked back onto the control qubit. Each contr
 
 **Black-box vs structured $U$**: in the [[Oracle]] model (e.g. [[Quantum counting]]), $U$ is black box & $C$-$U^{2^j}$ is implemented by calling the [[Oracle]] $2^j$ times each controlled on qubit $j$ - $O(2^t)$ total [[Oracle]] calls. In structured settings (e.g. quantum chemistry Hamiltonians), $e^{-iHt}$ is approximated via Trotterization, reducing the effective gate count.
 
-**Q# implementation**: use the `Controlled` functor from Functors - `Controlled applyU([control[j]], (power, eigenstate))`. 
+**Q# implementation**: use the `Controlled` functor from [[Functors]] - `Controlled applyU([control[j]], (power, eigenstate))`. 

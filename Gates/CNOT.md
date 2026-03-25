@@ -29,5 +29,4 @@ I & 0
 \end{pmatrix}$$
 Controlled operator are defined to be triggered when the control bit is in state $1$. In this example, we expect it to be triggered when the control bit is in state $0$.
 
-Here we can use a simple trick. We first apply $NOT$ operator to the first bit, & then the $CM$ operator, & again $NOT$ operator. In this way, we guarantee that $M$ is applied to the second bit if the first bit is state $0$ & do nothing if the first bit is in state $1$. In short:
-$C_0M=(X⊗I)⋅(CM)⋅(X⊗I)$
+We apply $NOT$ operator to the first bit, & then the $CM$ operator, & again $NOT$ operator. In this way, we guarantee that $M$ is applied to the second bit if the $1st$ bit is state $0$ & do nothing if the first bit is in state $1$. In short: $C_0M=(X⊗I)⋅(CM)⋅(X⊗I)$

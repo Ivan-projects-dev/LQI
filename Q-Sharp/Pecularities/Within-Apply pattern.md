@@ -56,7 +56,7 @@ ApplyToEachA(X, qubits); // X⊗n (adjointable)
 ```
 These replace explicit `for` loops over qubit arrays & are idiomatic Q#.
 
-**`within/apply` vs manual Adjoint op**
+**`within/apply` vs manual [[Adjoint op]]**
 
 | Approach                   | Uncomputation | Error-safe | Readable |
 | -------------------------- | ------------- | ---------- | -------- |

@@ -48,8 +48,8 @@ ModulusL(n, m) // same for BigInt
 **Modular exponentiation - `ExpModI` / `ExpModL`**
 $$\text{ExpModI}(b, e, m) = b^e \bmod m$$
 ```csharp
-ExpModI(2, 10, 1000)   // 2^10 mod 1000 = 24
-ExpModL(base, exp, modulus)   // BigInt version for Shor's algorithm
+ExpModI(2, 10, 1000) // 2^10 mod 1000 = 24
+ExpModL(base, exp, modulus) // BigInt version for Shor's algorithm
 ```
 
 Essential in Shor's algorithm for computing the modular exponentiation unitary $U_a|x\rangle = |ax \bmod N\rangle$. `BigInt` version handles cryptographic-scale ints.
@@ -61,9 +61,7 @@ GreatestCommonDivisorL(a, b) // gcd(a, b) for BigInt
 ```
 Used in Shor's algorithm post-processing: once order $r$ is found, compute $\gcd(a^{r/2} \pm 1, N)$ to get factors.
 
-**`ContinuedFractionConvergentI` - rational approximation**
-
-Converts decimal approximation to fraction $p/q$ using continued fractions:
+**`ContinuedFractionConvergentI` - rational approximation**. Converts decimal approximation to fraction $p/q$ using continued fractions:
 ```csharp
 let (p, q) = ContinuedFractionConvergentI((numerator, denominator), maxDenominator);
 ```

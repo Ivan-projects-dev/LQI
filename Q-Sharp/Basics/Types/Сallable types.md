@@ -64,7 +64,7 @@ rz90(q);
 Adjoint rz90(q); // valid
 ```
 
-**`[[Oracle]]` newtype pattern** - wraps callable type in named type for type safety:
+**`[[[[Oracle]]]]` newtype pattern** - wraps callable type in named type for type safety:
 ```csharp
 newtype PhaseOracle = (Qubit[] => Unit is Adj + Ctl);
 

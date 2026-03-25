@@ -61,7 +61,7 @@ ApplyTwice(H, myQubit);
 // Partial app
 let applyH = ApplyTwice(H, _);    // underscore _ creates partial app
 ```
-`_` placeholder creates a **partially applied** callable - a new callable with the remaining arguments. Used extensively in [[Functors]] patterns & for passing oracles to Grover:
+`_` placeholder creates a **partially applied** callable - a new callable with the remaining arguments. Used extensively in [[Functors]] patterns & for passing oracles to [[Grover]]:
 
 ```csharp
 let oracle = MarkExactState(_, _, 11);   // marks state 11, register & target still open

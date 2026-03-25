@@ -23,7 +23,7 @@ operation MarkState(register : Qubit[], target : Qubit, x0 : Int) : Unit is Adj 
 // Fix x0 = 7, leave register & target open
 let oracle = MarkState(_, _, 7); // type: (Qubit[], Qubit) => Unit is Adj + Ctl
 ```
-`[[Oracle]]` can now be passed directly to any operation expecting `(Qubit[], Qubit) => Unit`.
+`[[[[Oracle]]]]` can now be passed directly to any operation expecting `(Qubit[], Qubit) => Unit`.
 
 **Operation & func wrappers** can both be partially applied. [[Functors]] are preserved if the underlying callable declares them:
 ```csharp

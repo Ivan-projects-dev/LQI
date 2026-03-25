@@ -17,12 +17,10 @@ Conditionals on `Result` values are allowed but subject to hardware-specific con
 for i in 0..n-1 {
     H(register[i]);
 }
-
 for q in register {
     X(q);
 }
-
-for i in n-1..-1..0 {       // reverse: n-1 down to 0
+for i in n-1..-1..0 { // reverse: n-1 down to 0
     T(register[i]);
 }
 ```
@@ -34,9 +32,7 @@ while i < 10 {
 }
 ```
 
-**`repeat-until` (RUS - Repeat Until Success)**
-
-Quantum-specific loop. Repeats a probabilistic circuit until success condition is met. Essential for non-deterministic state preparation & some gate synthesis techs:
+**`repeat-until` (RUS - Repeat Until Success)**. Quantum-specific loop. Repeats a probabilistic circuit until success condition is met. Essential for non-deterministic state preparation & some gate synthesis techs:
 ```csharp
 repeat {
     H(q);

@@ -4,10 +4,7 @@ Complete Q# implementation of [[Grover]]'s search algorithm. Combines [[Grover]]
 **Single [[Grover]] iteration**
 One app of $G = D \cdot U_f$:
 ```csharp
-operation GroverIteration(
-    register      : Qubit[],
-    markingOracle : (Qubit[], Qubit) => Unit is Adj
-) : Unit is Adj {
+operation GroverIteration(register : Qubit[], markingOracle : (Qubit[], Qubit) => Unit is Adj) : Unit is Adj {
     // Phase oracle: apply marking oracle with ancilla in |−⟩
     use target = Qubit();
     within {
@@ -23,23 +20,20 @@ operation GroverIteration(
 
 **Fixed-iteration [[Grover search]]** (known $M$)
 ```csharp
-operation RunGroverSearch(
-    nQubits       : Int,
-    nSolutions    : Int,                              // M
-    markingOracle : (Qubit[], Qubit) => Unit is Adj
-) : Result[] {
+operation RunGroverSearch(nQubits : Int, nSolutions : Int, // M
+    markingOracle : (Qubit[], Qubit) => Unit is Adj) : Result[] {
     let nIterations = GroverIterationCount(nQubits, nSolutions);
     use register = Qubit[nQubits];
-    ApplyToEach(H, register);                         // uniform superposition
+    ApplyToEach(H, register); // uniform superposition
     for _ in 1..nIterations {
         GroverIteration(register, markingOracle);
     }
-    return MResetEachZ(register);                     // measure & reset
+    return MResetEachZ(register); // measure & reset
 }
 
 function GroverIterationCount(n : Int, m : Int) : Int {
     // k* = floor(π/4 · √(N/M))
-    let n_f = IntAsDouble(1 <<< n);   // N = 2^n
+    let n_f = IntAsDouble(1 <<< n); // N = 2^n
     let m_f = IntAsDouble(m);
     return Floor(PI() / 4.0 * Sqrt(n_f / m_f));
 }

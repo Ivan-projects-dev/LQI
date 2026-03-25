@@ -1,5 +1,5 @@
 #Algorithm #Quantum 
-In 1992 David Deutsch & Richard Jozsa dev a quantum algorithm that demonstrates, for the very first time, the potential of quantum computers to solve certain problems exponentially faster than classical computers.
+In $1992$ David Deutsch & Richard Jozsa dev a quantum algorithm that demonstrates, for the very first time, the potential of quantum computers to solve certain problems exponentially faster than classical computers.
 
 Given a bool func $f:{0,1}→{0,1}$, we say $f$ is **balanced** if $f(0)≠f(1)$ and **const** if $f(0)=f(1)$.
 
@@ -17,7 +17,7 @@ After applying $H$ to both [[Qubits]], the first qubit is in the equal superpo
 $|ψ2⟩=(1√2|0⟩+1√2|1⟩)|−⟩=1√2|0⟩|−⟩+1√2|1⟩|−⟩$
 
 Next we apply $U_f$ to $|ψ2⟩$ and obtain $|ψ3⟩$
-$|ψ3⟩=Uf(1√2|0⟩|−⟩+1√2|1⟩|−⟩)=1√2Uf|0⟩|−⟩+1√2Uf|1⟩|−⟩$
+$$|ψ3⟩=Uf(1√2|0⟩|−⟩+1√2|1⟩|−⟩)=1√2Uf|0⟩|−⟩+1√2Uf|1⟩|−⟩$$
 Linearity of the operator $= 1√2(−1)f(0)|0⟩|−⟩+1√2(−1)f(1)|1⟩|−⟩$
 By phase kickback $=(1√2(−1)f(0)|0⟩+1√2(−1)f(1)|1⟩)|−⟩$
 

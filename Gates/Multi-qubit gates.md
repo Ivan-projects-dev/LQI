@@ -37,8 +37,7 @@ Used in QFT to reverse qubit order after the transform.
 $$CCNOT: |c_1 c_2 t\rangle \mapsto |c_1 c_2\,(t \oplus (c_1 \wedge c_2))\rangle$$
 Flips target iff both controls are $|1\rangle$. Universal for reversible classical computation. Acts as $3$-qubit gate; $8\times8$ [[Matrix]] with $1$s on diagonal except last two rows swapped.
 ```csharp
-CCNOT(ctrl1, ctrl2, target);
-// equivalent:
+CCNOT(ctrl1, ctrl2, target); // equivalent:
 Controlled X([ctrl1, ctrl2], target);
 ```
 Key in [[Oracle]] construction - marks the all-$|1\rangle$ state in [[Diffusion operator]].
@@ -60,8 +59,8 @@ Used in [[SWAP test]] for state comparison.
 
 Any single-qubit gate can be made $n$-controlled via the `Controlled` functor. Q# decomposes this automatically using [[Ancilla]] & Toffoli gates:
 ```csharp
-Controlled H([c0, c1, c2], target);      // 3-controlled H
-Controlled T([c0, c1], target);          // 2-controlled T
+Controlled H([c0, c1, c2], target); // 3-controlled H
+Controlled T([c0, c1], target); // 2-controlled T
 ```
 Cost of $n$-controlled-$U$: $O(n)$ Toffoli gates using borrowed [[Ancilla|ancilla]].
 

@@ -1,5 +1,5 @@
 #Quantum #Cybersecurity #Algorithm 
-In 1994 Peter Shor dev a quantum algorithm for factoring large nums, demonstrating the potential of quantum computers to break classical cryptographic systems.
+In $1994$ Peter Shor dev a quantum algorithm for factoring large nums, demonstrating the potential of quantum computers to break classical cryptographic systems.
 
 Classical computers face significant challenges when it comes to factoring large nums into prime components. Currently, as these nums grow larger, the computational effort we use increases significantly, making it a daunting task even for the most powerful supercomputers. Shor's Algorithm leverages the principles of superposition, Entanglement, & interference to efficiently factor these large nums.
 

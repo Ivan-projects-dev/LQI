@@ -92,7 +92,7 @@ Factory funcs return operation values with full `Adj + Ctl` support; compiler in
 | `ApplyIfOne` | `(Result, op, arg)` | Result-conditional |
 | `ControlledOnInt` | `(Int, op)(ctrls, tgt)` | Control on integer |
 | `ControlledOnBitString` | `(Bool[], op)(ctrls, tgt)` | Control on bit pattern |
-| `CCA` | `op → doubly-[[Controlled op]]` | Double-control wrapper |
+| `CCA` | `op → doubly-[[[[Controlled op]]]]` | Double-control wrapper |
 | `ApplyCNOTChain` | `Qubit[] → Unit` | [[CNOT]] ladder |
 | `Delay` | `(op, arg) → () → Unit` | Deferred execution |
 

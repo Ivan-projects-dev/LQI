@@ -3,27 +3,22 @@
 
 **Marking [[Oracle]] signature**
 ```csharp
-operation MarkingOracle(
-    register : Qubit[],   // n-qubit input encoding search space
-    target   : Qubit      // ancilla: flipped iff f(register) = 1
-) : Unit is Adj + Ctl     // must support Adjoint for uncomputation
+operation MarkingOracle(register : Qubit[], // n-qubit input encoding search space
+    target : Qubit // ancilla: flipped iff f(register) = 1
+) : Unit is Adj + Ctl // must support Adjoint for uncomputation
 ```
 `is Adj + Ctl` is mandatory - [[Grover]]'s diffusion uses `Adjoint` internally & [[QPE]] uses [[Controlled op]]
 
-**Converting marking → phase [[Oracle]]**
-
-Phase [[Oracle]] applies $(-1)^{f(x)}$ to $|x\rangle$ via phase kickback from target in $|{-}\rangle$:
+**Converting marking → phase [[Oracle]]**. Phase [[Oracle]] applies $(-1)^{f(x)}$ to $|x\rangle$ via phase kickback from target in $|{-}\rangle$:
 ```csharp
-operation ApplyMarkingAsPhase(
-    markingOracle : (Qubit[], Qubit) => Unit is Adj,
-    register      : Qubit[]
-) : Unit is Adj {
+operation ApplyMarkingAsPhase(markingOracle : (Qubit[], Qubit) => Unit is Adj,
+    register : Qubit[]) : Unit is Adj {
     use target = Qubit();
     within {
         X(target);
-        H(target);               // prepare |−⟩ = X then H applied to |0⟩
+        H(target); // prepare |−⟩ = X then H applied to |0⟩
     } apply {
-        markingOracle(register, target);   // phase kickback happens here
+        markingOracle(register, target); // phase kickback happens here
     }
     // auto-uncompute: H then X → restores target to |0⟩
 }
@@ -35,9 +30,7 @@ Uses `ControlledOnInt` to flip target iff register == $x_0$:
 ```csharp
 operation MarkExactState(
     register : Qubit[],
-    target   : Qubit,
-    x0       : Int
-) : Unit is Adj + Ctl {
+    target : Qubit, x0 : Int) : Unit is Adj + Ctl {
     ControlledOnInt(x0, X)(register, target);
 }
 ```
@@ -102,6 +95,6 @@ operation MarkClause(
 }
 ```
 
-`Adj` support is required - the [[Within-Apply pattern]] in the [[Diffusion operator]] & [[Oracle]] uncomputation both call Adjoint op. Operations that contain measurements (`M`, `Measure`) cannot be `Adjoint`-able - avoid measurements inside oracles.
+`Adj` support is required - the [[Within-Apply pattern]] in the [[Diffusion operator]] & [[Oracle]] uncomputation both call [[Adjoint op]]. Operations that contain measurements (`M`, `Measure`) cannot be `Adjoint`-able - avoid measurements inside oracles.
 
 [[Ancilla]] [[Qubits]] allocated with `use` inside an operation are automatically reset to $|0\rangle$ on scope exit only if dev does so explicitly or via `within/apply`. Leaving [[Ancilla]] in non-$|0\rangle$ state causes aruntime error.

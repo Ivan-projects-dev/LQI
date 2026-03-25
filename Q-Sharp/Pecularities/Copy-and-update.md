@@ -57,4 +57,4 @@ for i in 0..n-1 {
 
 `[Zero, size = n]` - shorthand for array of `n` copies of `Zero`. Works with any value & type: `[0, size = 10]`, `[false, size = 4]`.
 
-Copy-and-update vs UDT `!` unwrap: `w/` works directly on UDT named items without unwrapping. Only need `!` when passing to  func expecting the underlying tuple type.
+Copy-and-update vs [[UDT]] `!` unwrap: `w/` works directly on [[UDT]] named items without unwrapping. Only need `!` when passing to  func expecting the underlying tuple type.
