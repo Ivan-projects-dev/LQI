@@ -1,5 +1,5 @@
 #ML 
-**Classical feedforward [[Neural network]]** (**Multilayer [[Perceptron]]/MLP**) consists of an **input layer** that receives data x, one or $>$ **hidden layers** that successively transform the data through linear operations & nonlinear activations, & an **output layer** that produces the network's final prediction (e.g., a class label or regression value). 
+**Classical feedforward [[Neural network]]** (**Multilayer [[Perceptron]]/MLP**) consists of an **input layer** that receives data x, $1$ or $>$ **hidden layers** that successively transform the data through linear operations & nonlinear activations, & an **output layer** that produces the network's final prediction (e.g., a class label or regression value). 
 
 Each hidden layer typically computes $z(ℓ)=σ(W(ℓ)z(ℓ−1)+b(ℓ))$ where
 	$W(ℓ)$ and $b(ℓ)$ are learnable weights & biases, 

@@ -11,7 +11,7 @@ DumpMachine();
 // |1⟩: amplitude = 0.707..., probability = 0.5, phase = 0°
 Reset(q);
 ```
-Use after initialization, after [[Oracle]] app, or between Grover iterations to verify amplitudes are evolving correctly.
+Use after initialization, after [[Oracle]] app, or between [[Grover]] iterations to verify amplitudes are evolving correctly.
 
 **`DumpRegister(qs)`** prints state [[Vector]] of specific qubit array, tracing out the rest of the system. Only meaningful when the register is not entangled with other [[Qubits]]:
 ```csharp

@@ -1,5 +1,5 @@
 #Q-Sharp
-Q# organizes its standard library into namespaces under `Std.*`. $2$ namespaces are auto-imported in every program: `Std.Core` & `Std.Intrinsic`. All others require explicit `import` statement.
+Q# organizes its STL into namespaces under `Std.*`. $2$ namespaces are auto-imported in every program: `Std.Core` & `Std.Intrinsic`. All others require explicit `import` statement.
 
 All primitive quantum gates & measurements. Includes: `H`, `X`, `Y`, `Z`, `S`, `T`, [[CNOT]], `CCNOT`, `SWAP`, `CZ`, `Rx`, `Ry`, `Rz`, `R1`, `R`, `Exp`, `M`, `Measure`, `Reset`, `ResetAll`, `Message`.
 ```csharp
@@ -20,7 +20,7 @@ Key funcs: `Length`, `Head`, `Tail`, `Most`, `Rest`, `Reversed`, `Sorted`, `Mapp
 ```csharp
 import Std.Convert.*; 
 ```
-Key: `IntAsDouble`, `IntAsBigInt`, `IntAsBoolArray`, `BoolArrayAsInt`, `ResultAsInt`, `ResultArrayAsIntBE`, `ResultArrayAsIntLE`, `BigIntAsInt`, `DoubleAsInt`. Used constantly to bridge integer ↔ bit-array ↔ Result[] conversions.
+Key: `IntAsDouble`, `IntAsBigInt`, `IntAsBoolArray`, `BoolArrayAsInt`, `ResultAsInt`, `ResultArrayAsIntBE`, `ResultArrayAsIntLE`, `BigIntAsInt`, `DoubleAsInt`. Used constantly to bridge int ↔ bit-array ↔ Result[] conversions.
 
 ```csharp
 import Std.Canon.*; //high-level quantum combinators

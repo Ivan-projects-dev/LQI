@@ -2,8 +2,8 @@
 Gates in Q# are operations in `Std.Intrinsic`. All [[Single-qubit gates]] are unitary; all have auto-generated `Adjoint` (conjugate transpose) & `Controlled` variants.
 
 **Single-qubit Pauli gates**
-`X(q);` NOT / bit-flip: $|0⟩↔|1⟩$
-`Y(q);` Y gate: $|0⟩→i|1⟩, |1⟩→-i|0⟩$
+`X(q);` $NOT$ / bit-flip: $|0⟩↔|1⟩$
+`Y(q);` $Y$ gate: $|0⟩→i|1⟩, |1⟩→-i|0⟩$
 `Z(q);` phase-flip: $|0⟩→|0⟩, |1⟩→-|1⟩$
 `H(q);` - Hadamard: $|0⟩→|+⟩, |1⟩→|−⟩$
 
@@ -46,7 +46,7 @@ Controlled H([c1, c2], target); // doubly-controlled H
 Controlled Rz(controls, (theta, target)); // note tuple for args
 ```
 
-`ControlledOnInt` & `ControlledOnBitString` from `Std.Canon` apply operation conditioned on a classical integer or bitstring pattern rather than all-ones:
+`ControlledOnInt` & `ControlledOnBitString` from `Std.Canon` apply operation conditioned on classical int or bitstring pattern rather than all-ones:
 ```csharp
 import Std.Canon.*;
 ApplyControlledOnInt(5, X, register, target); // apply X when register = 5

@@ -4,7 +4,7 @@
 **Encapsulation** is knowledge of how to manipulate objects included in object itself.
 **Abstract Classes** are not instantiated.
 **Abstract methods** declare method's signature, not implementation. Class with such method must also be abstract. While inheriting from abstract class, all abstract methods must be defined by derived class with same (or < restricted) visibility.
-**Interface** states that object is able to perform some action, regardless of its origin interface. Used when objects are not inherited from one another but have similar behavior.
+**Interface** states that object is able to perform some action, regardless of its origin interface. Used when objects are not inherited from $1$ another but have similar behavior.
 ```csharp
 class Person
 {
@@ -43,7 +43,7 @@ class Dog : Animal
     public void Bark() => Console.WriteLine("Woof!");
 }
 ```
-**Polymorphism**: One interface - many implementations. Achieved by **Method overriding** & **interfaces**. Use `virtual`, `override`, & `abstract` keywords.
+**Polymorphism**: $1$ interface - many implementations. Achieved by **Method overriding** & **interfaces**. Use `virtual`, `override`, & `abstract` keywords.
 ```csharp
 class Animal
 {
@@ -200,7 +200,7 @@ class Resource
     ~Resource() => Console.WriteLine("Destructor called");
 }
 ```
-**Copy Constructor (Manually Defined)** - copies the values from one object into a new one.
+**Copy Constructor (Manually Defined)** - copies the values from $1$ object into a new one.
 ```csharp
 class Person
 {

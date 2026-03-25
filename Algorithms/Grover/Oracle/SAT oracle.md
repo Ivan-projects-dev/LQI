@@ -1,7 +1,7 @@
 #Algorithm #Quantum 
 **SAT (bool Satisfiability)** is the problem of finding assignment of bool variables $x_1,\ldots,x_n \in \{0,1\}$ that satisfies given bool formula $\phi(x_1,\ldots,x_n) = 1$.
 
-[[Grover's algorithm]] solves SAT by encoding $\phi$ as a phase [[Oracle]] & searching the $2^n$ possible assignments.
+[[Grover]] solves SAT by encoding $\phi$ as a phase [[Oracle]] & searching the $2^n$ possible assignments.
 
 **CNF (Conjunctive Normal Form)** - standard representation for SAT oracles.
 $$\phi = C_1 \wedge C_2 \wedge \cdots \wedge C_m$$
@@ -18,6 +18,6 @@ Net effect:
 $$U_\phi^{\text{phase}}:|x⟩ \mapsto (-1)^{\phi(x)}|x⟩$$
 **Unknown solution count $M$**: SAT problems may have $0$, $1$, or many satisfying assignments unknown in advance. Use exponential search or [[Quantum counting]] from [[Grover solutions]] to handle this.
 
-**Complexity**: each Grover iteration calls $U_\phi$ once. $U_\phi$ costs $O(m \cdot k)$ gates (polynomial in formula size). Total: $O(\sqrt{2^n/M} \cdot mk)$ compared to classical $O(2^n)$ exhaustive search - **exponential speedup** for unstructured input.
+**Complexity**: each [[Grover]] iteration calls $U_\phi$ once. $U_\phi$ costs $O(m \cdot k)$ gates (polynomial in formula size). Total: $O(\sqrt{2^n/M} \cdot mk)$ compared to classical $O(2^n)$ exhaustive search - **exponential speedup** for unstructured input.
 
-**Reduction from NP**: since SAT is NP-complete, Grover $+$ SAT [[Oracle]] gives a generic $O(2^{n/2})$ quantum algorithm for any NP problem (via polynomial reduction to SAT). Does not prove $\text{NP} \subseteq \text{BQP}$, but gives quadratic speedup over brute force.
+**Reduction from NP**: since SAT is NP-complete, [[Grover]] $+$ SAT [[Oracle]] gives a generic $O(2^{n/2})$ quantum algorithm for any NP problem (via polynomial reduction to SAT). Does not prove $\text{NP} \subseteq \text{BQP}$, but gives quadratic speedup over brute force.

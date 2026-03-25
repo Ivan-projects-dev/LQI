@@ -10,7 +10,7 @@ operation RandomBit() : Result {
 }
 ```
 
-**Random integer in $[0,\, 2^n - 1]$**
+**Random int in $[0,\, 2^n - 1]$**
 ```csharp
 import Std.Convert.*;
 
@@ -22,7 +22,7 @@ operation RandomInt(nBits : Int) : Int {
 }
 ```
 
-**Random integer in arbitrary range $[\text{min},\, \text{max}]$**
+**Random int in arbitrary range $[\text{min},\, \text{max}]$**
 
 **Rejection sampling**: find min $n$ with $2^n \geq \text{max} - \text{min} + 1$, sample from $[0, 2^n - 1]$, retry if out of range.
 ```csharp

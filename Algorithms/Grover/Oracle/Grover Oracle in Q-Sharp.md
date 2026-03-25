@@ -1,5 +1,5 @@
 #Q-Sharp #Quantum #Algorithm
-[[Oracle]] implementation in Q# for Grover's search. In Q#, you typically write the **marking [[Oracle]]** & convert it to phase [[Oracle]] via phase kickback.
+[[Oracle]] implementation in Q# for [[Grover]]'s search. In Q#, you typically write the **marking [[Oracle]]** & convert it to phase [[Oracle]] via phase kickback.
 
 **Marking [[Oracle]] signature**
 ```csharp
@@ -8,7 +8,7 @@ operation MarkingOracle(
     target   : Qubit      // ancilla: flipped iff f(register) = 1
 ) : Unit is Adj + Ctl     // must support Adjoint for uncomputation
 ```
-`is Adj + Ctl` is mandatory - Grover's diffusion uses `Adjoint` internally & [[QPE]] uses [[Controlled op]]
+`is Adj + Ctl` is mandatory - [[Grover]]'s diffusion uses `Adjoint` internally & [[QPE]] uses [[Controlled op]]
 
 **Converting marking → phase [[Oracle]]**
 
@@ -91,7 +91,7 @@ operation MarkClause(
     } apply {
         // If all literals false → all relevant qubits are |0⟩ after negation
         // We mark (NOT clause) - so clause satisfied = ancilla NOT flipped
-        // Adjust: flip target when clause is satisfied (at least one |1⟩)
+        // Adjust: flip target when clause is satisfied (at least $1$ |1⟩)
         // Implementation: use NOR → flip all, multi-CNOT, flip all back
         ApplyToEachA(X, register[varIdx]);
         Controlled X(register[varIdx], target);   // target = 1 iff clause FALSE
@@ -102,6 +102,6 @@ operation MarkClause(
 }
 ```
 
-`Adj` support is required - the [[Within-Apply pattern]] in the [[Diffusion operator]] & [[Oracle]] uncomputation both call [[Adjoint op]]. Operations that contain measurements (`M`, `Measure`) cannot be `Adjoint`-able - avoid measurements inside oracles.
+`Adj` support is required - the [[Within-Apply pattern]] in the [[Diffusion operator]] & [[Oracle]] uncomputation both call Adjoint op. Operations that contain measurements (`M`, `Measure`) cannot be `Adjoint`-able - avoid measurements inside oracles.
 
 [[Ancilla]] [[Qubits]] allocated with `use` inside an operation are automatically reset to $|0\rangle$ on scope exit only if dev does so explicitly or via `within/apply`. Leaving [[Ancilla]] in non-$|0\rangle$ state causes aruntime error.

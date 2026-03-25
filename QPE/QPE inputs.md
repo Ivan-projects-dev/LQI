@@ -22,9 +22,9 @@ eigenstate: |ψ> ──U──────
 ```
 $+1$ eigenvalue → $H|0\rangle$ unaffected → measure $0$. $-1$ eigenvalue → phase kickback turns $|{+}\rangle$ into $|{-}\rangle$ → measure $1$.
 
-**Two-bit PE** – distinguishes eigenvalues $+1, i, -1, -i$ (phases $0, 1/4, 1/2, 3/4$):
+**$2$-bit PE** – distinguishes eigenvalues $+1, i, -1, -i$ (phases $0, 1/4, 1/2, 3/4$):
 - Run single-bit PE first: $+1$ & $i$ both measure $0$; $-1$ & $-i$ both measure $1$.
 - If result was $0$: run again with a controlled-$U^2$ circuit (or add $S^\dagger$ rotation before second $H$) to distinguish $+1$ ($\varphi=0$) from $i$ ($\varphi=1/4$).
 - If result was $1$: run again similarly to distinguish $-1$ ($\varphi=1/2$) from $-i$ ($\varphi=3/4$).
 
-This is the building block of **iterative [[QPE]]** (see [[Iterative QPE]]), where each round extracts one bit of $\varphi$ with a phase correction for previously known bits.
+This is the building block of **iterative [[QPE]]** (see [[Iterative QPE]]), where each round extracts $1$ bit of $\varphi$ with a phase correction for previously known bits.

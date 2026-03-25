@@ -1,7 +1,7 @@
 #Algorithm #Quantum #DB 
 **Lov Grover** devises quantum algorithm for DB searching, providing quadratic speedup over classical algorithms.
 
-**Grover's algorithm** can search through unsorted DB of $N$ items in $~√N$ steps, compared to $N$ num of steps for classical computer. 
+**Grover algorithm** can search through unsorted DB of $N$ items in $~√N$ steps, compared to $N$ num of steps for classical computer. 
 
 Power of algorithm lies in its ability to amplify the probability of finding the correct solution through **quantum interference**. It uses [[Oracle]] to mark the desired item & then applies series of quantum operations to increase the amplitude of the marked state. This process, **amplitude amplification**, allows the algorithm to find the target item with high probability after only $√N$ iterations. For large DBs, this quadratic speedup can translate to significant time savings, making previously intractable search problems feasible.
 

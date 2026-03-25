@@ -1,5 +1,5 @@
 #Algorithm #Quantum
-**Simon's problem**: given [[Oracle]] $f:\{0,1\}^n\to\{0,1\}^n$ that is either $1$-to-$1$ or $2$-to-$1$ with hidden period $s\neq 0^n$ such that $f(x)=f(y)\iff x=y\oplus s$, find $s$. Best classical algorithm needs $\Omega(2^{n/2})$ queries; Simon's algorithm uses $O(n)$ - **provable exponential quantum speedup**.
+**Simon's problem**: given [[Oracle]] $f:\{0,1\}^n\to\{0,1\}^n$ that is either $1$-to-$1$ or $2$-to-$1$ with hidden period $s\neq 0^n$ such that $f(x)=f(y)\iff x=y\oplus s$, find $s$. Best classical algorithm needs $\Omega(2^{n/2})$ queries; Simon algorithm uses $O(n)$ - **provable exponential quantum speedup**.
 
 **Quantum circuit** ($1$ run):
 $$|0\rangle^n \xrightarrow{H^{\otimes n}} \frac{1}{\sqrt{2^n}}\sum_x|x\rangle \xrightarrow{U_f} \frac{1}{\sqrt{2}}\bigl(|x_0\rangle+|x_0\oplus s\rangle\bigr)|f(x_0)\rangle \xrightarrow{H^{\otimes n}} |z\rangle$$

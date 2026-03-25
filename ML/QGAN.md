@@ -2,7 +2,7 @@
 **Quantum GAN** mirrors the classical GAN adversarial setup but introduces **quantum models** for the generator, the discriminator, or both:
 - **Quantum Generator + Classical Discriminator**: generator is parametrized quantum circuit (e.g., a variational circuit) that outputs quantum states or classical data through measurements. The discriminator remains classical, receiving either real data or measured generator outputs.
 	- **Quantum Generator + Quantum Discriminator**: both components are quantum. Generator outputs quantum states, while the discriminator attempts to distinguish these from the real quantum data.
-- **Classical Data, Partly Quantum**: even if the dataset is classical, one might replace just the generator or the discriminator (or both) with quantum neural networks that accept or produce classical outputs via measurement-based readouts.
+- **Classical Data, Partly Quantum**: even if the dataset is classical, $1$ might replace just the generator or the discriminator (or both) with quantum neural networks that accept or produce classical outputs via measurement-based readouts.
 
 When real data is also inherently **quantum** (i.e., quantum states), QGANs can seamlessly process it without measurement overhead until the discriminator’s final step, unlocking new possibilities in fields like quantum chemistry or [[Quantum sensing]].
 

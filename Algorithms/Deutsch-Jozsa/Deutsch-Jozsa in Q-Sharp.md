@@ -1,5 +1,5 @@
 #Algorithm #Q-Sharp 
-**Deutsch-Jozsa** determines if bool func $f:\{0,1\}^n \to \{0,1\}$ is **constant** (same output for all inputs) or **balanced** (exactly $1/2$ inputs map to $0$, $1/2$ to $1$). Classical deterministic: $2^{n-1}+1$ queries worst case. Quantum: **$1$ query**.
+**[[Deutsch-Jozsa]]** determines if bool func $f:\{0,1\}^n \to \{0,1\}$ is **constant** (same output for all inputs) or **balanced** (exactly $1/2$ inputs map to $0$, $1/2$ to $1$). Classical deterministic: $2^{n-1}+1$ queries worst case. Quantum: **$1$ query**.
 
 $n$ input [[Qubits]] start in $|0\rangle^{\otimes n}$, $1$ [[Ancilla]] in $|1\rangle$:
 $$|0\rangle^n|1\rangle \xrightarrow{H^{\otimes n+1}} |+\rangle^n|-\rangle \xrightarrow{U_f} (\text{phase-kicked}) \xrightarrow{H^{\otimes n}} \text{measure inputs}$$

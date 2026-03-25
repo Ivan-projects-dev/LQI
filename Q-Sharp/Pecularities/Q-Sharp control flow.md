@@ -1,5 +1,5 @@
 #Q-Sharp
-**Q# control flow** structures closely resemble classical langs, with one critical addition: `repeat-until`, designed for probabilistic quantum subroutines.
+**Q# control flow** structures closely resemble classical langs, with $1$ critical addition: `repeat-until`, designed for probabilistic quantum subroutines.
 ```csharp
 if M(q) == One {
     X(q); // reset to |0⟩ if measured One

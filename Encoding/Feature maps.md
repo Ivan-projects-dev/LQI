@@ -3,7 +3,7 @@
 
 Angle/rotation encoding maps each component $x_i$ (feature) of the input [[Vector]] $→x$ to the rotation angle of a single-qubit gate. A simple example is using a $R_y$ gate & the value of each feature directly:  $|0⟩R_y(2x_i)→cos(x_i)|0⟩+sin(x_i)|1⟩$
 
-If multiple features need to be encoded, one can apply separate [[Rotation gates]] on different [[Qubits]] or on the same qubit(s) sequentially.
+If multiple features need to be encoded, $1$ can apply separate [[Rotation gates]] on different [[Qubits]] or on the same qubit(s) sequentially.
 
 **Angle encoding** is conceptually straightforward & hardware-friendly, as it relies primarily on [[Single-qubit gates]].
 
@@ -16,7 +16,7 @@ $φ_(ji)=x_(ji)−xmin_ixmax_i−xmin_iπ4$
 
 where $xmin_i=min_jx_(ji)$ and $xmax_i=max_jx_(ji)$. This normalization considers the $φ∈[0,π]$ angle restriction (due to the [[Bloch sphere]]) & ensures that each feature value has a unique rotation.
 
-This scheme only requires one rotation gate for each qubit, hence encodes as many features as the num of [[Qubits]] ($n$ features using $n$ [[Qubits]]).
+This scheme only requires $1$ rotation gate for each qubit, hence encodes as many features as the num of [[Qubits]] ($n$ features using $n$ [[Qubits]]).
 
 We can use any rotation gate of our choice; however, if we use $R_z$ gates & take $|0⟩$ to be our init state, the action of our feature map will have no effects. That is why, when $R_z$ gates are used, it is customary to precede them by Hadamard gates.
 ![[Pasted image 20260101205342.png]]

@@ -58,10 +58,10 @@ let t = Tail(arr); // 4 (last element)
 let r = Rest(arr); // [1, 2, 3, 4] (all except first)
 let m = Most(arr); // [0, 1, 2, 3] (all except last)
 
-// Subarray : (Int[], 'T[]) -> 'T[]  - select by index list
+// Subarray : (Int[], 'T[]) -> 'T[] - select by index list
 let sub = Subarray([0, 2, 4], arr); // [0, 2, 4]
 
-// Chunks : (Int, 'T[]) -> 'T[][]  - split into chunks of given size
+// Chunks : (Int, 'T[]) -> 'T[][] - split into chunks of given size
 let chunks = Chunks(2, [1,2,3,4,5,6]); // [[1,2],[3,4],[5,6]]
 
 // Flattened : 'T[][] -> 'T[]
@@ -76,10 +76,10 @@ let pairs = Zipped([1,2,3], ["a","b","c"]); // [(1,"a"),(2,"b"),(3,"c")]
 // Unzipped : ('T, 'U)[] -> ('T[], 'U[])  - inverse of Zipped
 let (ints, strs) = Unzipped(pairs);
 
-// Interleaved : ('T[], 'T[]) -> 'T[]  - alternate elements
+// Interleaved : ('T[], 'T[]) -> 'T[] - alternate elements
 let alt = Interleaved([1,3,5], [2,4,6]); // [1,2,3,4,5,6]
 
-// Windows : (Int, 'T[]) -> 'T[][]  - sliding window
+// Windows : (Int, 'T[]) -> 'T[][] - sliding window
 let wins = Windows(3, [1,2,3,4,5]); // [[1,2,3],[2,3,4],[3,4,5]]
 ```
 
@@ -92,17 +92,17 @@ let desc = Sorted((a, b) -> a >= b, [3,1,4,1,5]); // [5,4,3,1,1]
 // Reversed : 'T[] -> 'T[]
 let rev = Reversed([1,2,3,4]); // [4,3,2,1]
 
-// Transposed : 'T[][] -> 'T[][]  - matrix transpose
+// Transposed : 'T[][] -> 'T[][] - matrix transpose
 let mat = [[1,2],[3,4],[5,6]];
 let t = Transposed(mat); // [[1,3,5],[2,4,6]]
 
-// Shuffled : 'T[] -> 'T[]  - random permutation (uses runtime RNG)
+// Shuffled : 'T[] -> 'T[] - random permutation (uses runtime RNG)
 let shuffled = Shuffled([1,2,3,4,5]);
 ```
 
 **Index utilities**
 ```csharp
-// IndexRange : 'T[] -> Range  - equivalent to 0..Length(arr)-1
+// IndexRange : 'T[] -> Range - equivalent to 0..Length(arr)-1
 for i in IndexRange(arr) { ... } // idiomatic loop over indices
 
 // Enumerated : 'T[] -> (Int, 'T)[] - pairs each element with its index

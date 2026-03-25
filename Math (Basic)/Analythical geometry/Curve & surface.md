@@ -77,7 +77,7 @@ $|MF - MF'| = \varepsilon |MK - MK'| = 2a$
 $\varepsilon \cdot 2d = 2a \Rightarrow d = \dfrac{a}{\varepsilon}$
 **Linear eccentricity of hyperbola & ellipse** is distance between **its center & either of its 2 foci**: $c = \varepsilon a$, or $c = a \sqrt{\varepsilon^2 - 1}$
 
-**Asymptote** - line such that the **distance between curve & line approaches $0$** as one or both coordinates $\to \infty$
+**Asymptote** - line such that the **distance between curve & line approaches $0$** as $1$ or both coordinates $\to \infty$
 From hyperbola: $bx \pm ay = 0$
 This **can degenerate into 2 lines** that intersect:  $\left( \dfrac{b}{a}x + y \right) \left( \dfrac{b}{a}x - y \right) = b^2$
 **Given 2 points** $(x_1, y_1)$ & $(x_2, y_2)$ $\vec{a} = (x_2 - x_1,\ y_2 - y_1)$

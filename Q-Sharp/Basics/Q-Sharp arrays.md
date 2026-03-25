@@ -1,5 +1,5 @@
 #Q-Sharp
-**Q# arrays** are immutable fixed-length sequences. `[[Std.Arrays]]` provides a rich set of functional-style operations for transforming them - essential for working with qubit registers & classical bit arrays.
+**Q# arrays** are immutable fixed-length sequences. [[Std.Arrays]] provides rich set of functional-style operations for transforming them - essential for working with qubit registers & classical bit arrays.
 ```csharp
 let arr = [1, 2, 3, 4, 5];
 Length(arr) // 5 - num of elements
@@ -11,8 +11,8 @@ Rest(arr) // [2, 3, 4, 5] - alias for Tail
 
 **Slicing** - range-based access:
 ```csharp
-arr[1..3] // [2, 3, 4]   - indices 1 to 3
-arr[0..2..4] // [1, 3, 5]   - step 2
+arr[1..3] // [2, 3, 4] - indices 1 to 3
+arr[0..2..4] // [1, 3, 5] - step 2
 arr[4..-1..0] // [5, 4, 3, 2, 1] - reversed slice
 ```
 
@@ -38,29 +38,23 @@ let doubles = Mapped(x -> x * 2, [1, 2, 3]); // [2, 4, 6]
 let asDoubles = Mapped(IntAsDouble, [1, 2, 3]); // [1.0, 2.0, 3.0]
 ```
 
-Equivalent to `map` in funcal langs. Used to generate angle arrays for [[Rotation gates]]:
+Equivalent to `map` in functional langs. Used to generate angle arrays for [[Rotation gates]]:
 ```csharp
 let angles = Mapped(k -> 2.0 * PI() / IntAsDouble(1 <<< k), 0..t-1);
 ```
 
-**`Filtered(pred, arr)` - keep matching elements**
-
-Returns array of elements satisfying predicate `pred`:
+**`Filtered(pred, arr)` - keep matching elements** Returns array of elements satisfying predicate `pred`:
 ```csharp
 let evens = Filtered(x -> x % 2 == 0, [1, 2, 3, 4, 5]); // [2, 4]
 ```
 
-**`Fold(f, init, arr)` - accumulate**
-
-Left fold: applies `f(accumulator, element)` across array, starting from `init`:
+**`Fold(f, init, arr)` - accumulate**. Left fold: applies `f(accumulator, element)` across array, starting from `init`:
 ```csharp
 let sum = Fold((acc, x) -> acc + x, 0, [1, 2, 3, 4]); // 10
 let product = Fold((acc, x) -> acc * x, 1, [1, 2, 3, 4]); // 24
 ```
 
-**`Enumerated(arr)` - index-value pairs**
-
-Returns array of `(Int, T)` tuples, pairing each element with its index. Used constantly in [[Oracle]] construction:
+**`Enumerated(arr)` - index-value pairs**, returns array of `(Int, T)` tuples, pairing each element with its index. Used constantly in [[Oracle]] construction:
 ```csharp
 for (i, q) in Enumerated(register) {
     Controlled R1([control[i]], (2.0 * PI() / IntAsDouble(1 <<< (i+1)), q));

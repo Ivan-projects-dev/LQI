@@ -14,17 +14,16 @@ operation EstimatePhase(
     controlledU : (Int, Qubit[]) => Unit is Adj + Ctl // applies U^power
 ) : Double {
     use control = Qubit[nControlBits];
-
-    // Stage 1: uniform superposition on control register
+    // uniform superposition on control register
     ApplyToEach(H, control);
 
-    // Stage 2: controlled-U^(2^j) for each control qubit j
+    // controlled-U^(2^j) for each control qubit j
     for j in 0..nControlBits - 1 {
-        let power = 1 <<< j;                          // 2^j
+        let power = 1 <<< j; // 2^j
         Controlled controlledU([control[j]], (power, eigenstate));
     }
 
-    // Stage 3: inverse QFT on control register
+    // inverse QFT on control register
     Adjoint ApplyQFT(control);
 
     // Measure & decode
@@ -32,9 +31,9 @@ operation EstimatePhase(
     return IntAsDouble(ResultArrayAsIntBE(result)) / IntAsDouble(1 <<< nControlBits);
 }
 ```
-`controlledU(power, eigenstate)` applies $U^{\text{power}}$ to `eigenstate`. The caller constructs this from their specific unitary.
+`controlledU(power, eigenstate)` applies $U^{\text{power}}$ to `eigenstate`. Caller constructs this from their specific unitary.
 
-Q# standard library provides `ApplyQFT` in `Std.Arithmetic`. If implementing manually:
+Q# STL provides `ApplyQFT` in `Std.Arithmetic`. If implementing manually:
 ```csharp
 operation ApplyQFT(register : Qubit[]) : Unit is Adj + Ctl {
     let n = Length(register);

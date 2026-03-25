@@ -7,7 +7,7 @@ In multiprogramming systems, multiple processes may need to access shared resour
 - If the value becomes negative, the process is blocked until the resource becomes available.
 1. **Signal** ($V$ operation / up)
 - Increases the [[Semaphore]] value.
-- If there are waiting processes, one of them gets unblocked.
+- If there are waiting processes, $1$ of them gets unblocked.
 ![[Pasted image 20251014100051.png]]
 **[[Semaphore]]** works by maintaining a counter that controls access to a specific resource, ensuring that no $>$ than the allowed num of processes access the resource at the same time.
 To achieve sync, every critical section of code is surrounded by $2$ operations.
@@ -18,7 +18,7 @@ Example: Let’s consider processes $P_1$ & $P_2$ sharing a [[Semaphore]] $S$, i
 - State $3$: If $P_2$ now wants to enter, it cannot proceed since $S = 0$. It must wait until $S > 0$.
 - State $4$: When $P_1$ finishes, it performs $signal(S)$, making $S = 1$. Now $P_2$ can enter its critical section & again sets $S = 0$.
 ![[Pasted image 20251014101336.png]]
-This mechanism guarantees mutual exclusion, ensuring that only one process can access the shared resource at a time.
+This mechanism guarantees mutual exclusion, ensuring that only $1$ process can access the shared resource at a time.
 
 **Counting [[Semaphore]]** is used when multiple instances of a resource exist. Its value can range over an unrestricted domain $(0 to N)$ (managing access to a pool of $5$ printers).
 **Binary [[Semaphore]]** - special case of counting [[Semaphore]] with only values $0 or 1$. Works like a **lock**: either the resource is **free $(1)$** or **busy $(0)$** (managing access to a single critical section).

@@ -1,9 +1,9 @@
-#Quantum #Math #Q-Sharp
-**Ancilla qubit** (from Latin helper/servant) is auxiliary qubit allocated to assist computation without being part of the primary I/O register. Carry intermediate results, enable reversible computation, & facilitate phase kickback.
+#Quantum #Math #Q-Sharp 
+**Ancilla qubit** (from Latin *helper/servant*) is auxiliary qubit allocated to assist computation without being part of the primary I/O register. Carry intermediate results, enable reversible computation, & facilitate phase kickback.
 
 Quantum gates must be **reversible** (unitary). Classical [[Logic]] gates such as $AND, OR$ produce irreversible mappings - multiple inputs map to the same output, losing info. To implement $f(x)$ as unitary, extra register is introduced:
 $$U_f : |x\rangle|a\rangle \mapsto |x\rangle|a \oplus f(x)\rangle$$
-Input $|x\rangle$ is preserved; $f(x)$ is XOR-d into the ancilla $|a\rangle$. This makes the transform reversible regardless of $f$.
+Input $|x\rangle$ is preserved; $f(x)$ is $XOR-d$ into the ancilla $|a\rangle$. This makes the transform reversible regardless of $f$.
 
 **Output ancilla**: initialized to $|0\rangle$, receives $f(x)$ after the [[Oracle]]. Used in marking oracles - the ancilla becomes $|1\rangle$ for solution states.
 
@@ -32,4 +32,4 @@ borrow scratch = Qubit(); // borrowed dirty ancilla
 ```
 Allocated [[Qubits]] go out of scope at the end of their `use` block; Q# runtime throws runtime error if any qubit is not in $|0\rangle$ on release.
 
-Each ancilla is physical qubit on real hardware - scarce resource. [[Oracle]] construction for $m$-clause SAT formula requires $O(m)$ clause ancillas + 1 output ancilla. Minimizing ancilla count through in-place arithmetic or Bennett's pebbling strategies is active area of quantum circuit optimization.
+Each ancilla is physical qubit on real hardware - scarce resource. [[Oracle]] construction for $m$-clause $SAT$ formula requires $O(m)$ clause ancillas + 1 output ancilla. Minimizing ancilla count through in-place arithmetic or Bennett's pebbling strategies is active area of quantum circuit optimization.

@@ -18,5 +18,5 @@ Popular [[Vector]] DBs
 **Usage**:
 - **Image & Video Search:** Finds visually similar media from a DB. Feature [[Embeddings]] are extracted from media files & stored in the [[Vector]] DB. When a new image or frame is queried, the system quickly retrieves the most visually similar results.
 - **Question-answering Systems:**etrieves the most relevant infoarge knowledge bases. The system embeds both queries & stored text then compares their vectors to find the closest match. This improves accuracy compared to simple keyword matching.
-- **Cross Lingual IR:** Supports matching across multiple langs using multilingual [[Embeddings]]. Text in different langs is converted into a shared embedding space. This allows searching in one lang & retrieving relevant results in another.
+- **Cross Lingual IR:** Supports matching across multiple langs using multilingual [[Embeddings]]. Text in different langs is converted into a shared embedding space. This allows searching in $1$ lang & retrieving relevant results in another.
 - **Fraud & Anomaly Detection:** Identifies unusual patterns by comparing [[Embeddings]] with normal data. The DB can store [[Embeddings]] of typical behavior & detect deviations. This helps in early identification of fraudulent or suspicious activities.

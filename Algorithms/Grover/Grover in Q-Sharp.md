@@ -1,7 +1,7 @@
 #Q-Sharp #Quantum #Algorithm
-Complete Q# implementation of Grover's search algorithm. Combines Grover [[Oracle]] in Q-Sharp, [[Diffusion operator]] in Q-Sharp, & the outer loop with iteration count [[Logic]].
+Complete Q# implementation of [[Grover]]'s search algorithm. Combines [[Grover]] [[Oracle]] in Q-Sharp, [[Diffusion operator]] in Q-Sharp, & the outer loop with iteration count [[Logic]].
 
-**Single Grover iteration**
+**Single [[Grover]] iteration**
 One app of $G = D \cdot U_f$:
 ```csharp
 operation GroverIteration(
@@ -82,7 +82,7 @@ Expected [[Oracle]] calls: $O(\sqrt{2^n / M})$ - matches the fixed-$M$ complexit
 
 **Classical result verification**
 
-Always verify the measurement result classically (evaluating $f$ once) before returning. Grover succeeds with high probability, not certainty:
+Always verify the measurement result classically (evaluating $f$ once) before returning. [[Grover]] succeeds with high probability, not certainty:
 ```csharp
 function IsValidSolution(x : Int, oracle : Int -> Bool) : Bool {
     return oracle(x);

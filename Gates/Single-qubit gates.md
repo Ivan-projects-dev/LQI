@@ -1,5 +1,5 @@
 #Q-Sharp #Quantum #Math
-**Single-qubit gates** are unitary $2\times2$ matrices acting on one [[Qubits|qubit]]. All are available in `Std.Intrinsic` & support `Adj + Ctl`.
+**Single-qubit gates** are unitary $2\times2$ matrices acting on $1$ [[Qubits|qubit]]. All are available in `Std.Intrinsic` & support `Adj + Ctl`.
 
 **Pauli-X (NOT) - `X`**
 $$X = \begin{pmatrix}0 & 1\\1 & 0\end{pmatrix}$$

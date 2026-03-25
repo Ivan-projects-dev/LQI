@@ -1,7 +1,7 @@
 #Math 
 **Classical autoencoder (CAE)** is a [[Neural network]] trained to replicate its own input at the output layer. It typically has:
 1. **Input layer** of dimension $n$.
-2. $1>$ **hidden layers**, where at least one hidden layer (the "bottleneck") has fewer neurons than the input.
+2. $1>$ **hidden layers**, where at least $1$ hidden layer (the "bottleneck") has fewer neurons than the input.
 3. **Output layer**, also of dimension $n$.
 Mathematically, if $x∈R_n$ is the input, the autoencoder decomposes into:
 $z=f_(enc)(x;w_(enc)),^x=f_(dec)(z;w_(dec))$

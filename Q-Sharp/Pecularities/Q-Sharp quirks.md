@@ -58,14 +58,14 @@ Unlike Python, Q#'s `%` operator returns a result with the same sign as the divi
 ModulusI(-3, 5) // returns 2 - always non-negative
 ```
 
-**Integer left-shift `<<<` not `<<`**
+**int left-shift `<<<` not `<<`**
 
 Q# uses triple-chevron for bit shifts to avoid ambiguity with generic type brackets:
 ```csharp
 let n = 1 <<< 4; // 16 (not << like C# or Python)
 let m = 8 >>> 1; // 4 (right shift)
 ```
-Common mistake when porting Grover or [[QPE]] formulas from other langs.
+Common mistake when porting [[Grover]] or [[QPE]] formulas from other langs.
 
 **String interpolation requires `$"..."`**
 

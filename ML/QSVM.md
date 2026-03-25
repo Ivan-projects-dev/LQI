@@ -6,5 +6,5 @@ By using this quantum representation of our transformation, we can assume that o
 ![](https://lms.qureca.com/wp-content/uploads/uncanny-snc/25/assets/Screenshot%202025-03-13%20164110.png)
 Then, given the elements of $x_i$ and $x_j$, we can perform the dot product of our new mapping in terms of quantum states:
 ![](https://lms.qureca.com/wp-content/uploads/uncanny-snc/25/assets/Screenshot%202025-03-13%20164351.png)
-And because we are only dealing with the real products of this state to make sense of the minimization problem, one possible result to the above state would be:
+And because we are only dealing with the real products of this state to make sense of the minimization problem, $1$ possible result to the above state would be:
 ![](https://lms.qureca.com/wp-content/uploads/uncanny-snc/25/assets/Screenshot%202025-03-13%20164541.png)

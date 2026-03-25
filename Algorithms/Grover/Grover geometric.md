@@ -1,5 +1,5 @@
 #Algorithm #Quantum #Math
-[[Grover's algorithm]] can be visualized geometrically as a **rotation** in $2D$ subspace, making the iteration count precise & intuitive.
+[[Grover]] can be visualized geometrically as a **rotation** in $2D$ subspace, making the iteration count precise & intuitive.
 
 **$2$ basis vectors** span the relevant subspace:
 - $|ω⟩$ = the target (marked) state(s)
@@ -7,7 +7,7 @@
 $$|s'⟩ = \frac{1}{\sqrt{N-M}} \sum_{x: f(x)=0} |x⟩$$
 Init state $|s⟩$ produced by $H^{\otimes n}|0⟩^{\otimes n}$ lies in this 2D plane at a small angle $\theta$ from $|s'⟩$:
 $$\sin\theta = \sqrt{\frac{M}{N}} \quad \Rightarrow \quad \theta \approx \sqrt{\frac{M}{N}} \text{ for } M \ll N$$
-**Each Grover iteration = rotation by $2\theta$** toward $|ω⟩$:
+**Each [[Grover]] iteration = rotation by $2\theta$** toward $|ω⟩$:
 - **Phase [[Oracle]]** $U_f$ reflects the state about $|s'⟩$ (flips component along $|ω⟩$).
 - **[[Diffusion operator]]** $D = 2|s⟩\langle s| - I$ reflects about $|s⟩$.
 - $2$ successive reflections = rotation by $2\theta$.
@@ -22,4 +22,4 @@ For the single-solution case ($M=1$): $k^* \approx \frac{\pi}{4}\sqrt{N}$, givin
 
 **Success probability** after $k^*$ steps:
 $$P(\text{success}) = \sin^2\!\left((2k^*+1)\theta\right) \geq 1 - \frac{M}{N}$$
-Geometric view confirms [[Grover's algorithm]] achieves **quadratic speedup** & is **asymptotically optimal** for unstructured search (lower bound: any quantum algorithm needs $\Omega(\sqrt{N/M})$ [[Oracle]] calls).
+Geometric view confirms [[Grover]] achieves **quadratic speedup** & is **asymptotically optimal** for unstructured search (lower bound: any quantum algorithm needs $\Omega(\sqrt{N/M})$ [[Oracle]] calls).

@@ -8,7 +8,7 @@ This might come across as a bit of an artificially created problem, because it i
 Let's start by giving an example of such an $f$. $f(00)=0f(01)=1f(10)=0f(11)=1$ In this example, $s$ is $01$, as $f(00)=00⋅01=0$, $f(01)=01⋅01=1$, $f(10)=10⋅01=0$ and $f(11)=11⋅01=1$.
 Note that now the [[Unitary operator]] $U_f$ takes the following form: $U_f:|x⟩|y⟩↦|x⟩|y⊕(x⋅s)⟩$.
 
-We use exactly the same algorithm as Deutsch-Jozsa.
+We use exactly the same algorithm as [[Deutsch-Jozsa]].
 ![No description has been provided for this image](https://gitlab.com/qworld/qeducation/qbook101/raw/main/qbook101/images/ch4/deutschjozsa.png)
 
 We construct a circuit with $n+1$ [[Qubits]].

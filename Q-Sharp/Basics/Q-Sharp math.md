@@ -18,7 +18,7 @@ ArcTan(x) // inverse tangent
 ArcTan2(y, x) // atan2(y, x) - full quadrant arc tangent
 Ceiling(x) // min Int ≥ x, returns Double
 Floor(x) // max Int ≤ x, returns Double
-Round(x) // nearest integer, returns Double
+Round(x) // nearest int, returns Double
 Truncate(x) // truncate toward 0, returns Double (cast to Int with int cast)
 AbsD(x) // |x| for Double
 PowD(base, exp) // base^exp for Double
@@ -33,7 +33,7 @@ let kInt = Floor(n) == n ? int(n) | 0; // idiomatic: use Round or explicit
 ```
 In practice, use `Round`, `Floor`, or `Ceiling` & en pass to `IntAsDouble` in reverse if needed.
 
-**Integer funcs**
+**int funcs**
 ```csharp
 AbsI(n) // |n| for Int
 MaxI(a, b) // max of two Int
@@ -52,7 +52,7 @@ ExpModI(2, 10, 1000)   // 2^10 mod 1000 = 24
 ExpModL(base, exp, modulus)   // BigInt version for Shor's algorithm
 ```
 
-Essential in Shor's algorithm for computing the modular exponentiation unitary $U_a|x\rangle = |ax \bmod N\rangle$. `BigInt` version handles cryptographic-scale integers.
+Essential in Shor's algorithm for computing the modular exponentiation unitary $U_a|x\rangle = |ax \bmod N\rangle$. `BigInt` version handles cryptographic-scale ints.
 
 **GCD & ted**
 ```csharp
@@ -71,7 +71,7 @@ Used in Shor's algorithm post-processing after [[QPE]] returns approximation to 
 
 **Common patterns in quantum algorithms**
 
-Grover iteration count:
+[[Grover]] iteration count:
 ```csharp
 let k = Floor(PI() / 4.0 * Sqrt(IntAsDouble(1 <<< n) / IntAsDouble(m)));
 ```

@@ -13,8 +13,8 @@ Direct implementation of $C$-$U^{2^j}$ via $2^j$ sequential apps of $C$-$U$ is c
 $$C\text{-}U^{2^j}(|{+}\rangle|u\rangle) = \frac{1}{\sqrt{2}}\left(|0\rangle + e^{2\pi i 2^j \varphi}|1\rangle\right)|u\rangle$$
 Phase $e^{2\pi i 2^j \varphi}$ is kicked back onto the control qubit. Each control qubit accumulates different power of the phase - the binary digits of $\varphi$ are encoded across the $t$ control [[Qubits]] before the inverse QFT.
 
-**When eigenstates are unknown**: [[QPE]] still works if the target register is initialized to any state $|\psi\rangle = \sum_u c_u |u_u\rangle$ (superposition of eigenstates). Measurement then returns one of the eigenphases $\varphi_u$ with probability $|c_u|^2$.
+**When eigenstates are unknown**: [[QPE]] still works if the target register is initialized to any state $|\psi\rangle = \sum_u c_u |u_u\rangle$ (superposition of eigenstates). Measurement then returns $1$ of the eigenphases $\varphi_u$ with probability $|c_u|^2$.
 
 **Black-box vs structured $U$**: in the [[Oracle]] model (e.g. [[Quantum counting]]), $U$ is black box & $C$-$U^{2^j}$ is implemented by calling the [[Oracle]] $2^j$ times each controlled on qubit $j$ - $O(2^t)$ total [[Oracle]] calls. In structured settings (e.g. quantum chemistry Hamiltonians), $e^{-iHt}$ is approximated via Trotterization, reducing the effective gate count.
 
-**Q# implementation**: use the `Controlled` functor from [[Functors]] - `Controlled applyU([control[j]], (power, eigenstate))`. 
+**Q# implementation**: use the `Controlled` functor from Functors - `Controlled applyU([control[j]], (power, eigenstate))`. 

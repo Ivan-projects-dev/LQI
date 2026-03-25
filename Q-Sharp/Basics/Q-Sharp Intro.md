@@ -108,7 +108,7 @@ In Q#, you allocate [[Qubits]] using the `use` keyword & the `Qubit` type. [
 // Allocate a qubit.
 use q = Qubit();
 ```
-You can also allocate multiple [[Qubits]] & access each one through its index:
+You can also allocate multiple [[Qubits]] & access each $1$ through its index:
 ```c#
 use qubits = Qubit[2]; // Allocate two qubits.
 H(qubits[0]); // Apply H to the first qubit.
@@ -116,19 +116,19 @@ X(qubits[1]); // Apply X to the second qubit.
 ```
 After allocating a qubit, you can pass it to operations & funcs. Operations are the basic building blocks of a Q# program. A Q# operation is a quantum subroutine, or a callable routine that contains quantum operations that change the state of the qubit register.
 
-To define a Q# operation, you specify a name for the operation, its inputs, & its output. In the `Superposition` program, the `MeasureOneQubit()` operation takes no parameters & returns a `Result` type:
+To define a Q# operation, you specify name for the operation, its inputs, & its output. In the `Superposition` program, the `MeasureOneQubit()` operation takes no parameters & returns a `Result` type:
 ```c#
 operation MeasureOneQubit() : Result {
     ...
 }
 ```
-Here's a basic example that takes no parameters & expects no return value. `Unit` value is equivalent to `NULL` in other langs:
+Basic example that takes no parameters & expects no return value. `Unit` value is equivalent to `NULL` in other langs:
 ```c#
 operation SayHelloQ() : Unit {
     Message("Hello quantum world!");
 }
 ```
-Q# standard library also provides operations that you can use in quantum programs, such as the Hadamard operation, `H`, in the `Superposition` program. Given a qubit in the Z-basis, `H` puts the qubit into even superposition, where it has a 50% chance of being measured as `Zero` or `One`.
+Q# STL also provides operations that you can use in quantum programs, such as the Hadamard operation, `H`, in the `Superposition` program. Given a qubit in the Z-basis, `H` puts the qubit into even superposition, where it has a 50% chance of being measured as `Zero` or `One`.
 
 While there are many types of quantum measurements, Q# focuses on projective measurements on single [[Qubits]], also known as Pauli measurements.
 

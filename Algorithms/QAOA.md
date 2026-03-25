@@ -26,7 +26,7 @@ In QAOA, we start with a set of init params, & then iteratively measure the [[Qu
 
 In QAOA as introduced by Farhi et al., $HB=−∑n_iX_i$ and the init state is picked as its ground state $|s⟩=|+⟩n$.
 
-In general, one can pick different HB as long as it does not commute with HC and pick the init state accordingly as the ground state of HB. This variant is called Quantum Alternating Operator Ansatz.
+In general, $1$ can pick different HB as long as it does not commute with HC and pick the init state accordingly as the ground state of HB. This variant is called Quantum Alternating Operator Ansatz.
 
 We denote the params at iteration $i$ by $(γi,βi)$.
 - We construct our ansatz $∏pi=1exp(−iβpHB)exp(−iγpHC)|+⟩n$.

@@ -1,4 +1,4 @@
-#Algorithm #Quantum #Math
+#Algorithm #Quantum #Math #Physics 
 **Quantum Phase Estimation (QPE)** solves: given unitary $U$ & $1$ of its eigenstates $|u\rangle$ satisfying $U|u\rangle = e^{2\pi i \varphi}|u\rangle$, estimate the phase $\varphi \in [0,1)$ to $t$ bits of precision.
 
 $\varphi$ is unknown; QPE extracts it using inverse QFT on control register.
@@ -23,14 +23,12 @@ $$P(\tilde{\varphi}) = \frac{1}{2^{2t}}\left|\frac{\sin(\pi \cdot 2^t(\varphi - 
 
 If $2^t\varphi$ is exact int: $P(\tilde{\varphi}) = 1$. Otherwise, the correct $t$-bit approximation is obtained with probability $\geq \frac{4}{\pi^2} \approx 0.405$ using $t$ [[Qubits]], or $\geq 1 - \epsilon$ using $t + \lceil\log_2(2 + \frac{1}{2\epsilon})\rceil$ [[Qubits]].
 
-**Complexity**:
-
-| Resource              | Cost |
-|---|---|
-| Control [[Qubits]]    | $t$ |
-| Eigenstate [[Qubits]] | $s$ |
-| $U$ apps              | $2^t - 1$ |
-| QFT$^\dagger$ gates   | $O(t^2)$ |
+| Resource              | Complexity                          |
+| --------------------- | ----------------------------------- |
+| Control [[Qubits]]    | $t$                                 |
+| Eigenstate [[Qubits]] | $s$                                 |
+| $U$ apps              | $2^t - 1$                           |
+| QFT$^\dagger$ gates   | $O(t^2)$                            |
 | Total gates           | $O(2^t \cdot \text{cost}(U) + t^2)$ |
 
 **Kitaev's [[Iterative QPE]]** reduces qubit count to $1$ control qubit by repeating $t$ rounds (bit by bit).

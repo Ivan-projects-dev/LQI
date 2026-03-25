@@ -1,27 +1,24 @@
 #Quantum #Q-Sharp 
 **Iterative [[QPE]]** ($1$-qubit version, Kitaev method)
 
-Extracts $\varphi$ one bit/time, using only $1$ control qubit. Lower qubit overhead, but $t$ sequential rounds:
+Extracts $\varphi$ $1$ bit/time, using only $1$ control qubit. Lower qubit overhead, but $t$ sequential rounds:
 ```csharp
-operation IterativePhaseEstimation(
-    nBits   : Int,
-    target  : Qubit[],
-    applyU  : Qubit[] => Unit is Adj + Ctl
-) : Int {
+operation IterativePhaseEstimation(nBits : Int, target : Qubit[], applyU : Qubit[] => Unit is Adj + Ctl) : Int {
     mutable phase = 0;
     use control = Qubit();
-
-    for i in nBits - 1..-1..0 {            // from MSB to LSB
+    for i in nBits - 1..-1..0 
+    { // from MSB to LSB
         H(control);
         let power = 1 <<< i;
         Controlled applyU([control], target);
-
         // Correct for previously estimated bits
         let angle = -2.0 * PI() * IntAsDouble(phase) / IntAsDouble(1 <<< (nBits - i));
         R1(angle, control);
-
         H(control);
-        if M(control) == One { set phase += 1 <<< i; }
+        if M(control) == One 
+        { 
+	        set phase += 1 <<< i; 
+	    }
         Reset(control);
     }
     return phase;

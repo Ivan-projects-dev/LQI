@@ -51,7 +51,7 @@ operation ManualReset(q : Qubit) : Unit {
 ```
 Callable still compiles & runs - `@Obsolete` is advisory only. Used when evolving library while preserving backward compatibility.
 
-**`@SimulatableIntrinsic`** declares that operation is simulator intrinsic - it has no Q# body but the simulator provides built-in implementation. Used when authoring custom simulators or extending the standard library:
+**`@SimulatableIntrinsic`** declares that operation is simulator intrinsic - it has no Q# body but the simulator provides built-in implementation. Used when authoring custom simulators or extending the STL:
 ```csharp
 @SimulatableIntrinsic()
 operation MyCustomGate(q : Qubit) : Unit is Adj + Ctl;

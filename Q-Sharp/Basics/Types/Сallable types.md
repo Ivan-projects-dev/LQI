@@ -47,7 +47,7 @@ operation ApplyToFirst<'T>(op : 'T => Unit, arr : 'T[]) : Unit {
 }
 ```
 
-**Returning callables from operations/funcs** - enables factory pattern:
+**Returning callables from ops/funcs** - enables factory pattern:
 ```csharp
 function PowerOf(base : Int) : (Int -> Int) {
     return exp -> base ^ exp; // returns a func
@@ -77,7 +77,7 @@ Prevents accidentally passing wrong [[Oracle]] type to algorithm. `!` unwraps; `
 
 **Callable type arithmetic: `Adj` propagation rules**
 
-Compiler auto-derives `Adj`/`Ctl` for composed operations when:
+Compiler auto-derives `Adj`/`Ctl` for composed ops when:
 - All constituent ops support required characteristic.
 - No measurements inside body (see [[Q-Sharp quirks]]).
 - For `Adj`: body uses only `Adj`-supporting gates in `within/apply` or explicit `Adjoint` calls.

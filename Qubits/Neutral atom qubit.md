@@ -5,4 +5,4 @@
 **Qubit init:** The atoms are cooled to near absolute $0$ using laser cooling techs. This reduces their thermal motion, allowing precise control. [[Qubits]] are encoded in the internal energy levels of the atoms. 
 **Quantum gates:** Quantum operations are performed using laser pulses.
 **Entanglement:** Atoms can be entangled by exciting them to high-energy Rydberg states, where they interact strongly with each other. This interaction is used to perform $2$-qubit gates. 
-**Measurement:** The state of each atom is measured using fluorescence detection. Lasers excite the atoms, causing them to emit light, which is then detected to read out the qubit states. 
+**Measurement:** state of each atom is measured using fluorescence detection. Lasers excite the atoms, causing them to emit light, which is then detected to read out the qubit states. 

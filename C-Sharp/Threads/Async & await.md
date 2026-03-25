@@ -10,7 +10,7 @@ Allow devs to write code that performs non-Blocking Operations, such as file I/O
 
 `await Task.Delay(time);` simulates a non-blocking pause without freezing the program
 
-1. An async method must have at least one await inside, otherwise, it exec sync.
+1. An async method must have at least $1$ await inside, otherwise, it exec sync.
 2. Use `async Task` for methods that perform async operations without returning a result.
 3. Use `async Task<TResult>` for methods that return a result.
 4. Avoid `async void` except in event handlers.

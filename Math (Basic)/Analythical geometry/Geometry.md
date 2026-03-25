@@ -31,7 +31,7 @@ $r = \dfrac{S}{p}$ - **Radius of inscribed circle**
 $R = \dfrac{abc}{4 \sqrt{p(p - a)(p - b)(p - c)}}$
 
 **Chord** - segment whose endpoints both lie on circle  
-**Tangent** - line that touches circle at exactly one point
+**Tangent** - line that touches circle at exactly $1$ point
 **Angle between vectors $\vec{a}, \vec{b}$**:  $\cos \angle (\vec{a}, \vec{b}) = \dfrac{\vec{a} \cdot \vec{b}}{|\vec{a}| |\vec{b}|}$
 $\alpha_n = \dfrac{(n - 2) \cdot 180^\circ}{n}$ - **internal angle of regular polygon**  
 **Centre of in- & circle is the same**

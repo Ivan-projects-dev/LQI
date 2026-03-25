@@ -1,5 +1,5 @@
 #OS #CSharp #SoftDev 
-In C#, multiple threads can be created & run concurrently to perform parallel tasks. Sometimes it is necessary to wait for one [[Thread]] to finish its exec before proceeding or for all threads to complete before continuing further. 
+In C#, multiple threads can be created & run concurrently to perform parallel tasks. Sometimes it is necessary to wait for $1$ [[Thread]] to finish its exec before proceeding or for all threads to complete before continuing further. 
 
 [[Thread]]`.Join()` method waits for the [[Thread]] to complete its exec before continuing with the exec of the calling [[Thread]]. This method blocks the calling [[Thread]] until the target [[Thread]] has completed its exec.
 ```csharp

@@ -1,4 +1,4 @@
 #Quantum  #Networks #Cybersecurity  
-**Quantum communication** utilizes the principles of quantum mechanics to secure Data transmission. One of its main apps is **quantum key distribution ([[QKD]])**, which ensures that encryption keys are shared securely by encoding info into quantum states, ensuring provably-secure key sharing.
+**Quantum communication** utilizes the principles of quantum mechanics to secure Data transmission. $1$ of its main apps is **quantum key distribution ([[QKD]])**, which ensures that encryption keys are shared securely by encoding info into quantum states, ensuring provably-secure key sharing.
 
 **Quantum repeaters** provide the same func as classical repeaters (ensuring that info traveling long distances are not weakened or distorted) but within quantum network. Quantum info cannot be copied, so new techs in order to amplify signals are currently being researched.

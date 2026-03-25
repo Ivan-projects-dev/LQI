@@ -31,7 +31,6 @@ let p2 = p w/ X <- 9.0; // Point(9.0, 2.0)
 ```csharp
 mutable counts = [0, 0, 0, 0];
 set counts w/= 2 <- counts[2] + 1; // increment index 2
-
 mutable z = Complex(0.0, 0.0);
 set z w/= Re <- 3.14; // update Re field
 ```
@@ -58,4 +57,4 @@ for i in 0..n-1 {
 
 `[Zero, size = n]` - shorthand for array of `n` copies of `Zero`. Works with any value & type: `[0, size = 10]`, `[false, size = 4]`.
 
-Copy-and-update vs [[UDT|UDT]] `!` unwrap: `w/` works directly on [[UDT]] named items without unwrapping. Only need `!` when passing to a func expecting the underlying tuple type.
+Copy-and-update vs UDT `!` unwrap: `w/` works directly on UDT named items without unwrapping. Only need `!` when passing to  func expecting the underlying tuple type.
