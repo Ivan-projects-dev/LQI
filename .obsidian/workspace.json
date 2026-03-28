@@ -11,10 +11,14 @@
             "id": "1424ba9bc924cc12",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Math/Math (Quantum)/Oracle.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Oracle"
             }
           },
           {
@@ -23,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "broken links output.md",
+                "file": "Programming/Q-Sharp/Functors/Functors.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "broken links output"
+              "title": "Functors"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -63,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "[[Oracle]]]]]",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -182,9 +187,22 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "1424ba9bc924cc12",
+  "active": "cf10a3c34bb6ff2d",
   "lastOpenFiles": [
     "Programming/Q-Sharp/Functors/Controlled op.md",
+    "Programming/Q-Sharp/Functors/Adjoint op.md",
+    "broken links output.md",
+    "Math/Math (Quantum)/Oracle.md",
+    "Programming/Q-Sharp/Environment/Azure Quantum/Azure Quantum Workspace.md",
+    "Programming/Q-Sharp/Environment/Quantum resource estimator.md",
+    "Programming/Q-Sharp/Environment/Q-Sharp Python.md",
+    "Programming/Q-Sharp/Environment/Azure Quantum/Azure Quantum Sessions.md",
+    "Programming/Q-Sharp/Environment/Azure Quantum/Azure Quantum Providers.md",
+    "Programming/Q-Sharp/Environment/Azure Quantum/Azure Quantum Jobs.md",
+    "Programming/Q-Sharp/Environment/Azure Quantum/Azure Quantum Credits.md",
+    "Programming/Q-Sharp/Environment/Azure Quantum/Azure Quantum.md",
+    "Programming/Q-Sharp/Environment/Azure Quantum",
+    "Programming/C-Sharp/Threads/Thread.md",
     "Programming/Q-Sharp/Pecularities/Callables/Higher-order ops.md",
     "Programming/Q-Sharp/Pecularities/Callables/Partial application.md",
     "Programming/Q-Sharp/Pecularities/Adaptive profile.md",
@@ -198,20 +216,8 @@
     "QPE/QPE.md",
     "QPE/Iterative QPE.md",
     "Cybersecurity/QKD.md",
-    "Algorithms/Simon/Simon oracle.md",
     "Math",
     "Programming",
-    "Algorithms/Simon/Simon.md",
-    "Algorithms/Deutsch-Jozsa/Deutsch-Jozsa in Q-Sharp.md",
-    "Algorithms/Deutsch-Jozsa/Deutsch-Jozsa.md",
-    "Algorithms/Bernstein-Vazirani/Bernstein-Vazirani in Q-Sharp.md",
-    "Algorithms/Bernstein-Vazirani/Bernstein-Vazirani.md",
-    "Algorithms/Grover/Oracle/Bounded knapsack oracle.md",
-    "Algorithms/Grover/Oracle/Phase vs marking oracle.md",
-    "Algorithms/Grover/Oracle/SAT oracle.md",
-    "Algorithms/Grover/Oracle/Grover oracles.md",
-    "Algorithms/Grover/Oracle/Grover Oracle in Q-Sharp.md",
-    "Algorithms/Grover/Oracle/Graph coloring oracle.md",
     "Programming/Q-Sharp/Pecularities/Callables",
     "Programming/Q-Sharp/Basics/Types",
     "Algorithms/Grover/Oracle",
@@ -219,7 +225,6 @@
     "Q-Sharp/Basics/Syntax",
     "Q-Sharp/Basics/Stdlib",
     "Q-Sharp/Pecularities/Hardware",
-    "Q-Sharp/Pecularities/Expressions",
     "Untitled.canvas",
     "z_img/Pasted image 20251214190313.png",
     "z_img/Pasted image 20260102005032.png",
