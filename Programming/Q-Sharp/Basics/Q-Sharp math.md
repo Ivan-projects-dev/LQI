@@ -84,3 +84,7 @@ let angle = 2.0 * PI() / IntAsDouble(1 <<< k);
 let phi = IntAsDouble(measured) / IntAsDouble(1 <<< t); // φ ≈ measured / 2^t
 let M = Round(IntAsDouble(1 <<< n) * Sin(phi * PI()) ^ 2.0); // quantum counting
 ```
+
+## Sources
+- [Std.Math API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.math)
+- [Q# numeric expressions](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/arithmeticexpressions)

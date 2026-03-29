@@ -23,7 +23,7 @@ operation MarkState(register : Qubit[], target : Qubit, x0 : Int) : Unit is Adj 
 // Fix x0 = 7, leave register & target open
 let oracle = MarkState(_, _, 7); // type: (Qubit[], Qubit) => Unit is Adj + Ctl
 ```
-`[[[[[[Oracle]]]]]]` can now be passed directly to any operation expecting `(Qubit[], Qubit) => Unit`.
+`[[[[[[[[[[Oracle]]]]]]]]]]` can now be passed directly to any operation expecting `(Qubit[], Qubit) => Unit`.
 
 **Operation & func wrappers** can both be partially applied. [[Functors]] are preserved if the underlying callable declares them:
 ```csharp
@@ -60,6 +60,7 @@ ApplyToEach(Rz(theta, _), register); // Rz with fixed angle to each qubit
 
 **Iteration & mapping patterns**
 ```csharp
+import Std.Arrays.*;
 // Mapped applies a classical func to each element
 let doubled = Mapped(x -> x * 2, [1, 2, 3, 4]); // [2, 4, 6, 8]
 
@@ -70,3 +71,6 @@ let positives = Filtered(x -> x > 0, [-1, 2, -3, 4]); // [2, 4]
 ForEach(Message, ["a", "b", "c"]);
 ```
 Partial application composes well with [[Q-Sharp generics]] - `Mapped` & `Filtered` accept generic lambdas, so the `_` placeholder works across any `'T`.
+## Sources
+- [Partial application in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/functorapplication)
+- [Callable types](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/callabletypes)

@@ -42,3 +42,8 @@ operation RunBV() : Unit {
 }
 ```
 Same circuit structure ([[Deutsch-Jozsa in Q-Sharp]]). [[Deutsch-Jozsa]] classifies func (constant vs. balanced); [[Bernstein-Vazirani]] extracts hidden parameter. [[Bernstein-Vazirani]] is "learning" problem - $n$ bits of info recovered in $1$ [[Oracle]] call.
+
+## Sources
+- [Bernstein-Vazirani kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
+- [GitHub: BV sample in Q#](https://github.com/microsoft/qsharp/tree/main/samples/algorithms)
+- [Q# single-qubit programs tutorial](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-qubit-level-program)

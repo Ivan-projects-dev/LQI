@@ -57,3 +57,7 @@ All rotation gates satisfy `Adjoint Rx(θ, q) = Rx(-θ, q)`. Q# auto-generates t
 Adjoint Ry(theta, q); // rotation by -theta
 ```
 This makes uncomputing rotation-based circuits straightforward - no new gate needed, just negate the angle.
+## Sources
+- [Std.Intrinsic API reference (Rx, Ry, Rz, R1, R)](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)
+- [Rotation gates kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
+- [Std.Math — PI(), ArcTan2()](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.math)

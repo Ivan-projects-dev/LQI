@@ -36,3 +36,7 @@ let p2 = p w/ Im <- 3.0; // returns new Complex(1.0, 3.0); p unchanged
 ```
 
 UDTs cannot have methods; they are pure data containers. Use functions or operations that take UDT arguments instead. UDTs are **not** interchangeable with their underlying types without explicit unwrapping - passing `Pair` where `(Int, Int)` is expected requires `myPair!`.
+
+## Sources
+- [UDTs & structs in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/udts-and-structs)
+- [Q# type system](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/)

@@ -65,3 +65,8 @@ Attributes take `()` even when there are no arguments. Multiple attributes stack
 operation MyTest() : Unit { ... }
 ```
 Attributes cannot be applied to `function` callables that are purely classical - `@EntryPoint` & `@Test` only work on `operation`.
+
+## Sources
+- [Attributes in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/programstructure/attributes)
+- [Q# program structure](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/programstructure/)
+- [Adaptive profile & @Config](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-integrated)

@@ -144,3 +144,9 @@ In Q#, [[Qubits]] **must** be in the  state when they're released to avoid e
 // Reset a qubit.
 Reset(q);
 ```
+
+## Sources
+- [Q# language overview](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview)
+- [QDK overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview)
+- [Q# language specification](https://learn.microsoft.com/en-us/azure/quantum/user-guide/)
+- [GitHub: microsoft/qsharp](https://github.com/microsoft/qsharp)

@@ -104,3 +104,8 @@ let tail = register[1...];
 H(tail[0]); // modifies register[1] directly
 ```
 Passing slice to operation affects the original register. This is the intended behavior for partitioning register into sub-registers, but can be surprising.
+
+## Sources
+- [Q# type system — qubits](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/primitives)
+- [Quantum memory management](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/quantummemorymanagement)
+- [Q# language overview](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview)

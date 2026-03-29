@@ -62,3 +62,7 @@ Adjoint T(q); // T†: applies e^{-iπ/4} phase to |1⟩
 | T    | $\|1\rangle\to e^{i\pi/4}\|1\rangle$                      | No ($T^\dagger \neq T$) |
 
 All six are in `Std.Intrinsic` & support `Adj + Ctl`. See [[Rotation gates]] for parameterized variants $R_x, R_y, R_z, R_1$.
+## Sources
+- [Std.Intrinsic API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)
+- [Single-qubit gates kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
+- [Understanding quantum computing — gates](https://learn.microsoft.com/en-us/azure/quantum/overview-understanding-quantum-computing)

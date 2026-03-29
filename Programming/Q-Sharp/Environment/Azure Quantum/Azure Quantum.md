@@ -1,4 +1,0 @@
-#Quantum #Cloud #Q-Sharp 
-When you compile & run quantum program, the QDK creates instance of the quantum simulator & passes the Q# code to it. Simulator uses the Q# code to create [[Qubits]] (simulations of quantum particles) & apply transformations to modify their state. Results of the quantum operations in the simulator are then returned to the program. Isolating the Q# code in the simulator ensures that the algorithms can run correctly on quantum computers.
-
-When you run quantum program in Azure Quantum, you create & run **job**. To submit job to the [[Azure Quantum Providers]], you need Azure account & quantum workspace. Once you submit your job, Azure Quantum manages the job lifecycle, including job scheduling, exec, & monitoring. You can track the status of your job & view the results in the Azure Quantum portal.

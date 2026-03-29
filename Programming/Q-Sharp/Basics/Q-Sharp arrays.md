@@ -40,6 +40,8 @@ let asDoubles = Mapped(IntAsDouble, [1, 2, 3]); // [1.0, 2.0, 3.0]
 
 Equivalent to `map` in functional langs. Used to generate angle arrays for [[Rotation gates]]:
 ```csharp
+import Std.Arrays.*;
+import Std.Math.*;
 let angles = Mapped(k -> 2.0 * PI() / IntAsDouble(1 <<< k), 0..t-1);
 ```
 
@@ -56,6 +58,8 @@ let product = Fold((acc, x) -> acc * x, 1, [1, 2, 3, 4]); // 24
 
 **`Enumerated(arr)` - index-value pairs**, returns array of `(Int, T)` tuples, pairing each element with its index. Used constantly in [[Oracle]] construction:
 ```csharp
+import Std.Arrays.*;
+import Std.Math.*;
 for (i, q) in Enumerated(register) {
     Controlled R1([control[i]], (2.0 * PI() / IntAsDouble(1 <<< (i+1)), q));
 }
@@ -107,3 +111,37 @@ Or append with `+`:
 mutable log = [];
 set log += [result]; // append single element
 ```
+All functions below are from `[[[[Std.Arrays]]]]` — add `import [[[[Std.Arrays]]]].*;` to use them.
+
+**`Chunks(size, arr)` - split into fixed-size sub-arrays**. Returns array of arrays, each of length `size` (last chunk may be shorter):
+```csharp
+Chunks(2, [1, 2, 3, 4, 5]); // [[1, 2], [3, 4], [5]]
+```
+Useful for splitting qubit registers into equal-width groups.
+
+**`Windows(size, arr)` - sliding window sub-arrays**. Returns all contiguous sub-arrays of length `size`:
+```csharp
+Windows(3, [1, 2, 3, 4, 5]); // [[1,2,3],[2,3,4],[3,4,5]]
+```
+
+**`SequenceI(from, to)` / `SequenceL(from, to)` - integer range as array**. `SequenceI` returns `Int[]`; `SequenceL` returns `BigInt[]`:
+```csharp
+SequenceI(0, 4); // [0, 1, 2, 3, 4]
+```
+Equivalent to `[from..to]` but as a value (useful when passing to `Mapped` or `Fold`).
+
+**`Transposed([[[[Matrix]]]])` - transpose 2D array**. Swaps rows & columns of a rectangular nested array:
+```csharp
+Transposed([[1, 2, 3], [4, 5, 6]]); // [[1, 4], [2, 5], [3, 6]]
+```
+
+**`IsRectangularArray([[[[Matrix]]]])` - check 2D regularity**. Returns `true` if all inner arrays have the same length:
+```csharp
+IsRectangularArray([[1, 2], [3, 4]]); // true
+IsRectangularArray([[1, 2], [3]]);    // false
+```
+
+## Sources
+- [Std.Arrays API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.arrays)
+- [Q# variable declarations & arrays](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/variabledeclarationsandreassignment)
+- [Array slicing & item access expressions](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/itemaccessexpressions)

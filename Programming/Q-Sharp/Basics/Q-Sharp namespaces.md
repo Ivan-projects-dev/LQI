@@ -46,4 +46,8 @@ Key: `DrawRandomInt(min, max)`, `DrawRandomDouble(min, max)`, `DrawRandomBool(pr
 ```csharp
 import Std.ResourceEstimation.*; 
 ```
-Used with the [[Quantum resource estimator]] to annotate circuit cost. Key: `AccountForEstimates`, `BeginEstimateCaching`, `EndEstimateCaching`.
+Used with the [[QRE]] to annotate circuit cost. Key: `AccountForEstimates`, `BeginEstimateCaching`, `EndEstimateCaching`.
+## Sources
+- [Namespaces in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/programstructure/namespaces)
+- [Q# API reference (all namespaces)](https://learn.microsoft.com/en-us/qsharp/api/)
+- [Std.Intrinsic API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)

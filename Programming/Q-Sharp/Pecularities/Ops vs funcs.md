@@ -26,6 +26,7 @@ Without a characteristic declaration, the operation cannot be used with `Adjoint
 
 **Func** is a **pure classical subroutine** - no quantum ops, no qubit access, no side effects. Given the same inputs, always returns the same output. The compiler can use funcs in classical preprocessing & in constant-folding.
 ```csharp
+import Std.Math.*;
 function GroverIterationCount(n : Int, m : Int) : Int {
     return Floor(PI() / 4.0 * Sqrt(IntAsDouble(1 <<< n) / IntAsDouble(m)));
 }
@@ -88,3 +89,6 @@ operation RunSearch(oracle : Oracle, n : Int) : Result[] {
 }
 ```
 [[Oracle]]! unwraps the `newtype` to its underlying value.
+## Sources
+- [Operations & ons in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/operationsandfunctions)
+- [Callable types](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/callabletypes)

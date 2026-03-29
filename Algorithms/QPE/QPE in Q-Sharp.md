@@ -3,6 +3,7 @@ Complete Q# implementation of [[QPE]]. Estimates the **eigenphase** $\varphi$ of
 
 $3$ stages: superposition on control register → controlled-$U^{2^j}$ → inverse QFT.
 ```csharp
+import Std.Convert.*;
 import Std.Diagnostics.*;
 import Std.Math.*;
 import Std.Measurement.*;
@@ -90,3 +91,8 @@ operation Main() : Unit {
 | Standard [[QPE]] | $t$ | $2^t - 1$ | 1 (parallel) |
 | Iterative [[QPE]] | $1$ | $2^t - 1$ | $t$ (sequential) |
 | [[Quantum counting]] | $t$ | $O(2^t)$ calls to $G$ | 1 |
+
+## Sources
+- [Quantum phase estimation kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
+- [Std.Intrinsic: controlled unitaries](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)
+- [GitHub: QPE samples in Q#](https://github.com/microsoft/qsharp/tree/main/samples/algorithms)

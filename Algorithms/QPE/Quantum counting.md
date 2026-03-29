@@ -3,6 +3,7 @@
 
 Estimates $M$ (solution count) by finding eigenphase $\theta/\pi$ of $G$:
 ```csharp
+import Std.Math.*;
 operation EstimateSolutionCount(nQubits : Int, nControlBits  : Int,
     markingOracle : (Qubit[], Qubit) => Unit is Adj + Ctl) : Int {
     // Grover operator G = Diffusion ∘ PhaseOracle
@@ -26,3 +27,8 @@ operation EstimateSolutionCount(nQubits : Int, nControlBits  : Int,
     return Round(n_f * Sin(theta)^2);
 }
 ```
+
+## Sources
+- [Quantum counting kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
+- [Grover's search tutorial](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)
+- [GitHub: Grover / counting samples](https://github.com/microsoft/qsharp/tree/main/samples/algorithms)

@@ -64,7 +64,7 @@ rz90(q);
 Adjoint rz90(q); // valid
 ```
 
-**`[[[[[[Oracle]]]]]]` newtype pattern** - wraps callable type in named type for type safety:
+**`[[[[[[[[[[Oracle]]]]]]]]]]` newtype pattern** - wraps callable type in named type for type safety:
 ```csharp
 newtype PhaseOracle = (Qubit[] => Unit is Adj + Ctl);
 
@@ -102,3 +102,8 @@ operation MyOp(q : Qubit) : Unit is Adj + Ctl {
 }
 ```
 Explicit specializations override auto-generation and allow custom decompositions (useful for optimized circuits).
+
+## Sources
+- [Callable types in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/callabletypes)
+- [Operations and functions](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/operationsandfunctions)
+- [Functor application](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/functorapplication)

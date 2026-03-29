@@ -28,6 +28,7 @@ operation ApplyMarkingAsPhase(markingOracle : (Qubit[], Qubit) => Unit is Adj,
 
 Uses `ControlledOnInt` to flip target iff register == $x_0$:
 ```csharp
+import Std.Canon.*;
 operation MarkExactState(
     register : Qubit[],
     target : Qubit, x0 : Int) : Unit is Adj + Ctl {
@@ -38,6 +39,7 @@ operation MarkExactState(
 
 **Multi-solution [[Oracle]]** (marks a list of solutions)
 ```csharp
+import Std.Canon.*;
 operation MarkMultipleSolutions(
     register  : Qubit[],
     target    : Qubit,
@@ -54,6 +56,7 @@ Each `ControlledOnInt` contributes independently - valid because solutions are d
 
 Each clause is marking [[Oracle]]. Combine with [[Ancilla]]-per-clause + `within/apply`:
 ```csharp
+import Std.Arrays.*;
 operation MarkSAT(
     register : Qubit[],
     target   : Qubit,
@@ -98,3 +101,8 @@ operation MarkClause(
 `Adj` support is required - the [[Within-Apply pattern]] in the [[Diffusion operator]] & [[Oracle]] uncomputation both call [[Adjoint op]]. Operations that contain measurements (`M`, `Measure`) cannot be `Adjoint`-able - avoid measurements inside oracles.
 
 [[Ancilla]] [[Qubits]] allocated with `use` inside an operation are automatically reset to $|0\rangle$ on scope exit only if dev does so explicitly or via `within/apply`. Leaving [[Ancilla]] in non-$|0\rangle$ state causes aruntime error.
+
+## Sources
+- [Grover's search tutorial — oracle construction](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)
+- [Within-apply pattern (conjugations)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/conjugations)
+- [GitHub: Grover oracle samples](https://github.com/microsoft/qsharp/tree/main/samples/algorithms)

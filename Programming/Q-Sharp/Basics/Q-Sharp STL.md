@@ -33,3 +33,7 @@ operation MeasureOneQubit() : Result {
     return MResetZ(q);
 }
 ```
+## Sources
+- [Q# standard libraries](https://learn.microsoft.com/en-us/azure/quantum/user-guide/libraries/)
+- [Std.Intrinsic API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)
+- [Q# API reference (all namespaces)](https://learn.microsoft.com/en-us/qsharp/api/)

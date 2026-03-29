@@ -21,6 +21,7 @@ Useful for building parameterized multi-step circuits from component ops. `Bound
 
 **`ControlledOnBitString`** - multi-[[Controlled op]] where each control qubit matches a specific bit value (not just `|1...1⟩`):
 ```csharp
+import Std.Canon.*;
 // Apply X to target iff control register encodes 0b101 = 5
 ControlledOnBitString([true, false, true], X)(controls, target);
 ```
@@ -28,6 +29,7 @@ Equivalent to flipping controls matching `0` bits, applying `Controlled X`, then
 
 **`ControlledOnInt`** - controlled on integer value. Convenience wrapper over `ControlledOnBitString`:
 ```csharp
+import Std.Canon.*;
 // Apply Rz to target iff register == 3
 ControlledOnInt(3, Rz(theta, _))(register, target);
 ```
@@ -92,8 +94,13 @@ Factory funcs return operation values with full `Adj + Ctl` support; compiler in
 | `ApplyIfOne` | `(Result, op, arg)` | Result-conditional |
 | `ControlledOnInt` | `(Int, op)(ctrls, tgt)` | Control on integer |
 | `ControlledOnBitString` | `(Bool[], op)(ctrls, tgt)` | Control on bit pattern |
-| `CCA` | `op → doubly-[[[[[[Controlled op]]]]]]` | Double-control wrapper |
+| `CCA` | `op → doubly-[[[[[[[[[[Controlled op]]]]]]]]]]` | Double-control wrapper |
 | `ApplyCNOTChain` | `Qubit[] → Unit` | [[CNOT]] ladder |
 | `Delay` | `(op, arg) → () → Unit` | Deferred execution |
 
 See [[Partial application]] for `_` syntax used with these combinators. See [[Within-Apply pattern]] for how `BoundCA` composes with auto-uncomputation.
+
+## Sources
+- [Higher-order functions & operations](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/operationsandfunctions)
+- [Std.Canon API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.canon)
+- [Callable types in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/callabletypes)

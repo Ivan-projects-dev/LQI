@@ -43,7 +43,7 @@ operation BellPsi_Minus(q0 : Qubit, q1 : Qubit) : Unit is Adj {
 | $X$              | $\|\Psi^+\rangle$ |
 | $XZ$             | $\|\Psi^-\rangle$ |
 
-**Measuring in the Bell basis**: reverse preparation circuit ($CNOT$ then $H$) to rotate the Bell basis back to the computational basis before measuring:
+**Measuring in the Bell basis**: reverse preparation circuit ($[[[[CNOT]]]]$ then $H$) to rotate the Bell basis back to the computational basis before measuring:
 ```csharp
 operation BellBasis(q0 : Qubit, q1 : Qubit) : (Result, Result) {
     CNOT(q0, q1);
@@ -79,3 +79,8 @@ DumpMachine(); // shows: |00⟩: 0.707, |11⟩: 0.707
 let (r0, r1) = MeasureBellBasis(q0, q1);
 // r0 == Zero, r1 == Zero always for |Φ+⟩
 ```
+
+## Sources
+- [Bell states & entanglement kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
+- [Quantum teleportation tutorial](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-qubit-level-program)
+- [Understanding quantum entanglement](https://learn.microsoft.com/en-us/azure/quantum/overview-understanding-quantum-computing)

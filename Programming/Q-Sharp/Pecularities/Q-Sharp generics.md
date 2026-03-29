@@ -37,6 +37,7 @@ operation ApplyAndUndo<'T>(op : 'T => Unit is Adj, x : 'T) : Unit {
 
 Most `Std.Arrays` & `Std.Canon` funcs are generic. Examples:
 ```csharp
+import Std.Arrays.*;
 // Mapped : ('T -> 'U, 'T[]) -> 'U[]
 let doubled = Mapped(x -> x * 2, [1, 2, 3]); // [2, 4, 6]
 
@@ -75,3 +76,7 @@ struct Box<'T> { Value : 'T }
 let b = Box<Int>(Value = 42);
 Message($"{b.Value}");
 ```
+
+## Sources
+- [Type parameterizations in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/typeparameterizations)
+- [Callable types](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/callabletypes)

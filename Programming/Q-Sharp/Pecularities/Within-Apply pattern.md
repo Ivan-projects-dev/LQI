@@ -64,3 +64,8 @@ These replace explicit `for` loops over qubit arrays & are idiomatic Q#.
 | `within { V } apply { O }` | Automatic     | Yes        | High     |
 
 Always prefer `within/apply` when `V` & its adjoint bracket core operation `O`.
+
+## Sources
+- [Conjugations (within-apply) in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/conjugations)
+- [Q# oracle patterns (GitHub samples)](https://github.com/microsoft/qsharp/tree/main/samples)
+- [Grover's search tutorial](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)

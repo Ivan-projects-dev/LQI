@@ -57,3 +57,8 @@ let p = DrawRandomDouble(0.0, 1.0);
 let b = DrawRandomBool(0.75); // true with prob 0.75
 ```
 Deterministic given seed - not truly random. Use quantum sampling when genuine unpredictability is required ([[QKD]], Monte Carlo, online protocols).
+
+## Sources
+- [Quantum random number generator tutorial](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-quantum-random-number-generator)
+- [QRNG kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
+- [GitHub: QRNG sample in Q#](https://github.com/microsoft/qsharp/tree/main/samples)

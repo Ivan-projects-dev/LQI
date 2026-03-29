@@ -11,7 +11,20 @@ Inputs required before running [[QPE]]: eigenstate $|u\rangle$ of the target uni
 
 Prepare eigenstate $|0\rangle$ by doing nothing; prepare $|1\rangle$ by applying $X$.
 
-**Unitary powers** – [[QPE]] requires controlled-$U^{2^j}$ for $j=0,1,\ldots,t-1$. $U^k$ is obtained by applying $U$ exactly $k$ times in sequence. In Q#: `OperationPow(U, power)` or implement recursively with `Controlled U` called `power` times. Key property: $(U^a)^b = U^{ab}$, so powers compose.
+**Unitary powers** – [[QPE]] requires controlled-$U^{2^j}$ for $j=0,1,\ldots,t-1$. $U^k$ is obtained by applying $U$ exactly $k$ times in sequence. Key property: $(U^a)^b = U^{ab}$, so powers compose.
+
+In Q#, `OperationPow` from `Std.Canon` lifts any operation to its $k$-th power:
+```csharp
+import Std.Canon.*;
+
+// Apply U^(2^j) controlled on phaseQubit
+for j in 0..t-1 {
+    let power = 1 <<< j;          // 2^j
+    let UPow = OperationPow(U, power);
+    Controlled UPow([phaseRegister[j]], eigenstate);
+}
+```
+For large powers, prefer repeated squaring over calling `U` $2^j$ times naively — reduces circuit depth from $O(2^t)$ to $O(t)$ when $U^2$ can be expressed as a simpler circuit.
 
 **Validating eigenstates** – to assert $|ψ\rangle$ is eigenstate of $U$: apply $U$ to $|ψ\rangle$, then assert the state is unchanged up to global phase (i.e., $U|ψ\rangle = e^{i\phi}|ψ\rangle$). In Q#: prepare state, apply $U$, apply $P^\dagger$ to map back to $|0\rangle$, assert $|0\rangle$.
 
@@ -28,3 +41,8 @@ $+1$ eigenvalue → $H|0\rangle$ unaffected → measure $0$. $-1$ eigenvalue →
 - If result was $1$: run again similarly to distinguish $-1$ ($\varphi=1/2$) from $-i$ ($\varphi=3/4$).
 
 This is the building block of **iterative [[QPE]]** (see [[Iterative QPE]]), where each round extracts $1$ bit of $\varphi$ with a phase correction for previously known bits.
+
+## Sources
+- [QPE kata — eigenstate preparation exercises](https://quantum.microsoft.com/en-us/tools/quantum-katas)
+- [GitHub: QPE eigenstate preparation samples](https://github.com/microsoft/qsharp/tree/main/samples/algorithms/iterative-phase-estimation)
+- [GitHub: QPE samples](https://github.com/microsoft/qsharp/tree/main/samples/algorithms)

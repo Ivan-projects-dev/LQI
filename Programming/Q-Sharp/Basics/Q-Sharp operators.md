@@ -52,3 +52,8 @@ let (q1, q2) = (Qubit(), Qubit()); // allocate & destructure
 | Comparison         | `==`, `!=`, `<`, `<=`, `>`, `>=`      |
 | Logical AND        | `and`                                 |
 | Lowest             | `or`                                  |
+
+## Sources
+- [Arithmetic expressions in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/arithmeticexpressions)
+- [Bitwise & logical expressions](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/logicalexpressions)
+- [Q# language specification](https://learn.microsoft.com/en-us/azure/quantum/user-guide/)

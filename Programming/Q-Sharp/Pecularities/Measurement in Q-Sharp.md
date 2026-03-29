@@ -42,6 +42,7 @@ Used in [[Grover in Q-Sharp]] & [[QPE]] in Q-Sharp for final readout.
 
 **`ResultArrayAsIntBE(results)` - decode measurement**, converts a `Result[]` to `Int` using big-endian bit ordering. From `Std.Convert`.
 ```csharp
+import Std.Convert.*;
 let bits = MResetEachZ(register);
 let value = ResultArrayAsIntBE(bits);   // e.g. [One, Zero, One] → 5
 ```
@@ -56,3 +57,7 @@ ResetAll(qs); // reset entire array
 Q# **requires** all [[Qubits]] to be in $|0\rangle$ before scope exit - failing to reset causes a runtime error.
 
 Operations that contain measurements **cannot be adjoint-able** (`is Adj`). This means measurement-containing operations cannot be used inside `within { }` blocks or uncomputed. Design circuits so measurements appear only at the terminal stage, never inside [[Oracle]] bodies. See [[Ancilla]] for why this matters.
+## Sources
+- [Quantum memory management & qubit lifecycle](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/quantummemorymanagement)
+- [Std.Measurement API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.measurement)
+- [Std.Intrinsic: M, Measure, MResetZ](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)

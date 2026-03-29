@@ -1,7 +1,7 @@
 #Algorithm #Quantum #DB 
 **[[Grover]] search** can search through an unsorted DB of $N$ items in approx $√N$ steps, compared to an $N$ num of steps for classical computer. [[Grover]] showcased another practical app of Quantum computing, reinforcing its potential to solve complex problems $>$ efficiently.
 
-Given classical func, $f(x): {0,1}^n -> {0,1 }$, where $n$ is the bit-size of the search space, find an input $x_0$ for which $f(x_0)=1$.
+Given classical func, $f(x): {0,1}^n -> {0,1 }$, where $n$ is the bit-size of the search space, find input $x_0$ for which $f(x_0)=1$.
 
 Power of [[Grover]] search lies in its ability to amplify the probability of finding the correct solution through **quantum interference**. It uses a **quantum [[Oracle]]** to mark the desired item & then applies series of quantum operations to increase the amplitude of the marked state. This process, known as **amplitude amplification**, allows algorithm to find the target item with high probability after only $√N$ iterations. For large DBs, this quadratic Speedup can translate to significant time savings, making previously intractable search problems feasible.
 

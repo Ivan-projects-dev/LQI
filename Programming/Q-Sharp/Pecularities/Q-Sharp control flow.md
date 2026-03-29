@@ -70,3 +70,7 @@ Operations declared `is Adj` must have body the compiler can invert. This restri
 - `fail`: allowed (propagates through adjoint).
 
 This is why [[Oracle]] operations always use `within/apply` (see [[Within-Apply pattern]]) rather than manual adjoint [[Logic]] - the compiler handles reversal automatically.
+## Sources
+- [Conditional branching in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/conditionalbranching)
+- [Iterations (for/while/repeat-until)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/iterations)
+- [Conjugations (within-apply)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/conjugations)
