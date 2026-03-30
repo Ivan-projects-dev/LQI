@@ -23,7 +23,7 @@ Before the game, Alice & Bob share a [[Bell states|Bell pair]] $|\Phi^+\rangle =
 - **Alice**: if $X=0$, measure in $Z$ basis; if $X=1$, measure in $X$ basis. Return result as $A$.
 - **Bob**: if $Y=0$, rotate qubit by $+\pi/8$ around $Y$-axis then measure in $Z$ basis; if $Y=1$, rotate by $-\pi/8$ then measure. Return result as $B$.
 
-The $\pi/8$ angle is optimal: it is chosen so that the measurement bases are separated by $\pi/4$, maximising the correlation overlap via $\cos^2(\pi/8)$.
+$\pi/8$ angle is optimal: it is chosen so that the measurement bases are separated by $\pi/4$, maximising the correlation overlap via $\cos^2(\pi/8)$.
 
 **Why this matters**: the $85.4\% > 75\%$ classical bound demonstrates **quantum nonlocality** - the shared entanglement provides correlations that no pre-shared classical strategy can replicate. This is a direct demonstration of violation of Bell's inequality 
 

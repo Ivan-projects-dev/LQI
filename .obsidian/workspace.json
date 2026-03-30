@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "92dcdaecbf37a5d1",
+        "id": "73f27589707b44f6",
         "type": "tabs",
         "children": [
           {
-            "id": "3e091a7bdb924504",
+            "id": "5c7f9be0a83c34c4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Q-Sharp/Pecularities/Ops vs funcs.md",
+                "file": "Programming/Q-Sharp/Functors/Functors.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ops vs funcs"
-            }
-          },
-          {
-            "id": "2fa89a0bcea66081",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/CHSH game.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CHSH game"
+              "title": "Functors"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,29 +172,34 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "9c58883d0361cb1a",
+  "active": "5c7f9be0a83c34c4",
   "lastOpenFiles": [
+    "Source code.md",
+    "Programming/Q-Sharp/Functors/Functors.md",
+    "Programming/Q-Sharp/Quantum Katas.md",
+    "Programming/Q-Sharp/Functors/Controlled op.md",
+    "Programming/Q-Sharp/Functors/Adjoint op.md",
+    "Programming/Q-Sharp/Basics/Q-Sharp STL.md",
+    "Programming/Q-Sharp/Basics/Q-Sharp arrays.md",
+    "Algorithms/Grover/Grover geometric.md",
+    "Algorithms/Grover/Grover.md",
+    "Algorithms/QPE/QPE.md",
+    "Algorithms/QPE/Controlled unitary.md",
+    "Environment/QRE.md",
+    "Environment/OpenQASM.md",
+    "Environment/Azure Quantum/Azure Quantum Workspace.md",
+    "Environment/Azure Quantum/Azure Quantum Providers.md",
+    "Environment/Azure Quantum/Azure Quantum Jobs.md",
+    "Environment/Azure Quantum/Azure Quantum Credits.md",
+    "Environment/Azure Quantum/Azure Quantum.md",
+    "FTQC/Error Mitigation.md",
+    "FTQC/Bit-flip code.md",
+    "Algorithms/CHSH game.md",
+    "Programming/Q-Sharp/Pecularities/Ops vs funcs.md",
     "Algorithms/Hadamard revisited.md",
     "Algorithms/HHL.md",
     "Algorithms/QAOA.md",
     "Algorithms/QPCA.md",
-    "Algorithms/QPE/Controlled unitary.md",
-    "Algorithms/QPE/Iterative QPE.md",
-    "Algorithms/VQE.md",
-    "Environment/OpenQASM.md",
-    "Environment/QRE.md",
-    "Programming/Q-Sharp/Quantum Katas.md",
-    "QIR.md",
-    "broken links output.md",
-    "Programming/Q-Sharp/Pecularities/Ops vs funcs.md",
-    "Programming/Q-Sharp/Pecularities/Operations vs funcs.md",
-    "Programming/Q-Sharp/Functors/Functors.md",
-    "FTQC/FTQC.md",
-    "Programming/Q-Sharp/Pecularities/Adaptive profile.md",
-    "Algorithms/QPE/QPE in Q-Sharp.md",
-    "Algorithms/QPE/QPE.md",
-    "Algorithms/Grover/Grover search.md",
-    "Algorithms/Grover/Grover in Q-Sharp.md",
     "QPE/QPE inputs.md.tmp.5.1774814640112",
     "QPE/QPE inputs.md.tmp.5.1774814629552",
     "Programming/Q-Sharp/Pecularities/Q-Sharp diagnostics.md.tmp.5.1774814616220",
@@ -217,11 +207,6 @@
     "Programming/Q-Sharp/Functors/Adjoint op.md.tmp.5.1774814597396",
     "Programming/Q-Sharp/Basics/Q-Sharp arrays.md.tmp.5.1774814583627",
     "Programming/Q-Sharp/Basics/Q-Sharp arrays.md.tmp.5.1774814574461",
-    "Environment/Q-Sharp Python.md",
-    "Environment/QIR.md",
-    "Math/Math (Quantum)/Oracle.md",
-    "Programming/Q-Sharp/Functors/Controlled op.md",
-    "Programming/Q-Sharp/Functors/Adjoint op.md",
     "Environment/Azure Quantum",
     "Math",
     "Programming",
