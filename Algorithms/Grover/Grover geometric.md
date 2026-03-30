@@ -12,7 +12,7 @@ $$\sin\theta = \sqrt{\frac{M}{N}} \quad \Rightarrow \quad \theta \approx \sqrt{\
 - **[[Diffusion operator]]** $D = 2|s⟩\langle s| - I$ reflects about $|s⟩$.
 - $2$ successive reflections = rotation by $2\theta$.
 
-After $k$ iterations the state is:
+After $k$ iterations the state is: 
 $$|\psi_k⟩ = \cos\!\left(\frac{2k+1}{2}\theta\right)|s'⟩ + \sin\!\left(\frac{2k+1}{2}\theta\right)|ω⟩$$
 **Optimal iteration count** to reach near $|ω⟩$ (angle $\approx \pi/2$):
 $$k^* = \left\lfloor \frac{\pi}{4}\sqrt{\frac{N}{M}} \right\rceil$$

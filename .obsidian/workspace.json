@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "73f27589707b44f6",
+        "id": "4dd5919c989cbad5",
         "type": "tabs",
         "children": [
           {
-            "id": "5c7f9be0a83c34c4",
+            "id": "e66a2fc13740e2c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "azure",
+                "query": "#Q-Sharp",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -173,10 +172,21 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "5c7f9be0a83c34c4",
+  "active": "e66a2fc13740e2c9",
   "lastOpenFiles": [
-    "broken links output.md",
+    "Environment/OpenQASM.md",
+    "Environment/QRE.md",
+    "Math/Math (Quantum)/Oracle.md",
+    "Programming/C-Sharp/Frameworks/Entity framework.md",
+    "Programming/Q-Sharp/Basics/Q-Sharp namespaces.md",
+    "Programming/Q-Sharp/Basics/Q-Sharp arrays.md",
+    "Algorithms/QPE/QPE.md",
+    "Algorithms/QPE/Iterative QPE.md",
+    "Algorithms/Grover/Grover in Q-Sharp.md",
+    "Algorithms/Grover/Grover geometric.md",
+    "Algorithms/Grover/Grover.md",
     "Environment/Azure Quantum/Azure Quantum.md",
+    "broken links output.md",
     "Qubits/Ancilla.md",
     "Programming/Q-Sharp/Pecularities/Adaptive profile.md",
     "Programming/Q-Sharp/Functors/Functors.md",
@@ -185,22 +195,11 @@
     "Programming/Q-Sharp/Functors/Controlled op.md",
     "Programming/Q-Sharp/Functors/Adjoint op.md",
     "Programming/Q-Sharp/Basics/Q-Sharp STL.md",
-    "Programming/Q-Sharp/Basics/Q-Sharp arrays.md",
-    "Algorithms/Grover/Grover geometric.md",
-    "Algorithms/Grover/Grover.md",
-    "Algorithms/QPE/QPE.md",
     "Algorithms/QPE/Controlled unitary.md",
-    "Environment/QRE.md",
-    "Environment/OpenQASM.md",
     "Environment/Azure Quantum/Azure Quantum Workspace.md",
     "Environment/Azure Quantum/Azure Quantum Providers.md",
     "Environment/Azure Quantum/Azure Quantum Jobs.md",
     "Environment/Azure Quantum/Azure Quantum Credits.md",
-    "FTQC/Error Mitigation.md",
-    "FTQC/Bit-flip code.md",
-    "Algorithms/CHSH game.md",
-    "Programming/Q-Sharp/Pecularities/Ops vs funcs.md",
-    "Algorithms/Hadamard revisited.md",
     "QPE/QPE inputs.md.tmp.5.1774814640112",
     "QPE/QPE inputs.md.tmp.5.1774814629552",
     "Programming/Q-Sharp/Pecularities/Q-Sharp diagnostics.md.tmp.5.1774814616220",
