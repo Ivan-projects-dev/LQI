@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Q-Sharp/Functors/Functors.md",
+                "file": "Environment/Azure Quantum/Azure Quantum.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Functors"
+              "title": "Azure Quantum"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "FTQC",
+                "query": "azure",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -174,8 +175,12 @@
   },
   "active": "5c7f9be0a83c34c4",
   "lastOpenFiles": [
-    "Source code.md",
+    "broken links output.md",
+    "Environment/Azure Quantum/Azure Quantum.md",
+    "Qubits/Ancilla.md",
+    "Programming/Q-Sharp/Pecularities/Adaptive profile.md",
     "Programming/Q-Sharp/Functors/Functors.md",
+    "Source code.md",
     "Programming/Q-Sharp/Quantum Katas.md",
     "Programming/Q-Sharp/Functors/Controlled op.md",
     "Programming/Q-Sharp/Functors/Adjoint op.md",
@@ -191,15 +196,11 @@
     "Environment/Azure Quantum/Azure Quantum Providers.md",
     "Environment/Azure Quantum/Azure Quantum Jobs.md",
     "Environment/Azure Quantum/Azure Quantum Credits.md",
-    "Environment/Azure Quantum/Azure Quantum.md",
     "FTQC/Error Mitigation.md",
     "FTQC/Bit-flip code.md",
     "Algorithms/CHSH game.md",
     "Programming/Q-Sharp/Pecularities/Ops vs funcs.md",
     "Algorithms/Hadamard revisited.md",
-    "Algorithms/HHL.md",
-    "Algorithms/QAOA.md",
-    "Algorithms/QPCA.md",
     "QPE/QPE inputs.md.tmp.5.1774814640112",
     "QPE/QPE inputs.md.tmp.5.1774814629552",
     "Programming/Q-Sharp/Pecularities/Q-Sharp diagnostics.md.tmp.5.1774814616220",
