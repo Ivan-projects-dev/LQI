@@ -25,7 +25,7 @@ import Std.Canon.*;
 ControlledOnBitString([true, false, true], X)(register, target);
 ```
 
-**Controlled generation strategies** — declared alongside adjoint strategies in the operation body:
+**Controlled generation strategies** - declared alongside adjoint strategies in the operation body:
 
 | Strategy | Declaration | When to use |
 |---|---|---|

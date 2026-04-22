@@ -1,0 +1,86 @@
+#Quantum #Cloud #Platform #Qiskit
+**IBM Quantum** (quantum.cloud.ibm.com) is IBM's cloud quantum computing service, offering free public access to real superconducting QPUs & the **Qiskit** open-source SDK. One of the most widely used quantum platforms for research & education.
+
+## Free Tier
+
+- **$10$ minutes of QPU runtime per month** on IBM's real quantum hardware at no cost
+- Active users may request additional time
+- No credit card required to start; sign up with an IBM ID
+- Full access to all on-demand **quantum simulators** (no runtime cap)
+- Free courses & learning resources on IBM Quantum Learning
+
+## Hardware
+
+IBM's fleet uses **superconducting transmon [[Qubits]]** arranged in heavy-hex lattice topology. Available systems (as of $2025$):
+- $~12$ systems publicly accessible, ranging from **$5$ to $127$ [[Qubits]]**
+- **Eagle** ($127$ [[Qubits]]), **Heron** ($133$ [[Qubits]], higher fidelity), & smaller systems for experimentation
+- Systems listed at `quantum.cloud.ibm.com` with live calibration data (gate error rates, $T_1/T_2$, readout fidelity)
+
+## Programming Model
+
+Primary SDK: **Qiskit** (Python). Circuits are written as `QuantumCircuit` objects & compiled with `transpile()` before submission via the **Qiskit Runtime** service.
+
+```python
+from qiskit import QuantumCircuit
+from qiskit_ibm_runtime import QiskitRuntimeService, SamplerV2
+
+service = QiskitRuntimeService()
+backend = service.least_busy(operational=True, simulator=False)
+
+qc = QuantumCircuit(2, 2)
+qc.h(0)
+qc.cx(0, 1)
+qc.measure_all()
+sampler = SamplerV2(backend)
+job = sampler.run([qc], shots=1024)
+result = job.result()
+```
+
+**Primitives** abstract QPU access into two interfaces:
+- `SamplerV2` - returns shot-level measurement distributions
+- `EstimatorV2` - returns expectation values of Pauli observables (used in [[VQE]], [[QAOA]])
+
+## Simulators
+
+- **ibmq_qasm_simulator** - statevector & stabilizer sim, up to $32$ [[Qubits]]
+- **AerSimulator** (local, via `qiskit-aer`) - noise model simulation using real device calibration data
+- **FakeBackends** - drop-in replacements for real devices with realistic noise models for offline testing
+
+## Ecosystem
+
+- **Qiskit** - circuit composition, transpilation, optimization passes
+- **Qiskit Runtime** - managed execution environment on IBM Cloud
+- **IBM Quantum Learning** - free courses, tutorials, Jupyter notebooks
+- **Qiskit Patterns** - templates for mapping real-world problems to quantum circuits
+
+## Practical Notes
+
+**Transpilation depth explosion** is the most common surprise. IBM's native gate set is `{ECR, RZ, SX, X}`. A [[CNOT]] becomes `ECR` + two `SX` rotations. $10$-gate circuit can compile to $40+$ native gates. Always check:
+```python
+from qiskit import transpile
+tqc = transpile(qc, backend, optimization_level=3)
+print(tqc.depth())   # may be 3–10× your original depth
+```
+Use `optimization_level=3` for best compression at the cost of compile time.
+
+**FakeBackends for offline noise testing** - avoid spending QPU minutes on circuits that haven't been tested with realistic noise:
+```python
+from qiskit_aer import AerSimulator
+from qiskit_ibm_runtime.fake_provider import FakeSherbrooke
+noisy_sim = AerSimulator.from_backend(FakeSherbrooke())
+```
+
+**Qubit selection matters.** Calibration data (error rates, $T_1/T_2$) is on the backend dashboard. For $2$-qubit circuits, route to the qubit pair with the best [[CNOT]] error. Use `backend.properties()` to get live data programmatically.
+
+**Queue times.** `least_busy()` helps, but real QPU queues during peak hours are $30$ min – $3$ hours. Submit, close the laptop, come back later. Use `job.status()` or IBM Quantum web dashboard to track.
+
+**Qiskit 1.0 breaking change.** `execute()` was removed. Any tutorial pre-$2024$ using `execute(circuit, backend)` needs to be rewritten with `SamplerV2` / `EstimatorV2`. This breaks most Stack Overflow answers.
+
+**Measurement [[Error Mitigation]]** - readout error is often the dominant error on current hardware & is easy to mitigate. The `mthree` library applies [[Matrix]] inversion correction with min overhead.
+
+## Sources
+- [IBM Quantum Platform](https://quantum.cloud.ibm.com)
+- [IBM Quantum plans overview](https://quantum.cloud.ibm.com/docs/en/guides/plans-overview)
+- [Qiskit documentation](https://docs.quantum.ibm.com)
+- [IBM Quantum hardware](https://www.ibm.com/quantum/products)
+- [Qiskit GitHub](https://github.com/Qiskit/qiskit)

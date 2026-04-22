@@ -1,7 +1,7 @@
 #Quantum #Cloud #Pricing
 **[[Azure Quantum]] credits** are free allowance provided to new users to explore real quantum hardware without upfront cost. New accounts receive $1$-time **$500$ USD credit** usable with participating providers.
 
-There are no standing charges for the [[Azure Quantum]] service itself - you only pay for what providers charge when jobs run on their hardware or simulators. [[QRE]] is completely free & requires no Azure account.
+There are no standing charges for the [[Azure Quantum]] service itself - you only pay for what providers charge when jobs run on their hardware or simulators. [[Quantum resource estimator]] is completely free & requires no Azure account.
 
 **Billing models vary by provider:**
 - **IonQ** - per gate-shot ($1$-qubit & $2$-qubit gates $×$ shots), $+$ min fee per program run ($1–5$ USD).

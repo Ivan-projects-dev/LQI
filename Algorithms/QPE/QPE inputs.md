@@ -24,7 +24,7 @@ for j in 0..t-1 {
     Controlled UPow([phaseRegister[j]], eigenstate);
 }
 ```
-For large powers, prefer repeated squaring over calling `U` $2^j$ times naively — reduces circuit depth from $O(2^t)$ to $O(t)$ when $U^2$ can be expressed as a simpler circuit.
+For large powers, prefer repeated squaring over calling `U` $2^j$ times naively - reduces circuit depth from $O(2^t)$ to $O(t)$ when $U^2$ can be expressed as a simpler circuit.
 
 **Validating eigenstates** – to assert $|ψ\rangle$ is eigenstate of $U$: apply $U$ to $|ψ\rangle$, then assert the state is unchanged up to global phase (i.e., $U|ψ\rangle = e^{i\phi}|ψ\rangle$). In Q#: prepare state, apply $U$, apply $P^\dagger$ to map back to $|0\rangle$, assert $|0\rangle$.
 
@@ -43,6 +43,6 @@ $+1$ eigenvalue → $H|0\rangle$ unaffected → measure $0$. $-1$ eigenvalue →
 This is the building block of **iterative [[QPE]]** (see [[Iterative QPE]]), where each round extracts $1$ bit of $\varphi$ with a phase correction for previously known bits.
 
 ## Sources
-- [QPE kata — eigenstate preparation exercises](https://quantum.microsoft.com/en-us/tools/quantum-katas)
+- [QPE kata - eigenstate preparation exercises](https://quantum.microsoft.com/en-us/tools/quantum-katas)
 - [GitHub: QPE eigenstate preparation samples](https://github.com/microsoft/qsharp/tree/main/samples/algorithms/iterative-phase-estimation)
 - [GitHub: QPE samples](https://github.com/microsoft/qsharp/tree/main/samples/algorithms)

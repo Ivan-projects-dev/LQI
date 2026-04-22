@@ -105,5 +105,5 @@ Explicit specializations override auto-generation & allow custom decompositions 
 
 ## Sources
 - [Callable types in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/callabletypes)
-- [Operations and functions](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/operationsandfunctions)
+- [Operations & functions](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/operationsandfunctions)
 - [Functor application](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/functorapplication)

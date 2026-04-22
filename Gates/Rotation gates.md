@@ -60,4 +60,4 @@ This makes uncomputing rotation-based circuits straightforward - no new gate nee
 ## Sources
 - [Std.Intrinsic API reference (Rx, Ry, Rz, R1, R)](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)
 - [Rotation gates kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
-- [Std.Math — PI(), ArcTan2()](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.math)
+- [Std.Math - PI(), ArcTan2()](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.math)

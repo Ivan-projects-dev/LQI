@@ -18,6 +18,6 @@ Wrap the marking [[Oracle]] with an [[Ancilla]] prepared in $|{-}\rangle = \frac
 Steps $2-4$ together form the [[Diffusion operator]] $D = H^{\otimes n}(2|0\rangle\langle 0|-I)H^{\otimes n}$.
 
 ## Sources
-- [Grover's search tutorial — phase vs marking oracle](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)
+- [Grover's search tutorial - phase vs marking oracle](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)
 - [Grover's search kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
 - [Phase kickback technique](https://learn.microsoft.com/en-us/azure/quantum/concepts-pauli-measurements)

@@ -17,13 +17,13 @@ operation MyCircuit(q : Qubit) : Unit is Adj {
 ```
 Used heavily for **uncomputation**: apply operation, use its side-effect, then `Adjoint` it to clean [[Ancilla]] [[Qubits]].
 
-**Adjoint generation strategies** — declared in the operation body:
+**Adjoint generation strategies** - declared in the operation body:
 
-| Strategy | Declaration | When to use |
+| Strategy | Declaration | When to use                                                                                                                                       |
 |---|---|---|
-| `adjoint auto` | `adjoint auto;` | Compiler reverses gate sequence & conjugates phases automatically. Works when body uses only adjointable ops. |
-| `adjoint self` | `adjoint self;` | Operation is its own inverse (self-adjoint / Hermitian). Applies to H, X, Y, Z, [[CNOT]] — `Adjoint H == H`. |
-| `adjoint invert` | `adjoint invert;` | Same as `auto` — synonym used in older Q# syntax. |
+| `adjoint auto` | `adjoint auto;` | Compiler reverses gate sequence & conjugates phases automatically. Works when body uses only adjointable ops.                                     |
+| `adjoint self` | `adjoint self;` | Operation is its own inverse (self-adjoint / Hermitian). Applies to H, X, Y, Z, [[CNOT]] - `Adjoint H == H`.                                      |
+| `adjoint invert` | `adjoint invert;` | Same as `auto` - synonym used in older Q# syntax.                                                                                                 |
 | `adjoint distribute` | `adjoint distribute;` | Used when generating `Controlled Adjoint`: distributes the adjoint into the controlled body. Needed when `controlled auto` alone is insufficient. |
 
 ```csharp

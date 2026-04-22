@@ -103,6 +103,6 @@ operation MarkClause(
 [[Ancilla]] [[Qubits]] allocated with `use` inside an operation are automatically reset to $|0\rangle$ on scope exit only if dev does so explicitly or via `within/apply`. Leaving [[Ancilla]] in non-$|0\rangle$ state causes aruntime error.
 
 ## Sources
-- [Grover's search tutorial — oracle construction](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)
+- [Grover's search tutorial - oracle construction](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)
 - [Within-apply pattern (conjugations)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/conjugations)
 - [GitHub: Grover oracle samples](https://github.com/microsoft/qsharp/tree/main/samples/algorithms)

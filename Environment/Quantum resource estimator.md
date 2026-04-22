@@ -1,7 +1,7 @@
 #Q-Sharp #Quantum **Quantum resource estimator**
 Before running on real quantum hardware, you need to figure out if your program can run on existing hardware, & how many resources it'll consume.
 
-**Microsoft Quantum resource estimator** allows to assess architectural decisions, compare qubit technologies, & determine the resources needed to execute a given quantum algorithm. You can choose from pre-defined fault-tolerant protocols & specify assumptions of the underlying physical qubit model. Free of charge & doesn't require Azure account.
+**Microsoft Quantum resource estimator** allows to assess architectural decisions, compare qubit tech, & determine the resources needed to execute given quantum algorithm. You can choose from pre-defined fault-tolerant protocols & specify assumptions of the underlying physical qubit model. Free of charge & doesn't require Azure account.
 
 **VS Code** - open any `.qs` file, right-click → *Estimate Resources*. Results appear in a side-panel table.
 
@@ -10,7 +10,7 @@ Before running on real quantum hardware, you need to figure out if your program 
 import qsharp
 result = qsharp.estimate("MyOperation()")
 print(result) # dict with all output fields
-print(result.diagram)  # ASCII space-time diagram
+print(result.diagram) # ASCII space-time diagram
 ```
 
 **[[Azure Quantum]] service (batched)** - submit multiple param configurations as a single job to get the full Pareto frontier in one call.
@@ -27,19 +27,16 @@ print(result.diagram)  # ASCII space-time diagram
 | `runtime` | Estimated wall-clock runtime |
 | `rQOPS` | Reliable quantum operations per second of the target |
 | `errorBudget` | Allowed failure probability (split across logical errors, T-distillation, rotations) |
-
-## T-Factories
-
-T-gates are non-Clifford & cannot be directly fault-tolerantly executed - they must be *distilled* from noisy T-states via magic state distillation. The estimator models T-factories as separate qubit blocks running in parallel:
+**T-gates** are non-Clifford & cannot be directly fault-tolerantly executed - they must be *distilled* from noisy T-states via magic state distillation. Estimator models T-factories as separate qubit blocks running in parallel:
 - More T-factory copies → more physical [[Qubits]], but shorter runtime (T-states produced faster)
 - Fewer T-factory copies → fewer [[Qubits]], but longer runtime (algorithm idles waiting for T-states)
 
-This is the core **space-time tradeoff**: the Pareto frontier of (physicalQubits, runtime) pairs is plotted as a monotonically decreasing curve.
+This is the core **space-time tradeoff**: the Pareto frontier of (physical [[Qubits]], runtime) pairs is plotted as a monotonically decreasing curve.
 
 ## QEC Schemes & Qubit Models
 
 Two built-in QEC schemes:
-- **[[Surface Code]]** - 2D lattice, each logical qubit requires $2d^2$ physical [[Qubits]], cycle time ∝ $d$
+- **[[Surface Code]]** - $2D$ lattice, each logical qubit requires $2d^2$ physical [[Qubits]], cycle time $∝ d$
 - **Floquet code** - honeycomb-based, more efficient use of connectivity, lower overhead in some regimes
 
 Configurable qubit params (set `qubitParams` in the estimator job):
