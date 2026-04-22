@@ -1,5 +1,5 @@
 #Quantum #Cloud #Platform #QML #Photonic
-**Xanadu** (xanadu.ai) is a Canadian quantum computing company focused on **photonic quantum hardware** & open-source quantum machine learning software. Its two main open-source products - **PennyLane** & **Strawberry Fields** - are freely available & widely used for quantum ML research & photonic simulation.
+**Xanadu** (xanadu.ai) is a Canadian quantum computing company focused on **photonic quantum hardware** & open-source quantum machine learning software. Its $2$ main open-source products - **PennyLane** & **Strawberry Fields** - are freely available & widely used for quantum ML research & photonic simulation.
 
 ## Free Tier
 
@@ -67,7 +67,7 @@ Xanadu launched **Aurora** in $2025$ - the world's first **scalable networked ph
 
 **Shot noise dominates variational optimization on hardware.** With `shots=1024` the gradient estimate has standard deviation $$\sim 1/\sqrt{N_{	ext{shots}}}$$. This makes convergence noisy. Increase shots progressively: coarse optimization with $512$ shots, fine-tuning with $4096+$.
 
-**Strawberry Fields is a separate library.** Photonic (continuous-variable) quantum computing uses `strawberryfields.fock` or `strawberryfields.gaussian` devices. These have Fock states, displacement operators, & squeezing - completely different from `default.qubit`. The two paradigms do not mix.
+**Strawberry Fields is a separate library.** Photonic (continuous-variable) quantum computing uses `strawberryfields.fock` or `strawberryfields.gaussian` devices. These have Fock states, displacement operators, & squeezing - completely different from `default.qubit`. The $2$ paradigms do not mix.
 
 ## Sources
 - [PennyLane](https://pennylane.ai)

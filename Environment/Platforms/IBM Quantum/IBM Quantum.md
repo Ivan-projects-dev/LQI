@@ -1,5 +1,5 @@
 #Quantum #Cloud #Platform #Qiskit
-**IBM Quantum** (quantum.cloud.ibm.com) is IBM's cloud quantum computing service, offering free public access to real superconducting QPUs & the **Qiskit** open-source SDK. One of the most widely used quantum platforms for research & education.
+**IBM Quantum** (quantum.cloud.ibm.com) is IBM's cloud quantum computing service, offering free public access to real superconducting QPUs & the **Qiskit** open-source SDK. $1$ of the most widely used quantum platforms for research & education.
 
 ## Free Tier
 
@@ -36,7 +36,7 @@ job = sampler.run([qc], shots=1024)
 result = job.result()
 ```
 
-**Primitives** abstract QPU access into two interfaces:
+**Primitives** abstract QPU access into $2$interfaces:
 - `SamplerV2` - returns shot-level measurement distributions
 - `EstimatorV2` - returns expectation values of Pauli observables (used in [[VQE]], [[QAOA]])
 
@@ -55,7 +55,7 @@ result = job.result()
 
 ## Practical Notes
 
-**Transpilation depth explosion** is the most common surprise. IBM's native gate set is `{ECR, RZ, SX, X}`. A [[CNOT]] becomes `ECR` + two `SX` rotations. $10$-gate circuit can compile to $40+$ native gates. Always check:
+**Transpilation depth explosion** is the most common surprise. IBM's native gate set is `{ECR, RZ, SX, X}`. A [[CNOT]] becomes `ECR` + $2$ `SX` rotations. $10$-gate circuit can compile to $40+$ native gates. Always check:
 ```python
 from qiskit import transpile
 tqc = transpile(qc, backend, optimization_level=3)

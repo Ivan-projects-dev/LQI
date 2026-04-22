@@ -10,7 +10,7 @@ Such block is repeated for each time step $t=1,…,T$. Entire network can be op
 **Quantum recurrent block** works:
 - The **hidden register** $|ψht−1⟩$ retains memory from the previous time step $t−1$
 	- The **input** $|ϕ(xt)⟩$ encodes the new data $xt$ (e.g., via angle encoding)
-- A **parametrized unitary** $U(θt)$ entangles these two parts
+- A **parametrized unitary** $U(θt)$ entangles these $2$ parts
 - Some [[Qubits]] are partially measured to yield the classical output $yt$, while the remainder remain unmeasured to become the next hidden state $|ψht⟩$
 This process can be expressed as: $|ψht⟩⊗|yt⟩=U(θt)(|ψht−1⟩⊗|ϕ(xt)⟩)$
 

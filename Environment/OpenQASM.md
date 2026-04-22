@@ -38,7 +38,7 @@ OpenQASM $3.0$ & QIR serve complementary roles:
 - **OpenQASM** - human-readable circuit description language (text format)
 - **QIR** - binary compilation target (LLVM bitcode) for hardware execution
 
-QDK accepts OpenQASM $3$ source, compiles to QIR, & submits to any provider backend - bridging the two formats.
+QDK accepts OpenQASM $3$ source, compiles to QIR, & submits to any provider backend - bridging the $2$ formats.
 
 ## Sources
 - [OpenQASM 3.0 specification](https://openqasm.com/versions/3.0/intro.html)

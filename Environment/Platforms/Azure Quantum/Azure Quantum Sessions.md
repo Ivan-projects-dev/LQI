@@ -17,7 +17,7 @@ Sessions complement **integrated hybrid computing**, where classical & quantum [
 
 ## Sessions vs. Integrated Hybrid
 
-There are two distinct hybrid computing models in [[Azure Quantum]]:
+There are $2$ distinct hybrid computing models in [[Azure Quantum]]:
 
 **Sessions (interactive hybrid)** - multiple separate jobs submitted to the same target with priority queue access. Classical computation happens *between* jobs on the client side. Qubit state does NOT persist between jobs. Suited for outer-loop optimization (e.g., parameter updates in [[VQE]] or [[QAOA]]).
 

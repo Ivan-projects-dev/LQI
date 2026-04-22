@@ -27,7 +27,7 @@ Controlled Z([q0], q1);
 
 **SWAP - `SWAP`**
 $$SWAP = \begin{pmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\end{pmatrix}$$
-Exchanges states of two [[Qubits]]: $|ab\rangle \mapsto |ba\rangle$. $SWAP^2 = I$. Decomposition: $SWAP = CNOT_{01} \cdot CNOT_{10} \cdot CNOT_{01}$.
+Exchanges states of $2$ [[Qubits]]: $|ab\rangle \mapsto |ba\rangle$. $SWAP^2 = I$. Decomposition: $SWAP = CNOT_{01} \cdot CNOT_{10} \cdot CNOT_{01}$.
 ```csharp
 SWAP(q0, q1);
 ```
@@ -35,7 +35,7 @@ Used in QFT to reverse qubit order after the transform.
 
 **CCNOT (Toffoli) - `CCNOT`**
 $$CCNOT: |c_1 c_2 t\rangle \mapsto |c_1 c_2\,(t \oplus (c_1 \wedge c_2))\rangle$$
-Flips target iff both controls are $|1\rangle$. Universal for reversible classical computation. Acts as $3$-qubit gate; $8\times8$ [[Matrix]] with $1$s on diagonal except last two rows swapped.
+Flips target iff both controls are $|1\rangle$. Universal for reversible classical computation. Acts as $3$-qubit gate; $8\times8$ [[Matrix]] with $1$s on diagonal except last $2$ rows swapped.
 ```csharp
 CCNOT(ctrl1, ctrl2, target); // equivalent:
 Controlled X([ctrl1, ctrl2], target);

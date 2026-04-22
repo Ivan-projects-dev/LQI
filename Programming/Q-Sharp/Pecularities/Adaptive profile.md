@@ -28,7 +28,7 @@ operation TeleportQubit(msg : Qubit, here : Qubit) : Unit {
 ```
 Both `if` branches are **real-time conditional gates** - the classical result drives the hardware in the same shot, without restarting. On `Base` profile this code would fail to compile.
 
-**Iterative [[Iterative QPE|QPE]]** is the canonical use case. Estimates phase one bit at a time, each iteration conditioned on all prior measurement results:
+**Iterative [[Iterative QPE|QPE]]** is the canonical use case. Estimates phase $1$ bit at a time, each iteration conditioned on all prior measurement results:
 ```csharp
 import Std.Math.*;
 @Config(AdaptiveRI)
@@ -63,7 +63,7 @@ if combined { Z(target); }
 - Operations inside conditional branches must be **`Ctl`-enabled** if they rely on the result.
 
 **`@Config` stacking for simulation compatibility**
-Define $2$ versions of the same operation - one for restricted hardware, one for simulation:
+Define $2$ versions of the same operation - $1$ for restricted hardware, $1$ for simulation:
 ```csharp
 @Config(Base)
 operation MeasureAndCorrect(q : Qubit) : Unit {

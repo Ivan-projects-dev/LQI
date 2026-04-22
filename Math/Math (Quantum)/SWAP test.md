@@ -1,5 +1,5 @@
 #Math #Quantum 
-Instead of measuring full fidelity directly, many [[QAE]] implementations use a SWAP test to compare a "trash state" with a fixed reference state $|φ⟩$. By minimizing the measured distance between these two states, the [[QAE]] effectively ensures compression plus faithful reconstruction.
+Instead of measuring full fidelity directly, many [[QAE]] implementations use a SWAP test to compare a "trash state" with a fixed reference state $|φ⟩$. By minimizing the measured distance between these $2$ states, the [[QAE]] effectively ensures compression plus faithful reconstruction.
 
 Therefore, the "…" in the middle of the expression for $L(θ)$ could refer to the **SWAP operation** (or whatever **measurement/comparison** operator is being used) between the "trash" [[Qubits]] & the fixed reference state. A common choice is to literally insert $SWAPB, B′$, so the loss might look like:
 $$L(θ)=−∑i⟨ψi∣∣(U†(θ)⊗IB′)SWAPB,B′(U(θ)⊗IB′)∣∣ψi⟩$$

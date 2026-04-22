@@ -1,5 +1,5 @@
 #Algorithm #Quantum #Q-Sharp
-[[Grover]] uses $2$ kinds of oracles. **Marking [[Oracle]]**: flips target [[Ancilla]] qubit if query register satisfies condition. **Phase [[Oracle]]**: flips phase of query register if condition holds. The two are interconvertible.
+[[Grover]] uses $2$ kinds of oracles. **Marking [[Oracle]]**: flips target [[Ancilla]] qubit if query register satisfies condition. **Phase [[Oracle]]**: flips phase of query register if condition holds. The $2$ are interconvertible.
 
 **[[Oracle]] types**:
 	- **AllOnes** – flip target iff all [[Qubits]] are $|1\rangle$. Implemented by a single multi-controlled $X$ (Toffoli generalization) with all data [[Qubits]] as controls & target as the output qubit.

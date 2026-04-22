@@ -41,7 +41,7 @@ operation MyRotation(angle : Double, q : Qubit) : Unit is Adj + Ctl {
 }
 ```
 
-When an operation is declared `is Adj + Ctl`, Q# requires all four specializations to be satisfiable: `body`, `adjoint`, `controlled`, `controlled adjoint`. Using `auto` for all is the most common pattern; manual bodies are only needed for performance-critical decompositions.
+When an operation is declared `is Adj + Ctl`, Q# requires all $4$ specializations to be satisfiable: `body`, `adjoint`, `controlled`, `controlled adjoint`. Using `auto` for all is the most common pattern; manual bodies are only needed for performance-critical decompositions.
 
 ## Sources
 - [Functor application in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/functorapplication)

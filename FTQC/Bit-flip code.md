@@ -24,10 +24,10 @@ Two CNOTs (control = q[0]): [[CNOT]](q[0], q[1]); [[CNOT]](q[0], q[2]).
 **Error correction**: apply $X$ to the flagged qubit. After correction, state returns to $|\bar\psi\rangle$.
 
 **Logical gates**:
-- $\bar{X}$ (logical NOT): apply $X$ to all three physical [[Qubits]]. $\alpha|000\rangle+\beta|111\rangle \to \beta|000\rangle+\alpha|111\rangle$.
+- $\bar{X}$ (logical NOT): apply $X$ to all $3$ physical [[Qubits]]. $\alpha|000\rangle+\beta|111\rangle \to \beta|000\rangle+\alpha|111\rangle$.
 - $\bar{Z}$ (logical phase flip): apply $Z$ to any $1$ physical qubit (e.g., q[0]). $\alpha|000\rangle+\beta|111\rangle \to \alpha|000\rangle-\beta|111\rangle$.
 
 **Limitations**:
 - Does **not** protect against $Z$ errors: a $Z$ on any qubit maps $|\bar\psi\rangle$ to a valid codeword for $\alpha|0\rangle-\beta|1\rangle$ - undetectable.
-- Does **not** protect against two simultaneous $X$ errors (misidentified as a single error on the third qubit).
+- Does **not** protect against $2$ simultaneous $X$ errors (misidentified as a single error on the third qubit).
 - Full [[FTQC]] requires codes protecting against arbitrary single-qubit errors (e.g., Shor 9-qubit code, Steane 7-qubit code).

@@ -7,5 +7,5 @@ Then the adiabatic theorem says that in the [[Limit]] $T→∞$, the final stat
 We can see that at $t=0$, only $H_i$ acts on the system while at $t=T$, only $H_f$ acts on the system.
 $T$ depends on the energy gap between the ground & the first excited state, i.e., the state with the second smallest eigenvalue.
 
-In the image below, the orange line shows how the lowest eigenvalue changes over time & the purple line indicates the eigenvalue of the first excited state. As the two values get closer, $T$ gets larger. If the two lowest eigenvalues cross each other, then we can no longer stay in the ground state.
+In the image below, the orange line shows how the lowest eigenvalue changes over time & the purple line indicates the eigenvalue of the first excited state. As the $2$ values get closer, $T$ gets larger. If the $2$ lowest eigenvalues cross each other, then we can no longer stay in the ground state.
 ![[Pasted image 20260101222212.png]]

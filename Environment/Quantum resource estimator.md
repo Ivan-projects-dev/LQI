@@ -13,7 +13,7 @@ print(result) # dict with all output fields
 print(result.diagram) # ASCII space-time diagram
 ```
 
-**[[Azure Quantum]] service (batched)** - submit multiple param configurations as a single job to get the full Pareto frontier in one call.
+**[[Azure Quantum]] service (batched)** - submit multiple param configurations as a single job to get the full Pareto frontier in $1$ call.
 
 | Field | Description |
 |---|---|

@@ -9,7 +9,7 @@ After $k^*$ [[Grover]] steps, measuring yields _any one_ of the $M$ solutions wi
 
 **Case $M \geq N/2$**: classical random sampling finds a solution immediately; [[Grover]]'s speedup vanishes. Algorithm still works but $k^* = 0$ or $1$.
 
-**Unknown $M$** - two strategies:
+**Unknown $M$** - $2$strategies:
 
 _Quantum counting_: estimate $M$ using QFT-based phase estimation on the [[Grover]] operator $G$. Eigenvalues of $G$ are $e^{\pm 2i\theta}$, so [[QPE]] returns $\theta$ & thus $M \approx N\sin^2\theta$. See [[Quantum counting]].
 

@@ -23,7 +23,7 @@ where $p$ = physical error rate, $p_{th}$ ≈ 1%, & $p_L =$ logical error rate. 
 - **T-gate** - NOT transversal in surface code; must be implemented via **magic state distillation** (see [[Quantum resource estimator]] T-factories)
 - **Logical measurement** - measure all data [[Qubits]]; used for lattice surgery-based [[CNOT]]
 
-**Lattice surgery** is the preferred method for performing logical gates between surface code patches - two patches are merged & split by temporarily joining their boundaries, avoiding the overhead of transversal $2$-qubit gates.
+**Lattice surgery** is the preferred method for performing logical gates between surface code patches - $2$ patches are merged & split by temporarily joining their boundaries, avoiding the overhead of transversal $2$-qubit gates.
 
 - **Rotated** (tilted) - $d^2$ data + $(d^2-1)$ measure = fewer total [[Qubits]] for same distance; preferred in practice
 - **Unrotated** - symmetric, easier to analyze but $<$ qubit-efficient

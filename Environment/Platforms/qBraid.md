@@ -1,5 +1,5 @@
 #Quantum #Cloud #Platform
-**qBraid** (qbraid.com) is a platform-agnostic quantum computing environment that provides browser-based access to 34+ quantum devices from multiple providers, cross-framework SDK conversion, & a managed JupyterLab environment. Designed as a single hub for quantum dev without local installation.
+**qBraid** (`qbraid.com`) is platform-agnostic quantum computing environment that provides browser-based access to $34+$ quantum devices from multiple providers, cross-framework SDK conversion, & a managed JupyterLab environment. Designed as single hub for quantum dev without local installation.
 
 ## Free Tier
 
@@ -15,7 +15,7 @@ Access to QPUs from: **IonQ**, **AQT**, **QuEra**, **Rigetti**, **PASQAL**, **IQ
 
 ## Supported SDKs (18+ with cross-conversion)
 
-Qiskit, Cirq, PennyLane, [[OpenQASM]] 2/3, QIR, PyQuil, Braket SDK, Q#, Strawberry Fields, tket (Pytket), CUDA-Q, & more. **qBraid Transpiler** converts circuits between any two supported frameworks automatically.
+Qiskit, Cirq, PennyLane, [[OpenQASM]] 2/3, QIR, PyQuil, Braket SDK, Q#, Strawberry Fields, tket (Pytket), CUDA-Q, & more. **qBraid Transpiler** converts circuits between any $2$ supported frameworks automatically.
 
 ## qBraid SDK
 
@@ -44,7 +44,7 @@ Browser-based JupyterLab with:
 
 ## Practical Notes
 
-**qBraid is best used as a multiplexer, not a primary dev environment.** Write & debug circuits in Qiskit, PennyLane, or Cirq natively. Use qBraid when you want to run the same circuit on multiple backends for comparison, or when you need access to a device not covered by your primary platform.
+**qBraid is best used as multiplexer, not a primary dev environment.** Write & debug circuits in Qiskit, PennyLane, or Cirq natively. Use qBraid when you want to run the same circuit on multiple backends for comparison, or when you need access to a device not covered by your primary platform.
 
 **The unified transpiler saves boilerplate.** Converting a Qiskit `QuantumCircuit` to Cirq `Circuit` or Braket `Circuit` manually is error-prone. `qbraid.transpiler.transpile(circuit, "braket")` handles gate mapping automatically - inspect the output before submitting to verify correctness.
 
