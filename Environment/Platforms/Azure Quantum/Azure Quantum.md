@@ -4,7 +4,7 @@ When you compile & run quantum program, the QDK creates instance of the quantum 
 When you run quantum program in Azure Quantum, you create & run **job**. To submit job to the [[Azure Quantum Providers]], you need Azure account & quantum workspace. Once you submit your job, Azure Quantum manages the job lifecycle, including job scheduling, exec, & monitoring. You can track the status of your job & view the results in the Azure Quantum portal.
 ## Key Components
 
-**Quantum Development Kit (QDK)** - open-source SDK supporting Q#, Qiskit, Cirq, & [[OpenQASM]]. Provides language extensions for VS Code, Jupyter notebook integration, domain libraries for chemistry & ML, & built-in sparse-state simulator. QDK compiles programs to **QIR (Quantum Intermediate Representation)** - common LLVM-based IR that lets any supported lang target any provider backend.
+**Quantum Development Kit (QDK)** - open-source SDK supporting Q#, Qiskit, Cirq, & [[OpenQASM]]. Provides language extensions for VS Code, Jupiter notebook integration, domain libraries for chemistry & ML, & built-in sparse-state simulator. QDK compiles programs to **QIR (Quantum Intermediate Representation)** - common LLVM-based IR that lets any supported lang target any provider backend.
 
 **Azure Quantum Resource Estimator ([[QRE]])** - estimates num of physical & logical [[Qubits]], runtime, & T-factory counts required to run an algorithm at fault-tolerant scale. Supports configurable qubit parameter sets (superconducting, trapped-ion), two built-in QEC schemes ([[Surface Code]], floquet code), & custom error correction models. Computes space-time tradeoff frontiers to balance qubit count vs. runtime. Completely **free** - no Azure account required; runs in VS Code or at quantum.microsoft.com.
 

@@ -17,11 +17,11 @@ IonQ exposes a native **error mitigation toggle** on [[Azure Quantum]] (affects 
 
 Models the noise channel as a quasi-[[Probability distribution]] over ideal operations. Samples from corrective inverse operations to statistically cancel noise. Produces an unbiased estimator of the noise-free expectation value.
 
-**Cost**: exponential in circuit depth × error rate — overhead grows as $e^{2\gamma L}$ where $\gamma$ is the noise strength and $L$ is circuit length. Practical only for shallow circuits.
+**Cost**: exponential in circuit depth × error rate — overhead grows as $e^{2\gamma L}$ where $\gamma$ is the noise strength & $L$ is circuit length. Practical only for shallow circuits.
 
 ## Dynamical Decoupling (DD)
 
-Inserts sequences of carefully timed refocusing pulses (e.g., XY-4, CPMG sequences) into idle periods of [[Qubits]] to average out low-frequency noise (1/f noise, crosstalk). Does not require extra shots; works at the pulse level. Particularly effective for trapped-ion and superconducting platforms.
+Inserts sequences of carefully timed refocusing pulses (e.g., XY-4, CPMG sequences) into idle periods of [[Qubits]] to average out low-frequency noise (1/f noise, crosstalk). Does not require extra shots; works at the pulse level. Particularly effective for trapped-ion & superconducting platforms.
 
 Recent work (2025): scalable DD combined with Hadamard phase cycling to filter non-Markovian noise dynamics.
 
@@ -35,7 +35,7 @@ If the target Hamiltonian has known symmetries (e.g., particle number conservati
 
 ## Mitiq (Open-Source Library)
 
-Mitiq (Unitary Fund) provides a unified Python interface for ZNE, PEC, DD, CDR, and more. Works with Qiskit, Cirq, PyQuil, and [[Azure Quantum]] backends:
+Mitiq (Unitary Fund) provides a unified Python interface for ZNE, PEC, DD, CDR, & more. Works with Qiskit, Cirq, PyQuil, & [[Azure Quantum]] backends:
 
 ```python
 from mitiq import zne

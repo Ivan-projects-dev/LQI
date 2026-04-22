@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Environment/Azure Quantum/Azure Quantum.md",
+                "file": "Environment/QRE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Azure Quantum"
+              "title": "QRE"
+            }
+          },
+          {
+            "id": "9b1af0349e010073",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "broken links output.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "broken links output"
             }
           }
         ]
@@ -53,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#Q-Sharp",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 249.5
+    "width": 267.5
   },
   "right": {
     "id": "3822b5fc5b75b3b0",
@@ -172,34 +186,34 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "e66a2fc13740e2c9",
+  "active": "9c58883d0361cb1a",
   "lastOpenFiles": [
+    "Environment/Platforms",
     "Environment/OpenQASM.md",
-    "Environment/QRE.md",
     "Math/Math (Quantum)/Oracle.md",
-    "Programming/C-Sharp/Frameworks/Entity framework.md",
-    "Programming/Q-Sharp/Basics/Q-Sharp namespaces.md",
-    "Programming/Q-Sharp/Basics/Q-Sharp arrays.md",
-    "Algorithms/QPE/QPE.md",
-    "Algorithms/QPE/Iterative QPE.md",
-    "Algorithms/Grover/Grover in Q-Sharp.md",
-    "Algorithms/Grover/Grover geometric.md",
-    "Algorithms/Grover/Grover.md",
-    "Environment/Azure Quantum/Azure Quantum.md",
-    "broken links output.md",
     "Qubits/Ancilla.md",
-    "Programming/Q-Sharp/Pecularities/Adaptive profile.md",
+    "Programming/Q-Sharp/Basics/Q-Sharp arrays.md",
+    "Programming/Q-Sharp/Basics/Types/Сallable types.md",
+    "Programming/Q-Sharp/Pecularities/Callables/Higher-order ops.md",
     "Programming/Q-Sharp/Functors/Functors.md",
-    "Source code.md",
-    "Programming/Q-Sharp/Quantum Katas.md",
-    "Programming/Q-Sharp/Functors/Controlled op.md",
-    "Programming/Q-Sharp/Functors/Adjoint op.md",
-    "Programming/Q-Sharp/Basics/Q-Sharp STL.md",
-    "Algorithms/QPE/Controlled unitary.md",
-    "Environment/Azure Quantum/Azure Quantum Workspace.md",
-    "Environment/Azure Quantum/Azure Quantum Providers.md",
-    "Environment/Azure Quantum/Azure Quantum Jobs.md",
-    "Environment/Azure Quantum/Azure Quantum Credits.md",
+    "Programming/Q-Sharp/Pecularities/Operations vs funcs.md",
+    "broken links output.md",
+    "Programming/Q-Sharp/Pecularities/Callables/Partial application.md",
+    "Qubits/Bell states.md",
+    "Environment/QRE.md",
+    "Programming/Q-Sharp/Basics/Q-Sharp Intro.md",
+    "Programming/Q-Sharp/Pecularities/Q-Sharp generics.md",
+    "ML/QNN/Building QNN.md",
+    "Qubits/NV center.md",
+    "Qubits/Silicon spin qubit.md",
+    "Environment/Platforms/Azure Quantum/Azure Quantum Elements.md",
+    "Environment/Platforms/Azure Quantum/Azure Quantum Providers.md",
+    "Environment/Platforms/Azure Quantum/Azure Quantum Workspace.md",
+    "FTQC/Error Mitigation.md",
+    "FTQC/Surface Code.md",
+    "Programming/Q-Sharp/Pecularities/Adaptive profile.md",
+    "FTQC/FTQC.md",
+    "Environment/Platforms/Azure Quantum/Azure Quantum.md",
     "QPE/QPE inputs.md.tmp.5.1774814640112",
     "QPE/QPE inputs.md.tmp.5.1774814629552",
     "Programming/Q-Sharp/Pecularities/Q-Sharp diagnostics.md.tmp.5.1774814616220",
@@ -207,7 +221,7 @@
     "Programming/Q-Sharp/Functors/Adjoint op.md.tmp.5.1774814597396",
     "Programming/Q-Sharp/Basics/Q-Sharp arrays.md.tmp.5.1774814583627",
     "Programming/Q-Sharp/Basics/Q-Sharp arrays.md.tmp.5.1774814574461",
-    "Environment/Azure Quantum",
+    "Environment/Platforms/Azure Quantum",
     "Math",
     "Programming",
     "Untitled.canvas",

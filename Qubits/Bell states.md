@@ -43,7 +43,7 @@ operation BellPsi_Minus(q0 : Qubit, q1 : Qubit) : Unit is Adj {
 | $X$              | $\|\Psi^+\rangle$ |
 | $XZ$             | $\|\Psi^-\rangle$ |
 
-**Measuring in the Bell basis**: reverse preparation circuit ($[[[[CNOT]]]]$ then $H$) to rotate the Bell basis back to the computational basis before measuring:
+**Measuring in the Bell basis**: reverse preparation circuit (CNOT then $H$) to rotate the Bell basis back to the computational basis before measuring:
 ```csharp
 operation BellBasis(q0 : Qubit, q1 : Qubit) : (Result, Result) {
     CNOT(q0, q1);

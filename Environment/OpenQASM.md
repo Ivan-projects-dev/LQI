@@ -2,7 +2,7 @@
 **OpenQASM (Open Quantum Assembly Language)** is imperative prog lang for describing quantum circuits. Originally dev at IBM ($2017$), now maintained as open standard. Used by Quantinuum on [[Azure Quantum]] & supported by the QDK compiler.
 
 **OpenQASM $2.0$** - original, widely adopted version. C-like syntax for defining gate operations & measurements. Limited to purely gate-based, shot-sequential circuits. No real-time classical control flow.
-```bash
+```c#
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[2];
@@ -16,7 +16,7 @@ measure q -> c;
 - **Classical control flow** - `if`, `for`, `while`, `switch` on classical registers
 - **Real-time classical compute** - inline classical arithmetic & bit manipulation
 - **Timing & pulse control** - `delay`, `stretch`, `box` for precise scheduling; `cal` blocks for pulse-level calibration
-- **Parameterized circuits** - I/O modifiers let circuits accept parameters at runtime (compile once, run many times)
+- **Parameterized circuits** - I/O modifiers let circuits accept params at runtime (compile once, run many times)
 - **External function calls** - `extern` keyword for calling classical functions from within the circuit
 - **Subroutines** -`def` keyword to define reusable gate & circuit fragments
 - **Improved type system** - `bit`, `int`, `uint`, `float`, `angle`, `duration`, `stretch`

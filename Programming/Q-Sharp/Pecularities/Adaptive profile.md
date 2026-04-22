@@ -52,7 +52,7 @@ operation IterativePhaseEstimation(oracle : Qubit => Unit is Adj + Ctl, n : Int)
 **`ResultAsBool` & classical [[Logic]] on `Result`**
 ```csharp
 let b = ResultAsBool(M(q)); // Result → Bool for arithmetic
-let combined = m1 == One and m2 == Zero;
+let combined = m1 == One & m2 == Zero;
 if combined { Z(target); }
 ```
 

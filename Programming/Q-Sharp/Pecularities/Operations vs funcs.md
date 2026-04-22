@@ -90,5 +90,5 @@ operation RunSearch(oracle : Oracle, n : Int) : Result[] {
 ```
 [[Oracle]]! unwraps the `newtype` to its underlying value.
 ## Sources
-- [Operations & nctions in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/operationsandfunctions)
+- [Operations & functions in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/operationsandfunctions)
 - [Callable types](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/callabletypes)

@@ -116,13 +116,13 @@ X(qubits[1]); // Apply X to the second qubit.
 ```
 After allocating a qubit, you can pass it to operations & funcs. Operations are the basic building blocks of a Q# program. A Q# operation is a quantum subroutine, or a callable routine that contains quantum operations that change the state of the qubit register.
 
-To define a Q# operation, you specify name for the operation, its inputs, & its output. In the `Superposition` program, the `MeasureOneQubit()` operation takes no parameters & returns a `Result` type:
+To define a Q# operation, you specify name for the operation, its inputs, & its output. In the `Superposition` program, the `MeasureOneQubit()` operation takes no params & returns a `Result` type:
 ```c#
 operation MeasureOneQubit() : Result {
     ...
 }
 ```
-Basic example that takes no parameters & expects no return value. `Unit` value is equivalent to `NULL` in other langs:
+Basic example that takes no params & expects no return value. `Unit` value is equivalent to `NULL` in other langs:
 ```c#
 operation SayHelloQ() : Unit {
     Message("Hello quantum world!");

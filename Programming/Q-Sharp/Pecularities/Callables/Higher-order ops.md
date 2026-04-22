@@ -87,16 +87,16 @@ Factory funcs return operation values with full `Adj + Ctl` support; compiler in
 
 **`Std.Canon` reference: key higher-order ops**
 
-| Callable | Signature | Purpose |
-|---|---|---|
-| `BoundCA` | `('T => Unit is Adj+Ctl)[]` → same | Sequential composition |
-| `ApplyIf` | `(Bool, op, arg)` | Classical conditional |
-| `ApplyIfOne` | `(Result, op, arg)` | Result-conditional |
-| `ControlledOnInt` | `(Int, op)(ctrls, tgt)` | Control on integer |
-| `ControlledOnBitString` | `(Bool[], op)(ctrls, tgt)` | Control on bit pattern |
-| `CCA` | `op → doubly-[[[[[[[[[[Controlled op]]]]]]]]]]` | Double-control wrapper |
-| `ApplyCNOTChain` | `Qubit[] → Unit` | [[CNOT]] ladder |
-| `Delay` | `(op, arg) → () → Unit` | Deferred execution |
+| Callable                | Signature                          | Purpose                |
+| ----------------------- | ---------------------------------- | ---------------------- |
+| `BoundCA`               | `('T => Unit is Adj+Ctl)[]` → same | Sequential composition |
+| `ApplyIf`               | `(Bool, op, arg)`                  | Classical conditional  |
+| `ApplyIfOne`            | `(Result, op, arg)`                | Result-conditional     |
+| `ControlledOnInt`       | `(Int, op)(ctrls, tgt)`            | Control on integer     |
+| `ControlledOnBitString` | `(Bool[], op)(ctrls, tgt)`         | Control on bit pattern |
+| `CCA`                   | `op → doubly`-[[Controlled op]]        | Double-control wrapper |
+| `ApplyCNOTChain`        | `Qubit[] → Unit`                   | [[CNOT]] ladder        |
+| `Delay`                 | `(op, arg) → () → Unit`            | Deferred execution     |
 
 See [[Partial application]] for `_` syntax used with these combinators. See [[Within-Apply pattern]] for how `BoundCA` composes with auto-uncomputation.
 

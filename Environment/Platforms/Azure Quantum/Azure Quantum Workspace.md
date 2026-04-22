@@ -20,7 +20,7 @@ workspace = Workspace(
 )
 ```
 
-Alternatively specify `subscription_id`, `resource_group`, and `workspace_name` as separate params. Auth uses **DefaultAzureCredential** (Azure CLI login, managed identity, or env vars).
+Alternatively specify `subscription_id`, `resource_group`, & `workspace_name` as separate params. Auth uses **DefaultAzureCredential** (Azure CLI login, managed identity, or env vars).
 
 ## Azure CLI Quick Reference
 

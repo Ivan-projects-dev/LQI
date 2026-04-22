@@ -1,7 +1,7 @@
 #Q-Sharp
-Q# supports **type-parameterized/generic** callables using type parameters written as `'T`. Single callable body works for any concrete type substituted at the call site.
+Q# supports **type-parameterized/generic** callables using type params written as `'T`. Single callable body works for any concrete type substituted at the call site.
 
-Type parameters are declared in angle brackets after the callable name:
+Type params are declared in angle brackets after the callable name:
 ```csharp
 function Identity<'T>(x : 'T) : 'T {
     return x;
@@ -27,7 +27,7 @@ ApplyTwice(H, myQubit);     // 'T = Qubit
 ApplyTwice(X, myQubit);
 ```
 
-Characteristics (`is Adj`, `is Ctl`) can be attached to generic operation parameters:
+Characteristics (`is Adj`, `is Ctl`) can be attached to generic operation params:
 ```csharp
 operation ApplyAndUndo<'T>(op : 'T => Unit is Adj, x : 'T) : Unit {
     op(x);
@@ -55,13 +55,13 @@ ApplyToEach(H, register);
 ApplyToEach(X, register);
 ```
 
-Q# type parameters are unconstrained - there is no `where 'T : IComparable` syntax. The only constraint is structural: the concrete type must support whatever operations the body calls on `'T`.
+Q# type params are unconstrained - there is no `where 'T : IComparable` syntax. The only constraint is structural: the concrete type must support whatever operations the body calls on `'T`.
 
 Arithmetic operators (`+`, `*`, etc.) are **not** generic in Q#. A func `func Add<'T>(a : 'T, b : 'T) : 'T { return a + b; }` is compile error - there is no num typeclass. Write separate funcs for `Int` & `Double`.
 
 Qubit arrays work with generic operations because `Qubit` satisfies the `'T => Unit` call shape, but `Qubit` values themselves cannot be compared, copied, or stored generically.
 
-**Multiple type parameters**: Callable can have $>1$ type parameter:
+**Multiple type params**: Callable can have $>1$ type parameter:
 ```csharp
 function Pair<'A, 'B>(a : 'A, b : 'B) : ('A, 'B) {
     return (a, b);
@@ -70,7 +70,7 @@ function Pair<'A, 'B>(a : 'A, b : 'B) : ('A, 'B) {
 let p = Pair(3, true); // (Int, Bool)
 ```
 
-Q# 1.0+ allows type parameters on structs (record types):
+Q# 1.0+ allows type params on structs (record types):
 ```csharp
 struct Box<'T> { Value : 'T }
 let b = Box<Int>(Value = 42);

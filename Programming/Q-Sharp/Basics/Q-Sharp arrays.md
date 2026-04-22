@@ -111,7 +111,7 @@ Or append with `+`:
 mutable log = [];
 set log += [result]; // append single element
 ```
-All functions below are from `[[[[Std.Arrays]]]]` — add `import [[[[Std.Arrays]]]].*;` to use them.
+All functions below are from [[Std.Arrays]] - add `import` [[Std.Arrays]]`;` to use them.
 
 **`Chunks(size, arr)` - split into fixed-size sub-arrays**. Returns array of arrays, each of length `size` (last chunk may be shorter):
 ```csharp
@@ -130,15 +130,15 @@ SequenceI(0, 4); // [0, 1, 2, 3, 4]
 ```
 Equivalent to `[from..to]` but as a value (useful when passing to `Mapped` or `Fold`).
 
-**`Transposed([[[[Matrix]]]])` - transpose 2D array**. Swaps rows & columns of a rectangular nested array:
+**Transposed([[Matrix]]) - transpose 2D array**. Swaps rows & columns of a rectangular nested array:
 ```csharp
 Transposed([[1, 2, 3], [4, 5, 6]]); // [[1, 4], [2, 5], [3, 6]]
 ```
 
-**`IsRectangularArray([[[[Matrix]]]])` - check 2D regularity**. Returns `true` if all inner arrays have the same length:
+**IsRectangularArray([[Matrix]]) - check 2D regularity**. Returns `true` if all inner arrays have the same length:
 ```csharp
 IsRectangularArray([[1, 2], [3, 4]]); // true
-IsRectangularArray([[1, 2], [3]]);    // false
+IsRectangularArray([[1, 2], [3]]); // false
 ```
 
 ## Sources

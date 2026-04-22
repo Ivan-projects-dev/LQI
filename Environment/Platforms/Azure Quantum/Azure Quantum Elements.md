@@ -1,7 +1,7 @@
 #Quantum #Cloud #Chemistry
-**[[Azure Quantum]] Elements** is Microsoft's AI + HPC + quantum platform purpose-built for **computational chemistry** & **materials science**. It integrates classical HPC, large-scale AI models, & quantum hardware to accelerate molecular simulation and materials discovery.
+**[[Azure Quantum]] Elements** is Microsoft's AI + HPC + quantum platform purpose-built for **computational chemistry** & **materials science**. It integrates classical HPC, large-scale AI models, & quantum hardware to accelerate molecular simulation & materials discovery.
 
-Goal: compress 250 years of chemistry progress into the next 25 years by automating large parts of the discovery pipeline.
+Goal: compress $250$ years of chemistry progress into the next $25$ years by automating large parts of the discovery pipeline.
 
 ## Core Capabilities
 

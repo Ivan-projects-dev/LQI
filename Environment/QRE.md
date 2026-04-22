@@ -42,7 +42,7 @@ Two built-in QEC schemes:
 - **[[Surface Code]]** - 2D lattice, each logical qubit requires $2d^2$ physical [[Qubits]], cycle time ∝ $d$
 - **Floquet code** - honeycomb-based, more efficient use of connectivity, lower overhead in some regimes
 
-Configurable qubit parameters (set `qubitParams` in the estimator job):
+Configurable qubit params (set `qubitParams` in the estimator job):
 - `qubit_gate_ns_e3` - gate time $≈1 ns$, error rate ≈$10^{-3}$ (superconducting [[Qubits]])
 - `qubit_gate_us_e3` - gate time $≈1 µs$, error rate ≈$10^{-3}$ (trapped ion [[Qubits]])
 - Custom: specify `tGateTime`, `tGateErrorRate`, `twoQubitGateTime`, etc. directly

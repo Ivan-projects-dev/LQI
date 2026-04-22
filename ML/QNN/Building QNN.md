@@ -11,5 +11,5 @@ After encoding, the network applies a **variational form** (or _ansatz_) with
 In essence, [[Feature maps]] & variational forms are both **variational circuits**, but they differ in purpose. [[Feature maps]] depend on the input data, while the variational form depends on the optimizable params $θ$.
 **3. Measurement & Output**  
 Finally, measurements map the [[Quantum state]] back to a classical output. Depending on the [[QNN]]'s goal - e.g., binary classification, multi-class classification, or regression -one might measure:
-- **Expectation value** of a certain operator (e.g., measuring Quantum states or the parity of multiple [[Qubits]]).
+- **Expectation value** of certain operator (e.g., measuring Quantum states or the parity of multiple [[Qubits]]).
 - **[[Probability distribution]]** over multiple measurement outcomes (e.g., for sampling or generative models).
