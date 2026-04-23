@@ -36,7 +36,7 @@ mitigated_result = zne.execute_with_zne(circuit, executor=run_on_azure)
 ```
 
 ## Sources
-- [Quantum error mitigation in the NISQ era (Medium, 2025)](https://medium.com/@raktims2210/quantum-error-mitigation-in-the-nisq-era-87af568290e5)
+- [Mitiq: An open-source software package for error mitigation (arXiv:2009.04921)](https://arxiv.org/abs/2009.04921)
 - [arXiv: Scalable QEM for dynamical decoupling (2511.12227)](https://arxiv.org/abs/2511.12227)
 - [Mitiq documentation](https://mitiq.readthedocs.io/)
 - [WERQSHOP 2025 report](https://unitary.foundation/assets/WERQSHOP_report.pdf)

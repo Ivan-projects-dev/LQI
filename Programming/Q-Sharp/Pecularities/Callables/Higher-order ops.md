@@ -5,7 +5,6 @@
 ```csharp
 // ApplyIf : (Bool, 'T => Unit, 'T) => Unit
 ApplyIf(flag, X, q); // apply X to q only if flag is true
-
 // ApplyIfOne : (Result, Qubit => Unit, Qubit) => Unit
 ApplyIfOne(M(ctrl), X, target);  // apply X to target if ctrl measured One
 ```
@@ -81,25 +80,23 @@ function BuildPhaseOracle(x0 : Int) : (Qubit[] => Unit is Adj + Ctl) {
 }
 
 let oracle = BuildPhaseOracle(7);
-oracle(qReg);    // phases |7⟩
+oracle(qReg); // phases |7⟩
 ```
 Factory funcs return operation values with full `Adj + Ctl` support; compiler infers characteristics from the lambda body.
 
 **`Std.Canon` reference: key higher-order ops**
 
-| Callable                | Signature                          | Purpose                |
-| ----------------------- | ---------------------------------- | ---------------------- |
-| `BoundCA`               | `('T => Unit is Adj+Ctl)[]` → same | Sequential composition |
-| `ApplyIf`               | `(Bool, op, arg)`                  | Classical conditional  |
-| `ApplyIfOne`            | `(Result, op, arg)`                | Result-conditional     |
-| `ControlledOnInt`       | `(Int, op)(ctrls, tgt)`            | Control on integer     |
-| `ControlledOnBitString` | `(Bool[], op)(ctrls, tgt)`         | Control on bit pattern |
-| `CCA`                   | `op → doubly`-[[Controlled op]]        | Double-control wrapper |
-| `ApplyCNOTChain`        | `Qubit[] → Unit`                   | [[CNOT]] ladder        |
-| `Delay`                 | `(op, arg) → () → Unit`            | Deferred execution     |
-
+| Callable                | Signature                            | Purpose                |
+| ----------------------- | ------------------------------------ | ---------------------- |
+| `BoundCA`               | `('T => Unit is Adj+Ctl)[]` $→$ same | Sequential composition |
+| `ApplyIf`               | `(Bool, op, arg)`                    | Classical conditional  |
+| `ApplyIfOne`            | `(Result, op, arg)`                  | Result-conditional     |
+| `ControlledOnInt`       | `(Int, op)(ctrls, tgt)`              | Control on int         |
+| `ControlledOnBitString` | `(Bool[], op)(ctrls, tgt)`           | Control on bit pattern |
+| `CCA`                   | `op $→$ doubly`-[[Controlled op]]    | Double-control wrapper |
+| `ApplyCNOTChain`        | `Qubit[] → Unit`                     | [[CNOT]] ladder        |
+| `Delay`                 | `(op, arg) → () → Unit`              | Deferred execution     |
 See [[Partial application]] for `_` syntax used with these combinators. See [[Within-Apply pattern]] for how `BoundCA` composes with auto-uncomputation.
-
 ## Sources
 - [Higher-order functions & operations](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/operationsandfunctions)
 - [Std.Canon API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.canon)

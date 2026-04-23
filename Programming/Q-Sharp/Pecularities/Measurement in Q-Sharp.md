@@ -44,7 +44,7 @@ Used in [[Grover in Q-Sharp]] & [[QPE]] in Q-Sharp for final readout.
 ```csharp
 import Std.Convert.*;
 let bits = MResetEachZ(register);
-let value = ResultArrayAsIntBE(bits);   // e.g. [One, Zero, One] → 5
+let value = ResultArrayAsIntBE(bits);   // e.g. [One, Zero, One] $→$ 5
 ```
 
 **Non-demolition measurement & `reset`**

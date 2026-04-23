@@ -39,5 +39,5 @@ Storage costs for the workspace storage account are billed separately at standar
 
 ## Sources
 - [Pricing plans for Azure Quantum providers](https://learn.microsoft.com/en-us/azure/quantum/pricing)
-- [Azure Quantum Credits details](https://github.com/MicrosoftDocs/quantum-docs/blob/main/articles/azure-quantum-credits.md)
-- [Azure Quantum pricing page](https://azure.microsoft.com/en-us/pricing/details/azure-quantum/)
+- [Azure Quantum Credits documentation](https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-credits)
+- [Azure Quantum pricing page](https://azure.microsoft.com/en-us/pricing/de
