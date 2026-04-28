@@ -1,4 +1,4 @@
-#Q-Sharp #Quantum
+#Q-Sharp #Physics 
 **`within { } apply { }`** is Q# control flow construct for the **compute-action-uncompute** pattern, essential in quantum [[Oracle]] construction & diffusion operators.
 
 Pattern safely applies operation in transformed basis & automatically uncomputes transformation:
@@ -65,7 +65,7 @@ These replace explicit `for` loops over qubit arrays & are idiomatic Q#.
 
 Always prefer `within/apply` when `V` & its adjoint bracket core operation `O`.
 
-## Sources
+### Sources
 - [Conjugations (within-apply) in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/conjugations)
 - [Q# oracle patterns (GitHub samples)](https://github.com/microsoft/qsharp/tree/main/samples)
 - [Grover's search tutorial](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)

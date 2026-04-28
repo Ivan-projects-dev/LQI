@@ -1,5 +1,5 @@
-#Algorithm #Quantum #Math
-$2$ [[Oracle]] types appear in [[Grover]]. Both encode the same bool func $f:\{0,1\}^n \to \{0,1\}$, but act differently on the quantum register.
+#Algorithm #Math
+$2$ [[Oracle]] types appear in [[Grover]]. Both encode same bool func $f:\{0,1\}^n \to \{0,1\}$, but act differently on quantum register.
 
 **Marking/bit-flip [[Oracle]]** uses [[Ancilla]] qubit $|a⟩$. The [[Oracle]] XORs $f(x)$ into the [[Ancilla]]:
 $$U_f^{\text{mark}} : |x⟩|a⟩ \mapsto |x⟩|a \oplus f(x)⟩$$

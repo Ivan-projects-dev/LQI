@@ -1,4 +1,4 @@
-#Quantum #Cloud #Chemistry
+#Cloud #Chemistry
 **[[Azure Quantum]] Elements** is Microsoft's AI + HPC + quantum platform purpose-built for **computational chemistry** & **materials science**. It integrates classical HPC, large-scale AI models, & quantum hardware to accelerate molecular simulation & materials discovery.
 
 Goal: compress $250$ years of chemistry progress into the next $25$ years by automating large parts of the discovery pipeline.
@@ -13,7 +13,7 @@ Goal: compress $250$ years of chemistry progress into the next $25$ years by aut
 
 **High-Performance Computing (HPC) backend** - runs molecular dynamics & quantum chemistry workloads (VASP, CP2K, NWChem) at scale on Azure HPC clusters, managed automatically by the platform.
 
-**Quantum integration** - as fault-tolerant quantum hardware matures, Elements is designed to hand off the hardest simulation problems (strongly correlated electrons, exact ground state energies) to QPUs via [[Azure Quantum]]. The [[Quantum resource estimator]] is used to determine when a problem becomes practical on quantum hardware.
+**Quantum integration** - as fault-tolerant quantum hardware matures, Elements is designed to hand off the hardest simulation problems (strongly correlated electrons, exact ground state energies) to QPUs via [[Azure Quantum]]. The [[QRE]] is used to determine when a problem becomes practical on quantum hardware.
 
 ## Workflow
 

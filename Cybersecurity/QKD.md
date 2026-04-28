@@ -1,4 +1,4 @@
-#Quantum #Cybersecurity #Algorithm #Networks 
+#Cybersecurity #Algorithm #Networks 
 **Quantum key distribution (QKD)** is secure communication tech that uses quantum mechanical concepts to construct a cryptographic protocol. It allows $2$ parties to generate shared, randomly generated secret key that is only known to them. With this key, communications may be encrypted & decrypted. 
 - **Entanglement-based protocols:** $2$ items are coupled to generate single [[Quantum state]]. According to entanglement, measuring $1$ entity influences the other. Other parties involved will be aware if eavesdropper gains access to previously trusted node & makes any modifications.
 - **Prepare-and-measure protocols:** goal - measure unidentified quantum states. They may be used to identify possible data interceptions as well as instances of eavesdropping.

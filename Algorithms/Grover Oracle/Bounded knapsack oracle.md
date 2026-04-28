@@ -1,4 +1,4 @@
-#Algorithm #Quantum #Optimization
+#Algorithm
 **Bounded knapsack problem**: given $n$ item types, each with weight $w_i$, value $v_i$, & max copy count $b_i$, & a knapsack capacity $W$, find quantities $q_i \in \{0,1,\ldots,b_i\}$ that:
 $$\text{maximize } \sum_{i=1}^n v_i q_i \quad \text{subject to} \quad \sum_{i=1}^n w_i q_i \leq W$$
 NP-hard in general. [[Grover]] algorithm is applied as a **threshold search**: given a target value $V^*$, find any assignment with total value $\geq V^*$ within capacity $W$.

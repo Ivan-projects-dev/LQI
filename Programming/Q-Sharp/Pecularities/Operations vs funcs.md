@@ -1,7 +1,7 @@
 #Q-Sharp
 Q# distinguishes $2$ kinds of callables: **operations** & **funcs**. The distinction is fundamental - it determines what the callable can do, how it can be composed, & whether it can be inverted or controlled.
 
-**Operation** is a quantum subroutine - it can allocate [[Qubits]], apply gates, perform measurements, & call other operations. Operations may have side effects on [[Quantum state]].
+**Operation** is quantum subroutine - it can allocate [[Qubits]], apply gates, perform measurements, & call other operations. Operations may have side effects on [[Quantum state]].
 ```csharp
 operation ApplyCNOT(ctrl : Qubit, target : Qubit) : Unit {
     CNOT(ctrl, target);
@@ -89,6 +89,6 @@ operation RunSearch(oracle : Oracle, n : Int) : Result[] {
 }
 ```
 [[Oracle]]! unwraps the `newtype` to its underlying value.
-## Sources
+### Sources
 - [Operations & functions in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/operationsandfunctions)
 - [Callable types](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/callabletypes)

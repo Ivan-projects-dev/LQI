@@ -1,4 +1,4 @@
-#Algorithm #Quantum #Math #Physics 
+#Algorithm  #Math #Physics 
 **Quantum Phase Estimation (QPE)** solves: given unitary $U$ & $1$ of its eigenstates $|u\rangle$ satisfying $U|u\rangle = e^{2\pi i \varphi}|u\rangle$, estimate the phase $\varphi \in [0,1)$ to $t$ bits of precision.
 
 $\varphi$ is unknown; QPE extracts it using inverse QFT on control register.

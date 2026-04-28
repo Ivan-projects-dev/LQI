@@ -1,4 +1,4 @@
-#Algorithm #Quantum
+#Algorithm 
 **Simon's problem**: given [[Oracle]] $f:\{0,1\}^n\to\{0,1\}^n$ that is either $1$-to-$1$ or $2$-to-$1$ with hidden period $s\neq 0^n$ such that $f(x)=f(y)\iff x=y\oplus s$, find $s$. Best classical algorithm needs $\Omega(2^{n/2})$ queries; Simon algorithm uses $O(n)$ - **provable exponential quantum speedup**.
 
 **Quantum circuit** ($1$ run):

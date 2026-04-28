@@ -1,4 +1,4 @@
-#Quantum #ML 
+#Math #ML 
 It is commonly used in [[QSVM]] contexts, yet it can serve generally as a feature map for QNNs. The core idea is to encode classical data $→x$ by applying rotations on individual [[Qubits]], then **introducing entangling phases** using interactions of the form:
 
 $exp(−i_γx_jx_kZ_jZ_k)$ where $Z_i$ and $Z_j$ are Pauli-Z operators on [[Qubits]] $i$ and $j$, respectively, and $γ$ is some scaling param. Repeated app of such entangling terms, interspersed with single-qubit rotations, yields a feature map that can capture higher-order correlations between features. This "ZZ Feature Map" effectively places the data in a high-dimensional Hilbert space in a nonlinear fashion-potentially allowing the [[QNN]] to learn complex decision boundaries.

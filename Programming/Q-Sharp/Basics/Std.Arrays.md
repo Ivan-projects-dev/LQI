@@ -112,6 +112,6 @@ for (i, v) in Enumerated(arr) {
     Message($"arr[{i}] = {v}");
 }
 ```
-## Sources
+### Sources
 - [Std.Arrays API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.arrays)
 - [Q# variable declarations & reassignment](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/variabledeclarationsandreassignment)

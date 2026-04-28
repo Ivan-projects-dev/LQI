@@ -1,4 +1,4 @@
-#Quantum #Algorithm 
+#Algorithm 
 **Variational Quantum Algorithms (VQAs)** are a class of hybrid quantum-classical algorithms designed to harness the power of quantum computing while addressing the challenges posed by current quantum hardware.
 
 These algorithms are particularly promising for near-term quantum devices, known as **Noisy Intermediate-Scale Quantum (NISQ) devices**, which are limited by noise, short coherence times, & relatively small nums of [[Qubits]]. 

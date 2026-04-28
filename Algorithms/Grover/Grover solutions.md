@@ -1,10 +1,10 @@
-#Algorithm #Quantum
+#Algorithm 
 When $M > 1$ solutions exist (i.e. $f(x)=1$ for $M$ inputs), [[Grover]] generalizes with min change - only iteration count $k^*$ adjusts.
 
 **Setup**: $N = 2^n$ total states, $M$ marked states, $M < N/2$.
 
-Uniform superposition $|s⟩ = H^{\otimes n}|0⟩^{\otimes n}$ contains each basis state with amplitude $\frac{1}{\sqrt{N}}$. Relevant angle satisfies: $$\sin\theta = \sqrt{\frac{M}{N}}$$
-**Optimal iterations**: $$k^* = \left\lfloor \frac{\pi}{4}\sqrt{\frac{N}{M}} \right\rceil$$
+Uniform superposition $|s⟩ = H^{\otimes n}|0⟩^{\otimes n}$ contains each basis state with amplitude $\frac{1}{\sqrt{N}}$. Relevant angle satisfies: $\sin\theta = \sqrt{\frac{M}{N}}$
+**Optimal iterations**: $k^* = \left\lfloor \frac{\pi}{4}\sqrt{\frac{N}{M}} \right\rceil$
 After $k^*$ [[Grover]] steps, measuring yields _any one_ of the $M$ solutions with near-uniform probability over the marked set.
 
 **Case $M \geq N/2$**: classical random sampling finds a solution immediately; [[Grover]]'s speedup vanishes. Algorithm still works but $k^* = 0$ or $1$.

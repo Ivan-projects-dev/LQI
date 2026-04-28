@@ -1,4 +1,4 @@
-#Quantum #Algorithm #Math 
+#Algorithm #Math 
 Let $x⋅s$ represent the inner product of the bit strings modulo $2$. For instance if $x=1000$ and $s=1010$, then $$x⋅s=1⋅1+0⋅0+0⋅1+0⋅0=1(mod2)=1$$
 Given an [[Oracle]] $f:{0,1}n→{0,1}$, which is defined as $f(x)=x⋅s$, find the secret string (sequence of bits) $s$.
 

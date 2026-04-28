@@ -1,5 +1,4 @@
-#Q-Sharp
-**[[Qubits]] cannot be copied or compared**
+#Q-Sharp #Math #Physics **[[Qubits]] cannot be copied or compared**
 
 No-cloning theorem is enforced at the type level. There is no `=` copy for `Qubit`, no equality check `q1 == q2`, no storing a qubit in a classical variable:
 ```csharp
@@ -7,7 +6,7 @@ let copy = q; // compile error - Qubit is not copyable
 if q1 == q2 { ... } // compile error - Qubit has no equality
 let arr = [q]; // ok - arrays of Qubit are allowed (by reference)
 ```
-[[Qubits]] are always passed by reference. Any operation that receives a `Qubit` is working on the same physical qubit, not a copy.
+[[Qubits]] are always passed by reference. Any operation that receives `Qubit` is working on the same physical qubit, not a copy.
 
 **All [[Qubits]] must be `|0⟩` on release**
 
@@ -105,7 +104,7 @@ H(tail[0]); // modifies register[1] directly
 ```
 Passing slice to operation affects the original register. This is the intended behavior for partitioning register into sub-registers, but can be surprising.
 
-## Sources
+### Sources
 - [Q# type system - qubits](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/primitives)
 - [Quantum memory management](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/quantummemorymanagement)
 - [Q# language overview](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview)

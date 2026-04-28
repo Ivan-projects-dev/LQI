@@ -1,4 +1,4 @@
-#Algorithm #Quantum #Q-Sharp
+#Algorithm  #Q-Sharp
 [[Simon]] oracles implement $|x\rangle|y\rangle \to |x\rangle|y\oplus f(x)\rangle$. For the algorithm to work, $f$ must satisfy the two-to-one property with a hidden period $s$.
 
 **[[Oracle]] types**:

@@ -1,4 +1,4 @@
-#Quantum #Math 
+#Physics #Math 
 Overall probability must be $1$ when we observe quantum system.
 
 For example, the following vectors cannot be a valid quantum state:

@@ -1,4 +1,4 @@
-#Physics #Quantum #Hardware #Physics 
+#Physics #Hardware #Physics 
 **Nitrogen-vacancy (NV) Centre Quantum Computers** are type of quantum computing platform that utilizes defects in diamond crystals as [[Qubits]]. NV centers are defects found in diamond crystals where nitrogen atom replaces carbon atom, & adjacent carbon atom is missing (creating "vacancy"). These defects in the diamond lattice form localized electronic states that can be manipulated & measured by exploiting quantum properties such as spin states & optical transitions to perform quantum operations. NV centers are remarkable for their ability to operate at room temperature, high coherence times, & sensitivity to magnetic & electric fields.
 
 **NV center formation:** NV centers are created by replacing carbon atom in the diamond lattice with nitrogen atom & creating adjacent vacancy (a missing carbon atom). This defect forms the NV center, which can exist in different charge states, typically $NV⁰$ & $NV⁻$.

@@ -1,4 +1,4 @@
-#Physics #Quantum #Hardware 
+#Physics #Hardware 
 **Photonic [[Qubits]]** make use of individual photons as carriers of quantum info, leveraging their quantum properties such as polarization, phase, or path encoding to perform computations. Unlike superconducting [[Qubits]], photonic [[Qubits]] travel freely through optical circuits & fiber networks, making them particularly advantageous for scalable, high-speed, & long-distance [[Quantum communication]].
 ![](https://lms.qureca.com/wp-content/uploads/uncanny-snc/21/assets/aurora_3d.jpg)
 **Photon generation**: Photons are generated using sources like lasers or **spontaneous parametric down-conversion (SPDC)** processes that produce single photons or entangled photon pairs. These photons act as [[Qubits]], the basic units of quantum info. 

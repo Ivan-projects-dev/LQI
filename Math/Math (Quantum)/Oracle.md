@@ -1,4 +1,4 @@
-#Math #Quantum 
+#Math 
 Suppose that there exists a func $f:{0,1}n→{0,1}$ with the following properties: $f(x)=1$ if $x$ is marked $f(x)=0$ otherwise
 
 [[Grover]] algorithm does not actually search a list of elements, but given func $f$ with the above properties, it finds the element $x$ such that $f(x)=1$.

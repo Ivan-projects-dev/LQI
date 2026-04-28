@@ -1,4 +1,4 @@
-#Q-Sharp #Quantum 
+#Q-Sharp 
 **Q# STL** has built-in namespaces that contain funcs & operations you can use in quantum programs. For example, the `Std.Intrinsic` namespace contains commonly used operations & funcs, such as `M` to measure results and `Message` to display user messages anywhere in the program.
 
 To call func or operation, you can specify the full namespace or use an `import` statement, which makes all the funcs & operations for that namespace available & makes your code $>$ readable. Following examples call the same operation:
@@ -33,7 +33,7 @@ operation MeasureOneQubit() : Result {
     return MResetZ(q);
 }
 ```
-## Sources
+### Sources
 - [Q# standard libraries](https://learn.microsoft.com/en-us/azure/quantum/user-guide/libraries/)
 - [Std.Intrinsic API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)
 - [Q# API reference (all namespaces)](https://learn.microsoft.com/en-us/qsharp/api/)

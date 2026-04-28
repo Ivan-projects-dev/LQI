@@ -1,4 +1,4 @@
-#Algorithm #Quantum #DB 
+#Algorithm #DB 
 **Lov Grover** devises quantum algorithm for DB searching, providing quadratic speedup over classical algorithms.
 
 **Grover algorithm** can search through unsorted DB of $N$ items in $~√N$ steps, compared to $N$ num of steps for classical computer. 

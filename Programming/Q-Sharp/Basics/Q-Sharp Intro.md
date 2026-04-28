@@ -1,4 +1,4 @@
-#Q-Sharp #Quantum #Algorithm 
+#Q-Sharp #Algorithm 
 **Q#** is a high-level, open-source programming lang dev by Microsoft for writing quantum programs. Included in **Microsoft Quantum Dev Kit (QDK)**.
 
 As quantum programming lang, Q# meets the following requirements for lang, Compiler, & runtime:
@@ -144,8 +144,7 @@ In Q#, [[Qubits]] **must** be in the  state when they're released to avoid e
 // Reset a qubit.
 Reset(q);
 ```
-
-## Sources
+###  Sources
 - [Q# language overview](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview)
 - [QDK overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview)
 - [Q# language specification](https://learn.microsoft.com/en-us/azure/quantum/user-guide/)

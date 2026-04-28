@@ -77,6 +77,6 @@ let b = Box<Int>(Value = 42);
 Message($"{b.Value}");
 ```
 
-## Sources
+### Sources
 - [Type parameterizations in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/typeparameterizations)
 - [Callable types](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/callabletypes)

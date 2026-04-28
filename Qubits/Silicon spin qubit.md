@@ -1,4 +1,4 @@
-#Quantum #Physics #Hardware 
+#Physics #Hardware 
 **Silicon spin qubit system** consists of quantum dots, which are nanoscale regions in silicon substrate where single electrons are trapped & manipulated. The electron’s spin-up & spin-down states serve as the qubit’s logical states to encode & process quantum info. Quantum operations are performed by applying radiofrequency or microwave pulses, which control the spin state through **electron spin resonance (ESR)** or **nuclear magnetic resonance (NMR)**. 
 
 **Qubit init:** The [[Qubits]] are typically electrons or nuclei in silicon. These spins are init to known state using magnetic fields & microwave pulses. 

@@ -1,4 +1,4 @@
-#Algorithm #Quantum #Math 
+#Algorithm #Math 
 **Controlled-$U^{2^k}$** is the key building block of [[QPE]]. For each control qubit $j$ ($j = 0, \ldots, t-1$), [[QPE]] requires the operation:
 $$C\text{-}U^{2^j}: |c\rangle|u\rangle \mapsto |c\rangle \cdot U^{2^j \cdot c}|u\rangle \quad c \in \{0,1\}$$
 i.e., apply $U^{2^j}$ to the target register iff the $jth$ control qubit is $|1\rangle$.

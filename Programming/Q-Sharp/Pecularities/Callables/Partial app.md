@@ -1,5 +1,5 @@
 #Q-Sharp
-**Partial application** creates new **callable** by fixing some arguments of existing one, leaving the rest open. 
+**Partial app** creates new **callable** by fixing some arguments of existing one, leaving the rest open. 
 `_` (underscore) placeholder marks unfixed arguments.
 ```csharp
 let addOne = (x : Int) -> x + 1; // full lambda
@@ -7,7 +7,7 @@ let add = (a : Int, b : Int) -> a + b;
 let addFive = add(5, _); // partial: fixes first arg
 Message($"{addFive(3)}"); // 8
 ```
-Partially applied callable has the type of the remaining arguments → return type. `add(5, _)` has type `Int -> Int`.
+Partially applied callable has the type of the remaining arguments $→$ return type. `add(5, _)` has type `Int -> Int`.
 
 **[[Oracle]] construction** is the primary use case in Q#. [[Grover search]] expects [[Oracle]] `(Qubit[], Qubit) => Unit is Adj + Ctl`, but our marking op usually has extra classical args:
 ```csharp
@@ -42,7 +42,7 @@ let applyToFixed = CNOT2(_, myTarget);   // fixes target, ctrl open
 let applyFromFixed = CNOT2(myCtrl, _);  // fixes ctrl, target open
 ```
 
-**Partial application vs lambda** - both produce new callable, but partial app preserves characteristics automatically:
+**Partial app vs lambda** - both produce new callable, but partial app preserves characteristics automatically:
 ```csharp
 // Equivalent functionally - but partial app keeps is Adj + Ctl:
 let op1 = MarkState(_, _, 7); // keeps Adj + Ctl
@@ -70,7 +70,7 @@ let positives = Filtered(x -> x > 0, [-1, 2, -3, 4]); // [2, 4]
 // ForEach applies side-effecting func to each element (no return)
 ForEach(Message, ["a", "b", "c"]);
 ```
-Partial application composes well with [[Q-Sharp generics]] - `Mapped` & `Filtered` accept generic lambdas, so the `_` placeholder works across any `'T`.
-## Sources
+Partial app composes well with [[Q-Sharp generics]] - `Mapped` & `Filtered` accept generic lambdas, so the `_` placeholder works across any `'T`.
+### Sources
 - [Partial application in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/functorapplication)
 - [Callable types](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/callabletypes)

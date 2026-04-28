@@ -1,5 +1,5 @@
-#Quantum #Algorithm #Physics #Math 
-**Amplitude encoding** represents data points as the amplitudes of a multi-qubit [[Quantum state]]. Given an N-dimensional (with $N=2n$) data point: $$→x=(x_1, x_2, … ,x_N)∈CN$$ we map it to $$|ψ(→x)⟩=1√∑kx2kN−1∑j=0xj|j⟩$$ where $|j⟩$ denotes the $j$th computational basis state of $n$ [[Qubits]]. 
+#Algorithm #Physics #Math 
+**Amplitude encoding** represents data points as the amplitudes of multi-qubit [[Quantum state]]. Given an N-dimensional (with $N=2n$) data point: $$→x=(x_1, x_2, … ,x_N)∈CN$$ we map it to $$|ψ(→x)⟩=1√∑kx2kN−1∑j=0xj|j⟩$$ where $|j⟩$ denotes the $j$th computational basis state of $n$ [[Qubits]]. 
 
 We can therefore encode the dataset $D:=(→x_1,…,→x_M)$ consisting of $M$ points in $R2n$ as
 $$|D⟩=1CD2p∑i=1¯X_i|i⟩$$ for some int $p$, where

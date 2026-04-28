@@ -1,15 +1,15 @@
-#Quantum #Algorithm 
-**Variational Quantum Eigensolver (VQE)** is a quantum algorithm designed to approx (find an upper bound) the _ground-state energy_ of a quantum system. 
+#Algorithm 
+**Variational Quantum Eigensolver (VQE)** is quantum algorithm designed to approx (find an upper bound) the _ground-state energy_ of quantum system. 
 
-**Quantum system** can exist in multiple energy states, each associated with a specific energy level. The ground state is the lowest energy state of the system. It is the most stable config because, unless external energy is applied, a system will always tend to settle in its ground state.
+**Quantum system** can exist in multiple energy states, each associated with specific energy level. The ground state is the lowest energy state of the system. It is the most stable config because, unless external energy is applied, system will always tend to settle in its ground state.
 
 Ground state energy corresponds to the lowest eigenvalue of the _Hamiltonian_ that represents the system.
 
-Pauli Z [[Matrix]] represents a single-qubit Hamiltonian that can describe the energy associated with the spin of a qubit along the z-axis. 
+Pauli $Z$ [[Matrix]] represents single-qubit Hamiltonian that can describe the energy associated with the spin of a qubit along the z-axis. 
 $σZ=(100−1)$.
 It is Hermitian & its lowest eigenvalue is $-1$ with the corresponding eigenstate $(01)$.
 
-Pauli matrices form a complete set of operators for [[Qubits]], meaning that any operator acting on a qubit system can be expressed as a linear combo of these Pauli operators. Hence, a general Hamiltonian for a quantum system can be written as a sum of terms called _Pauli strings_, each of which involves Pauli matrices acting on $1$ or $>$ [[Qubits]].
+Pauli matrices form complete set of operators for [[Qubits]], meaning that any operator acting on qubit system can be expressed as linear combo of these Pauli operators. Hence, general Hamiltonian for quantum system can be written as sum of terms called _Pauli strings_, each of which involves Pauli matrices acting on $1$ or $>$ [[Qubits]].
 
 As an example, we can define the following Hamiltonian on $2$ [[Qubits]]: $$X_0⊗X_1+Y_0⊗Y_1+Z_0⊗Z_1$$, typically written as $XX+YY+ZZ$. In this example, $XX, YY$ and $ZZ$ are **Pauli strings**. This Hamiltonian is known as the Heisenberg Hamiltonian. Its [[Matrix]] representation can be obtained through the matrices of Pauli $X, Y$, and $Z$ operators.
 

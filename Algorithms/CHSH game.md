@@ -1,4 +1,4 @@
-#Algorithm #Quantum
+#Algorithm
 **Nonlocal game** between $2$ cooperating players (Alice & Bob) & referee. Players cannot communicate after the game starts but may share resources prepared beforehand.
 
 **Setup**: referee gives Alice bit $X$ & b bit $Y$ independently & uniformly from $\{0,1\}^2$. Alice returns $A$, Bob returns $B$.

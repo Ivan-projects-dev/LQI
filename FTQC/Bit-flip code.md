@@ -1,5 +1,5 @@
-#Quantum #[[FTQC]]
-Simplest quantum error correcting code. Encodes $1$ **logical qubit** into 3 physical [[Qubits]]; protects against a single **bit-flip** ($X$) error on any $1$ physical qubit. Quantum analogue of the classical repetition code (but state cannot be cloned - encoding uses entanglement instead).
+#Physics #Algorithm #Math [[FTQC]]
+Simplest quantum error correcting code. Encodes $1$ **logical qubit** into $3$ physical [[Qubits]]; protects against single **bit-flip** ($X$) error on any $1$ physical qubit. Quantum analogue of the classical repetition code (but state cannot be cloned - encoding uses entanglement instead).
 
 **Encoding**: $|\bar\psi\rangle = \alpha|000\rangle + \beta|111\rangle$ from $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$:
 ```
@@ -28,6 +28,6 @@ Two CNOTs (control = q[0]): [[CNOT]](q[0], q[1]); [[CNOT]](q[0], q[2]).
 - $\bar{Z}$ (logical phase flip): apply $Z$ to any $1$ physical qubit (e.g., q[0]). $\alpha|000\rangle+\beta|111\rangle \to \alpha|000\rangle-\beta|111\rangle$.
 
 **Limitations**:
-- Does **not** protect against $Z$ errors: a $Z$ on any qubit maps $|\bar\psi\rangle$ to a valid codeword for $\alpha|0\rangle-\beta|1\rangle$ - undetectable.
-- Does **not** protect against $2$ simultaneous $X$ errors (misidentified as a single error on the third qubit).
-- Full [[FTQC]] requires codes protecting against arbitrary single-qubit errors (e.g., Shor 9-qubit code, Steane 7-qubit code).
+- Does **not** protect against $Z$ errors: a $Z$ on any qubit maps $|\bar\psi\rangle$ to valid codeword for $\alpha|0\rangle-\beta|1\rangle$ - undetectable.
+- Does **not** protect against $2$ simultaneous $X$ errors (misidentified as single error on $3rd$ qubit).
+- Full [[FTQC]] requires codes protecting against arbitrary single-qubit errors (e.g., [[Shor]] $9$-qubit code, Steane $7$-qubit code).

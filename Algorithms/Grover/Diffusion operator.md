@@ -1,5 +1,5 @@
-#Algorithm #Quantum #Math
-**Diffusion operator** $D$ ([[Grover]] diffusion / inversion about the mean) is the second component of each [[Grover]] algorithm iteration, applied after the phase [[Oracle]]. $$D = 2|s\rangle\langle s| - I$$
+#Algorithm #Math
+**Diffusion operator** $D$ ([[Grover]] diffusion / inversion about the mean) is the $2nd$ component of each [[Grover]] algorithm iteration, applied after the phase [[Oracle]]. $$D = 2|s\rangle\langle s| - I$$
 where $|s\rangle = H^{\otimes n}|0\rangle^{\otimes n} = \frac{1}{\sqrt{N}}\sum_{x=0}^{N-1}|x\rangle$ is the uniform superposition & $I$ is the $N \times N$ identity.
 
 **Geometric action**: $D$ performs a reflection of the state [[Vector]] about $|s\rangle$. Combined with the [[Oracle]] reflection about $|s'\rangle$, each full [[Grover]] step is a rotation by $2\theta$ toward $|ω\rangle$. ([[Grover geometric]])

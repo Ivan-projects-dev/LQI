@@ -1,4 +1,4 @@
-#Quantum #ML #Math 
+#ML #Math 
  **Quantum Neural Networks (QNNs)** - family of ML models that leverage quantum-mechanical phenomena to process & learn from data.
  
  **Quantum gates** are linear transformations on quantum states. If we restrict ourselves solely to unitary gates, we do not obtain the usual nonlinear activations of classical networks. However, measurement in quantum mechanics introduces form of nonlinearity (probabilistic collapse of the wave func).

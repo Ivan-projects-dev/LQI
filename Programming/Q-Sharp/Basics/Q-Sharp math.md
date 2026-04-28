@@ -52,20 +52,20 @@ ExpModI(2, 10, 1000) // 2^10 mod 1000 = 24
 ExpModL(base, exp, modulus) // BigInt version for Shor's algorithm
 ```
 
-Essential in Shor's algorithm for computing the modular exponentiation unitary $U_a|x\rangle = |ax \bmod N\rangle$. `BigInt` version handles cryptographic-scale ints.
+Essential in [[Shor]]'s algorithm for computing the modular exponentiation unitary $U_a|x\rangle = |ax \bmod N\rangle$. `BigInt` version handles cryptographic-scale ints.
 
 **GCD & ted**
 ```csharp
 GreatestCommonDivisorI(a, b) // gcd(a, b) for Int
 GreatestCommonDivisorL(a, b) // gcd(a, b) for BigInt
 ```
-Used in Shor's algorithm post-processing: once order $r$ is found, compute $\gcd(a^{r/2} \pm 1, N)$ to get factors.
+Used in [[Shor]]'s algorithm post-processing: once order $r$ is found, compute $\gcd(a^{r/2} \pm 1, N)$ to get factors.
 
 **`ContinuedFractionConvergentI` - rational approximation**. Converts decimal approximation to fraction $p/q$ using continued fractions:
 ```csharp
 let (p, q) = ContinuedFractionConvergentI((numerator, denominator), maxDenominator);
 ```
-Used in Shor's algorithm post-processing after [[QPE]] returns approximation to $s/r$ - continued fractions recovers the exact denominator $r$.
+Used in [[Shor]]'s algorithm post-processing after [[QPE]] returns approximation to $s/r$ - continued fractions recovers the exact denominator $r$.
 
 **Common patterns in quantum algorithms**
 
@@ -84,7 +84,6 @@ let angle = 2.0 * PI() / IntAsDouble(1 <<< k);
 let phi = IntAsDouble(measured) / IntAsDouble(1 <<< t); // φ ≈ measured / 2^t
 let M = Round(IntAsDouble(1 <<< n) * Sin(phi * PI()) ^ 2.0); // quantum counting
 ```
-
-## Sources
+### Sources
 - [Std.Math API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.math)
 - [Q# numeric expressions](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/arithmeticexpressions)

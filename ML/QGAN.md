@@ -1,4 +1,4 @@
-#ML #Quantum 
+#ML
 **Quantum GAN** mirrors the classical GAN adversarial setup but introduces **quantum models** for the generator, the discriminator, or both:
 - **Quantum Generator + Classical Discriminator**: generator is parametrized quantum circuit (e.g., a variational circuit) that outputs quantum states or classical data through measurements. The discriminator remains classical, receiving either real data or measured generator outputs.
 	- **Quantum Generator + Quantum Discriminator**: both components are quantum. Generator outputs quantum states, while the discriminator attempts to distinguish these from the real quantum data.

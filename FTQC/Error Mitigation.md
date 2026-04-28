@@ -1,5 +1,5 @@
-#Quantum #[[FTQC]] #NISQ
-**Error mitigation** is a collection of classical post-processing & circuit-modification techniques to reduce the effect of noise in **NISQ (Noisy Intermediate-Scale Quantum)** computations - without the qubit overhead of full [[FTQC|fault-tolerant]] error correction. It does not eliminate errors but extrapolates or cancels their effect on expectation values.
+#Math #Algorithm 
+**Error mitigation** is a collection of classical post-processing & circuit-modification techs to reduce the effect of noise in **NISQ (Noisy Intermediate-Scale Quantum)** computations - without the qubit overhead of full [[FTQC|fault-tolerant]] error correction. It does not eliminate errors but extrapolates or cancels their effect on expectation values.
 
 Key distinction: error *correction* uses redundancy to restore the [[Quantum state]] mid-circuit; error *mitigation* uses extra classical computation after many circuit runs to obtain a better estimate of the ideal result.
 
@@ -9,7 +9,7 @@ Key distinction: error *correction* uses redundancy to restore the [[Quantum sta
 
 **Limitation**: requires the noise to be smooth & well-behaved. Breaks down for highly structured errors or deep circuits.
 
-IonQ exposes native **error mitigation toggle** on [[Azure Quantum]] (affects pricing - on: ≈$97.50 min fee, off: ≈$12.42 min fee). See [[Azure Quantum Providers]].
+[[IonQ]] exposes native **error mitigation toggle** on [[Azure Quantum]] (affects pricing - on: ≈$97.50 min fee, off: ≈$12.42 min fee). See [[Azure Quantum Providers]].
 
 **Probabilistic Error Cancellation (PEC)** models the noise channel as a quasi-[[Probability distribution]] over ideal operations. Samples from corrective inverse operations to statistically cancel noise. Produces an unbiased estimator of the noise-free expectation value.
 
@@ -19,7 +19,7 @@ IonQ exposes native **error mitigation toggle** on [[Azure Quantum]] (affects pr
 
 **Clifford Data Regression (CDR)** trains classical model on near-Clifford circuits (which can be classically simulated exactly) to learn the noise bias, then applies the correction to the target non-Clifford circuit. Requires a classically stimulable reference dataset.
 
-## Symmetry Verification
+### Symmetry Verification
 
 If the target Hamiltonian has known symmetries (e.g., particle number conservation, parity), post-select shots that respect the symmetry. Discards erroneous shots that violate the known constraints. Simple & zero overhead, but reduces effective shot count.
 
@@ -34,8 +34,7 @@ def run_on_azure(circuit):
 
 mitigated_result = zne.execute_with_zne(circuit, executor=run_on_azure)
 ```
-
-## Sources
+### Sources
 - [Mitiq: An open-source software package for error mitigation (arXiv:2009.04921)](https://arxiv.org/abs/2009.04921)
 - [arXiv: Scalable QEM for dynamical decoupling (2511.12227)](https://arxiv.org/abs/2511.12227)
 - [Mitiq documentation](https://mitiq.readthedocs.io/)

@@ -1,4 +1,4 @@
-#ML #Quantum 
+#ML
 An approach of a [[QCNN]] might look like this:
 1. **Encoding**: Convert classical data (e.g., image) into init [[Quantum state]] via a feature map. Each pixel could be mapped to the amplitude or phase of a qubit, or a group of pixels might encode multiple [[Qubits]].
 2. **Convolutional Layers**: Apply repeated _local_ gates across groups of neighboring [[Qubits]], with learnable params. Shift or alternate which [[Qubits]] are paired/clustered to capture different local patterns.

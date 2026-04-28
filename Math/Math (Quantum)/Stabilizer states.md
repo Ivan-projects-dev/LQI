@@ -1,4 +1,4 @@
-#Quantum #Math #ML
+#Math #ML
 The elements of the [[Pauli group]] have another important property that relates to quantum states, which we will study now. In the next section, we will use the notions introduced here to construct stabilizer groups.
 
 We will need to recall the eigenvectors & eigenvalues of $X,Y,Z$ are $X|+⟩=|+⟩,Y|+i⟩=|+i⟩Z|0⟩=|0⟩,X|−⟩=−|−⟩,Y|−i⟩=−|−i⟩,Z|1⟩=−|1⟩$.

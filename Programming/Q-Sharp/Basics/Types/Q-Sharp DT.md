@@ -2,7 +2,7 @@
 Q# is **strongly, statically typed** lang. Every value has a type known at compile time. Types divide into classical & quantum categories.
 
 `Int` - $64$-bit signed int. Literals: `42`, `-7`. Used for loop counters, qubit indices, int encoding of bit strings.
-`BigInt` - arbitrary-precision int. Literal suffix `L`: `1000000000000L`. Used in Shor's algorithm for modular arithmetic.
+`BigInt` - arbitrary-precision int. Literal suffix `L`: `1000000000000L`. Used in [[Shor]]'s algorithm for modular arithmetic.
 `Double` - $64$-bit floating point. Literals: `3.14`, `1.0e-3`. Used for rotation angles, probabilities.
 `Bool` - `true` or `false`. Used in conditionals & [[Oracle]] bit patterns.
 `String` - immutable string. Used in `Message(...)` for debug output only; not a computation type.
@@ -71,7 +71,7 @@ let value = ResultArrayAsIntBE(results); // Result[] → Int
 let d = IntAsDouble(n); // Int → Double
 ```
 
-## Sources
+### Sources
 - [Q# type system](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/)
 - [Primitive types in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/primitives)
 - [UDTs & structs in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/udts-and-structs)

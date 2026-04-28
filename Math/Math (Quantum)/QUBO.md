@@ -1,4 +1,4 @@
-#Quantum #Math 
+#Math #Algorithm 
 **Quadratic Unconstrained Binary Optimization (QUBO) problem** is defined using $n×n$ [[Matrix]] $Q$ & [[Vector]] $x∈{0,1}n$ where,
 - $Q$ is assumed to be either symmetric or in upper-triangular form. For ease of use, we will work with $Q$ in its upper-triangular form.
 - $x$ is  [[Vector]] of binary variables $0$ and $1$

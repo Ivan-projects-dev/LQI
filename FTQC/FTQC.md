@@ -1,4 +1,4 @@
-#SoftDev #Quantum 
+#SoftDev
 Full-Stack architecture for **Fault-Tolerant Quantum computing (FTQC)** consists of multiple layers, each focusing on different aspects of Quantum computing, from hardware to soft. ![](https://lms.qureca.com/wp-content/uploads/uncanny-snc/21/assets/Heading.jpg)
 At the bottom of the FTQC Stack are the quantum hardware layers, consisting of [[Qubits]] & the control systems that manipulate them. These physical systems can be based on Superconducting [[Qubits]], trapped ions, or other Quantum computing tech.  ![](https://lms.qureca.com/wp-content/uploads/uncanny-snc/21/assets/Quantum%20control%20system.png)
 **McKinsey- Quantum Control System**

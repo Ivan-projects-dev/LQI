@@ -1,4 +1,4 @@
-#Algorithm #Quantum #Math
+#Algorithm #Math
 [[Grover]] can be visualized geometrically as **rotation** in $2D$ subspace, making the iteration count precise & intuitive.
 
 **$2$ basis vectors** span the relevant subspace:

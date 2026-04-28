@@ -1,4 +1,4 @@
-#Math #Quantum #ML
+#Math #ML
 **1. Data Preparation (Feature Map)**  
 [[QNN]] begins with a **feature map**, which takes classical input data $→x$ and encodes it in a [[Quantum state]]. This is analogous to any preprocessing stage in classical neural networks but must respect the constraints of quantum computing. Common [[Feature maps]] include:
 - **Angle/Rotation Encoding**: Applying single-qubit [[Rotation gates]] (e.g., $R_y(2x_i)$) to embed each data component into a qubit's angles.

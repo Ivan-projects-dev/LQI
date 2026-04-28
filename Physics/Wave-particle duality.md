@@ -1,2 +1,2 @@
-#Physics #Quantum 
+#Physics
 Louis de Broglie theorized that light could exhibit both **wave-like** & **particle-like** behavior. Following Einstein's work on [[Photon electric effect]], Louis de Broglie predicted that since light exhibited both wave & particle behavior, particles should also.

@@ -1,8 +1,8 @@
-#Algorithm #Quantum
+#Algorithm 
 [[QPE]] is **subroutine** in most exponentially-fast quantum algorithms. 
 **Unifying pattern**: problem reduces to finding eigenphase of carefully constructed unitary $U$.
 
-**Shor's factoring algorithm**
+**[[Shor]]'s factoring algorithm**
 Target: factor int $N$. Reduces to order-finding - find $r$ such that $a^r \equiv 1 \pmod{N}$ for random $a$.
 
 $U_a|x\rangle = |ax \bmod N\rangle$ has eigenstates $|u_s\rangle = \frac{1}{\sqrt{r}}\sum_{k=0}^{r-1}e^{-2\pi i sk/r}|a^k \bmod N\rangle$ with eigenphases $\varphi_s = s/r$

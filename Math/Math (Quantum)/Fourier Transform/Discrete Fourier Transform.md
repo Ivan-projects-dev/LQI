@@ -1,2 +1,2 @@
-#Math #Quantum 
+#Math 
 **Discrete Fourier Transform (DFT)** is mapping that transforms set of [[Complex nums]] into another set of [[Complex nums]]. Suppose that we have $N$-dimensional complex [[Vector]] $$x=(x_0 x_1… x_(N−1))T$$DFT of $x$ is the complex [[Vector]] $$y=(y_0 y_1…y_(N−1))T$$ where $$yk=1√NN−1∑j=0e2πijkNxj$$

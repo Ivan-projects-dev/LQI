@@ -1,4 +1,4 @@
-#Algorithm #Quantum #Math Precision & resource analysis for [[QPE]].
+#Algorithm  #Math Precision & resource analysis for [[QPE]].
 **Precision definition**: [[QPE]] with $t$ control [[Qubits]] estimates $\varphi$ to **additive error** of at most $2^{-t}$:
 $$|\hat{\varphi} - \varphi| \leq 2^{-t}$$
 where $\hat{\varphi} = \tilde{\varphi}/2^t$ is the output & $\tilde{\varphi} \in \{0,1,\ldots,2^t-1\}$ is the measured int.

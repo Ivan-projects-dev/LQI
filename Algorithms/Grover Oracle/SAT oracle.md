@@ -1,4 +1,4 @@
-#Algorithm #Quantum 
+#Algorithm #Math 
 **SAT (bool Satisfiability)** is the problem of finding assignment of bool variables $x_1,\ldots,x_n \in \{0,1\}$ that satisfies given bool formula $\phi(x_1,\ldots,x_n) = 1$.
 
 [[Grover]] solves SAT by encoding $\phi$ as a phase [[Oracle]] & searching the $2^n$ possible assignments.

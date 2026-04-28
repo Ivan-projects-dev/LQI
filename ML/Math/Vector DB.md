@@ -10,7 +10,7 @@
 
 Popular [[Vector]] DBs
 - **Pinecone:** Fully managed, cloud native [[Vector]] DB with high scalability & low Latency search.
-- **Weaviate:** Open source, supports hybrid (keyword + [[Vector]]) search & offers built in machine learning modules.
+- **Weaviate:** Open source, supports hybrid (keyword + [[Vector]]) search & offers built in ML modules.
 - **Milvus:** Highly scalable, open source DB optimized for large scale similarity search.
 - **Qdrant:** Open source, focuses on high recall, performance & ease of integration with AI apps.
 - **ChromaDB:** Lightweight, dev friendly [[Vector]] DB often used in LLM powered apps.

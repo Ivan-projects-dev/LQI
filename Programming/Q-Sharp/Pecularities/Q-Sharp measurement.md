@@ -1,4 +1,4 @@
-#Q-Sharp #Quantum
+#Q-Sharp #Physics 
 **Measurement** in Q# collapses qubit's superposition to classical `Result` value (`Zero` or `One`). After measurement, the qubit is in the corresponding eigenstate. All measurement ops are in `Std.Intrinsic` or `Std.Measurement`.
 
 **`M(q)` - Z-basis measurement**, measures qubit `q` in the Pauli-Z basis. Returns `Result`. Qubit collapses to $|0\rangle$ (`Zero`) or $|1\rangle$ (`One`).
@@ -57,7 +57,7 @@ ResetAll(qs); // reset entire array
 Q# **requires** all [[Qubits]] to be in $|0\rangle$ before scope exit - failing to reset causes a runtime error.
 
 ops that contain measurements **cannot be adjoint-able** (`is Adj`). This means measurement-containing ops cannot be used inside `within { }` blocks or uncomputed. Design circuits so measurements appear only at the terminal stage, never inside [[Oracle]] bodies. See [[Ancilla]] for why this matters.
-## Sources
+### Sources
 - [Quantum memory management & qubit lifecycle](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/quantummemorymanagement)
 - [Std.Measurement API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.measurement)
 - [Std.Intrinsic: M, Measure, MResetZ](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)

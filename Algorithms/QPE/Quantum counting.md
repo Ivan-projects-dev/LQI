@@ -1,4 +1,4 @@
-#Quantum #Q-Sharp 
+ #Q-Sharp 
 **Quantum counting** - [[QPE]] applied to [[Grover]] operator $G$
 
 Estimates $M$ (solution count) by finding eigenphase $\theta/\pi$ of $G$:

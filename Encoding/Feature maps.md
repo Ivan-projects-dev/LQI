@@ -1,5 +1,5 @@
-#Quantum #ML #Math 
-**Feature maps** are procedures that **embed classical data** into quantum states, providing a starting point for the variational circuit that follows. 
+#ML #Math 
+**Feature maps** are procedures that **embed classical data** into quantum states, providing starting point for the variational circuit that follows. 
 
 Angle/rotation encoding maps each component $x_i$ (feature) of the input [[Vector]] $→x$ to the rotation angle of a single-qubit gate. Simple example is using $R_y$ gate & the value of each feature directly:  
 $$|0⟩R_y(2x_i)→cos(x_i)|0⟩+sin(x_i)|1⟩$$

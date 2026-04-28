@@ -1,4 +1,4 @@
-#Math #ML #Quantum 
+#Math #ML 
 Typical quantum [[Neural network]] for (un)supervised tasks can be broken down into $3$ major components:
 1. **Quantum Data Encoding**: before quantum circuit can process classical data, the data $x∈R^d$ must be mapped to [[Quantum state]] $|ψ(x)⟩$. This **feature map** step is essential: different encoding methods can drastically alter [[QNN]] performance. Common approaches are:
     - **[[Amplitude Encoding]]**: encodes data into the amplitudes of multi-qubit [[Quantum state]].

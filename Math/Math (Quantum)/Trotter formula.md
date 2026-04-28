@@ -1,4 +1,4 @@
-#Math #Quantum 
+#Math 
 We can express $U(T, 0)$ as $$U(tn, tn−1)U(tn−1, tn−2)⋯U(t1,t0)=n∏k=1U(tk,tk−1))$$where $t_k=kδt (k=0,1,…,n)$, $t_n=T$, $t_0=0$, & $δ_t=T/n$. 
 We take small time steps $δ_t$ to discretize the continuous evolution. Note that this step is exact for time independent Hamiltonian.
 

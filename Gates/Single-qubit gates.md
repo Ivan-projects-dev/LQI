@@ -1,17 +1,15 @@
-#Q-Sharp #Quantum #Math
+#Q-Sharp #Math
 **Single-qubit gates** are unitary $2\times2$ matrices acting on $1$ [[Qubits|qubit]]. All are available in `Std.Intrinsic` & support `Adj + Ctl`.
 
 **Pauli-X (NOT) - `X`**
 $$X = \begin{pmatrix}0 & 1\\1 & 0\end{pmatrix}$$
 Flips $|0\rangle \leftrightarrow |1\rangle$. Classical NOT. $X^2 = I$.
-
 ```csharp
 X(q); // |0⟩ → |1⟩,  |1⟩ → |0⟩
 Controlled X([c], q); // CNOT: flips q iff c == |1⟩
 ```
 
-**Pauli-Y - `Y`**
-$$Y = \begin{pmatrix}0 & -i\\i & 0\end{pmatrix}$$
+**Pauli-Y - `Y`**: $Y = \begin{pmatrix}0 & -i\\i & 0\end{pmatrix}$
 
 $|0\rangle \mapsto i|1\rangle$, $|1\rangle \mapsto -i|0\rangle$. $Y = iXZ$. $Y^2 = I$.
 
@@ -62,7 +60,7 @@ Adjoint T(q); // T†: applies e^{-iπ/4} phase to |1⟩
 | T    | $\|1\rangle\to e^{i\pi/4}\|1\rangle$                      | No ($T^\dagger \neq T$) |
 
 All six are in `Std.Intrinsic` & support `Adj + Ctl`. See [[Rotation gates]] for parameterized variants $R_x, R_y, R_z, R_1$.
-## Sources
+### ##Sources
 - [Std.Intrinsic API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)
 - [Single-qubit gates kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
 - [Understanding quantum computing - gates](https://learn.microsoft.com/en-us/azure/quantum/overview-understanding-quantum-computing)

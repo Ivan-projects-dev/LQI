@@ -1,4 +1,4 @@
-#Q-Sharp #Quantum
+#Q-Sharp #Math 
 **Bell states** are the $4$ max entangled $2$-qubit states. They form orthonormal basis for the $2$-qubit Hilbert space & are the foundation of quantum teleportation, superdense coding, entanglement-based protocols.
 $$|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$$
 $$|\Phi^-\rangle = \frac{1}{\sqrt{2}}(|00\rangle - |11\rangle)$$
@@ -80,7 +80,7 @@ let (r0, r1) = MeasureBellBasis(q0, q1);
 // r0 == Zero, r1 == Zero always for |Φ+⟩
 ```
 
-## Sources
+### Sources
 - [Bell states & entanglement kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
 - [Quantum teleportation tutorial](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-qubit-level-program)
 - [Understanding quantum entanglement](https://learn.microsoft.com/en-us/azure/quantum/overview-understanding-quantum-computing)

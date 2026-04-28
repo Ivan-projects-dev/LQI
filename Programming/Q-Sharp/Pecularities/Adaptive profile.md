@@ -1,4 +1,4 @@
-#Q-Sharp #Quantum
+#Q-Sharp 
 **Adaptive profile** (`AdaptiveRI`) enables **classical feed-forward**: using mid-circuit measurement results to conditionally apply subsequent quantum ops. Essential for [[FTQC|fault-tolerant]] protocols, magic state distillation, & [[QPE|iterative QPE]].
 
 Q# defines $3$ exec profiles, selected via `@Config` attribute or target machine setting:
@@ -83,7 +83,7 @@ Classical `Bool` conditions → resolved at compile time or pre-circuit classica
 `Result` conditions on `AdaptiveRI` → resolved mid-circuit in real time on hardware.
 `Result` conditions on `Base` → compile error if feed-forward required.
 
-## Sources
+### Sources
 - [Adaptive profile (AdaptiveRI) in Q#](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-integrated)
 - [Hybrid computing concepts](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-concepts)
 - [Mid-circuit measurement & feed-forward](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-overview)

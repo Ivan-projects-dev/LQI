@@ -1,4 +1,4 @@
-#Math #Physics #Quantum 
+#Math #Physics 
 **2-local cost Hamiltonian** is defined as  
 $$H_C = \sum_i h_i Z_i + \sum_{i<j} J_{ij} Z_i Z_j$$
 where:

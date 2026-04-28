@@ -1,4 +1,4 @@
-#ML #Quantum 
+#ML 
 **Quantum Feedforward Neural Networks (QFNNs)** replicate [[MLP]] architecture in a quantum setting by replacing the linear + nonlinear layers of a classical network with **quantum circuits**.
 1. **Quantum Data Encoding**: Classical inputs $→x$ are embedded into an n-qubit [[Quantum state]] via a feature map $UF(→x)$.
 2. **Variational Layers**: Instead of weight matrices & activation func, QFNNs use **parametrized quantum gates** (e.g., single-qubit rotations, multi-qubit entangling operations) as trainable layers; in other words, a variational form $U(θ)$.

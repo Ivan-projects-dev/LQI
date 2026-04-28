@@ -1,4 +1,4 @@
-#Quantum #Math #ML 
+#Math #ML 
 Recall the Pauli matrices along with the identity [[Matrix]], ${I,X,Y,Z}$. These matrices have the property that multiplying them together in any way, gets us back to the same set of matrices up to a factor of $±1$ or $±i$.
 For instance, $XY=iZ, YZ=iX, ZX=iY$.
 

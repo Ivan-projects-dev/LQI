@@ -1,4 +1,4 @@
-#Q-Sharp #Quantum #Algorithm
+#Q-Sharp  #Algorithm
 Complete Q# implementation of [[QPE]]. Estimates the **eigenphase** $\varphi$ of a unitary $U$ given eigenstate $|u\rangle$, returning $t$-bit approximation $\hat{\varphi} \approx \varphi$.
 
 $3$ stages: superposition on control register → controlled-$U^{2^j}$ → inverse QFT.

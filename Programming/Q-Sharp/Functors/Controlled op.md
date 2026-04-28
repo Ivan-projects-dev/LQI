@@ -1,4 +1,4 @@
-#Quantum #Q-Sharp 
+#Math #Q-Sharp 
 `Controlled op(controls, target)` applies `op` to `target` only when all [[Qubits]] in `controls` are $|1\rangle$.
 Controlled-H: apply $H$ to $q$ only if ctrl $== |1⟩$ `Controlled H([ctrl], q);`
 Multi-controlled: apply $X$ to $q$ only if all of $[c0, c1, c2] == |1⟩$ `Controlled X([c0, c1, c2], q);`
@@ -43,7 +43,7 @@ operation MyRotation(angle : Double, q : Qubit) : Unit is Adj + Ctl {
 
 When an operation is declared `is Adj + Ctl`, Q# requires all $4$ specializations to be satisfiable: `body`, `adjoint`, `controlled`, `controlled adjoint`. Using `auto` for all is the most common pattern; manual bodies are only needed for performance-critical decompositions.
 
-## Sources
+### Sources
 - [Functor application in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/functorapplication)
 - [Controlled functor](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/operationsandfunctions)
 - [Multi-qubit gates (Std.Intrinsic)](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)

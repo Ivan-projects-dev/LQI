@@ -1,4 +1,4 @@
-#Quantum #Physics #Hardware 
+#Physics #Hardware 
 **Superconducting qubit**s are cornerstone of modern quantum computing typically made from materials like aluminum or niobium, which exhibit $0$ electrical resistance at extremely low temperatures. This allows for the creation of highly stable & coherent quantum states using the principle of superconductivity, offering high-speed operations & compatibility with well-established fabrication techs from the semiconductor industry.
 
 Known for their rapid gate times & high fidelity, these systems operate at millikelvin temperatures, & are maintained by advanced cryogenic systems. These features make them a **strong candidate for scalable quantum computing** despite challenges related to error rates & cooling requirements.

@@ -1,4 +1,4 @@
-#Physics #Quantum #Hardware
+#Physics #Hardware
 **Qubits** – quantum bits that differ fundamentally from classical bits. While classical bits store info as either $0$ or $1$, qubits exploit quantum superposition, allowing them to exist in combo of both states simultaneously. This property, combined with quantum Entanglement (where qubits remain correlated across distances), enables quantum computers to process vast amounts of info in parallel.
 
 Сan be physically realized through various quantum systems:

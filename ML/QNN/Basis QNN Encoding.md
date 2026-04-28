@@ -1,6 +1,6 @@
-#ML #Quantum #Math 
-In basis encoding, each feature (often a discrete or binary var) is mapped directly to qubit basis states. For instance, a binary input [[Vector]] $b=(b_1,…,b_k)$ with $b_i∈{0,1}$ can be represented as $|b_1b_2…b_k⟩$ (in the computational basis)
-Each data point has to be a $N$-bit binary string: $→x_j=(b_1,…,b_N)$
+#ML #Math 
+In basis encoding, each feature (often a discrete or binary var) is mapped directly to qubit basis states. For instance, binary input [[Vector]] $b=(b_1,…,b_k)$ with $b_i∈{0,1}$ can be represented as $|b_1b_2…b_k⟩$ (in the computational basis)
+Each data point has to be $N$-bit binary string: $→x_j=(b_1,…,b_N)$
 
 Assuming all features are represented with unit binary precision (one bit), each input example $→x_j$ can be directly mapped to the [[Quantum state]] $|→x_j⟩$.
 

@@ -1,4 +1,4 @@
-#Quantum #Algorithm 
+ #Algorithm 
 **Quantum approx optimization algorithm (QAOA)** is a hybrid algorithm for solving combinatorial optimization problems. 
 
 In combinatorial optimization problems, we look for the best solution among a finite set of solutions. The solution space is often exponentially large. The solution space being finite & discrete makes it harder to find the best solution. For instance, although there are efficient methods for continuous optimization problems which have infinite solution space, many of the combinatorial optimization problems belong to the class $NP$-hard.

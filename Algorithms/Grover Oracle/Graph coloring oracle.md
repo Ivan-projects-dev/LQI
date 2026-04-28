@@ -1,4 +1,4 @@
-#Algorithm #Quantum #Graph
+#Algorithm #Graph
 **Graph coloring problem**: given an undirected graph $G = (V, E)$ with $|V| = n$ vertices & a palette of $K$ colors, find **proper coloring** - an assignment $c: V \to \{0,\ldots,K-1\}$ such that no ${} 2$ adjacent vertices share color:
 $$\forall (u,v) \in E : c(u) \neq c(v)$$
 NP-complete for $K \geq 3$. [[Grover]] algorithm searches the $K^n$ possible colorings.

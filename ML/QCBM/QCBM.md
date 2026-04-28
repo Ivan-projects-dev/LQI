@@ -1,4 +1,4 @@
-#ML #Quantum 
+#ML 
 Classical generative models, like **Restricted Boltzmann Machines** or certain neural architectures, have long been used for tasks such as creating synthetic data & anonymization. QCBMs can be viewed as the **quantum analog** of RBMs, where each qubit effectively corresponds to a visible binary unit. They offer:
 1. **Potentially Higher Expressive Power**: Research suggests that with only polynomially many params, QCBMs can represent distributions that classical RBMs cannot easily capture.
 2. **Fast Sampling**: Once params are set, generating a sample requires a single exec (one circuit run plus measurement), compared to the iterative Gibbs sampling required in some classical models.

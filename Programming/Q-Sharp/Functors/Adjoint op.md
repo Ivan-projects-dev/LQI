@@ -1,4 +1,4 @@
-#Q-Sharp #Quantum 
+#Q-Sharp #Math 
 `Adjoint op` produces the adjoint (conjugate transpose / inverse) of `op`. For unitary operations, the adjoint is the operation that "undoes" the original.
 ```csharp
 operation ApplyH(q : Qubit) : Unit is Adj {
@@ -40,7 +40,7 @@ operation CustomCircuit(qs : Qubit[]) : Unit is Adj + Ctl {
 }
 ```
 
-## Sources
+### Sources
 - [Functor application in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/functorapplication)
 - [Adjoint functor & reversibility](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/operationsandfunctions)
 - [Std.Intrinsic API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)

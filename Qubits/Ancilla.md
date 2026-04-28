@@ -1,4 +1,4 @@
-#Quantum #Math #Q-Sharp 
+#Math #Q-Sharp 
 **Ancilla qubit** (from Latin *helper/servant*) is auxiliary qubit allocated to assist computation without being part of the primary I/O register. Carry intermediate results, enable reversible computation, & facilitate phase kickback.
 
 Quantum gates must be **reversible** (unitary). Classical [[Logic]] gates such as $AND, OR$ produce irreversible mappings - multiple inputs map to the same output, losing info. To implement $f(x)$ as unitary, extra register is introduced:
@@ -33,7 +33,7 @@ borrow scratch = Qubit(); // borrowed dirty ancilla
 Allocated [[Qubits]] go out of scope at the end of their `use` block; Q# runtime throws runtime error if any qubit is not in $|0\rangle$ on release.
 
 Each ancilla is physical qubit on real hardware - scarce resource. [[Oracle]] construction for $m$-clause $SAT$ formula requires $O(m)$ clause ancillas + 1 output ancilla. Minimizing ancilla count through in-place arithmetic or Bennett's pebbling strategies is active area of quantum circuit optimization.
-## Sources
+### Sources
 - [Quantum memory management (use & borrow)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/quantummemorymanagement)
 - [Within-apply pattern (conjugations)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/conjugations)
 - [Understanding quantum computing](https://learn.microsoft.com/en-us/azure/quantum/overview-understanding-quantum-computing)

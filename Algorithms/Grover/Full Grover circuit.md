@@ -1,4 +1,4 @@
-#Algorithm #Quantum 
+#Algorithm #Math #DB
 Complete structure of [[Grover]] algorithm from qubit allocation to measurement.
 
 **Qubit layout**:

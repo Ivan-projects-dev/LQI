@@ -1,4 +1,4 @@
-#Quantum #Q-Sharp 
+#Q-Sharp 
 **Iterative [[QPE]]** ($1$-qubit version, Kitaev method)
 
 Extracts $\varphi$ $1$ bit/time, using only $1$ control qubit. Lower qubit overhead, but $t$ sequential rounds:
@@ -25,7 +25,7 @@ operation IterativePhaseEstimation(nBits : Int, target : Qubit[], applyU : Qubit
     return phase;
 }
 ```
-Each round: $1$ Hadamard, controlled-$U^{2^i}$, phase correction $R_1$, second Hadamard, measure. The phase correction `R1(angle, control)` removes the contribution of already-known bits before the final Hadamard collapses the control.
+Each round: $1$ Hadamard, controlled-$U^{2^i}$, phase correction $R_1$, $2nd$ Hadamard, measure. The phase correction `R1(angle, control)` removes the contribution of already-known bits before the final Hadamard collapses the control.
 ## Sources
 - [Iterative QPE kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
 - [Adaptive profile for iterative algorithms](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-integrated)

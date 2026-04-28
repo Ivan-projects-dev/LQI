@@ -1,4 +1,4 @@
-#Quantum #ML 
+#ML 
 **QRNN** aims to replicate the RNN's "memory" concept in quantum circuit:
 1. **Hidden (History) Register**: subset of [[Qubits]], storing the recurrent hidden state (unmeasured, preserving coherence across time steps).
 2. **Input Register**: Another set of [[Qubits]] that encodes each new data point $xt$ (e.g., angle encoding).

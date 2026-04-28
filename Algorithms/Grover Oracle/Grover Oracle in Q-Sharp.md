@@ -1,4 +1,4 @@
-#Q-Sharp #Quantum #Algorithm
+#Q-Sharp #Algorithm
 [[Oracle]] implementation in Q# for [[Grover]]'s search. In Q#, you typically write the **marking [[Oracle]]** & convert it to phase [[Oracle]] via phase kickback.
 
 **Marking [[Oracle]] signature**

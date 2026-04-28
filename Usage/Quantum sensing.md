@@ -1,4 +1,4 @@
-#Quantum  #Physics 
+#Physics 
 **Quantum sensing** marks significant advancement in sensing capabilities, offering unmatched levels of sensitivity, selectivity, & efficiency. By leveraging **quantum phenomena**, quantum sensors facilitate advanced metrology apps. They excel in precision measurements of params like **temperature, num of particles, gravity, time, & pressure**.
 
 Their exceptional sensitivity to magnetic fields has made them invaluable for detecting magnetic biomarkers – molecules or materials that indicate specific biological conditions or processes. This quantum-enhanced sensing capability allows for the detection of extremely weak magnetic signals emitted by cells & tissues, enabling earlier & $>$ accurate disease diagnosis. 

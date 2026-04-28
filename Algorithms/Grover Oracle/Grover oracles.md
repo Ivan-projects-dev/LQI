@@ -1,4 +1,4 @@
-#Algorithm #Quantum #Q-Sharp
+#Algorithm  #Q-Sharp
 [[Grover]] uses $2$ kinds of oracles. **Marking [[Oracle]]**: flips target [[Ancilla]] qubit if query register satisfies condition. **Phase [[Oracle]]**: flips phase of query register if condition holds. The $2$ are interconvertible.
 
 **[[Oracle]] types**:

@@ -1,9 +1,9 @@
-#Q-Sharp #Algorithm #Quantum
-Boolean function oracles in Q# — primitive building blocks for [[Grover]], [[SAT oracle]], and [[Graph coloring oracle]]. All follow the **marking oracle** pattern: flip `target` iff the function is 1 on `register`.
+#Q-Sharp #Algorithm 
+Boolean function oracles in Q# - primitive building blocks for [[Grover]], [[SAT oracle]], & [[Graph coloring oracle]]. All follow the **marking [[Oracle]]** pattern: flip `target` iff the function is 1 on `register`.
 
 ## Single-Bit Check
 
-Flip target iff qubit $k$ is $|1\rangle$. The simplest possible oracle — just a CNOT:
+Flip target iff qubit $k$ is $|1\rangle$. The simplest possible [[Oracle]] - just a [[CNOT]]:
 
 ```csharp
 operation MarkBitIsOne(register : Qubit[], target : Qubit, k : Int) : Unit is Adj + Ctl {
@@ -11,7 +11,7 @@ operation MarkBitIsOne(register : Qubit[], target : Qubit, k : Int) : Unit is Ad
 }
 ```
 
-Flip target iff qubit $k$ is $|0\rangle$ — CNOT with pre/post X on the control:
+Flip target iff qubit $k$ is $|0\rangle$ - [[CNOT]] with pre/post X on the control:
 ```csharp
 operation MarkBitIsZero(register : Qubit[], target : Qubit, k : Int) : Unit is Adj + Ctl {
     within { X(register[k]); }
@@ -28,7 +28,7 @@ operation MarkAND(register : Qubit[], target : Qubit, i : Int, j : Int) : Unit i
 }
 ```
 
-Generalized AND — flip target iff **all** bits in a given index list are $|1\rangle$:
+Generalized AND - flip target iff **all** bits in a given index list are $|1\rangle$:
 ```csharp
 operation MarkAllOnes(register : Qubit[], target : Qubit, indices : Int[]) : Unit is Adj + Ctl {
     import Std.Arrays.*;
@@ -39,7 +39,7 @@ operation MarkAllOnes(register : Qubit[], target : Qubit, indices : Int[]) : Uni
 ## OR Oracle
 
 Flip target iff **at least one** bit in index list is $|1\rangle$.
-OR = NOT AND NOT — apply X to all selected bits, check if any is still 1, uncompute:
+OR = NOT AND NOT - apply X to all selected bits, check if any is still 1, uncompute:
 
 ```csharp
 operation MarkOR(register : Qubit[], target : Qubit, indices : Int[]) : Unit is Adj + Ctl {
@@ -87,11 +87,11 @@ operation MarkXOR(register : Qubit[], target : Qubit, indices : Int[]) : Unit is
 }
 ```
 
-XOR is its own inverse — calling this operation twice restores target.
+XOR is its own inverse - calling this operation twice restores target.
 
 ## Parity Oracle (Full Register)
 
-Flip target iff the number of $|1\rangle$ qubits in the whole register is odd:
+Flip target iff the number of $|1\rangle$ [[Qubits]] in the whole register is odd:
 
 ```csharp
 operation MarkParity(register : Qubit[], target : Qubit) : Unit is Adj + Ctl {
@@ -101,7 +101,7 @@ operation MarkParity(register : Qubit[], target : Qubit) : Unit is Adj + Ctl {
 }
 ```
 
-This is the [[Deutsch-Jozsa]] balanced oracle and the [[Bernstein-Vazirani]] inner product with $s = 11\ldots1$.
+This is the [[Deutsch-Jozsa]] balanced [[Oracle]] & the [[Bernstein-Vazirani]] inner product with $s = 11\ldots1$.
 
 ## Majority Oracle
 
@@ -127,7 +127,7 @@ operation MarkMajority3(a : Qubit, b : Qubit, c : Qubit, target : Qubit) : Unit 
 
 ## Threshold Oracle (at least $k$ of $n$ bits are 1)
 
-Flip target iff at least $k$ bits out of $n$ are $|1\rangle$. Uses an ancilla counter register:
+Flip target iff at least $k$ bits out of $n$ are $|1\rangle$. Uses an [[Ancilla]] counter register:
 
 ```csharp
 import Std.Arrays.*;
@@ -152,11 +152,10 @@ operation MarkAtLeastK(register : Qubit[], target : Qubit, k : Int) : Unit is Ad
     }
 }
 ```
-
-Note: `IncrementLE` is a little-endian quantum increment from `Std.Arithmetic`. For large $n$, replace the loop with a proper quantum adder tree.
+Note: `IncrementLE` is little-endian quantum increment from `Std.Arithmetic`. For large $n$, replace the loop with proper quantum adder tree.
 
 ## Sources
-- [Q# Std.Canon — ControlledOnInt](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.canon/controlledonint)
+- [Q# Std.Canon - ControlledOnInt](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.canon/controlledonint)
 - [Conjugations (within/apply)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/conjugations)
-- [Toffoli gate and multi-controlled operations](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic/ccnot)
-- [Quantum Katas — Oracles](https://quantum.microsoft.com/en-us/tools/quantum-katas)
+- [Toffoli gate & multi-controlled operations](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic/ccnot)
+- [Quantum Katas - Oracles](https://quantum.microsoft.com/en-us/tools/quantum-katas)

@@ -1,5 +1,5 @@
-#Quantum #Q-Sharp #Programming
-**OpenQASM (Open Quantum Assembly Language)** is imperative prog lang for describing quantum circuits. Originally dev at IBM ($2017$), now maintained as open standard. Used by Quantinuum on [[Azure Quantum]] & supported by the QDK compiler.
+#SoftDev #Q-Sharp 
+**OpenQASM (Open Quantum Assembly Language)** is imperative prog lang for describing quantum circuits. Originally dev at IBM ($2017$), now maintained as open standard. Used by [[Quantinuum]] on [[Azure Quantum]] & supported by the QDK compiler.
 
 **OpenQASM $2.0$** - original, widely adopted version. C-like syntax for defining gate operations & measurements. Limited to purely gate-based, shot-sequential circuits. No real-time classical control flow.
 ```c#
@@ -23,9 +23,9 @@ measure q -> c;
 
 | Context                | Version               | Notes                                            |
 | ---------------------- | --------------------- | ------------------------------------------------ |
-| Quantinuum $H2$ target | OpenQASM $2.0$ native | Primary input format for $H2$                    |
+| [[Quantinuum]] $H2$ target | OpenQASM $2.0$ native | Primary input format for $H2$                    |
 | QDK compiler           | OpenQASM $3.0$        | Compiles to QIR; use `qsharp.openqasm.compile()` |
-| Rigetti                | Quil (not QASM)       | Different assembly standard                      |
+| [[Rigetti]]                | Quil (not QASM)       | Different assembly standard                      |
 
 In the QDK, compile OpenQASM 3.0 to QIR using:
 ```python
@@ -39,8 +39,7 @@ OpenQASM $3.0$ & QIR serve complementary roles:
 - **QIR** - binary compilation target (LLVM bitcode) for hardware execution
 
 QDK accepts OpenQASM $3$ source, compiles to QIR, & submits to any provider backend - bridging the $2$ formats.
-
-## Sources
+### Sources
 - [OpenQASM 3.0 specification](https://openqasm.com/versions/3.0/intro.html)
 - [OpenQASM 3 paper (arXiv:2104.14722)](https://arxiv.org/abs/2104.14722)
 - [Run OpenQASM in QDK](https://learn.microsoft.com/en-us/azure/quantum/qdk-openqasm-integration)

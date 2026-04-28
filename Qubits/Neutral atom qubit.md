@@ -1,4 +1,4 @@
-#Quantum #Physics #Hardware
+#Physics #Hardware
 **Neutral atom [[Qubits]]** use individual uncharged atoms, such as Rubidium or Cesium, which are confined & manipulated using optical tweezers - highly focused laser beams that hold the atoms in precise spatial arrangements. Unlike charged ions, neutral atoms experience min electrostatic repulsion, allowing them to be densely packed into large, scalable arrays.
 
 **Atom trapping**: Neutral atoms are trapped using optical tweezers, which are highly focused laser beams. These lasers create potential wells that hold the atoms in place.

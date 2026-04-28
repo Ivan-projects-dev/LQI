@@ -1,25 +1,17 @@
-#Quantum #Cloud #Platform #Qiskit
-**IBM Quantum** (quantum.cloud.ibm.com) is IBM's cloud quantum computing service, offering free public access to real superconducting QPUs & the **Qiskit** open-source SDK. $1$ of the most widely used quantum platforms for research & education.
-
-## Free Tier
-
+#SoftDev #Hardware #Python 
+**IBM Quantum** (`quantum.cloud.ibm.com`) is IBM's cloud quantum computing service, offering free public access to real superconducting QPUs & the **Qiskit** open-source SDK. $1$ of the most widely used quantum platforms for research & education.
 - **$10$ minutes of QPU runtime per month** on IBM's real quantum hardware at no cost
 - Active users may request additional time
-- No credit card required to start; sign up with an IBM ID
+- No credit card required to start; sign up with IBM ID
 - Full access to all on-demand **quantum simulators** (no runtime cap)
 - Free courses & learning resources on IBM Quantum Learning
-
-## Hardware
 
 IBM's fleet uses **superconducting transmon [[Qubits]]** arranged in heavy-hex lattice topology. Available systems (as of $2025$):
 - $~12$ systems publicly accessible, ranging from **$5$ to $127$ [[Qubits]]**
 - **Eagle** ($127$ [[Qubits]]), **Heron** ($133$ [[Qubits]], higher fidelity), & smaller systems for experimentation
 - Systems listed at `quantum.cloud.ibm.com` with live calibration data (gate error rates, $T_1/T_2$, readout fidelity)
 
-## Programming Model
-
 Primary SDK: **Qiskit** (Python). Circuits are written as `QuantumCircuit` objects & compiled with `transpile()` before submission via the **Qiskit Runtime** service.
-
 ```python
 from qiskit import QuantumCircuit
 from qiskit_ibm_runtime import QiskitRuntimeService, SamplerV2
@@ -36,24 +28,19 @@ job = sampler.run([qc], shots=1024)
 result = job.result()
 ```
 
-**Primitives** abstract QPU access into $2$interfaces:
+**Primitives** abstract QPU access into $2$ interfaces:
 - `SamplerV2` - returns shot-level measurement distributions
 - `EstimatorV2` - returns expectation values of Pauli observables (used in [[VQE]], [[QAOA]])
 
-## Simulators
-
-- **ibmq_qasm_simulator** - statevector & stabilizer sim, up to $32$ [[Qubits]]
+### Simulators
+- **ibmq_qasm_simulator** - state [[Vector]] & stabilizer sim, up to $32$ [[Qubits]]
 - **AerSimulator** (local, via `qiskit-aer`) - noise model simulation using real device calibration data
 - **FakeBackends** - drop-in replacements for real devices with realistic noise models for offline testing
-
-## Ecosystem
-
+### Ecosystem
 - **Qiskit** - circuit composition, transpilation, optimization passes
 - **Qiskit Runtime** - managed execution environment on IBM Cloud
 - **IBM Quantum Learning** - free courses, tutorials, Jupyter notebooks
 - **Qiskit Patterns** - templates for mapping real-world problems to quantum circuits
-
-## Practical Notes
 
 **Transpilation depth explosion** is the most common surprise. IBM's native gate set is `{ECR, RZ, SX, X}`. A [[CNOT]] becomes `ECR` + $2$ `SX` rotations. $10$-gate circuit can compile to $40+$ native gates. Always check:
 ```python
@@ -74,11 +61,10 @@ noisy_sim = AerSimulator.from_backend(FakeSherbrooke())
 
 **Queue times.** `least_busy()` helps, but real QPU queues during peak hours are $30$ min – $3$ hours. Submit, close the laptop, come back later. Use `job.status()` or IBM Quantum web dashboard to track.
 
-**Qiskit 1.0 breaking change.** `execute()` was removed. Any tutorial pre-$2024$ using `execute(circuit, backend)` needs to be rewritten with `SamplerV2` / `EstimatorV2`. This breaks most Stack Overflow answers.
+**Qiskit $1.0$ breaking change.** `execute()` was removed. Any tutorial pre-$2024$ using `execute(circuit, backend)` needs to be rewritten with `SamplerV2` / `EstimatorV2`. This breaks most Stack Overflow answers.
 
 **Measurement [[Error Mitigation]]** - readout error is often the dominant error on current hardware & is easy to mitigate. The `mthree` library applies [[Matrix]] inversion correction with min overhead.
-
-## Sources
+### Sources
 - [IBM Quantum Platform](https://quantum.cloud.ibm.com)
 - [IBM Quantum plans overview](https://quantum.cloud.ibm.com/docs/en/guides/plans-overview)
 - [Qiskit documentation](https://docs.quantum.ibm.com)

@@ -1,7 +1,7 @@
-#Algorithm #NN #Quantum #Math 
+#Algorithm #ML #Math 
 Training a [[QCBM]] means finding params $θ$ that make the model's output distribution pθ(x) match some target distribution $π(x)$ derived from a classical dataset.
 1. **Data-to-Binary Conversion**: QCBMs are inherently binary; any continuous data must be **binarized**-for instance, using an M-bit binary encoding for each dimension.
-2. **Cost Func**: The objective is typically a measure of **distance** between $pθ(⋅)$ and $π(⋅)$. Examples include:
+2. **Cost Func**: objective is typically measure of **distance** between $pθ(⋅)$ and $π(⋅)$. Examples include:
     - **Total Variation Distance** $∑x|pθ(x)−π(x)|$
     - **Max Mean Discrepancy (MMD)** with a chosen kernel $K(x,y)$, such as a Gaussian mixture. This is often easier to optimize.
     - Potential use of **quantum kernels** if evaluating similarity in a quantum-native manner.

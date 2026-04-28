@@ -1,5 +1,5 @@
-#Q-Sharp #Quantum
-**Qubit management** covers allocation, borrowing, reset, & release patterns in Q#. [[Qubits]] are a physical resource - Q# enforces strict lifecycle rules.
+#Q-Sharp #Physics 
+**Qubit management** covers allocation, borrowing, reset, & release patterns in Q#. [[Qubits]] are physical resource - Q# enforces strict lifecycle rules.
 
 **`use` - clean qubit allocation**. Allocates [[Qubits]] guaranteed to be in $|0\rangle$ at the start of the scope:
 ```csharp
@@ -68,7 +68,7 @@ ApplyToEachCA(H, qs); // H (adj + ctl version)
 ```
 `ApplyToEachA` is required inside `within { }` blocks because the auto-generated adjoint needs each individual operation to support `Adj`.
 
-## Sources
+### Sources
 - [Quantum memory management & qubit lifecycle](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/quantummemorymanagement)
 - [use & borrow statements](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/quantummemorymanagement)
 - [Std.Intrinsic: Reset, ResetAll](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)

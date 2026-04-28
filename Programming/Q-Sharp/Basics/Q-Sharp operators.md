@@ -47,13 +47,12 @@ let (q1, q2) = (Qubit(), Qubit()); // allocate & destructure
 | Additive           | `+`, `-`                              |
 | Bit shift          | `<<<`, `>>>`                          |
 | Bitwise AND        | `&&&`                                 |
-| [[Bitwise XOR]]        | `^^^`                                 |
+| [[Bitwise XOR]]    | `^^^`                                 |
 | Bitwise OR         | `\|\|\|`                              |
 | Comparison         | `==`, `!=`, `<`, `<=`, `>`, `>=`      |
 | Logical AND        | `and`                                 |
 | Lowest             | `or`                                  |
-
-## Sources
+### Sources
 - [Arithmetic expressions in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/arithmeticexpressions)
 - [Bitwise & logical expressions](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/logicalexpressions)
 - [Q# language specification](https://learn.microsoft.com/en-us/azure/quantum/user-guide/)

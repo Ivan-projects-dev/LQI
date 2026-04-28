@@ -1,10 +1,10 @@
-#Math #Quantum #Physics 
+#Math #Physics 
 We have seen that in quantum computing, the evolution of closed system is described by unitary transformation.
 
 That is, the state of the system $|ψ(t)⟩$ at time $t$ can be expressed as $|ψ(t)⟩=U(t,t0)|ψ(t0)⟩$,
 where $U(t, t_0)$ is [[Unitary operator]] that depends on times $t$ and $t_0$.
 
-An equivalent way of stating this fact is the **Schrödinger's equation** that provides continuous-time descr of the system while through Unitary operators, we have discrete-time descr: $H|ψ(t)⟩=iℏddt|ψ(t)⟩$, where $ℏ$ is physical const known as Planck’s const and $ddt$ is the derivate. In practice, it is common to absorb the factor $ℏ$ into $H$, the Hamiltonian describing the system.
+Equivalent way of stating this fact is the **Schrödinger's equation** that provides continuous-time descr of the system while through Unitary operators, we have discrete-time descr: $H|ψ(t)⟩=iℏddt|ψ(t)⟩$, where $ℏ$ is physical const known as Planck’s const and $ddt$ is the derivate. In practice, it is common to absorb the factor $ℏ$ into $H$, the Hamiltonian describing the system.
 
 The Schrödinger's equation is differential equation, whose solution is given by $|ψ(t)⟩=exp(−iH⋅(t−t0))|ψ(t0)⟩$.
 

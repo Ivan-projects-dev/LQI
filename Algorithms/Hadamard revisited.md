@@ -1,4 +1,4 @@
-#Algorithm #Math #Quantum 
+#Algorithm #Math 
 We know that applying Hadamard to state $|0⟩$, we get $1√2(|0⟩+|1⟩)$, & applying Hadamard to state $|1⟩$, we obtain $1√2(|0⟩−|1⟩)$.
 
 Now let $x_1∈{0,1}$. Consider the following expression. $$H|x1⟩=1√2(|0⟩+(−1)x1|1⟩)=1√2∑z∈{0,1}(−1)x1z|z⟩$$
