@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Environment/Platforms/General/Common errors on platforms.md",
+                "file": "Algorithms/Grover Oracle/Arithmetic Oracles/Weighted Sum Threshold Oracle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Common errors on platforms"
+              "title": "Weighted Sum Threshold Oracle"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Environment/Platforms/Azure Quantum/Azure Quantum Jobs.md",
+                "file": "Qubits/Ancilla.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Azure Quantum Jobs"
+              "title": "Ancilla"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Azure quantum jobs",
+                "query": "Grover oracle",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,8 +89,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -190,6 +189,21 @@
   },
   "active": "b077012cbda32b28",
   "lastOpenFiles": [
+    "Algorithms/Grover Oracle/Boolean Oracles/Boolean Function Oracles.md",
+    "Algorithms/Grover Oracle/Arithmetic Oracles/Weighted Sum Threshold Oracle.md",
+    "Algorithms/Grover Oracle/Arithmetic Oracles/Arithmetic Oracles.md",
+    "Algorithms/Grover Oracle/Arithmetic Oracles/Divisibility Oracle.md",
+    "Algorithms/Grover Oracle/Boolean Oracles/Majority Oracle.md",
+    "Algorithms/Grover Oracle/Boolean Oracles/Threshold Oracle.md",
+    "Algorithms/Grover Oracle/Boolean Oracles/Parity Oracle.md",
+    "Algorithms/Grover Oracle/Boolean Oracles/XOR Oracle.md",
+    "Algorithms/Grover Oracle/Boolean Oracles/OR Oracle.md",
+    "Algorithms/Grover Oracle/Boolean Oracles/AND Oracle.md",
+    "Algorithms/Grover Oracle/Boolean Oracles/Single-Bit Check.md",
+    "Algorithms/Grover Oracle/Boolean Oracles",
+    "Environment/Platforms/General/Common errors on platforms.md",
+    "Algorithms/Grover Oracle/Grover oracles.md",
+    "Environment/Platforms/Azure Quantum/Azure Quantum Jobs.md",
     "Environment/Platforms/Azure Quantum/Providers/Azure Quantum Credits.md",
     "Environment/Platforms/Azure Quantum/Providers/PASQAL.md",
     "Environment/Platforms/PennyLane/PennyLane common errors.md",
@@ -202,20 +216,6 @@
     "Environment/Platforms/General/Quantum SoftDev Surprises.md",
     "Environment/Platforms/General/Circuits debug/Circuits debug in IBM.md",
     "Environment/Platforms/General/Circuits debug/Circuits debug in PennyLane.md",
-    "Environment/Platforms/General/Circuits debug/Circuits debug in Amazon.md",
-    "Environment/Platforms/General/Circuits debug/Circuits debug in D-Wave.md",
-    "Environment/Platforms/General/Circuits debug/Basics of Circuits debug.md",
-    "Environment/Platforms/qBraid.md",
-    "Environment/Platforms/PennyLane/PennyLane Basics.md",
-    "Environment/Platforms/PennyLane/Xanadu.md",
-    "Environment/Platforms/IBM Quantum/IBM Quantum Basics.md",
-    "Environment/Platforms/IBM Quantum/IBM Quantum.md",
-    "Environment/Platforms/IBM Quantum/IBM Quantum common errors.md",
-    "Environment/OpenQASM.md",
-    "Environment/QRE/QRE.md",
-    "Environment/QRE/QRE Examples.md",
-    "FTQC/Error Mitigation.md",
-    "FTQC/Surface Code.md",
     "Environment/Platforms/General/Common errors",
     "Environment/Platforms/General/Circuits debug",
     "Environment/Platforms/General/Free Tier Principles",
@@ -225,7 +225,6 @@
     "Environment/Platforms/PennyLane",
     "Environment/Platforms/General",
     "Environment/Platforms/Comparison",
-    "Environment/Platforms/D-Wave Leap",
     "Untitled.canvas",
     "z_img/Pasted image 20251214190313.png",
     "z_img/Pasted image 20260102005032.png",

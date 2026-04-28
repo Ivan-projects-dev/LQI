@@ -1,11 +1,11 @@
 #Q-Sharp #Algorithm
 Arithmetic oracles in Q# - encode numerical conditions as quantum marking operations. Used in [[Bounded knapsack oracle]], [[Grover]]-based optimization, & quantum search on structured data.
-1. Equality [[Oracle]]
-2. Inequality [[Oracle]]
-3. Greater-Than [[Oracle]]
-4. Range [[Oracle]]
-5. Divisibility [[Oracle]]
-6. Weighted Sum Threshold [[Oracle]]
+1. [[Equality Oracle]]
+2. [[Inequality Oracle]]
+3. [[Greater-than Oracle]]
+4. [[Range Oracle]]
+5. [[Divisibility Oracle]]
+6. [[Weighted Sum Threshold Oracle]]
 
 ## Parity of Integer (odd/even)
 
