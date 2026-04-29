@@ -37,7 +37,6 @@ Controlled R1([ctrl], (theta, q)); // controlled phase - CRk gate in QFT
 **`R(pauli, θ, q)` - general Pauli rotation**
 $$R(P, \theta) = e^{-i\theta P/2} = \cos\frac{\theta}{2}\cdot I - i\sin\frac{\theta}{2}\cdot P \quad P \in \{I, X, Y, Z\}$$
 Generalizes all $3$ axis rotations. `PauliI`, `PauliX`, `PauliY`, `PauliZ` are the Q# enum values.
-
 ```csharp
 R(PauliX, theta, q); // same as Rx(theta, q)
 R(PauliZ, theta, q); // same as Rz(theta, q)

@@ -1,5 +1,5 @@
 #Algorithm #Q-Sharp 
-Flip target iff $\sum_i w_i x_i \geq T$ where $x_i$ are qubit values & $w_i$ are classical int weights. Used in [[Bounded knapsack oracle]] & portfolio optimization:
+Flip target iff $\sum_i w_i x_i \geq T$ where $x_i$ are qubit values & $w_i$ are classical int weights. Used in [[Bounded knapsack oracle]] & portfolio optimization: [[ccccccccccccccccccccc]]
 ```csharp
 import Std.Arrays.*;
 import Std.Arithmetic.*;
