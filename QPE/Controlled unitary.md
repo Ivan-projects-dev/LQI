@@ -9,7 +9,7 @@ Direct implementation of $C$-$U^{2^j}$ via $2^j$ sequential apps of $C$-$U$ is c
 
 **Efficient squaring**: if compact circuit for $U$ is known, $U^2$ can often be compiled directly into similarly-sized circuit, keeping each stage at $O(\text{cost}(U))$ gates. This is problem-dependent.
 
-**Phase kickback perspective**: when the target is in eigenstate $|u\rangle$:
+**[[Phase kickback]] perspective**: when the target is in eigenstate $|u\rangle$:
 $$C\text{-}U^{2^j}(|{+}\rangle|u\rangle) = \frac{1}{\sqrt{2}}\left(|0\rangle + e^{2\pi i 2^j \varphi}|1\rangle\right)|u\rangle$$
 Phase $e^{2\pi i 2^j \varphi}$ is kicked back onto the control qubit. Each control qubit accumulates different power of the phase - the binary digits of $\varphi$ are encoded across the $t$ control [[Qubits]] before the inverse QFT.
 

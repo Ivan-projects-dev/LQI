@@ -40,7 +40,7 @@ You have outgrown free tier when:
 - You need guaranteed low-queue-time for time-sensitive experiments
 At that point, consider [[IBM Quantum]] Premium plans or academic access programs (many universities have bulk QPU allocations).
 ### Sources
-- [IBM Quantum pricing & plans](https://quantum.ibm.com/services)
+- [IBM Quantum pricing & plans](https://quantum.cloud.ibm.com/docs/en/guides/plans-overview)
 - [Azure Quantum credits overview](https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-credits)
 - [Amazon Braket pricing](https://aws.amazon.com/braket/pricing/)
 - [Qiskit: choosing a backend](https://docs.quantum.ibm.com/guides/get-started-with-primitives)

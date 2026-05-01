@@ -31,7 +31,7 @@ If your operation contains measurement (`M()`), it cannot be `Adj` - measurement
 4. `DumpMachine()` output doesn't appear
 Output goes to the **Debug Console** in VS Code, not the Terminal. Open it with `Ctrl+Shift+Y` (Windows/Linux) or `Cmd+Shift+Y` (Mac). `Message()` output also goes there.
 5. QDK language server takes $60+$ seconds to start
-Normal on first launch. The extension builds the Q# compiler in the background. Wait for the status bar at the bottom of VS Code to stop showing "Q# Loading". Subsequent launches are faster.
+Normal on $1st$ launch. The extension builds the Q# compiler in the background. Wait for the status bar at the bottom of VS Code to stop showing "Q# Loading". Subsequent launches are faster.
 6. `@Config(AdaptiveRI)` operation fails to compile for Base profile
 You're trying to run adaptive operation on target that only supports `Base`. Either:
 - Switch to `Unrestricted` profile for simulation

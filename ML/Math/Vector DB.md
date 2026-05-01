@@ -4,7 +4,7 @@
 ![vector](https://media.geeksforgeeks.org/wp-content/uploads/20250818181337924930/vector.webp)
 ![frame_3078.webp](https://media.geeksforgeeks.org/wp-content/uploads/20250818181142524112/frame_3078.webp)![frame_3078.webp](https://media.geeksforgeeks.org/wp-content/uploads/20250818181142524112/frame_3078.webp)
 - [[Embeddings]] work by converting raw data like text, images or audio into dense num vectors that preserve meaning & relationships.
-- First the input is processed through a model such as a transformer for text or a CNN for images to extract key features.
+- $1st$ the input is processed through a model such as a transformer for text or a CNN for images to extract key features.
 - These features are then encoded into fixed length vectors in a high dimensional space where similar items are positioned close together & dissimilar ones are farther apart.
 - This spatial arrangement allows similarity to be measured mathematically enabling apps like search, recommendations & classification to operate based on meaning rather than exact matches.
 

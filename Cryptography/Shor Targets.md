@@ -21,7 +21,7 @@ SHA-256 drops from $128$-bit collision resistance to $\sim 85$ bits. **Mitigatio
 | Milestone                                                | Estimated year | Confidence                 |
 | -------------------------------------------------------- | -------------- | -------------------------- |
 | Factor $N = 2048$-bit [[RSA]]                                | $2030$–$2040$  | Moderate                   |
-| First CRQC (Cryptographically Relevant Quantum Computer) | $2030$–$2050$  | Low - high uncertainty     |
+| $1st$ CRQC (Cryptographically Relevant Quantum Computer) | $2030$–$2050$  | Low - high uncertainty     |
 | Post-quantum TLS deployed globally                       | $2027$–$2030$  | High - already in progress |
 | NIST [[PQC]] standards finalized                         | $2024$ (done)  | Confirmed                  |
 See also - [[Data harvest]]

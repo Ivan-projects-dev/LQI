@@ -24,7 +24,7 @@ On [[IBM Quantum]], submitting job & getting results back can take $30$ minutes 
 
 `least_busy()` helps but doesn't eliminate waiting.
 ###  6. Resource estimator will humble you
-Run [[Azure Quantum]]'s [[QRE]] on any textbook algorithm. [[Shor]] algorithm at $[[RSA]]-2048$ scale needs $~4$ million physical [[Qubits]] & years of runtime on hardware that doesn't exist yet. Most "quantum algorithms" in textbooks describe math procedures, not programs you can run today.
+Run [[Azure Quantum]]'s [[QRE]] on any textbook algorithm. [[Shor]] algorithm at $[[[[RSA]]]]-2048$ scale needs $~4$ million physical [[Qubits]] & years of runtime on hardware that doesn't exist yet. Most "quantum algorithms" in textbooks describe math procedures, not programs you can run today.
 
 This is not pessimism - it is the current state of the field. Understanding the gap between theoretical quantum algorithms & real hardware is crucial context.
 ###  7. D-Wave Is Not the Same Type of Computer

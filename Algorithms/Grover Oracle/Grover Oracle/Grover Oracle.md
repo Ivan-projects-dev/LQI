@@ -8,7 +8,7 @@
 **ArbitraryPattern** - flip target iff register matches a given bit pattern `Bool[]`. For every qubit where the pattern bit is `false` (i.e. target is $|0\rangle$), apply $X$ before the multi-controlled $X$, then uncompute. This turns the desired state into $|11\ldots1\rangle$ so AllOnes fires.
 
 **[[Oracle]] converter** (marking → phase):
-Wrap the marking [[Oracle]] with an [[Ancilla]] prepared in $|{-}\rangle = \frac{|0\rangle-|1\rangle}{\sqrt{2}}$. When the [[Oracle]] fires it flips $|{-}\rangle \to -|{-}\rangle$ (**phase kickback**), leaving the [[Ancilla]] unchanged & writing $-1$ into the query register's phase: $$U_f|x\rangle|{-}\rangle = (-1)^{f(x)}|x\rangle|{-}\rangle$$[[Ancilla]] is never measured & can be reused across iterations.
+Wrap the marking [[Oracle]] with an [[Ancilla]] prepared in $|{-}\rangle = \frac{|0\rangle-|1\rangle}{\sqrt{2}}$. When the [[Oracle]] fires it flips $|{-}\rangle \to -|{-}\rangle$ (**[[Phase kickback]]**), leaving the [[Ancilla]] unchanged & writing $-1$ into the query register's phase: $$U_f|x\rangle|{-}\rangle = (-1)^{f(x)}|x\rangle|{-}\rangle$$[[Ancilla]] is never measured & can be reused across iterations.
 
 **[[Grover]] iteration – 4 steps** (from [[Oracle]] to diffusion):
 1. Apply phase [[Oracle]] $U_f$ → marks solution(s) with $-1$.

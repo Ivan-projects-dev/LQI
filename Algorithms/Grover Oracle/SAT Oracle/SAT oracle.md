@@ -12,7 +12,7 @@ where $l_{j,i} \in \{x_r, \neg x_r\}$ for some $r$. Clause is **satisfied** iff 
 **Quantum [[Oracle]] construction for SAT**:
 1. **Clause oracles**: for each clause $C_j$, build $U_{C_j}$ that marks (flips [[Ancilla]]) when $C_j = 0$ (clause violated). Clause is **violated** iff _all_ its literals are false.
 2. **Combine clauses**: introduce $1$ [[Ancilla]] qubit per clause. Apply $U_{C_1},\ldots,U_{C_m}$ in sequence. Apply a multi-controlled NOT targeting output qubit, conditioned on all clause ancillas being $|0⟩$ (all violated = formula unsatisfied). Invert: flip output when all clauses **satisfied**. Uncompute clause ancillas.
-3. **Phase kickback**: set output qubit to $|{-}⟩$ so that satisfying assignments receive $(-1)$ phase. Uncompute output qubit.
+3. **[[Phase kickback]]**: set output qubit to $|{-}⟩$ so that satisfying assignments receive $(-1)$ phase. Uncompute output qubit.
 
 Net effect:
 $$U_\phi^{\text{phase}}:|x⟩ \mapsto (-1)^{\phi(x)}|x⟩$$

@@ -6,7 +6,7 @@ Now suppose that $|ψ(0)⟩$ is eigenstate of $~H(0)=H(0)$, which we assume f
 Then adiabatic theorem says that in the [[Limit]] $T→∞$, the final state $|ψ(T)⟩$ obtained by the evolution will be the ground state of $~H(1)=H(T)$.
 
 We can see that at $t=0$, only $H_i$ acts on the system while at $t=T$, only $H_f$ acts on the system.
-$T$ depends on the energy gap between the ground & the first excited state, i.e., the state with the $2nd$ smallest eigenvalue.
+$T$ depends on the energy gap between the ground & the $1st$ excited state, i.e., the state with the $2nd$ smallest eigenvalue.
 
-In the image below, the orange line shows how the lowest eigenvalue changes over time & the purple line indicates the eigenvalue of the first excited state. As the $2$ values get closer, $T$ gets larger. If the $2$ lowest eigenvalues cross each other, then we can no longer stay in the ground state.
+In the image below, the orange line shows how the lowest eigenvalue changes over time & the purple line indicates the eigenvalue of the $1st$ excited state. As the $2$ values get closer, $T$ gets larger. If the $2$ lowest eigenvalues cross each other, then we can no longer stay in the ground state.
 ![[Pasted image 20260101222212.png]]

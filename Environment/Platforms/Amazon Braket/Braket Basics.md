@@ -12,7 +12,7 @@ print(result.measurement_counts)   # {'00': 503, '11': 497}
 
 Braket's `Circuit` uses method chaining: `.h(0)` adds an H gate, `.[[CNOT]](0, 1)` adds a [[CNOT]]. Identical to Qiskit in [[Logic]], slightly different syntax.
 
-Your free tier gives $1$ hour/month of managed simulator time for the first $12$ months:
+Your free tier gives $1$ hour/month of managed simulator time for the $1st$ $12$ months:
 ```python
 from braket.aws import AwsDevice
 

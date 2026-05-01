@@ -51,4 +51,4 @@ operation ECDLPOracle(aReg : Qubit[], bReg : Qubit[],
 ```
 **Breaks:** [[ECDH]], ECDSA, all elliptic curve protocols including TLS with P-$256$/P-$384$, secp256k1 (Bitcoin), $Ed25519$.
 
-**Reference:** Roetteler, Naehrig, Svore, Lauter (2017) - first concrete quantum resource estimate for ECDLP.
+**Reference:** Roetteler, Naehrig, Svore, Lauter (2017) - $1st$ concrete quantum resource estimate for ECDLP.

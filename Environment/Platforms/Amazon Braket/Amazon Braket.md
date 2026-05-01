@@ -62,4 +62,4 @@ task = device.run(circuit, shots=100,
 - [Amazon Braket pricing](https://aws.amazon.com/braket/pricing/)
 - [Amazon Braket documentation](https://docs.aws.amazon.com/braket/)
 - [Braket SDK GitHub](https://github.com/amazon-braket/amazon-braket-sdk-python)
-- [Braket simulators overview](https://aws.amazon.com/blogs/quantum-computing/simulating-quantum-circuits-with-amazon-braket/)
+- [Braket simulators overview](https://aws.amazon.com/blogs/quantum-computing/simulating-quantum-circuits-with-amazon-braket/

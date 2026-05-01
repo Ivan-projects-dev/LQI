@@ -20,7 +20,7 @@ Next we apply an $X$ gate to last qubit. $|ψ1⟩=|0⟩⊗n|1⟩$
 
 We set last qubit to state |−⟩ and apply $H$ gate to first $n$ [[Qubits]]. $|ψ2⟩=1√2n2n−1∑x=0|x⟩⊗|−⟩$
 
-Now we apply $U_f$. Recalling phase kickback, we can rewrite our entire state as $$|ψ3⟩=[1√2n2n−1∑x=0(−1)f(x)|x⟩]⊗|−⟩$$
+Now we apply $U_f$. Recalling [[Phase kickback]], we can rewrite our entire state as $$|ψ3⟩=[1√2n2n−1∑x=0(−1)f(x)|x⟩]⊗|−⟩$$
 Note that we apply $U_f$ to each basis state & write our [[Quantum state]] using sum notation since we have an equal superposition of them.
 
 Now we can ignore the output qubit & only focus on the input [[Qubits]] to write $$|ψ3,0⟩=1√2n2n−1∑x=0(−1)f(x)|x⟩$$

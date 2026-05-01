@@ -62,4 +62,4 @@ All $6$ are in `Std.Intrinsic` & support `Adj + Ctl`. See [[Rotation gates]] for
 ### Sources
 - [Std.Intrinsic API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)
 - [Single-qubit gates kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
-- [Understanding quantum computing - gates](https://learn.microsoft.com/en-us/azure/quantum/overview-understanding-quantum-computing)
+- [Understanding quantum computing - gates](https://learn.microsoft.com/en-us/azure/quantum/overview-understanding-quantum-computing

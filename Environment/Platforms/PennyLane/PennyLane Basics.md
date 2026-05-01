@@ -1,5 +1,5 @@
 #SoftDev #ML #Python 
-**[[PennyLane]]** treats quantum circuits the way PyTorch treats neural networks: as differentiable functions you can optimize with gradient descent. If you've used PyTorch or JAX, [[PennyLane]] will feel familiar. If you haven't, learn those basics first - [[PennyLane]] makes most sense as a quantum extension of classical autodiff.
+**[[PennyLane]]** treats quantum circuits the way PyTorch treats neural networks: as differentiable functions you can optimize with gradient descent. If you've used PyTorch or JAX, [[PennyLane]] will feel familiar. If you haven't, learn those basics $1st$ - [[PennyLane]] makes most sense as a quantum extension of classical autodiff.
 
 **`qml.device`** - where the circuit runs (simulator or hardware):
 ```python

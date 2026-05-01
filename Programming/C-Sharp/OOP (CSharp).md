@@ -183,7 +183,7 @@ public int Age
     set => _age = value > 0 ? value : 0;
 }
 ```
-**Static Constructors used to init **static data**. Runs **once** before the first object or static member is accessed.  
+**Static Constructors used to init **static data**. Runs **once** before the $1st$ object or static member is accessed.  
 ```csharp
 class App
 {

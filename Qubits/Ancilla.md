@@ -1,5 +1,5 @@
 #Math #Q-Sharp 
-**Ancilla qubit** (from Latin *helper/servant*) is auxiliary qubit allocated to assist computation without being part of the primary I/O register. Carry intermediate results, enable reversible computation, & facilitate phase kickback.
+**Ancilla qubit** (from Latin *helper/servant*) is auxiliary qubit allocated to assist computation without being part of the primary I/O register. Carry intermediate results, enable reversible computation, & facilitate [[Phase kickback]].
 
 Quantum gates must be **reversible** (unitary). Classical [[Logic]] gates such as $AND, OR$ produce irreversible mappings - multiple inputs map to the same output, losing info. To implement $f(x)$ as unitary, extra register is introduced:
 $$U_f : |x\rangle|a\rangle \mapsto |x\rangle|a \oplus f(x)\rangle$$
@@ -7,7 +7,7 @@ Input $|x\rangle$ is preserved; $f(x)$ is $XOR-d$ into the ancilla $|a\rangle$. 
 
 **Output ancilla**: initialized to $|0\rangle$, receives $f(x)$ after the [[Oracle]]. Used in marking oracles - the ancilla becomes $|1\rangle$ for solution states.
 
-**Phase kickback ancilla**: initialized to $|{-}\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$. When $U_f$ is applied, phase $(-1)^{f(x)}$ is kicked back to the input register; the ancilla returns unchanged. Used in all phase oracles ([[Oracle]]).
+**[[Phase kickback]] ancilla**: initialized to $|{-}\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$. When $U_f$ is applied, phase $(-1)^{f(x)}$ is kicked back to the input register; the ancilla returns unchanged. Used in all phase oracles ([[Oracle]]).
 
 **Borrowed ancilla**: qubit temporarily "borrowed" from another part of the circuit, used during computation, then returned to its original state. Does not need to be $|0\rangle$ initially - computation must uncompute correctly regardless of borrowed state.
 
@@ -36,4 +36,4 @@ Each ancilla is physical qubit on real hardware - scarce resource. [[Oracle]] co
 ### Sources
 - [Quantum memory management (use & borrow)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/quantummemorymanagement)
 - [Within-apply pattern (conjugations)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/conjugations)
-- [Understanding quantum computing](https://learn.microsoft.com/en-us/azure/quantum/overview-understanding-quantum-computing)
+- [Understanding quantum computing](https://learn.microsoft.com/en-us/azure/quantum/overview-understanding-quantum-computing

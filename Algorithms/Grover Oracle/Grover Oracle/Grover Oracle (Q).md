@@ -1,5 +1,5 @@
 #Q-Sharp #Algorithm
-[[Oracle]] implementation in Q# for [[Grover]]'s search. In Q#, you typically write the **marking [[Oracle]]** & convert it to phase [[Oracle]] via phase kickback.
+[[Oracle]] implementation in Q# for [[Grover]]'s search. In Q#, you typically write the **marking [[Oracle]]** & convert it to phase [[Oracle]] via [[Phase kickback]].
 
 **Marking [[Oracle]] signature**
 ```csharp
@@ -9,7 +9,7 @@ operation MarkingOracle(register : Qubit[], // n-qubit input encoding search spa
 ```
 `is Adj + Ctl` is mandatory - [[Grover]]'s diffusion uses `Adjoint` internally & [[QPE]] uses [[Controlled op]]
 
-**Converting marking $→$ phase [[Oracle]]**. Phase [[Oracle]] applies $(-1)^{f(x)}$ to $|x\rangle$ via phase kickback from target in $|{-}\rangle$:
+**Converting marking $→$ phase [[Oracle]]**. Phase [[Oracle]] applies $(-1)^{f(x)}$ to $|x\rangle$ via [[Phase kickback]] from target in $|{-}\rangle$:
 ```csharp
 operation ApplyMarkingAsPhase(markingOracle : (Qubit[], Qubit) => Unit is Adj,
     register : Qubit[]) : Unit is Adj {
@@ -103,4 +103,4 @@ operation MarkClause(
 ## Sources
 - [Grover's search tutorial - oracle construction](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)
 - [Within-apply pattern (conjugations)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/conjugations)
-- [GitHub: Grover oracle samples](https://github.com/microsoft/qsharp/tree/main/samples/algorithms)
+- [GitHub: Grover oracle samples](https://github.com/microsoft/qsharp/tree/main/samples/algorithms

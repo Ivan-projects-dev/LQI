@@ -19,7 +19,7 @@ Controlled SWAP([ancilla], (q0, q1));
 H(ancilla);
 // P(ancilla = 0) = (1 + |⟨ψ|φ⟩|²) / 2
 ```
-This is used in quantum ML (comparing quantum feature vectors) and quantum fingerprinting.
+This is used in quantum ML (comparing quantum feature vectors) & quantum fingerprinting.
 
 SWAP is **max entangling** for appropriate inputs. Starting from product state:
 $$SWAP \cdot (H \otimes I)|00\rangle = SWAP \cdot |{+}0\rangle = \frac{|00\rangle + |01\rangle}{\sqrt{2}}$$

@@ -95,7 +95,7 @@ Used when bit strings need alignment to a fixed width.
 Flattened([[1, 2], [3, 4], [5]]); // [1, 2, 3, 4, 5]
 ```
 
-**`IndexOf(pred, arr)` - find first matching index**. Returns index of first element satisfying predicate, or `-1`:
+**`IndexOf(pred, arr)` - find $1st$ matching index**. Returns index of $1st$ element satisfying predicate, or `-1`:
 ```csharp
 IndexOf(x -> x == 3, [1, 2, 3, 4]); // 2
 ```

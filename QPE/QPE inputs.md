@@ -33,7 +33,7 @@ For large powers, prefer repeated squaring over calling `U` $2^j$ times naively 
 control: |0> ──H──●──H──M
 eigenstate: |ψ> ──U──────
 ```
-$+1$ eigenvalue $→$ $H|0\rangle$ unaffected $→$ measure $0$. $-1$ eigenvalue $→$ phase kickback turns $|{+}\rangle$ into $|{-}\rangle$ $→$ measure $1$.
+$+1$ eigenvalue $→$ $H|0\rangle$ unaffected $→$ measure $0$. $-1$ eigenvalue $→$ [[Phase kickback]] turns $|{+}\rangle$ into $|{-}\rangle$ $→$ measure $1$.
 
 **$2$-bit PE** – distinguishes eigenvalues $+1, i, -1, -i$ (phases $0, 1/4, 1/2, 3/4$):
 - Run single-bit PE first: $+1$ & $i$ both measure $0$; $-1$ & $-i$ both measure $1$.

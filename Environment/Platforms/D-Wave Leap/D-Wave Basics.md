@@ -14,4 +14,4 @@ Create free account at `cloud.dwavesys.com`. You get small free-time allocation 
 - [QUBO problem formulation](https://docs.ocean.dwavesys.com/en/stable/concepts/samplers.html)
 - [Leap Hybrid Solvers](https://docs.ocean.dwavesys.com/en/stable/docs_hybrid/reference/samplers.html)
 - [D-Wave problem formulation guide](https://docs.dwavesys.com/docs/latest/c_gs_workflow.html)
-- [Max-Cut tutorial](https://docs.dwavesys.com/docs/latest/handbook_maxcut.html)
+- [Max-Cut tutorial](https://docs.dwavesys.com/docs/latest/handbook_maxcut.html

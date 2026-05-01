@@ -7,23 +7,23 @@ Given $f:{0,1}→{0,1}$ as an [[Oracle]], that is we can evaluate it for an in
 ![No descrovided for this image](https://gitlab.com/qworld/qeducation/qbook101/raw/main/qbook101/images/ch4/deutsch.png)
 We construct a $2$ qubit circuit.
 - Set the $2nd$ qubit to state $|−⟩$ by applying $X$ and $H$ gates.
-- Apply $H$ to first qubit.
+- Apply $H$ to $1st$ qubit.
 - Apply $U_f$.
-- Apply $H$ to first qubit.
-- Measure the first qubit. If it is $0$ then $f$ is const. If it is $1$, then $f$ is balanced.
+- Apply $H$ to $1st$ qubit.
+- Measure the $1st$ qubit. If it is $0$ then $f$ is const. If it is $1$, then $f$ is balanced.
 ![No descr has been provided for this image](https://gitlab.com/qworld/qeducation/qbook101/raw/main/qbook101/images/ch4/deutsch_2.png)
 We start with the init state $|ψ0⟩=|0⟩|0⟩$. Next we apply an $X$ gate to the $2nd$ qubit & obtain the state $|ψ1⟩=|0⟩|1⟩$.
-After applying $H$ to both [[Qubits]], the first qubit is in the equal superposition state & the $2nd$ qubit is now in state $|−⟩$.
+After applying $H$ to both [[Qubits]], the $1st$ qubit is in the equal superposition state & the $2nd$ qubit is now in state $|−⟩$.
 $|ψ2⟩=(1√2|0⟩+1√2|1⟩)|−⟩=1√2|0⟩|−⟩+1√2|1⟩|−⟩$
 
 Next we apply $U_f$ to $|ψ2⟩$ and obtain $|ψ3⟩$
 $$|ψ3⟩=Uf(1√2|0⟩|−⟩+1√2|1⟩|−⟩)=1√2Uf|0⟩|−⟩+1√2Uf|1⟩|−⟩$$
 Linearity of the operator $= 1√2(−1)f(0)|0⟩|−⟩+1√2(−1)f(1)|1⟩|−⟩$
-By phase kickback $=(1√2(−1)f(0)|0⟩+1√2(−1)f(1)|1⟩)|−⟩$
+By [[Phase kickback]] $=(1√2(−1)f(0)|0⟩+1√2(−1)f(1)|1⟩)|−⟩$
 
-Let's focus on the first qubit. Now we will move on to [[Vector]] notation as the analysis will be easier. We can express $|ψ3⟩$ using the following [[Vector]]: $|ψ3,0⟩=1√2((−1)f(0)(−1)f(1))$
+Let's focus on the $1st$ qubit. Now we will move on to [[Vector]] notation as the analysis will be easier. We can express $|ψ3⟩$ using the following [[Vector]]: $|ψ3,0⟩=1√2((−1)f(0)(−1)f(1))$
 
-Next, we apply $H$ gate to first qubit & obtain the following state [[Vector]]:
+Next, we apply $H$ gate to $1st$ qubit & obtain the following state [[Vector]]:
 $$ |ψ4,0⟩=1√2⎛⎜⎝1√21√21√2−1√2⎞⎟⎠((−1)f(0)(−1)f(1)) =12((−1)f(0)+(−1)f(1)(−1)f(0)−(−1)f(1)) {} {}$$
 
 Now let's consider the $2$ cases.

@@ -59,4 +59,4 @@ Cost of $n$-controlled-$U$: $O(n)$ [[Toffoli]] gates using borrowed [[Ancilla|an
 ### Sources
 - [Std.Intrinsic API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)
 - [Multi-qubit systems kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
-- [Functor  (Adj/Ctl variants)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/functorapplication)
+- [Functor  (Adj/Ctl variants)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/functorapplication

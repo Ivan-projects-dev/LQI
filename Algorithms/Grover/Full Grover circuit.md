@@ -10,7 +10,7 @@ Complete structure of [[Grover]] algorithm from qubit allocation to measurement.
 Apply $H^{\otimes n}$ to data [[Qubits]] $→$ uniform superposition. Prepare [[Ancilla]] in $|{-}\rangle$ via $X$ then $H$:
 $$|\psi_1\rangle = \frac{1}{\sqrt{N}}\sum_{x=0}^{N-1}|x\rangle \otimes |{-}\rangle$$
 2. **[[Grover]] iteration** (repeat $k^*$ times):
-a. **Phase [[Oracle]]** $U_f$: marks solution state(s) with phase $-1$ via phase kickback from [[Ancilla]] $|{-}\rangle$. [[Oracle]] is problem-specific (SAT [[Oracle]], Graph coloring [[Oracle]], Bounded knapsack [[Oracle]]).
+a. **Phase [[Oracle]]** $U_f$: marks solution state(s) with phase $-1$ via [[Phase kickback]] from [[Ancilla]] $|{-}\rangle$. [[Oracle]] is problem-specific (SAT [[Oracle]], Graph coloring [[Oracle]], Bounded knapsack [[Oracle]]).
 b. **[[Diffusion operator]]** $D = H^{\otimes n}(2|0\rangle\langle 0| - I)H^{\otimes n}$: reflects amplitudes about the mean. Each full iteration $G = D \cdot U_f$ rotates the state by $2\theta$ toward the solution(s) (see [[Diffusion operator]].
 
 3. **Optimal stop after $k^*$ iterations**:

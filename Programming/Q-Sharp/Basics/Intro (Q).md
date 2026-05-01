@@ -25,7 +25,7 @@ namespace Superposition {
     }
 }
 ```
-Based on the comments (`//`), the Q# program first allocates a qubit, applies operation to put the qubit in superposition, measures the qubit state, resets the qubit, & returns the result.
+Based on the comments (`//`), the Q# program $1st$ allocates a qubit, applies operation to put the qubit in superposition, measures the qubit state, resets the qubit, & returns the result.
 
 Q# programs can optionally start with a user-defined namespace, such as:
 ```c#
@@ -148,4 +148,4 @@ Reset(q);
 - [Q# language overview](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview)
 - [QDK overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview)
 - [Q# language specification](https://learn.microsoft.com/en-us/azure/quantum/user-guide/)
-- [GitHub: microsoft/qsharp](https://github.com/microsoft/qsharp)
+- [GitHub: microsoft/qsharp](https://github.com/microsoft/qsharp

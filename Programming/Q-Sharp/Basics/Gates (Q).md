@@ -66,4 +66,4 @@ ApplyToEachC(Controlled X([c], _), register);
 ### Sources
 - [Std.Intrinsic API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)
 - [Single-qubit gates (Q# Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
-- [Functor application (Adj/Ctl)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/functorapplication)
+- [Functor application (Adj/Ctl)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/functorapplication

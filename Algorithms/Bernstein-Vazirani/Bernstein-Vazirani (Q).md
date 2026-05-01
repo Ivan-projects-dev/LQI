@@ -5,7 +5,7 @@
 
 Implemented as CNOTs from each input qubit $i$ to the [[Ancilla]], for every bit $s_i = 1$.
 
-Phase kickback from $|-\rangle$ imprints $(-1)^{s \cdot x}$ on $|x\rangle$. State after the [[Oracle]] is $H^{\otimes n}|s\rangle$. $2nd$ [[Hadamard]] layer yields $|s\rangle$ deterministically - $1$ shot recovers all $n$ bits of $s$.
+[[Phase kickback]] from $|-\rangle$ imprints $(-1)^{s \cdot x}$ on $|x\rangle$. State after the [[Oracle]] is $H^{\otimes n}|s\rangle$. $2nd$ [[Hadamard]] layer yields $|s\rangle$ deterministically - $1$ shot recovers all $n$ bits of $s$.
 ```csharp
 import Std.Arrays.*;
 import Std.Convert.*;

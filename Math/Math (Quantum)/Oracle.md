@@ -13,7 +13,7 @@ Assume that $|y⟩=|−⟩=1√2(|0⟩−|1⟩)$ and investigate the effect of
 $$U_f|x⟩|−⟩=U_f|x⟩1√2(|0⟩−|1⟩)=1√2(U_f|x⟩|0⟩−U_f|x⟩|1⟩)=1√2(|x⟩|f(x)⊕0⟩−|x⟩|f(x)⊕1⟩)=|x⟩1√2(|f(x)⟩−|f(x)⊕1⟩)=|x⟩(−1)f(x)1√2(|0⟩−|1⟩)=(−1)f(x)|x⟩|−⟩$$
 We have the following transformation: $|x⟩|−⟩Uf−→(−1)f(x)|x⟩|−⟩$
 
-When $f(x)=1$, we see that a phase of $-1$ is kicked back to the front of the first register. Hence by preparing the output register in state $|−⟩$ and applying $U_f$, we obtain the **sign flip** effect.
+When $f(x)=1$, we see that a phase of $-1$ is kicked back to the front of the $1st$ register. Hence by preparing the output register in state $|−⟩$ and applying $U_f$, we obtain the **sign flip** effect.
 
 Note that even if we don't know anything about $f$ (that's why it is called blackbox), we are able to flip the sign of the amplitude of the marked element by making query to $f$ by setting output qubit to $|−⟩$
 

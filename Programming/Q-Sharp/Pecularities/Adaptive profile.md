@@ -94,4 +94,4 @@ Classical `Bool` conditions $→$ resolved at compile time or pre-circuit classi
 - [Mid-circuit measurement & feed-forward](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-overview)
 - [@Config attribute](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/programstructure/attributes)
 - [Iterative QPE kata](https://quantum.microsoft.com/en-us/tools/quantum-katas)
-- [GitHub: iterative QPE sample in Q#](https://github.com/microsoft/qsharp/tree/main/samples/algorithms/iterative-phase-estimation)
+- [GitHub: iterative QPE sample in Q#](https://github.com/microsoft/qsharp/tree/main/samples/algorithms/iterative-phase-estimation

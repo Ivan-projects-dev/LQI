@@ -3,7 +3,7 @@
 
 $n$ input [[Qubits]] start in $|0\rangle^{\otimes n}$, $1$ [[Ancilla]] in $|1\rangle$:
 $$|0\rangle^n|1\rangle \xrightarrow{H^{\otimes n+1}} |+\rangle^n|-\rangle \xrightarrow{U_f} (\text{phase-kicked}) \xrightarrow{H^{\otimes n}} \text{measure inputs}$$
-Phase kickback from $|-\rangle$ encodes $(-1)^{f(x)}$ into amplitudes. After the $2nd$ $H$ layer, all amplitude is at $|0\rangle^n$ iff $f$ is constant; $0$ amplitude at $|0\rangle^n$ iff balanced.
+[[Phase kickback]] from $|-\rangle$ encodes $(-1)^{f(x)}$ into amplitudes. After the $2nd$ $H$ layer, all amplitude is at $|0\rangle^n$ iff $f$ is constant; $0$ amplitude at $|0\rangle^n$ iff balanced.
 
 **Measurement rule**: all-$0s$ $→$ constant; any non-$0$ bit $→$ balanced.
 ```csharp

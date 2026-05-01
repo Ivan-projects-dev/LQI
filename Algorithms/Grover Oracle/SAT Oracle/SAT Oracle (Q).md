@@ -84,7 +84,7 @@ within {
 ``` 
   to detect the all-false pattern without permanently altering the register. `within/apply` conjugation auto-generates the adjoint for uncomputation.
 - Outer `within` in `MarkSAT` computes all clause violation flags & automatically uncomputes them after the `apply` block - no manual `Adjoint` calls needed.
-- `PhaseSAT` wraps the marking [[Oracle]] via phase kickback: target prepared as $|{-}\rangle$ turns a marking flip into a $(-1)$ phase on $|x\rangle$.
+- `PhaseSAT` wraps the marking [[Oracle]] via [[Phase kickback]]: target prepared as $|{-}\rangle$ turns a marking flip into a $(-1)$ phase on $|x\rangle$.
 - `ReflectAboutUniform` is Q#'s built-in [[Diffusion operator]] from `Std. `[[Grover]] (or `Std.Canon` depending on version).
 
 **Extension to general CNF:** Replace the hard-coded clause list with an array of `(Int[], Int[])` tuples (positive vars, negative vars) & loop over them:

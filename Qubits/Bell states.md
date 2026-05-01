@@ -4,7 +4,7 @@ $$|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$$
 $$|\Phi^-\rangle = \frac{1}{\sqrt{2}}(|00\rangle - |11\rangle)$$
 $$|\Psi^+\rangle = \frac{1}{\sqrt{2}}(|01\rangle + |10\rangle)$$
 $$|\Psi^-\rangle = \frac{1}{\sqrt{2}}(|01\rangle - |10\rangle)$$
-All $4$ Bell states start from $|00\rangle$ via $H$ on the first qubit then [[CNOT]]:
+All $4$ Bell states start from $|00\rangle$ via $H$ on the $1st$ qubit then [[CNOT]]:
 ```csharp
 operation BellPhi_Plus(q0 : Qubit, q1 : Qubit) : Unit is Adj {
     H(q0);
