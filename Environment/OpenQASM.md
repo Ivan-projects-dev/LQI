@@ -17,7 +17,7 @@ measure q -> c;
 - **Real-time classical compute** - inline classical arithmetic & bit manipulation
 - **Timing & pulse control** - `delay`, `stretch`, `box` for precise scheduling; `cal` blocks for pulse-level calibration
 - **Parameterized circuits** - I/O modifiers let circuits accept params at runtime (compile once, run many times)
-- **External function calls** - `extern` keyword for calling classical functions from within the circuit
+- **External function calls** - `extern` keyword for calling classical funcs from within the circuit
 - **Subroutines** -`def` keyword to define reusable gate & circuit fragments
 - **Improved type system** - `bit`, `int`, `uint`, `float`, `angle`, `duration`, `stretch`
 

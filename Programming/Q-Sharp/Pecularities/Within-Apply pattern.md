@@ -31,11 +31,7 @@ operation ApplyDiffusion(register : Qubit[]) : Unit is Adj + Ctl {
 
 Marking [[Oracle]] for $f(x) = 1$ iff $x = x_0$: compute into [[Ancilla]], flip target, uncompute:
 ```csharp
-operation MarkSolution(
-    register : Qubit[],
-    target : Qubit,
-    x0 : Int
-) : Unit is Adj + Ctl {
+operation MarkSolution(register : Qubit[], target : Qubit,  x0 : Int) : Unit is Adj + Ctl {
     within {
         // Flip qubits that are 0 in x0 (so all-|1⟩ = x0)
         ApplyPauliFromBitString(PauliX, false, IntAsBoolArray(x0, Length(register)), register);
@@ -64,7 +60,6 @@ These replace explicit `for` loops over qubit arrays & are idiomatic Q#.
 | `within { V } apply { O }` | Automatic     | Yes        | High     |
 
 Always prefer `within/apply` when `V` & its adjoint bracket core operation `O`.
-
 ### Sources
 - [Conjugations (within-apply) in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/conjugations)
 - [Q# oracle patterns (GitHub samples)](https://github.com/microsoft/qsharp/tree/main/samples)

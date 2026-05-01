@@ -1,7 +1,7 @@
 #Algorithm #Math 
-In $1992$ **David Deutsch** & **Richard Jozsa** created quantum algorithm that demonstrates, for the very first time, the potential of quantum computers to solve certain problems exponentially faster than classical computers.
+In $1992$ **David Deutsch** & **Richard Jozsa** created quantum algorithm that demonstrates, for the very $1st$ time, the potential of quantum computers to solve certain problems exponentially faster than classical computers.
 
-Given a bool func $f:{0,1}→{0,1}$, we say $f$ is **balanced** if $f(0)≠f(1)$ and **const** if $f(0)=f(1)$.
+Given bool func $f:{0,1}→{0,1}$, we say $f$ is **balanced** if $f(0)≠f(1)$ and **const** if $f(0)=f(1)$.
 
 Given $f:{0,1}→{0,1}$ as an [[Oracle]], that is we can evaluate it for an input by making queries but we can't look inside, the problem is to decide whether f is const or balanced.
 ![No descrovided for this image](https://gitlab.com/qworld/qeducation/qbook101/raw/main/qbook101/images/ch4/deutsch.png)

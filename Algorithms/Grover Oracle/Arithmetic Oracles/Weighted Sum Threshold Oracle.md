@@ -1,5 +1,5 @@
 #Algorithm #Q-Sharp 
-Flip target iff $\sum_i w_i x_i \geq T$ where $x_i$ are qubit values & $w_i$ are classical int weights. Used in [[Bounded knapsack oracle]] & portfolio optimization: [[ccccccccccccccccccccc]]
+Flip target iff $\sum_i w_i x_i \geq T$ where $x_i$ are qubit values & $w_i$ are classical int weights. Used in [[Bounded knapsack oracle]] & portfolio optimization:
 ```csharp
 import Std.Arrays.*;
 import Std.Arithmetic.*;
@@ -15,7 +15,7 @@ operation MarkWeightedSumGeq(register : Qubit[], target : Qubit, weights : Int[]
             Controlled AddConstant([q], (weights[i], sumReg));
         }
     } apply {
-        MarkGreaterThan_Full(sumReg, target, threshold - 1);  // sum > threshold-1  ⟺  sum >= threshold
+        MarkGreaterThan_Full(sumReg, target, threshold - 1); // sum > threshold-1  <-> sum >= threshold
     }
 }
 ```

@@ -1,13 +1,13 @@
 #SoftDev #Q-Sharp #ML
 When you compile & run quantum program, the QDK creates instance of the quantum simulator & passes the Q# code to it. Simulator uses the Q# code to create [[Qubits]] (simulations of quantum particles) & apply transformations to modify their state. Results of the quantum operations in the simulator are then returned to the program. Isolating the Q# code in the simulator ensures that the algorithms can run correctly on quantum computers.
 
-When you run quantum program in Azure Quantum, you create & run **job**. To submit job to the [[Azure Quantum Providers]], you need Azure account & quantum workspace. Once you submit your job, Azure Quantum manages the job lifecycle, including job scheduling, exec, & monitoring. You can track the status of your job & view the results in the Azure Quantum portal.
+When you run quantum program in Azure Quantum, you create & run **job**. To submit job to the [[Azure Providers]], you need Azure account & quantum workspace. Once you submit your job, Azure Quantum manages the job lifecycle, including job scheduling, exec, & monitoring. You can track the status of your job & view the results in the Azure Quantum portal.
 
 **Quantum dev Kit (QDK)** - open-source SDK supporting Q#, Qiskit, Cirq, & [[OpenQASM]]. Provides language extensions for VS Code, Jupiter notebook integration, domain libraries for chemistry & ML, & built-in sparse-state simulator. QDK compiles programs to **QIR (Quantum Intermediate Representation)** - common LLVM-based IR that lets any supported lang target any provider backend.
 
-**Azure [[QRE]] ([[QRE]])** - estimates num of physical & logical [[Qubits]], runtime, & T-factory counts required to run an algorithm at fault-tolerant scale. Supports configurable qubit parameter sets (superconducting, trapped-ion), $2$ built-in QEC schemes ([[Surface Code]], floquet code), & custom error correction models. Computes space-time tradeoff frontiers to balance qubit count vs. runtime. Completely **free** - no Azure account required; runs in VS Code or at quantum.microsoft.com.
+**Azure [[QRE]]** - estimates num of physical & logical [[Qubits]], runtime, & T-factory counts required to run an algorithm at fault-tolerant scale. Supports configurable qubit parameter sets (superconducting, trapped-ion), $2$ built-in QEC schemes ([[Surface Code]], floquet code), & custom error correction models. Computes space-time tradeoff frontiers to balance qubit count vs. runtime. Completely **free** - no Azure account required; runs in VS Code or at quantum.microsoft.com.
 
-**Copilot in Microsoft Quantum** - AI assistant ($GPT-4$ powered) at quantum.microsoft.com. Lets you write, explain, & execute Q# directly in the browser against an in-memory simulator or the free [[Quantinuum]] emulator. Useful for learning via [[Quantum Katas]] & exploring sample code without setting up a local environment.
+**Copilot in Microsoft Quantum** - AI assistant ($GPT-4$ powered) at quantum.microsoft.com. Lets you write, explain, & execute Q# directly in the browser against an in-memory simulator or the free [[Quantinuum]] emulator. Useful for learning via [[Quantum Katas]] & exploring sample code without setting up a local env.
 
 **Simulators** - beyond provider-offered simulators, the QDK ships local **sparse-state simulator** (handles large qubit counts efficiently when state is sparse) & a **noise model simulator** for prototyping error-aware circuits. Free **[[Quantinuum]] H1 emulator** is accessible via quantum.microsoft.com without Azure subscription.
 
@@ -26,7 +26,7 @@ When you run quantum program in Azure Quantum, you create & run **job**. To sub
 
 **[[Adaptive profile]] unlocks mid-circuit measurement.** If your algorithm requires conditioning future gates on measurement outcomes (teleportation, iterative [[QPE]], magic state distillation), you must annotate the operation with `@Config(AdaptiveRI)`. Code that works on `Unrestricted` (simulation) will fail to compile for `Base` hardware targets without this.
 
-**Azure credits have 3 independent currencies.** AQC ([[IonQ]]/[[Rigetti]]), AQT ([[IonQ]] native), HQT ([[Quantinuum]]) do not convert between each other. Exhausting HQT does not affect AQC balance.
+**[[Azure Credits]] have 3 independent currencies.** AQC ([[IonQ]]/[[Rigetti]]), AQT ([[IonQ]] native), HQT ([[Quantinuum]]) do not convert between each other. Exhausting HQT does not affect AQC balance.
 ## Sources
 - [What is Azure Quantum?](https://learn.microsoft.com/en-us/azure/quantum/overview-azure-quantum)
 - [QDK overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview)

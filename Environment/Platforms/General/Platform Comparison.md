@@ -27,7 +27,7 @@
 | [[PennyLane]]     | Via connected backends | Unlimited (`default.qubit`)                      |
 | [[qBraid]]        | Limited                | Unlimited (local devices)                        |
 **Gate-model** (IBM, Azure, Braket, [[PennyLane]]): prepare [[Qubits]] $→$ apply gates $→$ measure $→$ analyze distribution.
-**[[Quantum annealing]]** ([[D-Wave]]): define energy function ([[QUBO]]/Ising) $→$ annealer finds min energy configuration.
+**[[Quantum annealing]]** ([[D-Wave]]): define energy func ([[QUBO]]/Ising) $→$ annealer finds min energy configuration.
 **Analog simulation** (QuEra Aquila on Braket): define Hamiltonian via atom positions & laser pulses $→$ observe evolved state.
 ### Sources
 - [IBM Quantum Platform](https://quantum.cloud.ibm.com)

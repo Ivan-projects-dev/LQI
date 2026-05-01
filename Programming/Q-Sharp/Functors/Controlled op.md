@@ -1,7 +1,8 @@
 #Math #Q-Sharp 
 `Controlled op(controls, target)` applies `op` to `target` only when all [[Qubits]] in `controls` are $|1\rangle$.
-Controlled-H: apply $H$ to $q$ only if ctrl $== |1⟩$ `Controlled H([ctrl], q);`
-Multi-controlled: apply $X$ to $q$ only if all of $[c0, c1, c2] == |1⟩$ `Controlled X([c0, c1, c2], q);`
+
+**Controlled-$H$**: apply $H$ to $q$ only if ctrl $== |1⟩$ `Controlled H([ctrl], q);`
+**Multi-controlled**: apply $X$ to $q$ only if all of $[c0, c1, c2] == |1⟩$ `Controlled X([c0, c1, c2], q);`
 
 Operation must declare `is Ctl` to support `Controlled`. Signature for full support of both:
 `operation MyOp(q : Qubit) : Unit is Adj + Ctl { ... }`
@@ -9,7 +10,7 @@ Operation must declare `is Ctl` to support `Controlled`. Signature for full supp
 `Controlled` is how [[QPE]] implements $C$-$U^{2^k}$: each control qubit applies controlled version of the unitary to the eigenstate register.
 
 [[Functors]] compose: `Controlled Adjoint` or `Adjoint Controlled op` (both valid, equivalent for unitaries).
-`Controlled Adjoint T([ctrl], q);` Controlled-Adjoint of T gate
+`Controlled Adjoint T([ctrl], q);` Controlled-Adjoint of [[T gate]]
 
 **`ControlledOnInt`** - applies operation controlled on a specific int state of a qubit register (not just all-$|1\rangle$):
 ```csharp
@@ -36,13 +37,12 @@ ControlledOnBitString([true, false, true], X)(register, target);
 operation MyRotation(angle : Double, q : Qubit) : Unit is Adj + Ctl {
     body { Rz(angle, q); }
     adjoint auto;
-    controlled auto;            // auto wraps Rz → Controlled Rz
-    controlled adjoint auto;    // auto wraps Adjoint Rz → Controlled Adjoint Rz
+    controlled auto; // auto wraps Rz → Controlled Rz
+    controlled adjoint auto; // auto wraps Adjoint Rz → Controlled Adjoint Rz
 }
 ```
 
-When an operation is declared `is Adj + Ctl`, Q# requires all $4$ specializations to be satisfiable: `body`, `adjoint`, `controlled`, `controlled adjoint`. Using `auto` for all is the most common pattern; manual bodies are only needed for performance-critical decompositions.
-
+When operation is declared `is Adj + Ctl`, Q# requires all $4$ specializations to be satisfiable: `body`, `adjoint`, `controlled`, `controlled adjoint`. Using `auto` for all is the most common pattern; manual bodies are only needed for performance-critical decompositions.
 ### Sources
 - [Functor application in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/functorapplication)
 - [Controlled functor](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/operationsandfunctions)

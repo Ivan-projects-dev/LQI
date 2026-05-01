@@ -4,33 +4,32 @@
 **`qml.device`** - where the circuit runs (simulator or hardware):
 ```python
 import pennylane as qml
-dev = qml.device("default.qubit", wires=2)   # CPU simulator, 2 qubits
+dev = qml.device("default.qubit", wires=2) # CPU simulator, 2 qubits
 ```
 
 **`@qml.qnode`** - turns Python function into quantum circuit:
 ```python
 @qml.qnode(dev)
 def circuit(theta):
-    qml.RX(theta, wires=0)       # rotation gate with tunable angle theta
+    qml.RX(theta, wires=0) # rotation gate with tunable angle theta
     qml.CNOT(wires=[0, 1])
-    return qml.expval(qml.PauliZ(0))   # expected value of Pauli Z on qubit 0
+    return qml.expval(qml.PauliZ(0)) # expected value of Pauli Z on qubit 0
 ```
 
 Call it like normal func:
 ```python
 import numpy as np
-result = circuit(np.pi / 4)    # returns a float: the expectation value
-print(result)                  # e.g., 0.707
+result = circuit(np.pi / 4) # returns a float: the expectation value
+print(result) # e.g., 0.707
 ```
 
 You can compute the [[Derivative]] of the circuit output with respect to any parameter:
 ```python
 grad_fn = qml.grad(circuit)
-gradient = grad_fn(np.pi / 4)   # d(circuit)/d(theta) at theta = pi/4
+gradient = grad_fn(np.pi / 4) # d(circuit)/d(theta) at theta = pi/4
 print(gradient)
 ```
 This uses the **parameter-shift rule** - it runs the circuit twice (at `theta + pi/2` & `theta - pi/2`) & computes the exact gradient from the difference. It works on real quantum hardware, not just simulators.
-
 ### Min Variational Algorithm
 ```python
 import pennylane as qml
@@ -54,9 +53,7 @@ for step in range(20):
 # After convergence: theta ≈ pi, <Z> ≈ -1 (qubit pointing south = |1⟩)
 ```
 This is toy version of [[VQE]]: find the circuit parameters that minimize energy function.
-
 ### Running the Same Circuit on Different Backends
-
 Change only the `device` line - the circuit stays the same:
 ```python
 dev = qml.device("default.qubit", wires=2) # Local CPU - free, instant

@@ -1,0 +1,2 @@
+#Cybersecurity #Cryptography 
+**Code-Based Cryptography (McEliece)** - based on the hardness of decoding general linear codes. Known since $1978$, but large key sizes made it impractical. Now being reconsidered as quantum-safe alternative.

@@ -7,7 +7,7 @@ When $f(x)=1$, the [[Ancilla]] flips from $|0⟩$ to $|1⟩$, "marking" the solu
 
 **Phase/sign-flip [[Oracle]]**: no [[Ancilla]] output needed in final form. Applies conditional phase of $-1$ to marked states: $$U_f^{\text{phase}} : |x⟩ \mapsto (-1)^{f(x)}|x⟩$$Marked states gain $-1$ global phase relative to unmarked states, which [[Grover]] exploits via amplitude amplification.
 
-**Converting marking → phase [[Oracle]]** via phase kickback:
+**Converting marking $→$ phase [[Oracle]]** via phase kickback:
 Set the [[Ancilla]] to $|{-}⟩ = \frac{1}{\sqrt{2}}(|0⟩ - |1⟩)$ before applying $U_f^{\text{mark}}$:
 $$U_f^{\text{mark}}|x⟩|{-}⟩ = (-1)^{f(x)}|x⟩|{-}⟩$$
 [[Ancilla]] returns to $|{-}⟩$ unchanged; the phase $(-1)^{f(x)}$ is kicked back to $|x⟩$. This is exactly $U_f^{\text{phase}}$

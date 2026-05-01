@@ -1,19 +1,19 @@
 #Math #Algorithm 
 **Error mitigation** is a collection of classical post-processing & circuit-modification techs to reduce the effect of noise in **NISQ (Noisy Intermediate-Scale Quantum)** computations - without the qubit overhead of full [[FTQC|fault-tolerant]] error correction. It does not eliminate errors but extrapolates or cancels their effect on expectation values.
 
-Key distinction: error *correction* uses redundancy to restore the [[Quantum state]] mid-circuit; error *mitigation* uses extra classical computation after many circuit runs to obtain a better estimate of the ideal result.
+Key distinction: **error correction** uses redundancy to restore the [[Quantum state]] mid-circuit; **error mitigation** uses extra classical computation after many circuit runs to obtain a better estimate of the ideal result.
 
-**Zero-Noise Extrapolation (ZNE)** - most widely used tech. Intentionally amplify noise by integer factors $\lambda = 1, 2, 3, \ldots$ (by gate folding or pulse stretching), measure expectation value $\langle O \rangle_\lambda$ at each noise level, then extrapolate back to $\lambda = 0$ ($0$-noise [[Limit]]) via polynomial or Richardson extrapolation.
+**Zero-Noise Extrapolation (ZNE)** - most widely used tech. Intentionally amplify noise by int factors $\lambda = 1, 2, 3, \ldots$ (by gate folding or pulse stretching), measure expectation value $\langle O \rangle_\lambda$ at each noise level, then extrapolate back to $\lambda = 0$ ($0$-noise [[Limit]]) via polynomial or Richardson extrapolation.
 
 **Gate folding**: replace gate $G$ with $G \cdot G^\dagger \cdot G$ to double circuit noise without changing the ideal unitary.
 
 **Limitation**: requires the noise to be smooth & well-behaved. Breaks down for highly structured errors or deep circuits.
 
-[[IonQ]] exposes native **error mitigation toggle** on [[Azure Quantum]] (affects pricing - on: ≈$97.50 min fee, off: ≈$12.42 min fee). See [[Azure Quantum Providers]].
+[[IonQ]] exposes native **error mitigation toggle** on [[Azure Quantum]] (affects pricing - on: ≈$97.50 min fee, off: ≈$12.42 min fee). See [[Azure Providers]].
 
 **Probabilistic Error Cancellation (PEC)** models the noise channel as a quasi-[[Probability distribution]] over ideal operations. Samples from corrective inverse operations to statistically cancel noise. Produces an unbiased estimator of the noise-free expectation value.
 
-**Cost**: exponential in circuit depth × error rate - overhead grows as $e^{2\gamma L}$ where $\gamma$ is the noise strength & $L$ is circuit length. Practical only for shallow circuits.
+**Cost**: exponential in circuit depth $×$ error rate - overhead grows as $e^{2\gamma L}$ where $\gamma$ is the noise strength & $L$ is circuit length. Practical only for shallow circuits.
 
 **Dynamical Decoupling (DD)** inserts sequences of carefully timed refocusing pulses (e.g., XY-4, CPMG sequences) into idle periods of [[Qubits]] to average out low-frequency noise (1/f noise, crosstalk). Does not require extra shots; works at the pulse level. Particularly effective for trapped-ion & superconducting platforms.
 

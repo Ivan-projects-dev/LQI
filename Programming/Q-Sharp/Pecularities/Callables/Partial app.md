@@ -70,7 +70,7 @@ let positives = Filtered(x -> x > 0, [-1, 2, -3, 4]); // [2, 4]
 // ForEach applies side-effecting func to each element (no return)
 ForEach(Message, ["a", "b", "c"]);
 ```
-Partial app composes well with [[Q-Sharp generics]] - `Mapped` & `Filtered` accept generic lambdas, so the `_` placeholder works across any `'T`.
+Partial app composes well with [[Generics (Q)]] - `Mapped` & `Filtered` accept generic lambdas, so the `_` placeholder works across any `'T`.
 ### Sources
 - [Partial application in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/functorapplication)
 - [Callable types](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/callabletypes)

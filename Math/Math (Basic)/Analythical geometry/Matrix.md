@@ -25,7 +25,7 @@ Otherwise: **singular**
 
 **Inverses are unique:**  
 $A^{-1}B = B A^{-1} = I$
-If $A = \begin{bmatrix}a & b \\c & d\end{bmatrix}$ & $\det A = ad - bc \ne 0$ → $A$ is invertible, and:  $A^(-1)$ $= \dfrac{1}{[[AD]] - bc} \begin{bmatrix} d & -b \\ -c & a \end{bmatrix}$
+If $A = \begin{bmatrix}a & b \\c & d\end{bmatrix}$ & $\det A = ad - bc \ne 0$ $→$ $A$ is invertible, and:  $A^(-1)$ $= \dfrac{1}{[[AD]] - bc} \begin{bmatrix} d & -b \\ -c & a \end{bmatrix}$
 $\Delta = ad - bc$ ⟷ **determinant**
 
 If **coefficient matrix** $A$ of a system $Ax = \vec{b}$ in $n$ vars is **invertible**, the system has a **unique solution**:  $x=$ $A^(-1)$ $\vec{b}$

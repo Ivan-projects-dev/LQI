@@ -70,7 +70,6 @@ operation PrepareGHZ(qs : Qubit[]) : Unit is Adj {
 ```
 
 **Entanglement verification**
-
 In simulation, use `DumpMachine()` after Bell preparation to confirm the off-diagonal structure. Alternatively, measure in the Bell basis - all $4$ results appear with equal probability iff the state is separable; pure **Bell state** always collapses to exactly $1$ outcome.
 ```csharp
 use (q0, q1) = (Qubit(), Qubit());
@@ -79,7 +78,6 @@ DumpMachine(); // shows: |00⟩: 0.707, |11⟩: 0.707
 let (r0, r1) = MeasureBellBasis(q0, q1);
 // r0 == Zero, r1 == Zero always for |Φ+⟩
 ```
-
 ### Sources
 - [Bell states & entanglement kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
 - [Quantum teleportation tutorial](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-qubit-level-program)

@@ -15,7 +15,7 @@ $[\vec{a}, \vec{b}, \vec{c}] < 0$ **is left-handed basis**
 
 **4 points on same plane** $\Leftrightarrow$ **vectors are coplanar** $\Leftrightarrow$ **parallelepiped** $= 0$
 $\vec{a} \cdot (\vec{b} \times \vec{c}) = \vec{b} \cdot (\vec{c} \times \vec{a}) = \vec{c} \cdot (\vec{a} \times \vec{b}) = -\vec{a} \cdot (\vec{c} \times \vec{b}) = -\vec{c} \cdot (\vec{b} \times \vec{a}) = -[\vec{b}, \vec{a}, \vec{c}]$  
-**Rotation keeps the sign, each swap changes the sign**
+**Rotation keeps the sign, each [[SWAP]] changes the sign**
 $(\vec{a} + \vec{b}) \times \vec{c} = \vec{a} \times \vec{c} + \vec{b} \times \vec{c}$
 $$\vec{a} \times \vec{b} = \begin{bmatrix} \vec{e_x} & \vec{e_y} & \vec{e_z} \\a_x & a_y & a_z \\b_x & b_y & b_z\end{bmatrix} = (\begin{bmatrix}a_y & a_z \\b_y & b_z\end{bmatrix}, - \begin{bmatrix}a_x & a_z \\b_x & b_z\end{bmatrix}, \begin{bmatrix}a_x & a_y \\b_x & b_y\end{bmatrix})$$
 $$(\vec{a}, \vec{b}, \vec{c}) = (a_x, a_y, a_z) \cdot (\vec{b} \times \vec{c}) = \begin{bmatrix} a_x & a_y & a_z \\b_x & b_y & b_z \\c_x & c_y & c_z\end{bmatrix}$$

@@ -28,5 +28,4 @@ operation BVEstimate() : Unit {
 | `tFactories`     | $0$               |
 | `runtime`        | microseconds      |
 | `codeDistance`   | $5-7$             |
-
 $0$ [[T-gates]] means $0$ T-factory overhead. BV is baseline test any near-term device can run.

@@ -26,7 +26,7 @@ ControlledOnBitString([true, false, true], X)(controls, target);
 ```
 Equivalent to flipping controls matching `0` bits, applying `Controlled X`, then flipping back. Replaces verbose manual `within { X(q); } apply { Controlled X(...) }` patterns.
 
-**`ControlledOnInt`** - controlled on integer value. Convenience wrapper over `ControlledOnBitString`:
+**`ControlledOnInt`** - controlled on int value. Convenience wrapper over `ControlledOnBitString`:
 ```csharp
 import Std.Canon.*;
 // Apply Rz to target iff register == 3
@@ -94,8 +94,8 @@ Factory funcs return operation values with full `Adj + Ctl` support; compiler in
 | `ControlledOnInt`       | `(Int, op)(ctrls, tgt)`              | Control on int         |
 | `ControlledOnBitString` | `(Bool[], op)(ctrls, tgt)`           | Control on bit pattern |
 | `CCA`                   | `op $→$ doubly`-[[Controlled op]]    | Double-control wrapper |
-| `ApplyCNOTChain`        | `Qubit[] → Unit`                     | [[CNOT]] ladder        |
-| `Delay`                 | `(op, arg) → () → Unit`              | Deferred execution     |
+| `ApplyCNOTChain`        | `Qubit[] $→$ Unit`                   | [[CNOT]] ladder        |
+| `Delay`                 | `(op, arg) $→$ () $→$ Unit`          | Deferred execution     |
 See [[Partial app]] for `_` syntax used with these combinators. See [[Within-Apply pattern]] for how `BoundCA` composes with auto-uncomputation.
 ### Sources
 - [Higher-order functions & operations](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/operationsandfunctions)

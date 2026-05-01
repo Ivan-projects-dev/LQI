@@ -26,5 +26,5 @@ Before [[CNOT]] operator, the sign of $|1⟩$ in the control qubit is positive
 
 After [[CNOT]]
 It is easy to see from the last expression, that the quantum states of the [[Qubits]] are separable (no correlation): $(1√2|0⟩−1√2|1⟩)C⊗(1√2|0⟩−1√2|1⟩)T$
-If we apply Hadamard to each qubit, both [[Qubits]] evolve to state $|1⟩$.
+If we apply [[Hadamard]] to each qubit, both [[Qubits]] evolve to state $|1⟩$.
 $1√2|0⟩−1√2|1⟩H−→|1⟩$. The final state is $|11⟩$.

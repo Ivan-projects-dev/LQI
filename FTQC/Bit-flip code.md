@@ -7,18 +7,17 @@ q[0]: |ψ⟩ ──●──●──
 q[1]: |0⟩ ──⊕──|──
 q[2]: |0⟩ ──|──⊕──
 ```
-Two CNOTs (control = q[0]): [[CNOT]](q[0], q[1]); [[CNOT]](q[0], q[2]).
+$2$ CNOTs (control = $q[0]$): [[CNOT]]($q[0], q[1]$); [[CNOT]]($q[0], q[2]$).
 
 **Parity measurement** (syndrome extraction): XOR pairs of [[Qubits]] without collapsing the logical state. Implemented by [[CNOT]]-ing each qubit into a fresh [[Ancilla]] & measuring the [[Ancilla]]:
 - $p_{01} = q_0\oplus q_1$ & $p_{12} = q_1\oplus q_2$
 
-| $p_{01}$ | $p_{12}$ | Error |
-|----------|----------|-------|
-| 0 | 0 | None |
-| 1 | 0 | X on q[0] |
-| 1 | 1 | X on q[1] |
-| 0 | 1 | X on q[2] |
-
+| $p_{01}$ | $p_{12}$ | Error         |
+| -------- | -------- | ------------- |
+| $0$      | $0$      | None          |
+| $1$      | $0$      | $X$ on $q[0]$ |
+| $1$      | $1$      | $X$ on $q[1]$ |
+| $0$      | $1$      | $X$ on $q[2]$ |
 [[Ancilla]] [[Qubits]] are reset after each syndrome extraction & reused.
 
 **Error correction**: apply $X$ to the flagged qubit. After correction, state returns to $|\bar\psi\rangle$.

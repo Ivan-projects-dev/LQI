@@ -1,4 +1,4 @@
-#ML #Python 
+#ML #Python #Algorithm #SoftDev 
 Python library for **quantum ML**, variational algorithms, & hybrid quantum-classical computing. Framework-agnostic: works as frontend for Qiskit, Cirq, [[Amazon Braket]], [[Strawberry Fields]] etc.
 ```python
 import pennylane as qml

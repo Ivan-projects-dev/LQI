@@ -5,7 +5,7 @@ Given classical func, $f(x): {0,1}^n -> {0,1 }$, where $n$ is the bit-size of 
 
 Power of [[Grover]] search lies in its ability to amplify the probability of finding the correct solution through **quantum interference**. It uses **quantum [[Oracle]]** to mark the desired item & then applies series of quantum operations to increase the amplitude of the marked state. This process, known as **amplitude amplification**, allows algorithm to find the target item with high probability after only $√N$ iterations. For large DBs, this quadratic Speedup can translate to significant time savings, making previously intractable search problems feasible.
 
-We are going to use $n$ [[Qubits]]. at start we apply Hadamard to each qubit, so we put our [[Quantum state]] into superposition. The amplitude of each basis state $|0⋯0⟩,…,|1⋯1⟩$ is set to $1√N$. After that we iterate the following algorithm for several times:
+We are going to use $n$ [[Qubits]]. at start we apply [[Hadamard]] to each qubit, so we put our [[Quantum state]] into superposition. The amplitude of each basis state $|0⋯0⟩,…,|1⋯1⟩$ is set to $1√N$. After that we iterate the following algorithm for several times:
 - Make query: apply query [[Oracle]] operator to [[Qubits]] - it flips the sign of the amplitude of the state that corresponds to the marked element.
 - Inversion: apply a diffusion [[Matrix]] - the amplitude of each state is reflected over the mean of all amplitudes.
 

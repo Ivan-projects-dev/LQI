@@ -7,7 +7,7 @@ Complete structure of [[Grover]] algorithm from qubit allocation to measurement.
 - Additional [[Ancilla]] [[Qubits]] may be required by the [[Oracle]]'s internal computation (uncomputed before next iteration).
 
 1. **Initialization**: $|\psi_0\rangle = |0\rangle^{\otimes n} \otimes |0\rangle_{\text{anc}}$
-Apply $H^{\otimes n}$ to data [[Qubits]] → uniform superposition. Prepare [[Ancilla]] in $|{-}\rangle$ via $X$ then $H$:
+Apply $H^{\otimes n}$ to data [[Qubits]] $→$ uniform superposition. Prepare [[Ancilla]] in $|{-}\rangle$ via $X$ then $H$:
 $$|\psi_1\rangle = \frac{1}{\sqrt{N}}\sum_{x=0}^{N-1}|x\rangle \otimes |{-}\rangle$$
 2. **[[Grover]] iteration** (repeat $k^*$ times):
 a. **Phase [[Oracle]]** $U_f$: marks solution state(s) with phase $-1$ via phase kickback from [[Ancilla]] $|{-}\rangle$. [[Oracle]] is problem-specific (SAT [[Oracle]], Graph coloring [[Oracle]], Bounded knapsack [[Oracle]]).
@@ -23,12 +23,11 @@ For unknown $M$: use [[Quantum counting]] or exponential search (see [[Grover so
 $$|\psi_{\text{out}}\rangle = G^{k^*} \cdot (H^{\otimes n} \otimes XH) \cdot |0\rangle^{\otimes n+1}$$
 $$G = \left(H^{\otimes n}(2|0\rangle\langle 0|-I)H^{\otimes n}\right) \cdot U_f$$
 
-| Resource            | Cost                                 |
-| ------------------- | ------------------------------------ |
-| [[Qubits]]              | $n + 1 +$ [[Oracle]] [[Ancilla]]             |
-| [[Oracle]] calls        | $O(\sqrt{N/M})$                      |
+| Resource            | Cost                                     |
+| ------------------- | ---------------------------------------- |
+| [[Qubits]]          | $n + 1 +$ [[Oracle]] [[Ancilla]]         |
+| [[Oracle]] calls    | $O(\sqrt{N/M})$                          |
 | Gates per iteration | $O(n) +$ [[Oracle]] cost                 |
 | Total gates         | $O(\sqrt{N/M} \cdot (n +$ [[Oracle]]$))$ |
-| Classical post-proc | $O(1)$ check                         |
-
+| Classical post-proc | $O(1)$ check                             |
 **Optimality**: the $O(\sqrt{N})$ [[Oracle]] complexity is **tight** -  no quantum algorithm can search unstructured DB in $<\Omega(\sqrt{N})$ queries (BBBV lower bound theorem). 

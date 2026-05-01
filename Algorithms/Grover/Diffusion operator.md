@@ -23,6 +23,6 @@ Inner operator $2|0\rangle\langle 0| - I$ flips the sign of every basis state _e
 
 Net effect: implements $2|0\rangle\langle 0| - I$ conjugated by $H^{\otimes n}$, yielding $D$. See Diffusion operator in Q-Sharp for Q# code.
 
-**Gate count**: $O(n)$ [[Single-qubit gates]] + $1$ $n$-controlled $Z$ (decomposable into $O(n)$ Toffoli gates with [[Ancilla]]). Total [[Grover]] step: $1$ [[Oracle]] call + $O(n)$ gates.
+**Gate count**: $O(n)$ [[Single-qubit gates]] + $1$ $n$-controlled $Z$ (decomposable into $O(n)$ [[Toffoli]] gates with [[Ancilla]]). Total [[Grover]] step: $1$ [[Oracle]] call + $O(n)$ gates.
 
 **Unitarity**: $D$ is self-inverse - it is its own adjoint: $D^\dagger = D, \quad D^2 = I$

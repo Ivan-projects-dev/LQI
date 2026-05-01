@@ -20,8 +20,12 @@ operation TeleportQubit(msg : Qubit, here : Qubit) : Unit {
     H(msg);
     let m1 = M(msg);
     let m2 = M(there);
-    if m2 == One { X(here); }     // feed-forward: conditioned on m2
-    if m1 == One { Z(here); }     // feed-forward: conditioned on m1
+    if m2 == One { 
+	    X(here); 
+	} // feed-forward: conditioned on m2
+    if m1 == One { 
+	    Z(here); 
+	} // feed-forward: conditioned on m1
     Reset(msg);
     Reset(there);
 }
@@ -51,9 +55,11 @@ operation IterativePhaseEstimation(oracle : Qubit => Unit is Adj + Ctl, n : Int)
 
 **`ResultAsBool` & classical [[Logic]] on `Result`**
 ```csharp
-let b = ResultAsBool(M(q)); // Result → Bool for arithmetic
+let b = ResultAsBool(M(q)); // Result $→$ Bool for arithmetic
 let combined = m1 == One & m2 == Zero;
-if combined { Z(target); }
+if combined { 
+	Z(target); 
+}
 ```
 
 **Hardware constraints on `AdaptiveRI`**
@@ -77,12 +83,11 @@ operation MeasureAndCorrect(q : Qubit) : Unit {
     if r == One { X(q); }   // adaptive correction
 }
 ```
-Compiler selects the matching variant based on the active profile. See [[Q-Sharp attributes]] for `@Config` syntax.
+Compiler selects the matching variant based on the active profile. See [[Attributes (Q)]] for `@Config` syntax.
 
-Classical `Bool` conditions → resolved at compile time or pre-circuit classical compute.
-`Result` conditions on `AdaptiveRI` → resolved mid-circuit in real time on hardware.
-`Result` conditions on `Base` → compile error if feed-forward required.
-
+Classical `Bool` conditions $→$ resolved at compile time or pre-circuit classical compute.
+`Result` conditions on `AdaptiveRI` $→$ resolved mid-circuit in real time on hardware.
+`Result` conditions on `Base` $→$ compile error if feed-forward required.
 ### Sources
 - [Adaptive profile (AdaptiveRI) in Q#](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-integrated)
 - [Hybrid computing concepts](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-concepts)

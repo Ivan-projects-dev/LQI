@@ -33,7 +33,7 @@ task = device.run(bell, shots=1000, s3_destination_folder=("my-bucket", "results
 result = task.result()
 print(result.measurement_counts)
 ```
-Also supports **Qiskit**, **Cirq**, & **[[OpenQASM]] 3** circuits via the Braket SDK transpilers.
+Also supports **Qiskit**, **Cirq**, & **[[OpenQASM]] $3$** circuits via the Braket SDK transpilers.
 
 **Amazon Braket Hybrid Jobs** runs iterative quantum-classical algorithms (like [[VQE]], [[QAOA]]) as managed AWS jobs - classical compute runs on $EC2$, quantum tasks are submitted automatically. Provides priority QPU access during job execution.
 
@@ -52,7 +52,7 @@ task = device.run(circuit, shots=100,
 
 **$DM_1$ for realistic noise, TN1 for shallow wide circuits.** `SV1` is noiseless - use it to verify circuit [[Logic]]. `DM1` (Density [[Matrix]]) applies configurable depolarizing noise & gives hardware-representative results. `TN1` is efficient only for circuits with limited entanglement (e.g., $1D$ nearest-neighbor, MERA); deeply entangled circuits will time out.
 
-**QPU costs accumulate quickly.** $1000$-shot [[IonQ]] Forte job costs $0.30 + 1000 × $0.08 = **$80.30**. Per-task fee is charged even if $0$ shots complete. Set AWS billing alerts before any hardware experiments.
+**QPU costs accumulate quickly.** $1000$-shot [[IonQ]] Forte job costs $0.30 + 1000 $×$ $0.08 = **$80.30**. Per-task fee is charged even if $0$ shots complete. Set AWS billing alerts before any hardware experiments.
 
 **QuEra Aquila is not gate-based.** Aquila programs neutral-atom arrays by specifying atom positions & laser drive waveforms via `AnalogHamiltonianSimulation`. It is analog quantum simulator optimized for many-body physics problems, not circuit-model algorithms.
 

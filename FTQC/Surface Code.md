@@ -1,7 +1,7 @@
 #Math #Algorithm 
 **Surface code** is the most widely studied topological quantum error correcting code. It is the default QEC scheme in the [[QRE]] & the leading candidate for fault-tolerant quantum computing on near-term hardware.
 
-[[Qubits]] are arranged on $2D$ lattice of size $d × d$ (code **distance** $d$). The lattice contains $2$ types of physical [[Qubits]]:
+[[Qubits]] are arranged on $2D$ lattice of size $d × d$ (code **distance** $d$). Lattice contains $2$ types of physical [[Qubits]]:
 - **Data [[Qubits]]** - store the encoded logical info
 - **Measure [[Qubits]]** ([[Ancilla]]) - used to extract error syndromes without disturbing the logical state
 
@@ -11,16 +11,14 @@ Each logical qubit of distance $d$ requires $d^2$ data [[Qubits]] + $(d^2-1)$ me
 
 Since $X$ & $Z$ errors are detected independently, the surface code protects against arbitrary single-qubit errors (any combination of $X, Y, Z$).
 
-Error Threshold: surface code has a fault-tolerance **threshold** of $≈1$% physical gate error rate. Below this threshold, increasing $d$ exponentially suppresses the logical error rate:
+**Error Threshold**: surface code has fault-tolerance **threshold** of $≈1$% physical gate error rate. Below this threshold, increasing $d$ exponentially suppresses the logical error rate:
 $$p_L \approx \left(\frac{p}{p_{th}}\right)^{\lfloor (d+1)/2 \rfloor}$$
-where $p$ = physical error rate, $p_{th}$ ≈ 1%, & $p_L =$ logical error rate. Google's $2024$ Willow chip demonstrated error suppression factor $\Lambda = 2.14$ per Same as `auto` - synonym used i- older Q# syntax.                  
+where $p$ = physical error rate, $p_{th} ≈ 1$%, & $p_L =$ logical error rate. Google's $2024$ Willow chip demonstrated error suppression factor $\Lambda = 2.14$ per Same as `auto` - synonym used i- older Q# syntax.                  
 
 [[QRE]] selects $d$ automatically based on your error budget & physical error rate assumptions.
-
 ### Logical Gates
-
-- **Transversal Clifford gates** (H, S, [[CNOT]]) - applied qubit-by-qubit across code blocks; inherently fault-tolerant
-- **T-gate** - NOT transversal in surface code; must be implemented via **magic state distillation** (see [[QRE]] T-factories)
+- **Transversal Clifford gates** ($H, S$, [[CNOT]]) - applied qubit-by-qubit across code blocks; inherently fault-tolerant
+- **[[T gate]]** - NOT transversal in surface code; must be implemented via **magic state distillation** (see [[QRE]] T-factories)
 - **Logical measurement** - measure all data [[Qubits]]; used for lattice surgery-based [[CNOT]]
 
 **Lattice surgery** is the preferred method for performing logical gates between surface code patches - $2$ patches are merged & split by temporarily joining their boundaries, avoiding the overhead of transversal $2$-qubit gates.

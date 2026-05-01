@@ -9,7 +9,6 @@ CNOT(ctrl, target);
 // equivalent:
 Controlled X([ctrl], target);
 ```
-
 Used to create [[Bell states]] & entanglement:
 ```csharp
 H(q0);
@@ -23,15 +22,15 @@ CZ(q0, q1);
 // equivalent:
 Controlled Z([q0], q1);
 ```
-**SWAP - `SWAP`**
-$$SWAP = \begin{pmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\end{pmatrix}$$
-Exchanges states of $2$ [[Qubits]]: $|ab\rangle \mapsto |ba\rangle$. $SWAP^2 = I$. Decomposition: $SWAP = CNOT_{01} \cdot CNOT_{10} \cdot CNOT_{01}$.
+**[[SWAP]]`** 
+$$\begin{pmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\end{pmatrix}$$
+Exchanges states of $2$ [[Qubits]]: $|ab\rangle \mapsto |ba\rangle$. $SW^2 = I$. Decomposition: ${} SW = CNOT_{01} \cdot CNOT_{10} \cdot CNOT_{01}$. Where $SW$ = [[SWAP]]
 ```csharp
 SWAP(q0, q1);
 ```
 Used in QFT to reverse qubit order after the transform.
 
-**CCNOT (Toffoli) - `CCNOT`**
+**CCNOT ([[Toffoli]])**
 $$CCNOT: |c_1 c_2 t\rangle \mapsto |c_1 c_2\,(t \oplus (c_1 \wedge c_2))\rangle$$
 Flips target iff both controls are $|1\rangle$. Universal for reversible classical computation. Acts as $3$-qubit gate; $8\times8$ [[Matrix]] with $1$s on diagonal except last $2$ rows swapped.
 ```csharp
@@ -40,26 +39,23 @@ Controlled X([ctrl1, ctrl2], target);
 ```
 Key in [[Oracle]] construction - marks the all-$|1\rangle$ state in [[Diffusion operator]].
 
-**T-gate cost**: exact decomposition requires 7 [[T-gates]]. This makes CCNOT a significant resource on fault-tolerant hardware.
-
-
-**CSWAP (Fredkin) - `Controlled SWAP`**
+**[[T gate]] cost**: exact decomposition requires $7$ [[T-gates]]. This makes CCNOT a significant resource on fault-tolerant hardware.
+**CSWAP (Fredkin)**
 $$CSWAP: |c\,ab\rangle \mapsto \begin{cases}|c\,ab\rangle & c=0 \\ |c\,ba\rangle & c=1\end{cases}$$
-Swaps $2$ [[Qubits]] controlled on $3rd$. No dedicated `CSWAP` keyword - use `Controlled SWAP`:
+Swaps $2$ [[Qubits]] controlled on $3rd$. No dedicated `CSWAP` keyword - use `Controlled` [[SWAP]]:
 ```csharp
 Controlled SWAP([ctrl], (q0, q1));
 ```
 Used in [[SWAP test]] for state comparison.
 
-
-**Multi-controlled generalization** - any single-qubit gate can be made $n$-controlled via the `Controlled` functor. Q# decomposes this automatically using [[Ancilla]] & Toffoli gates:
+**Multi-controlled generalization** - any single-qubit gate can be made $n$-controlled via the `Controlled` functor. Q# decomposes this automatically using [[Ancilla]] & [[Toffoli]] gates:
 ```csharp
 Controlled H([c0, c1, c2], target); // 3-controlled H
 Controlled T([c0, c1], target); // 2-controlled T
 ```
-Cost of $n$-controlled-$U$: $O(n)$ Toffoli gates using borrowed [[Ancilla|ancilla]].
+Cost of $n$-controlled-$U$: $O(n)$ [[Toffoli]] gates using borrowed [[Ancilla|ancilla]].
 
-[[CNOT]], CZ, & SWAP are all max entangling for appropriate input states. Any $2$-qubit unitary can be decomposed into at most 3 [[CNOT]] gates + [[Single-qubit gates]]. This gives the **KAK decomposition** - the basis of most $2$-qubit gate compilers.
+[[CNOT]], CZ, & [[SWAP]] are all max entangling for appropriate input states. Any $2$-qubit unitary can be decomposed into at most 3 [[CNOT]] gates + [[Single-qubit gates]]. This gives the **KAK decomposition** - the basis of most $2$-qubit gate compilers.
 ### Sources
 - [Std.Intrinsic API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)
 - [Multi-qubit systems kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)

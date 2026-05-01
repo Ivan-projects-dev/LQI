@@ -1,5 +1,5 @@
 #Q-Sharp
-**User-Defined Types (UDTs)** are named wrappers over existing types, providing type safety without runtime cost. Declared with `newtype` (Q# $0.x$ syntax; Q# $1.0+$ uses `struct` - see [[Q-Sharp DT]]).
+**User-Defined Types (UDTs)** are named wrappers over existing types, providing type safety without runtime cost. Declared with `newtype` (Q# $0.x$ syntax; Q# $1.0+$ uses `struct` - see [[Q DT]]).
 
 **Anonymous items:**
 ```csharp

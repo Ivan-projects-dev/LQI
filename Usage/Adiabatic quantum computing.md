@@ -1,4 +1,4 @@
-#Physics #Math 
+#Physics #Math #Hardware 
 [[Quantum adiabatic theorem]] provides alternative way for quantum computation.
 
 Suppose that $H_f$ is Hamiltonian, & we are interested in learning its ground state. If we init the system at $t=0$ with the ground state of some Hamiltonian whose ground state we already know & that is easy to prepare, the theorem states that the system is likely to end up in the ground state of $H_f$.

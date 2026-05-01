@@ -5,6 +5,7 @@ where:
 - $Z_i$ is the Pauli-$Z$ operator acting on qubit $i$
 - $h_i \in \mathbb{R}$ are local fields
 - $J_{ij} \in \mathbb{R}$ are coupling constants
+
 **Pauli-(Z) Eigenstates** $Z\ket{0} = +\ket{0}, \quad Z\ket{1} = -\ket{1}$
 Define **spin variables**: $s_i \in [+1, -1]$ such that:  $Z_i \ket{s_i} = s_i \ket{s_i}$
 For computational basis state $\ket{s} = \ket{s_1 s_2 \dots s_n}$ we have:  

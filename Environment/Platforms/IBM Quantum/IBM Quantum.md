@@ -31,14 +31,13 @@ result = job.result()
 **Primitives** abstract QPU access into $2$ interfaces:
 - `SamplerV2` - returns shot-level measurement distributions
 - `EstimatorV2` - returns expectation values of Pauli observables (used in [[VQE]], [[QAOA]])
-
 ### Simulators
 - **ibmq_qasm_simulator** - state [[Vector]] & stabilizer sim, up to $32$ [[Qubits]]
 - **AerSimulator** (local, via `qiskit-aer`) - noise model simulation using real device calibration data
 - **FakeBackends** - drop-in replacements for real devices with realistic noise models for offline testing
 ### Ecosystem
 - **Qiskit** - circuit composition, transpilation, optimization passes
-- **Qiskit Runtime** - managed execution environment on IBM Cloud
+- **Qiskit Runtime** - managed execution env on IBM Cloud
 - **IBM Quantum Learning** - free courses, tutorials, Jupyter notebooks
 - **Qiskit Patterns** - templates for mapping real-world problems to quantum circuits
 

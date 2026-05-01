@@ -1,5 +1,5 @@
 #Q-Sharp #Algorithm 
-Boolean function oracles in Q# - primitive building blocks for [[Grover]], SAT [[Oracle]], & Graph coloring [[Oracle]]. All follow the **marking [[Oracle]]** pattern: flip `target` iff the function is $1$ on `register`.
+Bool func oracles in Q# - primitive building blocks for [[Grover]], [[SAT oracle]], & [[Graph coloring oracle]]. All follow the **marking [[Oracle]]** pattern: flip `target` iff the func is $1$ on `register`.
 1. [[AND Oracle]]
 2. [[Majority Oracle]]
 3. [[OR Oracle]]

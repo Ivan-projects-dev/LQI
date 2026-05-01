@@ -40,7 +40,7 @@ operation NeedsAdj(op : Qubit => Unit is Adj, q : Qubit) : Unit { Adjoint op(q);
 NeedsAdj(H, q); // ok - H has Adj + Ctl ⊇ Adj
 ```
 
-**Generic callable types** - type parameter `'T` in callable signatures. See [[Q-Sharp generics]]:
+**Generic callable types** - type parameter `'T` in callable signatures. See [[Generics (Q)]]:
 ```csharp
 operation ApplyToFirst<'T>(op : 'T => Unit, arr : 'T[]) : Unit {
     op(arr[0]);
@@ -79,7 +79,7 @@ Prevents accidentally passing wrong [[Oracle]] type to algorithm. `!` unwraps; `
 
 Compiler auto-derives `Adj`/`Ctl` for composed ops when:
 - All constituent ops support required characteristic.
-- No measurements inside body (see [[Q-Sharp quirks]]).
+- No measurements inside body (see [[Q quirks]]).
 - For `Adj`: body uses only `Adj`-supporting gates in `within/apply` or explicit `Adjoint` calls.
 - For `Ctl`: body's ops all support `Ctl`; no classical-only branches conditioned on `Result`.
 
