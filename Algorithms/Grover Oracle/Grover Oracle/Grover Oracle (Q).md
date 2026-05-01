@@ -103,4 +103,4 @@ operation MarkClause(
 ## Sources
 - [Grover's search tutorial - oracle construction](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)
 - [Within-apply pattern (conjugations)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/conjugations)
-- [GitHub: Grover oracle samples](https://github.com/microsoft/qsharp/tree/main/samples/algorithms
+- [GitHub: [[Grover]] [[Oracle]] samples](https://github.com/microsoft/qsharp/tree/main/samples/algorithms

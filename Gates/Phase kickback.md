@@ -7,4 +7,4 @@ $$\text{[[Oracle]]} \cdot |x\rangle|{-}\rangle = (-1)^{f(x)}|x\rangle|{-}\rangle
 
 $|{-}\rangle$ [[Ancilla]] is unchanged; the phase $(-1)^{f(x)}$ is **kicked back** onto $|x\rangle$. [[Grover]]'s [[Oracle]] & [[QPE]] both rely entirely on this mechanism.
 
-Preparation pattern: always initialize the [[Ancilla]] with `X(anc); H(anc);` to produce $|{-}\rangle$.
+Preparation pattern: always initialize the [[Ancilla]] with `X(anc); H(anc);` to produce $|{-}\rangl

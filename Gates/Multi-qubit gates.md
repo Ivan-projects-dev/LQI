@@ -1,5 +1,5 @@
 #Q-Sharp #Math
-**Multi-qubit gates** act on $2>$ [[Qubits|qubits]] simultaneously. All listed here are in `Std.Intrinsic` & support `Adj + Ctl`.
+**Multi-qubit gates** act on $2>$ [[Qubits]] simultaneously. All listed here are in `Std.Intrinsic` & support `Adj + Ctl`.
 
 **[[CNOT]] (Controlled-NOT) 
 $$\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}$$
@@ -39,7 +39,7 @@ Controlled X([ctrl1, ctrl2], target);
 ```
 Key in [[Oracle]] construction - marks the all-$|1\rangle$ state in [[Diffusion operator]].
 
-**[[T gate]] cost**: exact decomposition requires $7$ [[T-gates]]. This makes CCNOT a significant resource on fault-tolerant hardware.
+**[[T gate]] cost**: exact decomposition requires $7$ T-gates. This makes CCNOT a significant resource on fault-tolerant hardware.
 **CSWAP (Fredkin)**
 $$CSWAP: |c\,ab\rangle \mapsto \begin{cases}|c\,ab\rangle & c=0 \\ |c\,ba\rangle & c=1\end{cases}$$
 Swaps $2$ [[Qubits]] controlled on $3rd$. No dedicated `CSWAP` keyword - use `Controlled` [[SWAP]]:
@@ -53,7 +53,7 @@ Used in [[SWAP test]] for state comparison.
 Controlled H([c0, c1, c2], target); // 3-controlled H
 Controlled T([c0, c1], target); // 2-controlled T
 ```
-Cost of $n$-controlled-$U$: $O(n)$ [[Toffoli]] gates using borrowed [[Ancilla|ancilla]].
+Cost of $n$-controlled-$U$: $O(n)$ [[Toffoli]] gates using borrowed [[Ancilla]].
 
 [[CNOT]], CZ, & [[SWAP]] are all max entangling for appropriate input states. Any $2$-qubit unitary can be decomposed into at most 3 [[CNOT]] gates + [[Single-qubit gates]]. This gives the **KAK decomposition** - the basis of most $2$-qubit gate compilers.
 ### Sources

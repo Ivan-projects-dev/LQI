@@ -7,9 +7,9 @@
 
 | Simulator                   | Type                       | Max [[Qubits]] | Cost (after free tier) |
 | --------------------------- | -------------------------- | -------------- | ---------------------- |
-| **$SV_1$** (State Vector)   | Exact statevector          | $34$           | $0.075/min             |
-| **$DM_1$** (Density Matrix) | Noisy circuits             | $17$           | $0.075/min             |
-| **$TN_1$** (Tensor Network) | Sparse/structured circuits | $50$           | $0.275/min             |
+| **$SV_1$** (State [[Vector]])   | Exact statevector          | $34$           | $0.075/min             |
+| **$DM_1$** (Density [[Matrix]]) | Noisy circuits             | $17$           | $0.075/min             |
+| **$TN_1$** ([[Tensor]] Network) | Sparse/structured circuits | $50$           | $0.275/min             |
 | **Local**                   | Statevector (no cloud)     | $~25$          | Free                   |
 
 | Hardware Provider | Technology                   | Pricing (per task + per shot) |

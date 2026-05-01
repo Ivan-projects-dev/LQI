@@ -23,4 +23,4 @@ operation QPEEstimate() : Unit {
 | `tStates`        | $1023 (2^{10}-1)$       |
 | `runtime`        | milliseconds to seconds |
 | `codeDistance`   | $11-15$                 |
-$T$-count scales as $2^t - 1$. For $t=20$ precision bits: ~$10^6$ [[T-gates]], millions of physical [[Qubits]].
+$T$-count scales as $2^t - 1$. For $t=20$ precision bits: ~$10^6$ T-gates, millions of physical [[Qubits]].

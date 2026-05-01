@@ -1,6 +1,6 @@
 #Algorithm #Q-Sharp 
 [[Bernstein-Vazirani]] ($n = 20$).
-$BV$ is Clifford-only: $1$ $H$ layer, $1$ [[CNOT]] layer, $1$ $H$ layer. $0$ [[T-gates]].
+$BV$ is Clifford-only: $1$ $H$ layer, $1$ [[CNOT]] layer, $1$ $H$ layer. $0$ T-gates.
 ```csharp
 import Std.Arrays.*;
 import Std.Convert.*;
@@ -28,4 +28,4 @@ operation BVEstimate() : Unit {
 | `tFactories`     | $0$               |
 | `runtime`        | microseconds      |
 | `codeDistance`   | $5-7$             |
-$0$ [[T-gates]] means $0$ T-factory overhead. BV is baseline test any near-term device can run.
+$0$ T-gates means $0$ T-factory overhead. BV is baseline test any near-term device can run.
