@@ -62,12 +62,12 @@ Non-obvious factor: the qubit **connectivity graph** of the hardware determines 
 | IonQ Aria            | All-to-all         | Same - ideal for algorithms with many non-local interactions |
 | Rigetti              | Limited grid       | SWAP overhead similar to IBM                                 |
 | D-Wave Pegasus       | Fixed sparse graph | Embedding maps logical variables to physical qubit chains    |
-**Practical impact:** circuit with many $2$-qubit gates between non-adjacent qubits (e.g., a fully connected QAOA problem) will have $3–5x$ $>$ gates after transpilation on IBM than on Quantinuum, because each needed CNOT between non-adjacent qubits requires $2–3$ SWAP gates, each costing $3$ CNOTs. If your circuit has high connectivity demands, Quantinuum or IonQ (accessible via Azure or Braket) produces better results despite slower clock speeds.
+**Practical impact:** circuit with many $2$-qubit gates between non-adjacent qubits (e.g., a fully connected QAOA problem) will have $3-5x$ $>$ gates after transpilation on IBM than on Quantinuum, because each needed CNOT between non-adjacent qubits requires $2-3$ SWAP gates, each costing $3$ CNOTs. If your circuit has high connectivity demands, Quantinuum or IonQ (accessible via Azure or Braket) produces better results despite slower clock speeds.
 
-| Platform | Error type | Typical CNOT error |
+| Platform | Error type | Typical CNOT error              |
 |---|---|---|
-| IBM Superconducting | Decoherence, gate error, crosstalk | $0.3\%$–$1\%$ |
-| [[Quantinuum]] Trapped Ion | Phonon modes, slower gates | $0.1\%$–$0.5\%$ |
-| [[IonQ]] Trapped Ion | Similar to [[Quantinuum]] | $0.2\%$–$0.8\%$ |
+| IBM Superconducting | Decoherence, gate error, crosstalk | $0.3\%$-$1\%$                   |
+| [[Quantinuum]] Trapped Ion | Phonon modes, slower gates | $0.1\%$-$0.5\%$                 |
+| [[IonQ]] Trapped Ion | Similar to [[Quantinuum]] | $0.2\%$-$0.8\%$                 |
 | [[D-Wave]] Annealer | Chain breaks, thermal noise | Not applicable (not gate-based) |
 Trapped-ion hardware has $<$ error rates per gate but is $1000x$ slower clock speed than superconducting. For shallow circuit ($< 50$ gates), trapped-ion gives better fidelity. For deep circuit that would take hours on trapped-ion, superconducting finishes in seconds at the cost of higher per-gate error.

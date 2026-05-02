@@ -4,7 +4,7 @@
 There are no standing charges for the [[Azure Quantum]] service itself - you only pay for what providers charge when jobs run on their hardware or simulators. [[QRE]] is completely free & requires no Azure account.
 
 **Billing models vary by provider:**
-- **[[IonQ]]** - per gate-shot ($1$-qubit & $2$-qubit gates $×$ shots), $+$ min fee per program run ($1–5$ USD).
+- **[[IonQ]]** - per gate-shot ($1$-qubit & $2$-qubit gates $×$ shots), $+$ min fee per program run ($1-5$ USD).
 - **[[Quantinuum]]** - per **Hardware Quantum Credit (HQC)**, calc from operations $×$ shots.
 - **[[Rigetti]]** - per second of QPU exec time; simulator (QVM) is free.
 - **[[PASQAL]]** - per exec time on QPU or EMU-TN emulator.

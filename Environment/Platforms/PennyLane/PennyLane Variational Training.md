@@ -36,7 +36,7 @@ for step in range(200):
         print(f"Step {step:4d}: cost = {loss:.6f}")
 ```
 
-**Why Adam, not SGD?** Vanilla gradient descent struggles with the curved loss landscape of quantum circuits. Adam adapts learning rates per parameter & is $5$–$10\times$ faster to converge in practice.
+**Why Adam, not SGD?** Vanilla gradient descent struggles with the curved loss landscape of quantum circuits. Adam adapts learning rates per parameter & is $5$-$10\times$ faster to converge in practice.
 
 ---
 
@@ -55,7 +55,7 @@ plt.axhline(y=-1.0, color="r", linestyle="--", label="Target (ground state)")
 plt.legend(); plt.grid(True); plt.show()
 ```
 
-**What good convergence looks like:** smooth decrease, levels off near the true minimum. Initial drop in $10$–$20$ steps, then slower refinement.
+**What good convergence looks like:** smooth decrease, levels off near the true minimum. Initial drop in $10$-$20$ steps, then slower refinement.
 
 **What bad convergence looks like:**
 - **Flat from step 1:** gradients are zero $→$ barren plateau, wrong init, or wrong NumPy import
@@ -111,7 +111,7 @@ If gradient variance is $< 10^{-6}$, you are in a barren plateau. Mitigations:
 
 ## Shot Noise in Practice
 
-On simulators, gradients are exact. On hardware, each expectation value is estimated from a finite number of shots - this adds noise proportional to $1/\sqrt{N_{shots}}$.
+On simulators, gradients are exact. On hardware, each expectation value is estimated from a finite num of shots - this adds noise proportional to $1/\sqrt{N_{shots}}$.
 
 ```python
 dev_shots = qml.device("default.qubit", wires=2, shots=100)
@@ -134,9 +134,9 @@ for _ in range(10):
 ```
 
 **Practical shot schedule:**
-- Exploration (find rough minimum): `shots=64`–`256`
-- Refinement (tighten around minimum): `shots=512`–`2048`
-- Final evaluation (trust the value): `shots=4096`–`8192` or exact (no shots)
+- Exploration (find rough minimum): `shots=64`-`256`
+- Refinement (tighten around minimum): `shots=512`-`2048`
+- Final evaluation (trust the value): `shots=4096`-`8192` or exact (no shots)
 
 Training with too few shots wastes gradient steps. Training with too many shots wastes circuit evaluations. Start cheap, finish expensive.
 
@@ -176,7 +176,7 @@ print(f"JIT: {time.time()-t0:.2f}s for 1000 calls")
 - `pip install pennylane-lightning` or `pennylane-catalyst`
 - Parameters must have fixed shapes (no dynamic circuit construction inside the JIT block)
 
-Typical speedup: $10$–$100\times$ for simple circuits, $5$–$20\times$ for complex circuits.
+Typical speedup: $10$-$100\times$ for simple circuits, $5$-$20\times$ for complex circuits.
 
 ---
 

@@ -15,7 +15,7 @@ print(circuit)
 # prints ASCII diagram of the circuit
 
 print(circuit.depth) # gate depth
-print(circuit.qubit_count) # number of qubits
+print(circuit.qubit_count) # num of qubits
 ```
 ### Reading QPU Results
 On real QPU job:

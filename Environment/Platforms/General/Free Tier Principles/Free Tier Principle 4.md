@@ -1,4 +1,5 @@
-#SoftDev #Q-Sharp **Use the Best Backend for Your Circuit Size**
+#SoftDev #Q-Sharp #Python  
+**Use the Best Backend for Your Circuit Size**
 
 Submitting a $2$-qubit circuit to $127$-qubit machine is wasteful - the queue is longer & the transpilation is $>$ complex. Match circuit size to backend size.
 
@@ -12,9 +13,6 @@ Submitting a $2$-qubit circuit to $127$-qubit machine is wasteful - the queue is
 service = QiskitRuntimeService()
 
 # Filter by min qubit count & prefer least busy
-backends = service.backends(
-    filters=lambda b: b.num_qubits >= 5 and b.num_qubits <= 10
-                      and b.status().operational
-)
+backends = service.backends(filters=lambda b: b.num_qubits >= 5 & b.num_qubits <= 10 and b.status().operational)
 backend = min(backends, key=lambda b: b.status().pending_jobs)
 ```

@@ -1,4 +1,4 @@
-#Q-Sharp 
+#Q-Sharp #Algorithm 
 **Iterative [[QPE]]** ($1$-qubit version, Kitaev method)
 
 Extracts $\varphi$ $1$ bit/time, using only $1$ control qubit. Lower qubit overhead, but $t$ sequential rounds:

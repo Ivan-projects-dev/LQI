@@ -1,7 +1,7 @@
 #Q-Sharp  #Algorithm
-Complete Q# implementation of [[QPE]]. Estimates the **eigenphase** $\varphi$ of a unitary $U$ given eigenstate $|u\rangle$, returning $t$-bit approximation $\hat{\varphi} \approx \varphi$.
+Complete Q# implementation of [[QPE]]. Estimates the **eigenphase** $\varphi$ of unitary $U$ given eigenstate $|u\rangle$, returning $t$-bit approximation $\hat{\varphi} \approx \varphi$.
 
-$3$ stages: superposition on control register → controlled-$U^{2^j}$ → inverse QFT.
+$3$ stages: superposition on control register ${} →$ controlled- {}$U^{2^j}$ $→$ inverse QFT.
 ```csharp
 import Std.Convert.*;
 import Std.Diagnostics.*;
@@ -56,11 +56,8 @@ operation ApplyQFT(register : Qubit[]) : Unit is Adj + Ctl {
 
 Simplest implementation applies $U$ sequentially $2^j$ times:
 ```csharp
-operation ApplyUPower(
-    applyU  : Qubit[] => Unit is Adj + Ctl,
-    power   : Int,
-    target  : Qubit[]
-) : Unit is Adj + Ctl {
+operation ApplyUPower(applyU : Qubit[] => Unit is Adj + Ctl,
+    power : Int, target : Qubit[]) : Unit is Adj + Ctl {
     for _ in 1..power {
         applyU(target);
     }
@@ -86,13 +83,15 @@ operation Main() : Unit {
 ```
 `T` gate: eigenphase $\varphi = 1/8$ → binary $0.0010$ → `phaseInt` = $2$ out of $16$.
 
-| Method | Control [[Qubits]] | $U$ apps | Rounds |
-|---|---|---|---|
-| Standard [[QPE]] | $t$ | $2^t - 1$ | 1 (parallel) |
-| Iterative [[QPE]] | $1$ | $2^t - 1$ | $t$ (sequential) |
-| [[Quantum counting]] | $t$ | $O(2^t)$ calls to $G$ | 1 |
-
-## Sources
+| Method               | Control [[Qubits]] | $U$ apps              | Rounds           |
+| -------------------- | ------------------ | --------------------- | ---------------- |
+| Standard [[QPE]]     | $t$                | $2^t - 1$             | 1 (parallel)     |
+| Iterative [[QPE]]    | $1$                | $2^t - 1$             | $t$ (sequential) |
+| [[Quantum counting]] | $t$                | $O(2^t)$ calls to $G$ | 1                |
+### See also
+- [[QPE Applications]] - all algorithms that use [[QPE]] as subroutine
+- [[QPE on T gate]] - concrete eigenphase example
+### Sources
 - [Quantum phase estimation kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
 - [Std.Intrinsic: controlled unitaries](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)
 - [GitHub: QPE samples in Q#](https://github.com/microsoft/qsharp/tree/main/samples/algorithms)

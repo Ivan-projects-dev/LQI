@@ -29,7 +29,7 @@ $$H^{\otimes n}|0\rangle^{\otimes n} = \frac{1}{\sqrt{2^n}}\sum_{x=0}^{2^n-1}|x\
 This single operation in $O(n)$ gates encodes all possible inputs - what would take $2^n$ steps classically. It is the starting point of Grover, Deutsch-Jozsa, Bernstein-Vazirani, Simon, & virtually every other quantum algorithm.
 More generally, for any $n$-bit string $s$:
 $$H^{\otimes n}|s\rangle = \frac{1}{\sqrt{2^n}}\sum_{x=0}^{2^n-1}(-1)^{s \cdot x}|x\rangle$$
-where $s \cdot x = s_0 x_0 \oplus \cdots \oplus s_{n-1}x_{n-1}$ is the bitwise inner product. This is the **Walsh–Hadamard transform** - real-valued QFT over $\mathbb{Z}_2^n$.
+where $s \cdot x = s_0 x_0 \oplus \cdots \oplus s_{n-1}x_{n-1}$ is the bitwise inner product. This is the **Walsh-Hadamard transform** - real-valued QFT over $\mathbb{Z}_2^n$.
 
 | Algorithm          | How $H$ is used                                                                                                                    |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |

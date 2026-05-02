@@ -38,7 +38,7 @@ rigetti = AwsDevice("arn:aws:braket:us-west-1::device/qpu/rigetti/Ankaa-3")
 | Gate speed | ~$50$ ns | ~$100$ μs |
 | Coherence time | ~$100$ μs | ~seconds |
 | All-to-all connectivity | No | Yes |
-| Gate error per [[CNOT]] | ~$0.3$–$0.5$% | ~$0.3$% |
+| Gate error per [[CNOT]] | ~$0.3$-$0.5$% | ~$0.3$% |
 Running the same Bell state on both & comparing histograms teaches $>$ about quantum hardware than any textbook. The distributions will differ noticeably.
 
 **Warning on QPU cost:** [[IonQ]] charges $\$0.30$/task + $\$0.08$/shot. $1000$ shots = $\$80.30$. Test entirely on simulators first. Set AWS billing alerts.

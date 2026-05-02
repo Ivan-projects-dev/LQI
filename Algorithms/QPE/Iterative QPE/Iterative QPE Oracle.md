@@ -1,13 +1,11 @@
-#Q-Sharp 
-[[Iterative QPE]] reuses a single control qubit across all $t$ iterations. The [[Oracle]] structure is identical; what changes is that measurement results from previous iterations feed forward as classical corrections:
-
+#Q-Sharp #Algorithm 
+[[Iterative QPE]] reuses single control qubit across all $t$ iterations. The [[Oracle]] structure is identical; what changes is that measurement results from previous iterations feed forward as classical corrections:
 ```csharp
 import Std.Math.*;
 import Std.Canon.*;
 
 @Config(AdaptiveRI)
-operation IterativeQPEOracle(
-    U : (Qubit => Unit is Adj + Ctl),
+operation IterativeQPEOracle(U : (Qubit => Unit is Adj + Ctl),
     eigenstate : Qubit,
     t : Int) : Int {
     mutable phase = 0;

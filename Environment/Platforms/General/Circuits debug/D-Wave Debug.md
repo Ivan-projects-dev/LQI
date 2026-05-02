@@ -23,6 +23,6 @@ source_edgelist = list(Q.keys())
 target_edgelist = sampler.edgelist
 embedding = find_embedding(source_edgelist, target_edgelist)
 print("Longest chain:", max(len(v) for v in embedding.values()))
-print("Number of chains:", len(embedding))
+print("num of chains:", len(embedding))
 ```
 Long chains (length $> 5$) are fragile under noise. Reformulate your problem to reduce connectivity, or use `LeapHybridSampler` which handles dense problems natively.

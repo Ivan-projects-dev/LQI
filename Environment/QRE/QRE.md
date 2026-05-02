@@ -7,7 +7,7 @@
 | ------------------ | -------------------------------------------------------------------------------------- |
 | `physicalQubits`   | Total physical [[Qubits]] needed (algorithm + $T$-factories)                           |
 | `logicalQubits`    | Logical [[Qubits]] used by the algorithm                                               |
-| `logicalDepth`     | Number of logical cycles                                                               |
+| `logicalDepth`     | num of logical cycles                                                                  |
 | `codeDistance`     | Surface/floquet code distance $d$ (determines error suppression)                       |
 | `tStates`          | Total $T$-states consumed by the algorithm                                             |
 | `tFactories`       | Num of $T$-factory copies running in parallel                                          |

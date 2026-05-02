@@ -10,6 +10,6 @@ Instead of full $n$-qubit second register (for $b$), use only $d + s$ [[Qubits]]
 | Method                  | Logical [[Qubits]]                                                |
 | ----------------------- | ------------------------------------------------------------- |
 | Standard [[Shor]] DLP       | $\sim 4n = 1{,}024$                                           |
-| Ekerå–Håstad            | $\sim 2n + 2d \approx 1{,}024$ (similar for full-length keys) |
+| Ekerå-Håstad            | $\sim 2n + 2d \approx 1{,}024$ (similar for full-length keys) |
 | Ekerå $2021$ (combined) | $\sim 2n$ (improved circuit)                                  |
 Main benefit appears when $d \ll n$ - e.g., for DSA with $160$-bit keys in $1024$-bit group, the qubit count drops significantly.

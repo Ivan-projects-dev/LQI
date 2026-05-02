@@ -45,7 +45,7 @@ result = job.result()
 ```python
 from qiskit import transpile
 tqc = transpile(qc, backend, optimization_level=3)
-print(tqc.depth())   # may be 3–10× your original depth
+print(tqc.depth())   # may be 3-10× your original depth
 ```
 Use `optimization_level=3` for best compression at the cost of compile time.
 
@@ -58,7 +58,7 @@ noisy_sim = AerSimulator.from_backend(FakeSherbrooke())
 
 **Qubit selection matters.** Calibration data (error rates, $T_1/T_2$) is on the backend dashboard. For $2$-qubit circuits, route to the qubit pair with the best [[CNOT]] error. Use `backend.properties()` to get live data programmatically.
 
-**Queue times.** `least_busy()` helps, but real QPU queues during peak hours are $30$ min – $3$ hours. Submit, close the laptop, come back later. Use `job.status()` or IBM Quantum web dashboard to track.
+**Queue times.** `least_busy()` helps, but real QPU queues during peak hours are $30$ min - $3$ hours. Submit, close the laptop, come back later. Use `job.status()` or IBM Quantum web dashboard to track.
 
 **Qiskit $1.0$ breaking change.** `execute()` was removed. Any tutorial pre-$2024$ using `execute(circuit, backend)` needs to be rewritten with `SamplerV2` / `EstimatorV2`. This breaks most Stack Overflow answers.
 

@@ -2,7 +2,7 @@
 
 Realistic near-term threat that does not require large quantum computer today:
 
-Adversaries (nation-states) are recording encrypted internet traffic **now**. When large fault-tolerant quantum computer exists (estimated $10$–$20$ years), they will decrypt stored communications retroactively.
+Adversaries (nation-states) are recording encrypted internet traffic **now**. When large fault-tolerant quantum computer exists (estimated $10$-$20$ years), they will decrypt stored communications retroactively.
 
 **Who is affected:**
 - Diplomatic cables, classified communications, medical records, financial data - anything encrypted with [[RSA]] or [[ECDH]] today that needs to remain confidential in $2035$+

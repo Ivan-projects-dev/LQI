@@ -1,5 +1,5 @@
 #SoftDev #Python 
-Visit `quantum.cloud.ibm.com`. Create IBM ID - no credit card required. The dashboard shows real quantum computers you can access: their qubit counts, current queue lengths, & live calibration data (gate error rates, $T_1/T_2$ coherence times). "Least busy" backend is usually the safest choice. Queue lengths are shown in minutes - during peak hours they can be $1$–$3$ hours.
+Visit `quantum.cloud.ibm.com`. Create IBM ID - no credit card required. The dashboard shows real quantum computers you can access: their qubit counts, current queue lengths, & live calibration data (gate error rates, $T_1/T_2$ coherence times). "Least busy" backend is usually the safest choice. Queue lengths are shown in minutes - during peak hours they can be $1$-$3$ hours.
 
 Python code using the **Qiskit** library. Circuit is `QuantumCircuit` object. [[Qubits]] are indexed from $0$.
 ```python

@@ -1,5 +1,5 @@
 #Q-Sharp #Algorithm 
-**Quantum random number generation (QRNG)** produces certified random bits by measuring [[Qubits]] in superposition. Randomness is physical - measurement outcomes are fundamentally unpredictable, not computed from a seed.
+**Quantum random num generation (QRNG)** produces certified random bits by measuring [[Qubits]] in superposition. Randomness is physical - measurement outcomes are fundamentally unpredictable, not computed from a seed.
 
 **Single random bit**:  $H|0\rangle = |+\rangle$ collapses to $|0\rangle$ or $|1\rangle$ with equal probability:
 ```csharp
@@ -58,6 +58,6 @@ let b = DrawRandomBool(0.75); // true with prob 0.75
 ```
 Deterministic given seed - not truly random. Use quantum sampling when genuine unpredictability is required ([[QKD]], Monte Carlo, online protocols).
 ## Sources
-- [Quantum random number generator tutorial](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-quantum-random-number-generator)
+- [Quantum random num generator tutorial](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-quantum-random-number-generator)
 - [QRNG kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
 - [GitHub: QRNG sample in Q#](https://github.com/microsoft/qsharp/tree/main/samples)
