@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithms/QPE/QPE HHL.md",
+                "file": "Algorithms/Deutsch-Jozsa/Deutsch-Jozsa (Q).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "QPE HHL"
+              "title": "Deutsch-Jozsa (Q)"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "QPE Applications",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -175,13 +174,16 @@
   },
   "active": "017d88c30f5c67e7",
   "lastOpenFiles": [
+    "Algorithms/Deutsch-Jozsa/Deutsch-Jozsa.md",
+    "Algorithms/Bernstein-Vazirani/Bernstein-Vazirani (Q).md",
+    "Algorithms/Bernstein-Vazirani/Bernstein-Vazirani.md",
+    "Algorithms/QPE/Counting/Quantum counting.md",
+    "Algorithms/QPE/QPE HHL.md",
     "Algorithms/QPE/QPE Applications.md",
     "Environment/Platforms/General/Quantum Dev Surprises.md",
     "Gates/Phase kickback.md",
     "Qubits/Ancilla.md",
     "Algorithms/QPE/Counting/QPE Counting.md",
-    "Algorithms/QPE/Counting/Quantum counting.md",
-    "Algorithms/QPE/QPE HHL.md",
     "Algorithms/QPE/Iterative QPE/Iterative QPE Oracle.md",
     "Algorithms/QPE/Iterative QPE",
     "Algorithms/QPE/Basics",
@@ -202,9 +204,6 @@
     "Environment/Platforms/General/Choosing Platform.md",
     "Environment/Platforms/IBM Quantum/IBM Quantum Basics.md",
     "Environment/Platforms/IBM Quantum/IBM Quantum.md",
-    "Environment/Platforms/PennyLane/PennyLane Variational Training.md",
-    "Environment/Platforms/PennyLane/Xanadu.md",
-    "Gates/Hadamard/Hadamard.md",
     "Gates/Pauli",
     "Gates/Hadamard",
     "Gates/SWAP",

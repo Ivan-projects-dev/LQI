@@ -3,8 +3,7 @@ Let $x⋅s$ represent the inner product of the bit strings modulo $2$. For ins
 
 This might come across as bit of artificially created problem, because it is. It was specifically designed to be solved using quantum computer in order to show there can be advantages in using quantum algorithms over probabilistic algorithms.
 
-Let's start by giving an example of such an $f$. $$f(00)=0f(01)=1f(10)=0f(11)=1$$In this example, $s$ is $01$, as $$f(00)=00⋅01=0, f(01)=01⋅01=1, f(10)=10⋅01=0 & f(11)=11⋅01=1$$
-Note that now the [[Unitary operator]] $U_f$ takes the following form: $$U_f:|x⟩|y⟩↦|x⟩|y⊕(x⋅s)⟩$$We use exactly the same algorithm as [[Deutsch-Jozsa]].
+Let's start by giving an example of such an $f$. $$f(00)=0f(01)=1f(10)=0f(11)=1$$In this example, $s$ is $01$, as $$f(00)=00⋅01=0, f(01)=01⋅01=1, f(10)=10⋅01=0 & f(11)=11⋅01=1$$Note that now the [[Unitary operator]] $U_f$ takes the following form: $$U_f:|x⟩|y⟩↦|x⟩|y⊕(x⋅s)⟩$$We use exactly the same algorithm as [[Deutsch-Jozsa]].
 
 We construct circuit with $n+1$ [[Qubits]].
 - Set the $n+1$'st qubit to state $|−⟩$ by applying $X$ and $H$ gates.
@@ -14,9 +13,7 @@ We construct circuit with $n+1$ [[Qubits]].
 - Measure the first $n$ [[Qubits]] to obtain $s$.
 As we have the same circuit as Deustch-Jozsa, the init is the same.
 $$|ψ2⟩=1√2n2n−1∑x=0|x⟩⊗|−⟩$$
-From now on we can ignore the output qubit & focus on our input [[Qubits]]. After applying $U_f$ we then get the state: $$|ψ3,0⟩=1√2n2n−1∑x=0(−1)f(x)|x⟩$$
-Let's replace $f(x)=x⋅s$, & rewrite our state as follows: $$|ψ3,0⟩=1√2n2n−1∑x=0(−1)x⋅s|x⟩$$
-We know $$H⊗n|x⟩=1√2n2n−1∑x=0(−1)x⋅z|z⟩$$, & the $H⊗n$ operator is its own inverse. Thus, we can say that $$H⊗n|a⟩=|b⟩⟺H⊗n|b⟩=|a⟩$$. So in fact, $|ψ3⟩$ is the state obtained after applying $H⊗n$ to $|s⟩$.
+From now on we can ignore the output qubit & focus on our input [[Qubits]]. After applying $U_f$ we then get the state: $$|ψ3,0⟩=1√2n2n−1∑x=0(−1)f(x)|x⟩$$Let's replace $f(x)=x⋅s$, & rewrite our state as follows: $$|ψ3,0⟩=1√2n2n−1∑x=0(−1)x⋅s|x⟩$$$$H⊗n|x⟩=1√2n2n−1∑x=0(−1)x⋅z|z⟩$$ & the $H⊗n$ operator is its own inverse. Thus, we can say that $$H⊗n|a⟩=|b⟩⟺H⊗n|b⟩=|a⟩$$ So in fact, $|ψ3⟩$ is the state obtained after applying $H⊗n$ to $|s⟩$.
 
 Hence after applying $H⊗n$ to the input [[Qubits]], we get the final state as $|ψ4,0⟩=|s⟩$.
 We measure the first $n$ [[Qubits]] & we observe the string $s$ with probability $1$.
