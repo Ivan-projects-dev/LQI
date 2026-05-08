@@ -18,9 +18,7 @@ $$\text{QFT}^\dagger\!\left(\frac{1}{\sqrt{2^t}}\sum_{k=0}^{2^t-1} e^{2\pi i \va
 where $|\tilde{\varphi}\rangle$ is sharply peaked at int $\tilde{\varphi} = \lfloor 2^t \varphi \rceil$ (nearest int to $2^t\varphi$).
 
 **Measurement**: measuring control [[Qubits]] yields $\tilde{\varphi}$ with probability:
-
 $$P(\tilde{\varphi}) = \frac{1}{2^{2t}}\left|\frac{\sin(\pi \cdot 2^t(\varphi - \tilde{\varphi}/2^t))}{\sin(\pi(\varphi - \tilde{\varphi}/2^t))}\right|^2$$
-
 If $2^t\varphi$ is exact int: $P(\tilde{\varphi}) = 1$. Otherwise, the correct $t$-bit approximation is obtained with probability $\geq \frac{4}{\pi^2} \approx 0.405$ using $t$ [[Qubits]], or $\geq 1 - \epsilon$ using $t + \lceil\log_2(2 + \frac{1}{2\epsilon})\rceil$ [[Qubits]].
 
 | Resource              | Complexity                          |

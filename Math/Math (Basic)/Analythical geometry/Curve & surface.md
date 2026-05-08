@@ -49,9 +49,9 @@ $MF = \sqrt{x^2 + y^2}$
 **init equation:**  
 $x^2 + y^2 = \varepsilon^2 (x + q)^2$
 
-- For $0 < \varepsilon < 1$ → **ellipse**
-- For $\varepsilon = 1$ → **parabola**
-- For $\varepsilon > 1$ → **hyperbola**  
+- For $0 < \varepsilon < 1$ $→$ **ellipse**
+- For $\varepsilon = 1$ $→$ **parabola**
+- For $\varepsilon > 1$ $→$ **hyperbola**  
     Where $\varepsilon$ is **eccentricity of the curve**
 **Canonical equation of parabola:**  $y^2 = 2px$
 **Distance between any point of parabola & any given line is the same** (by definition)
@@ -144,9 +144,9 @@ Or: $\vec{a} \times \vec{b} = \vec{0}$
 Or: $\vec{a} \cdot \vec{b} = 0$
 
 **init equation:** $x^2 + y^2 = \varepsilon^2 (x + q)^2$
-- For $0 < \varepsilon < 1$ → **ellipse**
-- For $\varepsilon = 1$ → **parabola**
-- For $\varepsilon > 1$ → **hyperbola**  
+- For $0 < \varepsilon < 1$ $→$ **ellipse**
+- For $\varepsilon = 1$ $→$ **parabola**
+- For $\varepsilon > 1$ $→$ **hyperbola**  
     Where $\varepsilon$ is **eccentricity of the curve**
 **Canonical equation of parabola:** $y^2 = 2px$
 **Distance between any point of parabola & any given line is the same** (by definition)

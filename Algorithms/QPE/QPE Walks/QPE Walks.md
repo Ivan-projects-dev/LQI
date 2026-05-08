@@ -26,7 +26,7 @@ Grover search is special case: Grover iterate $G = 1$ step of walk on the comple
 | Implementation     | Reflection + [[SWAP]]     | Trotter / product formula |
 ### See also
 - [[QPE]] - full [[QPE]] theory & circuit
-- [[QPE Applications]] - all [[QPE]] use cases
+- [[QPE apps]] - all [[QPE]] use cases
 ## Sources
 - [Szegedy 2004: Quantum Speed-Up of Markov Chain Based Algorithms](https://arxiv.org/abs/quant-ph/0401053)
 - [Childs et al. 2003: Exponential Algorithmic Speedup by Quantum Walk](https://arxiv.org/abs/quant-ph/0209131)

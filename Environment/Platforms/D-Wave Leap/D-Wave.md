@@ -14,8 +14,7 @@
 
 Previous generation: **Advantage** ($5000+$ [[Qubits]], Pegasus graph). D-Wave [[Qubits]] are **flux [[Qubits]]** - physically different from gate-model transmon or trapped-ion [[Qubits]]. They are not universal quantum computers; they solve [[QUBO]]/Ising problems natively.
 
-SDK: **Ocean** (Python). Problems are formulated as **[[QUBO]] (Quadratic Unconstrained Binary Optimization)** or **[[Ising model]]** & submitted to the annealer.
-
+SDK: **Ocean** (Python). Problems are formulated as **[[QUBO]]** or **[[Ising model]]** & submitted to the annealer.
 ```python
 import dimod
 from dwave.system import DWaveSampler, EmbeddingComposite

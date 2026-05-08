@@ -57,7 +57,7 @@ Scans the vault for image files (PNG, JPG, SVG, etc.) that are not referenced in
 
 `Ctrl+R` - shows menu below & allows to delete all images that are stored in `z_img` but do not used by any node ("orphan images"). This menu has $2$ $>$ options not used by the author
 ![[Pasted image 20260429171052.png]]
-**Usage:** `Mod+R` → a list of orphaned images appears. Delete individually or in bulk.
+**Usage:** `Mod+R` $→$ a list of orphaned images appears. Delete individually or in bulk.
 ![[Pasted image 20260429171052.png]]
 
 ---

@@ -1,7 +1,7 @@
 #SoftDev #Q-Sharp #Python  
 **Use the Best Backend for Your Circuit Size**
 
-Submitting a $2$-qubit circuit to $127$-qubit machine is wasteful - the queue is longer & the transpilation is $>$ complex. Match circuit size to backend size.
+Submitting $2$-qubit circuit to $127$-qubit machine is wasteful - the queue is longer & the transpilation is $>$ complex. Match circuit size to backend size.
 
 | Circuit [[Qubits]] | Recommended backend type | Why |
 |---|---|---|

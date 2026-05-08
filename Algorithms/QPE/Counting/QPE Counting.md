@@ -5,12 +5,12 @@ $$\sin^2\!\theta = \frac{M}{N}$$
 [[QPE]] estimates the phase $\varphi = \theta / \pi$. From the measurement outcome $\tilde\varphi$:
 $$\hat\theta = \pi\tilde\varphi \qquad \hat M = N \sin^2\!\hat\theta$$
 **Precision**: with $t$ clock [[Qubits]], the estimate $|\hat M - M| \leq \epsilon N$ with $t = O(\log N + \log(1/\epsilon))$.
-### Example: 4-item search, 1 solution
+### Example: $4$-item search, $1$ solution
 $N = 4$, $M = 1$: $\sin^2\theta = 1/4 \Rightarrow \theta = \pi/6$.
 [[Grover]] eigenphase: $\varphi = \theta/\pi = 1/6 \approx 0.1\overline{6}$.
 With $t = 3$ clock bits (resolution $1/8 = 0.125$), [[QPE]] returns $\tilde\varphi \in \{0/8, 1/8, 2/8, \ldots\}$.
-Closest to $1/6$: outcome $1/8 \Rightarrow \hat\theta = \pi/8 \Rightarrow \hat M = 4\sin^2(\pi/8) \approx 0.59$ - rounds to $1$ ✓.
-More clock bits give better accuracy: $t=5$ gives $|\hat M - 1| < 0.2$ with high probability.
+Closest to $1/6$: outcome $1/8 \Rightarrow \hat\theta = \pi/8 \Rightarrow \hat M = 4\sin^2(\pi/8) \approx 0.59$ - rounds to $1$.
+$>$ clock bits give better accuracy: $t=5$ gives $|\hat M - 1| < 0.2$ with high probability.
 ```csharp
 import Std.Convert.*;
 import Std.Math.*;
@@ -75,7 +75,7 @@ operation CountSolutions(nClock : Int, nSearch : Int) : Int {
 [[Quantum counting]] is often used as **preprocessing step** to calibrate [[Grover]]'s algorithm when $M$ is unknown.
 ### See also
 - [[QPE]] - full [[QPE]] theory & circuit
-- [[QPE Applications]] - all [[QPE]] use cases
+- [[QPE apps]] - all [[QPE]] use cases
 ### Sources
 - [Brassard, Høyer, Mosca & Tapp 2002: Quantum Amplitude Amplification & Estimation](https://arxiv.org/abs/quant-ph/0005055)
 - [Mosca 1998: Quantum counting (thesis chapter)](https://arxiv.org/abs/quant-ph/9808023)

@@ -24,7 +24,7 @@ AbsD(x) // |x| for Double
 PowD(base, exp) // base^exp for Double
 ```
 
-**Casting float → int**:
+**Casting float $→$ int**:
 ```csharp 
 let n = Floor(PI() / 4.0 * Sqrt(1024.0)); // Double
 let k = Truncate(n); // still Double

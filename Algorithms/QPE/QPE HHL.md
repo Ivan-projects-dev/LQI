@@ -7,7 +7,7 @@
 **Decompose**: $|b\rangle = \sum_j \beta_j |u_j\rangle$ where $A|u_j\rangle = \lambda_j|u_j\rangle$.
 Then $A^{-1}|b\rangle = \sum_j \frac{\beta_j}{\lambda_j}|u_j\rangle$.
 **$3$ stages:**
-1. **[[QPE]]**: extract eigenvalues into a clock register $$\sum_j \beta_j |u_j\rangle|0\rangle \xrightarrow{\text{Q}} \sum_j \beta_j |u_j\rangle|\tilde\lambda_j\rangle$$where $Q$ - QPE
+1. **[[QPE]]**: extract eigenvalues into a clock register $$\sum_j \beta_j |u_j\rangle|0\rangle \xrightarrow{\text{Q}} \sum_j \beta_j |u_j\rangle|\tilde\lambda_j\rangle$$where $Q$ - [[QPE]]
 2. **Controlled rotation**: [[Ancilla]] qubit rotated by $C/\tilde\lambda_j$$$\sum_j \beta_j |u_j\rangle|\tilde\lambda_j\rangle\left(\sqrt{1 - \frac{C^2}{\tilde\lambda_j^2}}|0\rangle + \frac{C}{\tilde\lambda_j}|1\rangle\right)$$
 3. **Inverse [[QPE]]**: uncompute the clock register (within/apply pattern)
    Post-select [[Ancilla]] $= |1\rangle$: obtain $\sum_j \frac{\beta_j C}{\lambda_j}|u_j\rangle = C\cdot A^{-1}|b\rangle$ ✓
@@ -71,7 +71,7 @@ operation HHL(nClock : Int, t : Double, C : Double) : Result {
     // If res == One: system now holds |x⟩ ∝ A⁻¹|b⟩
 }
 ```
-**Key detail**: the `within/apply` block runs [[QPE]] in `within`, eigenvalue inversion in `apply`, then auto-applies inverse [[QPE]] - this is exactly the uncomputation needed in [[HHL]].
+`within/apply` block runs [[QPE]] in `within`, eigenvalue inversion in `apply`, then auto-applies inverse [[QPE]] - this is exactly the uncomputation needed in [[HHL]].
 ### Limitations & fine print
 - **Input model**: loading $|b\rangle$ from classical data costs $O(N)$ (QRAM required for true speedup)
 - **Condition num $\kappa$**: circuit depth scales as $O(\kappa^2 \log N / \epsilon)$ - ill-conditioned matrices lose the speedup
@@ -79,7 +79,7 @@ operation HHL(nClock : Int, t : Double, C : Double) : Result {
 - **Practical use**: [[HHL]] provides speedup only when $A$ is sparse, $\kappa$ is small, & the answer can be obtained from $O(1)$ inner products rather than full readout
 ### See also
 - [[QPE]] - full [[QPE]] theory & circuit
-- [[QPE Applications]] - all [[QPE]] use cases
+- [[QPE apps]] - all [[QPE]] use cases
 ### Sources
 - [Harrow, Hassidim & Lloyd 2009: Quantum algorithm for linear systems of equations](https://arxiv.org/abs/0811.3171)
 - [Aaronson 2015: Read the fine print (HHL caveats)](https://www.scottaaronson.com/papers/qml.pdf)

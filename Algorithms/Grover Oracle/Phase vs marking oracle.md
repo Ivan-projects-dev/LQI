@@ -13,7 +13,7 @@ $$U_f^{\text{mark}}|x⟩|{-}⟩ = (-1)^{f(x)}|x⟩|{-}⟩$$
 [[Ancilla]] returns to $|{-}⟩$ unchanged; the phase $(-1)^{f(x)}$ is kicked back to $|x⟩$. This is exactly $U_f^{\text{phase}}$
 
 **Circuit recipe**:
-- Apply $X$, then $H$ to [[Ancilla]] qubit → prepares $|{-}⟩$
+- Apply $X$, then $H$ to [[Ancilla]] qubit $→$ prepares $|{-}⟩$
 - Apply $U_f^{\text{mark}}$
-- Apply $H$, then $X$ to [[Ancilla]] → restores [[Ancilla]] to $|0⟩$
+- Apply $H$, then $X$ to [[Ancilla]] $→$ restores [[Ancilla]] to $|0⟩$
 - Net effect on the input register is $U_f^{\text{phase}}$

@@ -1,4 +1,4 @@
-#Q-Sharp 
+#Q-Sharp #Hardware 
 **Adaptive profile** (`AdaptiveRI`) enables **classical feed-forward**: using mid-circuit measurement results to conditionally apply subsequent quantum ops. Essential for [[FTQC|fault-tolerant]] protocols, magic state distillation, & [[QPE|iterative QPE]].
 
 Q# defines $3$ exec profiles, selected via `@Config` attribute or target machine setting:

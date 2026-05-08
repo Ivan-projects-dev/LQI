@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "2ccbf0157bf7ce42",
+        "id": "53b287543a8fd61e",
         "type": "tabs",
         "children": [
           {
-            "id": "017d88c30f5c67e7",
+            "id": "aae069b06ee0a502",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithms/Deutsch-Jozsa/Deutsch-Jozsa (Q).md",
+                "file": "Environment/Platforms/qBraid/qBraid.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Deutsch-Jozsa (Q)"
+              "title": "qBraid"
+            }
+          },
+          {
+            "id": "15c457a5c54258b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -54,7 +69,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": true,
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -172,38 +187,38 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "017d88c30f5c67e7",
+  "active": "15c457a5c54258b4",
   "lastOpenFiles": [
-    "Algorithms/Deutsch-Jozsa/Deutsch-Jozsa.md",
-    "Algorithms/Bernstein-Vazirani/Bernstein-Vazirani (Q).md",
-    "Algorithms/Bernstein-Vazirani/Bernstein-Vazirani.md",
-    "Algorithms/QPE/Counting/Quantum counting.md",
-    "Algorithms/QPE/QPE HHL.md",
-    "Algorithms/QPE/QPE Applications.md",
-    "Environment/Platforms/General/Quantum Dev Surprises.md",
-    "Gates/Phase kickback.md",
-    "Qubits/Ancilla.md",
-    "Algorithms/QPE/Counting/QPE Counting.md",
-    "Algorithms/QPE/Iterative QPE/Iterative QPE Oracle.md",
+    "Hotkeys guide.md",
+    "broken links output.md",
+    "Algorithms/QPE/Qubitization.md",
+    "Environment/Platforms/Amazon Braket/Braket Algorithm Examples.md",
+    "Algorithms/QPE/QPE apps.md",
+    "Algorithms/QPE/Basics/QPE (Q).md",
+    "Environment/Platforms/D-Wave Leap/D-Wave.md",
+    "Algorithms/QPE/Controlled unitary.md",
+    "Algorithms/QPE/Basics/QPE.md",
+    "Environment/Platforms/qBraid/qBraid.md",
+    "Environment/Platforms/qBraid/qBraid Algorithm Examples.md",
+    "Environment/Platforms/PennyLane/PennyLane Algorithm Examples.md",
+    "Environment/Platforms/IBM Quantum/IBM Algorithm Examples.md",
+    "Environment/Platforms/Azure Quantum/Azure Algorithm Examples.md",
+    "Environment/Platforms/D-Wave Leap/D-Wave Algorithm Examples.md",
+    "Environment/Platforms/General/Choosing Platform.md",
+    "Environment/Platforms/General/Free Tier Principles/Free Tier Principle 4.md",
+    "Environment/Platforms/General/Free Tier Principles/Free Tier Advices.md",
+    "Environment/Platforms/Azure Quantum/Azure Common Errors.md",
+    "Algorithms/Grover Oracle/Phase vs marking oracle.md",
+    "Algorithms/QPE/Early FTQC.md",
+    "Algorithms/QPE/QPE Walks/MNRS Framework.md",
+    "Algorithms/QPE/QPE Optimization.md",
+    "Algorithms/QPE/QPE Simulation.md",
+    "Math/Math (Basic)/Analythical geometry/Curve & surface.md",
+    "Math/Math (Basic)/Analythical geometry/Matrix.md",
     "Algorithms/QPE/Iterative QPE",
     "Algorithms/QPE/Basics",
-    "Algorithms/QPE/QPE Chemistry.md",
-    "Algorithms/QPE/QPE inputs.md",
-    "Algorithms/QPE/QPE Oracle.md",
-    "Algorithms/QPE/QPE Walks/Walk example.md",
-    "Algorithms/QPE/QPE Walks/QPE Walks.md",
     "Algorithms/QPE/Counting",
     "Algorithms/QPE/QPE Walks",
-    "Algorithms/Grover Oracle/Grover Oracle/Grover Oracle.md",
-    "Algorithms/Shor/Ekerå-Håstad.md",
-    "Cryptography/Data harvest.md",
-    "Cryptography/Shor Targets.md",
-    "Environment/Platforms/Amazon Braket/Braket Basics.md",
-    "Environment/Platforms/Azure Quantum/Providers/Azure Credits.md",
-    "Environment/Platforms/Azure Quantum/Providers/IonQ.md",
-    "Environment/Platforms/General/Choosing Platform.md",
-    "Environment/Platforms/IBM Quantum/IBM Quantum Basics.md",
-    "Environment/Platforms/IBM Quantum/IBM Quantum.md",
     "Gates/Pauli",
     "Gates/Hadamard",
     "Gates/SWAP",

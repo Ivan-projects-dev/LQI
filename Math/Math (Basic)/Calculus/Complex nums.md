@@ -31,7 +31,7 @@ $\overline{z_1 / z_2} = \bar{z}_1 / \bar{z}_2$
 
 **Principal argument:**
 $\mathrm{Arg},z \in (-\pi, \pi]$  
-If $\theta_1$ & $\theta_2$ are arguments of $z_1, z_2$ →  
+If $\theta_1$ & $\theta_2$ are arguments of $z_1, z_2$ $→$  
 $arg⁡(z1z2)=θ1+θ2\arg(z_1 z_2) = \theta_1 + \theta_2$
 
 If $\Theta$ is **argument of** $z$, then $n\Theta$ is **argument of** $z^n$

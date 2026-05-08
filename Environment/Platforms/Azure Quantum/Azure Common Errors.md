@@ -14,7 +14,7 @@ let r = M(q);
 Reset(q);
 ```
 3. `Error: Operation 'MyOp' does not support the Adjoint functor`
-The operation inside your `within` block or called with `Adjoint` doesn't have `is Adj` in its signature. Every operation used in `within/apply` must support adjoint:
+Operation inside your `within` block or called with `Adjoint` doesn't have `is Adj` in its signature. Every operation used in `within/apply` must support adjoint:
 ```csharp
 // WRONG: missing is Adj
 operation MyOp(q : Qubit) : Unit {

@@ -81,7 +81,7 @@ operation Main() : Unit {
     Reset(eigenstate);
 }
 ```
-`T` gate: eigenphase $\varphi = 1/8$ → binary $0.0010$ → `phaseInt` = $2$ out of $16$.
+`T` gate: eigenphase $\varphi = 1/8$ $→$ binary $0.0010$ $→$ `phaseInt` = $2$ out of $16$.
 
 | Method               | Control [[Qubits]] | $U$ apps              | Rounds           |
 | -------------------- | ------------------ | --------------------- | ---------------- |
@@ -89,7 +89,7 @@ operation Main() : Unit {
 | Iterative [[QPE]]    | $1$                | $2^t - 1$             | $t$ (sequential) |
 | [[Quantum counting]] | $t$                | $O(2^t)$ calls to $G$ | 1                |
 ### See also
-- [[QPE Applications]] - all algorithms that use [[QPE]] as subroutine
+- [[QPE apps]] - all algorithms that use [[QPE]] as subroutine
 - [[QPE on T gate]] - concrete eigenphase example
 ### Sources
 - [Quantum phase estimation kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
