@@ -28,7 +28,3 @@ Each course has:
 **Most useful starting path:**
 1. *Basics of Quantum info* - complete it. It covers the math foundations (Dirac notation, [[Tensor]] products, measurement) that every other resource assumes.
 2. *Fundamentals of Quantum Algorithms* - [[Grover]] & [[QPE]]. Once you've done these two, you can read most quantum algorithm papers.
-## Sources
-- [IBM Quantum: Getting started](https://docs.quantum.ibm.com/start)
-- [IBM Quantum Learning](https://learning.quantum.ibm.com)
-- [Qiskit documentation](https://docs.quantum.ibm.com)

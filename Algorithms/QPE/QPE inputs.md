@@ -31,9 +31,3 @@ For large powers, prefer repeated squaring over calling `U` $2^j$ times naively 
 - Run single-bit PE first: $+1$ & $i$ both measure $0$; $-1$ & $-i$ both measure $1$.
 - If result was $0$: run again with controlled-$U^2$ circuit (or add $S^\dagger$ rotation before $2nd$ $H$) to distinguish $+1$ ($\varphi=0$) from $i$ ($\varphi=1/4$).
 - If result was $1$: run again similarly to distinguish $-1$ ($\varphi=1/2$) from $-i$ ($\varphi=3/4$).
-
-This is building block of **iterative [[QPE]]** (see [[Iterative QPE]]), where each round extracts $1$ bit of $\varphi$ with phase correction for previously known bits.
-### Sources
-- [QPE kata - eigenstate preparation exercises](https://quantum.microsoft.com/en-us/tools/quantum-katas)
-- [GitHub: QPE eigenstate preparation samples](https://github.com/microsoft/qsharp/tree/main/samples/algorithms/iterative-phase-estimation)
-- [GitHub: QPE samples](https://github.com/microsoft/qsharp/tree/main/samples/algorithms)

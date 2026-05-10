@@ -56,7 +56,3 @@ Controlled T([c0, c1], target); // 2-controlled T
 Cost of $n$-controlled-$U$: $O(n)$ [[Toffoli]] gates using borrowed [[Ancilla]].
 
 [[CNOT]], CZ, & [[SWAP]] are all max entangling for appropriate input states. Any $2$-qubit unitary can be decomposed into at most 3 [[CNOT]] gates + [[Single-qubit gates]]. This gives the **KAK decomposition** - the basis of most $2$-qubit gate compilers.
-### Sources
-- [Std.Intrinsic API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)
-- [Multi-qubit systems kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
-- [Functor  (Adj/Ctl variants)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/functorapplication

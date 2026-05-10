@@ -53,7 +53,6 @@ operation MarkMultipleSolutions(
 Each `ControlledOnInt` contributes independently - valid because solutions are distinct basis states.
 
 **SAT [[Oracle]] structure in Q#**
-
 Each clause is marking [[Oracle]]. Combine with [[Ancilla]]-per-clause + `within/apply`:
 ```csharp
 import Std.Arrays.*;
@@ -100,7 +99,3 @@ operation MarkClause(
 `Adj` support is required - the [[Within-Apply pattern]] in the [[Diffusion operator]] & [[Oracle]] uncomputation both call [[Adjoint op]]. Operations that contain measurements (`M`, `Measure`) cannot be `Adjoint`-able - avoid measurements inside oracles.
 
 [[Ancilla]] [[Qubits]] allocated with `use` inside an operation are automatically reset to $|0\rangle$ on scope exit only if dev does so explicitly or via `within/apply`. Leaving [[Ancilla]] in non-$|0\rangle$ state causes runtime error.
-## Sources
-- [Grover's search tutorial - oracle construction](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)
-- [Within-apply pattern (conjugations)](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/conjugations)
-- [GitHub: [[Grover]] [[Oracle]] samples](https://github.com/microsoft/qsharp/tree/main/samples/algorithms

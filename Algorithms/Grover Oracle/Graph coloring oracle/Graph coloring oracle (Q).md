@@ -3,7 +3,6 @@
 
 Register layout: `[v0_b0, v0_b1, v1_b0, v1_b1, v2_b0, v2_b1]` - $6$ [[Qubits]] total.
 Edges: $(0,1)$, $(1,2)$, $(0,2)$.
-
 ```csharp
 import Std.Arrays.*;
 import Std.Canon.*;
@@ -11,9 +10,9 @@ import Std.Canon.*;
 // Mark ancilla = |1⟩ when two vertex color registers are EQUAL
 // (i.e., the edge constraint is violated - same color on both endpoints)
 operation MarkEdgeConflict(
-    colorU  : Qubit[],   // qubits encoding vertex u's color
-    colorV  : Qubit[],   // qubits encoding vertex v's color
-    ancilla : Qubit      // flipped if colorU == colorV
+    colorU : Qubit[], // qubits encoding vertex u's color
+    colorV : Qubit[], // qubits encoding vertex v's color
+    ancilla : Qubit  // flipped if colorU == colorV
 ) : Unit is Adj + Ctl {
     let bits = Length(colorU);
     use xorAnc = Qubit[bits];
@@ -85,18 +84,16 @@ operation Find3Coloring() : Result[] {
     return MResetEach(register);
 }
 ```
-
-**Reading the result:** The output `Result[]` of length $6$ encodes `[v0_b0, v0_b1, v1_b0, v1_b1, v2_b0, v2_b1]`. Interpret each pair as a 2-bit int (color $0$, $1$, or $2$). For example, `[Zero, One, One, Zero, Zero, Zero]` $→$ colors $(1, 2, 0)$ - all different on the triangle, a valid $3$-coloring.
+**Reading the result:** output `Result[]` of length $6$ encodes `[v0_b0, v0_b1, v1_b0, v1_b1, v2_b0, v2_b1]`. Interpret each pair as a 2-bit int (color $0$, $1$, or $2$). For example, `[Zero, One, One, Zero, Zero, Zero]` $→$ colors $(1, 2, 0)$ - all different on the triangle, a valid $3$-coloring.
 
 **Edge case - invalid color encodings:** With $2$ [[Qubits]] & $K=3$ colors, the state $|11\rangle$ (decimal $3$) is invalid color. [[Oracle]] marks valid colorings only, so the [[Grover]] amplitude amplification correctly ignores invalid encodings. For $K = 4$ (exact power of $2$), invalid states disappear entirely.
 
 **Extension to arbitrary graphs:**
-
 ```csharp
 operation MarkValidColoringGeneral(
     register : Qubit[],
-    edges    : (Int, Int)[],   // list of (u, v) edge pairs
-    bitsPerColor : Int         // ceil(log2(K))
+    edges : (Int, Int)[], // list of (u, v) edge pairs
+    bitsPerColor : Int // ceil(log2(K))
 ) : Unit is Adj + Ctl {
     use edgeAnc = Qubit[Length(edges)];
     within {

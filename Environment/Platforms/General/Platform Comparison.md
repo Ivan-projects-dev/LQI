@@ -29,10 +29,3 @@
 **Gate-model** (IBM, Azure, Braket, [[PennyLane]]): prepare [[Qubits]] $→$ apply gates $→$ measure $→$ analyze distribution.
 **[[Quantum annealing]]** ([[D-Wave]]): define energy func ([[QUBO]]/Ising) $→$ annealer finds min energy configuration.
 **Analog simulation** (QuEra Aquila on Braket): define Hamiltonian via atom positions & laser pulses $→$ observe evolved state.
-### Sources
-- [IBM Quantum Platform](https://quantum.cloud.ibm.com)
-- [Azure Quantum](https://azure.microsoft.com/en-us/products/quantum)
-- [Amazon Braket pricing](https://aws.amazon.com/braket/pricing/)
-- [PennyLane](https://pennylane.ai)
-- [D-Wave Leap](https://cloud.dwavesys.com)
-- [qBraid](https://qbraid.com)

@@ -97,7 +97,3 @@ Factory funcs return operation values with full `Adj + Ctl` support; compiler in
 | `ApplyCNOTChain`        | `Qubit[] $→$ Unit`                   | [[CNOT]] ladder        |
 | `Delay`                 | `(op, arg) $→$ () $→$ Unit`          | Deferred execution     |
 See [[Partial app]] for `_` syntax used with these combinators. See [[Within-Apply pattern]] for how `BoundCA` composes with auto-uncomputation.
-### Sources
-- [Higher-order functions & operations](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/operationsandfunctions)
-- [Std.Canon API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.canon)
-- [Callable types in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/callabletypes)

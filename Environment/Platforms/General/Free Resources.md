@@ -20,9 +20,9 @@ Both are free, no account required for reading.
 | Resource | Cost | Limit |
 |---|---|---|
 | `LocalSimulator` | Free | Unlimited, runs in your process |
-| Free trial credits | Free | $\$10$ one-time per new AWS account |
-| SV1 managed simulator | $\$0.075$/task + $\$0.00035$/shot | Charged after free credits |
-| QPU time | $\$0.30$/task + device rate | Charged after free credits |
+| Free trial credits | Free (one-time) | Small credit for new AWS accounts |
+| SV1 managed simulator | Paid (per task + per shot) | Charged after free credits |
+| QPU time | Paid (per task + per shot) | Charged after free credits |
 ## D-Wave Leap
 
 | Resource | Cost | Limit |
@@ -32,19 +32,3 @@ Both are free, no account required for reading.
 | `SimulatedAnnealingSampler` | Free (local) | Unlimited, CPU-based |
 | Ocean SDK | Free | Full local SDK |
 | [[D-Wave]] demos & tutorials | Free | Browser-based |
-## Sources
-
-**[[PennyLane]]:**
-- [PennyLane documentation](https://docs.pennylane.ai)
-- [PennyLane demos](https://pennylane.ai/qml/demonstrations)
-- [PennyLane Codebook](https://codebook.xanadu.ai)
-
-**[[Amazon Braket]]:**
-- [Amazon Braket developer guide](https://docs.aws.amazon.com/braket/latest/developerguide/)
-- [Braket pricing](https://aws.amazon.com/braket/pricing/)
-- [LocalSimulator documentation](https://docs.aws.amazon.com/braket/latest/developerguide/braket-devices.html)
-
-**[[D-Wave]]:**
-- [Leap free access](https://cloud.dwavesys.com/leap/)
-- [Ocean SDK documentation](https://docs.ocean.dwavesys.com/)
-- [D-Wave problem solving handbook](https://docs.dwavesys.com/docs/latest/doc_handbook.html)

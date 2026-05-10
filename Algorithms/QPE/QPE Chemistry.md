@@ -21,15 +21,3 @@ So $|\psi_0\rangle$ is eigenstate of $U(\tau)$ with eigenvalue $e^{-iE_0\tau}$. 
 | Scaling | $O(1/\epsilon)$ in circuit depth | Heuristic |
 | Status | Future advantage | Current NISQ use |
 [[QPE]] gives the definitive quantum chemistry speedup; [[VQE]] is the near-term workaround.
-### See also
-- [[QPE]]
-- [[QPE apps]]
-- [[Qubitization]] - exact alternative: walk operator on LCU of $H$, no Trotter error
-- [[Ground State Filtering]] - amplifying overlap when Hartree-Fock trial state is poor
-- [[Early FTQC]] - running chemistry [[QPE]] before full fault tolerance is available
-- [[QPE Simulation]] - [[QPE]] for lattice gauge, Hubbard & nuclear Hamiltonians
-### Sources
-- [Aspuru-Guzik et al. 2005: Simulated Quantum Computation of Molecular Energies](https://arxiv.org/abs/quant-ph/0604193)
-- [Babbush 2018: Encoding Electronic Spectra in Quantum Circuits with Linear T Complexity](https://arxiv.org/abs/1805.03912)
-- [Qiskit Nature documentation](https://qiskit-ecosystem.github.io/qiskit-nature/)
-- [IBM Quantum Learning: Quantum chemistry](https://learning.quantum.ibm.com/course/quantum-chemistry-with-vqe)

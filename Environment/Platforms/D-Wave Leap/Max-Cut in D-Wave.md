@@ -18,3 +18,4 @@ result = sampler.sample_qubo(Q, time_limit=5)
 print(result.first.sample) # dict of node: 0 or 1 (which partition)
 ```
 `LeapHybridSampler` combines QPU + classical heuristics. For real problems, it almost always outperforms raw QPU access & handles much larger variable counts.
+

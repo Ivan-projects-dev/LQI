@@ -27,8 +27,3 @@ On [[IBM Quantum]], submitting job & getting results back can take $30$ minutes 
 Run [[Azure Quantum]]'s [[QRE]] on any textbook algorithm. [[Shor]] algorithm at [[RSA]]-$2048$ scale needs $~4$ million physical [[Qubits]] & years of runtime on hardware that doesn't exist yet. Most "quantum algorithms" in textbooks describe math procedures, not programs you can run today.
 ###  7. D-Wave Is Not the Same Type of Computer
 [[D-Wave]] is **quantum annealer**, not gate-based computer. It does not run circuits. It cannot execute [[Grover]], [[Shor]], [[VQE]], or [[QPE]]. It is optimizer for combinatorial problems. Comparing [[D-Wave]] to IBM is like comparing graphics card to CPU - different tools for different jobs.
-###  Sources
-- [IBM Quantum: understanding noise](https://docs.quantum.ibm.com/guides/noise-learning)
-- [Qiskit: error mitigation overview](https://docs.quantum.ibm.com/guides/error-mitigation-and-suppression-techniques)
-- [Azure Resource Estimator intro](https://learn.microsoft.com/en-us/azure/quantum/intro-to-resource-estimation)
-- [NISQ era overview - Preskill 2018](https://arxiv.org/abs/1801.00

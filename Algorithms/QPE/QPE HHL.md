@@ -1,6 +1,6 @@
 #Algorithm #Math
 **[[HHL]] algorithm** (Harrow-Hassidim-Lloyd, $2009$) solves linear system $A\vec{x} = \vec{b}$ exponentially faster than classical Gaussian elimination for certain sparse, well-conditioned matrices. [[QPE]] is its core subroutine: it extracts the eigenvalues of $A$ so they can be inverted quantumly.
-### Structure of HHL
+
 **Input**: $n\times n$ Hermitian [[Matrix]] $A$ (eigenvalues $\lambda_j$), [[Vector]] $\vec{b}$ encoded as $|b\rangle$.
 **Output**: [[Quantum state]] $|x\rangle \propto A^{-1}|b\rangle$.
 
@@ -77,11 +77,3 @@ operation HHL(nClock : Int, t : Double, C : Double) : Result {
 - **Condition num $\kappa$**: circuit depth scales as $O(\kappa^2 \log N / \epsilon)$ - ill-conditioned matrices lose the speedup
 - **Output**: you get $|x\rangle$, not the classical [[Vector]] - reading out all components destroys the quantum speedup
 - **Practical use**: [[HHL]] provides speedup only when $A$ is sparse, $\kappa$ is small, & the answer can be obtained from $O(1)$ inner products rather than full readout
-### See also
-- [[QPE]] - full [[QPE]] theory & circuit
-- [[QPE apps]] - all [[QPE]] use cases
-### Sources
-- [Harrow, Hassidim & Lloyd 2009: Quantum algorithm for linear systems of equations](https://arxiv.org/abs/0811.3171)
-- [Aaronson 2015: Read the fine print (HHL caveats)](https://www.scottaaronson.com/papers/qml.pdf)
-- [Childs, Kothari & Somma 2017: Solving systems of linear equations with quantum mechanics](https://arxiv.org/abs/1512.01029)
-- [Qiskit: HHL tutorial](https://learning.quantum.ibm.com/tutorial/solving-linear-systems-of-equations-using-hhl-and-its-qiskit-implementation)

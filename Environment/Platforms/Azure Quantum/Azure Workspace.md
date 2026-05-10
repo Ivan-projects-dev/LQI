@@ -28,9 +28,3 @@ az quantum job output -o table  # view results
 - Storage account in the same resource group holds job input/output blobs; billed at standard Azure Storage rates.
 - You can tag workspaces for cost management & use **Azure Policy** to enforce allowed providers.
 - Multiple workspaces can share the same storage account but each has an independent job queue.
-## Sources
-- [Create an Azure Quantum workspace](https://learn.microsoft.com/en-us/azure/quantum/how-to-create-workspace)
-- [Connect to your workspace](https://learn.microsoft.com/en-us/azure/quantum/how-to-connect-workspace)
-- [Manage workspaces with Azure CLI](https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-with-the-azure-cli)
-- [azure-quantum Python package (PyPI)](https://pypi.org/project/azure-quantum/)
-- [Global provider availability](https://learn.microsoft.com/en-us/azure/quantum/provider-global-availability)

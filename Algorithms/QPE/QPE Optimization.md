@@ -17,7 +17,7 @@ If lower bound $E_L \leq E_0$ is known (e.g., from SDP relaxation of the Ising p
 1. Solve classical SDP relaxation $→ E_{\rm SDP} \leq E_0$
 2. Apply Gaussian or power-cosine filter centered at $E_{\rm SDP}$
 3. Run [[QPE]] on filtered state $→$ high success prob even with poor initial trial state
-Effective when SDP bound is tight (e.g., Max-Cut: $E_{\rm SDP}/E_0 \geq 0.878$ by Goemans-Williamson).
+Effective when SDP bound is tight (e.g., Max-Cut: $E_{\rm SDP}/E_0 \geq 0.878$ by **Goemans-Williamson**).
 ### QPE-assisted QAOA
 [[QAOA]] requires classical optimization over $(\gamma, \beta)$ parameters via noisy expectation value estimates. Core difficulty: **barren plateau** - gradient $\partial\langle H_C\rangle/\partial\gamma$ vanishes exponentially in $n$ for random params.
 
@@ -43,21 +43,10 @@ Linear programs (LP): minimize $c^Tx$ s.t. $Ax = b$, $x\geq0$. Each interior-poi
 Quadratic programs (QP): same structure with extra quadratic term in Hessian; quantum speedup carries over if Hessian has efficiently accessible block structure.
 ### Comparison to variational methods
 
-| Method       | Accuracy                      | Hardware | Handles excited states? | Outputs solution?  |
-| ------------ | ----------------------------- | -------- | ----------------------- | ------------------ |
-| [[QAOA]]     | Heuristic (approx ratio)      | NISQ     | No                      | Yes (measurement)  |
-| [[VQE]]      | Variational upper bound       | NISQ     | Partially (VQD)         | No (energy only)   |
-| [[QPE]] (Ising)  | Exact $E_0$ to $\epsilon$     | [[FTQC]]     | Yes                     | With amplification |
-| [[QPE]] + filter | Exact $E_0$, improved overlap | [[FTQC]]     | Yes                     | Yes                |
-### See also
-- [[QAOA]] - variational alternative for combinatorial optimization
-- [[QPE HHL]] - linear systems via [[QPE]]
-- [[Ground State Filtering]] - improving overlap for optimization ground states
-- [[QPE]] - full [[QPE]] theory & circuit
-- [[QUBO]] - optimization problem encoding
-### Sources
-- [Filtered Quantum Phase Estimation (Oct 2025)](https://arxiv.org/abs/2510.04294)
-- [Post-Variational Ground State Estimation via QPE-QITE (Apr 2025)](https://arxiv.org/html/2504.11549)
-- [Programmable Signal Design for QPE via QSP (Jun 2026)](https://arxiv.org/html/2604.01205)
-- [Noisy Intermediate-Scale Quantum Algorithm for SDP (2021)](https://ar5iv.labs.arxiv.org/html/2106.03891)
-- [Childs, Kothari & Somma 2017: Solving linear systems](https://arxiv.org/abs/1512.01029)
+| Method           | Accuracy                      | Hardware | Handles excited states? | Outputs solution?  |
+| ---------------- | ----------------------------- | -------- | ----------------------- | ------------------ |
+| [[QAOA]]         | Heuristic (approx ratio)      | NISQ     | No                      | Yes (measurement)  |
+| [[VQE]]          | Variational upper bound       | NISQ     | Partially (VQD)         | No (energy only)   |
+| [[QPE]] (Ising)  | Exact $E_0$ to $\epsilon$     | [[FTQC]] | Yes                     | With amplification |
+| [[QPE]] + filter | Exact $E_0$, improved overlap | [[FTQC]] | Yes                     | Yes                |
+

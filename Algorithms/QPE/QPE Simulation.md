@@ -9,7 +9,6 @@ Physical system $→$ Hamiltonian $H$ $→$ qubit encoding $→$ implement $e^{-
 - Fermions: Jordan-Wigner (1D: $O(n)$ locality), Bravyi-Kitaev ($O(\log n)$ locality), or first-quantized plane-wave basis
 - Bosons: truncated Fock space, unary or binary encoding of occupation numbers
 - Gauge fields: plaquette operators, link variables - higher-dimensional Hilbert space per site
-
 ### Lattice gauge theories
 **Gauge theories** describe fundamental forces (Standard Model: $U(1)$ QED, $SU(2)$ weak, $SU(3)$ QCD). Classical lattice QCD at finite baryon density $\mu \neq 0$ fails due to the **sign problem** - Monte Carlo importance sampling breaks down. [[Quantum simulation]] has no sign problem.
 
@@ -21,12 +20,11 @@ $$H = H_E + H_B + H_{\rm fermion} + H_{\rm Yukawa}$$
 
 [[QPE]] on $e^{-iHt}$ with trial vacuum state $→$ extracts **mass gap** (lightest particle mass $\Delta E = E_1 - E_0$), **string tension** (confinement order parameter), **phase diagram** of confinement/deconfinement transition.
 
-**Recent results**: $Z_2$ lattice gauge theory confinement tested on Google's quantum AI hardware (Nature Physics, Jan 2025). $U(1)$ QED in $(2+1)$D simulated on trapped-ion qudits (Nature Physics, 2025) - qudits encode gauge field occupations $>$ efficiently than [[Qubits]].
+**Recent results**: $Z_2$ lattice gauge theory confinement tested on Google's quantum AI hardware (Nature Physics, Jan 2025). $U(1)$ QED in $(2+1)$D simulated on trapped-ion qudits (Nature Physics, 2025) - [[Qubits]] encode gauge field occupations $>$ efficiently than [[Qubits]].
 
 **Qubit count**: scales with lattice volume $V = L^d$ & gauge group dimension. $SU(2)$ in $(2+1)$D: $\sim 10^2$–$10^3$ logical [[Qubits]] for small classically-hard instances; $SU(3)$ in $(3+1)$D: estimates $\sim 10^4$–$10^6$ logical [[Qubits]] for beyond-classical regime.
 
 ### Hubbard model
-
 Strongly correlated electrons on lattice:
 $$H = -t\sum_{\langle i,j\rangle,\sigma}\!\!(c^\dagger_{i\sigma}c_{j\sigma} + h.c.) + U\sum_i n_{i\uparrow}n_{i\downarrow}$$
 Classical simulation fails in regime $t \sim U$ - the Mott transition. Best classical methods (quantum Monte Carlo) have sign problem for frustrated geometries or doped systems relevant to high-$T_c$ superconductivity.
@@ -53,7 +51,6 @@ Applications:
 **Symmetry-protected topological (SPT) phases**: ground-state degeneracy on finite systems $→$ [[QPE]] distinguishes near-degenerate ground states by resolving exponentially small energy splitting $\Delta E \sim e^{-L}$.
 
 ### Nuclear physics
-
 Nuclear structure: $A$-body Hamiltonian from chiral effective field theory (EFT) in single-particle basis. Classical **no-core shell model** limited to $A \lesssim 20$ nucleons.
 
 **[[QPE]] targets**:
@@ -61,31 +58,15 @@ Nuclear structure: $A$-body Hamiltonian from chiral effective field theory (EFT)
 - Binding energy differences (nuclear chart)
 - Scattering observables (T-[[Matrix]] eigenvalues $→$ reaction cross-sections)
 - Neutrino oscillation Hamiltonians (CP violation)
-
 Qubit encoding: $\sim 50$–$200$ [[Qubits]] per nucleus depending on single-particle basis truncation. First systematic resource estimates published 2024–2025; classically intractable instances estimated at $\sim 10^3$ logical [[Qubits]].
 
 ### Comparison across simulation targets
 
-| System | Classical bottleneck | [[QPE]] target | Key challenge |
-|---|---|---|---|
-| Lattice QCD | Sign problem at $\mu\neq0$ | Mass gaps, phase diagram | Large qubit count |
-| Hubbard model | Sign problem (frustrated/doped) | Mott transition energy | Trial state overlap |
-| Band structure | Correlation effects in DFT | Topological invariants | $\mathbf{k}$-point scan overhead |
-| Nuclear structure | $A>20$ shell model | Binding energies | Basis truncation errors |
-| Quantum chemistry | Strong electron correlation | Ground state energy | See [[QPE Chemistry]] |
-
+| System            | Classical bottleneck            | [[QPE]] target           | Key challenge                    |
+| ----------------- | ------------------------------- | ------------------------ | -------------------------------- |
+| Lattice QCD       | Sign problem at $\mu\neq0$      | Mass gaps, phase diagram | Large qubit count                |
+| Hubbard model     | Sign problem (frustrated/doped) | Mott transition energy   | Trial state overlap              |
+| Band structure    | Correlation effects in DFT      | Topological invariants   | $\mathbf{k}$-point scan overhead |
+| Nuclear structure | $A>20$ shell model              | Binding energies         | Basis truncation errors          |
+| Quantum chemistry | Strong electron correlation     | Ground state energy      | See [[QPE Chemistry]]            |
 All targets share same [[QPE]] structure - what differs is the [[Hamiltonian encoding]] & trial state preparation strategy.
-
-### See also
-- [[QPE Chemistry]] - molecular chemistry application
-- [[Qubitization]] - efficient Hamiltonian simulation for all simulation targets
-- [[QPE apps]] - all [[QPE]] use cases
-- [[Quantum simulation]] - broader context
-- [[Ising model]] - simplest lattice model; relevant to lattice gauge & optimization
-
-### Sources
-- [Simulating $Z_2$ Lattice Gauge Theory on Google Quantum AI (Nature Physics, 2025)](https://www.nature.com/articles/s41567-025-02797-w)
-- [Qudit Quantum Simulation of $U(1)$ QED (Nature Physics, 2025)](https://www.nature.com/articles/s41567-024-02721-8)
-- [Benchmarking Quantum Simulation Methods (Oct 2025)](https://arxiv.org/abs/2510.01710)
-- [Quantum Simulation for Lattice Gauge Theories - APS SMT 2025](https://schedule.aps.org/smt/2025/events/MAR-W01/11)
-- [QSIM 2025: Quantum Simulation in Condensed Matter & AMO Physics](https://qsim2025.org/)

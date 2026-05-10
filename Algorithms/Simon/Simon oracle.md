@@ -12,8 +12,3 @@ _LinearOperator_ ($f(x) = A\cdot x \pmod 2$, single output qubit) - $A$ is a $1\
 _MultidimensionalLinearOperator_ ($f(x) = A\cdot x \pmod 2$, $n_2$-qubit output) - $A$ is $n_2\times n_1$. Apply [[CNOT]] from $x[c]$ to $y[r]$ for each $(r,c)$ where $A[r][c]=1$. The hidden period $s$ lies in the null space of $A$ over $\mathbb{F}_2$.
 
 **General [[Oracle]] structure**: always of the form "XOR contribution of $x$ into $y$" $→$ each output bit $r$ gets XORed with the inner product $A_r\cdot x$, implemented as fan-out of CNOTs. No [[Ancilla]] is needed & the [[Oracle]] is automatically reversible (its own adjoint).
-## Sources
-- [Q# Quantum Katas: Simon's algorithm](https://quantum.microsoft.com/en-us/tools/quantum-katas)
-- [Simon's original paper (1994)](https://arxiv.org/abs/quant-ph/9505027)
-- [GitHub: Q# Simon sample](https://github.com/microsoft/qsharp/tree/main/samples/algorithms)
-- [Within-apply conjugation pattern](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/conjugations)

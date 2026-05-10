@@ -27,7 +27,3 @@ To estimate $\varphi$ to $\epsilon$ precision with success probability $\geq 1 -
 $$t = \left\lceil \log_2 \frac{1}{\epsilon} + \log_2\!\left(2 + \frac{1}{2\delta}\right)\right\rceil \text{ clock Qs}$$
 Where $Qs$ - [[Qubits]]
 Total calls to controlled-$U$: $\sum_{j=0}^{t-1} 2^j = 2^t - 1$. Dominant cost in all applications.
-### Sources
-- [Kitaev 1995: Quantum measurements & the Abelian Stabilizer Problem](https://arxiv.org/abs/quant-ph/9511026)
-- [Nielsen & Chuang, Ch. 5: Quantum Fourier Transform & its Applications](https://www.cambridge.org/core/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE)
-- [IBM Quantum Learning: Phase Estimation & Factoring](https://learning.quantum.ibm.com/course/fundamentals-of-quantum-algorithms/phase-estimation-and-factoring)

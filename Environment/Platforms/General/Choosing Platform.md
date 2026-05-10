@@ -62,3 +62,4 @@ Non-obvious factor: the qubit **connectivity graph** of the hardware determines 
 | [[IonQ]] Trapped Ion       | Similar to [[Quantinuum]]          | $0.2\%$-$0.8\%$                 |
 | [[D-Wave]] Annealer        | Chain breaks, thermal noise        | Not applicable (not gate-based) |
 Trapped-ion hardware has $<$ error rates per gate but is $1000x$ slower clock speed than superconducting. For shallow circuit ($< 50$ gates), trapped-ion gives better fidelity. For deep circuit that would take hours on trapped-ion, superconducting finishes in seconds at the cost of higher per-gate error.
+

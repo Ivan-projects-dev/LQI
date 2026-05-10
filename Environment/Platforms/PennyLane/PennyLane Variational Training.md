@@ -229,10 +229,3 @@ for step in range(100):
 print(f"Optimal params: {params}")
 # Then: sample from the optimized circuit to get the max-cut partition
 ```
-
-## Sources
-- [PennyLane: Variational quantum algorithms](https://docs.pennylane.ai/en/stable/introduction/variational_intro.html)
-- [PennyLane: Barren plateaus demo](https://pennylane.ai/qml/demos/tutorial_barren_plateaus)
-- [PennyLane: QAOA demo](https://pennylane.ai/qml/demos/tutorial_qaoa_intro)
-- [PennyLane Catalyst documentation](https://docs.pennylane.ai/projects/catalyst/)
-- [McClean et al. 2018: Barren plateaus in quantum neural network training landscapes](https://arxiv.org/abs/1803.11173)

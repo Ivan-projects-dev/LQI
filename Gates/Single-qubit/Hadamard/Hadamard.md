@@ -1,6 +1,5 @@
 #Math #Q-Sharp #Python 
-**Hadamard gate** $H$ is the single most important gate in quantum computing. It creates superposition from basis state & is the bridge between **computational basis** $\{|0\rangle, |1\rangle\}$ & **Hadamard basis** $\{|+\rangle, |{-}\rangle\}$.
-
+**Hadamard gate** $H$ creates superposition from basis state & is the bridge between **computational basis** $\{|0\rangle, |1\rangle\}$ & **Hadamard basis** $\{|+\rangle, |{-}\rangle\}$.
 $$H = \frac{1}{\sqrt{2}}\begin{pmatrix}1 & 1\\1 & -1\end{pmatrix}$$
 $$H|0\rangle = \frac{|0\rangle + |1\rangle}{\sqrt{2}} = |{+}\rangle \qquad H|1\rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}} = |{-}\rangle$$
 Applied to $|0\rangle$ it creates **uniform superposition**: both outcomes $0$ & $1$ are equally likely on measurement. Applied to $|1\rangle$ it creates the same uniform superposition but with a **relative phase flip** between the two terms - the phase encodes classical info that a quantum algorithm can exploit.

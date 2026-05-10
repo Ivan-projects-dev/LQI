@@ -41,15 +41,3 @@ Using qubitization with DF of ERI (chemical accuracy $\epsilon = 1.6\times10^{-3
 T-gate counts roughly $100\times$ lower than Trotter-based [[QPE Chemistry]] at same $\epsilon$.
 ### Basis set optimization (2025)
 [[QPE]] runtime scales as $O(\lambda/\epsilon)$; reducing $\lambda$ via basis set choice directly cuts cost. **Frozen natural orbital (FNO)** strategy: identify & freeze weakly-occupied orbitals, reducing $N$ & $\lambda$ significantly without sacrificing accuracy. Up to $10\times$ runtime reduction reported for mid-size molecules ($2025$ JCTC).
-### See also
-- [[QPE Chemistry]] - Trotter-based approach & overview
-- [[Ground State Filtering]] - overlap amplification for poor trial states
-- [[QPE apps]] - all [[QPE]] use cases
-- [[Trotter formula]] - approximation replaced by qubitization
-- [[QPE Walks]] - Szegedy walk operator (same construction)
-### Sources
-- [Babbush et al. 2019: Qubitization of Arbitrary Basis Quantum Chemistry](https://arxiv.org/abs/1902.02134)
-- [Benchmarking Quantum Simulation Methods (Oct 2025)](https://arxiv.org/abs/2510.01710)
-- [Improving QPE Runtime via Basis Set Optimization (JCTC 2025)](https://pubs.acs.org/doi/10.1021/acs.jctc.5c01512)
-- [Efficient LCU block encodings through Dicke states (Jul 2025)](https://arxiv.org/abs/2507.20887)
-- [Quantum Simulations of Chemistry in First Quantization (2024)](https://arxiv.org/abs/2408.03145)

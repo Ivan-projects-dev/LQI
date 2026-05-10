@@ -1,16 +1,15 @@
 #Algorithm #Math
-**Diffusion operator** $D$ ([[Grover]] diffusion / inversion about the mean) is the $2nd$ component of each [[Grover]] algorithm iteration, applied after the phase [[Oracle]]. $$D = 2|s\rangle\langle s| - I$$
-where $|s\rangle = H^{\otimes n}|0\rangle^{\otimes n} = \frac{1}{\sqrt{N}}\sum_{x=0}^{N-1}|x\rangle$ is the uniform superposition & $I$ is the $N \times N$ identity.
+**Diffusion operator** $D$ ([[Grover]] diffusion / inversion about the mean) is the $2nd$ component of each [[Grover]] algorithm iteration, applied after the phase [[Oracle]]. $$D = 2|s\rangle\langle s| - I$$where $|s\rangle = H^{\otimes n}|0\rangle^{\otimes n} = \frac{1}{\sqrt{N}}\sum_{x=0}^{N-1}|x\rangle$ is the uniform superposition & $I$ is the $N \times N$ identity.
 
-**Geometric action**: $D$ performs a reflection of the state [[Vector]] about $|s\rangle$. Combined with the [[Oracle]] reflection about $|s'\rangle$, each full [[Grover]] step is a rotation by $2\theta$ toward $|ω\rangle$. ([[Grover geometric]])
+**Geometric action**: $D$ performs reflection of the state [[Vector]] about $|s\rangle$. Combined with the [[Oracle]] reflection about $|s'\rangle$, each full [[Grover]] step is rotation by $2\theta$ toward $|ω\rangle$. ([[Grover geometric]])
 
-**Amplitude interpretation**: if the current state is $|\psi\rangle = \sum_x \alpha_x |x\rangle$ with mean amplitude $\mu = \frac{1}{N}\sum_x \alpha_x$, then after $D$: $\alpha_x \;\mapsto\; 2\mu - \alpha_x$
+**Amplitude interpretation**: if the current state is $|\psi\rangle = \sum_x \alpha_x |x\rangle$ with mean amplitude $\mu = \frac{1}{N}\sum_x \alpha_x$ then after $D$: $\alpha_x \;\mapsto\; 2\mu - \alpha_x$
 
-[[Oracle]]-marked state has amplitude $-a$ (flipped sign), while all others remain $+a$. Mean $\mu$ drops slightly. Inversion about $\mu$ then raises the marked amplitude & lowers the rest - **amplitude amplification**.
+[[Oracle]]-marked state has amplitude $-a$ (flipped sign), while others remain $+a$. Mean $\mu$ drops slightly. Inversion about $\mu$ then raises marked amplitude & lowers rest - **amplitude amplification**.
 
 **Circuit derivation**:
 $$D = 2|s\rangle\langle s| - I = H^{\otimes n}(2|0\rangle\langle 0| - I)H^{\otimes n}$$
-since $|s\rangle = H^{\otimes n}|0\rangle$, so $|s\rangle\langle s| = H^{\otimes n}|0\rangle\langle 0|H^{\otimes n}$.
+since $|s\rangle = H^{\otimes n}|0\rangle$, so $|s\rangle\langle s| = H^{\otimes n}|0\rangle\langle 0|H^{\otimes n}$
 
 Inner operator $2|0\rangle\langle 0| - I$ flips the sign of every basis state _except_ $|0\rangle$.
 

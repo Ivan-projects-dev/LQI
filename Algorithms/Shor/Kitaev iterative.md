@@ -38,3 +38,4 @@ operation IterativePhaseBit(U : (Qubit => Unit is Adj + Ctl),
 **Advantage over standard [[Shor]]:** Requires only $O(1)$ [[Qubits]] in the control register ($1$ qubit at time) $+$ target register. Reduces qubit count at the cost of $>$ circuit runs.
 
 **Disadvantage:** Each run extracts only $1$ bit. Requires $O(n)$ runs total, each with $O(2^k)$ controlled-$U$ applications. Total [[Oracle]] calls are the same order as standard [[Shor]].
+

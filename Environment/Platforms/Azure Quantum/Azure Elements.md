@@ -14,8 +14,3 @@ Goal: compress $250$ years of chemistry progress into the next $25$ years by aut
 3. Accelerated DFT screens candidates at scale
 4. High-fidelity classical QC (CCSD(T)) validates top hits
 5. Future: quantum phase estimation on QPU for exact electronic structure
-## Sources
-- [Azure Quantum Elements announcement (Microsoft)](https://news.microsoft.com/source/features/innovation/azure-quantum-elements-chemistry-materials-science/)
-- [Generative Chemistry & Accelerated DFT launch (2024)](https://azure.microsoft.com/en-us/blog/quantum/2024/06/18/introducing-two-powerful-new-capabilities-in-azure-quantum-elements-generative-chemistry-and-accelerated-dft/)
-- [Empowering scientists with AI-augmented discovery](https://blogs.microsoft.com/blog/2024/06/18/empowering-every-scientist-with-ai-augmented-scientific-discovery/)
-- [Azure Quantum applications](https://azure.microsoft.com/en-us/solutions/quantum-computing/)

@@ -69,9 +69,3 @@ import Std.Convert.*;
 let bits  = IntAsBoolArray(11, 4); // [true, false, true, true]
 let value = ResultArrayAsIntBE(results); // Result[] → Int
 let d = IntAsDouble(n); // Int → Double
-```
-
-### Sources
-- [Q# type system](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/)
-- [Primitive types in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/primitives)
-- [UDTs & structs in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/udts-and-structs)

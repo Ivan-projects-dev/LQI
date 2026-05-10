@@ -6,7 +6,7 @@ where $\hat{\varphi} = \tilde{\varphi}/2^t$ is the output & $\tilde{\varphi} \in
 **Probability of success** with $t$ [[Qubits]]:
 	If $2^t\varphi$ is int: $P(\text{exact}) = 1$.
 	Otherwise, let $\delta = 2^t\varphi - \lfloor 2^t\varphi \rfloor \in (0,1)$ be the fractional deviation. Probability of getting the nearest $t$-bit approximation: $$P(\text{nearest}) \geq \frac{4}{\pi^2} \approx 0.405$$
-**Extra [[Qubits]] to boost success probability**: use $t + m$ [[Qubits]] & discard the $m$ least significant bits. Success probability of getting $\varphi$ correct to $t$ bits rises to:
+	**Extra [[Qubits]] to boost success probability**: use $t + m$ [[Qubits]] & discard the $m$ least significant bits. Success probability of getting $\varphi$ correct to $t$ bits rises to:
 $$P \geq 1 - \frac{1}{2(2^m - 1)}$$
 In practice: $m = 3$ gives $P \geq 0.875$; $m = 5$ gives $P \geq 0.969$.
 

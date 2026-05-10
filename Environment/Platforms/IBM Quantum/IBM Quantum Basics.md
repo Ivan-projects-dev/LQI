@@ -45,8 +45,3 @@ pub_result = result[0] # first circuit's result
 counts = pub_result.data.meas.get_counts() # measurement register named "meas"
 ```
 Counts dictionary tells you how often each classical bit string appeared. $>$ shots = smoother distribution.
-###  Sources
-- [IBM Quantum Learning - Basics of Quantum info](https://learning.quantum.ibm.com/course/basics-of-quantum-information)
-- [Qiskit Getting Started](https://docs.quantum.ibm.com/start)
-- [SamplerV2 documentation](https://docs.quantum.ibm.com/api/qiskit-ibm-runtime/sampler-v2)
-- [Hello World tutorial](https://docs.quantum.ibm.com/guides/hello-world)

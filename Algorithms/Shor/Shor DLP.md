@@ -55,9 +55,3 @@ This is roughly $1/2$ the qubit count of $RSA-2048$ factoring - **ECDH 256 is ha
 | QFT                      | $1$D QFT                            | $2$D QFT ($= \text{QFT} \otimes \text{QFT}$) |
 | Post-processing          | Continued fractions                 | Modular inverse                              |
 | [[Oracle]] calls per run | $O(n)$ (controlled $U^{2^k}$)       | $O(n)$ per register ($2 \times O(n)$ total)  |
-## Sources 
-- [Shor 1994: Algorithms for quantum computation - discrete logarithms & factoring](https://arxiv.org/abs/quant-ph/9508027)
-- [Preskill: Quantum Computing lecture notes Ch. 6 (period finding, DLP)](http://theory.caltech.edu/~preskill/ph219/chap6_19.pdf)
-- [Ekerå & Håstad 2017: Quantum algorithms for computing short discrete logarithms](https://arxiv.org/abs/1703.09077)
-- [Beauregard 2002: Circuit for Shor's algorithm using 2n+3 qubits](https://arxiv.org/abs/quant-ph/0205095)
-- [Crypto.SE: Using Shor's algorithm for discrete logarithm](https://crypto.stackexchange.com/questions/37018)

@@ -13,9 +13,4 @@ Strategy - **reconstruct the state from statistics, not direct observation.**
 [[IBM Debug]]
 [[Amazon Debug]]
 [[D-Wave Debug]]
-###  Sources
-- [Qiskit: debugging circuits](https://docs.quantum.ibm.com/guides/debug-qiskit)
-- [Q# DumpMachine documentation](https://learn.microsoft.com/en-us/qsharp/api/qsharp-core/microsoft.quantum.diagnostics/dumpmachine)
-- [PennyLane: inspecting circuits](https://docs.pennylane.ai/en/stable/introduction/inspecting_circuits.html)
-- [Amazon Braket: local simulators](https://docs.aws.amazon.com/braket/latest/developerguide/braket-devices.html)
-- [D-Wave: chain breaks](https://docs.dwavesys.com/docs/latest/c_qpu_annealing.html)
+

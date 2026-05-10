@@ -41,9 +41,4 @@ operation MyRotation(angle : Double, q : Qubit) : Unit is Adj + Ctl {
     controlled adjoint auto; // auto wraps Adjoint Rz → Controlled Adjoint Rz
 }
 ```
-
 When operation is declared `is Adj + Ctl`, Q# requires all $4$ specializations to be satisfiable: `body`, `adjoint`, `controlled`, `controlled adjoint`. Using `auto` for all is the most common pattern; manual bodies are only needed for performance-critical decompositions.
-### Sources
-- [Functor application in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/functorapplication)
-- [Controlled functor](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/operationsandfunctions)
-- [Multi-qubit gates (Std.Intrinsic)](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)

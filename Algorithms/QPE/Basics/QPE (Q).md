@@ -87,11 +87,4 @@ operation Main() : Unit {
 | -------------------- | ------------------ | --------------------- | ---------------- |
 | Standard [[QPE]]     | $t$                | $2^t - 1$             | 1 (parallel)     |
 | Iterative [[QPE]]    | $1$                | $2^t - 1$             | $t$ (sequential) |
-| [[Quantum counting]] | $t$                | $O(2^t)$ calls to $G$ | 1                |
-### See also
-- [[QPE apps]] - all algorithms that use [[QPE]] as subroutine
-- [[QPE on T gate]] - concrete eigenphase example
-### Sources
-- [Quantum phase estimation kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
-- [Std.Intrinsic: controlled unitaries](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)
-- [GitHub: QPE samples in Q#](https://github.com/microsoft/qsharp/tree/main/samples/algorithms)
+| [[Quantum counting]] | $t$                | $O(2^t)$ calls to $G$ | $1$              |

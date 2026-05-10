@@ -42,9 +42,3 @@ Use cases - combinatorial optimization: vehicle routing, job scheduling, portfol
 **D-Wave gives a distribution, not a single answer.** `num_reads=1000` returns $1000$ candidate solutions, each with energy value. Take `response.first.sample` for the best, or look at the full distribution to understand the energy landscape.
 
 D-Wave is best for discrete optimization; IBM/Azure/Braket are for [[Quantum simulation]] & algorithm research.
-## Sources
-- [D-Wave Leap cloud service](https://cloud.dwavesys.com)
-- [Leap Quantum LaunchPad announcement](https://www.dwavequantum.com/company/newsroom/press-release/d-wave-announces-new-leap-quantum-launchpad-program-to-fast-track-deployment-of-quantum-computing-applications/)
-- [Advantage2 GA announcement](https://thequantuminsider.com/2025/05/20/d-wave-announces-general-availability-of-advantage2-quantum-computer/)
-- [Ocean SDK documentation](https://docs.ocean.dwavesys.com)
-- [Ocean SDK GitHub](https://github.com/dwavesystems/dwave-ocean-sdk)

@@ -73,10 +73,3 @@ operation CountSolutions(nClock : Int, nSearch : Int) : Int {
 **Note**: for the degenerate case $M = 0$ or $M = N$, $\theta = 0$ & [[QPE]] returns $\tilde\varphi = 0$. $2$ eigenvalues $e^{+2i\theta}$ & $e^{-2i\theta}$ are symmetric - [[QPE]] may return either $\varphi$ or $1-\varphi$; take $\min(\tilde\varphi, 1-\tilde\varphi)$ before computing $\theta$.
 
 [[Quantum counting]] is often used as **preprocessing step** to calibrate [[Grover]]'s algorithm when $M$ is unknown.
-### See also
-- [[QPE]] - full [[QPE]] theory & circuit
-- [[QPE apps]] - all [[QPE]] use cases
-### Sources
-- [Brassard, Høyer, Mosca & Tapp 2002: Quantum Amplitude Amplification & Estimation](https://arxiv.org/abs/quant-ph/0005055)
-- [Mosca 1998: Quantum counting (thesis chapter)](https://arxiv.org/abs/quant-ph/9808023)
-- [Nielsen & Chuang, §6.3: Counting](https://www.cambridge.org/core/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE)

@@ -46,15 +46,4 @@ Apers gives single-shot MNRS variant handling multiple solutions without reducti
 - Removes need to pre-condition on $M = 1$
 - Directly applies to element distinctness & triangle finding with multiple collisions
 - Chains walks: reuse walk state after outputting $1$ collision, continue for $>$ (relevant for collision-finding algorithms, $2025$)
-### See also
-- [[QPE Walks]] - Szegedy walk theory & spectral gap
-- [[Walk example]] - concrete $4$-cycle [[Walk example]]
-- [[Quantum counting]] - MNRS preprocessing to estimate $\epsilon$
-- [[Grover]] - special case with $\delta = 1$
-- [[QPE]] - full [[QPE]] theory
-### Sources
-- [Magniez, Nayak, Roland & Santha 2007: Search via Quantum Walk](https://www.irif.fr/~magniez/PAPIERS/mnrs-stoc07.pdf)
-- [Apers 2021: A Unified Framework of Quantum Walk Search (STACS)](https://drops.dagstuhl.de/storage/00lipics/lipics-vol187-stacs2021/LIPIcs.STACS.2021.6/LIPIcs.STACS.2021.6.pdf)
-- [Ambainis 2007: Quantum Walk Algorithm for Element Distinctness (SIAM J. Comput.)](https://epubs.siam.org/doi/10.1137/S0097539705447311)
-- [Santha 2008: Quantum Walk Based Search Algorithms (survey)](https://link.springer.com/chapter/10.1007/978-3-540-79228-4_3)
-- [Magniez et al. 2011: Search via Quantum Walk - full version](https://www.irif.fr/~santha/Papers/mnros11.pdf)
+[Apers 2021: A Unified Framework of Quantum Walk Search (STACS)](https://drops.dagstuhl.de/storage/00lipics/lipics-vol187-stacs2021/LIPIcs.STACS.2021.6/LIPIcs.STACS.2021.6.pdf)

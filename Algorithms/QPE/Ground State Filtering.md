@@ -39,17 +39,4 @@ Power-cosine filter is equivalent to **quantum signal processing** applied to th
 - [[Qubitization]] block-encodes $H/\lambda$
 - QSP applies polynomial $p(H/\lambda)$ to implement filter $F$
 - Cost scales as $O(\deg(p)\cdot\text{cost}(W))$ where $W$ is the walk operator
-
 Optimal polynomial degree $d = O(\lambda\Delta^{-1}\log(1/\eta))$ for power-cosine scheme.
-### See also
-- [[QPE Chemistry]]
-- [[Early FTQC]] - regime where filtering is critical
-- [[QPE Optimization]] - optimization problems as ground-state finding
-- [[Qubitization]] - provides walk operator that filters act on
-- [[QPE]]
-### Sources
-- [Filtered Quantum Phase Estimation (Oct 2025)](https://arxiv.org/abs/2510.04294)
-- [QPE-based filtering: performance analysis & low-energy spectral calc (Jul 2025)](https://arxiv.org/html/2507.01361)
-- [Deterministic Ground State Prep via Power-Cosine Filtering (Feb 2026)](https://arxiv.org/html/2602.19556)
-- [Post-Variational Ground State Estimation via QPE-based QITE (Apr 2025)](https://arxiv.org/html/2504.11549)
-- [Programmable Signal Design for QPE via QSP (Jun 2026)](https://arxiv.org/html/2604.01205)

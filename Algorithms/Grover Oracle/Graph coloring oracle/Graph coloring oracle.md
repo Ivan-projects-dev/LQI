@@ -15,7 +15,3 @@ $$U_{\text{color}}^{\text{phase}}:|x⟩ \mapsto (-1)^{[\text{valid}(x)]}|x⟩$$
 **Resource count**: $|E|$ [[Ancilla]] [[Qubits]] for edge checks + 1 output qubit. Each [[Grover]] iteration: $O(|E|)$ gate cost.
 
 **Special cases**: 2-coloring (bipartiteness test) is classically solvable in $O(|V|+|E|)$; [[Grover]] provides no speedup there. Speedup is meaningful for $K \geq 3$.
-## Sources
-- [Q# Quantum Katas: Graph coloring](https://quantum.microsoft.com/en-us/tools/quantum-katas)
-- [Nielsen & Chuang: Grover's algorithm &  problems (Ch. 6)](https://www.cambridge.org/core/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE)
-- [Quantum algorithm for graph coloring (survey)](https://arxiv.org/abs/1206.0758)

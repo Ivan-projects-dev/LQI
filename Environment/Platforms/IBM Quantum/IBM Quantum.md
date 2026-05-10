@@ -63,9 +63,3 @@ noisy_sim = AerSimulator.from_backend(FakeSherbrooke())
 **Qiskit $1.0$ breaking change.** `execute()` was removed. Any tutorial pre-$2024$ using `execute(circuit, backend)` needs to be rewritten with `SamplerV2` / `EstimatorV2`. This breaks most Stack Overflow answers.
 
 **Measurement [[Error Mitigation]]** - readout error is often the dominant error on current hardware & is easy to mitigate. The `mthree` library applies [[Matrix]] inversion correction with min overhead.
-### Sources
-- [IBM Quantum Platform](https://quantum.cloud.ibm.com)
-- [IBM Quantum plans overview](https://quantum.cloud.ibm.com/docs/en/guides/plans-overview)
-- [Qiskit documentation](https://docs.quantum.ibm.com)
-- [IBM Quantum hardware](https://www.ibm.com/quantum/products)
-- [Qiskit GitHub](https://github.com/Qiskit/qiskit)

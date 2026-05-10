@@ -1,7 +1,7 @@
 #Math #Algorithm 
 **Phase kickback** is the mechanism by which [[Oracle]] transfers phase info from an [[Ancilla]] qubit back into the control register. It requires the [[Ancilla]] to be in $|{-}\rangle$.
 
-If [[Oracle]] marks solution by flipping a target qubit ($X$ on target when condition met), & the target is $|{-}\rangle = H|1\rangle$:
+If [[Oracle]] marks solution by flipping target qubit ($X$ on target when condition met), & the target is $|{-}\rangle = H|1\rangle$:
 $$\text{O} \cdot |x\rangle|{-}\rangle = (-1)^{f(x)}|x\rangle|{-}\rangle$$
 where $O$ - [[Oracle]]
 

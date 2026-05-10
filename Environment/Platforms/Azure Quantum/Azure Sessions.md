@@ -26,8 +26,3 @@ Targets supporting `Adaptive RI` can:
 This is crucial for quantum error correction protocols & active feed-forward circuits.
 
 `max_session_timeout_secs` controls how long the session stays open waiting for new jobs. If exceeded, the session closes & remaining jobs revert to normal queue priority. Sessions are billed the same as standalone jobs - no session overhead fee.
-## Sources
-- [Get started with sessions](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-interactive)
-- [Hybrid computing overview](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-overview)
-- [Integrated hybrid (Adaptive RI)](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-integrated)
-- [Hybrid computing concepts](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-concepts)

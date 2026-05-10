@@ -9,4 +9,4 @@ For classification, each output value indicates likelihood of the input instance
 Weights of edges are key to classification 
 Edge weights are learnt during training phase
 
-Value of a node may be linear combo of inputs, or may be a non-linear func (sigmoid func).
+Value of node may be linear combo of inputs, or may be a non-linear func (sigmoid func).

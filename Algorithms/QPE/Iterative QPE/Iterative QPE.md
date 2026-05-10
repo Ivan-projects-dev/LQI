@@ -26,7 +26,3 @@ operation IterativePhaseEstimation(nBits : Int, target : Qubit[], applyU : Qubit
 }
 ```
 Each round: $1$ [[Hadamard]], controlled-$U^{2^i}$, phase correction $R_1$, $2nd$ [[Hadamard]], measure. The phase correction `R1(angle, control)` removes the contribution of already-known bits before the final [[Hadamard]] collapses the control.
-## Sources
-- [Iterative QPE kata (Quantum Katas)](https://quantum.microsoft.com/en-us/tools/quantum-katas)
-- [Adaptive profile for iterative algorithms](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-integrated)
-- [GitHub: QPE samples in Q#](https://github.com/microsoft/qsharp/tree/main/samples/algorithms)

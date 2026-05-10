@@ -34,9 +34,3 @@ job.wait_until_completed()
 results = job.get_results() # returns dict of bitstring -> count
 ```
 Cancel a queued job: `job.cancel()`. Jobs in `Executing` state cannot be cancelled. Cost estimate is displayed via `target.estimate_cost(circuit, shots=N)` before submission.
-## Sources
-- [Submit Q# programs (VS Code)](https://learn.microsoft.com/en-us/azure/quantum/how-to-submit-jobs)
-- [Submit Qiskit circuits](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-qiskit)
-- [Submit Cirq circuits](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-cirq)
-- [Submit formatted circuits (provider-native)](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-provider-format)
-- [OpenQASM in QDK](https://learn.microsoft.com/en-us/azure/quantum/qdk-openqasm-integration)

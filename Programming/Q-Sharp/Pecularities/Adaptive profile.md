@@ -88,10 +88,3 @@ Compiler selects the matching variant based on the active profile. See [[Attribu
 Classical `Bool` conditions $→$ resolved at compile time or pre-circuit classical compute.
 `Result` conditions on `AdaptiveRI` $→$ resolved mid-circuit in real time on hardware.
 `Result` conditions on `Base` $→$ compile error if feed-forward required.
-### Sources
-- [Adaptive profile (AdaptiveRI) in Q#](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-integrated)
-- [Hybrid computing concepts](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-concepts)
-- [Mid-circuit measurement & feed-forward](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-overview)
-- [@Config attribute](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/programstructure/attributes)
-- [Iterative QPE kata](https://quantum.microsoft.com/en-us/tools/quantum-katas)
-- [GitHub: iterative [[QPE]] sample in Q#](https://github.com/microsoft/qsharp/tree/main/samples/algorithms/iterative-phase-estimation

@@ -60,8 +60,4 @@ dev = qml.device("default.qubit", wires=2) # Local CPU - free, instant
 dev = qml.device("lightning.gpu", wires=2) # GPU simulation - 100x faster for 20+ qubits
 dev = qml.device("qiskit.ibmq", wires=2, backend="ibm_kyiv") # Real IBM hardware (requires qiskit account)
 ```
-### Sources
-- [PennyLane installation](https://pennylane.ai/install/)
-- [PennyLane tutorial: Getting started](https://pennylane.ai/qml/demonstrations/tutorial_pennylane_intro/)
-- [Parameter-shift rule](https://pennylane.ai/qml/glossary/parameter_shift/)
-- [Variational quantum eigensolver demo](https://pennylane.ai/qml/demonstrations/tutorial_vqe/)
+

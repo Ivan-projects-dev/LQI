@@ -27,10 +27,3 @@ When you run quantum program in Azure Quantum, you create & run **job**. To sub
 **[[Adaptive profile]] unlocks mid-circuit measurement.** If your algorithm requires conditioning future gates on measurement outcomes (teleportation, iterative [[QPE]], magic state distillation), you must annotate the operation with `@Config(AdaptiveRI)`. Code that works on `Unrestricted` (simulation) will fail to compile for `Base` hardware targets without this.
 
 **[[Azure Credits]] have 3 independent currencies.** AQC ([[IonQ]]/[[Rigetti]]), AQT ([[IonQ]] native), HQT ([[Quantinuum]]) do not convert between each other. Exhausting HQT does not affect AQC balance.
-## Sources
-- [What is Azure Quantum?](https://learn.microsoft.com/en-us/azure/quantum/overview-azure-quantum)
-- [QDK overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview)
-- [Azure Quantum Resource Estimator](https://learn.microsoft.com/en-us/azure/quantum/intro-to-resource-estimation)
-- [Copilot in Microsoft Quantum](https://learn.microsoft.com/en-us/azure/quantum/get-started-azure-quantum)
-- [Backend simulators](https://learn.microsoft.com/en-us/azure/quantum/backend-simulators)
-- [Quantum Roadmap](https://quantum.microsoft.com/en-us/vision/quantum-roadmap)

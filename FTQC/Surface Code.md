@@ -32,8 +32,3 @@ where $p$ = physical error rate, $p_{th} ≈ 1$%, & $p_L =$ logical error rate. 
 | Steane $[7,1,3]$  | $7$                         | $~10^{-4}$        | Limited        |
 | **Surface code**  | $~2d^2$                     | $~1$%             | Yes            |
 | Floquet code      | similar                     | similar           | Emerging       |
-### Sources
-- [Quantum error correction below the surface code threshold (Nature, 2024)](https://www.nature.com/articles/s41586-024-08449-y)
-- [arXiv: QEC below threshold (2408.13687)](https://arxiv.org/abs/2408.13687)
-- [Google Research: suppressing errors by scaling a surface code logical qubit](https://research.google/blog/suppressing-quantum-errors-by-scaling-a-surface-code-logical-qubit/)
-- [Resource Estimator QEC schemes](https://learn.microsoft.com/en-us/azure/quantum/overview-resources-estimator)

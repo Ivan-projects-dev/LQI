@@ -1,5 +1,5 @@
 #Q-Sharp #Algorithm 
-[[Iterative QPE]] reuses single control qubit across all $t$ iterations. The [[Oracle]] structure is identical; what changes is that measurement results from previous iterations feed forward as classical corrections:
+[[Iterative QPE]] reuses single control qubit across all $t$ iterations. [[Oracle]] structure is identical; what changes is that measurement results from previous iterations feed forward as classical corrections:
 ```csharp
 import Std.Math.*;
 import Std.Canon.*;

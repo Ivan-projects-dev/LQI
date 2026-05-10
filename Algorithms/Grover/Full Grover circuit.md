@@ -18,7 +18,6 @@ $$k^* = \left\lfloor \frac{\pi}{4}\sqrt{\frac{N}{M}} \right\rceil$$
 For unknown $M$: use [[Quantum counting]] or exponential search (see [[Grover solutions]]).
 
 4. Measure the $n$ data [[Qubits]] in the computational basis. With probability $\geq 1 - M/N$ the result is valid solution $x^*$ satisfying $f(x^*) = 1$. Verify classically: evaluate $f(x^*)$ once to confirm.
-
 **Full circuit (compact notation)**:
 $$|\psi_{\text{out}}\rangle = G^{k^*} \cdot (H^{\otimes n} \otimes XH) \cdot |0\rangle^{\otimes n+1}$$
 $$G = \left(H^{\otimes n}(2|0\rangle\langle 0|-I)H^{\otimes n}\right) \cdot U_f$$

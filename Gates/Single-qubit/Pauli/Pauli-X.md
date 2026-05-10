@@ -11,16 +11,15 @@ $$X = HZH \qquad X = -iYZ \qquad X = R_x(\pi) \cdot e^{i\pi/2}$$
 [[Hadamard]] conjugation $HXH = Z$ means: $X$ error before $H$ becomes $Z$ error after. This identity is used constantly in error correction analysis to track Pauli errors through circuits.
 
 $X$ is in the **Clifford group** - it maps Pauli operators to Pauli operators under conjugation & can be corrected by stabilizer error-correcting codes. [[T gate]] cost is $0$.
-## Bloch sphere geometry
-
-$X$ is a $180°$ rotation about the $\hat{x}$ axis. North pole $|0\rangle$ maps to south pole $|1\rangle$ & vice versa. The equatorial states $|{+}\rangle$ & $|{-}\rangle$ are fixed points of this rotation:
+### Bloch sphere geometry
+$X$ is $180°$ rotation about the $\hat{x}$ axis. North pole $|0\rangle$ maps to south pole $|1\rangle$ & vice versa. The equatorial states $|{+}\rangle$ & $|{-}\rangle$ are fixed points of this rotation:
 $$X|{+}\rangle = |{+}\rangle \qquad X|{-}\rangle = -|{-}\rangle$$
 (The $|{-}\rangle$ eigenvalue $-1$ means $X$ picks up a phase on that eigenstate - this is the [[Phase kickback]] mechanism exploited in [[Hadamard#Phase kickback|oracles]].)
 
-| Eigenvalue | Eigenstate |
-|---|---|
-| $+1$ | $\|{+}\rangle = \frac{1}{\sqrt{2}}(\|0\rangle + \|1\rangle)$ |
-| $-1$ | $\|{-}\rangle = \frac{1}{\sqrt{2}}(\|0\rangle - \|1\rangle)$ |
+| Eigenvalue | Eigenstate                                                   |
+| ---------- | ------------------------------------------------------------ |
+| $+1$       | $\|{+}\rangle = \frac{1}{\sqrt{2}}(\|0\rangle + \|1\rangle)$ |
+| $-1$       | $\|{-}\rangle = \frac{1}{\sqrt{2}}(\|0\rangle - \|1\rangle)$ |
 Measuring in the $X$ basis means applying [[Hadamard]] then measuring in the computational basis.
 
 `Controlled X([ctrl], target)` is exactly [[CNOT]]:

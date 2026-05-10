@@ -29,3 +29,4 @@ If $2^t\varphi$ is exact int: $P(\tilde{\varphi}) = 1$. Otherwise, the correct $
 | QFT$^\dagger$ gates   | $O(t^2)$                            |
 | Total gates           | $O(2^t \cdot \text{cost}(U) + t^2)$ |
 **Kitaev's [[Iterative QPE]]** reduces qubit count to $1$ control qubit by repeating $t$ rounds (bit by bit).
+

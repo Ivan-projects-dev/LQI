@@ -45,6 +45,3 @@ operation CustomCircuit(qs : Qubit[]) : Unit is Adj + Ctl {
     controlled adjoint auto; // auto-generates controlled adjoint
 }
 ```
-### Sources
-- [Functor application in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/functorapplication)
-- [Adjoint functor & reversibility](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/operationsandfunctions)

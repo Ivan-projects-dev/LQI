@@ -24,5 +24,4 @@ operation MarkDivisibleBy(register : Qubit[], target : Qubit, k : Int) : Unit is
     }
 }
 ```
-
-Note: `AddConstantModN` is classical-constant quantum modular adder - standard building block in [[Shor]]'s algorithm. Implement with sequence of controlled additions & reductions, or use the `Std.Arithmetic` module adders as primitives.
+Note: `AddConstantModN` is classical-constant quantum modular adder - standard building block in [[Shor]]'s algorithm. Implement with sequence of controlled additions & reductions, or use the `Std.Arithmetic` module adders as primitives. 

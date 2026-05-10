@@ -29,8 +29,8 @@ QPCA enables efficient eigenface extraction for facial recognition systems. Work
 
 Identifies outliers in high-dimensional sensor data from quantum-enhanced devices (e.g., photon-counting arrays) ![](https://lms.qureca.com/wp-content/uploads/uncanny-snc/25/assets/8_Tscharke_Cybersecurity_Blog_Fraunhofer_AISEC_regression_task.png)
 
-|app|Challenge|Current Mitigation|
-|---|---|---|
-|Financial Fraud|NISQ hardware noise distorts PCA output|Error-mitigated density matrices|
-|Drug Discovery|Limited to low-rank molecular systems|Hybrid classical-quantum workflows|
-|Image Recognition|State preparation overhead|[[Amplitude Encoding]] with QRAM|
+| Usage             | Challenge                               | Current Mitigation                 |
+| ----------------- | --------------------------------------- | ---------------------------------- |
+| Financial Fraud   | NISQ hardware noise distorts PCA output | Error-mitigated density matrices   |
+| Drug Discovery    | Limited to low-rank molecular systems   | Hybrid classical-quantum workflows |
+| Image Recognition | State preparation overhead              | [[Amplitude Encoding]] with QRAM   |

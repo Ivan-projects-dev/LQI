@@ -32,3 +32,4 @@ operation GroverEstimate() : Unit {
 | `runtime`        | seconds to minutes |
 | `codeDistance`   | $13-17$            |
 With $1024$ iterations & $~100$ T-gates/controlled $X$, total $T$-count is $~10^5$. This is what 'quadratic speedup' costs in physical resources.
+

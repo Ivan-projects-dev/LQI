@@ -3,9 +3,9 @@
 
 **Why it breaks:** RSA security rests entirely on the difficulty of factoring the public modulus $N = pq$. [[Shor]]'s algorithm factors $N$ in polynomial time.
 
-| RSA key size | Classical hardness | Logical [[Qubits]] needed | Physical [[Qubits]] (est.) |
-|---|---|---|---|
-| RSA-1024 | Broken classically (2010s) | $\sim 3{,}000$ | $\sim 3{,}000{,}000$ |
-| RSA-2048 | Current standard | $\sim 6{,}000$ | $\sim 4{,}000{,}000$ |
-| RSA-4096 | High security | $\sim 12{,}000$ | $\sim 8{,}000{,}000$ |
-Qubit estimates from the Azure [[QRE]] with [[Surface Code]] error correction (code distance $\sim 27$, physical error rate $10^{-3}$).
+| RSA key size | Classical hardness         | Logical [[Qubits]] needed | Physical [[Qubits]] (est.) |
+| ------------ | -------------------------- | ------------------------- | -------------------------- |
+| RSA-$1024$   | Broken classically (2010s) | $\sim 3{,}000$            | $\sim 3{,}000{,}000$       |
+| RSA-$2048$   | Current standard           | $\sim 6{,}000$            | $\sim 4{,}000{,}000$       |
+| RSA-$4096$   | High security              | $\sim 12{,}000$           | $\sim 8{,}000{,}000$       |
+Qubit estimates from the Azure [[QRE]] with [[Surface Code]] error correction (code distance $\sim 27$, physical error rate $10^{-3}$)

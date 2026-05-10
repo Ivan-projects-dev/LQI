@@ -39,16 +39,3 @@ Adaptive component: each window can shift its precision target based on previous
 | AWQPE              | $w$                | $O(2^w \cdot \text{cost}(U))$     | $\lceil t/w \rceil$ | Tunable                    |
 | FQPE               | $1$–few            | $O(\text{cost}(U)/\sqrt\eta)$     | many                | Handles poor overlap       |
 | Randomized Trotter | $1$                | short (many small steps)          | many                | Statistical Trotter error  |
-### See also
-- [[Iterative QPE]] - single-[[Ancilla]] baseline method
-- [[Ground State Filtering]] - overlap amplification
-- [[QPE Chemistry]] - full [[FTQC]] chemistry [[QPE]]
-- [[Qubitization]] - exact alternative to Trotter-based evolution
-- [[QPE precision]] - general resource analysis
-### Sources
-- [Early FTQC QPE in Practice - Quantum journal (Apr 2025)](https://quantum-journal.org/papers/q-2025-04-01-1682/)
-- [Enabling Chemically Accurate QPE in the Early Fault-Tolerant Regime (Mar 2026)](https://arxiv.org/html/2603.22778v1)
-- [Error Mitigation & Circuit Division for Early FTQC QPE - PRX Quantum (2025)](https://journals.aps.org/prxquantum/abstract/10.1103/mlmy-yskj)
-- [Adaptive Windowed QPE - AWQPE (Jul 2025)](https://arxiv.org/abs/2507.22460)
-- [Assessment of QPE protocols for early FTQC (2024)](https://arxiv.org/abs/2403.00077)
-- [Quantum Error-Corrected Computation of Molecular Energies (May 2025)](https://arxiv.org/abs/2505.09133)

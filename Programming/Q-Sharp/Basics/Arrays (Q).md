@@ -140,7 +140,3 @@ Transposed([[1, 2, 3], [4, 5, 6]]); // [[1, 4], [2, 5], [3, 6]]
 IsRectangularArray([[1, 2], [3, 4]]); // true
 IsRectangularArray([[1, 2], [3]]); // false
 ```
-### Sources
-- [Std.Arrays API reference](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.arrays)
-- [Q# variable declarations & arrays](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/variabledeclarationsandreassignment)
-- [Array slicing & item access expressions](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/itemaccessexpressions)
