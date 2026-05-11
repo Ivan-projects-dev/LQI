@@ -1,8 +1,8 @@
 Read [[General guide]] first
 
-Knowledge was added according to specific supervisor tasks, so info from most sources was not fully extracted & separated into notes. It is also easy for the author to return to already known sources seeking specific data.
+Knowledge was added according to specific supervisor tasks, so info from most sources was not fully extracted & separated into notes, some links may be considered as "future reading list". It is also easy for the author to return to already known sources seeking specific data.
 
-The biggest problem of the Zettelkasten approach in terms of sources is that knowledge becomes highly fragmented and recombined across many interconnected notes, & a single note may depend on other notes as well as multiple sources (some may only add $1$ sentence). In case some info is moved to another file, related sources may be left in the old note or unrelated sources may be copied by mistake. That is why strict quotation becomes extremely difficult, & a centralized list of sources is used.
+The biggest problem of the Zettelkasten approach in terms of sources is that knowledge becomes highly fragmented & recombined across many interconnected notes, & single note may depend on other notes as well as multiple sources (some may only add $1$ sentence). In case some info is moved to another file, related sources may be left in the old note or unrelated sources may be copied by mistake. That is why strict quotation becomes extremely difficult, & centralized list of sources is used.
 
 Data covering [[QNN]], [[FTQC]], gates, math concepts etc. was taken from the Qureca course, which is the only source with limited access: https://lms.qureca.com/product/adequate/?v=85d1a9c488d7
 
@@ -36,7 +36,7 @@ Data covering [[QNN]], [[FTQC]], gates, math concepts etc. was taken from the Qu
 - [IBM Quantum Learning: Phase Estimation & Factoring](https://learning.quantum.ibm.com/course/fundamentals-of-quantum-algorithms/phase-estimation-and-factoring)
 - [Adaptive profile for iterative algorithms](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-integrated)
 ### [[Shor]]
-- [Shor 1994: Algorithms for quantum computation — discrete logarithms & factoring](https://arxiv.org/abs/quant-ph/9508027)
+- [Shor 1994: Algorithms for quantum computation - discrete logarithms & factoring](https://arxiv.org/abs/quant-ph/9508027)
 - [Beauregard 2002: Circuit for Shor's algorithm using 2n+3 qubits](https://arxiv.org/abs/quant-ph/0205095)
 - [Griffiths & Niu 1996: Semiclassical Fourier transform for quantum computation](https://arxiv.org/abs/quant-ph/9511007)
 - [Ekerå & Håstad 2017: Quantum algorithms for computing short discrete logarithms and factoring RSA integers](https://arxiv.org/abs/1702.01636)
@@ -55,7 +55,7 @@ Data covering [[QNN]], [[FTQC]], gates, math concepts etc. was taken from the Qu
 - [Childs et al. 2003: Exponential Algorithmic Speedup by Quantum Walk](https://arxiv.org/abs/quant-ph/0209131)
 - [Ambainis 2003: Quantum walks and their algorithmic applications](https://arxiv.org/abs/quant-ph/0403120)
 - [Magniez, Nayak, Roland & Santha 2007: Search via Quantum Walk](https://www.irif.fr/~magniez/PAPIERS/mnrs-stoc07.pdf)
-- [Magniez et al. 2011: Search via Quantum Walk — full version](https://www.irif.fr/~santha/Papers/mnros11.pdf)
+- [Magniez et al. 2011: Search via Quantum Walk - full version](https://www.irif.fr/~santha/Papers/mnros11.pdf)
 ### [[VQE]], [[QAOA]]
 - [Peruzzo et al. 2014: A variational eigenvalue solver on a photonic quantum processor](https://arxiv.org/abs/1304.3061)
 - [Tilly et al. 2022: The Variational Quantum Eigensolver: A review of methods and best practices](https://arxiv.org/abs/2111.05176)
@@ -81,9 +81,9 @@ Data covering [[QNN]], [[FTQC]], gates, math concepts etc. was taken from the Qu
 - [IBM Quantum Learning: Quantum chemistry](https://learning.quantum.ibm.com/course/quantum-chemistry-with-vqe)
 ### [[Early FTQC]] & [[QPE usage]]
 - [Assessment of QPE protocols for early FTQC (2024)](https://arxiv.org/abs/2403.00077)
-- [Early FTQC QPE in Practice — Quantum journal (Apr 2025)](https://quantum-journal.org/papers/q-2025-04-01-1682/)
+- [Early FTQC QPE in Practice - Quantum journal (Apr 2025)](https://quantum-journal.org/papers/q-2025-04-01-1682/)
 - [Enabling Chemically Accurate QPE in the Early Fault-Tolerant Regime (Mar 2026)](https://arxiv.org/html/2603.22778v1)
-- [Adaptive Windowed QPE — AWQPE (Jul 2025)](https://arxiv.org/abs/2507.22460)
+- [Adaptive Windowed QPE - AWQPE (Jul 2025)](https://arxiv.org/abs/2507.22460)
 - [Quantum Error-Corrected Computation of Molecular Energies (May 2025)](https://arxiv.org/abs/2505.09133)
 ### Ground state filtering & [[QPE]] optimization
 - [Filtered Quantum Phase Estimation (Oct 2025)](https://arxiv.org/abs/2510.04294)

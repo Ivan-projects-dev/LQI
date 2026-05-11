@@ -1,3 +1,5 @@
+Read [[General guide]] first
+
 As `#` symbol cannot be added in note naming, [[Bernstein-Vazirani (Q)]] $=$ [[Bernstein-Vazirani]] in `Q#`
 
 Plugins below may have functionality that was never used by author, so it will not be included here. In order to manage plugins, open: *Settings* $->$ *Community plugins*

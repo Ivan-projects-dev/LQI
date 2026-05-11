@@ -11,17 +11,17 @@ Goal is not to use these platforms as infinite computing resources but to run ta
 6. [[Free Tier Principle 6]]: Save Job IDs Immediately
 ### Azure Quantum Credits
 [[Azure Quantum]] provides a free credit allowance for new accounts, but QPU costs add up fast:
-- IonQ Aria: paid per gate-shot — expensive for deep circuits at high shot counts
-- Quantinuum: paid per Hardware Quantum Credit — tends to be the most expensive option
+- IonQ Aria: paid per gate-shot - expensive for deep circuits at high shot counts
+- Quantinuum: paid per Hardware Quantum Credit - tends to be the most expensive option
 - Rigetti: lower cost per run, but hardware is sometimes unavailable
 
-**Strategy:** Use Azure credits for IonQ only for circuits you cannot run on IBM free tier. Trapped-ion hardware has different error characteristics (longer coherence, all-to-all connectivity) — which makes it worth testing for comparison, but not for daily experimentation.
+**Strategy:** Use Azure credits for IonQ only for circuits you cannot run on IBM free tier. Trapped-ion hardware has different error characteristics (longer coherence, all-to-all connectivity) - which makes it worth testing for comparison, but not for daily experimentation.
 
 Azure [[QRE]] is completely free. Use it as much as you want to understand algorithm requirements.
 
 ### Amazon Braket Free Tier
 Free tier: small one-time trial credit for new accounts. After that, you pay.
-- $SV1$ simulator: paid per task + per shot — inexpensive, good for medium circuits
+- $SV1$ simulator: paid per task + per shot - inexpensive, good for medium circuits
 - Local simulator: completely free, runs in your own compute
 - QPU task: paid per task + device-specific shot cost
 

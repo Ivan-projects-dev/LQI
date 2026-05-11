@@ -17,6 +17,8 @@ operation QPEEstimate() : Unit {
 }
 ```
 
+*Rough illustrative estimates from Azure QRE - exact values depend on error model, code distance, and target logical error rate.*
+
 | Field            | Expected Output Value   |
 | ---------------- | ----------------------- |
 | `physicalQubits` | $~50,000-200,000$       |

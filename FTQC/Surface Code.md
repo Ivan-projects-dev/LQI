@@ -13,7 +13,7 @@ Since $X$ & $Z$ errors are detected independently, the surface code protects aga
 
 **Error Threshold**: surface code has fault-tolerance **threshold** of $≈1$% physical gate error rate. Below this threshold, increasing $d$ exponentially suppresses the logical error rate:
 $$p_L \approx \left(\frac{p}{p_{th}}\right)^{\lfloor (d+1)/2 \rfloor}$$
-where $p$ = physical error rate, $p_{th} ≈ 1$%, & $p_L =$ logical error rate. Google's $2024$ Willow chip demonstrated error suppression factor $\Lambda = 2.14$ per Same as `auto` - synonym used i- older Q# syntax.                  
+where $p$ = physical error rate, $p_{th} ≈ 1$%, & $p_L =$ logical error rate. Google's $2024$ Willow chip demonstrated error suppression factor $\Lambda = 2.14$ per code distance increment (Google Quantum AI, Nature 2024).
 
 [[QRE]] selects $d$ automatically based on your error budget & physical error rate assumptions.
 ### Logical Gates

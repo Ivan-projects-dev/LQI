@@ -1,13 +1,20 @@
 #Algorithm #Physics #Math 
-**Amplitude encoding** represents data points as the amplitudes of multi-qubit [[Quantum state]]. Given an N-dimensional (with $N=2n$) data point: $$→x=(x_1, x_2, … ,x_N)∈CN$$ we map it to $$|ψ(→x)⟩=1√∑kx2kN−1∑j=0xj|j⟩$$ where $|j⟩$ denotes the $j$th computational basis state of $n$ [[Qubits]]. 
+**Amplitude encoding** represents data points as the amplitudes of a multi-qubit [[Quantum state]]. Given an $N$-dimensional data point ($N = 2^n$):
+$$\vec{x} = (x_1, x_2, \ldots, x_N) \in \mathbb{C}^N$$
+we map it to
+$$|\psi(\vec{x})\rangle = \frac{1}{\|\vec{x}\|} \sum_{j=0}^{N-1} x_j |j\rangle$$
+where $|j\rangle$ denotes the $j$th computational basis state of $n$ [[Qubits]] and $\|\vec{x}\| = \sqrt{\sum_k |x_k|^2}$ is the normalization.
 
-We can encode the dataset $D:=(→x_1,…,→x_M)$ consisting of $M$ points in $R2n$ as
-$$|D⟩=1CD2p∑i=1¯X_i|i⟩$$ for some int $p$, where
-$$¯X=(¯Xi)i=1,…,2p=(x11,…,x1N,x21,…,x2N,…,xM1,…,xMN)∈RMN$$
-is the concatenation of all data points and $CD$ is normalization const. Here constraint is hence that $2p≥MN$, namely $p≥log2(MN)$
+We can encode a dataset $D := (\vec{x}_1, \ldots, \vec{x}_M)$ of $M$ points in $\mathbb{R}^{2^n}$ as
+$$|D\rangle = \frac{1}{C_D} \sum_{i=1}^{2^p} \bar{X}_i |i\rangle$$
+for some integer $p$, where
+$$\bar{X} = (x_{11}, \ldots, x_{1N},\; x_{21}, \ldots, x_{2N},\; \ldots,\; x_{M1}, \ldots, x_{MN}) \in \mathbb{R}^{MN}$$
+is the concatenation of all data points and $C_D$ is the normalization constant. The constraint is $2^p \geq MN$, i.e. $p \geq \log_2(MN)$.
 
-Note that there may be some sparsity in the case where $2p>MN$.
+Note that there may be some sparsity in the case where $2^p > MN$.
 
-Сlear advantage is that it can store $2n$ features with only n [[Qubits]], but unfortunately has depth $O(2n)$ and is hence hard to build.
+**Advantage:** stores $2^n$ features using only $n$ [[Qubits]] - exponential compression in qubit count.
 
-Amplitude encoding is memory-efficient in $T.$, since it can pack exponentially many classical components into n [[Qubits]]. However, preparing arbitrary amplitude-encoded state can be resource-intensive & is usually feasible only for lower-dimensional data (or carefully structd data).
+**Disadvantage:** preparing an arbitrary amplitude-encoded state requires circuit depth $O(2^n)$, making it expensive to build for general data. State preparation is usually feasible only for low-dimensional or structured data, or with QRAM hardware support.
+
+Amplitude encoding is memory-efficient in qubit count, but the state preparation cost can dominate and must be included when evaluating any claimed quantum speedup.

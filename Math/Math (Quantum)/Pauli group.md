@@ -28,7 +28,7 @@ Again, we go over the $4$ axioms of groups, & make sure $P_2$ satisfies them.
 - We can easily construct the inverse of any element $P(0)⊗P(1)$ as $P(0)−1⊗P(1)−1$, & it will be $1$ among the $64$ elements.
 
 **Pauli group $P_n$**
-It should be clear now, how to extend the above analysis to [[Tensor]] products of $n$ Pauli matrices, $P(0)⊗P(1)⊗⋯⊗P(n−1)$. By the same arguments as above, there will be $4n+1$ elements in $P_n$.
+It should be clear now, how to extend the above analysis to [[Tensor]] products of $n$ Pauli matrices, $P(0)⊗P(1)⊗⋯⊗P(n−1)$. By the same arguments as above, there will be $4^{n+1}$ elements in $P_n$.
 
 **Subgroup** is a subset of the elements of the group that itself form a group. Meaning the subset satisfies all $4$ of the axioms of the group.
 

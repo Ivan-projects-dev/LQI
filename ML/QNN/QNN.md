@@ -4,7 +4,7 @@
  **Quantum gates** are linear transformations on quantum states. If we restrict ourselves solely to unitary gates, we do not obtain the usual nonlinear activations of classical networks. However, measurement in quantum mechanics introduces form of nonlinearity (probabilistic collapse of the wave func).
 1. **Data Input**: receive data in the form of classical vectors that must be **encoded** into quantum states (e.g., [[Amplitude Encoding]], basis encoding, or rotation encoding).
 2. **Network Processing**: instead of layers of classical neurons, QNNs use sequences of **parametrized quantum gates**  are controlled by tunable params - akin to the trainable weights in classical networks.
-3. ** Sub-systems must agree on repo data model. Inev bly compromise;               . QNN can exhibit effective nonlinearity in its overall I/O mapping, even though all intermediate gates are linear.
+3. **Measurement & Nonlinearity**: QNN can exhibit effective nonlinearity in its overall I/O mapping, even though all intermediate gates are linear.
 
 From purely math standpoint, **any single quantum gate** (or product of such gates) corresponds to linear operator $U(θ)$ acting on **Hilbert space**. Consequently, **if we never performed measurement**, the overall transformation from init state to final state would remain linear in terms of the quantum amplitudes. In classical neural networks, by contrast, there is a _built-in_ element of nonlinearity through activation func like ReLU or sigmoid. Without that nonlinearity, multiple layers of linear operations would collapse into single equivalent linear transformation, thus **no expressive power is gained** from stacking those layers.
 

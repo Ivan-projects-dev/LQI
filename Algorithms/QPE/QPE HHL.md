@@ -16,23 +16,24 @@ $$A = \begin{pmatrix}1.5 & 0.5 \\ 0.5 & 1.5\end{pmatrix}, \quad \vec{b} = \begin
 **Eigenvalues**: $\lambda_1 = 1$, $\lambda_2 = 2$
 **Eigenvectors**: $|u_1\rangle = (|0\rangle - |1\rangle)/\sqrt2$, $|u_2\rangle = (|0\rangle + |1\rangle)/\sqrt2$
 
-$|b\rangle = |0\rangle = \frac{1}{\sqrt2}(|u_2\rangle + |u_1\rangle \cdot(-1)^?)$... Solution: $\vec x = A^{-1}\vec b = (0.75, -0.25)$
+Since $|u_1\rangle = (|0\rangle - |1\rangle)/\sqrt2$ and $|u_2\rangle = (|0\rangle + |1\rangle)/\sqrt2$, we get $|b\rangle = |0\rangle = \tfrac{1}{\sqrt2}|u_1\rangle + \tfrac{1}{\sqrt2}|u_2\rangle$ ($\beta_1 = \beta_2 = 1/\sqrt2$). Classical solution: $\vec x = A^{-1}\vec b = (0.75,\; {-0.25})^\top$
 ```csharp
 import Std.Math.*;
 import Std.Convert.*;
 import Std.Measurement.*;
 import Std.Canon.*;
 
-// Time evolution for A = diag(1, 2) (already diagonal in Z basis)
-// e^{iAt}: |0⟩ → e^{it}|0⟩, |1⟩ → e^{i2t}|1⟩
-// Implemented as R1(t)|0⟩ & R1(2t)|1⟩ = phase kick via Rz
+// Toy implementation - conceptual sketch for 2×2 diagonal A = diag(1, 2) only.
+// e^{iAt}: |0⟩ → e^{it}|0⟩ (eigenvalue λ₁=1), |1⟩ → e^{i2t}|1⟩ (eigenvalue λ₂=2)
+// In QPE, the relevant quantity for phase kickback is the relative phase between
+// eigenstates. |1⟩ accumulates e^{i·angle} more phase than |0⟩ per application.
+// R1(angle) applies exactly this relative phase.
+// Note: this encodes the phase *difference* (λ₂ - λ₁)·t, not both absolute phases.
+// A production circuit encoding both eigenvalues' absolute phases requires an
+// additional global phase gate; see Babbush et al. for resource-efficient constructions.
 operation TimeEvolutionA(t : Double, power : Int, system : Qubit[]) : Unit is Adj + Ctl {
     let angle = t * IntAsDouble(power);
-    // |0⟩ eigenvalue 1 → phase e^{iangle}
-    // |1⟩ eigenvalue 2 → phase e^{i2angle}
-    R1(angle,  system[0]); // e^{iλ₁·angle} on |0⟩
-    R1(angle, system[0]); // extra phase for |1⟩: R1(2angle) = R1(angle)²
-    Controlled R1([system[0]], (angle, system[0])); // conditional extra phase
+    R1(angle, system[0]); // relative phase e^{i·angle} on |1⟩ vs |0⟩
 }
 
 // Controlled rotation: ancilla ← C/λ where λ is encoded in clock

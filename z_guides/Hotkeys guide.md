@@ -1,4 +1,5 @@
-See [[Plugins guide]] first
+Read [[General guide]] & then [[Plugins guide]] first
+
 **Problem $1$**: it is impossible to assign $2$ different actions on $1$ hotkey
 **Problem $2$**: most of simple & intuitive hotkeys combinations are already taken by Obsidian & its plugins
 **Problem $3$**: `Ctrl+Z` will redirect to [[broken links output]] page (all alternative hotkeys were immediately forgotten)

@@ -1,7 +1,6 @@
 #Math #ML 
-It is commonly used in [[QSVM]] contexts, yet it can serve generally as a feature map for QNNs. The core idea is to encode classical data $→x$ by applying rotations on individual [[Qubits]], then **introducing entangling phases** using interactions of the form:
-
-$exp(−i_γx_jx_kZ_jZ_k)$ where $Z_i$ and $Z_j$ are [[Pauli-Z]] operators on [[Qubits]] $i$ and $j$, respectively, and $γ$ is some scaling param. Repeated app of such entangling terms, interspersed with single-qubit rotations, yields a feature map that can capture higher-order correlations between features. This "ZZ Feature Map" effectively places the data in a high-dimensional Hilbert space in a nonlinear fashion-potentially allowing the [[QNN]] to learn complex decision boundaries.
+It is commonly used in [[QSVM]] contexts, yet it can serve generally as feature map for QNNs. The core idea is to encode classical data $→x$ by applying rotations on individual [[Qubits]], then **introducing entangling phases** using interactions of the form:
+$$\exp(-i\gamma x_j x_k Z_j Z_k)$$ where $Z_i$ & $Z_j$ are [[Pauli-Z]] operators on [[Qubits]] $i$ & $j$, respectively, and $γ$ is some scaling param. Repeated app of such entangling terms, interspersed with single-qubit rotations, yields a feature map that can capture higher-order correlations between features. This "ZZ Feature Map" effectively places the data in high-dimensional Hilbert space in a nonlinear fashion-potentially allowing the [[QNN]] to learn complex decision boundaries.
 
 This feature map can take $n$ inputs $x_1, …, x_n$ on $n$ [[Qubits]]. Its parametrized circuit is constructed following these steps:
 1. Apply [[Hadamard]] gate on each qubit.

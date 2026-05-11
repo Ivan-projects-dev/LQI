@@ -41,6 +41,6 @@ rigetti = AwsDevice("arn:aws:braket:us-west-1::device/qpu/rigetti/Ankaa-3")
 | Gate error per [[CNOT]] | ~$0.3$-$0.5$% | ~$0.3$% |
 Running the same Bell state on both & comparing histograms teaches $>$ about quantum hardware than any textbook. The distributions will differ noticeably.
 
-**Warning on QPU cost:** QPU jobs are paid — [[IonQ]] trapped-ion devices are among the more expensive options per shot. Test entirely on simulators first. Set AWS billing alerts.
+**Warning on QPU cost:** QPU jobs are paid - [[IonQ]] trapped-ion devices are among the more expensive options per shot. Test entirely on simulators first. Set AWS billing alerts.
 
 **QuEra's Aquila** device is **not gate-based computer**. It uses neutral atoms & programs via laser pulses & atom positions - `AnalogHamiltonianSimulation` object, not `Circuit`. If you see Aquila on the device list, it requires completely different programming model.

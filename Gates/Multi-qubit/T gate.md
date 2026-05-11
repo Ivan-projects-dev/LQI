@@ -15,7 +15,7 @@ $$T^2 = S \qquad T^4 = Z \qquad T^8 = I$$
 | $S = T^2$ | $e^{i\pi/2} = i = 90°$ | $4$   |
 | $Z = T^4$ | $e^{i\pi} = -1 = 180°$ | $2$   |
 | $I = T^8$ | $e^{i2\pi} = 1 = 360°$ | $1$   |
-$S$ gate is the $sqrt(Z)$; $T$ is the $sqrt(S)$ & & $4_sqrt(Z)$
+$S$ gate is the $\sqrt{Z}$; $T$ is the $\sqrt{S}$ & $\sqrt[4]{Z}$
 ### Bloch sphere geometry
 $T$ is $45°$ rotation about the $\hat{z}$ axis. Computational basis states $|0\rangle$ & $|1\rangle$ are fixed (poles). Equatorial states rotate by $45°$ in the $XY$ plane. Starting from $|{+}\rangle = (|0\rangle + |1\rangle)/\sqrt{2}$:
 $$T|{+}\rangle = \frac{|0\rangle + e^{i\pi/4}|1\rangle}{\sqrt{2}}$$

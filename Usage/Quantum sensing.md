@@ -3,4 +3,6 @@
 
 Their exceptional sensitivity to magnetic fields has made them invaluable for detecting magnetic biomarkers - molecules or materials that indicate specific biological conditions or processes. This quantum-enhanced sensing capability allows for the detection of extremely weak magnetic signals emitted by cells & tissues, enabling earlier & $>$ accurate disease diagnosis. 
 
-**Quantum radar** is enhanced version of the current radar. By using entangled photons & comparing the returned photon & stored photon, quantum sensor can create precise scan of area. This approach would make radar virtually untraceable & become resilient to jamming & spoofing.
+**Quantum radar (quantum illumination)** is a proposed sensing modality that uses entangled photon pairs - one transmitted toward a target, one retained - to improve target detection under noisy, lossy conditions. Theoretical analysis suggests signal-to-noise advantage over classical radar in specific low-reflectivity, high-background-noise regimes. Lab proof-of-concept demonstrated a modest SNR improvement in a controlled microwave setup.
+
+**Current status & caveats:** The advantage is narrow and regime-dependent. Claims of untraceability or intrinsic resistance to jamming and spoofing are not established in the literature - these are speculative extrapolations, not demonstrated properties. Practical quantum radar faces severe challenges: entangled photon sources, loss over distance, and the absence of quantum memory for the retained photon all degrade any theoretical advantage rapidly.

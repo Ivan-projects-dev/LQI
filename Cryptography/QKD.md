@@ -15,7 +15,7 @@ Process involves the following steps:
 - QKD appears secure in principle, security might be jeopardized by shoddy QKD implementations. Real-world apps have shown methods for breaking into QKD systems.
 - Eavesdropper Backdoor was intended to be created via the phase remapping exploit. The attack exploits the requirement for $1$ party member to permit signals to enter & depart their device.
 - Photon num splitting attack is additional attack tech. Perfect scenario would allow $1$  user to communicate with another user by sending $1$ photon at a time.
-- Coherent attacks are those that are deemed to demonstrate the security of a QKD system in the scenario when the eavesdropper possesses infinite processing capacity..
+- **Coherent (joint) attacks** are the most general attack class: the eavesdropper stores probes entangled across multiple transmitted qubits & measures them collectively after the full transmission. Security proofs that hold against coherent attacks (e.g., Shor-Preskill, Renner entropic security) provide the strongest composable guarantees & form the basis of modern QKD security analysis.
 
 **Limitation:** requires quantum hardware end-to-end (quantum repeaters for long distances), which is expensive & not scalable to the internet. 
 **[[PQC]]** is soft that runs on classical hardware. Both approaches exist in parallel - QKD for highest-security point-to-point links, [[PQC]] for general internet cryptography.

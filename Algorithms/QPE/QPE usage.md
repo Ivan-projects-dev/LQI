@@ -10,7 +10,7 @@ $U_a|x\rangle = |ax \bmod N\rangle$ has eigenstates $|u_s\rangle = \frac{1}{\sqr
 [[QPE]] on $U_a$ returns approximation to $s/r$ $→$ classical continued fractions recovers $r$ $→$ $\gcd(a^{r/2}\pm 1, N)$ gives factors. 
 
 **Qubit count**: $\sim 2n$ control [[Qubits]] for $n$-bit $N$. 
-**Total**: $O(n^3)$ gates $→$ **exponential speedup** over best classical $O(e^{n^{1/3}})$ algorithms.
+**Total**: $O(n^3)$ gates $→$ **exponential speedup** over best classical $O\!\left(\exp\!\left(c\cdot n^{1/3}(\log n)^{2/3}\right)\right)$ algorithms (GNFS; $c=(64/9)^{1/3}$).
 
 **[[HHL]]** (linear systems): solves $Ax = b$ for sparse Hermitian $A$. Eigenphases of $U = e^{iAt}$ encode eigenvalues $\lambda_j$ of $A$. [[QPE]] extracts $\lambda_j$ into [[Ancilla]] register. Controlled rotation then applies $\lambda_j^{-1}$ (inversion). Un-[[QPE]] removes eigenphase register. Result: $|x\rangle \propto A^{-1}|b\rangle$. Complexity: $O(s^2 \kappa^2 \log N / \epsilon)$ vs classical $O(Ns\kappa)$.
 
