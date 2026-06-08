@@ -1,4 +1,4 @@
-#Math #[[Logic]] 
+#Math 
 **Union:** $A \cup B = {x \mid x \in A \vee x \in B}$  
 **Intersection:** $A \cap B = {x \mid x \in A \wedge x \in B}$  
 **Difference:** $A - B = {x \mid x \in A \wedge x \notin B}$  

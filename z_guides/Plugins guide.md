@@ -64,7 +64,7 @@ Scans the vault for image files (PNG, JPG, SVG, etc.) that are not referenced in
 
 ---
 ### Find Orphaned Files & Broken Links (`find-unlinked-files`)
-**Purpose:** Two functions - find notes with no backlinks (orphaned notes that nothing links to) & find unresolved links (WikiLinks that point to notes that do not exist).
+**Purpose:** Two funcs - find notes with no backlinks (orphaned notes that nothing links to) & find unresolved links (WikiLinks that point to notes that do not exist).
 - `Ctrl+Z` $→$ finds all unresolved `[[links]]` - links pointing to nonexistent notes by redirecting to [[broken links output]]
 ![[Pasted image 20260429165916.png]]
 

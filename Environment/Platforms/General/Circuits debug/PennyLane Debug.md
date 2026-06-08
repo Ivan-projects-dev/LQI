@@ -1,33 +1,39 @@
 #SoftDev #Python 
-Intermediate State with `qml.state()`
+[[PennyLane]] debugging splits cleanly into $2$ types: **circuit logic** (is the [[Quantum state]] what I think it is?) & **gradient** (why is optimization not moving?). Treat them separately.
+### Inspecting Intermediate State
+`qml.state()` returns the full statevector. Only works on `default.qubit` - not on shot-based or hardware devices.
 ```python
 import pennylane as qml
-import numpy as np
 
 dev = qml.device("default.qubit", wires=2)
 
 @qml.qnode(dev)
 def debug_circuit():
     qml.Hadamard(wires=0)
-    # check state here
-    return qml.state()   # returns full statevector
+    return qml.state()
 
-print(debug_circuit()) # [0.707+0j, 0, 0.707+0j, 0] = (|00⟩ + |10⟩)/√2
+print(debug_circuit())
+# [0.707+0j, 0, 0.707+0j, 0]  →  (|00⟩ + |10⟩)/√2
 ```
-`qml.state()` returns the full statevector as NumPy array. You can only call this on `default.qubit` - not on shot-based or hardware devices.
-### Debugging Gradients
-If your gradient is $0$ when it should not be:
+To inspect state mid-circuit without changing the return type, split into $2$ separate QNodes - one that stops at the gate you want to inspect.
+### Verifying Circuit Behavior With Known Inputs
+Before attaching any gradient loop, verify the circuit produces correct outputs at known parameter values:
 ```python
-@qml.qnode(dev, diff_method="parameter-shift")
+@qml.qnode(dev)
 def circuit(theta):
-    qml.RX(theta, wires=0)
+    qml.RY(theta, wires=0)
     return qml.expval(qml.PauliZ(0))
 
-theta = np.array(0.5, requires_grad=True)
-grad = qml.grad(circuit)(theta)
-print(grad)  # should be ~ -0.479
+import numpy as np
+print(circuit(0.0))       # should be  1.0  (qubit at |0⟩, Z = +1)
+print(circuit(np.pi))     # should be -1.0  (qubit at |1⟩, Z = -1)
+print(circuit(np.pi / 2)) # should be  0.0  (superposition, Z = 0)
 ```
-Common causes of $0$ gradient:
-1. `theta` is plain Python float, not `np.array(..., requires_grad=True)`
-2. Using `import numpy as np` instead of [[PennyLane]]'s `np` - `from` [[PennyLane]] `import numpy as np`
-3. Expectation value is $0$ at the current parameters & the gradient is genuinely $0$ at that point - shift slightly & try again
+If these are wrong, the circuit is wrong - fix it before touching optimization.
+### Inspecting Circuit Structure
+`qml.draw()` and `qml.specs()` expose what the circuit actually contains - useful when the circuit is built programmatically and may not be what you think:
+```python
+print(qml.draw(circuit)(0.5))     # ASCII diagram with parameter substituted
+print(qml.specs(circuit)(0.5))    # gate counts, depth, num_params
+```
+If gate count or depth is unexpected, the circuit construction loop has a bug.

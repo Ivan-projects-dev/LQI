@@ -46,7 +46,7 @@ Matplotlib circuit diagrams need two extra packages:
 pip install matplotlib pylatexenc
 ```
 7. Transpiled circuit is much deeper than expected
-`optimization_level=0` does minimal rewriting. Always use level $3$ for real hardware:
+`optimization_level=0` does min rewriting. Always use level $3$ for real hardware:
 ```python
 tqc = transpile(qc, backend, optimization_level=3)
 print(f"Original depth: {qc.depth()}, Transpiled: {tqc.depth()}")

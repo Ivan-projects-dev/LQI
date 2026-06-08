@@ -1,9 +1,9 @@
 #Math #Algorithm 
-**Error mitigation** is collection of classical post-processing & circuit-modification techs to reduce the effect of noise in **NISQ (Noisy Intermediate-Scale Quantum)** computations - without the qubit overhead of full [[FTQC|fault-tolerant]] error correction. It does not eliminate errors but extrapolates or cancels their effect on expectation values.
+**Error mitigation** is collection of classical post-processing & circuit-modification techs to reduce the effect of noise in **NISQ (Noisy Intermediate-Scale Quantum)** computations - without the qubit overhead of full fault-tolerant error correction. It does not eliminate errors but extrapolates or cancels their effect on expectation values.
 - **error correction** uses redundancy to restore the [[Quantum state]] mid-circuit; 
 - **error mitigation** uses extra classical computation after many circuit runs to obtain better estimate of the ideal result.
 
-**Zero-Noise Extrapolation (ZNE)** - most widely used tech. Intentionally amplify noise by int factors $\lambda = 1, 2, 3, \ldots$ (by gate folding or pulse stretching), measure expectation value $\langle O \rangle_\lambda$ at each noise level, then extrapolate back to $\lambda = 0$ ($0$-noise [[Limit]]) via polynomial or Richardson extrapolation.
+**Zero-Noise Extrapolation (ZNE)** - most widely used tech. Intentionally amplify noise by int factors $\lambda = 1, 2, 3, \ldots$ (by gate folding or pulse stretching), measure expectation value $\langle O \rangle_\lambda$ at each noise level, then extrapolate back to $\lambda = 0$ ($0$-noise Limit) via polynomial or Richardson extrapolation.
 
 **Gate folding**: replace gate $G$ with $G \cdot G^\dagger \cdot G$ to double circuit noise without changing the ideal unitary.
 

@@ -1,5 +1,5 @@
 #Q-Sharp #Hardware 
-**Adaptive profile** (`AdaptiveRI`) enables **classical feed-forward**: using mid-circuit measurement results to conditionally apply subsequent quantum ops. Essential for [[FTQC|fault-tolerant]] protocols, magic state distillation, & [[QPE|iterative QPE]].
+**Adaptive profile** (`AdaptiveRI`) enables **classical feed-forward**: using mid-circuit measurement results to conditionally apply subsequent quantum ops. Essential for fault-tolerant protocols, magic state distillation, & [[Iterative QPE]].
 
 Q# defines $3$ exec profiles, selected via `@Config` attribute or target machine setting:
 
@@ -32,7 +32,7 @@ operation TeleportQubit(msg : Qubit, here : Qubit) : Unit {
 ```
 Both `if` branches are **real-time conditional gates** - the classical result drives the hardware in the same shot, without restarting. On `Base` profile this code would fail to compile.
 
-**Iterative [[Iterative QPE|QPE]]** is the canonical use case. Estimates phase $1$ bit at a time, each iteration conditioned on all prior measurement results:
+**[[Iterative QPE]]** is the canonical use case. Estimates phase $1$ bit at a time, each iteration conditioned on all prior measurement results:
 ```csharp
 import Std.Math.*;
 @Config(AdaptiveRI)
@@ -53,7 +53,7 @@ operation IterativePhaseEstimation(oracle : Qubit => Unit is Adj + Ctl, n : Int)
 }
 ```
 
-**`ResultAsBool` & classical [[Logic]] on `Result`**
+**`ResultAsBool` & classical Logic on `Result`**
 ```csharp
 let b = ResultAsBool(M(q)); // Result $→$ Bool for arithmetic
 let combined = m1 == One & m2 == Zero;
@@ -83,7 +83,7 @@ operation MeasureAndCorrect(q : Qubit) : Unit {
     if r == One { X(q); }   // adaptive correction
 }
 ```
-Compiler selects the matching variant based on the active profile. See [[Attributes (Q)]] for `@Config` syntax.
+Compiler selects the matching variant based on the active profile. 
 
 Classical `Bool` conditions $→$ resolved at compile time or pre-circuit classical compute.
 `Result` conditions on `AdaptiveRI` $→$ resolved mid-circuit in real time on hardware.

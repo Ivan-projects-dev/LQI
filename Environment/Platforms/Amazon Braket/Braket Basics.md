@@ -10,7 +10,7 @@ result = task.result()
 print(result.measurement_counts)   # {'00': 503, '11': 497}
 ```
 
-Braket's `Circuit` uses method chaining: `.h(0)` adds an H gate, `.[[CNOT]](0, 1)` adds a [[CNOT]]. Identical to Qiskit in [[Logic]], slightly different syntax.
+Braket's `Circuit` uses method chaining: `.h(0)` adds H gate, `.`[[CNOT]]`(0, 1)` adds [[CNOT]]. Identical to Qiskit in Logic, slightly different syntax.
 
 Your free tier gives $1$ hour/month of managed simulator time for the $1st$ $12$ months:
 ```python
@@ -22,7 +22,7 @@ device = AwsDevice("arn:aws:braket:::device/quantum-simulator/amazon/sv1")
 task = device.run(bell, shots=1000, s3_destination_folder=("your-s3-bucket", "results/"))
 result = task.result()
 ```
-**Important:** cloud simulator results go to $S3$ first. You must create $S3$ bucket in the same region as your Braket workspace before running cloud tasks.
+**Important:** cloud simulator results go to [[S3]] first. You must create [[S3]] bucket in the same region as your Braket workspace before running cloud tasks.
 
 Same circuit (with minor adaptation) runs on completely different qubit technologies:
 ```python

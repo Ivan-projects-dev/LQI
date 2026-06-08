@@ -15,9 +15,9 @@ In practice: $m = 3$ gives $P \geq 0.875$; $m = 5$ gives $P \geq 0.969$.
 | $n$ bits of precision | $n$ | $2^n - 1$ |
 | Error $\leq \epsilon$ | $\lceil \log_2(1/\epsilon) \rceil$ | $O(1/\epsilon)$ |
 | Success prob $\geq 1-\delta$ | $n + \lceil\log_2\frac{2}{\delta}\rceil$ | $O(1/\epsilon)$ |
-**Standard quantum [[Limit]]** (classical / repetition-based): $N$ measurements give precision $O(1/\sqrt{N})$.
+**Standard quantum limit** (classical / repetition-based): $N$ measurements give precision $O(1/\sqrt{N})$.
 
-**Heisenberg [[Limit]]**: [[QPE]] achieves $O(1/N)$ precision using $N$ apps of $U$ - **quadratic improvement** in resource efficiency over classical approaches.
+**Heisenberg limit**: [[QPE]] achieves $O(1/N)$ precision using $N$ apps of $U$ - **quadratic improvement** in resource efficiency over classical approaches.
 
 **Iterative [[QPE]] (Kitaev's method)**: uses only **1 control qubit** & $t$ separate rounds. Total $U$ calls: $2^t - 1$ - same as standard [[QPE]], but with min qubit overhead. Tradeoff: requires $t$ sequential rounds (no parallelism).
 

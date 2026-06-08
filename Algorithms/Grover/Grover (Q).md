@@ -1,5 +1,5 @@
 #Q-Sharp #Algorithm
-Complete Q# implementation of [[Grover]]'s search algorithm. Combines [[Grover]] [[Oracle]] in Q-Sharp, [[Diffusion operator]] in Q-Sharp, & the outer loop with iteration count [[Logic]].
+Complete Q# implementation of [[Grover]]'s search algorithm. Combines [[Grover]] [[Oracle]] in Q-Sharp, [[Diffusion operator]] in Q-Sharp, & the outer loop with iteration count Logic.
 
 **Single [[Grover]] iteration**: app of $G = D \cdot U_f$:
 ```csharp

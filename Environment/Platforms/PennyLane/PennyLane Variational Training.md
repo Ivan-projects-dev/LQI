@@ -1,9 +1,9 @@
 #[[PennyLane]] #[[VQE]] #Experience #Training
-What variational circuit training actually feels like - gradient descent on a quantum cost function, the problems you encounter, & the patterns that work.
+What variational circuit training actually feels like - gradient descent on a quantum cost func, the problems you encounter, & the patterns that work.
 
 ## The Training Loop Pattern
 
-Every variational algorithm ([[VQE]], [[QAOA]], QML) follows the same structure: a parameterized circuit, a cost function, & classical gradient descent. This is [[PennyLane]]'s home territory.
+Every variational algorithm ([[VQE]], [[QAOA]], QML) follows the same structure: a parameterized circuit, a cost func, & classical gradient descent. This is [[PennyLane]]'s home territory.
 
 ```python
 import pennylane as qml
@@ -55,7 +55,7 @@ plt.axhline(y=-1.0, color="r", linestyle="--", label="Target (ground state)")
 plt.legend(); plt.grid(True); plt.show()
 ```
 
-**What good convergence looks like:** smooth decrease, levels off near the true minimum. Initial drop in $10$-$20$ steps, then slower refinement.
+**What good convergence looks like:** smooth decrease, levels off near the true min. Initial drop in $10$-$20$ steps, then slower refinement.
 
 **What bad convergence looks like:**
 - **Flat from step 1:** gradients are zero $→$ barren plateau, wrong init, or wrong NumPy import
@@ -70,7 +70,7 @@ plt.legend(); plt.grid(True); plt.show()
 For deep, wide parameterized circuits, the gradient vanishes exponentially. This is the **barren plateau** - optimization becomes impossible.
 
 ```python
-# Diagnosing barren plateaus: measure gradient variance as function of circuit depth
+# Diagnosing barren plateaus: measure gradient variance as func of circuit depth
 import numpy as np
 
 def gradient_variance(n_layers, n_qubits, n_samples=50):
@@ -103,7 +103,7 @@ for layers in [1, 2, 5, 10, 20]:
 ```
 
 If gradient variance is $< 10^{-6}$, you are in a barren plateau. Mitigations:
-- Use **local cost functions**: measure only a few [[Qubits]], not global observables
+- Use **local cost funcs**: measure only a few [[Qubits]], not global observables
 - Use **layerwise training**: train one layer at a time, freeze others
 - Use **identity block initialization**: start near the identity unitary
 
@@ -134,8 +134,8 @@ for _ in range(10):
 ```
 
 **Practical shot schedule:**
-- Exploration (find rough minimum): `shots=64`-`256`
-- Refinement (tighten around minimum): `shots=512`-`2048`
+- Exploration (find rough min): `shots=64`-`256`
+- Refinement (tighten around min): `shots=512`-`2048`
 - Final evaluation (trust the value): `shots=4096`-`8192` or exact (no shots)
 
 Training with too few shots wastes gradient steps. Training with too many shots wastes circuit evaluations. Start cheap, finish expensive.
@@ -214,7 +214,7 @@ def qaoa_circuit(params):
     for layer in range(p):
         cost_unitary(gammas[layer])
         mixer_unitary(betas[layer])
-    # Cost function: sum of ZZ correlations on edges
+    # Cost func: sum of ZZ correlations on edges
     return qml.expval(sum(qml.PauliZ(u) @ qml.PauliZ(v) for u, v in G.edges()))
 
 # p=2 QAOA: 4 parameters (2 gammas, 2 betas)

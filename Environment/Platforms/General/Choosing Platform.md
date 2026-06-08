@@ -12,7 +12,7 @@ Azure Katas gives immediate math feedback - your implementation is tested agains
 ### 2. Need to run circuit on real quantum hardware
 **[[IBM Quantum]]** has the most accessible free QPU tier: no credit card, queue time measured in minutes (not hours), & the queue is shared with research users so off-peak access is fast. `SamplerV2` API is straightforward.
 
-Azure requires Azure account + workspace for hardware access. Braket requires AWS account + $S3$ setup. Both have $>$ friction than IBM for $1st$ QPU run.
+Azure requires Azure account + workspace for hardware access. Braket requires AWS account + [[S3]] setup. Both have $>$ friction than IBM for $1st$ QPU run.
 ### 3. Need to implement & test variational algorithm (VQE, QAOA, QML)
 **[[PennyLane]]** is built around differentiable circuits. Gradient infrastructure (parameter-shift, adjoint, backprop) is  mature than any other platform. Ecosystem of optimizers, QML layers, & demos is richer. Qiskit has [[VQE]]/[[QAOA]] support via `qiskit_algorithms`, but the gradient pipeline is  polished. Q# has no gradient support. 
 

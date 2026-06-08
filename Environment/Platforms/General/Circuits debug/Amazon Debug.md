@@ -1,32 +1,32 @@
 #Python #SoftDev 
-### LocalSimulator for Free, Instant Testing
+`LocalSimulator` runs in your process - no API calls, no [[S3]], no queue, no cost. Always start here. If it fails, it is circuit logic. If it passes but QPU fails, it is noise or connectivity.
 ```python
 from braket.devices import LocalSimulator
 
 device = LocalSimulator()
-task = device.run(circuit, shots=1000)
-result = task.result()
+result = device.run(circuit, shots=1000).result()
 print(result.measurement_counts)
 ```
-`LocalSimulator` runs in your process with no API calls, no S3 buckets, no queue. It supports up to $~25$ [[Qubits]] before it becomes slow. Always debug here.
 ### Inspecting Circuit Structure
 ```python
-print(circuit)
-# prints ASCII diagram of the circuit
-
+print(circuit) # ASCII diagram
 print(circuit.depth) # gate depth
-print(circuit.qubit_count) # num of qubits
+print(circuit.qubit_count)
 ```
-### Reading QPU Results
-On real QPU job:
+### Checking Unsupported Gates
+Each QPU has a supported gate set. Submitting a circuit with an unsupported gate gives `ValidationException` with no useful gate name. Check what the device supports before submitting:
 ```python
-task = device.run(circuit, s3_destination_folder=("my-bucket", "prefix"), shots=1000)
-task_id = task.id
-print("Task ID:", task_id)
+device = AwsDevice("arn:aws:braket:us-east-1::device/qpu/ionq/Aria-1")
+print(device.properties.action['braket.ir.openqasm.program'].supportedOperations)
+# ['H', 'CNOT', 'Rx', 'Ry', 'Rz', ...]  - if your gate isn't here, decompose it first
+```
+### Distinguishing Logic Bug From Noise
+Run identical circuit on `LocalSimulator` (noiseless) & `DM1` simulator (noisy) before touching QPU:
+```python
+from braket.aws import AwsDevice
 
-# retrieve later
-from braket.aws import AwsQuantumTask
-task = AwsQuantumTask(arn=task_id)
-result = task.result()   # blocks until complete
+dm1 = AwsDevice("arn:aws:braket:::device/quantum-simulator/amazon/dm1")
+result = dm1.run(circuit, shots=1000).result()
 print(result.measurement_counts)
 ```
+If `LocalSimulator` gives correct distribution & `DM1` degrades it, noise is the issue - reduce circuit depth. If `LocalSimulator` already gives wrong distribution, fix the logic first.

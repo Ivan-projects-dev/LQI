@@ -3,7 +3,7 @@
 
 Now suppose that $|ψ(0)⟩$ is eigenstate of $~H(0)=H(0)$, which we assume for simplicity to be the ground state. Further$>$, suppose that for all $s$, $H(s)$ has unique ground state.
 
-Then adiabatic theorem says that in the [[Limit]] $T→∞$, the final state $|ψ(T)⟩$ obtained by the evolution will be the ground state of $~H(1)=H(T)$.
+Then adiabatic theorem says that in limit $T→∞$, the final state $|ψ(T)⟩$ obtained by the evolution will be the ground state of $~H(1)=H(T)$.
 
 We can see that at $t=0$, only $H_i$ acts on the system while at $t=T$, only $H_f$ acts on the system.
 $T$ depends on the energy gap between the ground & the $1st$ excited state, i.e., the state with the $2nd$ smallest eigenvalue.

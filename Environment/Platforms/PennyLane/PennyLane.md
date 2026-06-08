@@ -15,7 +15,6 @@ def circuit(theta):
 grad = qml.grad(circuit)
 print(grad(np.pi / 4))   # parameter-shift gradient
 ```
-
 Key features:
 - **Parameter-shift rule** - exact gradient computation for hardware-compatible circuits
 - **Automatic differentiation** - supports JAX, PyTorch, TensorFlow backends

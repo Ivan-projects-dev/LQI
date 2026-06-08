@@ -2,6 +2,6 @@
 2. Download Obsidian: https://obsidian.md/download
 3. Select option *Open folder as vault*
    <img width="300" height="300" alt="Screenshot 2026-05-03 121501" src="https://github.com/user-attachments/assets/55e57f5b-4781-414d-bbfb-1f44b2c8162a" />
-4. While opening folder choose option *Trust author and enable plugins*
+4. While opening folder choose option *Trust author & enable plugins*
 <img width="411" height="202" alt="Screenshot 2026-05-03 121409" src="https://github.com/user-attachments/assets/79d00549-07be-4f3e-9e49-49a5ebb0e8d9" />
-5. Read **[[Hotkeys guide]]**, [[Plugins guide]], [[Hotkeys guide]] and [[Sources guide]] in `/z_guides` folder
+5. Read **[[Hotkeys guide]]**, [[Plugins guide]], [[Hotkeys guide]] & [[Sources guide]] in `/z_guides` folder

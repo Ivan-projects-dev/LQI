@@ -1,4 +1,4 @@
-#Math [[Logic]]
+#Math 
 Classic syllogism:    
     - All humans are mortal.
     - Socrates is a human.        

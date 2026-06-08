@@ -1,4 +1,4 @@
-#SoftDev #Q-Sharp #Python Debugging Quantum Circuits in [[IBM Quantum]]
+#SoftDev #Python
 
 Statevector Simulation (Before Measurement). To inspect [[Quantum state]] mid-circuit without collapsing it, use `save_statevector()` in simulator context:
 ```python
@@ -38,12 +38,11 @@ from qiskit_aer import AerSimulator
 from qiskit_ibm_runtime.fake_provider import FakeSherbrooke
 
 noisy_sim = AerSimulator.from_backend(FakeSherbrooke())
-job = noisy_sim.run(tqc, shots=1024)
-result = job.result()
-counts = result.get_counts()
+job = noisy_sim.run(tqc, shots=1024)   # direct AerSimulator.run() - not Qiskit Runtime
+counts = job.result().get_counts()      # get_counts() works here (local path, not SamplerV2)
 print(counts)  # shows realistic error rates without queue wait
 ```
-`FakeSherbrooke` ($127$ [[Qubits]]) & `FakeManilaV2` ($5$ [[Qubits]]) are good choices. This is the fastest debugging loop: simulate noise locally before spending QPU time.
+`FakeSherbrooke` ($127$ [[Qubits]]) & `FakeManilaV2` ($5$ [[Qubits]]) are good choices. This is the fastest debugging loop: simulate noise locally before spending QPU time. Note: `get_counts()` works here because this is direct `AerSimulator.run()`, not Qiskit Runtime - on real hardware use `SamplerV2` & extract via `result[0].data.meas.get_counts()`.
 ### Reading Real Hardware Calibration
 ```python
 props = backend.properties()

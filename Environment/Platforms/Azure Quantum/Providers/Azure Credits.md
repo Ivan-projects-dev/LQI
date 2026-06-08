@@ -1,10 +1,10 @@
 #SoftDev 
-**[[Azure Quantum]] credits** are a free allowance provided to new users to explore real quantum hardware without upfront cost. New accounts receive a one-time credit usable with participating providers.
+**[[Azure Quantum]] credits** are free allowance provided to new users to explore real quantum hardware without upfront cost. New accounts receive $1$-time credit usable with participating providers.
 
 There are no standing charges for the [[Azure Quantum]] service itself - you only pay for what providers charge when jobs run on their hardware or simulators. [[QRE]] is completely free & requires no Azure account.
 
 **Billing models vary by provider:**
-- **[[IonQ]]** - per gate-shot ($1$-qubit & $2$-qubit gates $×$ shots), plus a minimum fee per program run.
+- **[[IonQ]]** - per gate-shot ($1$-qubit & $2$-qubit gates $×$ shots), plus a min fee per program run.
 - **[[Quantinuum]]** - per **Hardware Quantum Credit (HQC)**, calculated from operations $×$ shots.
 - **[[Rigetti]]** - per second of QPU exec time; simulator (QVM) is free.
 - **[[PASQAL]]** - per exec time on QPU or EMU-TN emulator.

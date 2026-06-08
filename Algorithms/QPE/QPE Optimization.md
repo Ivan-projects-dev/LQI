@@ -22,9 +22,9 @@ Effective when SDP bound is tight (e.g., Max-Cut: $E_{\rm SDP}/E_0 \geq 0.878$ b
 [[QAOA]] requires classical optimization over $(\gamma, \beta)$ parameters via noisy expectation value estimates. Core difficulty: **barren plateau** - gradient $\partial\langle H_C\rangle/\partial\gamma$ vanishes exponentially in $n$ for random params.
 
 [[QPE]] assistance:
-- **Exact energy [[Oracle]]**: run [[QPE]] on $|\psi(\gamma,\beta)\rangle = \prod_i e^{-i\gamma_i H_C}e^{-i\beta_i H_B}|+\rangle^n$ to get $\langle H_C\rangle(\gamma,\beta)$ exactly (no shot noise). Enables gradient-free optimizer with exact function evaluations
+- **Exact energy [[Oracle]]**: run [[QPE]] on $|\psi(\gamma,\beta)\rangle = \prod_i e^{-i\gamma_i H_C}e^{-i\beta_i H_B}|+\rangle^n$ to get $\langle H_C\rangle(\gamma,\beta)$ exactly (no shot noise). Enables gradient-free optimizer with exact func evaluations
 - **Spectral overlap estimation**: [[QPE]] on the [[QAOA]] state tells how much overlap it has with each energy eigenvalue $→$ diagnose whether [[QAOA]] is converging or stuck at excited state
-- **Depth $p$ selection**: estimate $\langle H_C\rangle$ exactly as function of $p$ using [[QPE]] - identify minimal $p$ where [[QAOA]] output has sufficient overlap with $|\psi_0\rangle$
+- **Depth $p$ selection**: estimate $\langle H_C\rangle$ exactly as func of $p$ using [[QPE]] - identify min $p$ where [[QAOA]] output has sufficient overlap with $|\psi_0\rangle$
 Circuit depth of [[QAOA]] unitary: $O(p\cdot m)$ $2$-qubit gates for $m$ coupling terms; much shallower than full Hamiltonian simulation, making [[QPE]] on it feasible at moderate precision.
 ### Quantum semidefinite programming
 **SDP**: minimize $\text{tr}(CX)$ subject to $X\succeq 0$, $\text{tr}(A_i X) = b_i$ for $i=1,\ldots,m$.
@@ -34,7 +34,7 @@ Classical interior point: $O(m^{0.5}n^{2.37}\log(1/\epsilon))$ per iteration. Qu
 - [[HHL]] for linear system solve in each interior-point step: $O(\kappa^2\log n/\epsilon)$
 - Combined quantum SDP: $O(\sqrt{m}\cdot\kappa^2\log n/\epsilon)$ vs classical $O(\sqrt{m}\cdot n^{2.37})$
 
-**Limitation**: genuine quantum advantage requires QRAM for data access & small condition number $\kappa$. Dequantization results (Tang et al.) show that sampling access to classical data can sometimes match quantum speedup - advantage regime requires structured, high-rank inputs.
+**Limitation**: genuine quantum advantage requires QRAM for data access & small condition num $\kappa$. Dequantization results (Tang et al.) show that sampling access to classical data can sometimes match quantum speedup - advantage regime requires structured, high-rank inputs.
 ### Quantum interior point methods for LP/QP
 Linear programs (LP): minimize $c^Tx$ s.t. $Ax = b$, $x\geq0$. Each interior-point iteration solves normal equations $(AD^2A^T)\Delta y = r$ where $D$ = diagonal scaling. Quantum speedup via [[HHL]] (which uses [[QPE]] internally):
 - Classical: $O(m^{0.5}n^{1.5})$ per iteration (best known)

@@ -4,53 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "53b287543a8fd61e",
+        "id": "bdc641be34edc442",
         "type": "tabs",
         "children": [
           {
-            "id": "15961d4505f37b52",
+            "id": "94d3f50f3812c7d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cryptography/RSA.md",
+                "file": "Algorithms/HHL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RSA"
+              "title": "HHL"
             }
           },
           {
-            "id": "5a8a392e2f7aae8e",
+            "id": "c6506c3ad07d2aa5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "z_guides/General guide.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "General guide"
-            }
-          },
-          {
-            "id": "e5099c4829b45b83",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "z_guides/Sources guide.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Sources guide"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "QNN",
+                "query": "IBM trans",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,11 +84,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 270.5
+    "width": 237.5
   },
   "right": {
     "id": "3822b5fc5b75b3b0",
@@ -201,44 +183,45 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "9c58883d0361cb1a",
+  "active": "94d3f50f3812c7d6",
   "lastOpenFiles": [
-    "z_img/Pasted image 20260608192322.png",
-    "README.md",
-    "broken links output.md",
-    "Algorithms/QPE/QPE apps.md",
-    "Usage/Adiabatic quantum computing.md",
-    "z_guides/General guide.md",
-    "z_guides/Hotkeys guide.md",
-    "z_guides/Plugins guide.md",
-    "z_guides/Sources guide.md",
-    "Cryptography/RSA.md",
-    "FTQC/FTQC soft.md",
-    "Usage/Quantum sensing.md",
-    "Physics/Photon electric effect.md",
-    "Environment/OpenQASM.md",
-    "Cryptography/Shor Targets.md",
-    "Algorithms/QPE/Basics/QPE.md",
-    "Algorithms/QPE/Controlled unitary.md",
-    "source audit.md",
-    "fact-check report.md",
-    "ML/Basics/Deep learning.md",
-    "Algorithms/Shor/Shor ECDLP.md",
-    "Gates/Multi-qubit/CNOT.md",
-    "Qubits/Bell states.md",
-    "Programming/Q-Sharp/Functors/Adjoint op.md",
-    "Environment/Platforms/Azure Quantum/Azure Quantum.md",
+    "Algorithms/QPCA.md",
+    "Algorithms/QPE/QPE Optimization.md",
+    "Algorithms/QPE/QPE Simulation.md",
     "Algorithms/Shor/Shor.md",
+    "Environment/Platforms/General/Circuits debug/Azure Debug.md",
+    "Environment/Platforms/D-Wave Leap/QUBO Constraints.md",
+    "Environment/Platforms/Amazon Braket/Braket XP.md",
+    "Environment/Platforms/IBM Quantum/IBM common errors.md",
+    "Environment/Platforms/IBM Quantum/IBM Transpiler.md",
+    "Environment/Platforms/IBM Quantum/IBM Primitives.md",
+    "z_guides/Sources guide.md",
+    "Environment/Platforms/PennyLane/PennyLane Devices.md",
+    "Environment/Platforms/Azure Quantum/Providers/Azure Credits.md",
+    "Environment/Platforms/Azure Quantum/Providers/IonQ.md",
+    "Environment/Platforms/D-Wave Leap/D-Wave XP.md",
+    "Environment/Platforms/General/Circuits debug/D-Wave Debug.md",
+    "Environment/Platforms/PennyLane/PennyLane Variational Training.md",
+    "Environment/Platforms/Azure Quantum/Azure Target Profiles.md",
+    "Untitled.md",
+    "Environment/Platforms/D-Wave Leap/D-Wave.md",
+    "Environment/Platforms/General/Choosing Platform.md",
+    "z_guides/Sources guide.md.tmp.4292.8633613c101f",
+    "Environment/Platforms/General/Circuits debug/PennyLane Debug.md",
+    "Environment/Platforms/IBM Quantum/IBM XP.md",
+    "Environment/Platforms/General/Circuits debug/IBM Debug.md",
+    "Environment/Platforms/General/Circuits debug/Amazon Debug.md",
+    "Environment/Platforms/IBM Quantum/IBM Transpiler.md.tmp.1968.781a18d0c2f1",
+    "z_guides/Plugins guide.md",
+    "Environment/Platforms/Amazon Braket/Braket S3 Setup.md.tmp.8432.4be792740298",
+    "Environment/Platforms/General/Circuits debug/Azure Debug.md.tmp.8748.f7df5e5018a2",
+    "z_img/Pasted image 20260608192322.png",
     "Algorithms/QPCA.md.tmp.25720.1778440322073",
     "z_guides",
     "Gates/Single-qubit",
     "Gates/Multi-qubit",
     "Gates/Types",
     "Programming",
-    "Environment/QRE/seduM6M7J",
-    "Environment/Platforms/PennyLane/sedGsAy8P",
-    "Environment/Platforms/IBM Quantum/sedL8AjEa",
-    "Environment/Platforms/General/Circuits debug/sedNWEOzp",
     "z_img/Pasted image 20260429171834.png",
     "z_img/Pasted image 20260429171052.png",
     "z_img/Pasted image 20260429170347.png",
@@ -248,7 +231,6 @@
     "z_img/Screenshot 2026-04-28 231339.png",
     "Pasted image 20260429170145.png",
     "z_img/Pasted image 20260429165916.png",
-    "z_img/Screenshot 2026-04-28 231719.png",
     "Untitled.canvas"
   ]
 }

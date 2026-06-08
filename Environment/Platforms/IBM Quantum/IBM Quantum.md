@@ -1,14 +1,14 @@
 #SoftDev #Hardware #Python 
 **IBM Quantum** (`quantum.cloud.ibm.com`) is IBM's cloud quantum computing service, offering free public access to real superconducting QPUs & the **Qiskit** open-source SDK. $1$ of the most widely used quantum platforms for research & education.
-- **$10$ minutes of QPU runtime per month** on IBM's real quantum hardware at no cost
-- Active users may request additional time
+- **$10$ minutes of QPU runtime per $28$-day rolling window** on IBM's real quantum hardware at no cost
+- Active users who log $20$ min in any $12$-month period can opt into a one-time promotion of $180$ min for the next $12$ months (as of March $2026$)
 - No credit card required to start; sign up with IBM ID
 - Full access to all on-demand **quantum simulators** (no runtime cap)
 - Free courses & learning resources on IBM Quantum Learning
 
-IBM's fleet uses **superconducting transmon [[Qubits]]** arranged in heavy-hex lattice topology. Available systems (as of $2025$):
-- $~12$ systems publicly accessible, ranging from **$5$ to $127$ [[Qubits]]**
-- **Eagle** ($127$ [[Qubits]]), **Heron** ($133$ [[Qubits]], higher fidelity), & smaller systems for experimentation
+IBM's fleet uses **superconducting transmon [[Qubits]]** arranged in heavy-hex lattice topology. Available systems:
+- Multiple systems publicly accessible; flagship open-access device is **Heron r2 ibm_kingston** ($156$ [[Qubits]], $\sim 2\times10^{-3}$ median $2$-qubit error, $340$k CLOPS)
+- **Eagle** ($127$ [[Qubits]]), **Heron** ($133$–$156$ [[Qubits]], higher fidelity), & smaller systems for experimentation
 - Systems listed at `quantum.cloud.ibm.com` with live calibration data (gate error rates, $T_1/T_2$, readout fidelity)
 
 Primary SDK: **Qiskit** (Python). Circuits are written as `QuantumCircuit` objects & compiled with `transpile()` before submission via the **Qiskit Runtime** service.

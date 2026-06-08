@@ -4,8 +4,8 @@
 QPCA was proposed by Lloyd, Mohseni & Rebentrost (2014) and, under specific assumptions, offers an exponential reduction in query complexity. **These assumptions are restrictive:**
 - Data must already be available as a quantum density [[Matrix]] (or loaded via [[Amplitude Encoding]] from QRAM)
 - Quantum RAM (QRAM) is required for loading classical data - an expensive hardware component with no demonstrated large-scale implementation
-- The speedup applies to the number of queries to the data structure, not necessarily wall-clock time
-- **Dequantization caveat (Tang 2018):** classical algorithms using sampling access to data can in some settings match QPCA's query complexity, eliminating the exponential advantage. The regime where genuine quantum speedup survives remains narrow and contested.
+- The speedup applies to the num of queries to the data structure, not necessarily wall-clock time
+- **Dequantization caveat (Tang 2018):** classical algorithms using sampling access to data can in some settings match QPCA's query complexity, eliminating the exponential advantage. The regime where genuine quantum speedup survives remains narrow & contested.
 
 QPCA is most naturally suited to **natively quantum data** (e.g., quantum states from a physical system), where the density [[Matrix]] is prepared directly without classical loading overhead.
 
@@ -17,12 +17,12 @@ QPCA is most naturally suited to **natively quantum data** (e.g., quantum states
 | Data handling | General classical data | Quantum-state data or QRAM-loaded classical data              |
 | Output | Classical eigenvectors | Quantum states of principal components                        |
 
-> **Note:** The $O(\log d)$ figure is a query complexity bound, not a wall-clock speedup. Classical preprocessing costs (state preparation, QRAM) can dominate and are not included in this count.
+> **Note:** The $O(\log d)$ figure is a query complexity bound, not a wall-clock speedup. Classical preprocessing costs (state preparation, QRAM) can dominate & are not included in this count.
 
 **Candidate application areas** (speculative - no demonstrated quantum advantage on classical data at scale):
 
 - **Quantum chemistry**: Extracting dominant orbitals from quantum-state representations of molecules. Small-scale experiments have verified the circuit mechanics (e.g., 4-qubit systems), but do not demonstrate speedup over classical methods at chemically relevant scales.
-- **High-dimensional data analysis**: Finance, bioinformatics - theoretically appealing if QRAM becomes practical and data is genuinely high-rank.
+- **High-dimensional data analysis**: Finance, bioinformatics - theoretically appealing if QRAM becomes practical & data is genuinely high-rank.
 - **Hybrid workflows**: Combining QPCA with classical filtering (e.g., isolation forests) as a preprocessing step in hybrid pipelines.
 
 | Usage | Challenge | Status |

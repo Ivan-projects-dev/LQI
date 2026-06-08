@@ -54,7 +54,7 @@ class Cat : Animal
     public override void Speak() => Console.WriteLine("Meow");
 }
 ```
-**Abstraction** - hiding complex [[Logic]] & showing only essential features. Use **abstract classes** or **interfaces**.  
+**Abstraction** - hiding complex Logic & showing only essential features. Use **abstract classes** or **interfaces**.  
 ```csharp
 abstract class Shape
 {
@@ -82,7 +82,7 @@ class Student
     public Student(string name) => this.name = name;
 }
 ```
-**Properties** Controlled access to fields. Getters & setters with optional [[Logic]].
+**Properties** Controlled access to fields. Getters & setters with optional Logic.
 ```csharp
 class Car
 {
@@ -147,7 +147,7 @@ class Child : Base
     public sealed override void Run() {} // Can't override further
 }
 ```
-**Partial Classes**: Split a class across **multiple files**. Useful for large projects or code generation (e.g. WinForms, [[Entity framework]]).  
+**Partial Classes**: Split a class across **multiple files**. Useful for large projects or code generation (e.g. WinForms, Entity framework).  
 ```csharp
 partial class Player { public string Name; } // File1.cs
 partial class Player { public int Score; } // File2.cs
@@ -174,7 +174,7 @@ class Outer
 ```csharp
 public string Name { get; set; }  // auto-property
 ```
- Add custom [[Logic]]:
+ Add custom Logic:
 ```csharp
 private int _age;
 public int Age

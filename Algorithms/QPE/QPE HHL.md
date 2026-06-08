@@ -16,7 +16,7 @@ $$A = \begin{pmatrix}1.5 & 0.5 \\ 0.5 & 1.5\end{pmatrix}, \quad \vec{b} = \begin
 **Eigenvalues**: $\lambda_1 = 1$, $\lambda_2 = 2$
 **Eigenvectors**: $|u_1\rangle = (|0\rangle - |1\rangle)/\sqrt2$, $|u_2\rangle = (|0\rangle + |1\rangle)/\sqrt2$
 
-Since $|u_1\rangle = (|0\rangle - |1\rangle)/\sqrt2$ and $|u_2\rangle = (|0\rangle + |1\rangle)/\sqrt2$, we get $|b\rangle = |0\rangle = \tfrac{1}{\sqrt2}|u_1\rangle + \tfrac{1}{\sqrt2}|u_2\rangle$ ($\beta_1 = \beta_2 = 1/\sqrt2$). Classical solution: $\vec x = A^{-1}\vec b = (0.75,\; {-0.25})^\top$
+Since $|u_1\rangle = (|0\rangle - |1\rangle)/\sqrt2$ & $|u_2\rangle = (|0\rangle + |1\rangle)/\sqrt2$, we get $|b\rangle = |0\rangle = \tfrac{1}{\sqrt2}|u_1\rangle + \tfrac{1}{\sqrt2}|u_2\rangle$ ($\beta_1 = \beta_2 = 1/\sqrt2$). Classical solution: $\vec x = A^{-1}\vec b = (0.75,\; {-0.25})^\top$
 ```csharp
 import Std.Math.*;
 import Std.Convert.*;

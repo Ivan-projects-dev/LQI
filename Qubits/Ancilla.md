@@ -1,7 +1,7 @@
 #Math #Q-Sharp 
 **Ancilla qubit** (from Latin *helper/servant*) is auxiliary qubit allocated to assist computation without being part of the primary I/O register. Carry intermediate results, enable reversible computation, & facilitate [[Phase kickback]].
 
-Quantum gates must be **reversible** (unitary). Classical [[Logic]] gates such as $AND, OR$ produce irreversible mappings - multiple inputs map to the same output, losing info. To implement $f(x)$ as unitary, extra register is introduced:
+Quantum gates must be **reversible** (unitary). Classical Logic gates such as $AND, OR$ produce irreversible mappings - multiple inputs map to the same output, losing info. To implement $f(x)$ as unitary, extra register is introduced:
 $$U_f : |x\rangle|a\rangle \mapsto |x\rangle|a \oplus f(x)\rangle$$
 Input $|x\rangle$ is preserved; $f(x)$ is $XOR-d$ into the ancilla $|a\rangle$. This makes the transform reversible regardless of $f$.
 

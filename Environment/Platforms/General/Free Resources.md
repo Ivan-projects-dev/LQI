@@ -17,18 +17,18 @@ Everything core to [[PennyLane]] is free & runs locally. There is no free cloud 
 Both are free, no account required for reading.
 ## Amazon Braket
 
-| Resource | Cost | [[Limit]] |
-|---|---|---|
-| `LocalSimulator` | Free | Unlimited, runs in your process |
-| Free trial credits | Free (one-time) | Small credit for new AWS accounts |
-| SV1 managed simulator | Paid (per task + per shot) | Charged after free credits |
-| QPU time | Paid (per task + per shot) | Charged after free credits |
+| Resource              | Cost                       | Limit                             |
+| --------------------- | -------------------------- | --------------------------------- |
+| `LocalSimulator`      | Free                       | Unlimited, runs in process        |
+| Free trial credits    | Free (one-time)            | Small credit for new AWS accounts |
+| SV1 managed simulator | Paid (per task + per shot) | Charged after free credits        |
+| QPU time              | Paid (per task + per shot) | Charged after free credits        |
 ## D-Wave Leap
 
-| Resource | Cost | [[Limit]] |
-|---|---|---|
-| QPU access | Free | **1 minute/month** of QPU solver time |
-| Leap Hybrid Solver | Per-second pricing | No free tier (paid per use) |
-| `SimulatedAnnealingSampler` | Free (local) | Unlimited, CPU-based |
-| Ocean SDK | Free | Full local SDK |
-| [[D-Wave]] demos & tutorials | Free | Browser-based |
+| Resource                     | Cost               | Limit                                 |
+| ---------------------------- | ------------------ | ------------------------------------- |
+| QPU access                   | Free               | **1 minute/month** of QPU solver time |
+| Leap Hybrid Solver           | Per-second pricing | No free tier (paid per use)           |
+| `SimulatedAnnealingSampler`  | Free (local)       | Unlimited, CPU-based                  |
+| Ocean SDK                    | Free               | Full local SDK                        |
+| [[D-Wave]] demos & tutorials | Free               | Browser-based                         |

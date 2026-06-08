@@ -13,6 +13,6 @@ Submitting $2$-qubit circuit to $127$-qubit machine is wasteful - the queue is l
 service = QiskitRuntimeService()
 
 # Filter by min qubit count & prefer least busy
-backends = service.backends(filters=lambda b: b.num_qubits >= 5 & b.num_qubits <= 10 and b.status().operational)
+backends = service.backends(filters=lambda b: b.num_qubits >= 5 & b.num_qubits <= 10 & b.status().operational)
 backend = min(backends, key=lambda b: b.status().pending_jobs)
 ```

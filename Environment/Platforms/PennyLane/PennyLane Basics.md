@@ -1,5 +1,5 @@
 #SoftDev #ML #Python 
-**[[PennyLane]]** treats quantum circuits the way PyTorch treats neural networks: as differentiable functions you can optimize with gradient descent. If you've used PyTorch or JAX, [[PennyLane]] will feel familiar. If you haven't, learn those basics $1st$ - [[PennyLane]] makes most sense as a quantum extension of classical autodiff.
+**[[PennyLane]]** treats quantum circuits the way PyTorch treats neural networks: as differentiable funcs you can optimize with gradient descent. If you've used PyTorch or JAX, [[PennyLane]] will feel familiar. If you haven't, learn those basics $1st$ - [[PennyLane]] makes most sense as a quantum extension of classical autodiff.
 
 **`qml.device`** - where the circuit runs (simulator or hardware):
 ```python
@@ -7,7 +7,7 @@ import pennylane as qml
 dev = qml.device("default.qubit", wires=2) # CPU simulator, 2 qubits
 ```
 
-**`@qml.qnode`** - turns Python function into quantum circuit:
+**`@qml.qnode`** - turns Python func into quantum circuit:
 ```python
 @qml.qnode(dev)
 def circuit(theta):
@@ -52,7 +52,7 @@ for step in range(20):
 
 # After convergence: theta ≈ pi, <Z> ≈ -1 (qubit pointing south = |1⟩)
 ```
-This is toy version of [[VQE]]: find the circuit parameters that minimize energy function.
+This is toy version of [[VQE]]: find the circuit parameters that minimize energy func.
 ### Running the Same Circuit on Different Backends
 Change only the `device` line - the circuit stays the same:
 ```python

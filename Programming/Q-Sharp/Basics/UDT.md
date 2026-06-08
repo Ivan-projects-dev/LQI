@@ -35,4 +35,4 @@ set p w/= Re <- 1.0; // p is now Complex(1.0, 0.)
 let p2 = p w/ Im <- 3.0; // returns new Complex(1.0, 3.0); p unchanged
 ```
 
-UDTs cannot have methods; they are pure data containers. Use functions or operations that take UDT arguments instead. UDTs are **not** interchangeable with their underlying types without explicit unwrapping - passing `Pair` where `(Int, Int)` is expected requires `myPair!`.
+UDTs cannot have methods; they are pure data containers. Use funcs or operations that take UDT arguments instead. UDTs are **not** interchangeable with their underlying types without explicit unwrapping - passing `Pair` where `(Int, Int)` is expected requires `myPair!`.

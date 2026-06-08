@@ -111,7 +111,7 @@ Or append with `+`:
 mutable log = [];
 set log += [result]; // append single element
 ```
-All functions below are from [[Std.Arrays]] - add `import` [[Std.Arrays]]`;` to use them.
+All funcs below are from [[Std.Arrays]] - add `import` [[Std.Arrays]]`;` to use them.
 
 **`Chunks(size, arr)` - split into fixed-size sub-arrays**. Returns array of arrays, each of length `size` (last chunk may be shorter):
 ```csharp

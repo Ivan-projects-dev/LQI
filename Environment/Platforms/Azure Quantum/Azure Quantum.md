@@ -22,7 +22,7 @@ When you run quantum program in Azure Quantum, you create & run **job**. To sub
 
 **DumpMachine() replaces print debugging in Q#.** Unlike classical debuggers, you cannot read [[Quantum state]] without collapsing it. During simulation, `DumpMachine()` prints the complete statevector: every basis state, amplitude, probability, & phase. Insert it between every gate pair when debugging new circuits.
 
-**The simulator qubit [[Limit]] is hard wall.** At $30$ [[Qubits]], the full statevector requires $16$ GB of RAM. At $33$ [[Qubits]] it requires $128$ GB. There is no workaround - use [[Tensor]]-network or stabilizer simulators for larger circuits.
+**The simulator qubit limit is hard wall.** At $30$ [[Qubits]], the full statevector requires $16$ GB of RAM. At $33$ [[Qubits]] it requires $128$ GB. There is no workaround - use [[Tensor]]-network or stabilizer simulators for larger circuits.
 
 **[[Adaptive profile]] unlocks mid-circuit measurement.** If your algorithm requires conditioning future gates on measurement outcomes (teleportation, iterative [[QPE]], magic state distillation), you must annotate the operation with `@Config(AdaptiveRI)`. Code that works on `Unrestricted` (simulation) will fail to compile for `Base` hardware targets without this.
 

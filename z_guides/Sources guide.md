@@ -8,7 +8,7 @@ Data covering [[QNN]], [[FTQC]], physics, gates, usage, math concepts etc. was t
 
 ---
 ### General
-- [Preskill 2018: Quantum Computing in the NISQ Era and Beyond](https://arxiv.org/abs/1801.00862)
+- [Preskill 2018: Quantum Computing in the NISQ Era & Beyond](https://arxiv.org/abs/1801.00862)
 - [Childs & van Dam 2010: Quantum algorithms for algebraic problems (survey)](https://arxiv.org/abs/0812.0380)
 - [NIST IR 8547: Transition to Post-Quantum Cryptography Standards](https://doi.org/10.6028/NIST.IR.8547.ipd)
 - [Webber et al. 2022: The impact of hardware specifications on reaching quantum advantage in factoring](https://arxiv.org/abs/2203.13816)
@@ -20,9 +20,9 @@ Data covering [[QNN]], [[FTQC]], physics, gates, usage, math concepts etc. was t
 ### [[Simon]]
 - [Simon 1994: On the power of quantum computation](https://arxiv.org/abs/quant-ph/9701045)
 ### [[Grover]] & [[Amplitude Encoding]]
-- [Grover 1996: A fast quantum mechanical algorithm for database search](https://arxiv.org/abs/quant-ph/9605043)
-- [Bennett, Bernstein, Brassard & Vazirani 1997: Strengths and Weaknesses of Quantum Computing](https://arxiv.org/abs/quant-ph/9701001)
-- [Brassard, Høyer, Mosca & Tapp 2002: Quantum Amplitude Amplification and Estimation](https://arxiv.org/abs/quant-ph/0005055)
+- [Grover 1996: A fast quantum mechanical algorithm for DB search](https://arxiv.org/abs/quant-ph/9605043)
+- [Bennett, Bernstein, Brassard & Vazirani 1997: Strengths & Weaknesses of Quantum Computing](https://arxiv.org/abs/quant-ph/9701001)
+- [Brassard, Høyer, Mosca & Tapp 2002: Quantum Amplitude Amplification & Estimation](https://arxiv.org/abs/quant-ph/0005055)
 - [Boyer, Brassard, Høyer & Tapp 1998: Tight bounds on quantum searching](https://arxiv.org/abs/quant-ph/9605034)
 - [IBM Quantum Learning: Grover's Algorithm](https://learning.quantum.ibm.com/course/fundamentals-of-quantum-algorithms/grovers-algorithm)
 - [Grover's search tutorial (Microsoft Learn)](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)
@@ -31,7 +31,7 @@ Data covering [[QNN]], [[FTQC]], physics, gates, usage, math concepts etc. was t
 - [Draper QFT adder](https://arxiv.org/abs/quant-ph/0008033)
 - [Cuccaro ripple-carry adder](https://arxiv.org/abs/quant-ph/0410184)
 ### [[QPE]]
-- [Kitaev 1995: Quantum measurements and the Abelian stabilizer problem](https://arxiv.org/abs/quant-ph/9511026)
+- [Kitaev 1995: Quantum measurements & the Abelian stabilizer problem](https://arxiv.org/abs/quant-ph/9511026)
 - [Cleve, Ekert, Macchiavello & Mosca 1998: Quantum algorithms revisited](https://arxiv.org/abs/quant-ph/9708016)
 - [Mosca 1998: Quantum counting (thesis chapter)](https://arxiv.org/abs/quant-ph/9808023)
 - [IBM Quantum Learning: Phase Estimation & Factoring](https://learning.quantum.ibm.com/course/fundamentals-of-quantum-algorithms/phase-estimation-and-factoring)
@@ -40,13 +40,13 @@ Data covering [[QNN]], [[FTQC]], physics, gates, usage, math concepts etc. was t
 - [Shor 1994: Algorithms for quantum computation - discrete logarithms & factoring](https://arxiv.org/abs/quant-ph/9508027)
 - [Beauregard 2002: Circuit for Shor's algorithm using 2n+3 qubits](https://arxiv.org/abs/quant-ph/0205095)
 - [Griffiths & Niu 1996: Semiclassical Fourier transform for quantum computation](https://arxiv.org/abs/quant-ph/9511007)
-- [Ekerå & Håstad 2017: Quantum algorithms for computing short discrete logarithms and factoring RSA integers](https://arxiv.org/abs/1702.01636)
+- [Ekerå & Håstad 2017: Quantum algorithms for computing short discrete logarithms & factoring RSA integers](https://arxiv.org/abs/1702.01636)
 - [Ekerå 2021: Revisiting Shor's quantum algorithm for computing general discrete logarithms](https://arxiv.org/abs/1905.09571)
 - [Roetteler, Naehrig, Svore & Lauter 2017: Quantum resource estimates for computing elliptic curve discrete logarithms](https://arxiv.org/abs/1706.06752)
-- [Hallgren 2002: Polynomial-time quantum algorithms for Pell's equation and the principal ideal problem](https://arxiv.org/abs/quant-ph/0207120)
+- [Hallgren 2002: Polynomial-time quantum algorithms for Pell's equation & the principal ideal problem](https://arxiv.org/abs/quant-ph/0207120)
 - [Regev 2023: An efficient quantum factoring algorithm](https://arxiv.org/abs/2308.06572)
 - [Ragavan & Vaikuntanathan 2024: Optimizing Regev's Factoring Algorithm](https://arxiv.org/abs/2310.00899)
-- [Parker & Plenio 2000: Efficient factorization with a single pure qubit and logN mixed qubits](https://arxiv.org/abs/quant-ph/0001066)
+- [Parker & Plenio 2000: Efficient factorization with a single pure qubit & logN mixed qubits](https://arxiv.org/abs/quant-ph/0001066)
 ### [[HHL]]
 - [Harrow, Hassidim & Lloyd 2009: Quantum algorithm for linear systems of equations](https://arxiv.org/abs/0811.3171)
 - [Aaronson 2015: Read the fine print (HHL caveats)](https://www.scottaaronson.com/papers/qml.pdf)
@@ -54,14 +54,14 @@ Data covering [[QNN]], [[FTQC]], physics, gates, usage, math concepts etc. was t
 ### [[QPE Walks]] & [[MNRS Framework]]
 - [Szegedy 2004: Quantum Speed-Up of Markov Chain Based Algorithms](https://arxiv.org/abs/quant-ph/0401053)
 - [Childs et al. 2003: Exponential Algorithmic Speedup by Quantum Walk](https://arxiv.org/abs/quant-ph/0209131)
-- [Ambainis 2003: Quantum walks and their algorithmic applications](https://arxiv.org/abs/quant-ph/0403120)
+- [Ambainis 2003: Quantum walks & their algorithmic applications](https://arxiv.org/abs/quant-ph/0403120)
 - [Magniez, Nayak, Roland & Santha 2007: Search via Quantum Walk](https://www.irif.fr/~magniez/PAPIERS/mnrs-stoc07.pdf)
 - [Magniez et al. 2011: Search via Quantum Walk - full version](https://www.irif.fr/~santha/Papers/mnros11.pdf)
 ### [[VQE]], [[QAOA]]
 - [Peruzzo et al. 2014: A variational eigenvalue solver on a photonic quantum processor](https://arxiv.org/abs/1304.3061)
-- [Tilly et al. 2022: The Variational Quantum Eigensolver: A review of methods and best practices](https://arxiv.org/abs/2111.05176)
+- [Tilly et al. 2022: The Variational Quantum Eigensolver: A review of methods & best practices](https://arxiv.org/abs/2111.05176)
 - [Farhi, Goldstone & Gutmann 2014: A Quantum Approximate Optimization Algorithm](https://arxiv.org/abs/1411.4028)
-- [Blekos et al. 2024: A Review on QAOA and its Variants](https://arxiv.org/abs/2306.09198)
+- [Blekos et al. 2024: A Review on QAOA & its Variants](https://arxiv.org/abs/2306.09198)
 - [Cerezo et al. 2021: Variational quantum algorithms](https://arxiv.org/abs/2012.09265)
 - [Bharti et al. 2022: Noisy intermediate-scale quantum algorithms](https://arxiv.org/abs/2101.08448)
 - [McClean et al. 2018: Barren plateaus in quantum neural network training landscapes](https://arxiv.org/abs/1803.11173)
@@ -133,6 +133,13 @@ Data covering [[QNN]], [[FTQC]], physics, gates, usage, math concepts etc. was t
 - [IBM Quantum: Error handling](https://docs.quantum.ibm.com/errors)
 - [IBM Quantum: Noise & error mitigation](https://docs.quantum.ibm.com/guides/noise-learning)
 - [IBM Quantum: Plans overview](https://quantum.cloud.ibm.com/docs/en/guides/plans-overview)
+- [IBM Quantum: Open plan updates - March 2026 (180 min promotion, ibm_kingston access)](https://quantum.cloud.ibm.com/announcements/en/product-updates/2026-03-16-open-plan-news)
+- [IBM Quantum: Migrate to V2 primitives (SamplerV2 / EstimatorV2)](https://docs.quantum.ibm.com/migration-guides/v2-primitives)
+- [IBM Quantum: Introduction to primitives](https://quantum.cloud.ibm.com/docs/en/guides/primitives)
+- [IBM Quantum: Primitive inputs and outputs (PUBs, BitArray, PubResult)](https://quantum.cloud.ibm.com/docs/en/guides/primitive-input-output)
+- [Blog: How Does The Qiskit Transpiler Work? (Eric Michiels, Qiskit Medium)](https://medium.com/qiskit/how-does-the-qiskit-transpiler-work-3f4d9e3e0551)
+- [Blog: Optimizing Quantum Circuits in Qiskit (Rahul Reddy, Medium, Jan 2026)](https://medium.com/@gajjadarahul/optimizing-quantum-circuits-in-qiskit-a-deep-performance-tuning-guide-for-developers-3436776e97bf)
+- [Blog: Oh no! My Qiskit code isn't working! (Abby Mitchell, Qiskit Medium)](https://medium.com/qiskit/oh-no-my-qiskit-code-isnt-working-6bf0517e9900)
 ---
 ### [[Azure Quantum]]
 - [What is Azure Quantum?](https://learn.microsoft.com/en-us/azure/quantum/overview-azure-quantum)
@@ -155,6 +162,7 @@ Data covering [[QNN]], [[FTQC]], physics, gates, usage, math concepts etc. was t
 - [PASQAL provider](https://learn.microsoft.com/en-us/azure/quantum/provider-pasqal)
 - [Azure Quantum Elements announcement](https://news.microsoft.com/source/features/innovation/azure-quantum-elements-chemistry-materials-science/)
 - [Quantum Roadmap](https://quantum.microsoft.com/en-us/vision/quantum-roadmap)
+- [Azure Quantum: Target profile types (Unrestricted / Base / Adaptive RI / Adaptive RIF)](https://learn.microsoft.com/en-us/azure/quantum/quantum-computing-target-profiles)
 ---
 ### [[Amazon Braket]]
 - [Amazon Braket](https://aws.amazon.com/braket/)
@@ -162,16 +170,22 @@ Data covering [[QNN]], [[FTQC]], physics, gates, usage, math concepts etc. was t
 - [Braket SDK GitHub](https://github.com/amazon-braket/amazon-braket-sdk-python)
 - [Amazon Braket troubleshooting](https://docs.aws.amazon.com/braket/latest/developerguide/braket-troubleshooting.html)
 - [Amazon Braket: Batch tasks](https://docs.aws.amazon.com/braket/latest/developerguide/braket-batching-tasks.html)
+- [Amazon Braket: Rigetti Cepheus-1-108Q launch - April 2026](https://aws.amazon.com/blogs/quantum-computing/amazon-braket-launches-rigetti-cepheus-1-108q-superconducting-device/)
+- [Amazon Braket: Supported regions and devices](https://docs.aws.amazon.com/braket/latest/developerguide/braket-devices.html)
 ---
 ### [[PennyLane]] & [[Xanadu]]
 - [PennyLane documentation](https://docs.pennylane.ai)
 - [Bergholm et al. 2022: PennyLane: Automatic differentiation of hybrid quantum-classical computations](https://arxiv.org/abs/1811.04968)
 - [PennyLane Catalyst documentation](https://docs.pennylane.ai/projects/catalyst)
+- [PennyLane v0.43 & Catalyst v0.13 release notes](https://pennylane.ai/blog/2025/10/pennylane-release-0.43)
 - [PennyLane demos](https://pennylane.ai/qml/demonstrations)
 - [PennyLane Codebook](https://codebook.xanadu.ai)
 - [Parameter-shift rule](https://pennylane.ai/qml/glossary/parameter_shift/)
 - [PennyLane: Barren plateaus demo](https://pennylane.ai/qml/demos/tutorial_barren_plateaus)
 - [PennyLane GitHub](https://github.com/PennyLaneAI/pennylane)
+- [PennyLane: Hardware & Simulators device list](https://pennylane.ai/devices)
+- [PennyLane: Gradients and training (diff_method, interfaces)](https://docs.pennylane.ai/en/stable/introduction/interfaces.html)
+- [Blog: Working with PennyLane for variational QML (Eric Kessler, AWS blog, Mar 2021)](https://aws.amazon.com/blogs/quantum-computing/pennylane-quantum-machine-learning/)
 - [Killoran et al. 2019: Strawberry Fields: A Software Platform for Photonic Quantum Computing](https://arxiv.org/abs/1804.03159)
 - [Bromley et al. 2020: Applications of near-term photonic quantum computers](https://arxiv.org/abs/1912.07634)
 - [Strawberry Fields documentation](https://strawberryfields.ai)
@@ -182,6 +196,8 @@ Data covering [[QNN]], [[FTQC]], physics, gates, usage, math concepts etc. was t
 - [Ocean SDK GitHub](https://github.com/dwavesystems/dwave-ocean-sdk)
 - [D-Wave example: Max-Cut](https://github.com/dwave-examples/maximum-cut)
 - [Advantage2 GA announcement](https://thequantuminsider.com/2025/05/20/d-wave-announces-general-availability-of-advantage2-quantum-computer/)
+- [D-Wave: Problem-Solving Handbook - Reformulating a Problem (QUBO constraint encoding)](https://docs.dwavesys.com/docs/latest/handbook_reformulating.html)
+- [D-Wave: dimod BQM generators (combinations / one-hot)](https://docs.ocean.dwavesys.com/projects/dimod/en/latest/reference/bqm/index.html)
 ---
 ### [[qBraid]]
 - [qBraid Platform](https://www.qbraid.com)

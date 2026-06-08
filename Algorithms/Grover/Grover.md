@@ -1,5 +1,5 @@
 #Algorithm #DB #Math
-**Lov Grover** (1996) gave a quantum algorithm for searching an unsorted database of $N$ items in $O(\sqrt{N})$ [[Oracle]] calls — a provably optimal quadratic speedup over any classical algorithm ($\Omega(N)$ queries required classically).
+**Lov Grover** (1996) gave a quantum algorithm for searching an unsorted DB of $N$ items in $O(\sqrt{N})$ [[Oracle]] calls - a provably optimal quadratic speedup over any classical algorithm ($\Omega(N)$ queries required classically).
 
 **Problem statement**: given $f: \{0,1\}^n \to \{0,1\}$, find $x_0$ such that $f(x_0)=1$. The search space has $N=2^n$ elements; $M$ of them are solutions.
 
@@ -7,9 +7,9 @@
 
 1. **Init**: apply $H^{\otimes n}$ to create uniform superposition $|s\rangle = \frac{1}{\sqrt{N}}\sum_x |x\rangle$. Each amplitude is $\frac{1}{\sqrt{N}}$.
 2. **Repeat $k^*$ times**:
-   - **[[Oracle]]** $U_f$: flips sign of amplitude of every marked state ($|x\rangle \to -|x\rangle$ if $f(x)=1$). Implemented via [[Phase kickback]] — [[Ancilla]] set to $|-\rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}}$.
+   - **[[Oracle]]** $U_f$: flips sign of amplitude of every marked state ($|x\rangle \to -|x\rangle$ if $f(x)=1$). Implemented via [[Phase kickback]] - [[Ancilla]] set to $|-\rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}}$.
    - **[[Diffusion operator]]** $D = 2|s\rangle\langle s| - I$: reflects all amplitudes about their mean, amplifying marked states.
-3. **Measure**: read out $n$ data [[Qubits]] — yields a solution with high probability.
+1. **Measure**: read out $n$ data [[Qubits]] - yields a solution with high probability.
 
 **Optimal iteration count**:
 $$k^* = \left\lfloor \frac{\pi}{4}\sqrt{\frac{N}{M}} \right\rceil$$

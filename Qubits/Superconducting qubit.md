@@ -7,7 +7,7 @@ Known for their rapid gate times & high fidelity, these systems operate at milli
 
 **Resonators** used to control & read out the state of the qubit. These resonators couple to the [[Qubits]] & help mediate interactions between them or between qubit & measurement device. 
 
-**Control lines** used to send precise microwave pulses to manipulate qubit states. These lines allow researchers to perform gate operations, the quantum equivalent of classical [[Logic]] gates. 
+**Control lines** used to send precise microwave pulses to manipulate qubit states. These lines allow researchers to perform gate operations, the quantum equivalent of classical Logic gates. 
 
 **Dilution refrigerator**: Superconducting [[Qubits]] must operate at millikelvin temperatures to maintain their superconducting state & minimize thermal noise. Dilution refrigerators achieve these ultra-low temperatures by using helium isotopes. 
 

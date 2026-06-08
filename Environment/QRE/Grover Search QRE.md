@@ -21,7 +21,7 @@ operation GroverEstimate() : Unit {
     ResetAll(register);
 }
 ```
-**Expected output** *(rough illustrative estimates from Azure [[QRE]] - depend on error model, code distance, and target logical error rate):*
+**Expected output** *(rough illustrative estimates from Azure [[QRE]] - depend on error model, code distance, & target logical error rate):*
 
 | Field            | Approximate value  |
 | ---------------- | ------------------ |

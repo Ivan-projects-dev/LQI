@@ -26,7 +26,7 @@ $Z$ is $180°$ rotation about the $\hat{z}$ axis. North & south poles are fixed;
 | $-1$ | $\|1\rangle$ |
 Computational basis measurement is exactly $Z$-basis measurement.
 ### Phase kickback & Z errors
-$Z$ is the gate that **appears** on control qubit due to [[Phase kickback]] when the controlled operation is an $X$-type flip & the target is in $|{-}\rangle$. After the [[Oracle]] applies $(-1)^{f(x)}$ to $|x\rangle$, what has happened physically is that $Z^{f(x)}$ was applied to the register - $Z$ error pattern encoding the function.
+$Z$ is the gate that **appears** on control qubit due to [[Phase kickback]] when the controlled operation is an $X$-type flip & the target is in $|{-}\rangle$. After the [[Oracle]] applies $(-1)^{f(x)}$ to $|x\rangle$, what has happened physically is that $Z^{f(x)}$ was applied to the register - $Z$ error pattern encoding the func.
 
 In [[Grover]]'s algorithm, the [[Oracle]] precisely applies $Z$ to the marked solution state: $$Z|w\rangle|{-}\rangle \to -|w\rangle|{-}\rangle$$CZ gate:
 `Controlled Z([ctrl], target)` or `CZ(q0, q1)` is **symmetric** - control & target are interchangeable:

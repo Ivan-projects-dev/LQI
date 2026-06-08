@@ -39,7 +39,7 @@ class Program {
 } //Message: Hello from Thread
 ```
 
-Instead of separate methods, it is possible to define thread [[Logic]] inline:
+Instead of separate methods, it is possible to define thread logic inline:
 ```csharp
 Thread t = new Thread(() => { 
 	for (int i = 1; i <= 3; i++) 

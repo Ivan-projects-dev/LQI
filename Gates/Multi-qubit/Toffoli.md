@@ -26,7 +26,7 @@ Any classical Bool circuit can be made reversible using Toffoli & NOT gates:
 - **AND**: $CCNOT(a, b, |0\rangle)$ computes $a \wedge b$ in the target, leaving $a$ & $b$ intact
 - **NOT**: $X(t)$ - the standard [[Pauli-X]] gate
 - **FANOUT**: copy a bit using $[[CNOT]](a, |0\rangle)$
-Together these reproduce all bool functions reversibly. This makes CCNOT the foundation of [[Oracle]] construction in [[Grover]], [[Shor]], & all other algorithms that need to evaluate a classical function on quantum superposition.
+Together these reproduce all bool funcs reversibly. This makes CCNOT the foundation of [[Oracle]] construction in [[Grover]], [[Shor]], & all other algorithms that need to evaluate a classical func on quantum superposition.
 ### Quantum universality
 CCNOT + H is universal for quantum computation. This is because:
 - CCNOT alone is universal for classical reversible computation
@@ -37,7 +37,7 @@ In practice standard universal set $\{H, T, [[CNOT]]\}$ is preferred for fault-t
 
 **Relative phase Toffoli** achieves same unitary on the $|110\rangle \to |111\rangle$ transition while picking up phases on other states. These variants require only **$3$ T gates** but are **not self-inverse** & can only be used in contexts where the controls are guaranteed to return to $|0\rangle$ by the end (within/apply pattern). The savings are significant in large oracles.
 
-Every [[Oracle]] that evaluates bool function uses Toffoli gates as the core building block:
+Every [[Oracle]] that evaluates bool func uses Toffoli gates as the core building block:
 ```csharp
 // Marking |111⟩ among 3-qubit states
 Controlled X([q0, q1], q2); // CCNOT: flip q2 iff q0=q1=1
@@ -95,7 +95,7 @@ qc.mcx([0,1,2], 3) # multi-controlled X: controls=0,1,2, target=3
 
 **[[PennyLane]]**
 ```python
-qml.Toffoli(wires=[0, 1, 2])           # controls=0,1, target=2
+qml.Toffoli(wires=[0, 1, 2]) # controls=0,1, target=2
 qml.MultiControlledX(wires=[0,1,2,3]) # 3-controlled X
 ```
 

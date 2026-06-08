@@ -7,7 +7,7 @@ Physical system $→$ Hamiltonian $H$ $→$ qubit encoding $→$ implement $e^{-
 
 **Qubit encoding** of physical degrees of freedom varies by system:
 - Fermions: Jordan-Wigner (1D: $O(n)$ locality), Bravyi-Kitaev ($O(\log n)$ locality), or first-quantized plane-wave basis
-- Bosons: truncated Fock space, unary or binary encoding of occupation numbers
+- Bosons: truncated Fock space, unary or binary encoding of occupation nums
 - Gauge fields: plaquette operators, link variables - higher-dimensional Hilbert space per site
 ### Lattice gauge theories
 **Gauge theories** describe fundamental forces (Standard Model: $U(1)$ QED, $SU(2)$ weak, $SU(3)$ QCD). Classical lattice QCD at finite baryon density $\mu \neq 0$ fails due to the **sign problem** - Monte Carlo importance sampling breaks down. [[Quantum simulation]] has no sign problem.
@@ -31,7 +31,7 @@ Classical simulation fails in regime $t \sim U$ - the Mott transition. Best clas
 
 **[[QPE]] targets**:
 - Ground-state energy vs $U/t$ $→$ locate **Mott transition** (energy cusp at critical $U/t$)
-- Spectral function $A(k,\omega)$ $→$ map metallic vs Mott insulator phases
+- Spectral func $A(k,\omega)$ $→$ map metallic vs Mott insulator phases
 - Pairing correlations in doped Hubbard $→$ superconducting order parameter
 
 **Qubit count**: $2n$ [[Qubits]] for $n$-site lattice (spin-up/down per site). 2D $L\times L$ lattice: $2L^2$ [[Qubits]] + clock register. Classically intractable at $L \sim 10$ ($200$ [[Qubits]]).
@@ -43,7 +43,7 @@ Classical simulation fails in regime $t \sim U$ - the Mott transition. Best clas
 **Band structure**: crystalline Hamiltonian $H(\mathbf{k})$ at each Bloch momentum $\mathbf{k}$. [[QPE]] on $e^{-iH(\mathbf{k})t}$ extracts energy bands $E_n(\mathbf{k})$.
 
 Applications:
-- **Topological invariants**: Chern numbers computed from Berry phases $\gamma_n = i\oint\langle u_n|\nabla_\mathbf{k}|u_n\rangle\cdot d\mathbf{k}$ - [[QPE]] enables exact eigenstate access needed for Berry phase
+- **Topological invariants**: Chern nums computed from Berry phases $\gamma_n = i\oint\langle u_n|\nabla_\mathbf{k}|u_n\rangle\cdot d\mathbf{k}$ - [[QPE]] enables exact eigenstate access needed for Berry phase
 - **Topological phase transitions**: [[QPE]] detects spectral gap closing at transition points - exponentially small gap near criticality requires high precision $\epsilon$
 - **Phonon spectra**: [[QPE]] on lattice dynamics Hamiltonian $→$ phonon dispersion curves
 - **Magnon spectra**: spin-wave excitations from magnetic Hamiltonians
