@@ -2,9 +2,9 @@ Read [[General guide]] first
 
 Knowledge was added according to specific supervisor tasks, so info from most sources was not fully extracted & separated into notes, some links may be considered as "future reading list". It is also easy for the author to return to already known sources seeking specific data.
 
-The biggest problem of the Zettelkasten approach in terms of sources is that knowledge becomes highly fragmented & recombined across many interconnected notes, & single note may depend on other notes as well as multiple sources (some may only add $1$ sentence). In case some info is moved to another file, related sources may be left in the old note or unrelated sources may be copied by mistake. That is why strict quotation becomes extremely difficult, & centralized list of sources is used.
+Biggest problem of the Zettelkasten approach in terms of sources is that knowledge becomes highly fragmented & recombined across many interconnected notes, & single note may depend on other notes as well as multiple sources (some may only add $1$ sentence). In case some info is moved to another file, related sources may be left in the old note or unrelated sources may be copied by mistake. That is why strict quotation becomes extremely difficult, & centralized list of sources is used.
 
-Data covering [[QNN]], [[FTQC]], gates, math concepts etc. was taken from the Qureca course, which is the only source with limited access: https://lms.qureca.com/product/adequate/?v=85d1a9c488d7
+Data covering [[QNN]], [[FTQC]], physics, gates, usage, math concepts etc. was taken from the Qureca course, which is the only source with limited access: https://lms.qureca.com/product/adequate/?v=85d1a9c488d7
 
 ---
 ### General
@@ -18,9 +18,10 @@ Data covering [[QNN]], [[FTQC]], gates, math concepts etc. was taken from the Qu
 ### [[Bernstein-Vazirani]]
 - [Bernstein & Vazirani 1993: Quantum Complexity Theory](https://arxiv.org/abs/quant-ph/9701001)
 ### [[Simon]]
-- [Simon 1994: On the power of quantum computation](https://arxiv.org/abs/quant-ph/9701045
+- [Simon 1994: On the power of quantum computation](https://arxiv.org/abs/quant-ph/9701045)
 ### [[Grover]] & [[Amplitude Encoding]]
 - [Grover 1996: A fast quantum mechanical algorithm for database search](https://arxiv.org/abs/quant-ph/9605043)
+- [Bennett, Bernstein, Brassard & Vazirani 1997: Strengths and Weaknesses of Quantum Computing](https://arxiv.org/abs/quant-ph/9701001)
 - [Brassard, Høyer, Mosca & Tapp 2002: Quantum Amplitude Amplification and Estimation](https://arxiv.org/abs/quant-ph/0005055)
 - [Boyer, Brassard, Høyer & Tapp 1998: Tight bounds on quantum searching](https://arxiv.org/abs/quant-ph/9605034)
 - [IBM Quantum Learning: Grover's Algorithm](https://learning.quantum.ibm.com/course/fundamentals-of-quantum-algorithms/grovers-algorithm)

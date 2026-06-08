@@ -1,10 +1,19 @@
-#Algorithm 
-**Variational Quantum Algorithms (VQAs)** are class of hybrid quantum-classical algorithms designed to harness the power of quantum computing while addressing the challenges posed by current quantum hardware.
+#Algorithm
+**Variational Quantum Algorithms (VQAs)** are hybrid quantum-classical algorithms that run a parameterized quantum circuit $U(\theta)$ on a quantum processor, measure an observable $\langle \psi(\theta) | H | \psi(\theta) \rangle$, and update $\theta$ classically to minimize the cost. The quantum processor evaluates the cost function; a classical optimizer (COBYLA, Adam, SPSA) updates parameters.
 
-These algorithms are particularly promising for near-term quantum devices, known as **Noisy Intermediate-Scale Quantum (NISQ) devices**, which are limited by noise, short coherence times, & relatively small nums of [[Qubits]]. 
+**Motivation**: on NISQ devices, deep circuits accumulate too much gate error. VQAs use shallow circuits (low depth) and accept that the ansatz $U(\theta)|0\rangle$ may not reach the exact ground state — close is good enough for some applications.
 
-At their core, VQAs combine quantum & classical computing resources in an iterative process to solve complex problems.  In this module, we will explore the principles behind VQAs, the role of quantum & classical components, & how these algorithms are implemented on current quantum hardware.
+**Loop**:
+1. Prepare $|\psi(\theta)\rangle = U(\theta)|0^n\rangle$ on QPU.
+2. Measure cost $C(\theta) = \langle \psi(\theta) | H | \psi(\theta) \rangle$ via repeated shots.
+3. Classical optimizer computes $\nabla_\theta C$ (via parameter-shift rule: $\partial C / \partial \theta_k = \frac{1}{2}[C(\theta_k + \pi/2) - C(\theta_k - \pi/2)]$).
+4. Update $\theta \leftarrow \theta - \eta \nabla_\theta C$. Repeat.
 
-**Parametrized quantum circuits** consist of quantum gates that have tunable params, allowing the [[Quantum state]] to be manipulated during optimization.
+**Instances**: [[VQE]] minimizes molecular energy (chemistry); [[QAOA]] approximates combinatorial optimization; VQLS solves linear systems; QCNN/QFNN are VQAs for ML.
+
+**Known problems**:
+- **Barren plateaus**: for random or deep ansätze, $\text{Var}[\partial C / \partial \theta_k] \propto 2^{-n}$ — gradients vanish exponentially, making optimization intractable. Affects all VQAs at scale.
+- **Local minima**: non-convex landscape; classical optimizer can get stuck.
+- **Measurement overhead**: estimating $C(\theta)$ to precision $\epsilon$ requires $O(1/\epsilon^2)$ shots. For many-term Hamiltonians ($> 10^5$ Pauli terms in chemistry), this is the dominant cost.
+- **No proven quantum advantage**: for most VQA instances, classical algorithms (DMRG, tensor networks) match or outperform VQAs on current hardware sizes.
 ![[Pasted image 20260101164554.png]]
-In VQAs, quantum circuit is init with some params, & the output of the circuit is measured. These measurement results are used to compute a cost func, which tells us how good current params are. Classical optimizer then adjusts the params to improve the result.

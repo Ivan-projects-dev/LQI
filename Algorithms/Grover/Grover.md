@@ -1,20 +1,30 @@
-#Algorithm #DB 
-**Lov Grover** devises quantum algorithm for DB searching, providing quadratic speedup over classical algorithms.
+#Algorithm #DB #Math
+**Lov Grover** (1996) gave a quantum algorithm for searching an unsorted database of $N$ items in $O(\sqrt{N})$ oracle calls — a provably optimal quadratic speedup over any classical algorithm ($\Omega(N)$ queries required classically).
 
-**Grover algorithm** can search through unsorted DB of $N$ items in $~√N$ steps, compared to $N$ num of steps for classical computer. 
+**Problem statement**: given $f: \{0,1\}^n \to \{0,1\}$, find $x_0$ such that $f(x_0)=1$. The search space has $N=2^n$ elements; $M$ of them are solutions.
 
-Power of algorithm lies in its ability to amplify the probability of finding the correct solution through **quantum interference**. It uses [[Oracle]] to mark the desired item & then applies series of quantum operations to increase the amplitude of the marked state. This process, **amplitude amplification**, allows the algorithm to find the target item with high probability after only $√N$ iterations. For large DBs, this quadratic speedup can translate to significant time savings, making previously intractable search problems feasible.
+**Algorithm outline** using $n$ data [[Qubits]] + $1$ [[Ancilla]] qubit:
 
-We are going to use $n$ [[Qubits]]. At start we apply [[Hadamard]] to each qubit, so we put our [[Quantum state]] into superposition. Amplitude of each basis state $|0⋯0⟩,…,|1⋯1⟩$ is set to $1√N$. After that we iterate the following algorithm for several times:
-- Make query: apply **query [[Oracle]] operator** to [[Qubits]] - it flips the sign of the amplitude of the state that corresponds to the marked element.
-- Inversion: apply diffusion [[Matrix]] - the amplitude of each state is reflected over the mean of all amplitudes.
+1. **Init**: apply $H^{\otimes n}$ to create uniform superposition $|s\rangle = \frac{1}{\sqrt{N}}\sum_x |x\rangle$. Each amplitude is $\frac{1}{\sqrt{N}}$.
+2. **Repeat $k^*$ times**:
+   - **Oracle** $U_f$: flips sign of amplitude of every marked state ($|x\rangle \to -|x\rangle$ if $f(x)=1$). Implemented via phase kickback — [[Ancilla]] set to $|-\rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}}$.
+   - **[[Diffusion operator]]** $D = 2|s\rangle\langle s| - I$: reflects all amplitudes about their mean, amplifying marked states.
+3. **Measure**: read out $n$ data qubits — yields a solution with high probability.
 
-To implement the inversion (diffusion) operation, we will need additional ([[Ancilla]]) qubit. This is how we implement the inversion operator:
-- Set the [[Ancilla]] qubit to $|−⟩$ by applying $X$ & $H$.
-- Apply $H$ to all [[Qubits]] other than the [[Ancilla]].
-- Apply $X$ to all [[Qubits]] other than the [[Ancilla]].
-- Apply multiple controlled NOT operator, where the [[Ancilla]] qubit is target & all other [[Qubits]] are used for controlling.
-- Apply $X$ to the [[Ancilla]] qubit.
-- Apply $X$ to all [[Qubits]] other than the [[Ancilla]].
-- Apply $H$ to all [[Qubits]] other than the [[Ancilla]].
-- Set [[Ancilla]] qubit back by applying $X$ & $H$.
+**Optimal iteration count**:
+$$k^* = \left\lfloor \frac{\pi}{4}\sqrt{\frac{N}{M}} \right\rceil$$
+For $M=1$: $k^* \approx \frac{\pi}{4}\sqrt{N} \approx 0.785\sqrt{N}$. Running past $k^*$ **reduces** success probability (overrotation). See [[Grover geometric]] for the rotation picture.
+
+**Diffusion operator circuit** (requires 1 ancilla):
+- Set [[Ancilla]] to $|-\rangle$: apply $X$, then $H$.
+- Apply $H^{\otimes n}$ to data qubits.
+- Apply $X^{\otimes n}$ to data qubits.
+- Apply $(n)$-controlled-NOT with ancilla as target.
+- Apply $X$ to ancilla.
+- Apply $X^{\otimes n}$ to data qubits.
+- Apply $H^{\otimes n}$ to data qubits.
+- Reset ancilla: apply $X$, $H$.
+
+**Multiple solutions** ($M > 1$): same circuit, only $k^*$ changes. If $M \geq N/2$ classical random sampling is faster. For unknown $M$, use [[Quantum counting]] (QPE on $G$) or exponential search. See [[Grover solutions]].
+
+**Lower bound**: any quantum algorithm for unstructured search requires $\Omega(\sqrt{N/M})$ oracle calls (BBBV 1994), so Grover is asymptotically optimal.

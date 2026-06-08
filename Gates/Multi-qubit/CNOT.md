@@ -18,15 +18,14 @@ I & 0 \\
 By definition:
 - when the $1st$ bit is $0$, the identity is applied to the $2nd$ bit, and
 - when the $1st$ bit is $1$, the operator $M$ is applied to the $2nd$ bit.
-Here we observe that the [[Matrix]] CM has nice form because the $1st$ bit is control bit. The [[Matrix]] CM given above is divided into $4$ sub-matrices based on the states of the $1st$ bit. Then, we can follow that
+
+Here we observe that the [[Matrix]] CM has nice form because the $1st$ bit is control bit. 
+
+[[Matrix]] CM given above is divided into $4$ sub-matrices based on the states of the $1st$ bit. Then, we can follow that
 - the value of the $1st$ bit never changes, & so the off diagonal sub-matrices are $0$s;
 - when the $1st$ bit is $0$, the identity is applied to the $2nd$ bit, & so top-left [[Matrix]] is $I$; and,
 - when the $1st$ bit is $1$, the operator $M$ is applied to the $2nd$ bit, & so the bottom-right [[Matrix]] is $M$.
-For a given single bit operator $M$, **how can we obtain the following operator** by using the operator $CM$?
-$$C_0M=\begin{pmatrix}
-M & 0 \\
-I & 0
-\end{pmatrix}$$
-Controlled operator are defined to be triggered when the control bit is in state $1$. In this example, we expect it to be triggered when the control bit is in state $0$.
+
+For given single bit operator $M$, **how can we obtain the following operator** by using the operator $CM$? $$C_0M=\begin{pmatrix}M & 0 \\0 & I\end{pmatrix}$$Controlled operator defined to be triggered when the control bit is in state $1$. In this example, we expect it to be triggered when the control bit is in state $0$.
 
 We apply $NOT$ operator to the $1st$ bit, & then the $CM$ operator, & again $NOT$ operator. In this way, we guarantee that $M$ is applied to the $2nd$ bit if the $1st$ bit is state $0$ & do nothing if the $1st$ bit is in state $1$. In short: $$C_0M=(X⊗I)⋅(CM)⋅(X⊗I)$$

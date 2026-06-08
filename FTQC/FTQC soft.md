@@ -7,8 +7,6 @@ Quantum programming  langs define how quantum algorithms are structd & exec. The
 
 It is noteworthy to specify **quantum assembly langs, known as QASM**. [[OpenQASM]] lang is the most widely used which is not a typical programming lang; but a mixture of C & Assembly lang. QASM is specifically for designing quantum circuits. Even the classical langs mentioned above often use libraries & packages to leverage features not available in QASM to build quantum circuits with QASM. 
 
-As quantum computers get bigger & $>$ reliable, they'll start integrating into enterprise systems. We'll see enterprise-level apps running business process soft that needs to tackle some heavy computational problems. Instead of using classical resources to approx solutions, this soft will need to tap into a quantum processor, whether it's in an on-premises data center or accessed via the cloud in a QaaS model.
-
 **Error Correction Soft** implements error-correction codes & mitigation strategies essential for maintaining the integrity of quantum computations. Quantum systems are highly susceptible to errors due to their delicate nature & interactions with the env. The following types of quantum errors necessitate robust error correction: 
 
 **Decoherence**: 
