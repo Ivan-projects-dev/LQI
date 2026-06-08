@@ -6,7 +6,7 @@ HHL is used as a subroutine in quantum algorithms for differential equations, qu
 **Critical assumptions - speedup only holds when:**
 - $A$ is **sparse** (few non-zero entries per row) and efficiently simulable as $e^{iAt}$
 - **Condition number $\kappa$ is small** - complexity scales as $O(\kappa^2)$; ill-conditioned systems lose the advantage entirely
-- $|b\rangle$ can be prepared efficiently - loading classical $\vec{b}$ into quantum state costs $O(N)$ without **QRAM**
+- $|b\rangle$ can be prepared efficiently - loading classical $\vec{b}$ into [[Quantum state]] costs $O(N)$ without **QRAM**
 - The answer can be extracted via $O(1)$ expectation values - reading out the full solution $\vec{x}$ destroys the speedup (costs $O(N)$ measurements)
 
 In practice, these conditions are rarely all satisfied simultaneously for classical data. The algorithm's impact is primarily as a subroutine within larger quantum workflows operating on natively quantum data.

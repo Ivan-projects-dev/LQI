@@ -26,9 +26,9 @@ $Z$ is $180°$ rotation about the $\hat{z}$ axis. North & south poles are fixed;
 | $-1$ | $\|1\rangle$ |
 Computational basis measurement is exactly $Z$-basis measurement.
 ### Phase kickback & Z errors
-$Z$ is the gate that **appears** on control qubit due to phase kickback when the controlled operation is an $X$-type flip & the target is in $|{-}\rangle$. After the oracle applies $(-1)^{f(x)}$ to $|x\rangle$, what has happened physically is that $Z^{f(x)}$ was applied to the register - $Z$ error pattern encoding the function.
+$Z$ is the gate that **appears** on control qubit due to [[Phase kickback]] when the controlled operation is an $X$-type flip & the target is in $|{-}\rangle$. After the [[Oracle]] applies $(-1)^{f(x)}$ to $|x\rangle$, what has happened physically is that $Z^{f(x)}$ was applied to the register - $Z$ error pattern encoding the function.
 
-In [[Grover]]'s algorithm, the oracle precisely applies $Z$ to the marked solution state: $$Z|w\rangle|{-}\rangle \to -|w\rangle|{-}\rangle$$CZ gate:
+In [[Grover]]'s algorithm, the [[Oracle]] precisely applies $Z$ to the marked solution state: $$Z|w\rangle|{-}\rangle \to -|w\rangle|{-}\rangle$$CZ gate:
 `Controlled Z([ctrl], target)` or `CZ(q0, q1)` is **symmetric** - control & target are interchangeable:
 $$CZ = \begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}$$
 Only $|11\rangle$ picks up phase of $-1$. Widely used in superconducting hardware (native $2$-qubit gate alongside CX on some backends). CZ is its own inverse.
@@ -39,7 +39,7 @@ On many hardware platforms, $R_z(\theta)$ (and therefore $Z$, $S$, $T$) is imple
 - Gate appears in the circuit but costs nothing on physical hardware
 IBM's transpiler exploits this via the **RZ-SX decomposition**: every single-qubit gate is decomposed into RZ (virtual) + SX (physical) gates.
 $Z$ appears in:
-- **Phase oracle construction**: marking solutions with a $-1$ phase
+- **Phase [[Oracle]] construction**: marking solutions with a $-1$ phase
 - **Pauli error channels**: $Z$ errors model dephasing noise
 - **QFT**: $R_1(\theta)$ = diagonal phase gate, reduces to $Z$ at $\theta = \pi$
 - **Hamiltonian simulation**: $ZZ$ coupling is the natural interaction for Ising models
@@ -58,7 +58,7 @@ qc.sdg(0) # S† = Z^(-1/2)
 qc.t(0) # T = Z^(1/4)
 qc.tdg(0) # T†
 ```
-**PennyLane**
+**[[PennyLane]]**
 ```python
 qml.PauliZ(wires=0)
 qml.CZ(wires=[0, 1])

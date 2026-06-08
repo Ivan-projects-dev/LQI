@@ -38,24 +38,24 @@ If you want gate-based approach for comparison or research: implement [[QAOA]] i
 | Coming from  | Moving to         | What changes                                                                                                 |
 | ------------ | ----------------- | ------------------------------------------------------------------------------------------------------------ |
 | IBM / Qiskit | Q# / Azure        | No circuit object - operations are funcs. DumpMachine replaces statevector inspection. Reset is mandatory.   |
-| IBM / Qiskit | PennyLane         | Circuit is a Python func with `@qml.qnode`. Return type determines output. `requires_grad=True` is required. |
-| IBM / Qiskit | D-Wave            | No gates, no circuits, no measurement operators. QUBO formulation replaces everything.                       |
+| IBM / Qiskit | [[PennyLane]]         | Circuit is a Python func with `@qml.qnode`. Return type determines output. `requires_grad=True` is required. |
+| IBM / Qiskit | [[D-Wave]]            | No gates, no circuits, no measurement operators. [[QUBO]] formulation replaces everything.                       |
 | Q# / Azure   | IBM / Qiskit      | `measure_all()` is manual. Transpile is mandatory. Result extraction from `SamplerV2` is verbose.            |
-| PennyLane    | D-Wave            | Gradient-based training does not apply. Annealing is probabilistic - no gradient to follow.                  |
-| D-Wave       | Any gate platform | Start from the basics. D-Wave experience does not transfer to gate-based computing.                          |
+| [[PennyLane]]    | [[D-Wave]]            | Gradient-based training does not apply. Annealing is probabilistic - no gradient to follow.                  |
+| [[D-Wave]]       | Any gate platform | Start from the basics. [[D-Wave]] experience does not transfer to gate-based computing.                          |
 ### Hardware Connectivity for algorithm
-Non-obvious factor: the qubit **connectivity graph** of the hardware determines how many SWAP gates get inserted during transpilation.
+Non-obvious factor: the qubit **connectivity graph** of the hardware determines how many [[SWAP]] gates get inserted during transpilation.
 
 | Platform             | Connectivity       | Impact                                                       |
 | -------------------- | ------------------ | ------------------------------------------------------------ |
-| IBM (Eagle/Heron)    | Heavy-hex topology | Limited - non-adjacent qubits need SWAP chains               |
-| Quantinuum $H_1/H_2$ | All-to-all         | No SWAP overhead - any $2$ qubits can interact directly      |
-| IonQ Aria            | All-to-all         | Same - ideal for algorithms with many non-local interactions |
-| Rigetti              | Limited grid       | SWAP overhead similar to IBM                                 |
-| D-Wave Pegasus       | Fixed sparse graph | Embedding maps logical variables to physical qubit chains    |
-**Practical impact:** circuit with many $2$-qubit gates between non-adjacent qubits (e.g., a fully connected QAOA problem) will have $3-5x$ $>$ gates after transpilation on IBM than on Quantinuum, because each needed CNOT between non-adjacent qubits requires $2-3$ SWAP gates, each costing $3$ CNOTs. If your circuit has high connectivity demands, Quantinuum or IonQ (accessible via Azure or Braket) produces better results despite slower clock speeds.
+| IBM (Eagle/Heron)    | Heavy-hex topology | Limited - non-adjacent [[Qubits]] need [[SWAP]] chains               |
+| [[Quantinuum]] $H_1/H_2$ | All-to-all         | No [[SWAP]] overhead - any $2$ [[Qubits]] can interact directly      |
+| [[IonQ]] Aria            | All-to-all         | Same - ideal for algorithms with many non-local interactions |
+| [[Rigetti]]              | Limited grid       | [[SWAP]] overhead similar to IBM                                 |
+| [[D-Wave]] Pegasus       | Fixed sparse graph | Embedding maps logical variables to physical qubit chains    |
+**Practical impact:** circuit with many $2$-qubit gates between non-adjacent [[Qubits]] (e.g., a fully connected [[QAOA]] problem) will have $3-5x$ $>$ gates after transpilation on IBM than on [[Quantinuum]], because each needed [[CNOT]] between non-adjacent [[Qubits]] requires $2-3$ [[SWAP]] gates, each costing $3$ CNOTs. If your circuit has high connectivity demands, [[Quantinuum]] or [[IonQ]] (accessible via Azure or Braket) produces better results despite slower clock speeds.
 
-| Platform                   | Error type                         | Typical CNOT error              |
+| Platform                   | Error type                         | Typical [[CNOT]] error              |
 | -------------------------- | ---------------------------------- | ------------------------------- |
 | IBM Superconducting        | Decoherence, gate error, crosstalk | $0.3\%$-$1\%$                   |
 | [[Quantinuum]] Trapped Ion | Phonon modes, slower gates         | $0.1\%$-$0.5\%$                 |

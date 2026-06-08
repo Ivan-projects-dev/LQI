@@ -1,5 +1,5 @@
 #Algorithm #Physics #Chemistry #ML
-**QPCA** is a quantum algorithm that applies [[QPE]] to the data covariance [[Matrix]] (represented as a density matrix) to extract eigenvalues & eigenvectors - the principal components. It comes out of Classical PCA, which identifies directions of max variance & projects data onto principal components for dimensionality reduction. Classical PCA is bottlenecked by [[Matrix]] diagonalization, which scales as $O(d^3)$ for $d$-dimensional data.
+**QPCA** is a quantum algorithm that applies [[QPE]] to the data covariance [[Matrix]] (represented as a density [[Matrix]]) to extract eigenvalues & eigenvectors - the principal components. It comes out of Classical PCA, which identifies directions of max variance & projects data onto principal components for dimensionality reduction. Classical PCA is bottlenecked by [[Matrix]] diagonalization, which scales as $O(d^3)$ for $d$-dimensional data.
 
 QPCA was proposed by Lloyd, Mohseni & Rebentrost (2014) and, under specific assumptions, offers an exponential reduction in query complexity. **These assumptions are restrictive:**
 - Data must already be available as a quantum density [[Matrix]] (or loaded via [[Amplitude Encoding]] from QRAM)
@@ -7,13 +7,13 @@ QPCA was proposed by Lloyd, Mohseni & Rebentrost (2014) and, under specific assu
 - The speedup applies to the number of queries to the data structure, not necessarily wall-clock time
 - **Dequantization caveat (Tang 2018):** classical algorithms using sampling access to data can in some settings match QPCA's query complexity, eliminating the exponential advantage. The regime where genuine quantum speedup survives remains narrow and contested.
 
-QPCA is most naturally suited to **natively quantum data** (e.g., quantum states from a physical system), where the density matrix is prepared directly without classical loading overhead.
+QPCA is most naturally suited to **natively quantum data** (e.g., quantum states from a physical system), where the density [[Matrix]] is prepared directly without classical loading overhead.
 
 **QPCA vs. Classical PCA**
 
 | Feature | Classical PCA | QPCA                                                          |
 | --------------- | --------------------------------------- | ----------------------------------------------------------- |
-| Time complexity | $O(d^3)$ for $d$-dimensional data | $O(\log d)$ queries - under QRAM + density matrix assumptions |
+| Time complexity | $O(d^3)$ for $d$-dimensional data | $O(\log d)$ queries - under QRAM + density [[Matrix]] assumptions |
 | Data handling | General classical data | Quantum-state data or QRAM-loaded classical data              |
 | Output | Classical eigenvectors | Quantum states of principal components                        |
 

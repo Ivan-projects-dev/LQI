@@ -17,9 +17,9 @@ Eliminates the visual flicker that occurs in Obsidian when the cursor moves in &
 
 ---
 ### Obsidian Matrix (`obsidian-matrix`)
-GUI helper for typing LaTeX matrix notation. Opens grid editor so you can fill in cells & it generates the LaTeX code. Saves time counting `&` separators in multi-column matrices.
+GUI helper for typing LaTeX [[Matrix]] notation. Opens grid editor so you can fill in cells & it generates the LaTeX code. Saves time counting `&` separators in multi-column matrices.
 
-*Command Palette* (`Ctrl+P`) $→$ *Matrix: Insert matrix* - then fill in dimensions & values. It is also possible to select different style for matrix
+*Command Palette* (`Ctrl+P`) $→$ *[[Matrix]]: Insert [[Matrix]]* - then fill in dimensions & values. It is also possible to select different style for [[Matrix]]
 ![[Pasted image 20260429165800.png]]
 ![[Pasted image 20260429165735.png]]
 

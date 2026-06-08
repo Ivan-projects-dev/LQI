@@ -2,5 +2,7 @@ As this vault/project combines both **Zettelkasten** & wiki-style organization, 
 
 Once new info is being added, multiple notes/folders may be altered, *note refactoring*
 may also occur.
+![[Pasted image 20260608192322.png]]
+If needed, user can see all created notes in **graph view** to see whole map of how notes are interconnected. Small practical usage.
 
 Next: [[Sources guide]]

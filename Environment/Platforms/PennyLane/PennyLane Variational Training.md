@@ -103,7 +103,7 @@ for layers in [1, 2, 5, 10, 20]:
 ```
 
 If gradient variance is $< 10^{-6}$, you are in a barren plateau. Mitigations:
-- Use **local cost functions**: measure only a few qubits, not global observables
+- Use **local cost functions**: measure only a few [[Qubits]], not global observables
 - Use **layerwise training**: train one layer at a time, freeze others
 - Use **identity block initialization**: start near the identity unitary
 
@@ -173,7 +173,7 @@ print(f"JIT: {time.time()-t0:.2f}s for 1000 calls")
 
 `@qml.qjit` requires:
 - `lightning.qubit` or `lightning.gpu` device (not `default.qubit`)
-- `pip install pennylane-lightning` or `pennylane-catalyst`
+- `pip install [[PennyLane]]-lightning` or `[[PennyLane]]-catalyst`
 - Parameters must have fixed shapes (no dynamic circuit construction inside the JIT block)
 
 Typical speedup: $10$-$100\times$ for simple circuits, $5$-$20\times$ for complex circuits.

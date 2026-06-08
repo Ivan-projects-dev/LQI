@@ -26,11 +26,11 @@ Measuring in the $X$ basis means applying [[Hadamard]] then measuring in the com
 $$CX = \begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}$$
 This is the most important $2$-qubit gate. See [[CNOT]] for the full treatment.
 
-$n$-controlled $X$ is the Toffoli-like gate: `Controlled X([c0, c1, ..., cn-1], target)`.
+$n$-controlled $X$ is the [[Toffoli]]-like gate: `Controlled X([c0, c1, ..., cn-1], target)`.
 
 $X$ appears in virtually every quantum circuit in $2$ roles:
-1. **Initialization**: preparing $|1\rangle$ from $|0\rangle$ before ancilla use, or preparing specific computational basis states.
-2. **Oracle construction**: inside oracles, $X$ gates are placed before & after multi-controlled operations to mark specific bit patterns - the standard `within { X(q[i]); } apply { CCNOT(...) }` pattern.
+1. **Initialization**: preparing $|1\rangle$ from $|0\rangle$ before [[Ancilla]] use, or preparing specific computational basis states.
+2. **[[Oracle]] construction**: inside oracles, $X$ gates are placed before & after multi-controlled operations to mark specific bit patterns - the standard `within { X(q[i]); } apply { CCNOT(...) }` pattern.
 
 ```csharp
 X(q); // |0⟩ → |1⟩, |1⟩ → |0⟩
@@ -38,7 +38,7 @@ Controlled X([ctrl], target); // CNOT
 Controlled X([c0, c1], t); // Toffoli
 ApplyToEach(X, register); // flip all qubits
 ```
-Bit-pattern marking (oracle):
+Bit-pattern marking ([[Oracle]]):
 ```csharp
 within {
     // flip qubits that should be 0 in the target pattern
@@ -54,7 +54,7 @@ qc.x(0) # X on qubit 0
 qc.cx(0, 1) # CNOT: control=0, target=1
 qc.ccx(0, 1, 2) # Toffoli
 ```
-**PennyLane**
+**[[PennyLane]]**
 ```python
 qml.PauliX(wires=0)
 qml.CNOT(wires=[0, 1])

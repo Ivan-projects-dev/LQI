@@ -4,11 +4,11 @@
 | ------------------------------ | -------------------------------------------------- | -------------------------- |
 | Learn quantum basics           | [[IBM Quantum]]                                    | `learning.quantum.ibm.com` |
 | Structured algorithm exercises | [[Azure Quantum]]                                  | VS Code + QDK extension    |
-| FTQC resource analysis         | [[Azure Quantum]] ([[QRE]]) | Azure portal               |
-| Quantum ML / variational       | [[Xanadu]]                               | `pip install pennylane`    |
+| [[FTQC]] resource analysis         | [[Azure Quantum]] ([[QRE]]) | Azure portal               |
+| Quantum ML / variational       | [[Xanadu]]                               | `pip install [[PennyLane]]`    |
 | Combinatorial optimization     | [[D-Wave]]                                    | `cloud.dwavesys.com`       |
 | Multi-hardware comparison      | [[Amazon Braket]]                                  | AWS console                |
-| $34+$ device access            | [[qBraid]]                                         | `qbraid.com`               |
+| $34+$ device access            | [[qBraid]]                                         | `[[qBraid]].com`               |
 
 | Platform                 | Qubit type            | Gate speed    | Coherence | Connected?       |
 | ------------------------ | --------------------- | ------------- | --------- | ---------------- |

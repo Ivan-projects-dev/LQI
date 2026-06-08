@@ -5,15 +5,15 @@ where $Q$ = [[QPE]]
 
 | Algorithm        | $U$                              | What $\varphi$ encodes                              |                                  |
 | ---------------- | -------------------------------- | --------------------------------------------------- | -------------------------------- |
-| Shor factoring   | Shor's algorithm                 | Modular mult. $U_a\|x\rangle = \|ax \bmod N\rangle$ | Order $r$ of $a$                 |
-| QPE Chemistry    | Quantum chemistry (Trotter)      | Time evolution $e^{-iHt}$                           | Ground state energy $E_0$        |
-| Qubitization     | Quantum chemistry (qubitization) | Walk operator $W$ on LCU of $H$                     | $E_j = \lambda\cos(2\pi\varphi)$ |
-| QPE Counting     | Quantum counting                 | [[Grover]] iterate $G$                              | num of solutions $M$             |
-| QPE HHL          | HHL algorithm                    | $e^{iAt}$ for [[Matrix]] $A$                        | Eigenvalue $\lambda_j$ of $A$    |
-| QPE Walks        | Quantum walks                    | Szegedy walk operator $W$                           | Spectral gap / mixing time       |
-| MNRS Framework   | Walk search (MNRS)               | Walk on Johnson / Cayley graph                      | Marked vertex detection          |
-| QPE Simulation   | Quantum simulation               | $e^{-iHt}$ for physics Hamiltonians                 | Energy gaps, phase diagrams      |
-| QPE Optimization | Optimization                     | $e^{-iH_C\tau}$ for Ising / [[QUBO]]                | Ground state = optimal value     |
+| [[Shor]] factoring   | [[Shor]]'s algorithm                 | Modular mult. $U_a\|x\rangle = \|ax \bmod N\rangle$ | Order $r$ of $a$                 |
+| [[QPE Chemistry]]    | Quantum chemistry (Trotter)      | Time evolution $e^{-iHt}$                           | Ground state energy $E_0$        |
+| [[Qubitization]]     | Quantum chemistry ([[Qubitization]]) | Walk operator $W$ on LCU of $H$                     | $E_j = \lambda\cos(2\pi\varphi)$ |
+| [[QPE Counting]]     | [[Quantum counting]]                 | [[Grover]] iterate $G$                              | num of solutions $M$             |
+| [[QPE HHL]]          | [[HHL]] algorithm                    | $e^{iAt}$ for [[Matrix]] $A$                        | Eigenvalue $\lambda_j$ of $A$    |
+| [[QPE Walks]]        | Quantum walks                    | Szegedy walk operator $W$                           | Spectral gap / mixing time       |
+| [[MNRS Framework]]   | Walk search (MNRS)               | Walk on Johnson / Cayley graph                      | Marked vertex detection          |
+| [[QPE Simulation]]   | [[Quantum simulation]]               | $e^{-iHt}$ for physics Hamiltonians                 | Energy gaps, phase diagrams      |
+| [[QPE Optimization]] | Optimization                     | $e^{-iH_C\tau}$ for Ising / [[QUBO]]                | Ground state = optimal value     |
 **What changes between applications:**
 1. **Unitary $U$** - how you construct & implement it (the hard part)
 2. **Eigenstate $|u\rangle$** - how you prepare the input state

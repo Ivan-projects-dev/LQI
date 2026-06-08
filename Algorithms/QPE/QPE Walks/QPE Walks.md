@@ -13,9 +13,9 @@ For random walk on $N$ nodes with $M$ marked nodes:
 | --------------------------- | ----------------- | ------------------ | ---------------------------- |
 | Element distinctness        | Johnson graph     | Marked elements    | $O(N^{2/3})$ vs $O(N)$       |
 | Triangle finding            | Johnson graph     | Triangle indicator | $O(N^{5/4})$ vs $O(N^{3/2})$ |
-| Matrix product verification | Product graph     | Witness            | $O(N^{5/3})$ vs $O(N^2)$     |
+| [[Matrix]] product verification | Product graph     | Witness            | $O(N^{5/3})$ vs $O(N^2)$     |
 | Welded trees                | Welded tree graph | Exit node          | Exponential speedup          |
-Grover search is special case: Grover iterate $G = 1$ step of walk on the complete bipartite graph.
+[[Grover]] search is special case: [[Grover]] iterate $G = 1$ step of walk on the complete bipartite graph.
 
 |                        | Discrete (Szegedy)    | Continuous                |
 | ---------------------- | --------------------- | ------------------------- |

@@ -9,11 +9,11 @@
 3. Classical optimizer computes $\nabla_\theta C$ (via parameter-shift rule: $\partial C / \partial \theta_k = \frac{1}{2}[C(\theta_k + \pi/2) - C(\theta_k - \pi/2)]$).
 4. Update $\theta \leftarrow \theta - \eta \nabla_\theta C$. Repeat.
 
-**Instances**: [[VQE]] minimizes molecular energy (chemistry); [[QAOA]] approximates combinatorial optimization; VQLS solves linear systems; QCNN/QFNN are VQAs for ML.
+**Instances**: [[VQE]] minimizes molecular energy (chemistry); [[QAOA]] approximates combinatorial optimization; VQLS solves linear systems; [[QCNN]]/[[QFNN]] are VQAs for ML.
 
 **Known problems**:
 - **Barren plateaus**: for random or deep ansätze, $\text{Var}[\partial C / \partial \theta_k] \propto 2^{-n}$ — gradients vanish exponentially, making optimization intractable. Affects all VQAs at scale.
 - **Local minima**: non-convex landscape; classical optimizer can get stuck.
 - **Measurement overhead**: estimating $C(\theta)$ to precision $\epsilon$ requires $O(1/\epsilon^2)$ shots. For many-term Hamiltonians ($> 10^5$ Pauli terms in chemistry), this is the dominant cost.
-- **No proven quantum advantage**: for most VQA instances, classical algorithms (DMRG, tensor networks) match or outperform VQAs on current hardware sizes.
+- **No proven quantum advantage**: for most VQA instances, classical algorithms (DMRG, [[Tensor]] networks) match or outperform VQAs on current hardware sizes.
 ![[Pasted image 20260101164554.png]]

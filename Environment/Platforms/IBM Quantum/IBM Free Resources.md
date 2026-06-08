@@ -2,11 +2,11 @@
 
 | Resource                  | Account needed | What you get                                        |
 | ------------------------- | -------------- | --------------------------------------------------- |
-| IBM Quantum free QPU      | IBM account    | $~10$ min/month on real hardware (shared queue)     |
+| [[IBM Quantum]] free QPU      | IBM account    | $~10$ min/month on real hardware (shared queue)     |
 | AerSimulator (local)      | None           | Unlimited statevector / noisy simulation            |
-| IBM Quantum Learning      | None           | Structured courses with Q&A & exercises             |
+| [[IBM Quantum]] Learning      | None           | Structured courses with Q&A & exercises             |
 | Qiskit Textbook           | None           | Open-source, full algorithm implementations         |
-| IBM Quantum Lab (Jupyter) | IBM account    | Jupyter in the cloud, no local install              |
+| [[IBM Quantum]] Lab (Jupyter) | IBM account    | Jupyter in the cloud, no local install              |
 | FakeBackends              | None           | Offline noise simulation from real calibration data |
 ### IBM Quantum Learning
 **Access:** [learning.quantum.ibm.com](https://learning.quantum.ibm.com) - no account required to read, IBM account to track progress.

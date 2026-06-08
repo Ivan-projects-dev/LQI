@@ -5,19 +5,19 @@ Everything core to [[PennyLane]] is free & runs locally. There is no free cloud 
 
 | Resource                  | Cost                     | What you get                                   |
 | ------------------------- | ------------------------ | ---------------------------------------------- |
-| `default.qubit` simulator | Free (local)             | Exact statevector, any size up to $~25$ qubits |
+| `default.qubit` simulator | Free (local)             | Exact statevector, any size up to $~25$ [[Qubits]] |
 | `lightning.qubit`         | Free (local)             | C++ accelerated, $~5×$ faster than default     |
 | `lightning.gpu`           | Free (local, needs CUDA) | GPU-accelerated simulation                     |
-| PennyLane demos           | Free (browser)           | $100+$ worked algorithm examples               |
-| PennyLane Codebook        | Free (browser)           | Interactive learning modules                   |
+| [[PennyLane]] demos           | Free (browser)           | $100+$ worked algorithm examples               |
+| [[PennyLane]] Codebook        | Free (browser)           | Interactive learning modules                   |
 | Catalyst / JIT            | Free (local)             | `@qml.qjit` compiler for fast circuits         |
 ### PennyLane Demos & Codebook
-- **Demos:** [pennylane.ai/qml/demonstrations](https://pennylane.ai/qml/demonstrations) - $100+$ notebooks covering VQE, QAOA, QML, error mitigation, chemistry
-- **Codebook:** [codebook.xanadu.ai](https://codebook.xanadu.ai) - interactive exercises similar to IBM Quantum Katas, browser-based
+- **Demos:** [pennylane.ai/qml/demonstrations](https://pennylane.ai/qml/demonstrations) - $100+$ notebooks covering [[VQE]], [[QAOA]], QML, [[Error Mitigation]], chemistry
+- **Codebook:** [codebook.xanadu.ai](https://codebook.xanadu.ai) - interactive exercises similar to [[IBM Quantum]] Katas, browser-based
 Both are free, no account required for reading.
 ## Amazon Braket
 
-| Resource | Cost | Limit |
+| Resource | Cost | [[Limit]] |
 |---|---|---|
 | `LocalSimulator` | Free | Unlimited, runs in your process |
 | Free trial credits | Free (one-time) | Small credit for new AWS accounts |
@@ -25,7 +25,7 @@ Both are free, no account required for reading.
 | QPU time | Paid (per task + per shot) | Charged after free credits |
 ## D-Wave Leap
 
-| Resource | Cost | Limit |
+| Resource | Cost | [[Limit]] |
 |---|---|---|
 | QPU access | Free | **1 minute/month** of QPU solver time |
 | Leap Hybrid Solver | Per-second pricing | No free tier (paid per use) |

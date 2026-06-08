@@ -13,15 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Environment/OpenQASM.md",
+                "file": "Cryptography/RSA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OpenQASM"
+              "title": "RSA"
+            }
+          },
+          {
+            "id": "5a8a392e2f7aae8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "z_guides/General guide.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "General guide"
+            }
+          },
+          {
+            "id": "e5099c4829b45b83",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "z_guides/Sources guide.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sources guide"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "QNN",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -174,32 +203,32 @@
   },
   "active": "9c58883d0361cb1a",
   "lastOpenFiles": [
+    "z_img/Pasted image 20260608192322.png",
+    "README.md",
+    "broken links output.md",
+    "Algorithms/QPE/QPE apps.md",
+    "Usage/Adiabatic quantum computing.md",
+    "z_guides/General guide.md",
+    "z_guides/Hotkeys guide.md",
+    "z_guides/Plugins guide.md",
+    "z_guides/Sources guide.md",
+    "Cryptography/RSA.md",
+    "FTQC/FTQC soft.md",
+    "Usage/Quantum sensing.md",
+    "Physics/Photon electric effect.md",
+    "Environment/OpenQASM.md",
+    "Cryptography/Shor Targets.md",
+    "Algorithms/QPE/Basics/QPE.md",
+    "Algorithms/QPE/Controlled unitary.md",
+    "source audit.md",
+    "fact-check report.md",
+    "ML/Basics/Deep learning.md",
+    "Algorithms/Shor/Shor ECDLP.md",
+    "Gates/Multi-qubit/CNOT.md",
+    "Qubits/Bell states.md",
+    "Programming/Q-Sharp/Functors/Adjoint op.md",
     "Environment/Platforms/Azure Quantum/Azure Quantum.md",
     "Algorithms/Shor/Shor.md",
-    "FTQC/Bit-flip code.md",
-    "FTQC/FTQC soft.md",
-    "Algorithms/Shor/Regev 2023.md",
-    "Environment/Platforms/Amazon Braket/Amazon Braket.md",
-    "Programming/Q-Sharp/Pecularities/Adaptive profile.md",
-    "Math/Math (Quantum)/Fourier Transform/Quantum Fourier Transform.md",
-    "Algorithms/Grover Oracle/Bounded knapsack oracle/Bounded knapsack in Q.md",
-    "Math/Math (Quantum)/Pauli group.md",
-    "ML/QNN/QNN.md",
-    "ML/QNN/Building QNN.md",
-    "Math/Math (Quantum)/Trotter formula.md",
-    "Physics/Time-Dependent Hamiltonian.md",
-    "Math/Math (Quantum)/ZZ Feature Map.md",
-    "Qubits/Photonic qubit.md",
-    "Usage/Quantum sensing.md",
-    "Algorithms/HHL.md",
-    "Algorithms/QPCA.md",
-    "Algorithms/QPE/QPE HHL.md",
-    "Algorithms/QPE/QPE on T gate.md",
-    "Algorithms/Shor/Hallgren 2002.md",
-    "Algorithms/Shor/Shor DLP.md",
-    "Cryptography/RSA.md",
-    "Encoding/Amplitude Encoding.md",
-    "Environment/Platforms/Amazon Braket/Braket Basics.md",
     "Algorithms/QPCA.md.tmp.25720.1778440322073",
     "z_guides",
     "Gates/Single-qubit",

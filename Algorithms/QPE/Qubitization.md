@@ -26,10 +26,10 @@ $\text{PREP}$ needs $\lceil\log_2 L\rceil$ [[Ancilla]] [[Qubits]] for the LCU in
 - **Alias sampling**: prepares $\text{PREP}$ using $O(L)$ one- & two-qubit gates with $O(\log L)$ [[Ancilla]] [[Qubits]]
 - **Dicke state prep** $(2025)$: Fast One-Qubit-Controlled Select LCU (FOQCS-LCU) - linear [[Ancilla]] count, explicit decomposition into $1$- & $2$-qubit gates
 ### Hamiltonian factorization
-Raw Pauli decomposition gives $L = O(N^4)$ terms. Tensor factorization reduces this:
+Raw Pauli decomposition gives $L = O(N^4)$ terms. [[Tensor]] factorization reduces this:
 - **Single factorization (SF)**: $L = O(N^2)$ - decomposes **electron repulsion integrals (ERI)** into rank-$1$ products
 - **Double factorization (DF)**: $L = O(N)$ - further diagonalizes each SF factor; dominant approach for chemistry
-- **Tensor hypercontraction (THC)**: $L = O(N)$ with smaller prefactor than DF; requires $O(N)$ non-Clifford gates per PREP step
+- **[[Tensor]] hypercontraction (THC)**: $L = O(N)$ with smaller prefactor than DF; requires $O(N)$ non-Clifford gates per PREP step
 ### Resource estimates for chemistry
 Using qubitization with DF of ERI (chemical accuracy $\epsilon = 1.6\times10^{-3}$ hartree):
 
