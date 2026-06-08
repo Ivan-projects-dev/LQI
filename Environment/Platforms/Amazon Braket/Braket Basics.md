@@ -29,8 +29,8 @@ Same circuit (with minor adaptation) runs on completely different qubit technolo
 # IonQ Aria - trapped-ion qubits
 ionq = AwsDevice("arn:aws:braket:us-east-1::device/qpu/ionq/Aria-1")
 
-# Rigetti Ankaa - superconducting qubits
-rigetti = AwsDevice("arn:aws:braket:us-west-1::device/qpu/rigetti/Ankaa-3")
+# Rigetti Cepheus-1-108Q - superconducting qubits (replaced Ankaa-3, Apr 2026)
+rigetti = AwsDevice("arn:aws:braket:us-west-1::device/qpu/rigetti/Cepheus-1-108Q")
 ```
 
 | | Superconducting (IBM/[[Rigetti]]) | Trapped ion ([[IonQ]]) |

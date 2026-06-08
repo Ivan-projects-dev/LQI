@@ -19,6 +19,7 @@ print(sampleset.first.chain_break_fraction)  # must be < 0.05
 ```python
 from dwave.system import DWaveSampler, FixedEmbeddingComposite
 from minorminer import find_embedding
+
 sampler = DWaveSampler()
 embedding = find_embedding(list(Q.keys()), sampler.edgelist)
 cached = FixedEmbeddingComposite(sampler, embedding)
@@ -26,7 +27,6 @@ cached = FixedEmbeddingComposite(sampler, embedding)
 
 **Results are heuristic.** Running the same [[QUBO]] $1000$ times can give different answers. [[D-Wave]] is not guaranteed to find the global min - it is a physical heuristic. More reads increase the probability of finding the best solution but don't guarantee it. The energy histogram tells you how reliably the annealer is finding the min - a tight cluster at one energy value is good, a wide spread means it's getting stuck.
 
-### Challenges
 **[[QUBO]] formulation for non-trivial problems is hard.** Penalty terms for constraints (equality constraints, inequality constraints, multi-variable interactions) must be carefully weighted. 
 Penalty too weak lets infeasible solutions win. Penalty too strong squashes the signal. 
 Getting the balance right is the central skill & the main reason [[D-Wave]] problems take time to solve.

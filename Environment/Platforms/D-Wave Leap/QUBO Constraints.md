@@ -1,11 +1,11 @@
 #SoftDev #Math #Hardware 
-[[D-Wave]] solves problems by finding the min-energy state of [[QUBO]] energy func. Any constraint on the solution must be encoded as penalty term - sub-expression that has low energy when the constraint is satisfied & high energy when violated. This is the central D-Wave programming skill.
+[[D-Wave]] solves problems by finding the min-energy state of [[QUBO]] energy func. Any constraint on the solution must be encoded as penalty term - sub-expression that has low energy when the constraint is satisfied & high energy when violated. This is the central [[D-Wave]] programming skill.
 ### Equality Constraint → Penalty Term
 To enforce `x0 + x1 = 1`, rearrange to `x0 + x1 - 1 = 0`, square it, multiply by penalty weight $M$:
 $$P = M \cdot (x_0 + x_1 - 1)^2$$
 Expanding (dropping the constant $+1$):
 $$P = M \cdot (-x_0 - x_1 + 2 x_0 x_1)$$
-Which gives QUBO coefficients: `Q[(0,0)] = -M`, `Q[(1,1)] = -M`, `Q[(0,1)] = 2M`.
+Which gives [[QUBO]] coefficients: `Q[(0,0)] = -M`, `Q[(1,1)] = -M`, `Q[(0,1)] = 2M`.
 
 General rule: **move all terms to one side, square, multiply by $M$.**
 ### 1-Hot (Exactly-1-of-N) Constraint
@@ -26,7 +26,7 @@ $a = 0$: constraint tight ($x_0 + x_1 = 1$). $a = 1$: slack used ($x_0 + x_1 = 0
 Q = {(0,0): -1, (1,1): -1, ('a','a'): -1,
      (0,1): 2, (0,'a'): 2, (1,'a'): 2}
 ```
-For larger slack ranges (e.g. `x0 + x1 <= 3`), use binary expansion: $a = a_0 + 2a_1$ (adds $2$ ancilla bits).
+For larger slack ranges (e.g. `x0 + x1 <= 3`), use binary expansion: $a = a_0 + 2a_1$ (adds $2$ [[Ancilla]] bits).
 ### Penalty Weight Selection
 **Penalty weight $M$ must exceed the max objective gain from violating the constraint.** Rule of thumb: set $M = 1.5 \times$ (largest coefficient in the objective). Ocean's scaling helper:
 ```python

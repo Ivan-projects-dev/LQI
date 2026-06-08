@@ -1,5 +1,5 @@
 #SoftDev #Python 
-No local installation. Open `[[qBraid]].com`, launch [[qBraid]] Lab - browser-based JupyterLab with Qiskit, [[PennyLane]], Cirq, Braket SDK, & $30+$ other SDKs preinstalled. Write & run quantum code immediately without `pip install` or env setup. Free plan covers this fully.
+No local installation. Open `[[[[qBraid]]]].com`, launch [[qBraid]] Lab - browser-based JupyterLab with Qiskit, [[PennyLane]], Cirq, Braket SDK, & $30+$ other SDKs preinstalled. Write & run quantum code immediately without `pip install` or env setup. Free plan covers this fully.
 
 Framework conversion is one call:
 ```python

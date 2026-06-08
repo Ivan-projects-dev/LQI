@@ -136,7 +136,7 @@ Data covering [[QNN]], [[FTQC]], physics, gates, usage, math concepts etc. was t
 - [IBM Quantum: Open plan updates - March 2026 (180 min promotion, ibm_kingston access)](https://quantum.cloud.ibm.com/announcements/en/product-updates/2026-03-16-open-plan-news)
 - [IBM Quantum: Migrate to V2 primitives (SamplerV2 / EstimatorV2)](https://docs.quantum.ibm.com/migration-guides/v2-primitives)
 - [IBM Quantum: Introduction to primitives](https://quantum.cloud.ibm.com/docs/en/guides/primitives)
-- [IBM Quantum: Primitive inputs and outputs (PUBs, BitArray, PubResult)](https://quantum.cloud.ibm.com/docs/en/guides/primitive-input-output)
+- [IBM Quantum: Primitive inputs & outputs (PUBs, BitArray, PubResult)](https://quantum.cloud.ibm.com/docs/en/guides/primitive-input-output)
 - [Blog: How Does The Qiskit Transpiler Work? (Eric Michiels, Qiskit Medium)](https://medium.com/qiskit/how-does-the-qiskit-transpiler-work-3f4d9e3e0551)
 - [Blog: Optimizing Quantum Circuits in Qiskit (Rahul Reddy, Medium, Jan 2026)](https://medium.com/@gajjadarahul/optimizing-quantum-circuits-in-qiskit-a-deep-performance-tuning-guide-for-developers-3436776e97bf)
 - [Blog: Oh no! My Qiskit code isn't working! (Abby Mitchell, Qiskit Medium)](https://medium.com/qiskit/oh-no-my-qiskit-code-isnt-working-6bf0517e9900)
@@ -171,7 +171,7 @@ Data covering [[QNN]], [[FTQC]], physics, gates, usage, math concepts etc. was t
 - [Amazon Braket troubleshooting](https://docs.aws.amazon.com/braket/latest/developerguide/braket-troubleshooting.html)
 - [Amazon Braket: Batch tasks](https://docs.aws.amazon.com/braket/latest/developerguide/braket-batching-tasks.html)
 - [Amazon Braket: Rigetti Cepheus-1-108Q launch - April 2026](https://aws.amazon.com/blogs/quantum-computing/amazon-braket-launches-rigetti-cepheus-1-108q-superconducting-device/)
-- [Amazon Braket: Supported regions and devices](https://docs.aws.amazon.com/braket/latest/developerguide/braket-devices.html)
+- [Amazon Braket: Supported regions & devices](https://docs.aws.amazon.com/braket/latest/developerguide/braket-devices.html)
 ---
 ### [[PennyLane]] & [[Xanadu]]
 - [PennyLane documentation](https://docs.pennylane.ai)
@@ -184,7 +184,7 @@ Data covering [[QNN]], [[FTQC]], physics, gates, usage, math concepts etc. was t
 - [PennyLane: Barren plateaus demo](https://pennylane.ai/qml/demos/tutorial_barren_plateaus)
 - [PennyLane GitHub](https://github.com/PennyLaneAI/pennylane)
 - [PennyLane: Hardware & Simulators device list](https://pennylane.ai/devices)
-- [PennyLane: Gradients and training (diff_method, interfaces)](https://docs.pennylane.ai/en/stable/introduction/interfaces.html)
+- [PennyLane: Gradients & training (diff_method, interfaces)](https://docs.pennylane.ai/en/stable/introduction/interfaces.html)
 - [Blog: Working with PennyLane for variational QML (Eric Kessler, AWS blog, Mar 2021)](https://aws.amazon.com/blogs/quantum-computing/pennylane-quantum-machine-learning/)
 - [Killoran et al. 2019: Strawberry Fields: A Software Platform for Photonic Quantum Computing](https://arxiv.org/abs/1804.03159)
 - [Bromley et al. 2020: Applications of near-term photonic quantum computers](https://arxiv.org/abs/1912.07634)

@@ -4,11 +4,11 @@
 Every `transpile()` call runs $4$ sequential stages:
 1. **Unroll** - expand custom/composite gates into primitives
 2. **Translate** - convert all gates to the device's native gate set
-3. **Layout + Routing** - map logical qubits to physical qubits, insert SWAP gates where connectivity requires
+3. **Layout + Routing** - map logical [[Qubits]] to physical [[Qubits]], insert [[SWAP]] gates where connectivity requires
 4. **Optimization** - merge redundant gates, exploit commutativity, reduce depth
-Each SWAP inserted in stage $3$ becomes $3$ CNOTs in stage $2$. Routing overhead alone can $2$–$3\times$ total gate count on complex circuit.
+Each [[SWAP]] inserted in stage $3$ becomes $3$ CNOTs in stage $2$. Routing overhead alone can $2$–$3\times$ total gate count on complex circuit.
 
-`layout_method` controls how logical qubits are mapped to physical qubits before routing:
+`layout_method` controls how logical [[Qubits]] are mapped to physical [[Qubits]] before routing:
 ```python
 tqc = transpile(qc, backend, layout_method='noise_adaptive', optimization_level=3)
 ```

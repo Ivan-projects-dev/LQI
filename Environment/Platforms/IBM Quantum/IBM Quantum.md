@@ -1,9 +1,11 @@
 #SoftDev #Hardware #Python 
 **IBM Quantum** (`quantum.cloud.ibm.com`) is IBM's cloud quantum computing service, offering free public access to real superconducting QPUs & the **Qiskit** open-source SDK. $1$ of the most widely used quantum platforms for research & education.
-- **$10$ minutes of QPU runtime per $28$-day rolling window** on IBM's real quantum hardware at no cost
-- Active users who log $20$ min in any $12$-month period can opt into a one-time promotion of $180$ min for the next $12$ months (as of March $2026$)
-- No credit card required to start; sign up with IBM ID
-- Full access to all on-demand **quantum simulators** (no runtime cap)
+Plans:
+- **Open (free)** - $10$ min QPU per $28$-day rolling window; active users who log $20$ min in any $12$-month period can opt into a one-time $180$-min promotion for the next $12$ months (as of March $2026$). No credit card required; sign up with IBM ID. Full access to all on-demand simulators.
+- **Flex** - pre-purchase at least $400$ minutes (usable within $1$ year). Minutes allocated to instances. Good for predictable usage between $400$-$10000$ min/year.
+- **Pay-As-You-Go** - pay only for QPU time consumed. Best for flexible usage below $400$ min/year.
+- **Premium** - enterprise subscription. Unlocks Qiskit Functions (higher-level algorithm primitives). Contact IBM.
+- **On-Prem** - dedicated on-premises quantum system serviced by IBM Quantum. For organizations needing high data control.
 - Free courses & learning resources on IBM Quantum Learning
 
 IBM's fleet uses **superconducting transmon [[Qubits]]** arranged in heavy-hex lattice topology. Available systems:

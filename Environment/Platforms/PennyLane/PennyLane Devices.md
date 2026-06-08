@@ -1,24 +1,24 @@
 #SoftDev #Python #CPP
 Device choice in [[PennyLane]] determines what gradient methods work, what measurements are available, & whether JIT compilation is possible. Getting this wrong causes silent errors or missing features.
 ### Core Built-In Devices
-**`default.qubit`** - Python statevector simulator. Most featureful device; supports every feature PennyLane offers.
+**`default.qubit`** - Python statevector simulator. Most featureful device; supports every feature [[PennyLane]] offers.
 - Supports `diff_method="backprop"` (fastest for small circuits, autograd/JAX/PyTorch)
 - Supports `qml.state()` (full statevector access)
 - Supports all measurement types
-- Slow for $> 20$ qubits - pure Python, no optimized backend
+- Slow for $> 20$ [[Qubits]] - pure Python, no optimized backend
 - Use for: learning, prototyping, debugging, variational circuits on small qubit counts
 
 **`lightning.qubit`** - C++ statevector simulator. Drop-in replacement for `default.qubit` for larger circuits.
 - $10$–$100\times$ faster than `default.qubit` for $20+$ qubit circuits
 - Required for `@qml.qjit` JIT compilation (Catalyst)
 - Does **not** support `diff_method="backprop"` - use `diff_method="adjoint"` instead (equally fast, hardware-compatible)
-- Install separately: `pip install pennylane-lightning`
+- Install separately: `pip install [[PennyLane]]-lightning`
 - Use for: performance-sensitive simulation, large circuits, any workflow using `@qjit`
 
-**`default.mixed`** - mixed-state simulator. Tracks full density matrix including noise.
+**`default.mixed`** - mixed-state simulator. Tracks full density [[Matrix]] including noise.
 - Required when explicitly modeling quantum noise (depolarizing, dephasing, amplitude damping)
 - Compatible with ML frameworks (JAX, PyTorch) for differentiable noisy circuits
-- Exponentially more memory than statevector ($4^n$ vs $2^n$) - practical limit $\sim 12$ qubits
+- Exponentially more memory than statevector ($4^n$ vs $2^n$) - practical limit $\sim 12$ [[Qubits]]
 - Use for: noise modeling, open quantum systems, benchmarking noise mitigation
 ### Gradient Method by Device
 | Device | `backprop` | `adjoint` | `parameter-shift` |

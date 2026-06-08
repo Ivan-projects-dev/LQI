@@ -12,13 +12,13 @@
 | **$TN_1$** (Tensor Network) | Sparse/structured circuits | $50$           | Paid (per minute)      |
 | **Local**                       | Statevector (no cloud)     | $~25$          | Free                   |
 
-| Hardware Provider     | Technology                   | Pricing model                |
-| --------------------- | ---------------------------- | ---------------------------- |
-| **[[IonQ]] Forte**    | Trapped-ion, $36$ [[Qubits]] | Paid (per task $+$ per shot) |
-| **[[IonQ]] Aria**     | Trapped-ion, $25$ [[Qubits]] | Paid (per task $+$ per shot) |
-| **[[Rigetti]] Ankaa** | Superconducting              | Paid (per task $+$ per shot) |
-| **IQM Garnet**        | Superconducting              | Paid (per task $+$ per shot) |
-| **QuEra Aquila**      | Neutral-atom (analog)        | Paid (per task $+$ per shot) |
+| Hardware Provider              | Technology                        | Pricing model                |
+| ------------------------------ | --------------------------------- | ---------------------------- |
+| **[[IonQ]] Forte**             | Trapped-ion, $36$ [[Qubits]]      | Paid (per task $+$ per shot) |
+| **[[IonQ]] Aria**              | Trapped-ion, $25$ [[Qubits]]      | Paid (per task $+$ per shot) |
+| **[[Rigetti]] Cepheus-1-108Q** | Superconducting, $108$ [[Qubits]] | Paid (per task $+$ per shot) |
+| **IQM Garnet**                 | Superconducting                   | Paid (per task $+$ per shot) |
+| **QuEra Aquila**               | Neutral-atom (analog)             | Paid (per task $+$ per shot) |
 
 SDK: `amazon-braket-sdk`. Circuits use `Circuit` objects; analog devices use `AnalogHamiltonianSimulation`.
 ```python

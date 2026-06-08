@@ -19,7 +19,7 @@ DumpMachine prints one row per basis state with nonzero amplitude. Reading it:
 - Probability column: $|\text{amplitude}|^2$ - what you'd see in measurement statistics
 - A state you don't expect with nonzero probability means a gate is wrong, missing, or applied to the wrong qubit
 
-Expected output after `H(q0)` on $2$ qubits:
+Expected output after `H(q0)` on $2$ [[Qubits]]:
 ```
 # |Basis| Amplitude      | Probability | Phase
 # |00⟩  | 0.707+0.000i   | 50.0000%    | 0.0000

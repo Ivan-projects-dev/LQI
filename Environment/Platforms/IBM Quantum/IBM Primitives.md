@@ -1,7 +1,7 @@
 #SoftDev #Python #Hardware 
 [[IBM Quantum]] hardware is accessed through $2$ primitives: `SamplerV2` for measurement distributions & `EstimatorV2` for expectation values. They replaced `backend.run()` & `execute()` in Qiskit $1.0$. Choosing the wrong one wastes QPU time & produces confusing output.
 
-**`SamplerV2`** - run circuit & collect measurement outcomes as bit-string counts. Use for: any circuit where you care about the distribution of results (Bell state, Grover, QAOA landscape). 
+**`SamplerV2`** - run circuit & collect measurement outcomes as bit-string counts. Use for: any circuit where you care about the distribution of results (Bell state, [[Grover]], [[QAOA]] landscape). 
 
 Output: `PubResult.data.<register_name>` as a `BitArray`.
 
