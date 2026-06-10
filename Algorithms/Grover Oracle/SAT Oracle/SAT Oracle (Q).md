@@ -88,6 +88,8 @@ within {
 - `ReflectAboutUniform` is Q#'s built-in [[Diffusion operator]] from `Std. `[[Grover]] (or `Std.Canon` depending on version).
 
 **Extension to general CNF:** Replace the hard-coded clause list with an array of `(Int[], Int[])` tuples (positive vars, negative vars) & loop over them:
+
+Source: [microsoft/qsharp - Grover.qs](https://github.com/microsoft/qsharp/blob/main/samples/algorithms/Grover.qs) · [Microsoft Learn - Grover's algorithm tutorial](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)
 ```csharp
 operation MarkGeneralCNF(register : Qubit[], target : Qubit,
     clauses : (Int[], Int[])[]) : Unit is Adj + Ctl {

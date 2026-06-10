@@ -1,6 +1,6 @@
 #Algorithm 
 [[QPE]] is **subroutine** in most exponentially-fast quantum algorithms. 
-**Unifying pattern**: problem reduces to finding eigenphase of carefully constructed unitary $U$.
+**Unifying pattern**: problem reduces to finding [[Eigenphase]] of carefully constructed unitary $U$.
 
 **[[Shor]]'s factoring algorithm**
 Target: factor int $N$. Reduces to order-finding - find $r$ such that $a^r \equiv 1 \pmod{N}$ for random $a$.
@@ -12,9 +12,9 @@ $U_a|x\rangle = |ax \bmod N\rangle$ has eigenstates $|u_s\rangle = \frac{1}{\sqr
 **Qubit count**: $\sim 2n$ control [[Qubits]] for $n$-bit $N$. 
 **Total**: $O(n^3)$ gates $→$ **exponential speedup** over best classical $O\!\left(\exp\!\left(c\cdot n^{1/3}(\log n)^{2/3}\right)\right)$ algorithms (GNFS; $c=(64/9)^{1/3}$).
 
-**[[HHL]]** (linear systems): solves $Ax = b$ for sparse Hermitian $A$. Eigenphases of $U = e^{iAt}$ encode eigenvalues $\lambda_j$ of $A$. [[QPE]] extracts $\lambda_j$ into [[Ancilla]] register. Controlled rotation then applies $\lambda_j^{-1}$ (inversion). Un-[[QPE]] removes eigenphase register. Result: $|x\rangle \propto A^{-1}|b\rangle$. Complexity: $O(s^2 \kappa^2 \log N / \epsilon)$ vs classical $O(Ns\kappa)$.
+**[[HHL]]** (linear systems): solves $Ax = b$ for sparse Hermitian $A$. Eigenphases of $U = e^{iAt}$ encode eigenvalues $\lambda_j$ of $A$. [[QPE]] extracts $\lambda_j$ into [[Ancilla]] register. Controlled rotation then applies $\lambda_j^{-1}$ (inversion). Un-[[QPE]] removes [[Eigenphase]] register. Result: $|x\rangle \propto A^{-1}|b\rangle$. Complexity: $O(s^2 \kappa^2 \log N / \epsilon)$ vs classical $O(Ns\kappa)$.
 
-**Quantum chemistry**: $U = e^{-iHt}$ via Trotterization. [[QPE]] on $U$ with trial ground state $|\psi_0\rangle$ returns ground-state energy $E_0$ to chemical accuracy ($< 1.6 \times 10^{-3}$ hartree). Primary target for fault-tolerant quantum advantage in chemistry.
+**Quantum chemistry**: $U = e^{-iHt}$ via [[Trotterization]]. [[QPE]] on $U$ with trial ground state $|\psi_0\rangle$ returns ground-state energy $E_0$ to chemical accuracy ($< 1.6 \times 10^{-3}$ hartree). Primary target for fault-tolerant quantum advantage in chemistry.
 
 **[[Quantum counting]]** ([[Grover]] + [[QPE]]): [[Grover]] operator $G$ has eigenvalues $e^{\pm 2i\theta}$ where $\sin\theta = \sqrt{M/N}$. [[QPE]] on $G$ returns $\theta$ $→$ $M = N\sin^2\theta$.
 

@@ -19,7 +19,7 @@ operation SetToZero(q : Qubit) : Unit {
     if M(q) == One { X(q); }  // mid-circuit measurement + conditional gate
 }
 ```
-`Adaptive RI` is required for [[QPE]] with iterative measurement, error correction gadgets, and any algorithm that branches on intermediate measurement outcomes.
+`Adaptive RI` is required for [[QPE]] with iterative measurement, error correction gadgets, & any algorithm that branches on intermediate measurement outcomes.
 
 **`Adaptive RIF`** - adds floating-point operations on top of `Adaptive RI`. No Azure hardware targets yet - local simulator only.
 ### Hardware Mapping

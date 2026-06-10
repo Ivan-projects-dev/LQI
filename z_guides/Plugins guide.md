@@ -42,7 +42,7 @@ Removes `[[WikiLink]]` syntax from text, leaving only the plain display text. $2
 - `Ctrl+~`  - immediately remove all links (both internal & external) from the file (used by author)
 
 ---
-### Global Search & Replace (`global-search-and-replace`)
+### Global Search & Replace (`global-search-&-replace`)
 Find & replace text across all files in the vault simultaneously. Supports regex. Plugin does not differ uppercase & lowercase letters, but it **does recognize empty space**!
 `Mod+Y` $→$ enter search string $→$ enter replacement $→$ confirm.
 ![[Pasted image 20260429170651.png]]
@@ -51,7 +51,7 @@ Find & replace text across all files in the vault simultaneously. Supports regex
 ### Image Captions (`image-captions`)
 Renders alt-text as visible caption below images in preview mode. Standard Obsidian images show alt-text only on hover; this makes it visible inline. Writes images as `![[image.png|Caption text here]]` & the caption appears below the image in reading view.
 
-All used images are stored in `z_img` folder. Image files have random names, as both `obisidian-note-linker` & `global-search-and-replace` take keywords
+All used images are stored in `z_img` folder. Image files have random names, as both `obisidian-note-linker` & `global-search-&-replace` take keywords
 
 ---
 ### Find Orphaned Images (`find-orphaned-images`)

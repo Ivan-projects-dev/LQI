@@ -1,39 +1,29 @@
 #Q-Sharp #Algorithm 
-Flip target iff **min $1$** bit in index list is $|1\rangle$.
-OR = NOT AND NOT - apply $X$ to all selected bits, check if any is still $1$, uncompute:
-```csharp
-operation MarkOR(register : Qubit[], target : Qubit, indices : Int[]) : Unit is Adj + Ctl {
-    import Std.Arrays.*;
-    let selected = Mapped(i -> register[i], indices);
-    within {
-        ApplyToEach(X, selected); // flip: 0→1, 1→0
-    } apply {
-        // now target fires iff original had at least one 1
-        // (De Morgan: OR(x) = NOT AND(NOT x))
-        // flip target iff ALL selected are now 0 (= original all-ones after negation)
-        // actually: fire iff NOT all-zeros in original
-        // Simplest: mark NOT(all-zero), which = NOT(all-one after flip)
-        within { 
-	        ApplyToEach(X, selected); 
-	    } // flip back
-        apply { 
-	        Controlled X(selected, target); 
-	    }
-    }
-    // Cleaner equivalent using NOR trick:
-}
+Flip target iff **at least $1$** qubit is $|1\rangle$. Uses De Morgan: $x_0 \vee x_1 = \neg(\neg x_0 \wedge \neg x_1)$.
 
-// Cleaner version using NOR (NOT OR = AND of negated inputs):
-operation MarkOR_Clean(register : Qubit[], target : Qubit, indices : Int[]) : Unit is Adj + Ctl {
-    import Std.Arrays.*;
-    let selected = Mapped(i -> register[i], indices);
-    // Phase 1: mark NOR (all inputs are 0)
+OR of two [[Qubits]]:
+```csharp
+// f(x) = x₀ ∨ x₁
+operation Oracle_Or_2(queryRegister : Qubit[], target : Qubit) : Unit is Adj + Ctl {
     within {
-        ApplyToEach(X, selected); // negate inputs
+        X(queryRegister[0]);
+        X(queryRegister[1]);
     } apply {
-        Controlled X(selected, target); // target |= AND(NOT inputs) = NOR
+        CCNOT(queryRegister[0], queryRegister[1], target);
     }
-    // Phase 2: flip target to get OR = NOT NOR
     X(target);
 }
 ```
+
+OR of all [[Qubits]] (any qubit $= 1$ fires) - mark the all-zeros state then flip:
+```csharp
+import Std.Canon.*;
+
+// f(x) = x₀ ∨ x₁ ∨ … ∨ xₙ₋₁
+operation Oracle_Or(queryRegister : Qubit[], target : Qubit) : Unit is Adj + Ctl {
+    ControlledOnInt(0, X)(queryRegister, target); // fires on |00…0⟩
+    X(target);                                    // flip: now fires on any |1⟩
+}
+```
+
+Source: [microsoft/QuantumKatas - SolveSATWithGrover/ReferenceImplementation.qs (Task 1.2)](https://github.com/microsoft/QuantumKatas/blob/main/SolveSATWithGrover/ReferenceImplementation.qs)

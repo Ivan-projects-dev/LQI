@@ -18,7 +18,7 @@ This scheme only requires $1$ rotation gate for each qubit, hence encodes as man
 
 We can use any rotation gate of our choice; however, if we use $R_z$ gates & take $|0⟩$ to be our init state, the action of our feature map will have no effects. That is why, when $R_z$ gates are used, it is customary to precede them by [[Hadamard]] gates.
 ![[Pasted image 20260101205342.png]]
-On the other hand, we know that a single quantum register can encode $2$ real vars. Recall the [[Bloch sphere]], where we need the angles $θ∈[0,π]$ and $ϕ∈[0,2π)$ to represent a state of a qubit: $$|ψ⟩=cos(θ_2)|0⟩+eiϕsin(θ_2)|1⟩$$
+On the other hand, we know that a single quantum register can encode $2$ real vars. Recall the [[Bloch sphere]], where we need the angles $θ∈[0,π]$ & $ϕ∈[0,2π)$ to represent a state of a qubit: $$|ψ⟩=cos(θ_2)|0⟩+eiϕsin(θ_2)|1⟩$$
 Following scheme maps the classical sample into the [[Quantum state]] with the help of an extra phase gate $(R_z)$:
 $$→xj↦k⨂i=1(cos(φj2i−12)|0⟩+exp(iφ2i)sin(φj2i−12)|1⟩)$$
 This scheme allows us to encode $2n$ features using $n$ [[Qubits]].

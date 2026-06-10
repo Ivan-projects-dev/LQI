@@ -41,3 +41,5 @@ operation RunBV() : Unit {
 }
 ```
 Same circuit structure ([[Deutsch-Jozsa (Q)]]). [[Deutsch-Jozsa]] classifies func (constant vs. balanced); [[Bernstein-Vazirani]] extracts hidden parameter. [[Bernstein-Vazirani]] is "learning" problem - $n$ bits of info recovered in $1$ [[Oracle]] call.
+
+Source: [microsoft/qsharp - BernsteinVazirani.qs](https://github.com/microsoft/qsharp/blob/main/samples/algorithms/BernsteinVazirani.qs)

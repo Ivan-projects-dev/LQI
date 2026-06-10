@@ -16,3 +16,4 @@ operation MarkBitPattern(register : Qubit[], target : Qubit, pattern : Bool[]) :
     ControlledOnBitString(pattern, X)(register, target);
 }
 ```
+Source: [microsoft/QuantumKatas - GroversAlgorithm/ReferenceImplementation.qs (Task 1.3 - ArbitraryPattern)](https://github.com/microsoft/QuantumKatas/blob/main/GroversAlgorithm/ReferenceImplementation.qs)

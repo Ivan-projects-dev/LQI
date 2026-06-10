@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "bdc641be34edc442",
+        "id": "3396ab3ce078509e",
         "type": "tabs",
         "children": [
           {
-            "id": "94d3f50f3812c7d6",
+            "id": "fc16d326e09da604",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Environment/Platforms/IBM Quantum/IBM Quantum.md",
+                "file": "Math/Math (Quantum)/Trotterization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IBM Quantum"
-            }
-          },
-          {
-            "id": "c6506c3ad07d2aa5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "broken links output.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "broken links output"
+              "title": "Trotterization"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "IBM trans",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -187,45 +172,45 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "c6506c3ad07d2aa5",
+  "active": "fc16d326e09da604",
   "lastOpenFiles": [
-    "Environment/Platforms/IBM Quantum/IBM Quantum.md",
-    "Environment/Platforms/Amazon Braket/Amazon Braket.md",
-    "Environment/Platforms/qBraid/qBraid XP.md",
-    "Environment/Platforms/PennyLane/PennyLane Variational Training.md",
-    "Environment/Platforms/Amazon Braket/S3.md",
-    "Environment/Platforms/PennyLane/Strawberry Fields.md",
-    "Environment/Platforms/PennyLane/PennyLane Devices.md",
-    "Environment/Platforms/PennyLane/PennyLane v0.43.md",
-    "Environment/Platforms/PennyLane/PennyLane common errors.md",
-    "Environment/Platforms/General/Platform Comparison.md",
-    "Environment/Platforms/General/Free Resources.md",
-    "Environment/Platforms/IBM Quantum/IBM Primitives.md",
-    "Environment/Platforms/IBM Quantum/IBM common errors.md",
-    "Environment/Platforms/IBM Quantum/IBM Free Resources.md",
-    "Environment/Platforms/IBM Quantum/IBM XP.md",
-    "Environment/Platforms/IBM Quantum/IBM Quantum Basics.md",
-    "Environment/Platforms/IBM Quantum/IBM Transpiler.md",
-    "Environment/Platforms/Amazon Braket/Braket XP.md",
-    "Environment/Platforms/Azure Quantum/Azure XP.md",
-    "Environment/Platforms/D-Wave Leap/D-Wave XP.md",
-    "Environment/Platforms/PennyLane/PennyLane XP.md",
-    "Environment/Platforms/D-Wave Leap/Max-Cut in D-Wave.md",
-    "Environment/Platforms/qBraid/qBraid.md",
-    "Environment/Platforms/General/Circuits debug/PennyLane Debug.md",
-    "z_guides/Sources guide.md",
-    "Algorithms/HHL.md",
-    "z_guides/Sources guide.md.tmp.4292.8633613c101f",
-    "Environment/Platforms/IBM Quantum/IBM Transpiler.md.tmp.1968.781a18d0c2f1",
-    "Environment/Platforms/Amazon Braket/Braket S3 Setup.md.tmp.8432.4be792740298",
-    "Environment/Platforms/General/Circuits debug/Azure Debug.md.tmp.8748.f7df5e5018a2",
+    "Math/Math (Quantum)/Trotter formula.md",
+    "Math/Math (Quantum)/SWAP test.md",
+    "Math/Math (Quantum)/Stabilizer states.md",
+    "Math/Math (Quantum)/QUBO.md",
+    "Math/Math (Quantum)/Quantum state.md",
+    "Math/Math (Quantum)/Quantum signal processing.md",
+    "Math/Math (Quantum)/Quantum reversibility.md",
+    "Math/Math (Quantum)/Probabilistic state.md",
+    "Math/Math (Quantum)/Pauli group.md",
+    "Math/Math (Quantum)/Oracle.md",
+    "Math/Math (Quantum)/Mixer Hamiltonian.md",
+    "Math/Math (Quantum)/LCU.md",
+    "Math/Math (Quantum)/Hermitian operator.md",
+    "Math/Math (Quantum)/Eigenvector.md",
+    "Math/Math (Quantum)/Eigenvalue.md",
+    "Math/Math (Quantum)/Eigenstate.md",
+    "Math/Math (Quantum)/Eigenphase.md",
+    "Math/Math (Quantum)/Fourier Transform/Quantum Fourier Transform.md",
+    "Math/Math (Quantum)/Fourier Transform/Discrete Fourier Transform.md",
+    "Algorithms/QPE/QPE Chemistry/QPE Chemistry (Py).md",
+    "Algorithms/QPE/QPE Chemistry/QPE Chemistry.md",
+    "Encoding/Jordan-Wigner encoding.md",
+    "Algorithms/QPE/QPE Walks/MNRS Framework.md",
+    "Environment/QRE/QRE.md",
+    "Environment/QRE/QPE resource costs.md",
+    "Environment/QRE/Grover Search QRE.md",
+    "Algorithms/Grover Oracle/Arithmetic Oracles/Range Oracle.md.tmp.15108.15804be5b487",
+    "Algorithms/QPE/QPE Optimization/QPE Optimization (Py).md.tmp.10400.9485d82e3c4b",
+    "Physics/Hamiltoan.md.tmp.2944.33a342cbbac9",
+    "Algorithms/Quantum annealing.md.tmp.14600.bf7a72d3e724",
+    "Algorithms/Adiabatic Quantum Optimization.md.tmp.14600.59cd166cef88",
+    "Math/Math (Quantum)/Eigenphase.md.tmp.9804.d330ea14dbcc",
+    "Math/Math (Quantum)/Eigenstate.md.tmp.5608.230b4b176170",
+    "Math/Math (Quantum)/Eigenstate.md.tmp.5608.59a015df5855",
+    "Algorithms/QPE/QPE Optimization",
+    "Algorithms/QPE/QPE Chemistry",
     "z_img/Pasted image 20260608192322.png",
-    "Algorithms/QPCA.md.tmp.25720.1778440322073",
-    "z_guides",
-    "Gates/Single-qubit",
-    "Gates/Multi-qubit",
-    "Gates/Types",
-    "Programming",
     "z_img/Pasted image 20260429171834.png",
     "z_img/Pasted image 20260429171052.png",
     "z_img/Pasted image 20260429170347.png",

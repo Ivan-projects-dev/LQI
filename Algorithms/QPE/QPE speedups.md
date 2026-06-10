@@ -1,5 +1,5 @@
 #Algorithm #Math
-[[QPE]] is the core subroutine behind most exponential quantum speedups. Any problem that reduces to estimating the eigenvalue $e^{2\pi i\varphi}$ of unitary $U$ can be solved by [[QPE]].
+[[QPE]] is the core subroutine behind most exponential quantum speedups. Any problem that reduces to estimating the [[Eigenvalue]] $e^{2\pi i\varphi}$ of unitary $U$ can be solved by [[QPE]].
 $$\text{Q}(U, |u\rangle) \longrightarrow \tilde{\varphi} \approx \varphi \quad \text{to } t \text{ bits of precision}$$
 where $Q$ = [[QPE]]
 
@@ -7,16 +7,16 @@ where $Q$ = [[QPE]]
 | ---------------- | -------------------------------- | --------------------------------------------------- | -------------------------------- |
 | [[Shor]] factoring   | [[Shor]]'s algorithm                 | Modular mult. $U_a\|x\rangle = \|ax \bmod N\rangle$ | Order $r$ of $a$                 |
 | [[QPE Chemistry]]    | Quantum chemistry (Trotter)      | Time evolution $e^{-iHt}$                           | Ground state energy $E_0$        |
-| [[Qubitization]]     | Quantum chemistry ([[Qubitization]]) | Walk operator $W$ on LCU of $H$                     | $E_j = \lambda\cos(2\pi\varphi)$ |
+| [[Qubitization]]     | Quantum chemistry ([[Qubitization]]) | Walk operator $W$ on [[LCU]] of $H$                     | $E_j = \lambda\cos(2\pi\varphi)$ |
 | [[QPE Counting]]     | [[Quantum counting]]                 | [[Grover]] iterate $G$                              | num of solutions $M$             |
-| [[QPE HHL]]          | [[HHL]] algorithm                    | $e^{iAt}$ for [[Matrix]] $A$                        | Eigenvalue $\lambda_j$ of $A$    |
+| [[QPE HHL]]          | [[HHL]] algorithm                    | $e^{iAt}$ for [[Matrix]] $A$                        | [[Eigenvalue]] $\lambda_j$ of $A$    |
 | [[QPE Walks]]        | Quantum walks                    | Szegedy walk operator $W$                           | Spectral gap / mixing time       |
 | [[MNRS Framework]]   | Walk search (MNRS)               | Walk on Johnson / Cayley graph                      | Marked vertex detection          |
 | [[QPE Simulation]]   | [[Quantum simulation]]               | $e^{-iHt}$ for physics Hamiltonians                 | Energy gaps, phase diagrams      |
 | [[QPE Optimization]] | Optimization                     | $e^{-iH_C\tau}$ for Ising / [[QUBO]]                | Ground state = optimal value     |
 **What changes between applications:**
 1. **Unitary $U$** - how you construct & implement it (the hard part)
-2. **Eigenstate $|u\rangle$** - how you prepare the input state
+2. **[[Eigenstate]] $|u\rangle$** - how you prepare the input state
 3. **Post-processing** - how you convert raw phase $\tilde{\varphi}$ into the answer
 **What stays the same:**
 - Clock register of $t$ [[Qubits]] ($t$ = precision bits)

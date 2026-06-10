@@ -99,3 +99,5 @@ operation MarkClause(
 `Adj` support is required - the [[Within-Apply pattern]] in the [[Diffusion operator]] & [[Oracle]] uncomputation both call [[Adjoint op]]. Operations that contain measurements (`M`, `Measure`) cannot be `Adjoint`-able - avoid measurements inside oracles.
 
 [[Ancilla]] [[Qubits]] allocated with `use` inside an operation are automatically reset to $|0\rangle$ on scope exit only if dev does so explicitly or via `within/apply`. Leaving [[Ancilla]] in non-$|0\rangle$ state causes runtime error.
+
+Source: [microsoft/qsharp - Grover.qs](https://github.com/microsoft/qsharp/blob/main/samples/algorithms/Grover.qs) · [Microsoft Learn - Grover's algorithm tutorial](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)

@@ -1,5 +1,5 @@
 #Q-Sharp  #Algorithm
-Complete Q# implementation of [[QPE]]. Estimates the **eigenphase** $\varphi$ of unitary $U$ given eigenstate $|u\rangle$, returning $t$-bit approximation $\hat{\varphi} \approx \varphi$.
+Complete Q# implementation of [[QPE]]. Estimates the **[[Eigenphase]]** $\varphi$ of unitary $U$ given [[Eigenstate]] $|u\rangle$, returning $t$-bit approximation $\hat{\varphi} \approx \varphi$.
 
 $3$ stages: superposition on control register ${} →$ controlled- {}$U^{2^j}$ $→$ inverse QFT.
 ```csharp
@@ -32,7 +32,7 @@ operation EstimatePhase(
     return IntAsDouble(ResultArrayAsIntBE(result)) / IntAsDouble(1 <<< nControlBits);
 }
 ```
-`controlledU(power, eigenstate)` applies $U^{\text{power}}$ to `eigenstate`. Caller constructs this from their specific unitary.
+`controlledU(power, [[[[Eigenstate]]]])` applies $U^{\text{power}}$ to `[[[[Eigenstate]]]]`. Caller constructs this from their specific unitary.
 
 Q# STL provides `ApplyQFT` in `Std.Arithmetic`. If implementing manually:
 ```csharp
@@ -81,10 +81,11 @@ operation Main() : Unit {
     Reset(eigenstate);
 }
 ```
-`T` gate: eigenphase $\varphi = 1/8$ $→$ binary $0.0010$ $→$ `phaseInt` = $2$ out of $16$.
+`T` gate: [[Eigenphase]] $\varphi = 1/8$ $→$ binary $0.0010$ $→$ `phaseInt` = $2$ out of $16$.
 
 | Method               | Control [[Qubits]] | $U$ apps              | Rounds           |
 | -------------------- | ------------------ | --------------------- | ---------------- |
 | Standard [[QPE]]     | $t$                | $2^t - 1$             | 1 (parallel)     |
 | Iterative [[QPE]]    | $1$                | $2^t - 1$             | $t$ (sequential) |
 | [[Quantum counting]] | $t$                | $O(2^t)$ calls to $G$ | $1$              |
+Source: [microsoft/qsharp - PhaseEstimation.qs](https://github.com/microsoft/qsharp/blob/main/samples/algorithms/PhaseEstimation.qs)

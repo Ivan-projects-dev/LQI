@@ -6,7 +6,7 @@ In our case where the Hamiltonian is time-dependent, during the small time step,
 $$U(T, 0)≈n∏k=1exp(−iH(kδ_t)⋅δ_t)$$
 In the case of AQC, recall that the Hamiltonian at time $t$ is given by $$H(t)=(1−tT)Hi+tTH_f$$Replacing this in the above equation we get: $$U(T,0)≈n∏k=1exp(−i((1−kδtT)Hi+kδtTHf)δt)$$We use the Trotter formula which states that for non-commuting Hamiltonians &
 $$U(T,0)≈n∏k=1exp(−i(1−kδtT)δtHi)exp(−ikδtTδtHf)$$
-This equation suggests that by applying the Hamiltonians $H_i$ and $HF$ iteratively, we can approx adiabatic evolution as $n$ gets larger & larger.
+This equation suggests that by applying the Hamiltonians $H_i$ & $HF$ iteratively, we can approx adiabatic evolution as $n$ gets larger & larger.
 
 This is the inspiration behind [[QAOA]], although it does not exactly mimic the equation above for $U(T,0)$.
 

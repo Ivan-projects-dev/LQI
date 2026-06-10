@@ -19,3 +19,4 @@ operation MarkWeightedSumGeq(register : Qubit[], target : Qubit, weights : Int[]
     }
 }
 ```
+Source: [microsoft/QuantumKatas - SolveSATWithGrover/ReferenceImplementation.qs](https://github.com/microsoft/QuantumKatas/blob/main/SolveSATWithGrover/ReferenceImplementation.qs) (ancilla accumulation pattern; weighted addition requires `Std.Arithmetic` adders)

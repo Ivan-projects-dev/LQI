@@ -16,7 +16,9 @@ $$A = \begin{pmatrix}1.5 & 0.5 \\ 0.5 & 1.5\end{pmatrix}, \quad \vec{b} = \begin
 **Eigenvalues**: $\lambda_1 = 1$, $\lambda_2 = 2$
 **Eigenvectors**: $|u_1\rangle = (|0\rangle - |1\rangle)/\sqrt2$, $|u_2\rangle = (|0\rangle + |1\rangle)/\sqrt2$
 
-Since $|u_1\rangle = (|0\rangle - |1\rangle)/\sqrt2$ & $|u_2\rangle = (|0\rangle + |1\rangle)/\sqrt2$, we get $|b\rangle = |0\rangle = \tfrac{1}{\sqrt2}|u_1\rangle + \tfrac{1}{\sqrt2}|u_2\rangle$ ($\beta_1 = \beta_2 = 1/\sqrt2$). Classical solution: $\vec x = A^{-1}\vec b = (0.75,\; {-0.25})^\top$
+Since $|u_1\rangle = (|0\rangle - |1\rangle)/\sqrt2$ & $|u_2\rangle = (|0\rangle + |1\rangle)/\sqrt2$, 
+we get $|b\rangle = |0\rangle = \tfrac{1}{\sqrt2}|u_1\rangle + \tfrac{1}{\sqrt2}|u_2\rangle$ ($\beta_1 = \beta_2 = 1/\sqrt2$). 
+Classical solution: $\vec x = A^{-1}\vec b = (0.75,\; {-0.25})^\top$
 ```csharp
 import Std.Math.*;
 import Std.Convert.*;
@@ -72,7 +74,7 @@ operation HHL(nClock : Int, t : Double, C : Double) : Result {
     // If res == One: system now holds |x⟩ ∝ A⁻¹|b⟩
 }
 ```
-`within/apply` block runs [[QPE]] in `within`, eigenvalue inversion in `apply`, then auto-applies inverse [[QPE]] - this is exactly the uncomputation needed in [[HHL]].
+`within/apply` block runs [[QPE]] in `within`, [[Eigenvalue]] inversion in `apply`, then auto-applies inverse [[QPE]] - this is exactly the uncomputation needed in [[HHL]].
 ### Limitations & fine print
 - **Input model**: loading $|b\rangle$ from classical data costs $O(N)$ (QRAM required for true speedup)
 - **Condition num $\kappa$**: circuit depth scales as $O(\kappa^2 \log N / \epsilon)$ - ill-conditioned matrices lose the speedup

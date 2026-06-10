@@ -17,3 +17,5 @@ operation MarkBitIsZero(register : Qubit[], target : Qubit, k : Int) : Unit is A
 	}
 }
 ```
+
+Source: [microsoft/QuantumKatas - GroversAlgorithm/ReferenceImplementation.qs](https://github.com/microsoft/QuantumKatas/blob/main/GroversAlgorithm/ReferenceImplementation.qs) (single-bit check is a degenerate case of `Oracle_ArbitraryPattern`, Task 1.3)

@@ -27,3 +27,5 @@ operation IterativeQPEOracle(U : (Qubit => Unit is Adj + Ctl),
 }
 ```
 Requires [[Adaptive profile]] (`AdaptiveRI`) because `Rz` angle depends on runtime measurement results.
+
+Source: [microsoft/qsharp - PhaseEstimation.qs](https://github.com/microsoft/qsharp/blob/main/samples/algorithms/PhaseEstimation.qs) · [Microsoft Learn - Quantum phase estimation concepts](https://learn.microsoft.com/en-us/azure/quantum/concepts-phase-estimation)

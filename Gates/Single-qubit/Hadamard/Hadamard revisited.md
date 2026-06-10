@@ -7,7 +7,7 @@ Let $x_1∈{0,1}$. Consider the following expression. $$H|x1⟩=1√2(|0⟩+(�
 What happens when we apply the $H⊗n$ to $n$-qubit register? We can intuitively guess that applying operator to all $0$ register would yield equal superposition of all possible natural nums like $$H⊗n|0⟩⊗n=1√2n2n−1∑x=0|x⟩$$What about arbitrary states? Then using the above equation we can write the following expression:
 $$H⊗n∣x⟩=2n​1​z∈{0,1}n∑​(−1)x⋅z∣z⟩$$
 where $|x⟩=|x_1⋯x_n⟩, |z⟩=|z_1⋯z_n⟩$ & $x⋅z$ is the bitwise & operation modulo 2, i.e. $$x⋅z=∑n_i=1x_i⋅z_i(mod2)$$We construct a circuit with $n+1$ [[Qubits]].
-- Set the $n+1$'st qubit to state $|−⟩$ by applying $X$ and $H$ gates.
+- Set the $n+1$'st qubit to state $|−⟩$ by applying $X$ & $H$ gates.
 - Apply $H$ to first $n$ [[Qubits]].
 - Apply $U_f$.
 - Apply $H$ to first $n$ [[Qubits]].
@@ -16,7 +16,7 @@ where $|x⟩=|x_1⋯x_n⟩, |z⟩=|z_1⋯z_n⟩$ & $x⋅z$ is the bitwise &
 This time we have a circuit with $n$ input [[Qubits]] & an output qubit. The init state is $|ψ0⟩=|0⟩⊗n|0⟩$
 Next we apply an $X$ gate to last qubit. $|ψ1⟩=|0⟩⊗n|1⟩$
 
-We set last qubit to state |−⟩ and apply $H$ gate to first $n$ [[Qubits]]. $|ψ2⟩=1√2n2n−1∑x=0|x⟩⊗|−⟩$
+We set last qubit to state |−⟩ & apply $H$ gate to first $n$ [[Qubits]]. $|ψ2⟩=1√2n2n−1∑x=0|x⟩⊗|−⟩$
 
 Apply $U_f$. Recalling [[Phase kickback]], we can rewrite our entire state as $$|ψ3⟩=[1√2n2n−1∑x=0(−1)f(x)|x⟩]⊗|−⟩$$We apply $U_f$ to each basis state & write our [[Quantum state]] using sum notation since we have an equal superposition of them.
 

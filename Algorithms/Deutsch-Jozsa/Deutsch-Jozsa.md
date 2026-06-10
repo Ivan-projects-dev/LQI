@@ -22,8 +22,8 @@ Next, we apply $H$ gate to $1st$ qubit & obtain the following state [[Vector]]
 $$ |ψ4,0⟩=1√2⎛⎜⎝1√21√21√2−1√2⎞⎟⎠((−1)f(0)(−1)f(1)) =12((−1)f(0)+(−1)f(1)(−1)f(0)−(−1)f(1)) {} {}$$
 Now let's consider the $2$ cases.
 - $f$ is const:
-In this case $f(0)=f(1)$ & $|ψ4,0⟩=((−1)f(0)0)$ and the corresponding [[Quantum state]] is $|ψ4,0⟩=(−1)f(0)|0⟩$. Hence, we observe $0$ with probability $1$. (Since $f(0)=f(1)$, you can equivalently replace it.)
+In this case $f(0)=f(1)$ & $|ψ4,0⟩=((−1)f(0)0)$ & the corresponding [[Quantum state]] is $|ψ4,0⟩=(−1)f(0)|0⟩$. Hence, we observe $0$ with probability $1$. (Since $f(0)=f(1)$, you can equivalently replace it.)
 - $f$ is balanced:
-In this case, $f(0)≠f(1)$ & $|ψ4,0⟩=(0(−1)f(0))$ and the corresponding [[Quantum state]] is $|ψ4,0⟩=(−1)f(0)|1⟩$. Hence, we observe $1$ with probability $1$.
+In this case, $f(0)≠f(1)$ & $|ψ4,0⟩=(0(−1)f(0))$ & the corresponding [[Quantum state]] is $|ψ4,0⟩=(−1)f(0)|1⟩$. Hence, we observe $1$ with probability $1$.
 
 So, we can find (with $100$% certainty) whether $f$ is const or balanced by making only single query to func $f$.

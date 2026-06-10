@@ -88,6 +88,8 @@ operation Find3Coloring() : Result[] {
 
 **Edge case - invalid color encodings:** With $2$ [[Qubits]] & $K=3$ colors, the state $|11\rangle$ (decimal $3$) is invalid color. [[Oracle]] marks valid colorings only, so the [[Grover]] amplitude amplification correctly ignores invalid encodings. For $K = 4$ (exact power of $2$), invalid states disappear entirely.
 
+Source: [microsoft/qsharp - Grover.qs](https://github.com/microsoft/qsharp/blob/main/samples/algorithms/Grover.qs) · [Microsoft Learn - Grover's algorithm tutorial](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)
+
 **Extension to arbitrary graphs:**
 ```csharp
 operation MarkValidColoringGeneral(

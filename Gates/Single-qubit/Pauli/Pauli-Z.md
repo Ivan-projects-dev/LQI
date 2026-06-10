@@ -33,7 +33,7 @@ In [[Grover]]'s algorithm, the [[Oracle]] precisely applies $Z$ to the marked so
 $$CZ = \begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}$$
 Only $|11\rangle$ picks up phase of $-1$. Widely used in superconducting hardware (native $2$-qubit gate alongside CX on some backends). CZ is its own inverse.
 ### Virtual Z gates
-On many hardware platforms, $R_z(\theta)$ (and therefore $Z$, $S$, $T$) is implemented as **frame update**: the software rotates the reference frame for subsequent pulses rather than applying physical microwave pulse. This means:
+On many hardware platforms, $R_z(\theta)$ (& therefore $Z$, $S$, $T$) is implemented as **frame update**: the software rotates the reference frame for subsequent pulses rather than applying physical microwave pulse. This means:
 - $0$ gate time, $0$ decoherence exposure
 - Perfect fidelity in principle
 - Gate appears in the circuit but costs nothing on physical hardware

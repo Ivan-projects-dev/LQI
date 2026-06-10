@@ -18,10 +18,13 @@ operation MarkDivisibleBy(register : Qubit[], target : Qubit, k : Int) : Unit is
             let contrib = (1 <<< i) % k;
             Controlled AddConstantModN([register[i]], (contrib, k, remainder));
         }
-    } apply {
+    } 
+    apply {
         // Mark iff remainder == 0
         ControlledOnInt(0, X)(remainder, target);
     }
 }
 ```
-Note: `AddConstantModN` is classical-constant quantum modular adder - standard building block in [[Shor]]'s algorithm. Implement with sequence of controlled additions & reductions, or use the `Std.Arithmetic` module adders as primitives. 
+Note: `AddConstantModN` is classical-constant quantum modular adder - standard building block in [[Shor]]'s algorithm. Implement with sequence of controlled additions & reductions, or use the `Std.Arithmetic` module adders as primitives.
+
+Source: [microsoft/QuantumKatas - SolveSATWithGrover/ReferenceImplementation.qs](https://github.com/microsoft/QuantumKatas/blob/main/SolveSATWithGrover/ReferenceImplementation.qs) (ancilla/within-apply patterns; modular arithmetic requires `Std.Arithmetic`)

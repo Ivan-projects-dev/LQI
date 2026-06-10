@@ -32,7 +32,7 @@ while i < 10 {
 }
 ```
 
-**`repeat-until` (RUS - Repeat Until Success)**. Quantum-specific loop. Repeats a probabilistic circuit until success condition is met. Essential for non-deterministic state preparation & some gate synthesis techs:
+**`repeat-until` (RUS - Repeat Until Success)**. Quantum-specific loop. Repeats a probabilistic circuit until success condition is met. Essential for non-deterministic [[State preparation]] & some gate synthesis techs:
 ```csharp
 repeat {
     H(q);

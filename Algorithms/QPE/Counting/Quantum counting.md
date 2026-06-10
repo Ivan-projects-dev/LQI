@@ -1,7 +1,7 @@
 #Q-Sharp #Algorithm 
 **Quantum counting** - [[QPE]] applied to [[Grover]] operator $G$
 
-Estimates $M$ (solution count) by finding eigenphase $\theta/\pi$ of $G$:
+Estimates $M$ (solution count) by finding [[Eigenphase]] $\theta/\pi$ of $G$:
 ```csharp
 import Std.Math.*;
 operation EstimateSolutionCount(nQubits : Int, nControlBits  : Int,
@@ -26,4 +26,6 @@ operation EstimateSolutionCount(nQubits : Int, nControlBits  : Int,
     let n_f = IntAsDouble(1 <<< nQubits);
     return Round(n_f * Sin(theta)^2);
 }
+
+Source: [microsoft/qsharp - PhaseEstimation.qs](https://github.com/microsoft/qsharp/blob/main/samples/algorithms/PhaseEstimation.qs) · [microsoft/qsharp - Grover.qs](https://github.com/microsoft/qsharp/blob/main/samples/algorithms/Grover.qs)
 ```

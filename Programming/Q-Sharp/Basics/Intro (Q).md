@@ -79,7 +79,7 @@ operation Main() : Result {
     return result;
 }
 ```
-Q# provides built-in DT common to most langs, including `Int`, `Double`, `Bool`, and `String`, & pes that define ranges, arrays, & tuples.
+Q# provides built-in DT common to most langs, including `Int`, `Double`, `Bool`, & `String`, & pes that define ranges, arrays, & tuples.
 
 `Result` DT represents result of a qubit measurement & can have $2$ values: `Zero` or `One`.
 
@@ -100,7 +100,7 @@ When using `%%qsharp`, keep the following in mind:
 - You must first run `from qdk import qsharp` to enable `%%qsharp`.
 - `%%qsharp` scopes to the notebook cell in which it appears & changes the cell type from Python to Q#.
 - You can't put a Python statement before or after `%%qsharp`.
-- Q# code that follows `%%qsharp` must adhere to Q# syntax. For example, use `//` instead of `#` to denote comments and `;` to end code lines.
+- Q# code that follows `%%qsharp` must adhere to Q# syntax. For example, use `//` instead of `#` to denote comments & `;` to end code lines.
 , see Type declarations.
 
 In Q#, you allocate [[Qubits]] using the `use` keyword & the `Qubit` type. [[Qubits]] are always allocated in the  state. For example, the `Superposition` program defines a single qubit & stores it in the variable `q`:

@@ -3,28 +3,28 @@
 
 **Quantum system** can exist in multiple energy states, each associated with specific energy level. The ground state is the lowest energy state of the system. It is the most stable config because, unless external energy is applied, system will always tend to settle in its ground state.
 
-Ground state energy corresponds to the lowest eigenvalue of the _Hamiltonian_ that represents the system.
+Ground state energy corresponds to the lowest [[Eigenvalue]] of the _Hamiltonian_ that represents the system.
 
 Pauli $Z$ [[Matrix]] represents single-qubit Hamiltonian that can describe the energy associated with the spin of qubit along$z$-axis. 
 $σZ=(100−1)$.
-It is Hermitian & its lowest eigenvalue is $-1$ with the corresponding eigenstate $(01)$.
+It is Hermitian & its lowest [[Eigenvalue]] is $-1$ with the corresponding [[Eigenstate]] $(01)$.
 
 Pauli matrices form complete set of operators for [[Qubits]], meaning that any operator acting on qubit system can be expressed as linear combo of these Pauli operators. Hence, general Hamiltonian for quantum system can be written as sum of terms called _Pauli strings_, each of which involves Pauli matrices acting on $1$ or $>$ [[Qubits]].
 
-As example, we can define the following Hamiltonian on $2$ [[Qubits]]: $$X_0⊗X_1+Y_0⊗Y_1+Z_0⊗Z_1$$typically written as $XX+YY+ZZ$. In this example, $XX, YY$ and $ZZ$ are **Pauli strings**. This Hamiltonian is **Heisenberg Hamiltonian**. Its [[Matrix]] representation can be obtained through the matrices of Pauli $X, Y$, and $Z$ operators.
+As example, we can define the following Hamiltonian on $2$ [[Qubits]]: $$X_0⊗X_1+Y_0⊗Y_1+Z_0⊗Z_1$$typically written as $XX+YY+ZZ$. In this example, $XX, YY$ & $ZZ$ are **Pauli strings**. This Hamiltonian is **Heisenberg Hamiltonian**. Its [[Matrix]] representation can be obtained through the matrices of Pauli $X, Y$, & $Z$ operators.
 
 Here are some other random Hamiltonians: $$2XIX−YZI,   3XYY+2ZZI−4YXY,   −XI+YZ+5XX$$Coefficients represent the strength of the interaction between different Pauli operators acting on the [[Qubits]], with both positive & negative values indicating different types of interactions (attractive or repulsive) between [[Qubits]].
 
-For a Hamiltonian H with eigenstates $|ψλ⟩$ and corresponding eigenvalues $Eλ$, the variational principle states that for any normalized trial state $|ψ⟩$, the expectation value of $H$ satisfies:
+For a Hamiltonian H with eigenstates $|ψλ⟩$ & corresponding eigenvalues $Eλ$, the variational principle states that for any normalized trial state $|ψ⟩$, the expectation value of $H$ satisfies:
 
-$E0≤⟨ψ|H|ψ⟩$, where $E0$ is the ground-state energy (the lowest eigenvalue of $H$).
+$E0≤⟨ψ|H|ψ⟩$, where $E0$ is the ground-state energy (the lowest [[Eigenvalue]] of $H$).
 
 Now let us understand why this is the case. We can express the expectation value as follows.
 
 Since any state can be expressed as a linear combo of the eigenstates $$⟨ψ|H|ψ⟩=⟨∑λc∗λψλ|H|∑μcμψμ⟩=∑λ,μc∗λcμ⟨ψλ|H|ψμ⟩$$
 Now since $H|ψλ⟩=Eλ|ψλ⟩$, we get: $$⟨ψ|H|ψ⟩=∑λ,μc∗λcμEμ⟨ψλ|ψμ⟩$$Since the eigenstates are orthonormal, all terms vanish except for the case $μ=λ$.
 $$⟨ψ|H|ψ⟩=∑λ|cλ|2Eλ$$
-Since $E0$ is the lowest eigenvalue of $H$, it follows that: $$E0∑λ|cλ|2≤∑λ|cλ|2Eλ=⟨ψ|H|ψ⟩$$Since $∑λ|cλ|2=1$, this simplifies to: $E0≤⟨ψ|H|ψ⟩$.
+Since $E0$ is the lowest [[Eigenvalue]] of $H$, it follows that: $$E0∑λ|cλ|2≤∑λ|cλ|2Eλ=⟨ψ|H|ψ⟩$$Since $∑λ|cλ|2=1$, this simplifies to: $E0≤⟨ψ|H|ψ⟩$.
 
 This proves that the expectation value of $H$ for any state $|ψ⟩$ is always greater than or equal to the ground-state energy $E0$. In other words, any random guess of a [[Quantum state]] will provide an upper bound on the ground state energy. This principle forms the basis for the VQE, which aims to approx $E_0$ by optimizing over different trial states.
 

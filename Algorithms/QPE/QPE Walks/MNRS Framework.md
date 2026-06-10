@@ -7,16 +7,16 @@ MNRS requires $3$ quantum oracles:
 - $\mathcal{S}$ (**Setup**): prepare $\sum_x\sqrt{\pi_x}|x\rangle|p_x\rangle|0\rangle_{\rm data}$. Cost: $S$.
 - $\mathcal{C}$ (**Check**): given $|x\rangle$, decide if $x$ is marked (solution). Cost: $C$ per call.
 - $\mathcal{U}$ (**Update**): given $|x\rangle|p_x\rangle$, perform one walk step $→$ $|x'\rangle|p_{x'}\rangle$ & update data structure. Cost: $U$.
-**Spectral gap** $\delta$: gap between eigenvalue $1$ & next eigenvalue of walk operator $W$ applied to the **unmarked** subspace. Controls how fast the walk mixes.
+**Spectral gap** $\delta$: gap between [[Eigenvalue]] $1$ & next [[Eigenvalue]] of walk operator $W$ applied to the **unmarked** subspace. Controls how fast the walk mixes.
 
 **Marked fraction** $\epsilon = M/N$: fraction of "solution" nodes.
 
 ### QPE-based reflection
 Core of MNRS: use [[QPE]] on walk operator $W$ to implement approximate reflection:
 $$R \approx 2\Pi_{\rm good} - I$$
-where $\Pi_{\rm good}$ projects onto span of $W$-eigenvectors with eigenphase $\approx 0$ (near-stationary, unmarked directions).
+where $\Pi_{\rm good}$ projects onto span of $W$-eigenvectors with [[Eigenphase]] $\approx 0$ (near-stationary, unmarked directions).
 
-[[QPE]] with $t = O(\log(1/\sqrt\delta))$ clock [[Qubits]] distinguishes eigenphase $0$ (stationary, $M=0$ space) from eigenphase $|\theta| \geq \sqrt\delta$ - sufficient to build the reflection. Cost per reflection application:
+[[QPE]] with $t = O(\log(1/\sqrt\delta))$ clock [[Qubits]] distinguishes [[Eigenphase]] $0$ (stationary, $M=0$ space) from [[Eigenphase]] $|\theta| \geq \sqrt\delta$ - sufficient to build the reflection. Cost per reflection application:
 $$O\!\left(\mathcal{S} + \frac{C}{\sqrt\delta}\right)$$
 The reflection identifies marked vertices as the "good" subspace (those with $\theta \approx \sqrt\epsilon$ shift from unmarked stationary phase).
 ### Amplitude amplification

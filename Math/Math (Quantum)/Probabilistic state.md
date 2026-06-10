@@ -1,5 +1,5 @@
 #Math #Physics 
-Suppose that we have system with $4$ distinguishable states: $s_1$, $s_2$, $s_3$, and $s_4$. We expect the system to be in $1$ of them at any moment.
+Suppose that we have system with $4$ distinguishable states: $s_1$, $s_2$, $s_3$, & $s_4$. We expect the system to be in $1$ of them at any moment.
 
 System is in $1$ of the states with probability $1$, & in any other state with probability $0$.
 By using our column representation, we can show each state as a column [[Vector]] (by using the vectors in standard basis of $R^4$):

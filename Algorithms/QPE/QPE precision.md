@@ -22,7 +22,7 @@ In practice: $m = 3$ gives $P \geq 0.875$; $m = 5$ gives $P \geq 0.969$.
 **Iterative [[QPE]] (Kitaev's method)**: uses only **1 control qubit** & $t$ separate rounds. Total $U$ calls: $2^t - 1$ - same as standard [[QPE]], but with min qubit overhead. Tradeoff: requires $t$ sequential rounds (no parallelism).
 
 **Dominant error sources in practice**:
-- **Trotterization error** (when $U = e^{-iHt}$ approximated): systematic phase error $\sim O(\Delta t^2)$ per Trotter step.
+- **[[Trotterization]] error** (when $U = e^{-iHt}$ approximated): systematic phase error $\sim O(\Delta t^2)$ per Trotter step.
 - **Finite coherence time**: decoherence during $O(2^t)$ gates - limits max usable $t$ on NISQ hardware.
-- **State preparation error**: if $|\psi\rangle$ is not exact eigenstate, multiple phases appear with split probability.
+- **[[State preparation]] error**: if $|\psi\rangle$ is not exact [[Eigenstate]], multiple phases appear with split probability.
 - **Readout error**: mitigated by majority-vote repetition.

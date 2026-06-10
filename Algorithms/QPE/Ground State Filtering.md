@@ -1,5 +1,5 @@
 #Algorithm #Math
-**Ground state filtering** amplifies overlap between trial state $|\psi\rangle$ & true ground state $|\psi_0\rangle$, enabling [[QPE]] to succeed even when $\eta = |\langle\psi_0|\psi\rangle|^2 \ll 1$. Core subroutine for quantum chemistry, optimization, & any setting where preparing good eigenstate is hard.
+**Ground state filtering** amplifies overlap between trial state $|\psi\rangle$ & true ground state $|\psi_0\rangle$, enabling [[QPE]] to succeed even when $\eta = |\langle\psi_0|\psi\rangle|^2 \ll 1$. Core subroutine for quantum chemistry, optimization, & any setting where preparing good [[Eigenstate]] is hard.
 ### Problem setup
 Standard [[QPE]] returns ground-state energy $E_0$ with probability exactly $\eta$ per shot. For Hartree-Fock trial state in strongly correlated molecule, $\eta \sim 10^{-2}$–$10^{-3}$ - requiring $\sim 10^2$–$10^3\times$ more shots. Filtering constructs operator $F$ such that:
 $$\frac{F|\psi\rangle}{\|F|\psi\rangle\|} \approx |\psi_0\rangle$$
@@ -12,11 +12,11 @@ Implementation: express via [[Quantum Fourier Transform|Fourier transform]] of G
 
 **Power-cosine filter (QSP-based)**:
 $$F = T_d\!\left(1 - 2\frac{(H - E_*)^2}{\Delta^2}\right)$$
-$T_d$ = Chebyshev polynomial of degree $d$, sharpens from $E_0$ to $E_1$ region. Implemented by $O(d)$ queries to controlled-$e^{-iHt}$ via quantum signal processing. **Near-optimal** query complexity: $O(\Delta^{-1}\log(\eta^{-1}))$ total queries for deterministic ground state preparation.
+$T_d$ = Chebyshev polynomial of degree $d$, sharpens from $E_0$ to $E_1$ region. Implemented by $O(d)$ queries to controlled-$e^{-iHt}$ via [[Quantum signal processing]]. **Near-optimal** query complexity: $O(\Delta^{-1}\log(\eta^{-1}))$ total queries for deterministic ground [[State preparation]].
 
 **Krylov-based filter**
 Build filter implicitly from Lanczos vectors $\{|\psi\rangle, H|\psi\rangle, H^2|\psi\rangle, \ldots, H^{d-1}|\psi\rangle\}$ computed quantumly.
-Classical post-processing selects optimal polynomial $p(H)$ via eigenvalue decomposition of the small Krylov [[Matrix]] $K_{ij} = \langle\psi|H^{i+j}|\psi\rangle$. Low quantum overhead ($d$ time-evolution steps), but requires classical diagonalization of $d\times d$ [[Matrix]]. 
+Classical post-processing selects optimal polynomial $p(H)$ via [[Eigenvalue]] decomposition of the small Krylov [[Matrix]] $K_{ij} = \langle\psi|H^{i+j}|\psi\rangle$. Low quantum overhead ($d$ time-evolution steps), but requires classical diagonalization of $d\times d$ [[Matrix]]. 
 
 **[[QPE]]-based filter (post-selection)**
 [[QPE]] itself acts as energy filter: run [[QPE]], measure clock register, keep shots where result falls near $E_*$. Filtered state ≈ $|\psi_0\rangle$. Success prob per shot = $\eta$; repeat $O(1/\eta)$ times. Simplest to implement; optimal when $\eta$ is not too small.
@@ -35,7 +35,7 @@ Or: signal-processing-inspired FQPE directly mitigates the unfavorable $O(1/\eta
 | FQPE (unified) | $O(\Delta^{-1}\eta^{-1/2})$ | Yes | Yes |
 $\Delta$ = spectral gap $E_1 - E_0$. Smaller gap $→$ harder to filter. When $\Delta$ is unknown, adaptive schemes estimate it alongside $E_0$.
 ### Connection to amplitude amplification
-Power-cosine filter is equivalent to **quantum signal processing** applied to the walk operator from [[Qubitization]]. This connection gives unified view:
+Power-cosine filter is equivalent to **[[Quantum signal processing]]** applied to the walk operator from [[Qubitization]]. This connection gives unified view:
 - [[Qubitization]] block-encodes $H/\lambda$
 - QSP applies polynomial $p(H/\lambda)$ to implement filter $F$
 - Cost scales as $O(\deg(p)\cdot\text{cost}(W))$ where $W$ is the walk operator

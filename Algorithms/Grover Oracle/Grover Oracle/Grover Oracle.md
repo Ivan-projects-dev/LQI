@@ -1,18 +1,67 @@
 #Algorithm  #Q-Sharp
 [[Grover]] uses $2$ kinds of oracles. **Marking [[Oracle]]**: flips target [[Ancilla]] qubit if query register satisfies condition. **Phase [[Oracle]]**: flips phase of query register if condition holds. The $2$ are interconvertible.
 ### **[[Oracle]] types**:
-**AllOnes** - flip target iff all [[Qubits]] are $|1\rangle$. Implemented by a single multi-controlled $X$ ([[Toffoli]] generalization) with all data [[Qubits]] as controls & target as the output qubit.
+**AllOnes** - flip target iff all [[Qubits]] are $|1\rangle$. Single multi-controlled $X$ with all data [[Qubits]] as controls:
+```csharp
+// Task 1.1 - f(x) = 1 iff x = |11…1⟩
+operation Oracle_AllOnes(queryRegister : Qubit[], target : Qubit) : Unit is Adj + Ctl {
+    Controlled X(queryRegister, target);
+}
+```
 
-**AlternatingBits** - flip target iff register is in $|10101\ldots\rangle$. Implemented by applying $X$ to every even-indexed qubit (to turn $|10\ldots\rangle$ into $|11\ldots\rangle$), then using the AllOnes [[Oracle]], then uncomputing the $X$
+**AlternatingBits** - flip target iff register is $|1010\ldots\rangle$. Flip odd-indexed [[Qubits]] so the target pattern becomes all-ones, apply AllOnes, uncompute:
+```csharp
+// Task 1.2 - f(x) = 1 iff x = |1010…⟩
+operation Oracle_AlternatingBits(queryRegister : Qubit[], target : Qubit) : Unit is Adj + Ctl {
+    within {
+        for i in 1..2..Length(queryRegister) - 1 {
+            X(queryRegister[i]);  // flip odd positions
+        }
+    } apply {
+        Controlled X(queryRegister, target);
+    }
+}
+```
 
-**ArbitraryPattern** - flip target iff register matches a given bit pattern `Bool[]`. For every qubit where the pattern bit is `false` (i.e. target is $|0\rangle$), apply $X$ before the multi-controlled $X$, then uncompute. This turns the desired state into $|11\ldots1\rangle$ so AllOnes fires.
+**ArbitraryPattern** - flip target iff register matches a given `Bool[]` bit pattern. `ControlledOnBitString` handles the $|0\rangle$-qubit pre/post-flipping internally:
+```csharp
+import Std.Canon.*;
 
-**[[Oracle]] converter** (marking → phase):
-Wrap the marking [[Oracle]] with an [[Ancilla]] prepared in $|{-}\rangle = \frac{|0\rangle-|1\rangle}{\sqrt{2}}$. When the [[Oracle]] fires it flips $|{-}\rangle \to -|{-}\rangle$ (**[[Phase kickback]]**), leaving the [[Ancilla]] unchanged & writing $-1$ into the query register's phase: $$U_f|x\rangle|{-}\rangle = (-1)^{f(x)}|x\rangle|{-}\rangle$$[[Ancilla]] is never measured & can be reused across iterations.
+// Task 1.3 - f(x) = 1 iff x matches pattern
+operation Oracle_ArbitraryPattern(queryRegister : Qubit[], target : Qubit, pattern : Bool[]) : Unit is Adj + Ctl {
+    ControlledOnBitString(pattern, X)(queryRegister, target);
+}
+```
+
+**[[Oracle]] converter** (marking → phase) via [[Phase kickback]]:
+```csharp
+// Task 1.4* - wrap marking oracle as phase oracle
+operation OracleConverterImpl(
+    markingOracle : (Qubit[], Qubit) => Unit is Adj,
+    register : Qubit[]
+) : Unit is Adj {
+    use target = Qubit();
+    within {
+        X(target);
+        H(target);  // |0⟩ → |−⟩
+    } apply {
+        markingOracle(register, target);  // phase kickback: (−1)^f(x) on register
+    }
+}
+
+function OracleConverter(
+    markingOracle : (Qubit[], Qubit) => Unit is Adj
+) : (Qubit[] => Unit is Adj) {
+    return OracleConverterImpl(markingOracle, _);
+}
+```
+[[Ancilla]] returns to $|{-}\rangle$ unchanged; the phase $(-1)^{f(x)}$ is kicked back to $|x\rangle$. [[Ancilla]] is never measured and can be reused across iterations.
 
 **[[Grover]] iteration - 4 steps** (from [[Oracle]] to diffusion):
 1. Apply phase [[Oracle]] $U_f$ → marks solution(s) with $-1$.
 2. Apply $H^{\otimes n}$ to query register.
-3. Apply **conditional phase flip** $2|0\rangle\langle 0| - I$: flip sign of every state _except_ $|0\ldots0\rangle$ (equivalently, flip only $|0\ldots0\rangle$ & absorb global phase). Circuit: multi-controlled $Z$ (or use [[Oracle]]-converter trick with [[Ancilla]] in $|{-}\rangle$).
+3. Apply **conditional phase flip** $2|0\rangle\langle 0| - I$: flip sign of every state except $|0\ldots0\rangle$.
 4. Apply $H^{\otimes n}$ again.
-Steps $2-4$ together form the [[Diffusion operator]] $D = H^{\otimes n}(2|0\rangle\langle 0|-I)H^{\otimes n}$
+Steps $2$–$4$ together form the [[Diffusion operator]] $D = H^{\otimes n}(2|0\rangle\langle 0|-I)H^{\otimes n}$
+
+Source: [microsoft/QuantumKatas - GroversAlgorithm/ReferenceImplementation.qs (Tasks 1.1–1.4)](https://github.com/microsoft/QuantumKatas/blob/main/GroversAlgorithm/ReferenceImplementation.qs)

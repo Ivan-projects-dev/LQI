@@ -39,3 +39,5 @@ operation MarkGreaterThan_Full(
     }
 }
 ```
+
+Source: [microsoft/QuantumKatas - SolveSATWithGrover/ReferenceImplementation.qs](https://github.com/microsoft/QuantumKatas/blob/main/SolveSATWithGrover/ReferenceImplementation.qs) (within/apply ancilla patterns; arithmetic comparator via `Std.Arithmetic`)

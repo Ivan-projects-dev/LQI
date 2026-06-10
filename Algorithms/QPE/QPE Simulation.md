@@ -1,7 +1,7 @@
 #Algorithm #Physics #Chemistry
 **[[QPE]] in [[Quantum simulation]]** extracts spectral properties (energy eigenvalues, gaps, phase diagrams) of physical systems beyond molecular chemistry. Provides the fault-tolerant route to exponential speedup over classical diagonalization for systems where classical methods fail (sign problem, exponential Hilbert space, strong correlations).
 
-Physical system $→$ Hamiltonian $H$ $→$ qubit encoding $→$ implement $e^{-iHt}$ (via [[Trotter formula|Trotterization]] or [[Qubitization]]) $→$ [[QPE]] extracts eigenvalue $E_j$.
+Physical system $→$ Hamiltonian $H$ $→$ qubit encoding $→$ implement $e^{-iHt}$ (via [[Trotter formula|Trotterization]] or [[Qubitization]]) $→$ [[QPE]] extracts [[Eigenvalue]] $E_j$.
 
 **Energy resolution**: $\epsilon = 2\pi/(\tau \cdot 2^t)$ where $\tau$ = total evolution time, $t$ = clock [[Qubits]]. Improving resolution by $2\times$ costs $2\times$ more $U$ calls.
 
@@ -43,7 +43,7 @@ Classical simulation fails in regime $t \sim U$ - the Mott transition. Best clas
 **Band structure**: crystalline Hamiltonian $H(\mathbf{k})$ at each Bloch momentum $\mathbf{k}$. [[QPE]] on $e^{-iH(\mathbf{k})t}$ extracts energy bands $E_n(\mathbf{k})$.
 
 Applications:
-- **Topological invariants**: Chern nums computed from Berry phases $\gamma_n = i\oint\langle u_n|\nabla_\mathbf{k}|u_n\rangle\cdot d\mathbf{k}$ - [[QPE]] enables exact eigenstate access needed for Berry phase
+- **Topological invariants**: Chern nums computed from Berry phases $\gamma_n = i\oint\langle u_n|\nabla_\mathbf{k}|u_n\rangle\cdot d\mathbf{k}$ - [[QPE]] enables exact [[Eigenstate]] access needed for Berry phase
 - **Topological phase transitions**: [[QPE]] detects spectral gap closing at transition points - exponentially small gap near criticality requires high precision $\epsilon$
 - **Phonon spectra**: [[QPE]] on lattice dynamics Hamiltonian $→$ phonon dispersion curves
 - **Magnon spectra**: spin-wave excitations from magnetic Hamiltonians
@@ -69,4 +69,4 @@ Qubit encoding: $\sim 50$–$200$ [[Qubits]] per nucleus depending on single-par
 | Band structure    | Correlation effects in DFT      | Topological invariants   | $\mathbf{k}$-point scan overhead |
 | Nuclear structure | $A>20$ shell model              | Binding energies         | Basis truncation errors          |
 | Quantum chemistry | Strong electron correlation     | Ground state energy      | See [[QPE Chemistry]]            |
-All targets share same [[QPE]] structure - what differs is the [[Hamiltonian encoding]] & trial state preparation strategy.
+All targets share same [[QPE]] structure - what differs is the [[Hamiltonian encoding]] & trial [[State preparation]] strategy.

@@ -7,7 +7,7 @@
 Operation must declare `is Ctl` to support `Controlled`. Signature for full support of both:
 `operation MyOp(q : Qubit) : Unit is Adj + Ctl { ... }`
 
-`Controlled` is how [[QPE]] implements $C$-$U^{2^k}$: each control qubit applies controlled version of the unitary to the eigenstate register.
+`Controlled` is how [[QPE]] implements $C$-$U^{2^k}$: each control qubit applies controlled version of the unitary to the [[Eigenstate]] register.
 
 [[Functors]] compose: `Controlled Adjoint` or `Adjoint Controlled op` (both valid, equivalent for unitaries).
 `Controlled Adjoint T([ctrl], q);` Controlled-Adjoint of [[T gate]]

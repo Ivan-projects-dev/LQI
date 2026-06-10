@@ -14,9 +14,9 @@ $X$ is in the **Clifford group** - it maps Pauli operators to Pauli operators un
 ### Bloch sphere geometry
 $X$ is $180°$ rotation about the $\hat{x}$ axis. North pole $|0\rangle$ maps to south pole $|1\rangle$ & vice versa. The equatorial states $|{+}\rangle$ & $|{-}\rangle$ are fixed points of this rotation:
 $$X|{+}\rangle = |{+}\rangle \qquad X|{-}\rangle = -|{-}\rangle$$
-(The $|{-}\rangle$ eigenvalue $-1$ means $X$ picks up a phase on that eigenstate - this is the [[Phase kickback]] mechanism exploited in [[Hadamard#Phase kickback|oracles]].)
+(The $|{-}\rangle$ [[Eigenvalue]] $-1$ means $X$ picks up a phase on that [[Eigenstate]] - this is the [[Phase kickback]] mechanism exploited in [[Hadamard#Phase kickback|oracles]].)
 
-| Eigenvalue | Eigenstate                                                   |
+| [[Eigenvalue]] | [[Eigenstate]]                                                   |
 | ---------- | ------------------------------------------------------------ |
 | $+1$       | $\|{+}\rangle = \frac{1}{\sqrt{2}}(\|0\rangle + \|1\rangle)$ |
 | $-1$       | $\|{-}\rangle = \frac{1}{\sqrt{2}}(\|0\rangle - \|1\rangle)$ |

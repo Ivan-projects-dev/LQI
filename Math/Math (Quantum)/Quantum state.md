@@ -9,10 +9,10 @@ $$\begin{pmatrix}
 √3/2 \\
 1/√2
 \end{pmatrix}$$
-For the $1st$ [[Vector]], the probabilities of observing the states $|0⟩$ and $|1⟩$ are $14$.
+For the $1st$ [[Vector]], the probabilities of observing the states $|0⟩$ & $|1⟩$ are $14$.
 
 So, the overall probability of getting result is $14+14=12$, which is $< 1$.
-For $2nd$ Vector, probabilities of observing the states $|0⟩$ and $|1⟩$ are respectively $34$ and $12$.
+For $2nd$ Vector, probabilities of observing the states $|0⟩$ & $|1⟩$ are respectively $34$ & $12$.
 So, the overall probability of getting result is $34+12=54$, which is $> 1$.
 
 **Quantum state can be represented by [[Vector]] having length $1$, & vice versa**

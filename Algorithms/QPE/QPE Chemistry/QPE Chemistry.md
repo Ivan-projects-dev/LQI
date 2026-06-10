@@ -5,10 +5,10 @@ Molecular Hamiltonian $H$ (describing electron-nuclear interactions) has discret
 
 **Key identity**: if $H|\psi_0\rangle = E_0|\psi_0\rangle$, then the time-evolution unitary satisfies:
 $$U(\tau)|\psi_0\rangle = e^{-iH\tau}|\psi_0\rangle = e^{-iE_0\tau}|\psi_0\rangle$$
-So $|\psi_0\rangle$ is eigenstate of $U(\tau)$ with eigenvalue $e^{-iE_0\tau}$. [[QPE]] extracts the phase $\varphi = E_0\tau / (2\pi)$, from which $E_0 = 2\pi\varphi / \tau$.
+So $|\psi_0\rangle$ is [[Eigenstate]] of $U(\tau)$ with [[Eigenvalue]] $e^{-iE_0\tau}$. [[QPE]] extracts the phase $\varphi = E_0\tau / (2\pi)$, from which $E_0 = 2\pi\varphi / \tau$.
 **Workflow:**
-1. Map molecular Hamiltonian $H$ to qubit Hamiltonian (Jordan-Wigner or Bravyi-Kitaev encoding)
-2. Approximate time evolution $e^{-iH\tau}$ via **Trotterization**: $e^{-iH\tau} \approx \prod_k e^{-iH_k\tau/n}$ for $n$ Trotter steps
+1. Map molecular Hamiltonian $H$ to qubit Hamiltonian ([[Jordan-Wigner encoding]] or [[Bravyi-Kitaev encoding]])
+2. Approximate time evolution $e^{-iH\tau}$ via **[[Trotterization]]**: $e^{-iH\tau} \approx \prod_k e^{-iH_k\tau/n}$ for $n$ Trotter steps
 3. Prepare approximation $|\tilde{\psi}_0\rangle$ of the ground state (e.g., Hartree-Fock state)
 4. Run [[QPE]] with $U = e^{-iH\tau}$
 **Overlap requirement**: success probability of [[QPE]] returning $E_0 = |\langle\tilde{\psi}_0|\psi_0\rangle|^2$. Good initial guess is critical.

@@ -3,7 +3,7 @@ Walk on $4$-cycle
 Graph: $0 \to 1 \to 2 \to 3 \to 0$ (symmetric). Classical walk [[Matrix]]:
 $$P = \frac{1}{2}\begin{pmatrix}0&1&0&1\\1&0&1&0\\0&1&0&1\\1&0&1&0\end{pmatrix}$$
 Eigenvalues of $P$: $1, 0, -1, 0$. Walk angles: $\theta \in \{0, \pi/2, \pi\}$.
-[[QPE]] on the walk operator $W$ returns these phases. From $\theta = \pi/2$ (non-trivial eigenvalue): eigenvalue of $P$ is $\cos(\pi/2) = 0$ - the walk mixes in $O(N)$ steps.
+[[QPE]] on the walk operator $W$ returns these phases. From $\theta = \pi/2$ (non-trivial [[Eigenvalue]]): [[Eigenvalue]] of $P$ is $\cos(\pi/2) = 0$ - the walk mixes in $O(N)$ steps.
 ### Szegedy walk construction
 For graph with transition [[Matrix]] $P_{ij}$, the Szegedy walk acts on the edge space $\mathbb{C}^N \otimes \mathbb{C}^N$:
 $$|i\rangle|p_i\rangle = |i\rangle\sum_j\sqrt{P_{ij}}|j\rangle$$

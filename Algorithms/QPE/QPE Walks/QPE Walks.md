@@ -7,7 +7,7 @@
 For random walk on $N$ nodes with $M$ marked nodes:
 - Spectral gap $\delta = \lambda_2(\text{classical walk})$
 - Quantum walk finds marked node in $O(1/\sqrt{\delta})$ steps (vs classical $O(1/\delta)$)
-[[QPE]] estimates $\theta$ from the walk eigenvalue $e^{i\theta}$. If $\theta \approx 0$, the walk is near-uniform (slow mixing); large $\theta$ means fast mixing.
+[[QPE]] estimates $\theta$ from the walk [[Eigenvalue]] $e^{i\theta}$. If $\theta \approx 0$, the walk is near-uniform (slow mixing); large $\theta$ means fast mixing.
 
 | Algorithm                   | Walk on           | [[QPE]] extracts   | Speedup                      |
 | --------------------------- | ----------------- | ------------------ | ---------------------------- |

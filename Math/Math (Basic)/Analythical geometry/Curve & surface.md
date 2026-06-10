@@ -84,7 +84,7 @@ This **can degenerate into 2 lines** that intersect:  $\left( \dfrac{b}{a}x + y 
 $\begin{vmatrix}x-x_1 & y-y_1 \\x_2 - x_1 & y_2-y_1\end{vmatrix} = 0$
 **Given arbitrary point** $R = (x, y) = \vec{r}$ & **line specified by** $\vec{r}_0 = (x_0, y_0)$ & $\vec{a} = (a_x, a_y)$
 Let us **construct parallelogram**. **Distance** $d$ is **corresponding altitude** that can be computed via area $S$:  
-$d = \dfrac{S}{|\vec{a}|} = \dfrac{1}{\sqrt{a_x^2 + a_y^2}} |a_x y - a_y x - x_0 a_y + y_0 a_x| = \dfrac{|A x + B y + C|}{\sqrt{A^2 + B^2}}$ - **formula for distance between arbitrary point** $(x, y)$ **and the line** $Ax + By + C = 0$
+$d = \dfrac{S}{|\vec{a}|} = \dfrac{1}{\sqrt{a_x^2 + a_y^2}} |a_x y - a_y x - x_0 a_y + y_0 a_x| = \dfrac{|A x + B y + C|}{\sqrt{A^2 + B^2}}$ - **formula for distance between arbitrary point** $(x, y)$ **& the line** $Ax + By + C = 0$
 If $\vec{r} - \vec{r}_0 = t \cdot \vec{a}$ - **parametric equation of the line in space**:
 
 $\begin{cases} x = x_0 + a_x t &  y = y_0 + a_y t & z = z_0 + a_z t \end{cases}$
@@ -184,5 +184,5 @@ Or: $\vec{a} \times \vec{b} = \vec{0}$
 Or: $\vec{a} \cdot \vec{b} = 0$
 **Polyhedron** - 3D shape with **flat polygonal faces**, **straight edges**, & **vertices**
 **Dihedral angle** - **angle between 2 intersecting planes**
-**Homogeneous systems:** If $Ax = 0$ & $A$ is invertible, then the system has only the **trivial solution** $x = 0$ (and **vice versa**)
+**Homogeneous systems:** If $Ax = 0$ & $A$ is invertible, then the system has only the **trivial solution** $x = 0$ (& **vice versa**)
 **Polar form**: $x = r \cos \theta$, $y = r \sin \theta$, where $\theta$ is the **angle between $z$ & positive $x$-axis**. Unique **up to addition of $2\pi$ radians** $-\pi < \theta \leq \pi$

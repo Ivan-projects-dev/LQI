@@ -5,7 +5,7 @@ Many NP-hard problems map to **Ising Hamiltonian** (see [[QUBO]]):
 $$H_C = \sum_{i<j} J_{ij} Z_i Z_j + \sum_i h_i Z_i$$
 Eigenvalues of $H_C$ are objective func values $f(x)$; ground state $|\psi_0\rangle$ encodes optimal bitstring $x^*$
 
-[[QPE]] on $U(\tau) = e^{-iH_C\tau}$ extracts ground-state energy $E_0 = f(x^*)$ to precision $\epsilon$ using $O(1/\epsilon)$ queries. Unlike [[QAOA]] which estimates $\langle H_C\rangle$ variationally, [[QPE]] extracts the exact eigenvalue.
+[[QPE]] on $U(\tau) = e^{-iH_C\tau}$ extracts ground-state energy $E_0 = f(x^*)$ to precision $\epsilon$ using $O(1/\epsilon)$ queries. Unlike [[QAOA]] which estimates $\langle H_C\rangle$ variationally, [[QPE]] extracts the exact [[Eigenvalue]].
 
 **Caveat**: [[QPE]] outputs $E_0$ (optimal value), not $x^*$ (optimal solution) directly. To recover $x^*$: combine with amplitude amplification using energy filter (see [[Ground State Filtering]]) to boost probability of sampling $|\psi_0\rangle$, then measure in computational basis.
 
@@ -23,14 +23,14 @@ Effective when SDP bound is tight (e.g., Max-Cut: $E_{\rm SDP}/E_0 \geq 0.878$ b
 
 [[QPE]] assistance:
 - **Exact energy [[Oracle]]**: run [[QPE]] on $|\psi(\gamma,\beta)\rangle = \prod_i e^{-i\gamma_i H_C}e^{-i\beta_i H_B}|+\rangle^n$ to get $\langle H_C\rangle(\gamma,\beta)$ exactly (no shot noise). Enables gradient-free optimizer with exact func evaluations
-- **Spectral overlap estimation**: [[QPE]] on the [[QAOA]] state tells how much overlap it has with each energy eigenvalue $→$ diagnose whether [[QAOA]] is converging or stuck at excited state
+- **Spectral overlap estimation**: [[QPE]] on the [[QAOA]] state tells how much overlap it has with each energy [[Eigenvalue]] $→$ diagnose whether [[QAOA]] is converging or stuck at excited state
 - **Depth $p$ selection**: estimate $\langle H_C\rangle$ exactly as func of $p$ using [[QPE]] - identify min $p$ where [[QAOA]] output has sufficient overlap with $|\psi_0\rangle$
-Circuit depth of [[QAOA]] unitary: $O(p\cdot m)$ $2$-qubit gates for $m$ coupling terms; much shallower than full Hamiltonian simulation, making [[QPE]] on it feasible at moderate precision.
+Circuit depth of [[QAOA]] unitary: $O(p\cdot m)$ $2$-qubit gates for $m$ coupling terms; much shallower than full [[Hamiltonian simulation]], making [[QPE]] on it feasible at moderate precision.
 ### Quantum semidefinite programming
 **SDP**: minimize $\text{tr}(CX)$ subject to $X\succeq 0$, $\text{tr}(A_i X) = b_i$ for $i=1,\ldots,m$.
 
 Classical interior point: $O(m^{0.5}n^{2.37}\log(1/\epsilon))$ per iteration. Quantum speedup via [[QPE]]:
-- Eigenvalue access to $X$ via [[QPE]] on $e^{iXt}$ enables $O(\text{polylog}(n))$ [[Matrix]]-[[Vector]] products
+- [[Eigenvalue]] access to $X$ via [[QPE]] on $e^{iXt}$ enables $O(\text{polylog}(n))$ [[Matrix]]-[[Vector]] products
 - [[HHL]] for linear system solve in each interior-point step: $O(\kappa^2\log n/\epsilon)$
 - Combined quantum SDP: $O(\sqrt{m}\cdot\kappa^2\log n/\epsilon)$ vs classical $O(\sqrt{m}\cdot n^{2.37})$
 

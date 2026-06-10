@@ -7,7 +7,7 @@ $$\hat\theta = \pi\tilde\varphi \qquad \hat M = N \sin^2\!\hat\theta$$
 **Precision**: with $t$ clock [[Qubits]], the estimate $|\hat M - M| \leq \epsilon N$ with $t = O(\log N + \log(1/\epsilon))$.
 ### Example: $4$-item search, $1$ solution
 $N = 4$, $M = 1$: $\sin^2\theta = 1/4 \Rightarrow \theta = \pi/6$.
-[[Grover]] eigenphase: $\varphi = \theta/\pi = 1/6 \approx 0.1\overline{6}$.
+[[Grover]] [[Eigenphase]]: $\varphi = \theta/\pi = 1/6 \approx 0.1\overline{6}$.
 With $t = 3$ clock bits (resolution $1/8 = 0.125$), [[QPE]] returns $\tilde\varphi \in \{0/8, 1/8, 2/8, \ldots\}$.
 Closest to $1/6$: outcome $1/8 \Rightarrow \hat\theta = \pi/8 \Rightarrow \hat M = 4\sin^2(\pi/8) \approx 0.59$ - rounds to $1$.
 $>$ clock bits give better accuracy: $t=5$ gives $|\hat M - 1| < 0.2$ with high probability.
@@ -73,3 +73,5 @@ operation CountSolutions(nClock : Int, nSearch : Int) : Int {
 **Note**: for the degenerate case $M = 0$ or $M = N$, $\theta = 0$ & [[QPE]] returns $\tilde\varphi = 0$. $2$ eigenvalues $e^{+2i\theta}$ & $e^{-2i\theta}$ are symmetric - [[QPE]] may return either $\varphi$ or $1-\varphi$; take $\min(\tilde\varphi, 1-\tilde\varphi)$ before computing $\theta$.
 
 [[Quantum counting]] is often used as **preprocessing step** to calibrate [[Grover]]'s algorithm when $M$ is unknown.
+
+Source: [microsoft/qsharp - PhaseEstimation.qs](https://github.com/microsoft/qsharp/blob/main/samples/algorithms/PhaseEstimation.qs) · [microsoft/qsharp - Grover.qs](https://github.com/microsoft/qsharp/blob/main/samples/algorithms/Grover.qs)

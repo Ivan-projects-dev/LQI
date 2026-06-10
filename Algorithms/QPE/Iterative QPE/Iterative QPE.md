@@ -26,3 +26,5 @@ operation IterativePhaseEstimation(nBits : Int, target : Qubit[], applyU : Qubit
 }
 ```
 Each round: $1$ [[Hadamard]], controlled-$U^{2^i}$, phase correction $R_1$, $2nd$ [[Hadamard]], measure. The phase correction `R1(angle, control)` removes the contribution of already-known bits before the final [[Hadamard]] collapses the control.
+
+Source: [microsoft/qsharp - PhaseEstimation.qs](https://github.com/microsoft/qsharp/blob/main/samples/algorithms/PhaseEstimation.qs) · [Microsoft Learn - Quantum phase estimation concepts](https://learn.microsoft.com/en-us/azure/quantum/concepts-phase-estimation)

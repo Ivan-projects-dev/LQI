@@ -1,17 +1,16 @@
 #Algorithm #Math #Chemistry
 **Qubitization** constructs unitary $W$ (the **walk operator**) whose eigenphases directly encode eigenvalues of $H$ - eliminating Trotter error entirely. Contrast with [[Trotter formula|Trotterization]], which approximates $e^{-iHt}$ with systematic error $O(\Delta t^p)$; qubitization is exact up to [[QPE]] approximation.
 ### From Hamiltonian to walk operator
-**Step $1$ - LCU decomposition**: express $H$ as **linear combination of unitaries (LCU)**:
+**Step $1$ - [[LCU]] decomposition**: express $H$ as **linear combination of unitaries ([[LCU]])**:
 $$H = \sum_{\ell=1}^{L} \alpha_\ell U_\ell, \quad \alpha_\ell > 0, \; U_\ell \text{ unitary}$$
 For molecular Hamiltonians: $U_\ell$ = Pauli strings, $\alpha_\ell$ = real coefficients. Define **1-norm** $\lambda = \sum_\ell \alpha_\ell$.
 **Step $2$ - PREP & SEL oracles**:
-- $\text{PREP}|0\rangle = \sum_\ell \sqrt{\alpha_\ell/\lambda}\,|\ell\rangle$ - prepares weighted superposition over LCU terms
+- $\text{PREP}|0\rangle = \sum_\ell \sqrt{\alpha_\ell/\lambda}\,|\ell\rangle$ - prepares weighted superposition over [[LCU]] terms
 - $\text{SEL} = \sum_\ell |\ell\rangle\!\langle\ell| \otimes U_\ell$ - applies $U_\ell$ to system register, controlled on index $|\ell\rangle$
 **Step $3$ - walk operator**:
 $$W = \bigl(2\,\text{PREP}\,\text{PREP}^\dagger - I\bigr)\cdot\text{SEL}$$
 $W$ is Szegedy-type walk on extended space $\mathcal{H}_{\text{anc}}\otimes\mathcal{H}_{\text{sys}}$.
-**Eigenphase relation**: if $H|E_j\rangle = E_j|E_j\rangle$, then $W$ has eigenvalues $e^{\pm i\arccos(E_j/\lambda)}$. Running [[QPE]] on $W$ $Q(W)$:
-$$\text{Q}(W) \;\longrightarrow\; \tilde\varphi_j \approx \frac{\arccos(E_j/\lambda)}{2\pi}$$
+**[[Eigenphase]] relation**: if $H|E_j\rangle = E_j|E_j\rangle$, then $W$ has eigenvalues $e^{\pm i\arccos(E_j/\lambda)}$. Running [[QPE]] on $W$ $Q(W)$: $$\text{Q}(W) \;\longrightarrow\; \tilde\varphi_j \approx \frac{\arccos(E_j/\lambda)}{2\pi}$$
 $$E_j = \lambda\cos(2\pi\tilde\varphi_j)$$
 
 | Method              | Circuit depth                                    | Error scaling            | Trotter error |

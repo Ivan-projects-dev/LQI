@@ -1,5 +1,5 @@
 #Algorithm #Q-Sharp [[QPE]] on $T$-Gate ($t = 10$ phase bits)
-[[QPE]] estimates the phase $\varphi = 1/8$ of T's eigenvalue. Requires $\sum_{k=0}^{9} 2^k = 1023$ apps of $T$.
+[[QPE]] estimates the phase $\varphi = 1/8$ of T's [[Eigenvalue]]. Requires $\sum_{k=0}^{9} 2^k = 1023$ apps of $T$.
 ```csharp
 import Std.Canon.*;
 

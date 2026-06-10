@@ -18,7 +18,7 @@ Let's rewrite the composite state as below to explicitly represent the effect of
 
 [[CNOT]] flips the state of the target qubit. After [[CNOT]], we have: $1√2|0⟩C⊗(1√2|0⟩−1√2|1⟩)T+1√2|1⟩C⊗(1√2|1⟩−1√2|0⟩)T$
 
-Remark that $|0⟩$ and $|1⟩$ are swapped in the $2nd$ term of above expression. If we write the [[Quantum state]] of the target qubit as before, the sign of $|1⟩$ in the control qubit should be flipped.
+Remark that $|0⟩$ & $|1⟩$ are swapped in the $2nd$ term of above expression. If we write the [[Quantum state]] of the target qubit as before, the sign of $|1⟩$ in the control qubit should be flipped.
 
 Thus the last equation can be equivalently written as follows: $1√2|0⟩C⊗(1√2|0⟩−1√2|1⟩)T−1√2|1⟩C⊗(1√2|0⟩−1√2|1⟩)T$
 

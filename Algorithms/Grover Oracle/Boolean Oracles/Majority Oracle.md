@@ -17,3 +17,5 @@ operation MarkMajority3(a : Qubit, b : Qubit, c : Qubit, target : Qubit) : Unit 
     // anc automatically uncomputed by within/apply
 }
 ```
+
+Source: [microsoft/QuantumKatas - SolveSATWithGrover/ReferenceImplementation.qs](https://github.com/microsoft/QuantumKatas/blob/main/SolveSATWithGrover/ReferenceImplementation.qs) (AND/OR primitives used to build majority; no direct official majority oracle)

@@ -31,7 +31,7 @@ print(circuit(np.pi / 2)) # should be  0.0  (superposition, Z = 0)
 ```
 If these are wrong, the circuit is wrong - fix it before touching optimization.
 ### Inspecting Circuit Structure
-`qml.draw()` & `qml.specs()` expose what the circuit actually contains - useful when the circuit is built programmatically and may not be what you think:
+`qml.draw()` & `qml.specs()` expose what the circuit actually contains - useful when the circuit is built programmatically & may not be what you think:
 ```python
 print(qml.draw(circuit)(0.5))     # ASCII diagram with parameter substituted
 print(qml.specs(circuit)(0.5))    # gate counts, depth, num_params

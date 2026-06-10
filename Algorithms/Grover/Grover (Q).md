@@ -44,6 +44,7 @@ function GroverIterationCount(n : Int, m : Int) : Int {
 When $M$ is unknown, try geometrically increasing iteration counts until solution is found:
 ```csharp
 import Std.Convert.*;
+
 operation RunGroverUnknownM(nQubits : Int, markingOracle : (Qubit[], Qubit) => Unit is Adj, classicalCheck: Int[] -> Bool) : Int[] { // verify solution classically
     mutable found = false;
     mutable solution = [];
@@ -112,3 +113,4 @@ operation Main() : Unit {
 | Gates / iteration   | O(n) + [[Oracle]] cost                  |
 | T-gates / diffusion | $O(n)$ [[Toffoli]] decomposition        |
 | Measurements        | $n$ (at the end)                        |
+Source: [microsoft/qsharp - Grover.qs](https://github.com/microsoft/qsharp/blob/main/samples/algorithms/Grover.qs) [Microsoft Learn - Grover's algorithm tutorial](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)

@@ -1,5 +1,5 @@
 #Q-Sharp 
-**Measurement** in Q# collapses qubit's superposition to classical `Result` value (`Zero` or `One`). After measurement, the qubit is in the corresponding eigenstate. All measurement operations are in `Std.Intrinsic` or `Std.Measurement`.
+**Measurement** in Q# collapses qubit's superposition to classical `Result` value (`Zero` or `One`). After measurement, the qubit is in the corresponding [[Eigenstate]]. All measurement operations are in `Std.Intrinsic` or `Std.Measurement`.
 
 **`M(q)` - Z-basis measurement**, measures qubit `q` in the [[Pauli-Z]] basis. Returns `Result`. Qubit collapses to $|0\rangle$ (`Zero`) or $|1\rangle$ (`One`).
 ```csharp

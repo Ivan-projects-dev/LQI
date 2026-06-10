@@ -1,7 +1,7 @@
 #Q-Sharp
 **`Std.Arrays`** is Q#'s standard array library.
 
-All examples below assume `import Std.Arrays.*;` (and `import Std.Convert.*;` for `IntAsDouble`). Import with `import Std.Arrays.*;`. Covers transformation, filtering, search, sort & combining of arrays. All funcs are pure classical - no quantum ops.
+All examples below assume `import Std.Arrays.*;` (& `import Std.Convert.*;` for `IntAsDouble`). Import with `import Std.Arrays.*;`. Covers transformation, filtering, search, sort & combining of arrays. All funcs are pure classical - no quantum ops.
 
 **Creation**
 ```csharp

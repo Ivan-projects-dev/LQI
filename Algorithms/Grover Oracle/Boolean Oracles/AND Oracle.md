@@ -1,15 +1,18 @@
 #Q-Sharp #Algorithm 
 Flip target iff $x_i = 1$ **and** $x_j = 1$. $2$-controlled $X$ ([[Toffoli]] gate):
 ```csharp
-operation MarkAND(register : Qubit[], target : Qubit, i : Int, j : Int) : Unit is Adj + Ctl {
-    CCNOT(register[i], register[j], target); // Toffoli
+// AND of two qubits: f(x) = x₀ ∧ x₁
+operation Oracle_And_2(queryRegister : Qubit[], target : Qubit) : Unit is Adj + Ctl {
+    CCNOT(queryRegister[0], queryRegister[1], target);
 }
 ```
 
-Generalized AND - flip target iff **all** bits in given index list are $|1\rangle$:
+Generalized AND - flip target iff **all** [[Qubits]] in register are $|1\rangle$:
 ```csharp
-operation MarkAllOnes(register : Qubit[], target : Qubit, indices : Int[]) : Unit is Adj + Ctl {
-    import Std.Arrays.*;
-    Controlled X(Mapped(i -> register[i], indices), target);
+// AND of all qubits: f(x) = x₀ ∧ x₁ ∧ … ∧ xₙ₋₁
+operation Oracle_And(queryRegister : Qubit[], target : Qubit) : Unit is Adj + Ctl {
+    Controlled X(queryRegister, target);
 }
 ```
+
+Source: [microsoft/QuantumKatas - GroversAlgorithm/ReferenceImplementation.qs (Task 1.1)](https://github.com/microsoft/QuantumKatas/blob/main/GroversAlgorithm/ReferenceImplementation.qs)

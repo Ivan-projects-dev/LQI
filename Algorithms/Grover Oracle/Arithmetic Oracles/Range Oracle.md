@@ -16,3 +16,5 @@ operation MarkInRange(register : Qubit[], target : Qubit, lo : Int, hi : Int) : 
     }
 }
 ```
+
+Source: [microsoft/QuantumKatas - SolveSATWithGrover/ReferenceImplementation.qs](https://github.com/microsoft/QuantumKatas/blob/main/SolveSATWithGrover/ReferenceImplementation.qs) (AND-of-two-conditions pattern; range oracle builds on `MarkGreaterThan`)

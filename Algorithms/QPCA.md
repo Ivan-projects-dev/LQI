@@ -29,6 +29,6 @@ QPCA is most naturally suited to **natively quantum data** (e.g., quantum states
 | ----------------- | --------------------------------------- | ---------------------------------- |
 | Financial Fraud | NISQ hardware noise; QRAM required | Research-stage only |
 | Drug Discovery | Limited to low-rank molecular systems | Hybrid classical-quantum workflows |
-| Image Recognition | State preparation overhead dominates | No demonstrated advantage |
+| Image Recognition | [[State preparation]] overhead dominates | No demonstrated advantage |
 
 **Further reading:** Lloyd, Mohseni & Rebentrost, "Quantum principal component analysis," Nature Physics 10 (2014); Tang, "A quantum-inspired classical algorithm for recommendation systems," STOC 2019.

@@ -12,7 +12,6 @@ Device choice in [[PennyLane]] determines what gradient methods work, what measu
 - $10$–$100\times$ faster than `default.qubit` for $20+$ qubit circuits
 - Required for `@qml.qjit` JIT compilation (Catalyst)
 - Does **not** support `diff_method="backprop"` - use `diff_method="adjoint"` instead (equally fast, hardware-compatible)
-- Install separately: `pip install [[PennyLane]]-lightning`
 - Use for: performance-sensitive simulation, large circuits, any workflow using `@qjit`
 
 **`default.mixed`** - mixed-state simulator. Tracks full density [[Matrix]] including noise.

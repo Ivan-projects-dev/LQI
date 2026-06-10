@@ -40,7 +40,7 @@ Data covering [[QNN]], [[FTQC]], physics, gates, usage, math concepts etc. was t
 - [Shor 1994: Algorithms for quantum computation - discrete logarithms & factoring](https://arxiv.org/abs/quant-ph/9508027)
 - [Beauregard 2002: Circuit for Shor's algorithm using 2n+3 qubits](https://arxiv.org/abs/quant-ph/0205095)
 - [Griffiths & Niu 1996: Semiclassical Fourier transform for quantum computation](https://arxiv.org/abs/quant-ph/9511007)
-- [Ekerå & Håstad 2017: Quantum algorithms for computing short discrete logarithms & factoring RSA integers](https://arxiv.org/abs/1702.01636)
+- [Ekerå & Håstad 2017: Quantum algorithms for computing short discrete logarithms & factoring RSA ints](https://arxiv.org/abs/1702.01636)
 - [Ekerå 2021: Revisiting Shor's quantum algorithm for computing general discrete logarithms](https://arxiv.org/abs/1905.09571)
 - [Roetteler, Naehrig, Svore & Lauter 2017: Quantum resource estimates for computing elliptic curve discrete logarithms](https://arxiv.org/abs/1706.06752)
 - [Hallgren 2002: Polynomial-time quantum algorithms for Pell's equation & the principal ideal problem](https://arxiv.org/abs/quant-ph/0207120)
@@ -80,7 +80,7 @@ Data covering [[QNN]], [[FTQC]], physics, gates, usage, math concepts etc. was t
 - [Improving QPE Runtime via Basis Set Optimization (JCTC 2025)](https://pubs.acs.org/doi/10.1021/acs.jctc.5c01512)
 - [Efficient LCU block encodings through Dicke states (Jul 2025)](https://arxiv.org/abs/2507.20887)
 - [IBM Quantum Learning: Quantum chemistry](https://learning.quantum.ibm.com/course/quantum-chemistry-with-vqe)
-### [[Early FTQC]] & [[QPE usage]]
+### [[Early FTQC]] & [[QPE subroutine]]
 - [Assessment of QPE protocols for early FTQC (2024)](https://arxiv.org/abs/2403.00077)
 - [Early FTQC QPE in Practice - Quantum journal (Apr 2025)](https://quantum-journal.org/papers/q-2025-04-01-1682/)
 - [Enabling Chemically Accurate QPE in the Early Fault-Tolerant Regime (Mar 2026)](https://arxiv.org/html/2603.22778v1)
@@ -202,4 +202,14 @@ Data covering [[QNN]], [[FTQC]], physics, gates, usage, math concepts etc. was t
 ### [[qBraid]]
 - [qBraid Platform](https://www.qbraid.com)
 - [qBraid SDK GitHub](https://github.com/qBraid/qBraid)
+---
+### [[QPE Chemistry (Py)]], [[QPE Optimization (Py)]], [[QPE Walks (Py)]], [[Platform Quick Start]]
+- [PennyLane: IsingZZ gate](https://docs.pennylane.ai/en/stable/code/api/pennylane.IsingZZ.html)
+- [PennyLane: ctrl transform](https://docs.pennylane.ai/en/stable/code/api/pennylane.ctrl.html)
+- [PennyLane: QFT](https://docs.pennylane.ai/en/stable/code/api/pennylane.QFT.html)
+- [IBM Quantum: Getting started](https://docs.quantum.ibm.com/guides/get-started-with-primitives)
+- [Amazon Braket: Getting started (LocalSimulator)](https://docs.aws.amazon.com/braket/latest/developerguide/braket-get-started-hello-ahs.html)
+- [Azure Quantum: Submit jobs (Python)](https://learn.microsoft.com/en-us/azure/quantum/how-to-submit-jobs)
+- [D-Wave: Leap quickstart](https://docs.ocean.dwavesys.com/en/stable/getting_started.html)
+- [qBraid Lab](https://lab.qbraid.com)
 

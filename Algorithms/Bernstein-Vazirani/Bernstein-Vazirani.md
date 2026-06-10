@@ -1,12 +1,12 @@
 #Algorithm #Math 
-Let $x⋅s$ represent the inner product of the bit strings modulo $2$. For instance if $x=1000$ and $s=1010$, then $$x⋅s=1⋅1+0⋅0+0⋅1+0⋅0=1(mod2)=1$$Given [[Oracle]] $f:{0,1}n→{0,1}$, which is defined as $f(x)=x⋅s$, find the secret string (sequence of bits) $s$.
+Let $x⋅s$ represent the inner product of the bit strings modulo $2$. For instance if $x=1000$ & $s=1010$, then $$x⋅s=1⋅1+0⋅0+0⋅1+0⋅0=1(mod2)=1$$Given [[Oracle]] $f:{0,1}n→{0,1}$, which is defined as $f(x)=x⋅s$, find the secret string (sequence of bits) $s$.
 
 This might come across as bit of artificially created problem, because it is. It was specifically designed to be solved using quantum computer in order to show there can be advantages in using quantum algorithms over probabilistic algorithms.
 
-Let's start by giving an example of such an $f$. $$f(00)=0f(01)=1f(10)=0f(11)=1$$In this example, $s$ is $01$, as $$f(00)=00⋅01=0, f(01)=01⋅01=1, f(10)=10⋅01=0 & f(11)=11⋅01=1$$Note that now the [[Unitary operator]] $U_f$ takes the following form: $$U_f:|x⟩|y⟩↦|x⟩|y⊕(x⋅s)⟩$$We use exactly the same algorithm as [[Deutsch-Jozsa]].
+Let's start by giving example of such $f$. $$f(00)=0f(01)=1f(10)=0f(11)=1$$In this example, $s$ is $01$, as $$f(00)=00⋅01=0, f(01)=01⋅01=1, f(10)=10⋅01=0 & f(11)=11⋅01=1$$Note that now the [[Unitary operator]] $U_f$ takes the following form: $$U_f:|x⟩|y⟩↦|x⟩|y⊕(x⋅s)⟩$$We use exactly the same algorithm as [[Deutsch-Jozsa]].
 
 We construct circuit with $n+1$ [[Qubits]].
-- Set the $n+1$'st qubit to state $|−⟩$ by applying $X$ and $H$ gates.
+- Set the $n+1$'st qubit to state $|−⟩$ by applying $X$ & $H$ gates.
 - Apply $H$ to first $n$ [[Qubits]].
 - Apply $U_f$.
 - Apply $H$ to first $n$ [[Qubits]].

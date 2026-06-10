@@ -1,5 +1,5 @@
 #Q-Sharp 
-**Q# STL** has built-in namespaces that contain funcs & operations you can use in quantum programs. For example, the `Std.Intrinsic` namespace contains commonly used operations & funcs, such as `M` to measure results and `Message` to display user messages anywhere in the program.
+**Q# STL** has built-in namespaces that contain funcs & operations you can use in quantum programs. For example, the `Std.Intrinsic` namespace contains commonly used operations & funcs, such as `M` to measure results & `Message` to display user messages anywhere in the program.
 
 To call func or operation, you can specify the full namespace or use an `import` statement, which makes all the funcs & operations for that namespace available & makes your code $>$ readable. Following examples call the same operation:
 ```c#
@@ -15,7 +15,7 @@ Message("Hello quantum world!");
 import Std.Intrinsic.Message;
 Message("Hello quantum world!");
 ```
-`Superposition` program doesn't have any `import` statements or calls with full namespaces. That's because the Q# dev env automatically loads $2$ namespaces, `Std.Core` and `Std.Intrinsic`, which contain commonly used funcs & operations.
+`Superposition` program doesn't have any `import` statements or calls with full namespaces. That's because the Q# dev env automatically loads $2$ namespaces, `Std.Core` & `Std.Intrinsic`, which contain commonly used funcs & operations.
 
 You can take advantage of the `Std.Measurement` namespace by using the `MResetZ` operation to optimize the `Superposition` program. `MResetZ` combines the measurement & [[Set operations|Set operations]] into $1$ step, as in the following example:
 ```C#

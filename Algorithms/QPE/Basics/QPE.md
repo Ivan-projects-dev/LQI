@@ -5,7 +5,7 @@ $\varphi$ is unknown; QPE extracts it using inverse QFT on control register.
 
 **Qubit layout**:
 - $t$ **phase (control) [[Qubits]]** - store the estimate of $\varphi$ after inverse QFT. Precision: $\varphi$ accurate to $\pm 2^{-t}$ with high probability.
-- $s$ **eigenstate [[Qubits]]** - hold $|u\rangle$ (the target register).
+- $s$ **[[Eigenstate]] [[Qubits]]** - hold $|u\rangle$ (the target register).
 
 **Circuit - $3$ stages**:
 1. **Superposition**: apply $H^{\otimes t}$ to all $t$ control [[Qubits]]:
@@ -24,7 +24,7 @@ If $2^t\varphi$ is exact int: $P(\tilde{\varphi}) = 1$. Otherwise, the correct $
 | Resource              | Complexity                          |
 | --------------------- | ----------------------------------- |
 | Control [[Qubits]]    | $t$                                 |
-| Eigenstate [[Qubits]] | $s$                                 |
+| [[Eigenstate]] [[Qubits]] | $s$                                 |
 | $U$ apps              | $2^t - 1$                           |
 | QFT$^\dagger$ gates   | $O(t^2)$                            |
 | Total gates           | $O(2^t \cdot \text{cost}(U) + t^2)$ |

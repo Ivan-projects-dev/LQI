@@ -10,3 +10,5 @@ operation MarkNotEquals(register : Qubit[], target : Qubit, x0 : Int) : Unit is 
     ControlledOnInt(x0, X)(register, target); // unflip for the excluded value
 }
 ```
+
+Source: [microsoft/QuantumKatas - GroversAlgorithm/ReferenceImplementation.qs](https://github.com/microsoft/QuantumKatas/blob/main/GroversAlgorithm/ReferenceImplementation.qs) (NOT of `Oracle_ArbitraryPattern`; no direct official inequality oracle)

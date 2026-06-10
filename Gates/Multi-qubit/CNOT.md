@@ -16,14 +16,14 @@ I & 0 \\
 0 & M
 \end{pmatrix}$$
 By definition:
-- when the $1st$ bit is $0$, the identity is applied to the $2nd$ bit, and
+- when the $1st$ bit is $0$, the identity is applied to the $2nd$ bit, &
 - when the $1st$ bit is $1$, the operator $M$ is applied to the $2nd$ bit.
 
 Here we observe that the [[Matrix]] CM has nice form because the $1st$ bit is control bit. 
 
 [[Matrix]] CM given above is divided into $4$ sub-matrices based on the states of the $1st$ bit. Then, we can follow that
 - the value of the $1st$ bit never changes, & so the off diagonal sub-matrices are $0$s;
-- when the $1st$ bit is $0$, the identity is applied to the $2nd$ bit, & so top-left [[Matrix]] is $I$; and,
+- when the $1st$ bit is $0$, the identity is applied to the $2nd$ bit, & so top-left [[Matrix]] is $I$; &,
 - when the $1st$ bit is $1$, the operator $M$ is applied to the $2nd$ bit, & so the bottom-right [[Matrix]] is $M$.
 
 For given single bit operator $M$, **how can we obtain the following operator** by using the operator $CM$? $$C_0M=\begin{pmatrix}M & 0 \\0 & I\end{pmatrix}$$Controlled operator defined to be triggered when the control bit is in state $1$. In this example, we expect it to be triggered when the control bit is in state $0$.

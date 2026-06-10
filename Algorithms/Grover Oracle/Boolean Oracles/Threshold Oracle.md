@@ -24,3 +24,5 @@ operation MarkAtLeastK(register : Qubit[], target : Qubit, k : Int) : Unit is Ad
 }
 ```
 Note: `IncrementLE` is little-endian quantum increment from `Std.Arithmetic`. For large $n$, replace the loop with proper quantum adder tree.
+
+Source: [microsoft/QuantumKatas - SolveSATWithGrover/ReferenceImplementation.qs](https://github.com/microsoft/QuantumKatas/blob/main/SolveSATWithGrover/ReferenceImplementation.qs) (AND/OR/ancilla patterns; no direct official threshold oracle)

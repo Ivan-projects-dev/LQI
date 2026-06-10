@@ -24,3 +24,6 @@ operation QPEOracle(k : Int, control : Qubit, eigenstate : Qubit) : Unit is Adj 
     Controlled U([control], eigenstate);
 }
 ```
+
+Source: [microsoft/qsharp - PhaseEstimation.qs](https://github.com/microsoft/qsharp/blob/main/samples/algorithms/PhaseEstimation.qs) (`ApplyOperationPowerCA` pattern for $U^{2^k}$)
+```

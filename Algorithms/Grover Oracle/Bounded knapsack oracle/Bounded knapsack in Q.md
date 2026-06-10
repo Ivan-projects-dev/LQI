@@ -163,3 +163,6 @@ operation OptimizeKnapsack(weights : Int[], values : Int[], capacity : Int) : In
     return best;
 }
 ```
+
+Source: [microsoft/QuantumKatas - SolveSATWithGrover/ReferenceImplementation.qs](https://github.com/microsoft/QuantumKatas/blob/main/SolveSATWithGrover/ReferenceImplementation.qs) (multi-oracle AND composition pattern, phase kickback wrapper, Grover loop); quantum adder circuits: Draper QFT adder or Cuccaro ripple-carry from `Std.Arithmetic`
+```

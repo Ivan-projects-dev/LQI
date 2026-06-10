@@ -1,7 +1,7 @@
 #Math #Algorithm 
 **Quadratic Unconstrained Binary Optimization (QUBO) problem** is defined using $n×n$ [[Matrix]] $Q$ & [[Vector]] $x∈{0,1}n$ where,
 - $Q$ is assumed to be either symmetric or in upper-triangular form. For ease of use, we will work with $Q$ in its upper-triangular form.
-- $x$ is  [[Vector]] of binary variables $0$ and $1$
+- $x$ is  [[Vector]] of binary variables $0$ & $1$
 
 Our aim is to minimize the **objective func** defined as $$f(x)=∑_iQ_i,ix_i+∑i<jQ_i,jx_ix_j$$
 where,

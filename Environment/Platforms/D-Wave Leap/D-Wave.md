@@ -1,5 +1,5 @@
 #SoftDev #Python
-**D-Wave Leap** (`cloud.dwavesys.com`) is D-Wave's real-time quantum cloud service providing access to **[[Quantum annealing]]** processors. Unlike gate-model platforms, D-Wave uses **adiabatic quantum optimization** - best suited for combinatorial optimization, sampling, & constraint satisfaction problems, not general quantum circuits.
+**D-Wave Leap** (`cloud.dwavesys.com`) is D-Wave's real-time quantum cloud service providing access to **[[Quantum annealing]]** processors. Unlike gate-model platforms, D-Wave uses **[[Adiabatic Quantum Optimization]]** - best suited for combinatorial optimization, sampling, & constraint satisfaction problems, not general quantum circuits.
 - **Leap Quantum LaunchPad** (announced Jan $2025$) - $3$-month free program for qualified startups, researchers, & enterprises. Includes:
   - Full QPU access (Advantage2 system)
   - Access to **hybrid solvers** (classical + quantum combination)

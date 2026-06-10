@@ -33,3 +33,6 @@ operation MarkAOrB(register : Qubit[], target : Qubit,
     }
 }
 ```
+
+Source: [microsoft/QuantumKatas - SolveSATWithGrover/ReferenceImplementation.qs (Tasks 1.5–1.6)](https://github.com/microsoft/QuantumKatas/blob/main/SolveSATWithGrover/ReferenceImplementation.qs)
+```

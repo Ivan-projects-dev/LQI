@@ -58,3 +58,5 @@ operation RunDJ() : Unit {
 }
 ```
 $O(1)$ for [[Oracle]] queries. This algorithm is $1st$ proof that quantum computers can solve problem faster than any classical algorithm.
+
+Source: [microsoft/qsharp - DeutschJozsa.qs](https://github.com/microsoft/qsharp/blob/main/samples/algorithms/DeutschJozsa.qs)
