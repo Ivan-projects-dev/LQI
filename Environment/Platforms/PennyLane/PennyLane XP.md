@@ -22,3 +22,5 @@ Use `shots ≥ 512` for training, `shots ≥ 4096` for final evaluation.
 **`qml.state()` mid-circuit inspection is awkward.** You cannot check state at intermediate point without restructuring the circuit into $2$ separate QNodes. There is no `save_statevector` equivalent. Plan the circuit before building, verify against known inputs at boundary parameter values ($0$, $\pi/2$, $\pi$).
 
 **`lightning.qubit` required for JIT.** `@qml.qjit` compiles the training loop to native code ($10$–$100\times$ speedup), but requires `lightning.qubit` or `lightning.gpu` - not `default.qubit`.
+
+Source: [PennyLane documentation](https://docs.pennylane.ai/) [PennyLane — GitHub](https://github.com/PennyLaneAI/pennylane)

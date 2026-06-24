@@ -87,3 +87,5 @@ def circuit():
 | Qiskit name | `h` |
 | [[PennyLane]] name | `qml.Hadamard` |
 | [[T gate]] count | $0$ (Clifford gate) |
+
+Source: [Microsoft.Quantum.Intrinsic.H — MS Learn](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic/h) [HGate — Qiskit](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.HGate)

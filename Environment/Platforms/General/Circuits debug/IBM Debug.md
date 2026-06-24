@@ -53,3 +53,5 @@ for gate in props.gates:
                 print(f"CX({gate.qubits}): error={param.value:.4f}")
 ```
 This tells you which qubit pairs have the lowest [[CNOT]] error right now. If you have flexibility in which [[Qubits]] to use, pick the best ones. Calibration data refreshes every few hours.
+
+Source: [Qiskit documentation](https://docs.quantum.ibm.com/)

@@ -61,7 +61,7 @@ Arithmetic operators (`+`, `*`, etc.) are **not** generic in Q#. A func `func Ad
 
 Qubit arrays work with generic operations because `Qubit` satisfies the `'T => Unit` call shape, but `Qubit` values themselves cannot be compared, copied, or stored generically.
 
-**Multiple type params**: Callable can have $>1$ type parameter:
+**Multiple type params**: Callable can have more than $1$ type parameter:
 ```csharp
 function Pair<'A, 'B>(a : 'A, b : 'B) : ('A, 'B) {
     return (a, b);

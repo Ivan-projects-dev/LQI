@@ -57,3 +57,5 @@ task = device.run(circuit, shots=100,
 **QuEra Aquila is not gate-based.** Aquila programs neutral-atom arrays by specifying atom positions & laser drive waveforms via `AnalogHamiltonianSimulation`. It is analog quantum simulator optimized for many-body physics problems, not circuit-model algorithms.
 
 **Cross-provider comparison is Bracket's unique strength.** Same `Circuit` object (with minor adaptation) can run on [[IonQ]] trapped ions, [[Rigetti]] superconducting [[Qubits]], & IQM superconducting [[Qubits]]. Comparing error profiles, gate fidelities, & measurement distributions across hardware teaches intuitions that no single platform can.
+
+Source: [Amazon Braket documentation](https://docs.aws.amazon.com/braket/) [amazon-braket-sdk-python — GitHub](https://github.com/amazon-braket/amazon-braket-sdk-python)

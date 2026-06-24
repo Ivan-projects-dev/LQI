@@ -45,3 +45,5 @@ init(target_profile=TargetProfile.Adaptive_RI)
 ```
 ### Common Failure Pattern
 Write code under `Unrestricted` (local sim), deploy to [[IonQ]] (`Base`), get compile error. Fix is always the same: remove all `if M(q) == ...` branching from the circuit body & move to post-processing. If mid-circuit measurement is required, switch to [[Quantinuum]] (`Adaptive RI`).
+
+Source: [Target profiles — Azure Quantum MS Learn](https://learn.microsoft.com/en-us/azure/quantum/compiler-target-profiles)

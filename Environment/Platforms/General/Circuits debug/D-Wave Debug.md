@@ -43,3 +43,5 @@ embedding = find_embedding(list(Q.keys()), sampler.edgelist)
 print("Longest chain:", max(len(v) for v in embedding.values()))
 ```
 Chains longer than $5$ physical [[Qubits]] break frequently. If your problem produces long chains, reduce variable connectivity in the [[QUBO]] or use `LeapHybridSampler` which handles dense problems without manual embedding.
+
+Source: [D-Wave Ocean SDK documentation](https://docs.ocean.dwavesys.com/en/stable/)

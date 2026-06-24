@@ -17,3 +17,5 @@ print(f"Average CX error: {avg:.4f}")
 print(f"Backend: {backend.name}")
 ```
 If average CX error is $>0.02$ ($2\%$), consider waiting for recalibration or choosing different backend.
+
+Source: [Qiskit documentation](https://docs.quantum.ibm.com/)

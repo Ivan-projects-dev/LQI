@@ -38,3 +38,5 @@ Browser-based JupyterLab with:
 **JupyterLab env has preinstalled SDKs.** qBraid cloud env comes with Qiskit, Cirq, Braket, [[PennyLane]], & others preconfigured. This is useful for short experiments without local setup overhead.
 
 **Free tier is resource-limited.** The free plan limits compute time per session. For serious variational algorithm work ([[VQE]], [[QAOA]] optimization loops), local dev or paid tier is $>$ practical.
+
+Source: [qBraid documentation](https://docs.qbraid.com/) [qBraid — GitHub](https://github.com/qBraid/qBraid)

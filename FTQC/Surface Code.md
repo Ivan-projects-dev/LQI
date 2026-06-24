@@ -31,3 +31,5 @@ where $p$ = physical error rate, $p_{th} ≈ 1$%, & $p_L =$ logical error rate. 
 | Steane $[7,1,3]$  | $7$                         | $~10^{-4}$        | Limited        |
 | **Surface code**  | $~2d^2$                     | $~1$%             | Yes            |
 | Floquet code      | similar                     | similar           | Emerging       |
+
+Source: [Fowler et al. 2012 — Surface codes (arXiv)](https://arxiv.org/abs/1208.0928) [Google Quantum AI — Willow chip Nature 2024](https://www.nature.com/articles/s41586-024-08449-y) [Surface code — MS Learn](https://learn.microsoft.com/en-us/azure/quantum/concepts-the-code-space)

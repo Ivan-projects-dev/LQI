@@ -19,3 +19,5 @@ Usually means the circuit contains gate the selected device doesn't support. Che
 device = AwsDevice("arn:aws:braket:...")
 print(device.properties.action['braket.ir.openqasm.program'].supportedOperations)
 ```
+
+Source: [Amazon Braket documentation](https://docs.aws.amazon.com/braket/)

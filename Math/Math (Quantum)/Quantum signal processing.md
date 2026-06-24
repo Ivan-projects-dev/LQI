@@ -54,3 +54,5 @@ This is **optimal** - any quantum algorithm computing $p(H)$ requires $\Omega(d)
 qml.QSVT(block_encoded_op, projectors, phase_angles)
 ```
 See `[[PennyLane]].ai/qml/demos/tutorial_intro_qsvt` for worked examples.
+
+Source: [Martyn et al. — "Grand Unification of Quantum Algorithms" (2021)](https://arxiv.org/abs/2105.02859) [pyqsp — GitHub](https://github.com/ichuang/pyqsp)

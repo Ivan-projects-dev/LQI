@@ -26,3 +26,5 @@ embedding = find_embedding(Q, sampler.edgelist)
 cached = FixedEmbeddingComposite(sampler, embedding)
 # now cached.sample_qubo(Q) reuses the same embedding every time
 ```
+
+Source: [D-Wave Ocean SDK documentation](https://docs.ocean.dwavesys.com/en/stable/)

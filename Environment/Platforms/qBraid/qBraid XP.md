@@ -18,3 +18,5 @@ print(braket_circuit)  # verify before running
 **Free tier is compute-limited for training loops.** Free plan limits session compute time. [[VQE]] or [[QAOA]] optimization ($200+$ circuit evaluations) will hit the limit. Use local dev for heavy training; use [[qBraid]] for final multi-hardware comparison runs.
 
 [[qBraid]]'s actual value: you have circuit in Qiskit & want to run it on [[IonQ]], [[Rigetti]], [[PASQAL]], & IQM without maintaining $4$ separate SDK setups & accounts. Unified access & automatic transpilation save significant boilerplate. For any single-platform work, your primary platform's native tooling is better.
+
+Source: [qBraid documentation](https://docs.qbraid.com/)

@@ -13,3 +13,6 @@ with prog.context as q:
 eng = sf.Engine("fock", backend_options={"cutoff_dim": 5})
 result = eng.run(prog)
 ```
+
+Source: [Strawberry Fields documentation](https://strawberryfields.ai/photonics/introduction/index.html) [XanaduAI/strawberryfields — GitHub](https://github.com/XanaduAI/strawberryfields)
+```

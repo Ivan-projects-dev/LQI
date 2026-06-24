@@ -19,3 +19,5 @@ print(result.first.sample) # dict of node: 0 or 1 (which partition)
 ```
 `LeapHybridSampler` combines QPU + classical heuristics. For real problems, it almost always outperforms raw QPU access & handles much larger variable counts.
 
+Source: [D-Wave Ocean SDK documentation](https://docs.ocean.dwavesys.com/en/stable/) [dwave-examples — GitHub](https://github.com/dwave-examples)
+

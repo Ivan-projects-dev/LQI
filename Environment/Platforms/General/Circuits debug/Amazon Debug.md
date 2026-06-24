@@ -30,3 +30,5 @@ result = dm1.run(circuit, shots=1000).result()
 print(result.measurement_counts)
 ```
 If `LocalSimulator` gives correct distribution & `DM1` degrades it, noise is the issue - reduce circuit depth. If `LocalSimulator` already gives wrong distribution, fix the logic first.
+
+Source: [Amazon Braket documentation](https://docs.aws.amazon.com/braket/)

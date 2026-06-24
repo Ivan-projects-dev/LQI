@@ -39,3 +39,5 @@ OpenQASM $3.0$ & QIR serve complementary roles:
 - **QIR** - binary compilation target (LLVM bitcode) for hardware execution
 
 QDK accepts OpenQASM $3$ source, compiles to QIR, & submits to any provider backend - bridging the $2$ formats.
+
+Source: [OpenQASM 3 specification](https://openqasm.com/) [Qiskit OpenQASM — documentation](https://docs.quantum.ibm.com/guides/interoperate-qiskit-qasm3)

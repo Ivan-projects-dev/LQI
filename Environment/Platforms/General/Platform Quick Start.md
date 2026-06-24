@@ -170,3 +170,5 @@ Free tier: unlimited JupyterLab sessions, no QPU credits included. Best for tryi
 | `qpe_walk.py` | [[PennyLane]] local or IBM FakeBackend | Simulator only |
 | [[QPE]] on real hardware | [[IBM Quantum]] (ibm_kingston) | Free QPU access, 10 min/month |
 | Full [[Shor]] factoring | Azure [[QRE]] first | Understand resource cost before hardware |
+
+Source: [Qiskit documentation](https://docs.quantum.ibm.com/) [Amazon Braket documentation](https://docs.aws.amazon.com/braket/) [Azure Quantum — MS Learn](https://learn.microsoft.com/en-us/azure/quantum/) [D-Wave Ocean SDK](https://docs.ocean.dwavesys.com/) [PennyLane documentation](https://docs.pennylane.ai/)

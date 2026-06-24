@@ -33,3 +33,5 @@ operation GroverEstimate() : Unit {
 | `codeDistance`   | $13-17$            |
 With $1024$ iterations & $~100$ T-gates/controlled $X$, total $T$-count is $~10^5$. This is what 'quadratic speedup' costs in physical resources.
 
+Source: [Azure Quantum Resource Estimator — MS Learn](https://learn.microsoft.com/en-us/azure/quantum/intro-to-resource-estimation)
+

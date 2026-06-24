@@ -9,4 +9,4 @@ Bayesian classifiers use Bayes theorem, which says $$p (c_j | d) = (p (d | c_j) 
 	• $p (d)$ can be ignored since it is the same for all classes 
 To simplify the task, **naïve Bayesian classifiers** assume attrs have independent distributions, & thereby estimate $p (d | c_j) = p (d_1 | c_j) * p (d_2 | c_j) * ….* (p (d_n | c_j)$
 • Each of the $p (d_i | c_j)$ can be estimated from a histogram on di values for each class $c_j$ - the histogram is computed from the training instances.
-Histograms on multiple attrs are $>$ expensive to compute & store.
+Histograms on multiple attrs are more expensive to compute & store.

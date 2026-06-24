@@ -77,3 +77,5 @@ qml.CZ(wires=[0, 1])
 | Q# name | `Z` |
 | Qiskit name | `z` |
 | [[PennyLane]] name | `qml.PauliZ` |
+
+Source: [Microsoft.Quantum.Intrinsic.Z — MS Learn](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic/z) [ZGate — Qiskit](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.ZGate)

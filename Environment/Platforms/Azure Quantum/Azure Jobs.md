@@ -34,3 +34,5 @@ job.wait_until_completed()
 results = job.get_results() # returns dict of bitstring -> count
 ```
 Cancel a queued job: `job.cancel()`. Jobs in `Executing` state cannot be cancelled. Cost estimate is displayed via `target.estimate_cost(circuit, shots=N)` before submission.
+
+Source: [Job management — Azure Quantum MS Learn](https://learn.microsoft.com/en-us/azure/quantum/how-to-work-with-jobs)

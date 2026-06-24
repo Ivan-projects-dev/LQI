@@ -26,4 +26,6 @@ Braket's unique strength: the same `Circuit` object runs on [[IonQ]] (trapped io
 
 **Billing escalates quickly on trapped-ion devices.** [[IonQ]] Forte & Aria are priced per gate-shot - deep circuits at high shot counts get expensive fast. Use Braket primarily to run final experiments you've already verified on simulators, not for exploratory debugging.
 
+Source: [Amazon Braket documentation](https://docs.aws.amazon.com/braket/) [amazon-braket-sdk-python — GitHub](https://github.com/amazon-braket/amazon-braket-sdk-python)
+
 **Less learning material than IBM or [[PennyLane]].** Braket's documentation covers SDK usage well but has fewer algorithm tutorials & worked examples compared to [[IBM Quantum]] Learning or [[PennyLane]]'s demo gallery.

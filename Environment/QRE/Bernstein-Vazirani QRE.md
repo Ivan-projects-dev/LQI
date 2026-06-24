@@ -29,3 +29,5 @@ operation BVEstimate() : Unit {
 | `runtime`        | microseconds      |
 | `codeDistance`   | $5-7$             |
 $0$ T-gates means $0$ T-factory overhead. BV is baseline test any near-term device can run.
+
+Source: [Azure Quantum Resource Estimator — MS Learn](https://learn.microsoft.com/en-us/azure/quantum/intro-to-resource-estimation)

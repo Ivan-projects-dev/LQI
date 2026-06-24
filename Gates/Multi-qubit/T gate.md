@@ -79,3 +79,5 @@ qml.S(wires=0)
 | Q# name            | `T`                                                   |
 | Qiskit name        | `t`                                                   |
 | [[PennyLane]] name | `qml.T`                                               |
+
+Source: [Microsoft.Quantum.Intrinsic.T — MS Learn](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic/t) [TGate — Qiskit](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.TGate)

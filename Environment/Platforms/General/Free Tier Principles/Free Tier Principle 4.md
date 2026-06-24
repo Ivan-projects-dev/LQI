@@ -16,3 +16,5 @@ service = QiskitRuntimeService()
 backends = service.backends(filters=lambda b: b.num_qubits >= 5 & b.num_qubits <= 10 & b.status().operational)
 backend = min(backends, key=lambda b: b.status().pending_jobs)
 ```
+
+Source: [Qiskit documentation](https://docs.quantum.ibm.com/)

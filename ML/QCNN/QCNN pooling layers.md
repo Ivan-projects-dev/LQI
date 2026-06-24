@@ -11,7 +11,7 @@ Directly discarding [[Qubits]] is nontrivial since quantum operations are unitar
 
 One way to **reduce the qubit count** in a quantum circuit is to **pair up** the $N$ [[Qubits]]. Each pair undergoes a **generalized 2-qubit unitary**, effectively merging the info from both [[Qubits]] into the $2nd$ qubit. The **first qubit** in each pair is then **ignored** for the rest of the network (no further gates or measurements apply to it).
 
-This approach mimics Pooling by **"combining"** $2$ [[Qubits]]' info into one, thereby cutting the circuit size from $N$ to $N/2$. alternative involves **dynamic circuits**, where measuring certain [[Qubits]] mid-circuit & feeding back measurement outcomes can also reduce the dimensionality. Either way, the goal is to **discard [[Qubits]]** that hold < essential info while preserving crucial features.
+This approach mimics Pooling by **"combining"** $2$ [[Qubits]]' info into one, thereby cutting the circuit size from $N$ to $N/2$. alternative involves **dynamic circuits**, where measuring certain [[Qubits]] mid-circuit & feeding back measurement outcomes can also reduce the dimensionality. Either way, the goal is to **discard [[Qubits]]** that hold less essential info while preserving crucial features.
 
 Below is example showing how a $2$-qubit unitary can merge the state onto Quantum states, discarding the other:
 ![[Pasted image 20260101210022.png]]

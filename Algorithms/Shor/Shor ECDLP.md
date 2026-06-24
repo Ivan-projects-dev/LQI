@@ -6,7 +6,7 @@
 
 **Algorithm:** Same $2D$ [[QPE]] structure as [[Shor]] DLP, with the [[Oracle]] computing **elliptic curve point multiplication** $Q \cdot a$ & $P \cdot (-b)$ in superposition.
 
-[[Oracle]] replaces modular multiplication with point addition on the curve. Circuit for controlled point addition is $>$ complex than controlled modular multiplication - it requires arithmetic in $\mathbb{F}_p$ (field arithmetic: modular add, multiply, invert) to implement the group law.
+[[Oracle]] replaces modular multiplication with point addition on the curve. Circuit for controlled point addition is more complex than controlled modular multiplication - it requires arithmetic in $\mathbb{F}_p$ (field arithmetic: modular add, multiply, invert) to implement the group law.
 
 **Resource comparison at $128$-bit classical security:**
 

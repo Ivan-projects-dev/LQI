@@ -30,3 +30,5 @@ pip install pennylane-lightning[gpu]
 # also needs CUDA toolkit installed
 ```
 Fall back to `lightning.qubit` (CPU, still faster than `default.qubit`) if GPU unavailable.
+
+Source: [PennyLane documentation](https://docs.pennylane.ai/)

@@ -26,3 +26,5 @@ Most people don't know these exist & go straight to the QPU.
 
 **Qubit quality varies.** Not all [[Qubits]] on device have equal error rates. 
 `backend.properties()` gives live calibration data. For $2$-qubit experiments, pick the qubit pair with the best [[CNOT]] error. `layout` argument in `transpile()` lets you specify which physical [[Qubits]] to use.
+
+Source: [Qiskit documentation](https://docs.quantum.ibm.com/) [IBM Quantum Platform](https://quantum.cloud.ibm.com/)

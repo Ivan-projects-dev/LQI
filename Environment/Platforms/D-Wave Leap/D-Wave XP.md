@@ -34,3 +34,5 @@ Getting the balance right is the central skill & the main reason [[D-Wave]] prob
 **Dense problem graphs produce long chains.** Fully connected problems ($K_n$ graphs) require each logical variable to be represented as chain of multiple physical [[Qubits]]. Chains longer than $5$ are fragile. For dense problems, use `LeapHybridSampler` which handles them natively without manual embedding.
 
 **Free tier time is limited.** [[D-Wave]]'s free Leap allocation covers small experiments. Serious optimization problems with hundreds of variables require credits or academic access.
+
+Source: [D-Wave Ocean SDK documentation](https://docs.ocean.dwavesys.com/en/stable/) [D-Wave Leap cloud](https://cloud.dwavesys.com)

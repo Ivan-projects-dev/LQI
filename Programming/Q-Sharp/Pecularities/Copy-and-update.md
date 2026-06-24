@@ -1,5 +1,5 @@
 #Q-Sharp
-**Copy-&-update** produces new value with $1$ or $>$ fields/elements changed, leaving the original untouched. Uses `w/` (with) & `<-` (assign) syntax. Essential because Q# values are immutable by default.
+**Copy-&-update** produces new value with $1$ or more fields/elements changed, leaving the original untouched. Uses `w/` (with) & `<-` (assign) syntax. Essential because Q# values are immutable by default.
 
 **Arrays** - update single index or range:
 ```csharp

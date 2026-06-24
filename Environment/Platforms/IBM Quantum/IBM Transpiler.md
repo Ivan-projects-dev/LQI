@@ -58,3 +58,5 @@ print(f"Original depth: {qc.depth()}")
 print(f"Transpiled depth: {tqc.depth()}")
 print(f"Native gate counts: {tqc.count_ops()}")
 ```
+
+Source: [Qiskit transpiler — documentation](https://docs.quantum.ibm.com/api/qiskit/transpiler)

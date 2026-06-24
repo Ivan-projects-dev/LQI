@@ -21,3 +21,5 @@ Key features:
 - **Catalyst** - JIT compiler for PennyLane circuits (AOT compilation via MLIR/QIR)
 - **PennyLane Lightning** - high-performance C++ state-[[Vector]] simulator with GPU support (Lightning-GPU, Lightning-Kokkos)
 - **`qml.`[[QNN]]** - Torch/Keras wrappers for hybrid quantum-classical neural networks
+
+Source: [PennyLane documentation](https://docs.pennylane.ai/) [PennyLane — GitHub](https://github.com/PennyLaneAI/pennylane)

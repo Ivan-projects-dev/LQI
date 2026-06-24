@@ -15,7 +15,7 @@ Here, $D(⋅)$ returns a scalar in $[0,1]$ indicating how "real" input is.
 1. **Initialize** both generator $G$ & discriminator $D$ with random params (classical or quantum).
 2. **Optimize $D$** to discriminate real data from early generator outputs.
 3. **Optimize $G$** to produce samples that the updated $D$ incorrectly labels as real.
-4. **Iterate** these steps multiple times, alternately refining $D$ & $G$. Over training, the generator output should become progressively $>$ "realistic," while the discriminator becomes $>$ adept - leading to equilibrium where the generated data is difficult to distinguish from real data.
+4. **Iterate** these steps multiple times, alternately refining $D$ & $G$. Over training, the generator output should become progressively more "realistic," while the discriminator becomes more adept - leading to equilibrium where the generated data is difficult to distinguish from real data.
 When **both** the generator & discriminator are quantum, the generator outputs quantum states & the discriminator uses a quantum measurement strategy to classify states as real or fake. This approach suits **quantum data** natively, avoiding early measurement steps.
 
 In many practical apps, the dataset is classical (e.g., images, tabular data). A **hybrid QGAN** might use:

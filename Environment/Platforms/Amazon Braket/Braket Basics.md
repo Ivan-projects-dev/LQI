@@ -43,4 +43,6 @@ Running the same Bell state on both & comparing histograms teaches $>$ about qua
 
 **Warning on QPU cost:** QPU jobs are paid - [[IonQ]] trapped-ion devices are among the more expensive options per shot. Test entirely on simulators first. Set AWS billing alerts.
 
+Source: [Amazon Braket documentation](https://docs.aws.amazon.com/braket/)
+
 **QuEra's Aquila** device is **not gate-based computer**. It uses neutral atoms & programs via laser pulses & atom positions - `AnalogHamiltonianSimulation` object, not `Circuit`. If you see Aquila on the device list, it requires completely different programming model.

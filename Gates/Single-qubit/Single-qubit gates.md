@@ -42,6 +42,8 @@ S(q);
 Adjoint S(q); // S†: applies -i phase to |1⟩
 ```
 
+Source: [Microsoft.Quantum.Intrinsic namespace — MS Learn](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic)
+
 **[[T gate]] ($\pi/8$ gate) - `T`**
 $$T = \begin{pmatrix}1 & 0\\0 & e^{i\pi/4}\end{pmatrix}$$
 Applies phase $e^{i\pi/4}$ to $|1\rangle$. $T^8 = I$. Together with $H$ & [[CNOT]], forms **universal gate set** for quantum computation. [[T gate]] count is the standard measure of fault-tolerant circuit cost.

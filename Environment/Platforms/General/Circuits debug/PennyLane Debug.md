@@ -37,3 +37,5 @@ print(qml.draw(circuit)(0.5))     # ASCII diagram with parameter substituted
 print(qml.specs(circuit)(0.5))    # gate counts, depth, num_params
 ```
 If gate count or depth is unexpected, the circuit construction loop has a bug.
+
+Source: [PennyLane documentation](https://docs.pennylane.ai/)

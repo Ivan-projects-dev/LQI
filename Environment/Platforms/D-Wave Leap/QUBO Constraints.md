@@ -44,4 +44,6 @@ for bits in itertools.product([0, 1], repeat=n):
     if is_valid(sample):
         print(f"{sample}: E={energy:.2f}")
 ```
+
+Source: [D-Wave Problem Formulation Guide](https://docs.ocean.dwavesys.com/en/stable/concepts/bqm.html)
 If the lowest valid energy is not lower than any invalid energy, the penalty weight is too small. Fix the weight before spending QPU time.

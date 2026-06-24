@@ -55,6 +55,8 @@ counts = job.result()[0].data.meas.get_counts()
 ```
 `AerSimulator` + `FakeBackend` for noise-realistic local simulation - see [[IBM Debug]].
 
+Source: [Qiskit Runtime primitives — documentation](https://docs.quantum.ibm.com/api/qiskit-ibm-runtime)
+
 | Goal | Primitive |
 |---|---|
 | Check measurement distribution (does circuit give right bit strings?) | `SamplerV2` |

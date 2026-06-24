@@ -13,3 +13,5 @@ job = service.job(job_id)
 result = job.result()
 ```
 Keep text file of job IDs with descriptions. Do not rely on memory or session state.
+
+Source: [IBM Quantum Platform](https://quantum.cloud.ibm.com/)

@@ -9,7 +9,7 @@ Pauli $Z$ [[Matrix]] represents single-qubit Hamiltonian that can describe the
 $σZ=(100−1)$.
 It is Hermitian & its lowest [[Eigenvalue]] is $-1$ with the corresponding [[Eigenstate]] $(01)$.
 
-Pauli matrices form complete set of operators for [[Qubits]], meaning that any operator acting on qubit system can be expressed as linear combo of these Pauli operators. Hence, general Hamiltonian for quantum system can be written as sum of terms called _Pauli strings_, each of which involves Pauli matrices acting on $1$ or $>$ [[Qubits]].
+Pauli matrices form complete set of operators for [[Qubits]], meaning that any operator acting on qubit system can be expressed as linear combo of these Pauli operators. Hence, general Hamiltonian for quantum system can be written as sum of terms called _Pauli strings_, each of which involves Pauli matrices acting on $1$ or more [[Qubits]].
 
 As example, we can define the following Hamiltonian on $2$ [[Qubits]]: $$X_0⊗X_1+Y_0⊗Y_1+Z_0⊗Z_1$$typically written as $XX+YY+ZZ$. In this example, $XX, YY$ & $ZZ$ are **Pauli strings**. This Hamiltonian is **Heisenberg Hamiltonian**. Its [[Matrix]] representation can be obtained through the matrices of Pauli $X, Y$, & $Z$ operators.
 

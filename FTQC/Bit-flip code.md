@@ -26,3 +26,5 @@ $2$ CNOTs (control = $q[0]$): [[CNOT]]($q[0], q[1]$); [[CNOT]]($q[0], q[2]$).
 - Does **not** protect against $Z$ errors: $Z$ on any qubit maps $|\bar\psi\rangle$ to valid codeword for $\alpha|0\rangle-\beta|1\rangle$ - undetectable.
 - Does **not** protect against $2$ simultaneous $X$ errors (misidentified as single error on $3rd$ qubit).
 - Full [[FTQC]] requires codes protecting against arbitrary single-qubit errors (e.g., [[Shor]] $9$-qubit code, Steane $7$-qubit code).
+
+Source: [Shor 1995 — Scheme for reducing decoherence (arXiv)](https://arxiv.org/abs/quant-ph/9605011) [Quantum error correction — MS Learn](https://learn.microsoft.com/en-us/azure/quantum/concepts-error-correction)

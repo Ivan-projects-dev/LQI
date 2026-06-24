@@ -2,11 +2,11 @@
 Hallmark of classical feedforward networks is the **nonlinear activation** in each neuron. In quantum circuits, gates are linear, so nonlinearity arises chiefly from **measurement** or other non-unitary steps:
 - **Measurement-Based Activations**: qubit (or set of [[Qubits]]) is measured, producing a classical result that can be re-encoded into another qubit for the next layer (hybrid approach). This partial measurement effectively inserts a nonlinearity.
 - **Non-Linear Post-Processing**: Even if no intermediate measurement is performed, the final measurement outcome & subsequent classical post-processing can yield nonlinear mappings from input to output.
-- **Coherent "Activations"**: Some proposals attempt to implement approx activation func using controlled gates & ancillas, but these are often $>$ hardware-intensive & < commonly used on near-term devices.
+- **Coherent "Activations"**: Some proposals attempt to implement approx activation func using controlled gates & ancillas, but these are often more hardware-intensive & less commonly used on near-term devices.
 
 Similar to classical feedforward networks, QFNNs can handle:
 - **Binary Classification**: Map $x$ to single qubit measurement. Threshold the expectation value $⟨Z⟩$ or interpret measurement outcomes as labels ${0,1}$ or ${−1,+1}$.
-- **Multi-Class**: Use multiple Qubits or measurement operators to distinguish among $>$ classes.
+- **Multi-Class**: Use multiple Qubits or measurement operators to distinguish among more classes.
 - **Regression**: Obtain a continuous output by measuring expectation value (e.g., $⟨Z⊗Z⟩$ on multiple [[Qubits]]), or convert a bitstring readout into a real-valued quantity.
 
 Because each [[QFNN]] layer is a quantum circuit, the entire model's params $θ$ can be trained using classical optimization methods, guided by:

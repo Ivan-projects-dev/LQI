@@ -111,3 +111,5 @@ qml.MultiControlledX(wires=[0,1,2,3]) # 3-controlled X
 | Q# name                | `CCNOT`                        |
 | Qiskit name            | `ccx`                          |
 | [[PennyLane]] name     | `qml.Toffoli`                  |
+
+Source: [Microsoft.Quantum.Intrinsic.CCNOT — MS Learn](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic/ccnot) [CCXGate — Qiskit](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.CCXGate)

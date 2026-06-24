@@ -57,6 +57,8 @@ plt.legend(); plt.grid(True); plt.show()
 
 **What good convergence looks like:** smooth decrease, levels off near the true min. Initial drop in $10$-$20$ steps, then slower refinement.
 
+Source: [PennyLane variational classifier demo](https://pennylane.ai/qml/demos/tutorial_variational_classifier/) [PennyLane VQE demo](https://pennylane.ai/qml/demos/tutorial_vqe/)
+
 **What bad convergence looks like:**
 - **Flat from step 1:** gradients are zero $→$ barren plateau, wrong init, or wrong NumPy import
 - **Oscillating:** learning rate too high - reduce `stepsize` by $10\times$

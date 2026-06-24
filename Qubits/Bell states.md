@@ -78,3 +78,5 @@ DumpMachine(); // shows: |00⟩: 0.707, |11⟩: 0.707
 let (r0, r1) = MeasureBellBasis(q0, q1);
 // r0 == Zero, r1 == Zero always for |Φ+⟩
 ```
+
+Source: [BasicGates — Microsoft Quantum Katas](https://github.com/microsoft/QuantumKatas/tree/main/BasicGates)

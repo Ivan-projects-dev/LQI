@@ -72,3 +72,5 @@ qml.CNOT(wires=[0, 1])
 | Q# name | `X` |
 | Qiskit name | `x` |
 | [[PennyLane]] name | `qml.PauliX` |
+
+Source: [Microsoft.Quantum.Intrinsic.X — MS Learn](https://learn.microsoft.com/en-us/qsharp/api/qsharp-lang/microsoft.quantum.intrinsic/x) [XGate — Qiskit](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.XGate)

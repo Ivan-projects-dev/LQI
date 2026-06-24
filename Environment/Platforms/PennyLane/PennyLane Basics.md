@@ -52,6 +52,8 @@ for step in range(20):
 
 # After convergence: theta ≈ pi, <Z> ≈ -1 (qubit pointing south = |1⟩)
 ```
+
+Source: [PennyLane documentation](https://docs.pennylane.ai/)
 This is toy version of [[VQE]]: find the circuit parameters that minimize energy func.
 ### Running the Same Circuit on Different Backends
 Change only the `device` line - the circuit stays the same:

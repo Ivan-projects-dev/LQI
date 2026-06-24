@@ -9,3 +9,5 @@ pip install dwave-ocean-sdk
 dwave config create # prompts for API token from cloud.dwavesys.com
 ```
 Create free account at `cloud.dwavesys.com`. You get small free-time allocation for exploration.
+
+Source: [D-Wave Ocean SDK documentation](https://docs.ocean.dwavesys.com/en/stable/)

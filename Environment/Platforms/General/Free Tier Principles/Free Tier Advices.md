@@ -39,3 +39,5 @@ You have outgrown free tier when:
 - You need to run parameter sweeps with $> 100$ circuit variations
 - You need guaranteed low-queue-time for time-sensitive experiments
 At that point, consider [[IBM Quantum]] Premium plans or academic access programs (many universities have bulk QPU allocations).
+
+Source: [IBM Quantum Platform](https://quantum.cloud.ibm.com/) [Amazon Braket pricing](https://aws.amazon.com/braket/pricing/) [Azure Quantum — MS Learn](https://learn.microsoft.com/en-us/azure/quantum/)

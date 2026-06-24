@@ -36,3 +36,5 @@ AssertMeasurementProbability(
 If the assertion fails, the simulator throws immediately with the message - pinpoints exactly which gate broke the invariant.
 ### Message for Classical Debugging
 `Message($"value: {myVar}")` prints to output during simulation. Use it to trace classical control flow when the quantum part looks correct but the overall algorithm produces wrong results.
+
+Source: [Debugging Q# programs — Azure Quantum MS Learn](https://learn.microsoft.com/en-us/azure/quantum/how-to-work-with-jobs)

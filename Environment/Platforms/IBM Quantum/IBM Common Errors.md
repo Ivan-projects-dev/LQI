@@ -52,3 +52,5 @@ tqc = transpile(qc, backend, optimization_level=3)
 print(f"Original depth: {qc.depth()}, Transpiled: {tqc.depth()}")
 ```
 $5$-gate circuit at level $0$ may become $30$ gates; at level $3$ it may stay at $8$. Difference matters enormously on noisy hardware.
+
+Source: [Qiskit documentation](https://docs.quantum.ibm.com/)

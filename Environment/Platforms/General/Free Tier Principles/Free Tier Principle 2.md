@@ -25,3 +25,5 @@ from braket.aws import AwsQuantumTaskBatch
 tasks = device.run_batch(circuits, s3_destination_folder=s3_folder, shots=1000)
 results = tasks.results()  # waits for all to complete
 ```
+
+Source: [Qiskit documentation](https://docs.quantum.ibm.com/) [Amazon Braket documentation](https://docs.aws.amazon.com/braket/)

@@ -20,7 +20,7 @@ $$H = H_E + H_B + H_{\rm fermion} + H_{\rm Yukawa}$$
 
 [[QPE]] on $e^{-iHt}$ with trial vacuum state $→$ extracts **mass gap** (lightest particle mass $\Delta E = E_1 - E_0$), **string tension** (confinement order parameter), **phase diagram** of confinement/deconfinement transition.
 
-**Recent results**: $Z_2$ lattice gauge theory confinement tested on Google's quantum AI hardware (Nature Physics, Jan 2025). $U(1)$ QED in $(2+1)$D simulated on trapped-ion qudits (Nature Physics, 2025) - [[Qubits]] encode gauge field occupations $>$ efficiently than [[Qubits]].
+**Recent results**: $Z_2$ lattice gauge theory confinement tested on Google's quantum AI hardware (Nature Physics, Jan 2025). $U(1)$ QED in $(2+1)$D simulated on trapped-ion qudits (Nature Physics, 2025) - [[Qubits]] encode gauge field occupations more efficiently than [[Qubits]].
 
 **Qubit count**: scales with lattice volume $V = L^d$ & gauge group dimension. $SU(2)$ in $(2+1)$D: $\sim 10^2$–$10^3$ logical [[Qubits]] for small classically-hard instances; $SU(3)$ in $(3+1)$D: estimates $\sim 10^4$–$10^6$ logical [[Qubits]] for beyond-classical regime.
 

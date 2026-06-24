@@ -31,3 +31,5 @@ def run_on_azure(circuit):
 
 mitigated_result = zne.execute_with_zne(circuit, executor=run_on_azure)
 ```
+
+Source: [Mitiq documentation](https://mitiq.readthedocs.io/en/stable/) [Mitiq — GitHub](https://github.com/unitaryfund/mitiq)

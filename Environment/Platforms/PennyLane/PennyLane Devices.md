@@ -41,6 +41,8 @@ dev = qml.device("qiskit.remote", wires=5, backend=ibm_backend)
 dev = qml.device("braket.aws.qubit", device_arn="...", wires=5, s3_destination_folder=(...))
 ```
 All hardware devices are shot-based. Only `parameter-shift` works. `qml.state()` raises an error.
+
+Source: [PennyLane devices — documentation](https://docs.pennylane.ai/en/stable/introduction/devices.html)
 ### Selecting the Right Device
 ```python
 dev = qml.device("default.qubit", wires=n) # Prototyping & debugging (any size, all features)

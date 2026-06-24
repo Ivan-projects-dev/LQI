@@ -10,7 +10,7 @@ within {
 }
 // Q# automatically runs Adjoint V here
 ```
-Equivalent to manually writing: `V; O; Adjoint V` - but `within/apply` is safer (Q# guarantees uncomputation even if `O` throws) & $>$ readable.
+Equivalent to manually writing: `V; O; Adjoint V` - but `within/apply` is safer (Q# guarantees uncomputation even if `O` throws) & more readable.
 
 **[[Ancilla]] [[Qubits]]** borrowed for intermediate computation must be returned to $|0\rangle$ before release - otherwise they cause entanglement pollution. `within/apply` enforces this structurally.
 

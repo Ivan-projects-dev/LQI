@@ -40,10 +40,10 @@ Compare to classical random walk: $O\!\left(\frac{1}{\delta\epsilon}\right)$ ste
 
 **[[Matrix]] product verification**: given $A,B,C \in \mathbb{F}^{N\times N}$, verify $AB = C$ without computing $AB$. Classical Freivalds: $O(N^2)$ randomized. MNRS: $O(N^{5/3})$ - walk on $N^{2/3}$-row sampled subproblem.
 ### Relation to Grover
-[[Grover]] search is special case of MNRS on **complete graph**: $\delta = 1$ (instant mixing), $U = O(1)$ (no data structure), $C = O(1)$ (direct check) $→$ $T = O(1/\sqrt\epsilon) = O(\sqrt N)$. MNRS is strictly $>$ general.
+[[Grover]] search is special case of MNRS on **complete graph**: $\delta = 1$ (instant mixing), $U = O(1)$ (no data structure), $C = O(1)$ (direct check) $→$ $T = O(1/\sqrt\epsilon) = O(\sqrt N)$. MNRS is strictly more general.
 ### Unified framework (Apers 2021)
 Apers gives single-shot MNRS variant handling multiple solutions without reduction to unique-solution case:
 - Removes need to pre-condition on $M = 1$
 - Directly applies to element distinctness & triangle finding with multiple collisions
-- Chains walks: reuse walk state after outputting $1$ collision, continue for $>$ (relevant for collision-finding algorithms, $2025$)
+- Chains walks: reuse walk state after outputting $1$ collision, continue for more (relevant for collision-finding algorithms, $2025$)
 [Apers 2021: A Unified Framework of Quantum Walk Search (STACS)](https://drops.dagstuhl.de/storage/00lipics/lipics-vol187-stacs2021/LIPIcs.STACS.2021.6/LIPIcs.STACS.2021.6.pdf)

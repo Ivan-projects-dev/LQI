@@ -43,6 +43,8 @@ result = job.result()
 - **IBM Quantum Learning** - free courses, tutorials, Jupyter notebooks
 - **Qiskit Patterns** - templates for mapping real-world problems to quantum circuits
 
+Source: [Qiskit documentation](https://docs.quantum.ibm.com/) [IBM Quantum Platform](https://quantum.cloud.ibm.com/)
+
 **Transpilation depth explosion** is the most common surprise. IBM's native gate set is `{ECR, RZ, SX, X}`. A [[CNOT]] becomes `ECR` + $2$ `SX` rotations. $10$-gate circuit can compile to $40+$ native gates. Always check:
 ```python
 from qiskit import transpile
